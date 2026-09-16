@@ -1,0 +1,32 @@
+{
+  "name": "cozytrip",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@unocss/preset-wind4": "^66.10.4"
+  },
+  "peerDependencies": {
+    "typescript": "^7.0.2"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && bun scripts/ssg.ts && bun scripts/generate-sitemap.ts && bun scripts/generate-rss.ts",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@unocss/preset-attributify": "^66.10.4",
+    "@unocss/reset": "^66.10.4",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "prettier": "^3.9.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "unocss": "^66.10.4",
+    "vite": "^8.3.0"
+  }
+}
