@@ -6,7 +6,6 @@ export const hotels: Hotel[] = [
 
     name: "Sample Tokyo Hotel",
     nameEn: "Sample Tokyo Hotel",
-
     slug: "sample-tokyo-hotel",
 
     country: "일본",
@@ -16,15 +15,15 @@ export const hotels: Hotel[] = [
     city: "도쿄",
     area: "신주쿠",
 
+    destinationId: "japan-tokyo",
+
     description: "CozyTrip 개발 과정에서 사용하는 샘플 호텔 데이터입니다.",
 
     location: {
       country: "일본",
       countryCode: "JP",
-
       prefecture: "Tokyo",
       city: "도쿄",
-
       area: "신주쿠",
 
       nearestStations: ["신주쿠역"],
@@ -59,7 +58,5 @@ export function getHotelsByCity(city: string): Hotel[] {
 }
 
 export function getHotelsByDestination(destinationId: string): Hotel[] {
-  const destination = destinationId.replace("japan-", "");
-
-  return hotels.filter((hotel) => hotel.city === destination);
+  return hotels.filter((hotel) => hotel.destinationId === destinationId);
 }

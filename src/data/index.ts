@@ -23,3 +23,12 @@ export {
   getPostsByDestination,
   getPostsByHotel,
 } from "./posts";
+
+export {
+  images,
+  imageMap,
+  getImageById,
+  getImagesByHotelId,
+  getImagesByType,
+  getConfirmedImages,
+} from "./images";

@@ -4,24 +4,18 @@ import type { HotelImage } from "./image";
 export interface HotelLocation {
   country: string;
   countryCode: string;
-
   prefecture: string;
   city: string;
-
   area: string;
-
   address?: string;
-
   latitude?: number;
   longitude?: number;
-
   nearestStations?: string[];
 }
 
 export interface HotelRoom {
   name: string;
   description?: string;
-
   images?: HotelImage[];
 }
 
@@ -40,15 +34,15 @@ export interface Hotel {
 
   name: string;
   nameEn?: string;
-
   slug: string;
 
   country: string;
   countryCode: string;
-
   prefecture: string;
   city: string;
   area: string;
+
+  destinationId: string;
 
   description: string;
 

@@ -21,3 +21,5 @@ export type {
   PostImageBlock,
   PostGalleryBlock,
 } from "./post";
+
+export type { MarkdownFrontmatter, MarkdownDocument } from "./markdown";

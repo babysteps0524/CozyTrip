@@ -1,8 +1,72 @@
-import { Container, Section } from "./components/common";
+import {
+  getDestinationBySlug,
+  getHotelBySlug,
+  getHotelsByDestination,
+  getPostBySlug,
+} from "./data";
 
 import { Footer, Header } from "./components/layout";
 
+import Home from "./pages/Home";
+import Destination from "./pages/Destination";
+import HotelList from "./pages/HotelList";
+import HotelDetail from "./pages/HotelDetail";
+import Guide from "./pages/Guide";
+
+function getCurrentPath() {
+  const path = window.location.pathname;
+
+  if (path.length > 1 && path.endsWith("/")) {
+    return path.slice(0, -1);
+  }
+
+  return path;
+}
+
 export default function App() {
+  const path = getCurrentPath();
+
+  const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
+
+  const hotelListMatch = path.match(/^\/japan\/([^/]+)\/hotels$/);
+
+  const hotelDetailMatch = path.match(/^\/japan\/([^/]+)\/hotels\/([^/]+)$/);
+
+  const guideMatch = path.match(/^\/guides\/([^/]+)$/);
+
+  const destinationSlug =
+    destinationMatch?.[1] ?? hotelListMatch?.[1] ?? hotelDetailMatch?.[1];
+
+  const destination = destinationSlug
+    ? getDestinationBySlug(destinationSlug)
+    : undefined;
+
+  const hotelSlug = hotelDetailMatch?.[2];
+
+  const hotel = hotelSlug ? getHotelBySlug(hotelSlug) : undefined;
+
+  const guideSlug = guideMatch?.[1];
+
+  const guide = guideSlug ? getPostBySlug(guideSlug) : undefined;
+
+  const hotels = destination ? getHotelsByDestination(destination.id) : [];
+
+  const isHotelDetail = Boolean(
+    hotelDetailMatch &&
+    destination &&
+    hotel &&
+    hotel.destinationId === destination.id,
+  );
+
+  const isGuide = Boolean(guideMatch && guide && guide.category === "guide");
+
+  const isKnownRoute =
+    path === "/" ||
+    Boolean(destinationMatch && destination) ||
+    Boolean(hotelListMatch && destination) ||
+    isHotelDetail ||
+    isGuide;
+
   return (
     <div
       min-h="screen"
@@ -14,75 +78,55 @@ export default function App() {
       <Header />
 
       <main>
-        <Section>
-          <Container>
-            <div max-w="3xl">
-              <p
-                mb="3"
-                text="sm ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
-                TRAVEL · HOTELS · JAPAN
-              </p>
+        {path === "/" && <Home />}
 
-              <h1
-                m="0"
-                text="3xl sm:4xl lg:5xl"
-                font="bold"
-                tracking="tight"
-                leading="tight"
-              >
-                일본 여행의 시작을
-                <br />
-                조금 더 편안하게
-              </h1>
+        {destinationMatch && destination && (
+          <Destination destination={destination} />
+        )}
 
-              <p
-                mt="5"
-                max-w="2xl"
-                text="base sm:lg ct-text-soft dark:ct-dark-text-soft"
-                leading="relaxed"
-              >
-                일본의 호텔과 여행 정보를 직접 비교하고 여행 목적에 맞는 숙소를
-                찾아보세요.
-              </p>
+        {hotelListMatch && destination && (
+          <HotelList destination={destination} hotels={hotels} />
+        )}
 
-              <div mt="8" flex="~ wrap" gap="3">
+        {isHotelDetail && hotel && <HotelDetail hotel={hotel} />}
+
+        {isGuide && guide && <Guide post={guide} />}
+
+        {!isKnownRoute && (
+          <section>
+            <div
+              min-h="screen"
+              flex="~"
+              items="center"
+              justify="center"
+              px="4"
+              py="20"
+            >
+              <div text="center">
+                <p m="0" text="sm ct-muted dark:ct-dark-muted">
+                  404
+                </p>
+
+                <h1 mt="2" mb="0" text="2xl sm:3xl" font="bold">
+                  페이지를 찾을 수 없습니다.
+                </h1>
+
                 <a
-                  href="/japan/tokyo/hotels/"
+                  href="/"
+                  mt="6"
+                  inline="block"
                   ct-button
                   bg="ct-primary"
                   text="white"
                   hover="bg-ct-primary-dark"
                   un-active="scale-0.95"
                 >
-                  도쿄 호텔 보기
-                </a>
-
-                <a
-                  href="/guides/"
-                  ct-button
-                  border="~ ct-line dark:ct-dark-line"
-                  bg="ct-surface dark:ct-dark-surface"
-                  text="ct-text dark:ct-dark-text"
-                  hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                  un-active="scale-0.95"
-                >
-                  여행 가이드 보기
+                  홈으로 돌아가기
                 </a>
               </div>
             </div>
-          </Container>
-        </Section>
-
-        <Section borderTop surface>
-          <Container>
-            <p m="0" text="sm ct-muted dark:ct-dark-muted">
-              CozyTrip · Japan Travel & Hotel Guide
-            </p>
-          </Container>
-        </Section>
+          </section>
+        )}
       </main>
 
       <Footer />
