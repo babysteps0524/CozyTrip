@@ -1,9 +1,5 @@
 export type ImageSource =
-  | "rakuten"
-  | "agoda"
-  | "official"
-  | "owned"
-  | "licensed";
+  "rakuten" | "agoda" | "official" | "owned" | "licensed";
 
 export type ImageType =
   | "hero"
@@ -13,6 +9,14 @@ export type ImageType =
   | "restaurant"
   | "location"
   | "attraction";
+
+export type ImageFormat = "webp" | "avif" | "jpeg" | "png";
+
+export interface ResponsiveImageVariant {
+  src: string;
+  width: number;
+  format: ImageFormat;
+}
 
 export interface HotelImage {
   id: string;
@@ -31,4 +35,6 @@ export interface HotelImage {
   sourceUrl?: string;
 
   rightsConfirmed: boolean;
+
+  variants?: ResponsiveImageVariant[];
 }

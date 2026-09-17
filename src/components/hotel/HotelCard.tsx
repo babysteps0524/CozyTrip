@@ -1,4 +1,5 @@
 import type { Hotel } from "../../types";
+
 import { Image } from "../common";
 
 interface HotelCardProps {
@@ -12,7 +13,7 @@ function getHotelPath(hotel: Hotel): string {
 }
 
 export default function HotelCard({ hotel }: HotelCardProps) {
-  const image = hotel.images[0];
+  const image = hotel.images.find((item) => item.src && item.rightsConfirmed);
 
   return (
     <a
@@ -33,6 +34,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           alt={image.alt}
           width={image.width}
           height={image.height}
+          image={image}
           aspectRatio="16/10"
         />
       ) : (
@@ -41,7 +43,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           flex="~"
           items="center"
           justify="center"
-          bg="ct-surface-soft dark:ct-dark-surface-soft"
+          bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
           text="sm ct-muted dark:ct-dark-muted"
         >
           Hotel Image

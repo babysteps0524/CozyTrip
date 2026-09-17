@@ -70,6 +70,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
                 alt={image.alt}
                 width={image.width}
                 height={image.height}
+                image={image}
                 aspectRatio={`${image.width}/${image.height}`}
               />
 
@@ -101,6 +102,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
                     alt={image.alt}
                     width={image.width}
                     height={image.height}
+                    image={image}
                     aspectRatio={`${image.width}/${image.height}`}
                   />
                 ))}

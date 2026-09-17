@@ -1,4 +1,5 @@
 import type { Hotel } from "../../types";
+
 import { Image } from "../common";
 
 interface HotelGalleryProps {
@@ -6,7 +7,9 @@ interface HotelGalleryProps {
 }
 
 export default function HotelGallery({ hotel }: HotelGalleryProps) {
-  const images = hotel.images;
+  const images = hotel.images.filter(
+    (image) => image.src && image.rightsConfirmed,
+  );
 
   if (images.length === 0) {
     return (
@@ -34,6 +37,7 @@ export default function HotelGallery({ hotel }: HotelGalleryProps) {
   }
 
   const heroImage = images[0];
+
   const thumbnails = images.slice(1, 5);
 
   return (
@@ -49,6 +53,7 @@ export default function HotelGallery({ hotel }: HotelGalleryProps) {
             alt={heroImage.alt}
             width={heroImage.width}
             height={heroImage.height}
+            image={heroImage}
             loading="eager"
             fetchPriority="high"
             aspectRatio="16/10"
@@ -69,6 +74,7 @@ export default function HotelGallery({ hotel }: HotelGalleryProps) {
                   alt={image.alt}
                   width={image.width}
                   height={image.height}
+                  image={image}
                   aspectRatio="16/10"
                 />
               </div>

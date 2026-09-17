@@ -1,6 +1,12 @@
 export type { AffiliateProvider, AffiliateLink } from "./affiliate";
 
-export type { HotelImage, ImageSource, ImageType } from "./image";
+export type {
+  HotelImage,
+  ImageSource,
+  ImageType,
+  ImageFormat,
+  ResponsiveImageVariant,
+} from "./image";
 
 export type {
   Hotel,
