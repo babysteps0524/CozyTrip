@@ -4,6 +4,23 @@ function toImageMap(images: HotelImage[]): Map<string, HotelImage> {
   return new Map(images.map((image) => [image.id, image]));
 }
 
+function addImage(
+  blocks: PostBlock[],
+  imageId: string | undefined,
+  imageMap: Map<string, HotelImage>,
+  usedImageIds: Set<string>,
+): boolean {
+  if (!imageId || usedImageIds.has(imageId)) return false;
+
+  const image = imageMap.get(imageId);
+
+  if (!image || !image.src || !image.rightsConfirmed) return false;
+
+  blocks.push({ type: "image", image });
+  usedImageIds.add(imageId);
+  return true;
+}
+
 function addImages(
   blocks: PostBlock[],
   imageIds: string[] | undefined,
@@ -11,30 +28,48 @@ function addImages(
   usedImageIds: Set<string>,
 ): void {
   for (const imageId of imageIds ?? []) {
-    if (usedImageIds.has(imageId)) continue;
-
-    const image = imageMap.get(imageId);
-
-    if (!image || !image.rightsConfirmed) continue;
-
-    blocks.push({ type: "image", image });
-    usedImageIds.add(imageId);
+    addImage(blocks, imageId, imageMap, usedImageIds);
   }
 }
 
-function getFallbackImageIds(
+function getHeroImageId(
   post: HotelPost,
   images: HotelImage[],
-): string[] {
+): string | undefined {
   const imageMap = toImageMap(images);
-  const preferredIds = [
+  const candidates = [
     ...post.imageIds,
     ...images.filter((image) => image.type === "hero").map((image) => image.id),
+    ...images.map((image) => image.id),
   ];
 
-  return preferredIds.filter((id) => {
+  return candidates.find((id) => {
     const image = imageMap.get(id);
-    return Boolean(image?.rightsConfirmed);
+    return Boolean(image?.src && image.rightsConfirmed);
+  });
+}
+
+function getSectionImageIds(
+  post: HotelPost,
+  images: HotelImage[],
+): string[][] {
+  const imageMap = toImageMap(images);
+  const preferredByType = new Map<string, string[]>();
+
+  for (const image of images) {
+    if (!image.rightsConfirmed || !image.src) continue;
+    const current = preferredByType.get(image.type) ?? [];
+    current.push(image.id);
+    preferredByType.set(image.type, current);
+  }
+
+  return post.sections.map((section, index) => {
+    const requested = (section.imageIds ?? []).filter((id) => imageMap.has(id));
+    if (requested.length > 0) return requested;
+
+    const preferredTypes = ["gallery", "room", "facility", "restaurant", "location"];
+    const preferredType = preferredTypes[index % preferredTypes.length];
+    return preferredByType.get(preferredType) ?? [];
   });
 }
 
@@ -46,6 +81,12 @@ export function createHotelPostBlocks(
   const blocks: PostBlock[] = [];
   const usedImageIds = new Set<string>();
 
+  const heroImageId = getHeroImageId(post, images);
+
+  if (heroImageId) {
+    addImage(blocks, heroImageId, imageMap, usedImageIds);
+  }
+
   if (post.introduction.trim()) {
     blocks.push({
       type: "paragraph",
@@ -53,7 +94,11 @@ export function createHotelPostBlocks(
     });
   }
 
-  for (const section of post.sections) {
+  const sectionImageIds = getSectionImageIds(post, images);
+
+  for (let index = 0; index < post.sections.length; index += 1) {
+    const section = post.sections[index];
+
     blocks.push({
       type: "heading",
       level: 2,
@@ -69,7 +114,7 @@ export function createHotelPostBlocks(
       }
     }
 
-    addImages(blocks, section.imageIds, imageMap, usedImageIds);
+    addImages(blocks, sectionImageIds[index], imageMap, usedImageIds);
   }
 
   if (post.faq.length > 0) {
@@ -92,26 +137,11 @@ export function createHotelPostBlocks(
     }
   }
 
-  const requestedImageCount = post.imageIds.length;
-
-  if (requestedImageCount > 0 && usedImageIds.size === 0) {
-    addImages(
-      blocks,
-      getFallbackImageIds(post, images),
-      imageMap,
-      usedImageIds,
-    );
-  }
-
   return blocks;
 }
 
-export function hotelPostToPost(
-  post: HotelPost,
-  hotel: Hotel,
-): Post {
-  const images = hotel.images;
-  const blocks = createHotelPostBlocks(post, images);
+export function hotelPostToPost(post: HotelPost, hotel: Hotel): Post {
+  const blocks = createHotelPostBlocks(post, hotel.images);
   const slug = post.slug.trim() || hotel.slug;
   const publishedAt = post.publishedAt ?? hotel.publishedAt ?? "1970-01-01";
 
