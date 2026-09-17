@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import type { Hotel, HotelImage, HotelPostGenerationInput } from "../src/types";
+import type { Hotel, HotelImage, HotelPost, HotelPostGenerationInput } from "../src/types";
 import { generateHotelPost, getConfiguredAIProviders } from "../src/lib/ai";
 
 interface AgodaHotelRecord {
@@ -40,7 +40,7 @@ interface GeneratedHotelPostFile {
   generatedAt: string;
   source: "ai";
   postCount: number;
-  posts: Awaited<ReturnType<typeof generateHotelPost>>["post"][];
+  posts: HotelPost[];
 }
 
 const root = resolve(import.meta.dir, "..");
@@ -81,7 +81,12 @@ function normalizeHotel(record: AgodaHotelRecord): Hotel {
     id,
     name: stringValue(record.name, "이름 미상 호텔"),
     nameEn: stringValue(record.nameEn),
-    slug: stringValue(record.slug) || id.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, ""),
+    slug:
+      stringValue(record.slug) ||
+      id
+        .toLowerCase()
+        .replace(/[^a-z0-9]+/g, "-")
+        .replace(/^-|-$/g, ""),
     country: stringValue(record.country, "일본"),
     countryCode: stringValue(record.countryCode, "JP"),
     prefecture,
@@ -131,8 +136,55 @@ function toGenerationInput(hotel: Hotel): HotelPostGenerationInput {
       facilities: hotel.facilities?.map((item) => item.name),
       restaurants: hotel.restaurants?.map((item) => item.name),
     },
-    images: hotel.images,
+    images: hotel.images.filter((image) => image.rightsConfirmed),
   };
+}
+
+async function readExistingPosts(): Promise<HotelPost[]> {
+  const file = Bun.file(outputPath);
+
+  if (!(await file.exists())) return [];
+
+  try {
+    const raw = await file.text();
+    const parsed = JSON.parse(raw) as Partial<GeneratedHotelPostFile>;
+
+    if (!Array.isArray(parsed.posts)) return [];
+
+    return parsed.posts.filter(
+      (post): post is HotelPost =>
+        Boolean(
+          post &&
+            typeof post === "object" &&
+            typeof post.id === "string" &&
+            typeof post.hotelId === "string" &&
+            typeof post.title === "string",
+        ),
+    );
+  } catch (error) {
+    console.warn(
+      "Could not read existing generated hotel posts. Starting with an empty set:",
+      error instanceof Error ? error.message : error,
+    );
+    return [];
+  }
+}
+
+function mergePosts(
+  existingPosts: HotelPost[],
+  generatedPosts: HotelPost[],
+): HotelPost[] {
+  const postMap = new Map<string, HotelPost>();
+
+  for (const post of existingPosts) {
+    postMap.set(post.hotelId, post);
+  }
+
+  for (const post of generatedPosts) {
+    postMap.set(post.hotelId, post);
+  }
+
+  return [...postMap.values()];
 }
 
 async function main(): Promise<void> {
@@ -160,33 +212,51 @@ async function main(): Promise<void> {
     return;
   }
 
-  const posts: GeneratedHotelPostFile["posts"] = [];
+  const existingPosts = await readExistingPosts();
+  const generatedPosts: HotelPost[] = [];
+  let successCount = 0;
+  let failureCount = 0;
 
   for (const record of source.hotels) {
-    const hotel = normalizeHotel(record);
+    let hotel: Hotel;
+
+    try {
+      hotel = normalizeHotel(record);
+    } catch (error) {
+      failureCount += 1;
+      console.error(
+        "Failed to normalize Agoda hotel:",
+        error instanceof Error ? error.message : error,
+      );
+      continue;
+    }
+
     const input = toGenerationInput(hotel);
 
     console.log(`Generating hotel post: ${hotel.name} (${hotel.id})`);
 
     try {
       const result = await generateHotelPost(input);
-      const post = {
+      const post: HotelPost = {
         ...result.post,
+        hotelId: hotel.id,
         slug: hotel.slug,
         generatedBy: result.provider,
       };
 
-      posts.push(post);
-      console.log(
-        `Generated with ${result.provider}: ${post.title}`,
-      );
+      generatedPosts.push(post);
+      successCount += 1;
+      console.log(`Generated with ${result.provider}: ${post.title}`);
     } catch (error) {
+      failureCount += 1;
       console.error(
         `Failed to generate ${hotel.name}:`,
         error instanceof Error ? error.message : error,
       );
     }
   }
+
+  const posts = mergePosts(existingPosts, generatedPosts);
 
   await mkdir(outputDir, { recursive: true });
 
@@ -198,7 +268,13 @@ async function main(): Promise<void> {
   };
 
   await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
-  console.log(`Saved ${posts.length} hotel post(s): ${outputPath}`);
+
+  console.log(
+    `Saved ${posts.length} hotel post(s): ${outputPath}`,
+  );
+  console.log(
+    `Generation result: ${successCount} succeeded, ${failureCount} failed, ${existingPosts.length} existing preserved.`,
+  );
 }
 
 await main();
