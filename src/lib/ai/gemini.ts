@@ -66,7 +66,12 @@ export const geminiProvider: AIProvider = {
         throw new AIProviderError("gemini", "Gemini returned an empty response.");
       }
 
-      const post = parseHotelPost(text, "gemini", input.hotel.id);
+      const post = parseHotelPost(
+        text,
+        "gemini",
+        input.hotel.id,
+        input.images.map((image) => image.id),
+      );
 
       return { provider: "gemini" as const, post };
     } catch (error) {
