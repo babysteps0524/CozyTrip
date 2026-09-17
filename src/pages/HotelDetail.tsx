@@ -11,6 +11,7 @@ import {
   HotelLocation,
   HotelRestaurantCard,
   HotelRoomCard,
+  HotelStayInfo,
   HotelSummary,
   RelatedHotels,
 } from "../components/hotel";
@@ -250,57 +251,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         </Section>
       )}
 
-      {(hotel.checkIn || hotel.checkOut) && (
-        <Section borderTop>
-          <Container>
-            <div max-w="3xl">
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
-                USEFUL INFORMATION
-              </p>
-              <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
-                이용 안내
-              </h2>
-              <div mt="8" grid="~ cols-1 sm:2" gap="4">
-                {hotel.checkIn && (
-                  <div
-                    rounded="xl"
-                    border="~ ct-line dark:ct-dark-line"
-                    bg="ct-surface dark:ct-dark-surface"
-                    p="5"
-                  >
-                    <p m="0" text="sm ct-muted dark:ct-dark-muted">
-                      체크인
-                    </p>
-                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
-                      {hotel.checkIn}
-                    </p>
-                  </div>
-                )}
-                {hotel.checkOut && (
-                  <div
-                    rounded="xl"
-                    border="~ ct-line dark:ct-dark-line"
-                    bg="ct-surface dark:ct-dark-surface"
-                    p="5"
-                  >
-                    <p m="0" text="sm ct-muted dark:ct-dark-muted">
-                      체크아웃
-                    </p>
-                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
-                      {hotel.checkOut}
-                    </p>
-                  </div>
-                )}
-              </div>
-            </div>
-          </Container>
-        </Section>
-      )}
+      <HotelStayInfo hotel={hotel} />
 
       <HotelLocation hotel={hotel} />
       <HotelBooking hotel={hotel} />
