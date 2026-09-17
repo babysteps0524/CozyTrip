@@ -17,7 +17,8 @@
     "typecheck": "tsc --noEmit",
     "agoda:test": "bun scripts/agoda/test-api.ts",
     "agoda:cities": "bun scripts/agoda/fetch-cities.ts",
-    "agoda:generate": "bun scripts/agoda/generate-hotels.ts"
+    "agoda:generate": "bun scripts/agoda/generate-hotels.ts",
+    "ai:hotel-posts": "bun scripts/generate-hotel-posts.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
