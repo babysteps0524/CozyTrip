@@ -9,6 +9,7 @@ import {
   HotelFacilities,
   HotelGallery,
   HotelLocation,
+  HotelRestaurantCard,
   HotelRoomCard,
   HotelSummary,
   RelatedHotels,
@@ -44,19 +45,51 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             text="xs sm:sm ct-muted dark:ct-dark-muted"
             aria-label="Breadcrumb"
           >
-            <a href="/" px="1" py="1" rounded="md" hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft" active-scale="0.95">
+            <a
+              href="/"
+              px="1"
+              py="1"
+              rounded="md"
+              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+              active-scale="0.95"
+            >
               홈
             </a>
-            <span px="1" aria-hidden="true">/</span>
-            <a href={`/japan/${destinationSlug}/`} px="1" py="1" rounded="md" hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft" active-scale="0.95">
+            <span px="1" aria-hidden="true">
+              /
+            </span>
+            <a
+              href={`/japan/${destinationSlug}/`}
+              px="1"
+              py="1"
+              rounded="md"
+              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+              active-scale="0.95"
+            >
               {hotel.city}
             </a>
-            <span px="1" aria-hidden="true">/</span>
-            <a href={`/japan/${destinationSlug}/hotels/`} px="1" py="1" rounded="md" hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft" active-scale="0.95">
+            <span px="1" aria-hidden="true">
+              /
+            </span>
+            <a
+              href={`/japan/${destinationSlug}/hotels/`}
+              px="1"
+              py="1"
+              rounded="md"
+              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+              active-scale="0.95"
+            >
               호텔
             </a>
-            <span px="1" aria-hidden="true">/</span>
-            <span max-w="full" truncate text="ct-text-soft dark:ct-dark-text-soft" aria-current="page">
+            <span px="1" aria-hidden="true">
+              /
+            </span>
+            <span
+              max-w="full"
+              truncate
+              text="ct-text-soft dark:ct-dark-text-soft"
+              aria-current="page"
+            >
               {hotel.name}
             </span>
           </nav>
@@ -76,13 +109,23 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section>
           <Container>
             <article max-w="3xl">
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 HOTEL GUIDE
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 {hotel.name} 알아보기
               </h2>
-              <p mt="6" mb="0" text="base sm:lg ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
+              <p
+                mt="6"
+                mb="0"
+                text="base sm:lg ct-text-soft dark:ct-dark-text-soft"
+                leading="relaxed"
+              >
                 {hotel.description}
               </p>
             </article>
@@ -94,7 +137,12 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section borderTop surface>
           <Container>
             <div>
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 ROOMS
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
@@ -117,25 +165,34 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section>
           <Container>
             <div>
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 DINING
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 레스토랑 · 다이닝
               </h2>
+              <p
+                mt="3"
+                mb="0"
+                max-w="2xl"
+                text="sm ct-text-soft dark:ct-dark-text-soft"
+                leading="relaxed"
+              >
+                호텔에서 이용할 수 있는 레스토랑과 다이닝 정보를 확인할 수 있어요.
+              </p>
             </div>
+
             <div mt="8" grid="~ cols-1 md:2" gap="4 lg:6">
               {hotel.restaurants.map((restaurant) => (
-                <div key={restaurant.name} rounded="card" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="6">
-                  <h3 m="0" text="lg ct-text dark:ct-dark-text" font="bold">
-                    {restaurant.name}
-                  </h3>
-                  {restaurant.description && (
-                    <p mt="3" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
-                      {restaurant.description}
-                    </p>
-                  )}
-                </div>
+                <HotelRestaurantCard
+                  key={restaurant.id ?? restaurant.name}
+                  restaurant={restaurant}
+                />
               ))}
             </div>
           </Container>
@@ -146,7 +203,12 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section borderTop surface>
           <Container>
             <div max-w="3xl">
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 FAQ
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
@@ -154,11 +216,30 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               </h2>
               <div mt="8" flex="~ col" gap="3">
                 {hotelPost.faq.map((item) => (
-                  <details key={item.question} rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" overflow="hidden">
-                    <summary px="5" py="4" cursor="pointer" text="sm lg:base ct-text dark:ct-dark-text" font="semibold" hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft">
+                  <details
+                    key={item.question}
+                    rounded="xl"
+                    border="~ ct-line dark:ct-dark-line"
+                    bg="ct-surface dark:ct-dark-surface"
+                    overflow="hidden"
+                  >
+                    <summary
+                      px="5"
+                      py="4"
+                      cursor="pointer"
+                      text="sm lg:base ct-text dark:ct-dark-text"
+                      font="semibold"
+                      hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+                    >
                       {item.question}
                     </summary>
-                    <div border="t ct-line dark:ct-dark-line" px="5" py="4" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
+                    <div
+                      border="t ct-line dark:ct-dark-line"
+                      px="5"
+                      py="4"
+                      text="sm ct-text-soft dark:ct-dark-text-soft"
+                      leading="relaxed"
+                    >
                       {item.answer}
                     </div>
                   </details>
@@ -173,7 +254,12 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section borderTop>
           <Container>
             <div max-w="3xl">
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 USEFUL INFORMATION
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
@@ -181,15 +267,33 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               </h2>
               <div mt="8" grid="~ cols-1 sm:2" gap="4">
                 {hotel.checkIn && (
-                  <div rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="5">
-                    <p m="0" text="sm ct-muted dark:ct-dark-muted">체크인</p>
-                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">{hotel.checkIn}</p>
+                  <div
+                    rounded="xl"
+                    border="~ ct-line dark:ct-dark-line"
+                    bg="ct-surface dark:ct-dark-surface"
+                    p="5"
+                  >
+                    <p m="0" text="sm ct-muted dark:ct-dark-muted">
+                      체크인
+                    </p>
+                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
+                      {hotel.checkIn}
+                    </p>
                   </div>
                 )}
                 {hotel.checkOut && (
-                  <div rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="5">
-                    <p m="0" text="sm ct-muted dark:ct-dark-muted">체크아웃</p>
-                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">{hotel.checkOut}</p>
+                  <div
+                    rounded="xl"
+                    border="~ ct-line dark:ct-dark-line"
+                    bg="ct-surface dark:ct-dark-surface"
+                    p="5"
+                  >
+                    <p m="0" text="sm ct-muted dark:ct-dark-muted">
+                      체크아웃
+                    </p>
+                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
+                      {hotel.checkOut}
+                    </p>
                   </div>
                 )}
               </div>
@@ -205,7 +309,12 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section>
           <Container>
             <div>
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 TRAVEL GUIDES
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
