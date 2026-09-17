@@ -40,6 +40,12 @@ export interface HotelRestaurant {
   images?: HotelImage[];
 }
 
+export interface HotelPolicy {
+  childPolicy?: string;
+  extraFees?: string[];
+  bookingNotes?: string[];
+}
+
 export interface Hotel {
   id: string;
 
@@ -66,6 +72,8 @@ export interface Hotel {
   facilities?: HotelFacility[];
 
   restaurants?: HotelRestaurant[];
+
+  policy?: HotelPolicy;
 
   accommodationType?: string;
 
