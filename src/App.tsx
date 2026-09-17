@@ -1,30 +1,72 @@
-import {
-  getDestinationBySlug,
-  getHotelBySlug,
-  getHotelsByDestination,
-  getPostBySlug,
-} from "./data";
+import type { Post } from "./types";
+
+import type { Destination } from "./types";
+
+import type { Hotel } from "./types";
 
 import { Footer, Header } from "./components/layout";
 
 import Home from "./pages/Home";
-import Destination from "./pages/Destination";
+import DestinationPage from "./pages/Destination";
 import HotelList from "./pages/HotelList";
 import HotelDetail from "./pages/HotelDetail";
 import Guide from "./pages/Guide";
 
-function getCurrentPath() {
-  const path = window.location.pathname;
+interface AppProps {
+  initialPath?: string;
 
-  if (path.length > 1 && path.endsWith("/")) {
-    return path.slice(0, -1);
-  }
+  destinations: Destination[];
 
-  return path;
+  hotels: Hotel[];
+
+  posts: Post[];
 }
 
-export default function App() {
-  const path = getCurrentPath();
+function normalizePath(pathname: string): string {
+  if (pathname.length > 1 && pathname.endsWith("/")) {
+    return pathname.slice(0, -1);
+  }
+
+  return pathname || "/";
+}
+
+function getCurrentPath(): string {
+  if (typeof window === "undefined") {
+    return "/";
+  }
+
+  return normalizePath(window.location.pathname);
+}
+
+function getDestinationBySlug(
+  destinations: Destination[],
+  slug: string,
+): Destination | undefined {
+  return destinations.find((destination) => destination.slug === slug);
+}
+
+function getHotelBySlug(hotels: Hotel[], slug: string): Hotel | undefined {
+  return hotels.find((hotel) => hotel.slug === slug);
+}
+
+function getPostBySlug(posts: Post[], slug: string): Post | undefined {
+  return posts.find((post) => post.slug === slug);
+}
+
+function getHotelsByDestination(
+  hotels: Hotel[],
+  destinationId: string,
+): Hotel[] {
+  return hotels.filter((hotel) => hotel.destinationId === destinationId);
+}
+
+export default function App({
+  initialPath,
+  destinations,
+  hotels,
+  posts,
+}: AppProps) {
+  const path = normalizePath(initialPath ?? getCurrentPath());
 
   const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
 
@@ -38,18 +80,20 @@ export default function App() {
     destinationMatch?.[1] ?? hotelListMatch?.[1] ?? hotelDetailMatch?.[1];
 
   const destination = destinationSlug
-    ? getDestinationBySlug(destinationSlug)
+    ? getDestinationBySlug(destinations, destinationSlug)
     : undefined;
 
   const hotelSlug = hotelDetailMatch?.[2];
 
-  const hotel = hotelSlug ? getHotelBySlug(hotelSlug) : undefined;
+  const hotel = hotelSlug ? getHotelBySlug(hotels, hotelSlug) : undefined;
 
   const guideSlug = guideMatch?.[1];
 
-  const guide = guideSlug ? getPostBySlug(guideSlug) : undefined;
+  const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
 
-  const hotels = destination ? getHotelsByDestination(destination.id) : [];
+  const destinationHotels = destination
+    ? getHotelsByDestination(hotels, destination.id)
+    : [];
 
   const isHotelDetail = Boolean(
     hotelDetailMatch &&
@@ -81,11 +125,11 @@ export default function App() {
         {path === "/" && <Home />}
 
         {destinationMatch && destination && (
-          <Destination destination={destination} />
+          <DestinationPage destination={destination} />
         )}
 
         {hotelListMatch && destination && (
-          <HotelList destination={destination} hotels={hotels} />
+          <HotelList destination={destination} hotels={destinationHotels} />
         )}
 
         {isHotelDetail && hotel && <HotelDetail hotel={hotel} />}
@@ -115,11 +159,10 @@ export default function App() {
                   href="/"
                   mt="6"
                   inline="block"
-                  ct-button
+                  className="ct-button"
                   bg="ct-primary"
                   text="white"
                   hover="bg-ct-primary-dark"
-                  un-active="scale-0.95"
                 >
                   홈으로 돌아가기
                 </a>

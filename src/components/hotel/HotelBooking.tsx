@@ -49,7 +49,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                     href={affiliateLink.url}
                     target="_blank"
                     rel={affiliateLink.rel ?? "sponsored"}
-                    ct-button
+                    className="ct-button"
                     bg="ct-primary"
                     text="white"
                     hover="bg-ct-primary-dark"

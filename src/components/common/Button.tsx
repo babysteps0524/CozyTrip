@@ -18,7 +18,7 @@ export default function Button({
     <button
       type={type}
       disabled={disabled}
-      ct-button
+      className="ct-button"
       w={fullWidth ? "full" : undefined}
       bg={
         variant === "primary" ? "ct-primary" : "ct-surface dark:ct-dark-surface"

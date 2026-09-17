@@ -1,8 +1,12 @@
 import "virtual:uno.css";
 
 import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
+
+import { hydrateRoot } from "react-dom/client";
+
 import App from "./App";
+
+import { destinations, hotels, posts } from "./data";
 
 const rootElement = document.getElementById("root");
 
@@ -10,8 +14,9 @@ if (!rootElement) {
   throw new Error("Root element not found.");
 }
 
-createRoot(rootElement).render(
+hydrateRoot(
+  rootElement,
   <StrictMode>
-    <App />
+    <App destinations={destinations} hotels={hotels} posts={posts} />
   </StrictMode>,
 );

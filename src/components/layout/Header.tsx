@@ -18,7 +18,8 @@ export default function Header() {
             text="xl sm:2xl ct-primary dark:ct-dark-text"
             font="bold"
             tracking="tight"
-            un-active="scale-0.95"
+            transition="transform duration-100"
+            active-scale="0.95"
             aria-label="CozyTrip 홈"
           >
             CozyTrip

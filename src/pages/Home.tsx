@@ -52,7 +52,7 @@ export default function Home() {
             <div mt="8" flex="~ wrap" gap="3">
               <a
                 href="/japan/tokyo/hotels/"
-                ct-button
+                className="ct-button"
                 bg="ct-primary"
                 text="white"
                 hover="bg-ct-primary-dark"
@@ -63,7 +63,7 @@ export default function Home() {
 
               <a
                 href="/guides/"
-                ct-button
+                className="ct-button"
                 border="~ ct-line dark:ct-dark-line"
                 bg="ct-surface dark:ct-dark-surface"
                 text="ct-text dark:ct-dark-text"

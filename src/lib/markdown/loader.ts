@@ -2,27 +2,29 @@ import type { MarkdownDocument } from "../../types/markdown";
 
 import { parseMarkdown } from "./parser";
 
-const hotelMarkdownModules = import.meta.glob("../../content/hotels/**/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
-});
+type MarkdownModule = Record<string, string>;
 
-const guideMarkdownModules = import.meta.glob("../../content/guides/**/*.md", {
-  eager: true,
-  query: "?raw",
-  import: "default",
-});
+const hotelMarkdownModules =
+  typeof import.meta.glob === "function"
+    ? import.meta.glob<string>("../../content/hotels/**/*.md", {
+        eager: true,
+        query: "?raw",
+        import: "default",
+      })
+    : ({} as MarkdownModule);
 
-function loadDocuments(modules: Record<string, unknown>): MarkdownDocument[] {
+const guideMarkdownModules =
+  typeof import.meta.glob === "function"
+    ? import.meta.glob<string>("../../content/guides/**/*.md", {
+        eager: true,
+        query: "?raw",
+        import: "default",
+      })
+    : ({} as MarkdownModule);
+
+function loadDocuments(modules: MarkdownModule): MarkdownDocument[] {
   return Object.entries(modules)
-    .map(([sourcePath, source]) => {
-      if (typeof source !== "string") {
-        throw new Error(`Markdown source가 문자열이 아닙니다: ${sourcePath}`);
-      }
-
-      return parseMarkdown(source, sourcePath);
-    })
+    .map(([sourcePath, source]) => parseMarkdown(source, sourcePath))
     .sort((a, b) =>
       b.frontmatter.publishedAt.localeCompare(a.frontmatter.publishedAt),
     );
@@ -32,7 +34,9 @@ export const hotelDocuments = loadDocuments(hotelMarkdownModules);
 
 export const guideDocuments = loadDocuments(guideMarkdownModules);
 
-export const markdownDocuments = [...hotelDocuments, ...guideDocuments];
+export const markdownDocuments = [...guideDocuments, ...hotelDocuments].sort(
+  (a, b) => b.frontmatter.publishedAt.localeCompare(a.frontmatter.publishedAt),
+);
 
 export function getMarkdownById(id: string): MarkdownDocument | undefined {
   return markdownDocuments.find((document) => document.frontmatter.id === id);
