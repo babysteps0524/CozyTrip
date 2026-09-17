@@ -8,6 +8,19 @@ import { parseMarkdown } from "../../src/lib/markdown/parser";
 
 import { parsePostBlocks } from "../../src/lib/markdown/blockParser";
 
+import { getHotelById } from "../../src/data/hotels";
+
+import { hotelPostToPost } from "../../src/lib/post";
+
+import generatedHotelPosts from "../../src/data/generated/hotel-posts.generated.json";
+
+interface GeneratedHotelPostsFile {
+  generatedAt: string;
+  source: "ai";
+  postCount: number;
+  posts: import("../../src/types").HotelPost[];
+}
+
 const projectRoot = process.cwd();
 
 const contentRoot = join(projectRoot, "src", "content");
@@ -24,7 +37,6 @@ async function getMarkdownFiles(directory: string): Promise<string[]> {
 
     if (entry.isDirectory()) {
       files.push(...(await getMarkdownFiles(fullPath)));
-
       continue;
     }
 
@@ -38,16 +50,12 @@ async function getMarkdownFiles(directory: string): Promise<string[]> {
 
 async function loadDirectory(directory: string): Promise<MarkdownDocument[]> {
   const absoluteDirectory = join(contentRoot, directory);
-
   const files = await getMarkdownFiles(absoluteDirectory);
-
   const documents: MarkdownDocument[] = [];
 
   for (const filePath of files) {
     const source = await readFile(filePath, "utf8");
-
     const document = parseMarkdown(source, filePath);
-
     documents.push(document);
   }
 
@@ -65,36 +73,64 @@ export async function loadMarkdownDocuments(): Promise<MarkdownDocument[]> {
   return [...guideDocuments, ...hotelDocuments];
 }
 
+function createPostFromMarkdown(document: MarkdownDocument): Post {
+  const { frontmatter, content } = document;
+
+  return {
+    id: frontmatter.id,
+    category: frontmatter.category,
+    title: frontmatter.title,
+    slug: frontmatter.slug,
+    description: frontmatter.description,
+    destinationId: frontmatter.destinationId,
+    hotelId: frontmatter.hotelId,
+    blocks: parsePostBlocks(content),
+    publishedAt: frontmatter.publishedAt,
+    updatedAt: frontmatter.updatedAt,
+    author: frontmatter.author,
+    tags: frontmatter.tags,
+  };
+}
+
+function loadGeneratedHotelPosts(): Post[] {
+  const source = generatedHotelPosts as GeneratedHotelPostsFile;
+
+  if (!Array.isArray(source.posts)) {
+    return [];
+  }
+
+  const posts: Post[] = [];
+
+  for (const hotelPost of source.posts) {
+    const hotel = getHotelById(hotelPost.hotelId);
+
+    if (!hotel) {
+      console.warn(
+        `Hotel not found for generated hotel post: ${hotelPost.hotelId}`,
+      );
+      continue;
+    }
+
+    posts.push(hotelPostToPost(hotelPost, hotel));
+  }
+
+  return posts;
+}
+
 export async function loadPosts(): Promise<Post[]> {
   const documents = await loadMarkdownDocuments();
+  const markdownPosts = documents.map(createPostFromMarkdown);
+  const generatedPosts = loadGeneratedHotelPosts();
 
-  return documents.map((document): Post => {
-    const { frontmatter, content } = document;
+  const postMap = new Map<string, Post>();
 
-    return {
-      id: frontmatter.id,
+  for (const post of markdownPosts) {
+    postMap.set(post.id, post);
+  }
 
-      category: frontmatter.category,
+  for (const post of generatedPosts) {
+    postMap.set(post.id, post);
+  }
 
-      title: frontmatter.title,
-
-      slug: frontmatter.slug,
-
-      description: frontmatter.description,
-
-      destinationId: frontmatter.destinationId,
-
-      hotelId: frontmatter.hotelId,
-
-      blocks: parsePostBlocks(content),
-
-      publishedAt: frontmatter.publishedAt,
-
-      updatedAt: frontmatter.updatedAt,
-
-      author: frontmatter.author,
-
-      tags: frontmatter.tags,
-    };
-  });
+  return Array.from(postMap.values());
 }
