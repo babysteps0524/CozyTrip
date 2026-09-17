@@ -14,7 +14,7 @@ export default function Footer() {
               text="lg ct-primary dark:ct-dark-text"
               font="bold"
               tracking="tight"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               CozyTrip
             </a>
@@ -32,7 +32,7 @@ export default function Footer() {
             <a
               href="/japan/tokyo/"
               hover="text-ct-primary"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               도쿄
             </a>
@@ -40,7 +40,7 @@ export default function Footer() {
             <a
               href="/japan/osaka/"
               hover="text-ct-primary"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               오사카
             </a>
@@ -48,12 +48,12 @@ export default function Footer() {
             <a
               href="/japan/kyoto/"
               hover="text-ct-primary"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               교토
             </a>
 
-            <a href="/guides/" hover="text-ct-primary" un-active="scale-0.95">
+            <a href="/guides/" hover="text-ct-primary" un-active="scale-98">
               여행 가이드
             </a>
           </div>

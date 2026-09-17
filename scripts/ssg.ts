@@ -14,7 +14,9 @@ import { hotels } from "../src/data/hotels";
 
 import { setRuntimePosts } from "../src/data/posts";
 
-import type { Post } from "../src/types";
+import { createSeoMetadata, SITE_NAME, SITE_URL } from "../src/lib/seo";
+
+import type { HotelImage, Post } from "../src/types";
 
 import { loadPosts } from "./lib/loadMarkdown";
 
@@ -48,6 +50,10 @@ function createRoutes(posts: Post[]): string[] {
   const routes = new Set<string>();
 
   routes.add("/");
+
+  routes.add(normalizeRoute("/japan"));
+
+  routes.add(normalizeRoute("/guides"));
 
   for (const destination of destinations) {
     routes.add(normalizeRoute(`/japan/${destination.slug}`));
@@ -108,6 +114,99 @@ function getEntryAssets(manifest: Manifest) {
   };
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
+function createAbsoluteImageUrl(image: HotelImage): string {
+  if (image.src.startsWith("http://") || image.src.startsWith("https://")) {
+    return image.src;
+  }
+
+  const normalizedSrc = image.src.startsWith("/") ? image.src : `/${image.src}`;
+
+  return `${SITE_URL}${normalizedSrc}`;
+}
+
+function injectSeoMetadata(html: string, route: string, posts: Post[]): string {
+  const seo = createSeoMetadata(route, destinations, hotels, posts);
+
+  const title = escapeHtml(seo.title);
+
+  const description = escapeHtml(seo.description);
+
+  const canonical = escapeHtml(seo.canonical);
+
+  const siteName = escapeHtml(SITE_NAME);
+
+  const tags: string[] = [
+    `<title>${title}</title>`,
+
+    `<meta name="description" content="${description}" />`,
+
+    `<link rel="canonical" href="${canonical}" />`,
+
+    `<meta property="og:type" content="${seo.ogType}" />`,
+
+    `<meta property="og:site_name" content="${siteName}" />`,
+
+    `<meta property="og:title" content="${title}" />`,
+
+    `<meta property="og:description" content="${description}" />`,
+
+    `<meta property="og:url" content="${canonical}" />`,
+
+    `<meta property="og:locale" content="ko_KR" />`,
+  ];
+
+  if (seo.image) {
+    const imageUrl = escapeHtml(createAbsoluteImageUrl(seo.image));
+
+    const imageAlt = escapeHtml(seo.image.alt);
+
+    tags.push(`<meta property="og:image" content="${imageUrl}" />`);
+
+    tags.push(
+      `<meta property="og:image:width" content="${seo.image.width}" />`,
+    );
+
+    tags.push(
+      `<meta property="og:image:height" content="${seo.image.height}" />`,
+    );
+
+    tags.push(`<meta property="og:image:alt" content="${imageAlt}" />`);
+
+    tags.push(`<meta name="twitter:image" content="${imageUrl}" />`);
+  }
+
+  tags.push(`<meta name="twitter:card" content="summary_large_image" />`);
+
+  tags.push(`<meta name="twitter:title" content="${title}" />`);
+
+  tags.push(`<meta name="twitter:description" content="${description}" />`);
+
+  let result = html;
+
+  result = result.replace(/<title>[\s\S]*?<\/title>/i, "");
+
+  result = result.replace(/<meta\s+name=["']description["'][^>]*>/gi, "");
+
+  result = result.replace(/<link\s+rel=["']canonical["'][^>]*>/gi, "");
+
+  result = result.replace(/<meta\s+property=["']og:[^"']+["'][^>]*>/gi, "");
+
+  result = result.replace(/<meta\s+name=["']twitter:[^"']+["'][^>]*>/gi, "");
+
+  result = result.replace("</head>", `    ${tags.join("\n    ")}\n  </head>`);
+
+  return result;
+}
+
 function injectAssets(html: string, script: string, css: string[]): string {
   const cssTags = css
     .map((file) => `<link rel="stylesheet" href="/${file}">`)
@@ -143,12 +242,16 @@ function createDocument(
 
   const appHtml = renderToString(appElement);
 
-  const html = template.replace(
+  let html = template.replace(
     '<div id="root"></div>',
     `<div id="root">${appHtml}</div>`,
   );
 
-  return injectAssets(html, script, css);
+  html = injectSeoMetadata(html, route, posts);
+
+  html = injectAssets(html, script, css);
+
+  return html;
 }
 
 async function writeRoute(route: string, html: string): Promise<void> {

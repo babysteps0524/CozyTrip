@@ -16,7 +16,7 @@ export default function DestinationCard({ destination }: DestinationCardProps) {
       bg="ct-surface dark:ct-dark-surface"
       transition="transform duration-150"
       hover="shadow-card"
-      un-active="scale-0.95"
+      un-active="scale-98"
     >
       <div
         min-h="40"

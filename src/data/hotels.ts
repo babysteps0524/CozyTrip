@@ -5,14 +5,19 @@ export const hotels: Hotel[] = [
     id: "sample-tokyo-hotel",
 
     name: "Sample Tokyo Hotel",
+
     nameEn: "Sample Tokyo Hotel",
+
     slug: "sample-tokyo-hotel",
 
     country: "일본",
+
     countryCode: "JP",
 
     prefecture: "Tokyo",
+
     city: "도쿄",
+
     area: "신주쿠",
 
     destinationId: "japan-tokyo",
@@ -21,9 +26,13 @@ export const hotels: Hotel[] = [
 
     location: {
       country: "일본",
+
       countryCode: "JP",
+
       prefecture: "Tokyo",
+
       city: "도쿄",
+
       area: "신주쿠",
 
       nearestStations: ["신주쿠역"],

@@ -36,7 +36,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             <a
               href="/"
               hover="text-ct-primary dark:text-ct-dark-text"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               홈
             </a>
@@ -48,7 +48,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             <a
               href={`/japan/${hotel.destinationId.replace("japan-", "")}/`}
               hover="text-ct-primary dark:text-ct-dark-text"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               {hotel.city}
             </a>
@@ -63,7 +63,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                 "",
               )}/hotels/`}
               hover="text-ct-primary dark:text-ct-dark-text"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               호텔
             </a>

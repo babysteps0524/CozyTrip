@@ -45,7 +45,7 @@ export default function MobileNavigation() {
         rounded="lg"
         text="ct-text dark:ct-dark-text"
         hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-        un-active="scale-0.95"
+        un-active="scale-98"
       >
         <span un-hidden={open ? "" : "~"} text="xl" aria-hidden="true">
           ×
@@ -88,7 +88,7 @@ export default function MobileNavigation() {
                 rounded="lg"
                 text="sm ct-text dark:ct-dark-text"
                 hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                un-active="scale-0.95"
+                un-active="scale-98"
                 onClick={() => setOpen(false)}
               >
                 {destination.name}
@@ -102,7 +102,7 @@ export default function MobileNavigation() {
               rounded="lg"
               text="sm ct-text dark:ct-dark-text"
               hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              un-active="scale-0.95"
+              un-active="scale-98"
               onClick={() => setOpen(false)}
             >
               여행 가이드

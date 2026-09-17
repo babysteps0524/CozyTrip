@@ -56,7 +56,7 @@ export default function Home() {
                 bg="ct-primary"
                 text="white"
                 hover="bg-ct-primary-dark"
-                un-active="scale-0.95"
+                un-active="scale-98"
               >
                 도쿄 호텔 보기
               </a>
@@ -68,7 +68,7 @@ export default function Home() {
                 bg="ct-surface dark:ct-dark-surface"
                 text="ct-text dark:ct-dark-text"
                 hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                un-active="scale-0.95"
+                un-active="scale-98"
               >
                 여행 가이드
               </a>
@@ -108,7 +108,7 @@ export default function Home() {
               href="/japan/"
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               전체 여행지 보기 →
             </a>
@@ -153,7 +153,7 @@ export default function Home() {
               href="/japan/tokyo/hotels/"
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               도쿄 호텔 전체 보기 →
             </a>
@@ -211,7 +211,7 @@ export default function Home() {
               href="/guides/"
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               전체 가이드 보기 →
             </a>
@@ -265,7 +265,7 @@ export default function Home() {
                   py="4"
                   text="sm center ct-text dark:ct-dark-text"
                   hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                  un-active="scale-0.95"
+                  un-active="scale-98"
                 >
                   {area}
                 </a>

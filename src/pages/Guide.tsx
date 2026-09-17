@@ -31,7 +31,7 @@ export default function Guide({ post }: GuideProps) {
               <a
                 href="/"
                 hover="text-ct-primary dark:text-ct-dark-text"
-                un-active="scale-0.95"
+                un-active="scale-98"
               >
                 홈
               </a>
@@ -43,7 +43,7 @@ export default function Guide({ post }: GuideProps) {
               <a
                 href="/guides/"
                 hover="text-ct-primary dark:text-ct-dark-text"
-                un-active="scale-0.95"
+                un-active="scale-98"
               >
                 여행 가이드
               </a>

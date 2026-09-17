@@ -29,6 +29,16 @@ function createRoutes(postSlugs: string[]): string[] {
   routes.add("/");
 
   /*
+   * Japan destination index
+   */
+  routes.add(normalizeRoute("/japan"));
+
+  /*
+   * Guide index
+   */
+  routes.add(normalizeRoute("/guides"));
+
+  /*
    * Destination pages
    */
   for (const destination of destinations) {

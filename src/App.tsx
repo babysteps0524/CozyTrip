@@ -7,6 +7,8 @@ import type { Hotel } from "./types";
 import { Footer, Header } from "./components/layout";
 
 import Home from "./pages/Home";
+import Japan from "./pages/Japan";
+import Guides from "./pages/Guides";
 import DestinationPage from "./pages/Destination";
 import HotelList from "./pages/HotelList";
 import HotelDetail from "./pages/HotelDetail";
@@ -106,6 +108,8 @@ export default function App({
 
   const isKnownRoute =
     path === "/" ||
+    path === "/japan" ||
+    path === "/guides" ||
     Boolean(destinationMatch && destination) ||
     Boolean(hotelListMatch && destination) ||
     isHotelDetail ||
@@ -123,6 +127,10 @@ export default function App({
 
       <main>
         {path === "/" && <Home />}
+
+        {path === "/japan" && <Japan />}
+
+        {path === "/guides" && <Guides />}
 
         {destinationMatch && destination && (
           <DestinationPage destination={destination} />
@@ -163,6 +171,7 @@ export default function App({
                   bg="ct-primary"
                   text="white"
                   hover="bg-ct-primary-dark"
+                  un-active="scale-0.95"
                 >
                   홈으로 돌아가기
                 </a>

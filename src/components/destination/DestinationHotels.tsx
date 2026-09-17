@@ -45,7 +45,7 @@ export default function DestinationHotels({
               href={`/japan/${destination.slug}/hotels/`}
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              un-active="scale-0.95"
+              un-active="scale-98"
             >
               호텔 전체 보기 →
             </a>

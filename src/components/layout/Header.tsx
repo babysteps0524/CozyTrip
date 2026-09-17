@@ -19,10 +19,10 @@ export default function Header() {
             font="bold"
             tracking="tight"
             transition="transform duration-100"
-            active-scale="0.95"
-            aria-label="CozyTrip 홈"
+            active-scale="98"
+            aria-label="CozyTrip 코지트립 홈"
           >
-            CozyTrip
+            CozyTrip 코지트립
           </a>
 
           <Navigation />

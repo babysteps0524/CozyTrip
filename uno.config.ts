@@ -76,7 +76,7 @@ export default defineConfig({
       "overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-card dark:border-ct-dark-line dark:bg-ct-dark-surface",
 
     "ct-button":
-      "inline-flex items-center justify-center rounded-xl px-4 py-2.5 font-medium transition-transform duration-150 active-scale-0.95",
+      "inline-flex items-center justify-center rounded-xl px-4 py-2.5 font-medium transition-transform duration-150 active-scale-95",
 
     "ct-focus":
       "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ct-primary focus-visible:ring-offset-2 dark:focus-visible:ring-offset-ct-dark-bg",
