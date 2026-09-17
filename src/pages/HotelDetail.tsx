@@ -1,6 +1,6 @@
 import type { Hotel } from "../types";
 
-import { getHotelsByDestination, getPostsByHotel } from "../data";
+import { getHotelPostByHotel, getHotelsByDestination, getPostsByHotel } from "../data";
 
 import { Container, Section } from "../components/common";
 
@@ -29,6 +29,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
     (item) => item.id !== hotel.id,
   );
   const relatedPosts = getPostsByHotel(hotel.id);
+  const hotelPost = getHotelPostByHotel(hotel.id);
 
   return (
     <>
@@ -52,11 +53,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             >
               홈
             </a>
-
-            <span px="1" aria-hidden="true">
-              /
-            </span>
-
+            <span px="1" aria-hidden="true">/</span>
             <a
               href={`/japan/${destinationSlug}/`}
               px="1"
@@ -67,11 +64,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             >
               {hotel.city}
             </a>
-
-            <span px="1" aria-hidden="true">
-              /
-            </span>
-
+            <span px="1" aria-hidden="true">/</span>
             <a
               href={`/japan/${destinationSlug}/hotels/`}
               px="1"
@@ -82,11 +75,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             >
               호텔
             </a>
-
-            <span px="1" aria-hidden="true">
-              /
-            </span>
-
+            <span px="1" aria-hidden="true">/</span>
             <span
               max-w="full"
               truncate
@@ -100,7 +89,6 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       </section>
 
       <HotelGallery images={hotel.images} />
-
       <HotelSummary hotel={hotel} />
 
       {relatedPosts.length > 0 ? (
@@ -121,11 +109,9 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               >
                 HOTEL GUIDE
               </p>
-
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 {hotel.name} 알아보기
               </h2>
-
               <p
                 mt="6"
                 mb="0"
@@ -143,15 +129,9 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section borderTop surface>
           <Container>
             <div>
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
                 ROOMS
               </p>
-
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 객실 정보
               </h2>
@@ -169,25 +149,13 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                   <h3 m="0" text="lg ct-text dark:ct-dark-text" font="bold">
                     {room.name}
                   </h3>
-
                   {room.description && (
-                    <p
-                      mt="3"
-                      mb="0"
-                      text="sm ct-text-soft dark:ct-dark-text-soft"
-                      leading="relaxed"
-                    >
+                    <p mt="3" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
                       {room.description}
                     </p>
                   )}
-
                   {(room.maxOccupancy || room.size || room.bedType) && (
-                    <div
-                      mt="5"
-                      flex="~ wrap"
-                      gap="2"
-                      text="xs ct-muted dark:ct-dark-muted"
-                    >
+                    <div mt="5" flex="~ wrap" gap="2" text="xs ct-muted dark:ct-dark-muted">
                       {room.maxOccupancy && (
                         <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
                           최대 {room.maxOccupancy}명
@@ -218,20 +186,13 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section>
           <Container>
             <div>
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
                 DINING
               </p>
-
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 레스토랑 · 다이닝
               </h2>
             </div>
-
             <div mt="8" grid="~ cols-1 md:2" gap="4 lg:6">
               {hotel.restaurants.map((restaurant) => (
                 <div
@@ -244,14 +205,8 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                   <h3 m="0" text="lg ct-text dark:ct-dark-text" font="bold">
                     {restaurant.name}
                   </h3>
-
                   {restaurant.description && (
-                    <p
-                      mt="3"
-                      mb="0"
-                      text="sm ct-text-soft dark:ct-dark-text-soft"
-                      leading="relaxed"
-                    >
+                    <p mt="3" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
                       {restaurant.description}
                     </p>
                   )}
@@ -262,7 +217,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         </Section>
       )}
 
-      {(hotel.checkIn || hotel.checkOut) && (
+      {hotelPost && hotelPost.faq.length > 0 && (
         <Section borderTop surface>
           <Container>
             <div max-w="3xl">
@@ -272,45 +227,70 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                 font="medium"
                 tracking="wide"
               >
+                FAQ
+              </p>
+              <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
+                자주 묻는 질문
+              </h2>
+
+              <div mt="8" flex="~ col" gap="3">
+                {hotelPost.faq.map((item) => (
+                  <details
+                    key={item.question}
+                    group
+                    rounded="xl"
+                    border="~ ct-line dark:ct-dark-line"
+                    bg="ct-surface dark:ct-dark-surface"
+                    overflow="hidden"
+                  >
+                    <summary
+                      px="5"
+                      py="4"
+                      cursor="pointer"
+                      text="sm lg:base ct-text dark:ct-dark-text"
+                      font="semibold"
+                      hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+                    >
+                      {item.question}
+                    </summary>
+                    <div
+                      border="t ct-line dark:ct-dark-line"
+                      px="5"
+                      py="4"
+                      text="sm ct-text-soft dark:ct-dark-text-soft"
+                      leading="relaxed"
+                    >
+                      {item.answer}
+                    </div>
+                  </details>
+                ))}
+              </div>
+            </div>
+          </Container>
+        </Section>
+      )}
+
+      {(hotel.checkIn || hotel.checkOut) && (
+        <Section borderTop>
+          <Container>
+            <div max-w="3xl">
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
                 USEFUL INFORMATION
               </p>
-
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 이용 안내
               </h2>
-
               <div mt="8" grid="~ cols-1 sm:2" gap="4">
                 {hotel.checkIn && (
-                  <div
-                    rounded="xl"
-                    border="~ ct-line dark:ct-dark-line"
-                    bg="ct-surface dark:ct-dark-surface"
-                    p="5"
-                  >
-                    <p m="0" text="sm ct-muted dark:ct-dark-muted">
-                      체크인
-                    </p>
-
-                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
-                      {hotel.checkIn}
-                    </p>
+                  <div rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="5">
+                    <p m="0" text="sm ct-muted dark:ct-dark-muted">체크인</p>
+                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">{hotel.checkIn}</p>
                   </div>
                 )}
-
                 {hotel.checkOut && (
-                  <div
-                    rounded="xl"
-                    border="~ ct-line dark:ct-dark-line"
-                    bg="ct-surface dark:ct-dark-surface"
-                    p="5"
-                  >
-                    <p m="0" text="sm ct-muted dark:ct-dark-muted">
-                      체크아웃
-                    </p>
-
-                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
-                      {hotel.checkOut}
-                    </p>
+                  <div rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="5">
+                    <p m="0" text="sm ct-muted dark:ct-dark-muted">체크아웃</p>
+                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">{hotel.checkOut}</p>
                   </div>
                 )}
               </div>
@@ -320,27 +300,19 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       )}
 
       <HotelLocation hotel={hotel} />
-
       <HotelBooking hotel={hotel} />
 
       {relatedPosts.length > 1 && (
         <Section>
           <Container>
             <div>
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
                 TRAVEL GUIDES
               </p>
-
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 관련 여행 가이드
               </h2>
             </div>
-
             <div mt="8" grid="~ cols-1 md:2 lg:3" gap="4 lg:6">
               {relatedPosts.slice(1, 4).map((post) => (
                 <PostCard key={post.id} post={post} />
