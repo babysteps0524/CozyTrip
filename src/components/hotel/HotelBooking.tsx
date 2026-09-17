@@ -68,7 +68,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                       py="4"
                       text="ct-text dark:ct-dark-text"
                       hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                      un-active="scale-0.95"
+                      active="scale-0.95"
                     >
                       <span min-w="0">
                         <span block text="base" font="bold">
@@ -80,8 +80,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                           block
                           text="sm ct-text-soft dark:ct-dark-text-soft"
                         >
-                          {affiliateLink.description ||
-                            providerConfig.description}
+                          {affiliateLink.description || providerConfig.description}
                         </span>
                       </span>
 
