@@ -22,6 +22,7 @@ export {
   getPostsByCategory,
   getPostsByDestination,
   getPostsByHotel,
+  getHotelPostByHotel,
 } from "./posts";
 
 export {
