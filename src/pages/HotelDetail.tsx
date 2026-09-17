@@ -9,6 +9,7 @@ import {
   HotelFacilities,
   HotelGallery,
   HotelLocation,
+  HotelRoomCard,
   HotelSummary,
   RelatedHotels,
 } from "../components/hotel";
@@ -43,45 +44,19 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             text="xs sm:sm ct-muted dark:ct-dark-muted"
             aria-label="Breadcrumb"
           >
-            <a
-              href="/"
-              px="1"
-              py="1"
-              rounded="md"
-              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="0.95"
-            >
+            <a href="/" px="1" py="1" rounded="md" hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft" active-scale="0.95">
               홈
             </a>
             <span px="1" aria-hidden="true">/</span>
-            <a
-              href={`/japan/${destinationSlug}/`}
-              px="1"
-              py="1"
-              rounded="md"
-              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="0.95"
-            >
+            <a href={`/japan/${destinationSlug}/`} px="1" py="1" rounded="md" hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft" active-scale="0.95">
               {hotel.city}
             </a>
             <span px="1" aria-hidden="true">/</span>
-            <a
-              href={`/japan/${destinationSlug}/hotels/`}
-              px="1"
-              py="1"
-              rounded="md"
-              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="0.95"
-            >
+            <a href={`/japan/${destinationSlug}/hotels/`} px="1" py="1" rounded="md" hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft" active-scale="0.95">
               호텔
             </a>
             <span px="1" aria-hidden="true">/</span>
-            <span
-              max-w="full"
-              truncate
-              text="ct-text-soft dark:ct-dark-text-soft"
-              aria-current="page"
-            >
+            <span max-w="full" truncate text="ct-text-soft dark:ct-dark-text-soft" aria-current="page">
               {hotel.name}
             </span>
           </nav>
@@ -101,23 +76,13 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section>
           <Container>
             <article max-w="3xl">
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
                 HOTEL GUIDE
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 {hotel.name} 알아보기
               </h2>
-              <p
-                mt="6"
-                mb="0"
-                text="base sm:lg ct-text-soft dark:ct-dark-text-soft"
-                leading="relaxed"
-              >
+              <p mt="6" mb="0" text="base sm:lg ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
                 {hotel.description}
               </p>
             </article>
@@ -139,41 +104,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
 
             <div mt="8" grid="~ cols-1 md:2" gap="4 lg:6">
               {hotel.rooms.map((room) => (
-                <div
-                  key={room.id ?? room.name}
-                  rounded="card"
-                  border="~ ct-line dark:ct-dark-line"
-                  bg="ct-surface dark:ct-dark-surface"
-                  p="6"
-                >
-                  <h3 m="0" text="lg ct-text dark:ct-dark-text" font="bold">
-                    {room.name}
-                  </h3>
-                  {room.description && (
-                    <p mt="3" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
-                      {room.description}
-                    </p>
-                  )}
-                  {(room.maxOccupancy || room.size || room.bedType) && (
-                    <div mt="5" flex="~ wrap" gap="2" text="xs ct-muted dark:ct-dark-muted">
-                      {room.maxOccupancy && (
-                        <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
-                          최대 {room.maxOccupancy}명
-                        </span>
-                      )}
-                      {room.size && (
-                        <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
-                          {room.size}㎡
-                        </span>
-                      )}
-                      {room.bedType && (
-                        <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
-                          {room.bedType}
-                        </span>
-                      )}
-                    </div>
-                  )}
-                </div>
+                <HotelRoomCard key={room.id ?? room.name} room={room} />
               ))}
             </div>
           </Container>
@@ -195,13 +126,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             </div>
             <div mt="8" grid="~ cols-1 md:2" gap="4 lg:6">
               {hotel.restaurants.map((restaurant) => (
-                <div
-                  key={restaurant.name}
-                  rounded="card"
-                  border="~ ct-line dark:ct-dark-line"
-                  bg="ct-surface dark:ct-dark-surface"
-                  p="6"
-                >
+                <div key={restaurant.name} rounded="card" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="6">
                   <h3 m="0" text="lg ct-text dark:ct-dark-text" font="bold">
                     {restaurant.name}
                   </h3>
@@ -221,45 +146,19 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Section borderTop surface>
           <Container>
             <div max-w="3xl">
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
                 FAQ
               </p>
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
                 자주 묻는 질문
               </h2>
-
               <div mt="8" flex="~ col" gap="3">
                 {hotelPost.faq.map((item) => (
-                  <details
-                    key={item.question}
-                    group
-                    rounded="xl"
-                    border="~ ct-line dark:ct-dark-line"
-                    bg="ct-surface dark:ct-dark-surface"
-                    overflow="hidden"
-                  >
-                    <summary
-                      px="5"
-                      py="4"
-                      cursor="pointer"
-                      text="sm lg:base ct-text dark:ct-dark-text"
-                      font="semibold"
-                      hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                    >
+                  <details key={item.question} rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" overflow="hidden">
+                    <summary px="5" py="4" cursor="pointer" text="sm lg:base ct-text dark:ct-dark-text" font="semibold" hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft">
                       {item.question}
                     </summary>
-                    <div
-                      border="t ct-line dark:ct-dark-line"
-                      px="5"
-                      py="4"
-                      text="sm ct-text-soft dark:ct-dark-text-soft"
-                      leading="relaxed"
-                    >
+                    <div border="t ct-line dark:ct-dark-line" px="5" py="4" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
                       {item.answer}
                     </div>
                   </details>
