@@ -1,5 +1,4 @@
 import type { Hotel, HotelPost } from "../../types";
-import { AIProviderError } from "./types";
 
 export interface HotelPostValidationOptions {
   availableImages?: Hotel["images"];
@@ -75,10 +74,6 @@ export function validateHotelPost(
         throw new Error(`Post references an image without confirmed rights: ${imageId}`);
       }
 
-      if (referencedIds.has(imageId)) {
-        throw new Error(`Image is referenced more than once: ${imageId}`);
-      }
-
       referencedIds.add(imageId);
     }
 
@@ -128,6 +123,6 @@ export function validateHotelPost(
     return post;
   } catch (error) {
     const message = error instanceof Error ? error.message : "Invalid HotelPost.";
-    throw new AIProviderError("validation", `HotelPost validation failed: ${message}`);
+    throw new Error(`HotelPost validation failed: ${message}`);
   }
 }
