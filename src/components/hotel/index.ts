@@ -12,4 +12,6 @@ export { default as HotelBooking } from "./HotelBooking";
 
 export { default as HotelRoomCard } from "./HotelRoomCard";
 
+export { default as HotelRestaurantCard } from "./HotelRestaurantCard";
+
 export { default as RelatedHotels } from "./RelatedHotels";
