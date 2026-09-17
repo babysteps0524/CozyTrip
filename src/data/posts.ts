@@ -1,37 +1,64 @@
-import type { MarkdownDocument, Post } from "../types";
+import type { HotelPost, MarkdownDocument, Post } from "../types";
+
+import { hotelPostToPost } from "../lib/post";
 
 import { guideDocuments, hotelDocuments } from "../lib/markdown";
 
 import { parsePostBlocks } from "../lib/markdown";
+
+import generatedHotelPosts from "./generated/hotel-posts.generated.json";
+
+import { getHotelById } from "./hotels";
+
+interface GeneratedHotelPostsFile {
+  generatedAt: string;
+  source: "ai";
+  postCount: number;
+  posts: HotelPost[];
+}
 
 function createPostFromMarkdown(document: MarkdownDocument): Post {
   const { frontmatter, content } = document;
 
   return {
     id: frontmatter.id,
-
     category: frontmatter.category,
-
     title: frontmatter.title,
-
     slug: frontmatter.slug,
-
     description: frontmatter.description,
-
     destinationId: frontmatter.destinationId,
-
     hotelId: frontmatter.hotelId,
-
     blocks: parsePostBlocks(content),
-
     publishedAt: frontmatter.publishedAt,
-
     updatedAt: frontmatter.updatedAt,
-
     author: frontmatter.author,
-
     tags: frontmatter.tags,
   };
+}
+
+function createPostsFromGeneratedHotelPosts(): Post[] {
+  const source = generatedHotelPosts as GeneratedHotelPostsFile;
+
+  if (!Array.isArray(source.posts)) {
+    return [];
+  }
+
+  const posts: Post[] = [];
+
+  for (const hotelPost of source.posts) {
+    const hotel = getHotelById(hotelPost.hotelId);
+
+    if (!hotel) {
+      console.warn(
+        `Hotel not found for generated hotel post: ${hotelPost.hotelId}`,
+      );
+      continue;
+    }
+
+    posts.push(hotelPostToPost(hotelPost, hotel));
+  }
+
+  return posts;
 }
 
 const markdownDocuments: MarkdownDocument[] = [
@@ -39,7 +66,20 @@ const markdownDocuments: MarkdownDocument[] = [
   ...hotelDocuments,
 ];
 
-const loadedPosts: Post[] = markdownDocuments.map(createPostFromMarkdown);
+const markdownPosts: Post[] = markdownDocuments.map(createPostFromMarkdown);
+const generatedHotelPostsList = createPostsFromGeneratedHotelPosts();
+
+const postMapById = new Map<string, Post>();
+
+for (const post of markdownPosts) {
+  postMapById.set(post.id, post);
+}
+
+for (const post of generatedHotelPostsList) {
+  postMapById.set(post.id, post);
+}
+
+const loadedPosts: Post[] = Array.from(postMapById.values());
 
 let runtimePosts: Post[] | null = null;
 
