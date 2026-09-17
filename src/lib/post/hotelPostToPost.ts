@@ -4,6 +4,10 @@ function toImageMap(images: HotelImage[]): Map<string, HotelImage> {
   return new Map(images.map((image) => [image.id, image]));
 }
 
+function isUsableImage(image: HotelImage | undefined): image is HotelImage {
+  return Boolean(image?.src && image.rightsConfirmed);
+}
+
 function addImage(
   blocks: PostBlock[],
   imageId: string | undefined,
@@ -14,21 +18,35 @@ function addImage(
 
   const image = imageMap.get(imageId);
 
-  if (!image || !image.src || !image.rightsConfirmed) return false;
+  if (!isUsableImage(image)) return false;
 
   blocks.push({ type: "image", image });
   usedImageIds.add(imageId);
   return true;
 }
 
-function addImages(
+function addGallery(
   blocks: PostBlock[],
-  imageIds: string[] | undefined,
+  imageIds: string[],
   imageMap: Map<string, HotelImage>,
   usedImageIds: Set<string>,
 ): void {
-  for (const imageId of imageIds ?? []) {
-    addImage(blocks, imageId, imageMap, usedImageIds);
+  const images = imageIds
+    .filter((imageId) => !usedImageIds.has(imageId))
+    .map((imageId) => imageMap.get(imageId))
+    .filter(isUsableImage);
+
+  if (images.length < 2) {
+    for (const image of images) {
+      addImage(blocks, image.id, imageMap, usedImageIds);
+    }
+    return;
+  }
+
+  blocks.push({ type: "gallery", images });
+
+  for (const image of images) {
+    usedImageIds.add(image.id);
   }
 }
 
@@ -37,39 +55,88 @@ function getHeroImageId(
   images: HotelImage[],
 ): string | undefined {
   const imageMap = toImageMap(images);
-  const candidates = [
-    ...post.imageIds,
-    ...images.filter((image) => image.type === "hero").map((image) => image.id),
-    ...images.map((image) => image.id),
+  const heroId = images.find((image) => image.type === "hero")?.id;
+
+  if (isUsableImage(imageMap.get(heroId))) {
+    return heroId;
+  }
+
+  return post.imageIds.find((id) => isUsableImage(imageMap.get(id)));
+}
+
+function getFallbackImageIds(
+  images: HotelImage[],
+  usedImageIds: Set<string>,
+): string[] {
+  const preferredTypes = [
+    "gallery",
+    "room",
+    "facility",
+    "restaurant",
+    "location",
+    "attraction",
   ];
 
-  return candidates.find((id) => {
-    const image = imageMap.get(id);
-    return Boolean(image?.src && image.rightsConfirmed);
-  });
+  const result: string[] = [];
+
+  for (const type of preferredTypes) {
+    for (const image of images) {
+      if (
+        image.type === type &&
+        isUsableImage(image) &&
+        !usedImageIds.has(image.id) &&
+        !result.includes(image.id)
+      ) {
+        result.push(image.id);
+      }
+    }
+  }
+
+  return result;
 }
 
 function getSectionImageIds(
   post: HotelPost,
   images: HotelImage[],
+  usedImageIds: Set<string>,
 ): string[][] {
   const imageMap = toImageMap(images);
-  const preferredByType = new Map<string, string[]>();
+  const fallbackIds = getFallbackImageIds(images, usedImageIds);
+  let fallbackIndex = 0;
 
-  for (const image of images) {
-    if (!image.rightsConfirmed || !image.src) continue;
-    const current = preferredByType.get(image.type) ?? [];
-    current.push(image.id);
-    preferredByType.set(image.type, current);
-  }
+  return post.sections.map((section) => {
+    const requested = (section.imageIds ?? []).filter((id) => {
+      return isUsableImage(imageMap.get(id)) && !usedImageIds.has(id);
+    });
 
-  return post.sections.map((section, index) => {
-    const requested = (section.imageIds ?? []).filter((id) => imageMap.has(id));
-    if (requested.length > 0) return requested;
+    if (requested.length > 0) {
+      return requested;
+    }
 
-    const preferredTypes = ["gallery", "room", "facility", "restaurant", "location"];
-    const preferredType = preferredTypes[index % preferredTypes.length];
-    return preferredByType.get(preferredType) ?? [];
+    while (
+      fallbackIndex < fallbackIds.length &&
+      usedImageIds.has(fallbackIds[fallbackIndex])
+    ) {
+      fallbackIndex += 1;
+    }
+
+    if (fallbackIndex >= fallbackIds.length) {
+      return [];
+    }
+
+    const fallbackId = fallbackIds[fallbackIndex];
+    fallbackIndex += 1;
+    return [fallbackId];
+  });
+}
+
+function getRemainingPostImageIds(
+  post: HotelPost,
+  imageMap: Map<string, HotelImage>,
+  usedImageIds: Set<string>,
+): string[] {
+  return post.imageIds.filter((imageId) => {
+    return isUsableImage(imageMap.get(imageId)) && !usedImageIds.has(imageId);
   });
 }
 
@@ -94,7 +161,7 @@ export function createHotelPostBlocks(
     });
   }
 
-  const sectionImageIds = getSectionImageIds(post, images);
+  const sectionImageIds = getSectionImageIds(post, images, usedImageIds);
 
   for (let index = 0; index < post.sections.length; index += 1) {
     const section = post.sections[index];
@@ -114,7 +181,25 @@ export function createHotelPostBlocks(
       }
     }
 
-    addImages(blocks, sectionImageIds[index], imageMap, usedImageIds);
+    const requestedImages = sectionImageIds[index];
+
+    if (requestedImages.length > 1) {
+      addGallery(blocks, requestedImages, imageMap, usedImageIds);
+    } else {
+      addImage(blocks, requestedImages[0], imageMap, usedImageIds);
+    }
+  }
+
+  const remainingPostImages = getRemainingPostImageIds(
+    post,
+    imageMap,
+    usedImageIds,
+  );
+
+  if (remainingPostImages.length > 1) {
+    addGallery(blocks, remainingPostImages, imageMap, usedImageIds, );
+  } else {
+    addImage(blocks, remainingPostImages[0], imageMap, usedImageIds);
   }
 
   if (post.faq.length > 0) {
