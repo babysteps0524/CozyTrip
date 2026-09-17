@@ -2,6 +2,7 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Hotel, HotelImage, HotelPost, HotelPostGenerationInput } from "../src/types";
 import { generateHotelPost, getConfiguredAIProviders } from "../src/lib/ai";
+import { validateHotelPost } from "../src/lib/ai/validate";
 import {
   formatHotelValidationFailure,
   validateHotelData,
@@ -262,13 +263,17 @@ async function main(): Promise<void> {
         generatedBy: result.provider,
       };
 
+      validateHotelPost(post, hotel, { availableImages: input.images });
       generatedPosts.push(post);
       successCount += 1;
-      console.log(`Generated with ${result.provider}: ${post.title}`);
+      console.log(`Generated and validated with ${result.provider}: ${post.title}`);
     } catch (error) {
       failureCount += 1;
+      if (error instanceof Error && error.message.includes("HotelPost validation failed")) {
+        validationFailureCount += 1;
+      }
       console.error(
-        `Failed to generate ${hotel.name}:`,
+        `Failed to generate or validate ${hotel.name}:`,
         error instanceof Error ? error.message : error,
       );
     }
