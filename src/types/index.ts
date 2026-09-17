@@ -29,3 +29,10 @@ export type {
 } from "./post";
 
 export type { MarkdownFrontmatter, MarkdownDocument } from "./markdown";
+
+export type {
+  HotelPost,
+  HotelPostSection,
+  HotelPostFaqItem,
+  HotelPostGenerationInput,
+} from "./hotel-post";
