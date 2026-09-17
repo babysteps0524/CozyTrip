@@ -12,13 +12,11 @@ import { destinations } from "../src/data/destinations";
 
 import { hotels } from "../src/data/hotels";
 
-import { setRuntimePosts } from "../src/data/posts";
+import { posts, setRuntimePosts } from "../src/data/posts";
 
 import { createSeoMetadata, SITE_NAME, SITE_URL } from "../src/lib/seo";
 
 import type { HotelImage, Post } from "../src/types";
-
-import { loadPosts } from "./lib/loadMarkdown";
 
 const distDir = join(process.cwd(), "dist");
 
@@ -265,13 +263,13 @@ async function writeRoute(route: string, html: string): Promise<void> {
 }
 
 async function main(): Promise<void> {
-  console.log("Loading Markdown content...");
+  console.log("Loading generated and Markdown content...");
 
-  const posts = await loadPosts();
+  const loadedPosts = posts;
 
-  console.log(`Loaded ${posts.length} post(s).`);
+  console.log(`Loaded ${loadedPosts.length} post(s).`);
 
-  setRuntimePosts(posts);
+  setRuntimePosts(loadedPosts);
 
   const template = await readFile(indexPath, "utf8");
 
@@ -279,12 +277,18 @@ async function main(): Promise<void> {
 
   const { script, css } = getEntryAssets(manifest);
 
-  const routes = createRoutes(posts);
+  const routes = createRoutes(loadedPosts);
 
   console.log(`Generating ${routes.length} route(s)...`);
 
   for (const route of routes) {
-    const html = createDocument(template, route, posts, script, css);
+    const html = createDocument(
+      template,
+      route,
+      loadedPosts,
+      script,
+      css,
+    );
 
     await writeRoute(route, html);
 
