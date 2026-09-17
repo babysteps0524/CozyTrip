@@ -1,20 +1,11 @@
 import type { Hotel } from "../../types";
 
+import { getAffiliateProviderConfig } from "../../lib/affiliate";
 import { Container } from "../common";
 
 interface HotelBookingProps {
   hotel: Hotel;
 }
-
-const providerNames: Record<string, string> = {
-  rakuten: "Rakuten Travel",
-  agoda: "Agoda",
-};
-
-const providerDescriptions: Record<string, string> = {
-  rakuten: "일본 호텔 예약",
-  agoda: "호텔 가격 및 예약 확인",
-};
 
 export default function HotelBooking({ hotel }: HotelBookingProps) {
   const affiliateLinks = hotel.affiliateLinks ?? [];
@@ -55,13 +46,9 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
             {affiliateLinks.length > 0 ? (
               <div mt="6" grid="~ cols-1 sm:2" gap="3">
                 {affiliateLinks.map((affiliateLink) => {
-                  const provider =
-                    providerNames[affiliateLink.provider] ??
-                    affiliateLink.provider;
-
-                  const description =
-                    providerDescriptions[affiliateLink.provider] ??
-                    "호텔 예약 정보 확인";
+                  const providerConfig = getAffiliateProviderConfig(
+                    affiliateLink.provider,
+                  );
 
                   return (
                     <a
@@ -85,7 +72,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                     >
                       <span min-w="0">
                         <span block text="base" font="bold">
-                          {provider}
+                          {affiliateLink.label || providerConfig.name}
                         </span>
 
                         <span
@@ -93,7 +80,8 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                           block
                           text="sm ct-text-soft dark:ct-dark-text-soft"
                         >
-                          {description}
+                          {affiliateLink.description ||
+                            providerConfig.description}
                         </span>
                       </span>
 

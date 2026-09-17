@@ -77,7 +77,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         </Container>
       </section>
 
-      <HotelGallery hotel={hotel} />
+      <HotelGallery images={hotel.images} />
 
       <HotelSummary hotel={hotel} />
 

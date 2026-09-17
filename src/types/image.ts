@@ -20,18 +20,27 @@ export interface ResponsiveImageVariant {
 
 export interface HotelImage {
   id: string;
+
   src: string;
+
   alt: string;
 
-  width: number;
-  height: number;
+  /**
+   * API에서 실제 이미지 크기를 제공하지 않는 경우
+   * 생략할 수 있다.
+   */
+  width?: number;
+
+  height?: number;
 
   source: ImageSource;
+
   type: ImageType;
 
   hotelId?: string;
 
   credit?: string;
+
   sourceUrl?: string;
 
   rightsConfirmed: boolean;

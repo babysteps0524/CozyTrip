@@ -1,87 +1,140 @@
-import type { Hotel } from "../../types";
+import { useState } from "react";
 
-import { Image } from "../common";
+import type { HotelImage } from "../../types";
 
 interface HotelGalleryProps {
-  hotel: Hotel;
+  images: HotelImage[];
 }
 
-export default function HotelGallery({ hotel }: HotelGalleryProps) {
-  const images = hotel.images.filter(
-    (image) => image.src && image.rightsConfirmed,
-  );
+function getVisibleImages(images: HotelImage[]): HotelImage[] {
+  return images.filter((image) => {
+    return image.rightsConfirmed && Boolean(image.src);
+  });
+}
 
-  if (images.length === 0) {
+function getImageAspectRatio(image: HotelImage): string {
+  if (image.width && image.height && image.width > 0 && image.height > 0) {
+    return `${image.width} / ${image.height}`;
+  }
+
+  return "16 / 10";
+}
+
+export default function HotelGallery({ images }: HotelGalleryProps) {
+  const visibleImages = getVisibleImages(images);
+
+  const [selectedIndex, setSelectedIndex] = useState(0);
+
+  if (visibleImages.length === 0) {
     return (
-      <section>
+      <section
+        aria-label="호텔 이미지"
+        bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+      >
         <div
-          min-h="56 sm:80 lg:96"
+          aspect="[16/10]"
           flex="~"
           items="center"
           justify="center"
-          bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+          rounded="card"
+          border="~ ct-line dark:ct-dark-line"
+          bg="ct-surface dark:bg-ct-dark-surface"
           text="sm ct-muted dark:ct-dark-muted"
         >
-          <div text="center">
-            <p m="0" font="medium">
-              Hotel Image
-            </p>
-
-            <p mt="2" mb="0" text="xs ct-muted dark:ct-dark-muted">
-              등록된 호텔 이미지가 없습니다.
-            </p>
-          </div>
+          호텔 이미지를 준비 중입니다.
         </div>
       </section>
     );
   }
 
-  const heroImage = images[0];
-
-  const thumbnails = images.slice(1, 5);
+  const selectedImage =
+    visibleImages[Math.min(selectedIndex, visibleImages.length - 1)];
 
   return (
-    <section>
-      <div grid="~ cols-1 lg:2" gap="2">
+    <section aria-label="호텔 이미지">
+      <div
+        overflow="hidden"
+        rounded="card"
+        border="~ ct-line dark:ct-dark-line"
+        bg="ct-surface dark:bg-ct-dark-surface"
+      >
         <div
+          relative
           overflow="hidden"
           bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-          aspect="16/10"
+          style={{
+            aspectRatio: getImageAspectRatio(selectedImage),
+          }}
         >
-          <Image
-            src={heroImage.src}
-            alt={heroImage.alt}
-            width={heroImage.width}
-            height={heroImage.height}
-            image={heroImage}
-            loading="eager"
-            fetchPriority="high"
-            aspectRatio="16/10"
+          <img
+            src={selectedImage.src}
+            alt={selectedImage.alt}
+            width={selectedImage.width || 1600}
+            height={selectedImage.height || 1000}
+            loading={selectedIndex === 0 ? "eager" : "lazy"}
+            decoding="async"
+            fetchPriority={selectedIndex === 0 ? "high" : "auto"}
+            w="full"
+            h="full"
+            object="cover"
           />
         </div>
-
-        {thumbnails.length > 0 && (
-          <div grid="~ cols-2" gap="2">
-            {thumbnails.map((image) => (
-              <div
-                key={image.id}
-                overflow="hidden"
-                bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-                aspect="16/10"
-              >
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={image.width}
-                  height={image.height}
-                  image={image}
-                  aspectRatio="16/10"
-                />
-              </div>
-            ))}
-          </div>
-        )}
       </div>
+
+      {visibleImages.length > 1 && (
+        <div
+          mt="3"
+          flex="~"
+          gap="2"
+          overflow-x="auto"
+          pb="1"
+          snap="x mandatory"
+        >
+          {visibleImages.map((image, index) => {
+            const selected = index === selectedIndex;
+
+            return (
+              <button
+                key={image.id}
+                type="button"
+                aria-label={`${index + 1}번째 호텔 이미지 보기`}
+                aria-pressed={selected}
+                onClick={() => setSelectedIndex(index)}
+                shrink="0"
+                w="24"
+                h="18"
+                overflow="hidden"
+                rounded="lg"
+                border={
+                  selected ? "~ 2 ct-primary" : "~ ct-line dark:ct-dark-line"
+                }
+                bg="ct-surface dark:bg-ct-dark-surface"
+                opacity={selected ? "100" : "70"}
+                hover="opacity-100"
+                un-active="scale-0.95"
+                snap="start"
+              >
+                <img
+                  src={image.src}
+                  alt=""
+                  aria-hidden="true"
+                  width={image.width || 160}
+                  height={image.height || 120}
+                  loading="lazy"
+                  decoding="async"
+                  w="full"
+                  h="full"
+                  object="cover"
+                />
+              </button>
+            );
+          })}
+        </div>
+      )}
+
+      <p mt="2" mb="0" text="xs ct-muted dark:ct-dark-muted">
+        {selectedIndex + 1} / {visibleImages.length}
+      </p>
     </section>
   );
 }

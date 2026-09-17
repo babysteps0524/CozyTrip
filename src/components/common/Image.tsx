@@ -1,27 +1,16 @@
-import type { ImgHTMLAttributes } from "react";
-
 import type { HotelImage } from "../../types";
 
-import { getResponsiveImageSources, getImageSizes } from "../../lib/images";
-
-interface ImageProps extends Omit<
-  ImgHTMLAttributes<HTMLImageElement>,
-  "src" | "alt" | "width" | "height" | "srcSet" | "sizes"
-> {
+interface ImageProps {
   src: string;
   alt: string;
-  width: number;
-  height: number;
-
+  width?: number;
+  height?: number;
   image?: HotelImage;
-
-  loading?: "lazy" | "eager";
-
-  fetchPriority?: "high" | "low" | "auto";
-
   aspectRatio?: string;
-
-  sizes?: string;
+  loading?: "lazy" | "eager";
+  decoding?: "async" | "sync" | "auto";
+  fetchPriority?: "high" | "low" | "auto";
+  className?: string;
 }
 
 export default function Image({
@@ -29,39 +18,37 @@ export default function Image({
   alt,
   width,
   height,
-  image,
+  aspectRatio,
   loading = "lazy",
-  fetchPriority,
-  aspectRatio = "auto",
-  sizes,
-  ...props
+  decoding = "async",
+  fetchPriority = "auto",
+  className,
 }: ImageProps) {
-  const responsiveSources = image
-    ? getResponsiveImageSources(image)
-    : undefined;
-
-  const resolvedSrc = responsiveSources?.src ?? src;
-
-  const resolvedSrcSet = responsiveSources?.srcSet;
-
-  const resolvedSizes =
-    sizes ?? (image ? getImageSizes(image.type) : undefined);
-
   return (
-    <img
-      src={resolvedSrc}
-      srcSet={resolvedSrcSet}
-      sizes={resolvedSizes}
-      alt={alt}
-      width={width}
-      height={height}
-      loading={loading}
-      fetchPriority={fetchPriority}
-      aspect-ratio={aspectRatio}
+    <div
       w="full"
-      h="auto"
-      object="cover"
-      {...props}
-    />
+      overflow="hidden"
+      style={
+        aspectRatio
+          ? {
+              aspectRatio,
+            }
+          : undefined
+      }
+    >
+      <img
+        src={src}
+        alt={alt}
+        width={width || 1200}
+        height={height || 800}
+        loading={loading}
+        decoding={decoding}
+        fetchPriority={fetchPriority}
+        className={className}
+        w="full"
+        h="full"
+        object="cover"
+      />
+    </div>
   );
 }
