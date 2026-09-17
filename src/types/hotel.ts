@@ -30,8 +30,14 @@ export interface HotelFacility {
 }
 
 export interface HotelRestaurant {
+  id?: string;
   name: string;
   description?: string;
+  cuisine?: string;
+  mealTypes?: string[];
+  openingHours?: string;
+  location?: string;
+  images?: HotelImage[];
 }
 
 export interface Hotel {
