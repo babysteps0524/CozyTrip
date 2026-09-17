@@ -75,6 +75,10 @@ export function validateHotelPost(
         throw new Error(`Post references an image without confirmed rights: ${imageId}`);
       }
 
+      if (referencedIds.has(imageId)) {
+        throw new Error(`Image is referenced more than once: ${imageId}`);
+      }
+
       referencedIds.add(imageId);
     }
 
@@ -114,10 +118,6 @@ export function validateHotelPost(
 
         referencedIds.add(imageId);
       }
-    }
-
-    if (post.imageIds.length > 0 && post.sections.every((section) => (section.imageIds ?? []).length === 0)) {
-      throw new Error("post.imageIds contains images but sections contain no inline images.");
     }
 
     for (const item of post.faq) {
