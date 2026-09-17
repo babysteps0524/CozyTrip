@@ -19,60 +19,82 @@ interface HotelDetailProps {
   hotel: Hotel;
 }
 
-export default function HotelDetail({ hotel }: HotelDetailProps) {
-  const relatedHotels = getHotelsByDestination(hotel.destinationId);
+function getDestinationSlug(hotel: Hotel): string {
+  return hotel.destinationId.replace("japan-", "");
+}
 
+export default function HotelDetail({ hotel }: HotelDetailProps) {
+  const destinationSlug = getDestinationSlug(hotel);
+  const relatedHotels = getHotelsByDestination(hotel.destinationId).filter(
+    (item) => item.id !== hotel.id,
+  );
   const relatedPosts = getPostsByHotel(hotel.id);
 
   return (
     <>
-      <section>
+      <section border="b ct-line dark:ct-dark-line">
         <Container>
           <nav
-            py="5"
+            py="4 sm:5"
+            flex="~ wrap"
+            items="center"
+            gap="1"
             text="xs sm:sm ct-muted dark:ct-dark-muted"
             aria-label="Breadcrumb"
           >
             <a
               href="/"
-              hover="text-ct-primary dark:text-ct-dark-text"
-              un-active="scale-98"
+              px="1"
+              py="1"
+              rounded="md"
+              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+              active-scale="0.95"
             >
               홈
             </a>
 
-            <span mx="2" aria-hidden="true">
+            <span px="1" aria-hidden="true">
               /
             </span>
 
             <a
-              href={`/japan/${hotel.destinationId.replace("japan-", "")}/`}
-              hover="text-ct-primary dark:text-ct-dark-text"
-              un-active="scale-98"
+              href={`/japan/${destinationSlug}/`}
+              px="1"
+              py="1"
+              rounded="md"
+              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+              active-scale="0.95"
             >
               {hotel.city}
             </a>
 
-            <span mx="2" aria-hidden="true">
+            <span px="1" aria-hidden="true">
               /
             </span>
 
             <a
-              href={`/japan/${hotel.destinationId.replace(
-                "japan-",
-                "",
-              )}/hotels/`}
-              hover="text-ct-primary dark:text-ct-dark-text"
-              un-active="scale-98"
+              href={`/japan/${destinationSlug}/hotels/`}
+              px="1"
+              py="1"
+              rounded="md"
+              hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
+              active-scale="0.95"
             >
               호텔
             </a>
 
-            <span mx="2" aria-hidden="true">
+            <span px="1" aria-hidden="true">
               /
             </span>
 
-            <span text="ct-text-soft dark:ct-dark-text-soft">{hotel.name}</span>
+            <span
+              max-w="full"
+              truncate
+              text="ct-text-soft dark:ct-dark-text-soft"
+              aria-current="page"
+            >
+              {hotel.name}
+            </span>
           </nav>
         </Container>
       </section>
@@ -138,7 +160,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             <div mt="8" grid="~ cols-1 md:2" gap="4 lg:6">
               {hotel.rooms.map((room) => (
                 <div
-                  key={room.name}
+                  key={room.id ?? room.name}
                   rounded="card"
                   border="~ ct-line dark:ct-dark-line"
                   bg="ct-surface dark:ct-dark-surface"
@@ -157,6 +179,31 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                     >
                       {room.description}
                     </p>
+                  )}
+
+                  {(room.maxOccupancy || room.size || room.bedType) && (
+                    <div
+                      mt="5"
+                      flex="~ wrap"
+                      gap="2"
+                      text="xs ct-muted dark:ct-dark-muted"
+                    >
+                      {room.maxOccupancy && (
+                        <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
+                          최대 {room.maxOccupancy}명
+                        </span>
+                      )}
+                      {room.size && (
+                        <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
+                          {room.size}㎡
+                        </span>
+                      )}
+                      {room.bedType && (
+                        <span rounded="full" bg="ct-surface-soft dark:bg-ct-dark-surface-soft" px="3" py="1.5">
+                          {room.bedType}
+                        </span>
+                      )}
+                    </div>
                   )}
                 </div>
               ))}
@@ -244,12 +291,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                       체크인
                     </p>
 
-                    <p
-                      mt="2"
-                      mb="0"
-                      text="lg ct-text dark:ct-dark-text"
-                      font="bold"
-                    >
+                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
                       {hotel.checkIn}
                     </p>
                   </div>
@@ -266,12 +308,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                       체크아웃
                     </p>
 
-                    <p
-                      mt="2"
-                      mb="0"
-                      text="lg ct-text dark:ct-dark-text"
-                      font="bold"
-                    >
+                    <p mt="2" mb="0" text="lg ct-text dark:ct-dark-text" font="bold">
                       {hotel.checkOut}
                     </p>
                   </div>
