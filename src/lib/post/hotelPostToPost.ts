@@ -8,13 +8,34 @@ function addImages(
   blocks: PostBlock[],
   imageIds: string[] | undefined,
   imageMap: Map<string, HotelImage>,
+  usedImageIds: Set<string>,
 ): void {
   for (const imageId of imageIds ?? []) {
+    if (usedImageIds.has(imageId)) continue;
+
     const image = imageMap.get(imageId);
-    if (image) {
-      blocks.push({ type: "image", image });
-    }
+
+    if (!image || !image.rightsConfirmed) continue;
+
+    blocks.push({ type: "image", image });
+    usedImageIds.add(imageId);
   }
+}
+
+function getFallbackImageIds(
+  post: HotelPost,
+  images: HotelImage[],
+): string[] {
+  const imageMap = toImageMap(images);
+  const preferredIds = [
+    ...post.imageIds,
+    ...images.filter((image) => image.type === "hero").map((image) => image.id),
+  ];
+
+  return preferredIds.filter((id) => {
+    const image = imageMap.get(id);
+    return Boolean(image?.rightsConfirmed);
+  });
 }
 
 export function createHotelPostBlocks(
@@ -23,6 +44,7 @@ export function createHotelPostBlocks(
 ): PostBlock[] {
   const imageMap = toImageMap(images);
   const blocks: PostBlock[] = [];
+  const usedImageIds = new Set<string>();
 
   if (post.introduction.trim()) {
     blocks.push({
@@ -47,7 +69,7 @@ export function createHotelPostBlocks(
       }
     }
 
-    addImages(blocks, section.imageIds, imageMap);
+    addImages(blocks, section.imageIds, imageMap, usedImageIds);
   }
 
   if (post.faq.length > 0) {
@@ -70,6 +92,17 @@ export function createHotelPostBlocks(
     }
   }
 
+  const requestedImageCount = post.imageIds.length;
+
+  if (requestedImageCount > 0 && usedImageIds.size === 0) {
+    addImages(
+      blocks,
+      getFallbackImageIds(post, images),
+      imageMap,
+      usedImageIds,
+    );
+  }
+
   return blocks;
 }
 
@@ -80,6 +113,7 @@ export function hotelPostToPost(
   const images = hotel.images;
   const blocks = createHotelPostBlocks(post, images);
   const slug = post.slug.trim() || hotel.slug;
+  const publishedAt = post.publishedAt ?? hotel.publishedAt ?? "1970-01-01";
 
   return {
     id: post.id,
@@ -90,7 +124,7 @@ export function hotelPostToPost(
     destinationId: hotel.destinationId,
     hotelId: hotel.id,
     blocks,
-    publishedAt: post.publishedAt ?? new Date().toISOString().slice(0, 10),
+    publishedAt,
     updatedAt: post.updatedAt,
     author: "CozyTrip",
     tags: post.tags,
