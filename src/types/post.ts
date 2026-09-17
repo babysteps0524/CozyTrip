@@ -12,54 +12,89 @@ export type PostBlock =
 
 export interface PostHeadingBlock {
   type: "heading";
-
   level: 2 | 3;
-
   text: string;
 }
 
 export interface PostParagraphBlock {
   type: "paragraph";
-
   text: string;
 }
 
 export interface PostImageBlock {
   type: "image";
-
   image: HotelImage;
 }
 
 export interface PostGalleryBlock {
   type: "gallery";
-
   images: HotelImage[];
-
   caption?: string;
 }
 
 export interface Post {
   id: string;
-
   category: PostCategory;
-
   title: string;
-
   slug: string;
-
   description: string;
-
   destinationId?: string;
-
   hotelId?: string;
-
   blocks: PostBlock[];
-
   publishedAt: string;
-
   updatedAt?: string;
-
   author?: string;
-
   tags?: string[];
+}
+
+export interface HotelPostSection {
+  heading: string;
+  paragraphs: string[];
+  imageIds?: string[];
+}
+
+export interface HotelPostFaqItem {
+  question: string;
+  answer: string;
+}
+
+export interface HotelPost {
+  id: string;
+  hotelId: string;
+  slug: string;
+  title: string;
+  description: string;
+  introduction: string;
+  sections: HotelPostSection[];
+  faq: HotelPostFaqItem[];
+  tags: string[];
+  imageIds: string[];
+  publishedAt?: string;
+  updatedAt?: string;
+  generatedBy?: "gemini" | "groq" | "openrouter" | "manual";
+  promptVersion?: string;
+}
+
+export interface HotelPostGenerationInput {
+  hotel: {
+    id: string;
+    name: string;
+    nameEn?: string;
+    country: string;
+    prefecture: string;
+    city: string;
+    area: string;
+    description: string;
+    location: {
+      address?: string;
+      nearestStations?: string[];
+    };
+    accommodationType?: string;
+    starRating?: number;
+    checkIn?: string;
+    checkOut?: string;
+    facilities?: string[];
+    restaurants?: string[];
+  };
+  images: HotelImage[];
 }
