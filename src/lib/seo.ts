@@ -1,11 +1,10 @@
-import type { Destination, Hotel, Post, HotelImage } from "../types";
+import type { Destination, Hotel, HotelImage, HotelPost, Post } from "../types";
+
+import generatedHotelPosts from "../data/generated/hotel-posts.generated.json";
 
 export const SITE_NAME = "CozyTrip 코지트립";
-
 export const SITE_URL = "https://cozytrip.kr";
-
 export const DEFAULT_TITLE = `${SITE_NAME} | 일본 호텔과 여행 정보`;
-
 export const DEFAULT_DESCRIPTION =
   "일본 호텔과 여행 정보를 한곳에서 알아보세요. 도쿄, 오사카, 교토, 후쿠오카, 삿포로, 오키나와 호텔과 여행 정보를 제공합니다.";
 
@@ -17,15 +16,19 @@ export interface SeoMetadata {
   image?: HotelImage;
 }
 
+interface GeneratedHotelPostsFile {
+  generatedAt: string;
+  source: "ai";
+  postCount: number;
+  posts: HotelPost[];
+}
+
 function normalizeDescription(description: string): string {
   return description.replace(/\s+/g, " ").trim();
 }
 
 function normalizeCanonicalPath(path: string): string {
-  if (path === "/") {
-    return "/";
-  }
-
+  if (path === "/") return "/";
   return path.endsWith("/") ? path : `${path}/`;
 }
 
@@ -33,9 +36,7 @@ export function createCanonical(path: string): string {
   return `${SITE_URL}${normalizeCanonicalPath(path)}`;
 }
 
-function getFirstImage(
-  images: HotelImage[] | undefined,
-): HotelImage | undefined {
+function getFirstImage(images: HotelImage[] | undefined): HotelImage | undefined {
   return images?.find((image) => image.rightsConfirmed && Boolean(image.src));
 }
 
@@ -57,11 +58,8 @@ export function createSeoMetadata(
   }
 
   const destinationMatch = normalizedRoute.match(/^\/japan\/([^/]+)\/$/);
-
   if (destinationMatch) {
-    const destinationSlug = destinationMatch[1];
-    const destination = destinations.find((item) => item.slug === destinationSlug);
-
+    const destination = destinations.find((item) => item.slug === destinationMatch[1]);
     if (destination) {
       return {
         title: `${destination.name} 호텔과 여행 정보 | ${SITE_NAME}`,
@@ -74,16 +72,11 @@ export function createSeoMetadata(
   }
 
   const hotelListMatch = normalizedRoute.match(/^\/japan\/([^/]+)\/hotels\/$/);
-
   if (hotelListMatch) {
-    const destinationSlug = hotelListMatch[1];
-    const destination = destinations.find((item) => item.slug === destinationSlug);
-
+    const destination = destinations.find((item) => item.slug === hotelListMatch[1]);
     if (destination) {
-      const destinationHotels = hotels.filter(
-        (hotel) => hotel.destinationId === destination.id,
-      );
-      const firstHotelImage = destinationHotels
+      const firstHotelImage = hotels
+        .filter((hotel) => hotel.destinationId === destination.id)
         .flatMap((hotel) => hotel.images)
         .find((image) => image.rightsConfirmed && Boolean(image.src));
 
@@ -102,12 +95,9 @@ export function createSeoMetadata(
   const hotelDetailMatch = normalizedRoute.match(
     /^\/japan\/([^/]+)\/hotels\/([^/]+)\/$/,
   );
-
   if (hotelDetailMatch) {
-    const destinationSlug = hotelDetailMatch[1];
-    const hotelSlug = hotelDetailMatch[2];
-    const destination = destinations.find((item) => item.slug === destinationSlug);
-    const hotel = hotels.find((item) => item.slug === hotelSlug);
+    const destination = destinations.find((item) => item.slug === hotelDetailMatch[1]);
+    const hotel = hotels.find((item) => item.slug === hotelDetailMatch[2]);
 
     if (destination && hotel && hotel.destinationId === destination.id) {
       return {
@@ -123,11 +113,9 @@ export function createSeoMetadata(
   }
 
   const guideMatch = normalizedRoute.match(/^\/guides\/([^/]+)\/$/);
-
   if (guideMatch) {
-    const guideSlug = guideMatch[1];
     const guide = posts.find(
-      (item) => item.slug === guideSlug && item.category === "guide",
+      (item) => item.slug === guideMatch[1] && item.category === "guide",
     );
 
     if (guide) {
@@ -160,6 +148,26 @@ export function createSeoMetadata(
   };
 }
 
+function getGeneratedHotelPost(hotelId: string): HotelPost | undefined {
+  const source = generatedHotelPosts as GeneratedHotelPostsFile;
+  if (!Array.isArray(source.posts)) return undefined;
+  return source.posts.find((post) => post.hotelId === hotelId);
+}
+
+function createFaqItems(hotel: Hotel) {
+  const hotelPost = getGeneratedHotelPost(hotel.id);
+  if (!hotelPost || hotelPost.faq.length === 0) return [];
+
+  return hotelPost.faq.map((item) => ({
+    "@type": "Question",
+    name: item.question,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.answer,
+    },
+  }));
+}
+
 export function createHotelStructuredData(
   hotel: Hotel,
   destination: Destination,
@@ -169,7 +177,11 @@ export function createHotelStructuredData(
   );
   const images = hotel.images
     .filter((image) => image.rightsConfirmed && Boolean(image.src))
-    .map((image) => image.src.startsWith("http") ? image.src : `${SITE_URL}${image.src.startsWith("/") ? image.src : `/${image.src}`}`)
+    .map((image) =>
+      image.src.startsWith("http")
+        ? image.src
+        : `${SITE_URL}${image.src.startsWith("/") ? image.src : `/${image.src}`}`,
+    )
     .slice(0, 8);
 
   const data: Record<string, unknown> = {
@@ -183,19 +195,19 @@ export function createHotelStructuredData(
       addressCountry: hotel.location.countryCode,
       addressRegion: hotel.location.prefecture,
       addressLocality: hotel.location.city,
-      streetAddress: hotel.location.address,
+      ...(hotel.location.address
+        ? { streetAddress: hotel.location.address }
+        : {}),
     },
   };
 
-  if (hotel.nameEn) {
-    data.alternateName = hotel.nameEn;
-  }
+  if (hotel.nameEn) data.alternateName = hotel.nameEn;
+  if (images.length > 0) data.image = images;
 
-  if (images.length > 0) {
-    data.image = images;
-  }
-
-  if (hotel.location.latitude !== undefined && hotel.location.longitude !== undefined) {
+  if (
+    hotel.location.latitude !== undefined &&
+    hotel.location.longitude !== undefined
+  ) {
     data.geo = {
       "@type": "GeoCoordinates",
       latitude: hotel.location.latitude,
@@ -211,12 +223,23 @@ export function createHotelStructuredData(
     };
   }
 
-  if (hotel.checkIn || hotel.checkOut) {
-    data.checkinTime = hotel.checkIn;
-    data.checkoutTime = hotel.checkOut;
-  }
+  if (hotel.checkIn) data.checkinTime = hotel.checkIn;
+  if (hotel.checkOut) data.checkoutTime = hotel.checkOut;
 
   return data;
+}
+
+export function createFaqStructuredData(
+  hotel: Hotel,
+): Record<string, unknown> | undefined {
+  const mainEntity = createFaqItems(hotel);
+  if (mainEntity.length === 0) return undefined;
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity,
+  };
 }
 
 export function createBreadcrumbStructuredData(
@@ -240,18 +263,20 @@ export function createBreadcrumbStructuredData(
   ];
 
   if (hotel) {
-    items.push({
-      "@type": "ListItem",
-      position: 3,
-      name: "호텔",
-      item: createCanonical(`/japan/${destination.slug}/hotels/`),
-    });
-    items.push({
-      "@type": "ListItem",
-      position: 4,
-      name: hotel.name,
-      item: createCanonical(route),
-    });
+    items.push(
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "호텔",
+        item: createCanonical(`/japan/${destination.slug}/hotels/`),
+      },
+      {
+        "@type": "ListItem",
+        position: 4,
+        name: hotel.name,
+        item: createCanonical(route),
+      },
+    );
   }
 
   return {
