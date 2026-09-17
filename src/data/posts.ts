@@ -1,10 +1,7 @@
 import type { HotelPost, MarkdownDocument, Post } from "../types";
 
 import { hotelPostToPost } from "../lib/post";
-
-import { guideDocuments, hotelDocuments } from "../lib/markdown";
-
-import { parsePostBlocks } from "../lib/markdown";
+import { guideDocuments, hotelDocuments, parsePostBlocks } from "../lib/markdown";
 
 import generatedHotelPosts from "./generated/hotel-posts.generated.json";
 
@@ -36,16 +33,15 @@ function createPostFromMarkdown(document: MarkdownDocument): Post {
   };
 }
 
-function createPostsFromGeneratedHotelPosts(): Post[] {
+function getGeneratedHotelPosts(): HotelPost[] {
   const source = generatedHotelPosts as GeneratedHotelPostsFile;
+  return Array.isArray(source.posts) ? source.posts : [];
+}
 
-  if (!Array.isArray(source.posts)) {
-    return [];
-  }
-
+function createPostsFromGeneratedHotelPosts(): Post[] {
   const posts: Post[] = [];
 
-  for (const hotelPost of source.posts) {
+  for (const hotelPost of getGeneratedHotelPosts()) {
     const hotel = getHotelById(hotelPost.hotelId);
 
     if (!hotel) {
@@ -115,4 +111,8 @@ export function getPostsByDestination(destinationId: string): Post[] {
 
 export function getPostsByHotel(hotelId: string): Post[] {
   return getRuntimePosts().filter((post) => post.hotelId === hotelId);
+}
+
+export function getHotelPostByHotel(hotelId: string): HotelPost | undefined {
+  return getGeneratedHotelPosts().find((post) => post.hotelId === hotelId);
 }
