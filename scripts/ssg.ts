@@ -9,6 +9,7 @@ import { hotels } from "../src/data/hotels";
 import { posts, setRuntimePosts } from "../src/data/posts";
 import {
   createBreadcrumbStructuredData,
+  createFaqStructuredData,
   createHotelStructuredData,
   createSeoMetadata,
   SITE_NAME,
@@ -110,7 +111,6 @@ function getHotelSeoData(route: string) {
   const hotel = hotels.find((item) => item.slug === match[2]);
 
   if (!destination || !hotel || hotel.destinationId !== destination.id) return null;
-
   return { destination, hotel };
 }
 
@@ -158,6 +158,7 @@ function injectSeoMetadata(html: string, route: string, posts: Post[]): string {
       hotelSeoData.destination,
       hotelSeoData.hotel,
     );
+    const faqSchema = createFaqStructuredData(hotelSeoData.hotel);
 
     tags.push(
       `<script type="application/ld+json">${serializeStructuredData(hotelSchema)}</script>`,
@@ -165,6 +166,12 @@ function injectSeoMetadata(html: string, route: string, posts: Post[]): string {
     tags.push(
       `<script type="application/ld+json">${serializeStructuredData(breadcrumbSchema)}</script>`,
     );
+
+    if (faqSchema) {
+      tags.push(
+        `<script type="application/ld+json">${serializeStructuredData(faqSchema)}</script>`,
+      );
+    }
   }
 
   let result = html;
