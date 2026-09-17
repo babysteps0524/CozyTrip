@@ -5,8 +5,21 @@ interface HotelLocationProps {
   hotel: Hotel;
 }
 
+function getMapUrl(latitude?: number, longitude?: number, address?: string): string | null {
+  if (latitude !== undefined && longitude !== undefined) {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${latitude},${longitude}`)}`;
+  }
+
+  if (address?.trim()) {
+    return `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(address)}`;
+  }
+
+  return null;
+}
+
 export default function HotelLocation({ hotel }: HotelLocationProps) {
   const { location } = hotel;
+  const mapUrl = getMapUrl(location.latitude, location.longitude, location.address);
 
   return (
     <section
@@ -53,10 +66,33 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
                     주소
                   </p>
 
-                  <p mt="1" mb="0" text="sm ct-text dark:ct-dark-text">
+                  <p mt="1" mb="0" text="sm ct-text dark:ct-dark-text" leading="relaxed">
                     {location.address}
                   </p>
                 </div>
+              )}
+
+              {mapUrl && (
+                <a
+                  href={mapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  mt="6"
+                  inline-flex
+                  items="center"
+                  justify="center"
+                  min-h="11"
+                  rounded="xl"
+                  bg="ct-text dark:bg-ct-dark-text"
+                  px="5"
+                  py="3"
+                  text="sm ct-surface dark:text-ct-dark-bg"
+                  font="bold"
+                  hover="opacity-85"
+                  active="scale-0.95"
+                >
+                  지도에서 위치 확인
+                </a>
               )}
             </div>
 
@@ -70,8 +106,7 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
                 가까운 역
               </p>
 
-              {location.nearestStations &&
-              location.nearestStations.length > 0 ? (
+              {location.nearestStations && location.nearestStations.length > 0 ? (
                 <ul
                   mt="3"
                   mb="0"
@@ -88,6 +123,10 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
                   등록된 역 정보가 없습니다.
                 </p>
               )}
+
+              <p mt="6" mb="0" text="xs ct-muted dark:ct-dark-muted" leading="relaxed">
+                역과 이동 정보는 실제 예약 전 최신 안내를 함께 확인해 주세요.
+              </p>
             </div>
           </div>
         </div>
