@@ -2,6 +2,10 @@ import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Hotel, HotelImage, HotelPost, HotelPostGenerationInput } from "../src/types";
 import { generateHotelPost, getConfiguredAIProviders } from "../src/lib/ai";
+import {
+  formatHotelValidationFailure,
+  validateHotelData,
+} from "./lib/validate-hotel-data";
 
 interface AgodaHotelRecord {
   id?: string | number;
@@ -216,6 +220,7 @@ async function main(): Promise<void> {
   const generatedPosts: HotelPost[] = [];
   let successCount = 0;
   let failureCount = 0;
+  let validationFailureCount = 0;
 
   for (const record of source.hotels) {
     let hotel: Hotel;
@@ -228,6 +233,19 @@ async function main(): Promise<void> {
         "Failed to normalize Agoda hotel:",
         error instanceof Error ? error.message : error,
       );
+      continue;
+    }
+
+    const validation = validateHotelData(hotel);
+
+    for (const warning of validation.warnings) {
+      console.warn(`Hotel data warning [${hotel.id}]: ${warning}`);
+    }
+
+    if (!validation.valid) {
+      validationFailureCount += 1;
+      failureCount += 1;
+      console.error(formatHotelValidationFailure(hotel, validation));
       continue;
     }
 
@@ -269,11 +287,9 @@ async function main(): Promise<void> {
 
   await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 
+  console.log(`Saved ${posts.length} hotel post(s): ${outputPath}`);
   console.log(
-    `Saved ${posts.length} hotel post(s): ${outputPath}`,
-  );
-  console.log(
-    `Generation result: ${successCount} succeeded, ${failureCount} failed, ${existingPosts.length} existing preserved.`,
+    `Generation result: ${successCount} succeeded, ${failureCount} failed, ${validationFailureCount} validation failed, ${existingPosts.length} existing preserved.`,
   );
 }
 
