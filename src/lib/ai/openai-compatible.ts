@@ -69,7 +69,12 @@ export async function generateWithOpenAICompatible(
       throw new AIProviderError(provider, `${provider} returned an empty response.`);
     }
 
-    const post = parseHotelPost(text, provider, input.hotel.id);
+    const post = parseHotelPost(
+      text,
+      provider,
+      input.hotel.id,
+      input.images.map((image) => image.id),
+    );
 
     return { provider, post };
   } catch (error) {
