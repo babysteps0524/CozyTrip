@@ -59,6 +59,8 @@ export const hotelMapById = new Map(
   hotels.map((hotel) => [hotel.id, hotel]),
 );
 
+export { hotelMap };
+
 export function getHotelById(id: string): Hotel | undefined {
   return hotelMapById.get(id);
 }
