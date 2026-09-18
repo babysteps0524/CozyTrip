@@ -12,6 +12,17 @@ function formatRating(value: number): string {
 export default function HotelSummary({ hotel }: HotelSummaryProps) {
   const hasRating = hotel.ratingAverage !== undefined;
   const hasStayInfo = Boolean(hotel.checkIn || hotel.checkOut);
+  const dataSourceLabel =
+    hotel.dataSource === "myrealtrip"
+      ? "마이리얼트립 숙소 검색 API"
+      : hotel.dataSource === "agoda"
+        ? "Agoda 숙소 데이터"
+        : hotel.dataSource === "manual"
+          ? "CozyTrip 수동 입력"
+          : undefined;
+  const dataFetchedLabel = hotel.dataFetchedAt
+    ? new Date(hotel.dataFetchedAt).toLocaleDateString("ko-KR")
+    : undefined;
 
   return (
     <section border="b ct-line dark:ct-dark-line">
@@ -79,6 +90,13 @@ export default function HotelSummary({ hotel }: HotelSummaryProps) {
                 </span>
               )}
             </div>
+
+            {dataSourceLabel && (
+              <p mt="3" mb="0" text="xs ct-muted dark:ct-dark-muted">
+                데이터 출처: {dataSourceLabel}
+                {dataFetchedLabel ? ` · 조회 기준일 ${dataFetchedLabel}` : ""}
+              </p>
+            )}
 
             <p
               mt="6"
