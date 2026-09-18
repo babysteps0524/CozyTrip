@@ -95,7 +95,7 @@ export default function HotelFacilities({ hotel }: HotelFacilitiesProps) {
   const groups = groupFacilities(facilities);
 
   return (
-    <section border="t ct-line dark:ct-dark-line">
+    <section id="facilities" border="t ct-line dark:ct-dark-line">
       <Container>
         <div py="12 sm:16 lg:20">
           <p
