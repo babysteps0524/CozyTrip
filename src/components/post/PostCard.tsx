@@ -21,7 +21,7 @@ export default function PostCard({ post }: PostCardProps) {
       p="5"
       transition="transform duration-150"
       hover="shadow-card"
-      un-active="scale-98"
+      active-scale="98"
     >
       <p
         m="0"
