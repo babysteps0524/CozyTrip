@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "build": "vite build && bun scripts/ssg.ts && bun scripts/generate-sitemap.ts && bun scripts/generate-rss.ts",
+    "build": "bun scripts/validate-hotel-data.ts && vite build && bun scripts/ssg.ts && bun scripts/generate-sitemap.ts && bun scripts/generate-rss.ts",
     "preview": "vite preview",
     "typecheck": "tsc --noEmit",
     "validate:hotels": "bun scripts/validate-hotel-data.ts",
