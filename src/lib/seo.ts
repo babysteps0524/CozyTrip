@@ -156,11 +156,11 @@ function getGeneratedHotelPost(hotelId: string): HotelPost | undefined {
   return source.posts.find((post) => post.hotelId === hotelId);
 }
 
-function createFaqItems(hotel: Hotel) {
-  const hotelPost = getGeneratedHotelPost(hotel.id);
-  if (!hotelPost || hotelPost.faq.length === 0) return [];
+function createFaqItems(hotel: Hotel, hotelPost?: HotelPost) {
+  const sourcePost = hotelPost ?? getGeneratedHotelPost(hotel.id);
+  if (!sourcePost || sourcePost.faq.length === 0) return [];
 
-  return hotelPost.faq.map((item) => ({
+  return sourcePost.faq.map((item) => ({
     "@type": "Question",
     name: item.question,
     acceptedAnswer: {
@@ -259,8 +259,9 @@ export function createHotelListStructuredData(
 
 export function createFaqStructuredData(
   hotel: Hotel,
+  hotelPost?: HotelPost,
 ): Record<string, unknown> | undefined {
-  const mainEntity = createFaqItems(hotel);
+  const mainEntity = createFaqItems(hotel, hotelPost);
   if (mainEntity.length === 0) return undefined;
 
   return {
