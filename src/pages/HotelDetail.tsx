@@ -247,7 +247,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         </Section>
       )}
 
-      <HotelLocation location={hotel.location} />
+      <HotelLocation hotel={hotel} />
       <HotelBooking hotel={hotel} />
 
       {relatedPosts.length > 0 && (
