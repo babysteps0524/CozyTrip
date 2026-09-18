@@ -116,7 +116,7 @@ export default function HotelFacilities({ hotel }: HotelFacilitiesProps) {
               <section key={group.key} aria-labelledby={`facility-${group.key}`}>
                 <div flex="~" items="center" gap="3">
                   <span
-                    inline-flex
+                    display="inline-flex"
                     items="center"
                     justify="center"
                     min-w="12"
