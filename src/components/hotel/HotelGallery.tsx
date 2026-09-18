@@ -87,7 +87,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
         bg="ct-surface dark:ct-dark-surface"
       >
         <div
-          relative
+          relative=""
           overflow="hidden"
           bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
           lg="col-span-2"
@@ -132,10 +132,10 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
               h="full"
               object="cover"
             />
-          )
+          )}
 
           <div
-            absolute
+            absolute=""
             top="4"
             left="4"
             rounded="full"
@@ -149,7 +149,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
           </div>
 
           {hasMultipleImages && (
-            <div absolute right="4" bottom="4" flex="~" gap="2">
+            <div absolute="" right="4" bottom="4" flex="~" gap="2">
               <button
                 type="button"
                 aria-label="이전 호텔 이미지"
@@ -206,7 +206,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                     aria-label={`${index + 1}번째 호텔 이미지 보기`}
                     aria-pressed={selected}
                     onClick={() => selectImage(index)}
-                    relative
+                    relative=""
                     aspect="[4/3]"
                     overflow="hidden"
                     rounded="lg"
@@ -229,7 +229,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                       object="cover"
                     />
                     <span
-                      absolute
+                      absolute=""
                       left="2"
                       bottom="2"
                       rounded="full"
@@ -247,7 +247,6 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
             </div>
           </div>
         )}
-      </div>
 
       {hasMultipleImages && (
         <div
@@ -270,14 +269,14 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                 aria-label={`${index + 1}번째 호텔 이미지 보기`}
                 aria-pressed={selected}
                 onClick={() => selectImage(index)}
-                relative
+                relative=""
                 shrink="0"
                 w="24"
                 h="18"
                 overflow="hidden"
                 rounded="lg"
                 border={selected ? "~ 2 ct-primary" : "~ ct-line dark:ct-dark-line"}
-                bg="ct-surface dark:bg-ct-dark-surface"
+                bg="ct-surface dark:ct-dark-surface"
                 opacity={selected ? "100" : "70"}
                 hover="opacity-100"
                 active-scale="98"
