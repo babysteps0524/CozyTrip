@@ -9,7 +9,7 @@ export const destinations: Destination[] = [
     country: "일본",
     countryCode: "JP",
     prefecture: "Tokyo",
-    description: "일본의 수도 도쿄에서 호텔과 주요 여행 지역을 알아보세요.",
+    description: "도쿄의 신주쿠, 시부야, 긴자 등 주요 여행 지역과 호텔 정보를 확인해보세요.",
     popularAreas: ["신주쿠", "시부야", "긴자", "아사쿠사", "우에노"],
     popularAttractions: ["도쿄 스카이트리", "센소지", "시부야", "도쿄역"],
   },
@@ -22,7 +22,7 @@ export const destinations: Destination[] = [
     country: "일본",
     countryCode: "JP",
     prefecture: "Osaka",
-    description: "오사카의 주요 여행 지역과 호텔 정보를 알아보세요.",
+    description: "오사카의 난바, 우메다, 신사이바시 등 주요 여행 지역과 호텔 정보를 확인해보세요.",
     popularAreas: ["난바", "우메다", "신사이바시", "텐노지"],
     popularAttractions: [
       "도톤보리",
@@ -40,7 +40,7 @@ export const destinations: Destination[] = [
     country: "일본",
     countryCode: "JP",
     prefecture: "Kyoto",
-    description: "교토의 전통적인 여행지와 주변 호텔 정보를 알아보세요.",
+    description: "교토역, 기온, 가와라마치 등 주요 여행 지역과 주변 호텔 정보를 확인해보세요.",
     popularAreas: ["교토역", "기온", "가와라마치", "아라시야마"],
     popularAttractions: ["기요미즈데라", "후시미 이나리", "아라시야마", "기온"],
   },
@@ -53,7 +53,7 @@ export const destinations: Destination[] = [
     country: "일본",
     countryCode: "JP",
     prefecture: "Fukuoka",
-    description: "후쿠오카의 주요 지역과 여행에 필요한 호텔 정보를 알아보세요.",
+    description: "후쿠오카의 하카타, 텐진, 나카스 등 주요 지역과 호텔 정보를 확인해보세요.",
     popularAreas: ["하카타", "텐진", "나카스", "모모치"],
     popularAttractions: [
       "캐널시티 하카타",
@@ -72,7 +72,7 @@ export const destinations: Destination[] = [
     countryCode: "JP",
     prefecture: "Hokkaido",
     description:
-      "홋카이도 여행의 중심지 삿포로의 호텔과 여행 정보를 알아보세요.",
+      "삿포로역, 오도리, 스스키노 등 주요 지역과 호텔 정보를 확인해보세요.",
     popularAreas: ["삿포로역", "오도리", "스스키노", "나카지마 공원"],
     popularAttractions: [
       "오도리 공원",
@@ -91,7 +91,7 @@ export const destinations: Destination[] = [
     countryCode: "JP",
     prefecture: "Okinawa",
     description:
-      "오키나와의 주요 지역과 휴양 여행을 위한 호텔 정보를 알아보세요.",
+      "나하, 온나손, 차탄 등 주요 지역과 오키나와 여행을 위한 호텔 정보를 확인해보세요.",
     popularAreas: ["나하", "온나손", "차탄", "아메리칸 빌리지"],
     popularAttractions: [
       "슈리성",
