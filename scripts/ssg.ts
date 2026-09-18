@@ -10,6 +10,7 @@ import { posts, setRuntimePosts } from "../src/data/posts";
 import {
   createBreadcrumbStructuredData,
   createFaqStructuredData,
+  createHotelListStructuredData,
   createHotelStructuredData,
   createSeoMetadata,
   SITE_NAME,
@@ -146,6 +147,20 @@ function injectSeoMetadata(html: string, route: string, posts: Post[]): string {
   tags.push(`<meta name="twitter:card" content="summary_large_image" />`);
   tags.push(`<meta name="twitter:title" content="${title}" />`);
   tags.push(`<meta name="twitter:description" content="${description}" />`);
+
+  const hotelListMatch = normalizeRoute(route).match(/^\/japan\/([^/]+)\/hotels\/$/);
+  if (hotelListMatch) {
+    const destination = destinations.find(
+      (item) => item.slug === hotelListMatch[1],
+    );
+
+    if (destination) {
+      const hotelListSchema = createHotelListStructuredData(destination, hotels);
+      tags.push(
+        `<script type="application/ld+json">${serializeStructuredData(hotelListSchema)}</script>`,
+      );
+    }
+  }
 
   const hotelSeoData = getHotelSeoData(route);
   if (hotelSeoData) {
