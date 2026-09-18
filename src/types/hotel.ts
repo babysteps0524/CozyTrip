@@ -51,6 +51,12 @@ export type HotelDataSource = "manual" | "agoda" | "myrealtrip";
 export interface Hotel {
   id: string;
 
+  /** 외부 공급자에서 사용하는 호텔 식별자 */
+  externalId?: string;
+
+  /** 외부 호텔 데이터 공급자 */
+  provider?: HotelDataSource;
+
   name: string;
   nameEn?: string;
   slug: string;
