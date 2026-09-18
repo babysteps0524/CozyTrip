@@ -31,7 +31,7 @@ export default function Guide({ post }: GuideProps) {
               <a
                 href="/"
                 hover="text-ct-primary dark:text-ct-dark-text"
-                un-active="scale-98"
+                active-scale="0.98"
               >
                 홈
               </a>
