@@ -132,12 +132,70 @@ const manualHotels: Hotel[] = [
   },
 ];
 
+
+const additionalSampleHotels: Hotel[] = [
+  ["osaka", "오사카", "Osaka", "난바", "도톤보리와 난바 지역의 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
+  ["kyoto", "교토", "Kyoto", "교토역", "교토역 주변 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
+  ["fukuoka", "후쿠오카", "Fukuoka", "하카타", "하카타 지역의 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
+  ["sapporo", "삿포로", "Hokkaido", "삿포로역", "삿포로역 주변 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
+  ["okinawa", "오키나와", "Okinawa", "나하", "나하 지역의 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
+].map(([slugCity, city, prefecture, area, description]) => ({
+  id: `sample-${slugCity}-hotel`,
+  name: `Sample ${city} Hotel`,
+  nameEn: `Sample ${city} Hotel`,
+  slug: `sample-${slugCity}-hotel`,
+  country: "일본",
+  countryCode: "JP",
+  prefecture,
+  city,
+  area,
+  destinationId: `japan-${slugCity}`,
+  description,
+  location: {
+    country: "일본",
+    countryCode: "JP",
+    prefecture,
+    city,
+    area,
+    address: `${city} ${area} 개발용 샘플 주소`,
+    nearestStations: [`${area}역`],
+  },
+  images: [],
+  rooms: [
+    {
+      id: `sample-${slugCity}-standard-room`,
+      name: "스탠다드룸",
+      description: "CozyTrip 화면 검증을 위한 샘플 객실 정보입니다. 실제 객실 조건은 예약 플랫폼에서 확인하세요.",
+      maxOccupancy: 2,
+      bedType: "더블 침대",
+    },
+  ],
+  facilities: [
+    { name: "Wi-Fi", description: "개발용 샘플 시설 정보입니다.", group: "기본 시설" },
+    { name: "프런트 데스크", description: "실제 운영 조건은 최신 호텔 정보를 확인하세요.", group: "서비스" },
+    { name: "짐 보관", description: "이용 가능 여부와 조건은 예약 전에 확인하세요.", group: "서비스" },
+  ],
+  restaurants: [],
+  policy: {
+    bookingNotes: [
+      "본 데이터는 CozyTrip 개발용 샘플 데이터입니다.",
+      "실제 가격, 객실 재고, 예약 가능 여부 및 정책은 예약 플랫폼에서 확인하세요.",
+    ],
+  },
+  accommodationType: "호텔",
+  checkIn: "15:00",
+  checkOut: "11:00",
+  affiliateLinks: sampleAffiliateLinks,
+  publishedAt: "2026-09-18",
+  updatedAt: "2026-09-18",
+} as Hotel));
+
 const generated = agodaHotels as AgodaHotelFile;
 const generatedHotels = Array.isArray(generated.hotels) ? generated.hotels : [];
 
 const hotelMap = new Map<string, Hotel>();
 
-for (const hotel of manualHotels) {
+for (const hotel of [...manualHotels, ...additionalSampleHotels]) {
   hotelMap.set(hotel.id, hotel);
 }
 
