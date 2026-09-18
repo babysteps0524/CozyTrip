@@ -18,3 +18,4 @@ export { default as HotelStayInfo } from "./HotelStayInfo";
 
 export { default as RelatedHotels } from "./RelatedHotels";
 export { default as RelatedGuides } from "./RelatedGuides";
+export { default as HotelListResults } from "./HotelListResults";
