@@ -229,6 +229,32 @@ export function createHotelStructuredData(
   return data;
 }
 
+
+export function createHotelListStructuredData(
+  destination: Destination,
+  hotels: Hotel[],
+): Record<string, unknown> {
+  const destinationHotels = hotels.filter(
+    (hotel) => hotel.destinationId === destination.id,
+  );
+
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: destination.name + " 호텔 목록",
+    url: createCanonical("/japan/" + destination.slug + "/hotels/"),
+    numberOfItems: destinationHotels.length,
+    itemListElement: destinationHotels.map((hotel, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: hotel.name,
+      url: createCanonical(
+        "/japan/" + destination.slug + "/hotels/" + hotel.slug + "/",
+      ),
+    })),
+  };
+}
+
 export function createFaqStructuredData(
   hotel: Hotel,
 ): Record<string, unknown> | undefined {
