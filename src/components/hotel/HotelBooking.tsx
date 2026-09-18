@@ -72,12 +72,12 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                       active="scale-0.95"
                     >
                       <span min-w="0">
-                        <span block text="base" font="bold">
+                        <span display="block" text="base" font="bold">
                           {affiliateLink.label || providerConfig.name}
                         </span>
                         <span
                           mt="1"
-                          block
+                          display="block"
                           text="sm ct-text-soft dark:ct-dark-text-soft"
                         >
                           {affiliateLink.description || providerConfig.description}
