@@ -21,16 +21,16 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
             p="6 sm:8"
           >
             <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
-              BOOKING
+              BOOKING INFO
             </p>
 
             <div mt="2" flex="~ col sm:row" sm="items-end justify-between" gap="3">
               <div>
                 <h2 m="0" text="2xl sm:3xl" font="bold" tracking="tight">
-                  {hotel.name} 예약 정보
+                  예약 플랫폼에서 확인하기
                 </h2>
                 <p mt="3" mb="0" max-w="2xl" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
-                  예약 사이트에서 최신 요금, 객실 재고와 예약 조건을 직접 확인할 수 있습니다.
+                  CozyTrip는 예약을 직접 처리하지 않습니다. 아래 외부 플랫폼에서 최신 요금과 객실 조건을 확인할 수 있습니다.
                 </p>
               </div>
             </div>
@@ -70,7 +70,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                           </span>
                         </span>
                         <span shrink="0" text="sm ct-primary dark:ct-dark-text-soft" font="bold" aria-hidden="true">
-                          외부 사이트 →
+                          사이트에서 확인 →
                         </span>
                       </a>
                     );
@@ -88,7 +88,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
               </>
             ) : (
               <div mt="6" rounded="xl" bg="ct-surface dark:bg-ct-dark-surface" px="4" py="4">
-                <p m="0" text="sm ct-muted dark:ct-dark-muted">현재 연결된 예약 플랫폼이 없습니다.</p>
+                <p m="0" text="sm ct-muted dark:ct-dark-muted">현재 연결된 외부 예약 플랫폼이 없습니다.</p>
               </div>
             )}
 
