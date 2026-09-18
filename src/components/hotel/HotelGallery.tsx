@@ -156,8 +156,8 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
 
         {hasMultipleImages && (
           <div
-            hidden="lg:block"
-            lg="col-span-1"
+            lg="col-span-1 block"
+            display="none lg:block"
             p="3"
             bg="ct-surface dark:bg-ct-dark-surface"
           >
