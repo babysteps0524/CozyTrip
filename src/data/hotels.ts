@@ -1,4 +1,4 @@
-import type { Hotel } from "../types";
+import type { AffiliateLink, Hotel } from "../types";
 import agodaHotels from "./generated/agoda-hotels.json";
 
 interface AgodaHotelFile {
@@ -7,6 +7,33 @@ interface AgodaHotelFile {
   hotelCount: number;
   hotels: Hotel[];
 }
+
+const sampleAffiliateLinks: AffiliateLink[] = [
+  {
+    provider: "agoda",
+    url: "https://www.agoda.com/",
+    label: "Agoda에서 호텔 확인",
+    description: "실제 객실 요금과 예약 가능 여부는 Agoda에서 확인하세요.",
+    rel: "sponsored",
+    external: true,
+  },
+  {
+    provider: "tripcom",
+    url: "https://www.trip.com/",
+    label: "Trip.com에서 호텔 확인",
+    description: "예약 조건과 객실 정보는 Trip.com에서 확인하세요.",
+    rel: "sponsored",
+    external: true,
+  },
+  {
+    provider: "myrealtrip",
+    url: "https://www.myrealtrip.com/",
+    label: "마이리얼트립에서 확인",
+    description: "예약 조건은 마이리얼트립에서 확인하세요.",
+    rel: "sponsored",
+    external: true,
+  },
+];
 
 const manualHotels: Hotel[] = [
   {
@@ -20,21 +47,88 @@ const manualHotels: Hotel[] = [
     city: "도쿄",
     area: "신주쿠",
     destinationId: "japan-tokyo",
-    description: "CozyTrip 개발 과정에서 사용하는 샘플 호텔 데이터입니다.",
+    description:
+      "도쿄 신주쿠 지역을 기준으로 호텔 소개 페이지의 구성과 사용자 경험을 검증하기 위한 CozyTrip 샘플 호텔입니다.",
     location: {
       country: "일본",
       countryCode: "JP",
       prefecture: "Tokyo",
       city: "도쿄",
       area: "신주쿠",
-      nearestStations: ["신주쿠역"],
+      address: "도쿄 신주쿠 샘플 주소",
+      nearestStations: ["신주쿠역", "신주쿠산초메역"],
     },
     images: [],
-    rooms: [],
-    facilities: [],
-    restaurants: [],
-    affiliateLinks: [],
+    rooms: [
+      {
+        id: "sample-standard-room",
+        name: "스탠다드룸",
+        description:
+          "호텔 객실 정보를 연결하기 위한 샘플 객실입니다. 실제 객실 크기와 침대 구성은 예약 플랫폼의 최신 정보를 확인하세요.",
+        maxOccupancy: 2,
+        bedType: "더블 침대",
+      },
+      {
+        id: "sample-family-room",
+        name: "패밀리룸",
+        description:
+          "가족 여행객을 위한 샘플 객실 데이터입니다. 실제 투숙 가능 인원과 객실 조건은 예약 시 확인하세요.",
+        maxOccupancy: 4,
+        bedType: "더블 침대 및 추가 침구",
+      },
+    ],
+    facilities: [
+      {
+        name: "Wi-Fi",
+        description: "호텔 시설 데이터를 표시하기 위한 샘플 정보입니다.",
+        group: "기본 시설",
+      },
+      {
+        name: "24시간 프런트 데스크",
+        description: "운영시간은 실제 호텔 또는 예약 플랫폼의 최신 정보를 확인하세요.",
+        group: "서비스",
+      },
+      {
+        name: "짐 보관",
+        description: "짐 보관 가능 여부와 조건은 이용 전에 확인하세요.",
+        group: "서비스",
+      },
+      {
+        name: "레스토랑",
+        description: "호텔 내 다이닝 정보를 표시하기 위한 샘플 시설입니다.",
+        group: "다이닝",
+      },
+    ],
+    restaurants: [
+      {
+        id: "sample-main-restaurant",
+        name: "Sample Dining",
+        description:
+          "호텔 다이닝 정보를 표시하기 위한 샘플 레스토랑입니다. 실제 운영 여부와 메뉴는 최신 정보를 확인하세요.",
+        cuisine: "일식·인터내셔널",
+        mealTypes: ["조식", "석식"],
+        openingHours: "운영시간은 공식 안내 확인",
+        location: "호텔 내부",
+      },
+    ],
+    policy: {
+      childPolicy:
+        "어린이 투숙 조건과 추가 요금은 객실 및 예약 조건에 따라 달라질 수 있습니다.",
+      extraFees: [
+        "세금 및 서비스 요금은 예약 플랫폼의 표시 조건을 확인하세요.",
+        "추가 침구 및 인원 관련 비용은 예약 전에 확인하세요.",
+      ],
+      bookingNotes: [
+        "본 데이터는 CozyTrip 개발용 샘플 데이터입니다.",
+        "실제 가격, 객실 재고, 예약 가능 여부 및 정책은 예약 플랫폼에서 확인하세요.",
+      ],
+    },
+    accommodationType: "호텔",
+    checkIn: "15:00",
+    checkOut: "11:00",
+    affiliateLinks: sampleAffiliateLinks,
     publishedAt: "2026-09-16",
+    updatedAt: "2026-09-18",
   },
 ];
 
