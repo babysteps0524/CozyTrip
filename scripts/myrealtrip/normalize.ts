@@ -96,6 +96,8 @@ function toHotel(
     externalId: String(item.itemId),
     provider: "myrealtrip",
     name: item.itemName,
+    dataSource: "myrealtrip",
+    dataFetchedAt: new Date().toISOString(),
     slug,
     country: "일본",
     countryCode: "JP",
