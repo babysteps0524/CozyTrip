@@ -46,7 +46,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
           text="sm ct-muted dark:ct-dark-muted"
         >
-          Hotel Image
+          호텔 이미지를 준비 중입니다.
         </div>
       )}
 
