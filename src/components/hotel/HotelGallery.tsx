@@ -37,14 +37,13 @@ function getInitialIndex(images: HotelImage[]): number {
 
 export default function HotelGallery({ images }: HotelGalleryProps) {
   const visibleImages = getVisibleImages(images);
-  const [selectedIndex, setSelectedIndex] = useState(() => getInitialIndex(visibleImages));
+  const [selectedIndex, setSelectedIndex] = useState(() =>
+    getInitialIndex(visibleImages),
+  );
 
   if (visibleImages.length === 0) {
     return (
-      <section
-        aria-label="호텔 이미지"
-        bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-      >
+      <section aria-label="호텔 이미지" bg="ct-surface-soft dark:bg-ct-dark-surface-soft">
         <Container>
           <div
             aspect="[16/10]"
@@ -53,7 +52,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
             justify="center"
             rounded="card"
             border="~ ct-line dark:ct-dark-line"
-            bg="ct-surface dark:bg-ct-dark-surface"
+            bg="ct-surface dark:ct-dark-surface"
             text="sm ct-muted dark:ct-dark-muted"
           >
             호텔 이미지를 준비 중입니다.
@@ -72,7 +71,8 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
   };
 
   const moveImage = (direction: -1 | 1) => {
-    const nextIndex = (safeIndex + direction + visibleImages.length) % visibleImages.length;
+    const nextIndex =
+      (safeIndex + direction + visibleImages.length) % visibleImages.length;
     setSelectedIndex(nextIndex);
   };
 
@@ -136,7 +136,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                 bg="black/65"
                 text="lg white"
                 hover="bg-black/80"
-                active="scale-0.95"
+                active-scale="98"
               >
                 ‹
               </button>
@@ -153,7 +153,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                 bg="black/65"
                 text="lg white"
                 hover="bg-black/80"
-                active="scale-0.95"
+                active-scale="98"
               >
                 ›
               </button>
@@ -184,10 +184,10 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                     overflow="hidden"
                     rounded="lg"
                     border={selected ? "~ 2 ct-primary" : "~ ct-line dark:ct-dark-line"}
-                    bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+                    bg="ct-surface-soft dark:ct-dark-surface-soft"
                     opacity={selected ? "100" : "75"}
                     hover="opacity-100"
-                    active="scale-0.95"
+                    active-scale="98"
                   >
                     <img
                       src={image.src}
@@ -253,7 +253,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                 bg="ct-surface dark:bg-ct-dark-surface"
                 opacity={selected ? "100" : "70"}
                 hover="opacity-100"
-                active="scale-0.95"
+                active-scale="98"
                 snap="start"
               >
                 <img
