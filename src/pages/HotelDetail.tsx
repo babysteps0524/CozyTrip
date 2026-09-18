@@ -216,7 +216,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <RelatedGuides posts={relatedGuides} />
 
       {relatedHotels.length > 0 && (
-        <RelatedHotels hotels={relatedHotels.slice(0, 6)} currentHotelId={hotel.id} />
+        <RelatedHotels hotels={relatedHotels} currentHotel={hotel} />
       )}
     </main>
   );
