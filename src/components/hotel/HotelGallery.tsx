@@ -246,6 +246,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
               })}
             </div>
           </div>
+          </div>
         )}
 
       {hasMultipleImages && (
