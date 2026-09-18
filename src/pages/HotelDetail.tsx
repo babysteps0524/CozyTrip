@@ -50,6 +50,16 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
     (item) => item.id !== hotel.id,
   );
 
+  const articleHeadings = hotelPosts.flatMap((post) =>
+    post.blocks
+      .map((block, index) => ({ block, index }))
+      .filter(({ block }) => block.type === "heading" && block.level === 2)
+      .map(({ block, index }) => ({
+        text: block.type === "heading" ? block.text : "",
+        id: `post-heading-${block.type === "heading" ? block.text.normalize("NFKD").toLowerCase().trim().replace(/[^\\p{Letter}\\p{Number}]+/gu, "-").replace(/^-+|-+$/g, "") : "section"}-${index}`,
+      })),
+  );
+
   return (
     <main>
       <section border="b ct-line dark:ct-dark-line">
@@ -156,6 +166,31 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               CozyTrip가 여행자가 호텔을 살펴볼 때 참고할 수 있도록 정리한 정보입니다. 실제 예약 조건은 각 예약 플랫폼에서 다시 확인해 주세요.
             </p>
           </div>
+
+          {articleHeadings.length > 1 && (
+            <nav
+              mt="6"
+              rounded="xl"
+              border="~ ct-line dark:ct-dark-line"
+              bg="ct-surface-soft dark:ct-dark-surface-soft"
+              p="5"
+              aria-label="호텔 글 목차"
+            >
+              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+                ARTICLE CONTENTS
+              </p>
+              <h3 mt="1.5" mb="0" text="lg" font="bold">이 글에서 살펴볼 내용</h3>
+              <ol mt="4" mb="0" pl="5" space-y="2" text="sm ct-text-soft dark:ct-dark-text-soft">
+                {articleHeadings.map((heading, index) => (
+                  <li key={`${heading.id}-${index}`}>
+                    <a href={`#${heading.id}`} hover="text-ct-primary dark:text-ct-dark-text" active-scale="98">
+                      {heading.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          )}
 
           <div mt="6" rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface-soft dark:ct-dark-surface-soft" p="5 sm:6">
             <div flex="~ col sm:row" sm="items-center justify-between" gap="2">
