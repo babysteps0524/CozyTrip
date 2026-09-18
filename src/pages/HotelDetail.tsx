@@ -16,6 +16,7 @@ import {
   HotelStayInfo,
   HotelSummary,
   RelatedHotels,
+  RelatedGuides,
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
 import type { Hotel } from "../types";
@@ -297,49 +298,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <HotelLocation hotel={hotel} />
       <HotelBooking hotel={hotel} />
 
-      {relatedGuides.length > 0 && (
-        <Section borderTop>
-          <Container>
-            <p
-              m="0"
-              text="xs ct-primary dark:ct-dark-text-soft"
-              font="medium"
-              tracking="wide"
-            >
-              RELATED GUIDES
-            </p>
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
-              함께 읽으면 좋은 글
-            </h2>
-            <div mt="8" grid="~ cols-1 sm:2" gap="5">
-              {relatedGuides.slice(0, 4).map((post) => (
-                <a
-                  key={post.id}
-                  href={`/guides/${post.slug}/`}
-                  rounded="xl"
-                  border="~ ct-line dark:ct-dark-line"
-                  bg="ct-surface dark:ct-dark-surface"
-                  p="5"
-                  hover="border-ct-primary dark:border-ct-dark-line"
-                  active-scale="98"
-                >
-                  <h3 m="0" text="base ct-text dark:ct-dark-text" font="bold">
-                    {post.title}
-                  </h3>
-                  <p
-                    mt="2"
-                    mb="0"
-                    text="sm ct-text-soft dark:ct-dark-text-soft"
-                    leading="relaxed"
-                  >
-                    {post.description}
-                  </p>
-                </a>
-              ))}
-            </div>
-          </Container>
-        </Section>
-      )}
+      <RelatedGuides posts={relatedGuides} />
 
       {relatedHotels.length > 0 && (
         <RelatedHotels
