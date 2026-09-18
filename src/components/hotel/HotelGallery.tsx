@@ -2,6 +2,8 @@ import { useState } from "react";
 
 import type { HotelImage } from "../../types";
 
+import { Container } from "../common";
+
 interface HotelGalleryProps {
   images: HotelImage[];
 }
@@ -39,19 +41,24 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
 
   if (visibleImages.length === 0) {
     return (
-      <section aria-label="호텔 이미지" bg="ct-surface-soft dark:bg-ct-dark-surface-soft">
-        <div
-          aspect="[16/10]"
-          flex="~"
-          items="center"
-          justify="center"
-          rounded="card"
-          border="~ ct-line dark:ct-dark-line"
-          bg="ct-surface dark:bg-ct-dark-surface"
-          text="sm ct-muted dark:ct-dark-muted"
-        >
-          호텔 이미지를 준비 중입니다.
-        </div>
+      <section
+        aria-label="호텔 이미지"
+        bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+      >
+        <Container>
+          <div
+            aspect="[16/10]"
+            flex="~"
+            items="center"
+            justify="center"
+            rounded="card"
+            border="~ ct-line dark:ct-dark-line"
+            bg="ct-surface dark:bg-ct-dark-surface"
+            text="sm ct-muted dark:ct-dark-muted"
+          >
+            호텔 이미지를 준비 중입니다.
+          </div>
+        </Container>
       </section>
     );
   }
