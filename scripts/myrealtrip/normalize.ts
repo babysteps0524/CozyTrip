@@ -54,13 +54,12 @@ export interface MyRealTripDestination {
 }
 
 const DESTINATIONS: MyRealTripDestination[] = [
-  {
-    slug: "tokyo",
-    city: "도쿄",
-    cityEn: "Tokyo",
-    prefecture: "Tokyo",
-    regionKeyword: "도쿄",
-  },
+  { slug: "tokyo", city: "도쿄", cityEn: "Tokyo", prefecture: "Tokyo", regionKeyword: "도쿄" },
+  { slug: "osaka", city: "오사카", cityEn: "Osaka", prefecture: "Osaka", regionKeyword: "오사카" },
+  { slug: "kyoto", city: "교토", cityEn: "Kyoto", prefecture: "Kyoto", regionKeyword: "교토" },
+  { slug: "fukuoka", city: "후쿠오카", cityEn: "Fukuoka", prefecture: "Fukuoka", regionKeyword: "후쿠오카" },
+  { slug: "sapporo", city: "삿포로", cityEn: "Sapporo", prefecture: "Hokkaido", regionKeyword: "삿포로" },
+  { slug: "okinawa", city: "오키나와", cityEn: "Okinawa", prefecture: "Okinawa", regionKeyword: "오키나와" },
 ];
 
 const affiliateLinks = (productUrl: string): AffiliateLink[] => [
