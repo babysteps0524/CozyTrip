@@ -81,7 +81,7 @@ export default function HotelList({ destination, hotels }: HotelListProps) {
               href={`/japan/${destination.slug}/`}
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              un-active="scale-98"
+              active-scale="0.98"
             >
               {destination.name} 여행지 보기 →
             </a>
