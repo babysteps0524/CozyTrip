@@ -78,7 +78,7 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
                   target="_blank"
                   rel="noopener noreferrer"
                   mt="6"
-                  inline-flex
+                  display="inline-flex"
                   items="center"
                   justify="center"
                   min-h="11"
