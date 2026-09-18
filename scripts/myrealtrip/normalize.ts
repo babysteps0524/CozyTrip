@@ -88,11 +88,10 @@ function slugify(value: string): string {
 function toHotel(
   item: MyRealTripAccommodationItem,
   destination: MyRealTripDestination,
+  imageUsageAllowed: boolean,
 ): Hotel {
   const id = `myrealtrip-${item.itemId}`;
   const slug = `${slugify(item.itemName)}-${item.itemId}`;
-  const imageUsageAllowed = getMyRealTripConfig().imageUsageAllowed;
-
   return {
     id,
     externalId: String(item.itemId),
@@ -169,8 +168,11 @@ export function normalizeAccommodationItems(
   destination: MyRealTripDestination,
 ): Hotel[] {
   const items = response.data?.items ?? [];
+  const imageUsageAllowed = getMyRealTripConfig().imageUsageAllowed;
 
-  return items.map((item) => toHotel(item, destination));
+  return items.map((item) =>
+    toHotel(item, destination, imageUsageAllowed),
+  );
 }
 
 export function getMyRealTripDestinations(): MyRealTripDestination[] {
