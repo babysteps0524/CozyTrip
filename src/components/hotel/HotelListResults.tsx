@@ -1,6 +1,6 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { Hotel } from "../../types";
-import { HotelCard } from "../hotel";
+import HotelCard from "./HotelCard";
 
 interface HotelListResultsProps {
   hotels: Hotel[];
@@ -8,30 +8,83 @@ interface HotelListResultsProps {
 
 type SortOption = "name" | "star-desc" | "star-asc";
 
+const PAGE_SIZE = 15;
+
 function getAreaOptions(hotels: Hotel[]): string[] {
-  return Array.from(new Set(hotels.map((hotel) => hotel.area.trim()).filter(Boolean))).sort((a, b) =>
-    a.localeCompare(b, "ko"),
-  );
+  return Array.from(
+    new Set(hotels.map((hotel) => hotel.area.trim()).filter(Boolean)),
+  ).sort((a, b) => a.localeCompare(b, "ko"));
 }
 
 function compareHotels(a: Hotel, b: Hotel, sort: SortOption): number {
   if (sort === "star-desc") {
-    return (b.starRating ?? -1) - (a.starRating ?? -1) || a.name.localeCompare(b.name, "ko");
+    return (
+      (b.starRating ?? -1) - (a.starRating ?? -1) ||
+      a.name.localeCompare(b.name, "ko")
+    );
   }
 
   if (sort === "star-asc") {
-    return (a.starRating ?? 99) - (b.starRating ?? 99) || a.name.localeCompare(b.name, "ko");
+    return (
+      (a.starRating ?? 99) - (b.starRating ?? 99) ||
+      a.name.localeCompare(b.name, "ko")
+    );
   }
 
   return a.name.localeCompare(b.name, "ko");
+}
+
+function updateListUrl(
+  query: string,
+  area: string,
+  sort: SortOption,
+  page: number,
+): void {
+  const params = new URLSearchParams();
+
+  if (query.trim()) params.set("q", query.trim());
+  if (area !== "all") params.set("area", area);
+  if (sort !== "name") params.set("sort", sort);
+  if (page > 1) params.set("page", String(page));
+
+  const queryString = params.toString();
+  const nextUrl = queryString
+    ? `${window.location.pathname}?${queryString}`
+    : window.location.pathname;
+
+  window.history.replaceState(null, "", nextUrl);
 }
 
 export default function HotelListResults({ hotels }: HotelListResultsProps) {
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
   const [sort, setSort] = useState<SortOption>("name");
+  const [page, setPage] = useState(1);
 
   const areas = useMemo(() => getAreaOptions(hotels), [hotels]);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const nextQuery = params.get("q") ?? "";
+    const nextArea = params.get("area") ?? "all";
+    const nextSort = params.get("sort");
+    const nextPage = Number(params.get("page"));
+
+    setQuery(nextQuery);
+    setArea(areas.includes(nextArea) ? nextArea : "all");
+
+    if (
+      nextSort === "name" ||
+      nextSort === "star-desc" ||
+      nextSort === "star-asc"
+    ) {
+      setSort(nextSort);
+    }
+
+    if (Number.isInteger(nextPage) && nextPage > 0) {
+      setPage(nextPage);
+    }
+  }, [areas]);
 
   const filteredHotels = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -61,6 +114,21 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
       .sort((a, b) => compareHotels(a, b, sort));
   }, [area, hotels, query, sort]);
 
+  const totalPages = Math.max(1, Math.ceil(filteredHotels.length / PAGE_SIZE));
+  const currentPage = Math.min(page, totalPages);
+  const pagedHotels = filteredHotels.slice(
+    (currentPage - 1) * PAGE_SIZE,
+    currentPage * PAGE_SIZE,
+  );
+
+  useEffect(() => {
+    setPage(1);
+  }, [area, query, sort]);
+
+  useEffect(() => {
+    updateListUrl(query, area, sort, currentPage);
+  }, [area, currentPage, query, sort]);
+
   return (
     <>
       <div
@@ -72,7 +140,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
       >
         <div grid="~ cols-1 lg:3" gap="3">
           <label>
-            <span display="block" mb="2" text="xs ct-muted dark:ct-dark-muted" font="medium">
+            <span display="block" mb="2" text="xs ct-muted dark:text-ct-dark-muted" font="medium">
               호텔 검색
             </span>
             <input
@@ -123,7 +191,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           </label>
 
           <label>
-            <span display="block" mb="2" text="xs ct-muted dark:ct-dark-muted" font="medium">
+            <span display="block" mb="2" text="xs ct-muted dark:text-ct-dark-muted" font="medium">
               정렬
             </span>
             <select
@@ -134,7 +202,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               min-h="11"
               rounded="xl"
               border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:bg-ct-dark-surface"
+              bg="ct-surface dark:ct-dark-surface"
               px="4"
               py="2.5"
               text="sm ct-text dark:ct-dark-text"
@@ -150,7 +218,11 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
 
         <div mt="4" flex="~ wrap" items="center" justify="between" gap="3">
           <p m="0" text="sm ct-text-soft dark:ct-dark-text-soft">
-            검색 결과 <strong text="ct-text dark:ct-dark-text">{filteredHotels.length}</strong>곳
+            검색 결과{" "}
+            <strong text="ct-text dark:ct-dark-text">
+              {filteredHotels.length}
+            </strong>
+            곳
           </p>
 
           {(query || area !== "all" || sort !== "name") && (
@@ -176,11 +248,70 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
       </div>
 
       {filteredHotels.length > 0 ? (
-        <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
-          {filteredHotels.map((hotel) => (
-            <HotelCard key={hotel.id} hotel={hotel} />
-          ))}
-        </div>
+        <>
+          <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
+            {pagedHotels.map((hotel) => (
+              <HotelCard key={hotel.id} hotel={hotel} />
+            ))}
+          </div>
+
+          {totalPages > 1 && (
+            <nav
+              mt="10"
+              flex="~ wrap"
+              items="center"
+              justify="center"
+              gap="2"
+              aria-label="호텔 목록 페이지 이동"
+            >
+              <button
+                type="button"
+                disabled={currentPage === 1}
+                onClick={() => setPage((value) => Math.max(1, value - 1))}
+                min-w="11"
+                min-h="11"
+                rounded="xl"
+                border="~ ct-line dark:ct-dark-line"
+                bg="ct-surface dark:bg-ct-dark-surface"
+                px="4"
+                py="2.5"
+                text="sm ct-text dark:ct-dark-text"
+                disabled-opacity="50"
+                active-scale="98"
+              >
+                이전
+              </button>
+
+              <span
+                px="3"
+                text="sm ct-text-soft dark:ct-dark-text-soft"
+                aria-live="polite"
+              >
+                {currentPage} / {totalPages}
+              </span>
+
+              <button
+                type="button"
+                disabled={currentPage === totalPages}
+                onClick={() =>
+                  setPage((value) => Math.min(totalPages, value + 1))
+                }
+                min-w="11"
+                min-h="11"
+                rounded="xl"
+                border="~ ct-line dark:ct-dark-line"
+                bg="ct-surface dark:ct-dark-surface"
+                px="4"
+                py="2.5"
+                text="sm ct-text dark:ct-dark-text"
+                disabled-opacity="50"
+                active-scale="98"
+              >
+                다음
+              </button>
+            </nav>
+          )}
+        </>
       ) : (
         <div
           mt="8"
