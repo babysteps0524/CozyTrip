@@ -60,11 +60,13 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   const [area, setArea] = useState("all");
   const [sort, setSort] = useState<SortOption>("name");
   const [page, setPage] = useState(1);
+  const [isUrlInitialized, setIsUrlInitialized] = useState(false);
 
   const areas = useMemo(() => getAreaOptions(hotels), [hotels]);
 
   useEffect(() => {
-    const params = new URLSearchParams(window.location.search);
+    const readUrlState = () => {
+      const params = new URLSearchParams(window.location.search);
     const nextQuery = params.get("q") ?? "";
     const nextArea = params.get("area") ?? "all";
     const nextSort = params.get("sort");
@@ -81,9 +83,18 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
       setSort(nextSort);
     }
 
-    if (Number.isInteger(nextPage) && nextPage > 0) {
-      setPage(nextPage);
-    }
+      if (Number.isInteger(nextPage) && nextPage > 0) {
+        setPage(nextPage);
+      } else {
+        setPage(1);
+      }
+      setIsUrlInitialized(true);
+    };
+
+    readUrlState();
+    window.addEventListener("popstate", readUrlState);
+
+    return () => window.removeEventListener("popstate", readUrlState);
   }, [areas]);
 
   const filteredHotels = useMemo(() => {
@@ -122,12 +133,20 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   );
 
   useEffect(() => {
+    if (!isUrlInitialized) return;
     setPage(1);
-  }, [area, query, sort]);
+  }, [area, query, sort, isUrlInitialized]);
 
   useEffect(() => {
+    if (!isUrlInitialized) return;
     updateListUrl(query, area, sort, currentPage);
-  }, [area, currentPage, query, sort]);
+  }, [area, currentPage, isUrlInitialized, query, sort]);
+
+  const goToPage = (nextPage: number) => {
+    const safePage = Math.min(Math.max(nextPage, 1), totalPages);
+    setPage(safePage);
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -267,7 +286,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               <button
                 type="button"
                 disabled={currentPage === 1}
-                onClick={() => setPage((value) => Math.max(1, value - 1))}
+                onClick={() => goToPage(currentPage - 1)}
                 min-w="11"
                 min-h="11"
                 rounded="xl"
@@ -282,20 +301,41 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                 이전
               </button>
 
+              <div flex="~ wrap" items="center" gap="2">
+                {Array.from({ length: totalPages }, (_, index) => index + 1).map(
+                  (pageNumber) => (
+                    <button
+                      key={pageNumber}
+                      type="button"
+                      aria-label={`${pageNumber}페이지`}
+                      aria-current={pageNumber === currentPage ? "page" : undefined}
+                      onClick={() => goToPage(pageNumber)}
+                      min-w="11"
+                      min-h="11"
+                      rounded="xl"
+                      border="~ ct-line dark:ct-dark-line"
+                      bg={pageNumber === currentPage ? "ct-primary" : "ct-surface dark:bg-ct-dark-surface"}
+                      text={pageNumber === currentPage ? "white" : "sm ct-text dark:ct-dark-text"}
+                      font="medium"
+                      active-scale="98"
+                    >
+                      {pageNumber}
+                    </button>
+                  ),
+                )}
+              </div>
+
               <span
-                px="3"
-                text="sm ct-text-soft dark:ct-dark-text-soft"
+                sr-only
                 aria-live="polite"
               >
-                {currentPage} / {totalPages}
+                현재 {currentPage}페이지, 전체 {totalPages}페이지
               </span>
 
               <button
                 type="button"
                 disabled={currentPage === totalPages}
-                onClick={() =>
-                  setPage((value) => Math.min(totalPages, value + 1))
-                }
+                onClick={() => goToPage(currentPage + 1)}
                 min-w="11"
                 min-h="11"
                 rounded="xl"
