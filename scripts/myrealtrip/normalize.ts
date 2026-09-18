@@ -114,22 +114,22 @@ function toHotel(
       city: destination.city,
       area: destination.city,
     },
-    images: [
-      {
-        id: `myrealtrip-${item.itemId}-hero`,
-        src: item.imageUrl,
-        alt: `${item.itemName} 대표 이미지`,
-        source: "myrealtrip",
-        type: "hero",
-        hotelId: id,
-        credit: "MyRealTrip Partner API",
-        sourceUrl: item.productUrl,
-        license: imageUsageAllowed
-          ? "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함"
-          : "사용 조건 확인 전 — MyRealTrip Partner API 이용약관 확인 필요",
-        rightsConfirmed: imageUsageAllowed,
-      },
-    ],
+    images: imageUsageAllowed && item.imageUrl
+      ? [
+          {
+            id: `myrealtrip-${item.itemId}-hero`,
+            src: item.imageUrl,
+            alt: `${item.itemName} 대표 이미지`,
+            source: "myrealtrip",
+            type: "hero",
+            hotelId: id,
+            credit: "MyRealTrip Partner API",
+            sourceUrl: item.productUrl,
+            license: "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            rightsConfirmed: true,
+          },
+        ]
+      : [],
     facilities: [],
     restaurants: [],
     accommodationType: "호텔",
