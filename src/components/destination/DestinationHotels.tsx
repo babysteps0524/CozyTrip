@@ -42,10 +42,10 @@ export default function DestinationHotels({
             </div>
 
             <a
-              href={`/japan/${destination.slug}/hotels/`}
+              href={"/japan/" + destination.slug + "/hotels/"}
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              active-scale="0.98"
+              active-scale="98"
             >
               호텔 전체 보기 →
             </a>
