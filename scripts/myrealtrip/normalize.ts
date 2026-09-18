@@ -1,0 +1,160 @@
+import type { AffiliateLink, Hotel } from "../../src/types";
+
+export interface MyRealTripAccommodationItem {
+  itemId: number;
+  itemName: string;
+  salePrice: number;
+  originalPrice: number;
+  starRating: number;
+  reviewScore: string;
+  reviewCount: number;
+  imageUrl: string;
+  productUrl: string;
+  deepLink: string;
+}
+
+export interface MyRealTripAccommodationSearchResponse {
+  data?: {
+    items?: MyRealTripAccommodationItem[];
+    totalCount?: number;
+    page?: number;
+    size?: number;
+  };
+  meta?: {
+    totalCount?: number;
+  };
+  result?: {
+    status?: number;
+    message?: string;
+    code?: string;
+  };
+}
+
+export interface MyRealTripRegion {
+  regionId: number;
+  name: string;
+  subName: string;
+  enName: string;
+  type: string;
+}
+
+export interface MyRealTripRegionAutocompleteResponse {
+  data?: {
+    regions?: MyRealTripRegion[];
+  };
+}
+
+export interface MyRealTripDestination {
+  slug: string;
+  city: string;
+  cityEn: string;
+  prefecture: string;
+  regionKeyword: string;
+  regionId: number;
+}
+
+const DESTINATIONS: MyRealTripDestination[] = [
+  {
+    slug: "tokyo",
+    city: "도쿄",
+    cityEn: "Tokyo",
+    prefecture: "Tokyo",
+    regionKeyword: "도쿄",
+    regionId: 2955,
+  },
+];
+
+const affiliateLinks = (productUrl: string): AffiliateLink[] => [
+  {
+    provider: "myrealtrip",
+    url: productUrl,
+    label: "마이리얼트립에서 호텔 확인",
+    description: "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+    rel: "sponsored",
+    external: true,
+  },
+];
+
+function slugify(value: string): string {
+  const slug = value
+    .normalize("NFKD")
+    .toLowerCase()
+    .trim()
+    .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
+    .replace(/^-+|-+$/g, "");
+
+  return slug || "hotel";
+}
+
+function toHotel(
+  item: MyRealTripAccommodationItem,
+  destination: MyRealTripDestination,
+): Hotel {
+  const id = `myrealtrip-${item.itemId}`;
+  const slug = `${slugify(item.itemName)}-${item.itemId}`;
+
+  return {
+    id,
+    name: item.itemName,
+    slug,
+    country: "일본",
+    countryCode: "JP",
+    prefecture: destination.prefecture,
+    city: destination.city,
+    area: destination.city,
+    destinationId: `japan-${destination.slug}`,
+    description: `${destination.city} 지역의 ${item.itemName} 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.`,
+    location: {
+      country: "일본",
+      countryCode: "JP",
+      prefecture: destination.prefecture,
+      city: destination.city,
+      area: destination.city,
+    },
+    images: [
+      {
+        id: `myrealtrip-${item.itemId}-hero`,
+        src: item.imageUrl,
+        alt: `${item.itemName} 대표 이미지`,
+        source: "licensed",
+        type: "hero",
+        hotelId: id,
+        credit: "MyRealTrip Partner API",
+        sourceUrl: item.productUrl,
+        license: "MyRealTrip Partner API 제공 이미지",
+        rightsConfirmed: true,
+      },
+    ],
+    facilities: [],
+    restaurants: [],
+    accommodationType: "호텔",
+    starRating: item.starRating,
+    ratingAverage: Number(item.reviewScore),
+    numberOfReviews: item.reviewCount,
+    affiliateLinks: affiliateLinks(item.productUrl),
+    publishedAt: new Date().toISOString().slice(0, 10),
+    updatedAt: new Date().toISOString().slice(0, 10),
+  };
+}
+
+export function findCityRegion(
+  response: MyRealTripRegionAutocompleteResponse,
+  city: string,
+): MyRealTripRegion | undefined {
+  return response.data?.regions?.find(
+    (region) => region.name === city && region.type === "CITY",
+  );
+}
+
+export function normalizeAccommodationItems(
+  response: MyRealTripAccommodationSearchResponse,
+  destination: MyRealTripDestination,
+): Hotel[] {
+  const items = response.data?.items ?? [];
+
+  return items.map((item) => toHotel(item, destination));
+}
+
+export function getMyRealTripDestinations(): MyRealTripDestination[] {
+  return DESTINATIONS.map((destination) => ({ ...destination }));
+}
