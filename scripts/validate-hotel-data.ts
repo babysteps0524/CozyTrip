@@ -25,15 +25,63 @@ interface HotelSource {
 }
 
 const root = resolve(import.meta.dir, "..");
-const inputPath = resolve(root, "src/data/generated/agoda-hotels.json");
+
+const sources: HotelSource[] = [
+  {
+    name: "Agoda",
+    filePath: resolve(root, "src/data/generated/agoda-hotels.json"),
+    source: await readSource(
+      resolve(root, "src/data/generated/agoda-hotels.json"),
+    ),
+  },
+  {
+    name: "MyRealTrip",
+    filePath: resolve(root, "src/data/generated/myrealtrip-hotels.json"),
+    source: await readSource(
+      resolve(root, "src/data/generated/myrealtrip-hotels.json"),
+    ),
+  },
+];
+
+async function readSource(filePath: string): Promise<HotelSourceFile> {
+  const file = Bun.file(filePath);
+
+  if (!(await file.exists())) {
+    return {};
+  }
+
+  const raw = await file.text();
+
+  try {
+    return JSON.parse(raw) as HotelSourceFile;
+  } catch (error) {
+    throw new Error(
+      [
+        `Failed to parse hotel data: ${filePath}`,
+        error instanceof Error ? error.message : String(error),
+      ].join("\n"),
+    );
+  }
+}
 
 async function main(): Promise<void> {
-  const raw = await Bun.file(inputPath).text();
-  const source = JSON.parse(raw) as AgodaHotelsFile;
-  const hotels = Array.isArray(source.hotels) ? source.hotels : [];
+  const allHotels = sources.flatMap((source) =>
+    Array.isArray(source.source.hotels)
+      ? source.source.hotels.map((hotel) => ({
+          hotel,
+          sourceName: source.name,
+        }))
+      : [],
+  );
 
-  if (hotels.length === 0) {
+  if (allHotels.length === 0) {
     console.log("No hotels found. Nothing to validate.");
+    for (const source of sources) {
+      const count = Array.isArray(source.source.hotels)
+        ? source.source.hotels.length
+        : 0;
+      console.log(`${source.name}: ${count} hotel(s)`);
+    }
     return;
   }
 
@@ -41,12 +89,14 @@ async function main(): Promise<void> {
   let invalidCount = 0;
   let warningCount = 0;
 
-  for (const hotel of hotels) {
+  for (const { hotel, sourceName } of allHotels) {
     const result = validateHotelData(hotel);
     warningCount += result.warnings.length;
 
     for (const warning of result.warnings) {
-      console.warn(`Hotel data warning [${sourceName} / ${hotel.id}]: ${warning}`);
+      console.warn(
+        `Hotel data warning [${sourceName} / ${hotel.id}]: ${warning}`,
+      );
     }
 
     if (result.valid) {
@@ -66,7 +116,9 @@ async function main(): Promise<void> {
   console.log(`Warnings: ${warningCount}`);
 
   for (const source of sources) {
-    const count = Array.isArray(source.source.hotels) ? source.source.hotels.length : 0;
+    const count = Array.isArray(source.source.hotels)
+      ? source.source.hotels.length
+      : 0;
     console.log(`${source.name}: ${count} hotel(s)`);
   }
 
