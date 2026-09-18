@@ -111,10 +111,27 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <HotelGallery images={hotel.images} />
       <HotelSummary hotel={hotel} />
 
-      <section border="b ct-line dark:ct-dark-line" bg="ct-surface-soft dark:bg-ct-dark-surface-soft">
+      <section
+        position="sticky"
+        top="0"
+        z="20"
+        border="b ct-line dark:ct-dark-line"
+        bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+      >
         <Container>
-          <nav py="3" flex="~ wrap" items="center" gap="2" text="sm" aria-label="호텔 상세 메뉴">
-            <span mr="1" text="xs ct-muted dark:ct-dark-muted" font="medium">바로가기</span>
+          <nav
+            py="2.5"
+            flex="~"
+            items="center"
+            gap="2"
+            overflow-x="auto"
+            whitespace="nowrap"
+            text="sm"
+            aria-label="호텔 상세 메뉴"
+          >
+            <span mr="1" shrink="0" text="xs ct-muted dark:ct-dark-muted" font="medium">
+              바로가기
+            </span>
             {[
               ...(hotel.rooms?.length ? [["#rooms", "객실"]] : []),
               ...(hotel.facilities?.length ? [["#facilities", "시설"]] : []),
@@ -126,6 +143,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               <a
                 key={href}
                 href={href}
+                shrink="0"
                 rounded="full"
                 border="~ ct-line dark:ct-dark-line"
                 bg="ct-surface dark:bg-ct-dark-surface"
