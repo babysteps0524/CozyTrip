@@ -166,12 +166,12 @@ export default function App({
                 <a
                   href="/"
                   mt="6"
-                  inline="block"
+                  display="block"
                   className="ct-button"
                   bg="ct-primary"
                   text="white"
                   hover="bg-ct-primary-dark"
-                  un-active="scale-0.95"
+                  active-scale="0.95"
                 >
                   홈으로 돌아가기
                 </a>
