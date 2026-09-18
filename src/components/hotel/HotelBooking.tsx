@@ -69,7 +69,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                       py="4"
                       text="ct-text dark:ct-dark-text"
                       hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                      active-scale="95"
+                      active-scale="98"
                     >
                       <span min-w="0">
                         <span display="block" text="base" font="bold">
