@@ -110,6 +110,36 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <HotelGallery images={hotel.images} />
       <HotelSummary hotel={hotel} />
 
+      <section border="b ct-line dark:ct-dark-line" bg="ct-surface-soft dark:bg-ct-dark-surface-soft">
+        <Container>
+          <nav py="3" flex="~ wrap" items="center" gap="2" text="sm" aria-label="호텔 상세 메뉴">
+            <span mr="1" text="xs ct-muted dark:ct-dark-muted" font="medium">바로가기</span>
+            {[
+              ["#rooms", "객실"],
+              ["#dining", "다이닝"],
+              ["#faq", "FAQ"],
+              ["#location", "위치"],
+              ["#booking", "예약"],
+            ].map(([href, label]) => (
+              <a
+                key={href}
+                href={href}
+                rounded="full"
+                border="~ ct-line dark:ct-dark-line"
+                bg="ct-surface dark:bg-ct-dark-surface"
+                px="3"
+                py="1.5"
+                text="ct-text-soft dark:ct-dark-text-soft"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                active-scale="95"
+              >
+                {label}
+              </a>
+            ))}
+          </nav>
+        </Container>
+      </section>
+
       {hotelPosts.length > 0 ? (
         <Section>
           <Container>
@@ -161,7 +191,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       )}
 
       {hotel.rooms && hotel.rooms.length > 0 && (
-        <Section borderTop>
+        <Section id="rooms" borderTop>
           <Container>
             <p
               m="0"
@@ -191,7 +221,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       )}
 
       {hotel.restaurants && hotel.restaurants.length > 0 && (
-        <Section borderTop>
+        <Section id="dining" borderTop>
           <Container>
             <p
               m="0"
@@ -219,7 +249,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <HotelStayInfo hotel={hotel} />
 
       {hotelPost?.faq && hotelPost.faq.length > 0 && (
-        <Section borderTop>
+        <Section id="faq" borderTop>
           <Container>
             <p
               m="0"
@@ -290,7 +320,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                   bg="ct-surface dark:ct-dark-surface"
                   p="5"
                   hover="border-ct-primary dark:border-ct-dark-line"
-                  active-scale="0.98"
+                  active-scale="95"
                 >
                   <h3 m="0" text="base ct-text dark:ct-dark-text" font="bold">
                     {post.title}
