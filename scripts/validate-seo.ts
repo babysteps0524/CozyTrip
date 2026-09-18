@@ -8,7 +8,8 @@ import { posts } from "../src/data/posts";
 const distDir = join(process.cwd(), "dist");
 
 function routeFile(route: string): string {
-  return join(distDir, route === "/" ? "index.html" : route, "index.html");
+  if (route === "/") return join(distDir, "index.html");
+  return join(distDir, route, "index.html");
 }
 
 function assertIncludes(html: string, value: string, label: string): void {
