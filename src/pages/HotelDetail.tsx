@@ -60,7 +60,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               py="1"
               rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="95"
+              active-scale="98"
             >
               홈
             </a>
@@ -73,7 +73,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               py="1"
               rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="95"
+              active-scale="98"
             >
               {hotel.city}
             </a>
@@ -86,7 +86,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               py="1"
               rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="95"
+              active-scale="98"
             >
               호텔
             </a>
@@ -131,7 +131,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                 py="1.5"
                 text="ct-text-soft dark:ct-dark-text-soft"
                 hover="text-ct-primary dark:text-ct-dark-text"
-                active-scale="95"
+                active-scale="98"
               >
                 {label}
               </a>
@@ -320,7 +320,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
                   bg="ct-surface dark:ct-dark-surface"
                   p="5"
                   hover="border-ct-primary dark:border-ct-dark-line"
-                  active-scale="95"
+                  active-scale="98"
                 >
                   <h3 m="0" text="base ct-text dark:ct-dark-text" font="bold">
                     {post.title}
