@@ -26,7 +26,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
       bg="ct-surface dark:ct-dark-surface"
       transition="transform duration-150"
       hover="shadow-card"
-      un-active="scale-98"
+      active-scale="0.98"
     >
       {image ? (
         <Image
