@@ -126,7 +126,9 @@ function toHotel(
     facilities: [],
     restaurants: [],
     accommodationType: "호텔",
-    starRating: item.starRating,
+    ...(Number.isFinite(item.starRating) && item.starRating >= 0 && item.starRating <= 5
+      ? { starRating: item.starRating }
+      : {}),
     ratingAverage: Number(item.reviewScore),
     numberOfReviews: item.reviewCount,
     affiliateLinks: affiliateLinks(item.productUrl),
@@ -139,8 +141,18 @@ export function findCityRegion(
   response: MyRealTripRegionAutocompleteResponse,
   city: string,
 ): MyRealTripRegion | undefined {
-  return response.data?.regions?.find(
-    (region) => region.name === city && region.type === "CITY",
+  const regions = response.data?.regions ?? [];
+
+  return (
+    regions.find(
+      (region) => region.name === city && region.type === "CITY",
+    ) ??
+    regions.find(
+      (region) =>
+        region.name === city ||
+        region.subName.includes(city) ||
+        region.enName.toLowerCase() === city.toLowerCase(),
+    )
   );
 }
 
