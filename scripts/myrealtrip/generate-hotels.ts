@@ -118,6 +118,7 @@ async function main(): Promise<void> {
   const output = {
     generatedAt: new Date().toISOString(),
     source: "myrealtrip",
+    imageUsageAllowed: process.env.MYREALTRIP_IMAGE_USAGE_ALLOWED?.trim().toLowerCase() === "true",
     search: {
       checkIn: CHECK_IN,
       checkOut: CHECK_OUT,
