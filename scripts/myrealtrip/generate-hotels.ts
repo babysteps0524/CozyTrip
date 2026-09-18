@@ -63,10 +63,21 @@ async function main(): Promise<void> {
         isDomestic: false,
       })) as MyRealTripRegionAutocompleteResponse;
 
-    const region = findCityRegion(regionResponse, destination.city);
+    let region = findCityRegion(regionResponse, destination.city);
+
+    if (!region && destination.slug === "okinawa") {
+      const fallbackResponse =
+        (await autocompleteAccommodationRegions({
+          keyword: "나하",
+          isDomestic: false,
+        })) as MyRealTripRegionAutocompleteResponse;
+      region = findCityRegion(fallbackResponse, "나하");
+    }
 
     if (!region) {
-      throw new Error(`${destination.city} CITY region을 찾지 못했습니다.`);
+      console.warn(`  지역을 찾지 못해 ${destination.city} 생성을 건너뜁니다.`);
+      console.log("");
+      continue;
     }
 
     if (region.regionId !== destination.regionId) {
