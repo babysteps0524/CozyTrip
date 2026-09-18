@@ -57,6 +57,24 @@ export function createSeoMetadata(
     };
   }
 
+  if (normalizedRoute === "/japan/") {
+    return {
+      title: `일본 여행 및 호텔 정보 | ${SITE_NAME}`,
+      description: "도쿄, 오사카, 교토, 후쿠오카, 삿포로, 오키나와의 호텔과 주요 지역, 여행 정보를 확인해보세요.",
+      canonical: createCanonical("/japan/"),
+      ogType: "website",
+    };
+  }
+
+  if (normalizedRoute === "/guides/") {
+    return {
+      title: `일본 여행 가이드 | ${SITE_NAME}`,
+      description: "일본 여행을 준비할 때 필요한 지역별 호텔 선택과 숙소 정보를 확인해보세요.",
+      canonical: createCanonical("/guides/"),
+      ogType: "website",
+    };
+  }
+
   const destinationMatch = normalizedRoute.match(/^\/japan\/([^/]+)\/$/);
   if (destinationMatch) {
     const destination = destinations.find((item) => item.slug === destinationMatch[1]);
@@ -68,7 +86,7 @@ export function createSeoMetadata(
         ),
         canonical: createCanonical(`/japan/${destination.slug}/`),
         ogType: "website",
-        image: destination.heroImage,
+        image: getFirstImage(destination.heroImage ? [destination.heroImage] : undefined),
       };
     }
   }
