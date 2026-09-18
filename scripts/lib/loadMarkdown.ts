@@ -23,7 +23,7 @@ interface GeneratedHotelPostsFile {
 
 const projectRoot = process.cwd();
 
-const contentRoot = join(projectRoot, "src", "content");
+const contentRoot = join(projectRoot, "content");
 
 async function getMarkdownFiles(directory: string): Promise<string[]> {
   const entries = await readdir(directory, {
