@@ -46,6 +46,8 @@ export interface HotelPolicy {
   bookingNotes?: string[];
 }
 
+export type HotelDataSource = "manual" | "agoda" | "myrealtrip";
+
 export interface Hotel {
   id: string;
 
@@ -92,4 +94,10 @@ export interface Hotel {
   publishedAt?: string;
 
   updatedAt?: string;
+
+  /** 데이터가 마지막으로 API에서 조회된 날짜 */
+  dataFetchedAt?: string;
+
+  /** 호텔 정보의 주요 데이터 출처 */
+  dataSource?: HotelDataSource;
 }
