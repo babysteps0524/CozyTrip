@@ -20,6 +20,13 @@ import {
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
 import type { Hotel } from "../types";
+
+function formatDate(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+  const date = new Date(value);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "long", day: "numeric" }).format(date);
+}
 import {
   createCanonical,
   createHotelStructuredData,
@@ -137,9 +144,40 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               COZYTRIP HOTEL NOTE
             </p>
             <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">호텔 소개와 여행 메모</h2>
+            <div mt="4" flex="~ wrap" items="center" gap="2 sm:3" text="xs ct-muted dark:ct-dark-muted">
+              <span font="medium" text="ct-text-soft dark:ct-dark-text-soft">CozyTrip</span>
+              {(() => {
+                const publishedLabel = formatDate(hotelPost?.publishedAt ?? hotel.publishedAt);
+                const updatedLabel = formatDate(hotelPost?.updatedAt ?? hotel.updatedAt);
+                return <>{publishedLabel && <span>작성 {publishedLabel}</span>}{updatedLabel && updatedLabel !== publishedLabel && <span>수정 {updatedLabel}</span>}</>;
+              })()}
+            </div>
             <p mt="3" mb="0" max-w="3xl" text="sm ct-muted dark:ct-dark-muted" leading="relaxed">
               CozyTrip가 여행자가 호텔을 살펴볼 때 참고할 수 있도록 정리한 정보입니다. 실제 예약 조건은 각 예약 플랫폼에서 다시 확인해 주세요.
             </p>
+          </div>
+
+          <div mt="6" rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface-soft dark:ct-dark-surface-soft" p="5 sm:6">
+            <div flex="~ col sm:row" sm="items-center justify-between" gap="2">
+              <div>
+                <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">CHECKPOINTS</p>
+                <h3 mt="1.5" mb="0" text="lg sm:xl" font="bold">살펴볼 핵심 정보</h3>
+              </div>
+              <span text="xs ct-muted dark:ct-dark-muted">제공된 호텔 정보 기준</span>
+            </div>
+            <div mt="5" grid="~ cols-1 sm:2 lg:4" gap="3">
+              {[
+                ["지역", [hotel.city, hotel.area].filter(Boolean).join(" · ")],
+                ["숙소 유형", hotel.accommodationType],
+                ["가까운 역", hotel.location.nearestStations?.slice(0, 2).join(" · ")],
+                ["체크인 · 체크아웃", [hotel.checkIn, hotel.checkOut].filter(Boolean).join(" · ")],
+              ].filter(([, value]) => Boolean(value)).map(([label, value]) => (
+                <div key={label} rounded="lg" bg="ct-surface dark:ct-dark-surface" p="4">
+                  <p m="0" text="xs ct-muted dark:ct-dark-muted">{label}</p>
+                  <p mt="1.5" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" font="medium" leading="relaxed">{value}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           {hotelPosts.length > 0 ? (
