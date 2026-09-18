@@ -1,7 +1,7 @@
 import type { Destination, Hotel } from "../types";
 
 import { Container, Section } from "../components/common";
-import { HotelCard } from "../components/hotel";
+import { HotelListResults } from "../components/hotel";
 
 interface HotelListProps {
   destination: Destination;
@@ -81,18 +81,14 @@ export default function HotelList({ destination, hotels }: HotelListProps) {
               href={`/japan/${destination.slug}/`}
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
-              active-scale="0.98"
+              active-scale="98"
             >
               {destination.name} 여행지 보기 →
             </a>
           </div>
 
           {hotels.length > 0 ? (
-            <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
-              {hotels.map((hotel) => (
-                <HotelCard key={hotel.id} hotel={hotel} />
-              ))}
-            </div>
+            <HotelListResults hotels={hotels} />
           ) : (
             <div
               mt="8"
