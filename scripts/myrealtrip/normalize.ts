@@ -1,4 +1,5 @@
 import type { AffiliateLink, Hotel } from "../../src/types";
+import { getMyRealTripConfig } from "./config";
 
 export interface MyRealTripAccommodationItem {
   itemId: number;
@@ -90,6 +91,7 @@ function toHotel(
 ): Hotel {
   const id = `myrealtrip-${item.itemId}`;
   const slug = `${slugify(item.itemName)}-${item.itemId}`;
+  const imageUsageAllowed = getMyRealTripConfig().imageUsageAllowed;
 
   return {
     id,
@@ -123,8 +125,10 @@ function toHotel(
         hotelId: id,
         credit: "MyRealTrip Partner API",
         sourceUrl: item.productUrl,
-        license: "권리 확인 전 — MyRealTrip API 이용약관 확인 필요",
-        rightsConfirmed: false,
+        license: imageUsageAllowed
+          ? "MyRealTrip Partner API 이미지 URL — 직접 표시 사용 조건 확인됨"
+          : "사용 조건 확인 전 — MyRealTrip Partner API 이용약관 확인 필요",
+        rightsConfirmed: imageUsageAllowed,
       },
     ],
     facilities: [],
