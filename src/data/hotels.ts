@@ -193,16 +193,18 @@ const additionalSampleHotels: Hotel[] = [
 const generated = agodaHotels as AgodaHotelFile;
 const generatedHotels = Array.isArray(generated.hotels) ? generated.hotels : [];
 
+const sampleHotels = [...manualHotels, ...additionalSampleHotels];
+
+/*
+ * Agoda API 데이터가 들어오면 샘플 호텔을 자동으로 대체합니다.
+ * API 승인 전에는 generatedHotels가 비어 있으므로 샘플 데이터로 개발합니다.
+ */
+const sourceHotels = generatedHotels.length > 0 ? generatedHotels : sampleHotels;
+
 const hotelMap = new Map<string, Hotel>();
 
-for (const hotel of [...manualHotels, ...additionalSampleHotels]) {
+for (const hotel of sourceHotels) {
   hotelMap.set(hotel.id, hotel);
-}
-
-for (const hotel of generatedHotels) {
-  if (!hotelMap.has(hotel.id)) {
-    hotelMap.set(hotel.id, hotel);
-  }
 }
 
 export const hotels: Hotel[] = Array.from(hotelMap.values());
