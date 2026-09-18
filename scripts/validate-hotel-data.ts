@@ -5,11 +5,23 @@ import {
   validateHotelData,
 } from "./lib/validate-hotel-data";
 
-interface AgodaHotelsFile {
+interface HotelSourceFile {
   generatedAt?: string;
   source?: string;
   hotelCount?: number;
   hotels?: Hotel[];
+  search?: {
+    checkIn?: string;
+    checkOut?: string;
+    adultCount?: number;
+    childCount?: number;
+  };
+}
+
+interface HotelSource {
+  name: string;
+  filePath: string;
+  source: HotelSourceFile;
 }
 
 const root = resolve(import.meta.dir, "..");
@@ -34,7 +46,7 @@ async function main(): Promise<void> {
     warningCount += result.warnings.length;
 
     for (const warning of result.warnings) {
-      console.warn(`Hotel data warning [${hotel.id}]: ${warning}`);
+      console.warn(`Hotel data warning [${sourceName} / ${hotel.id}]: ${warning}`);
     }
 
     if (result.valid) {
@@ -48,10 +60,15 @@ async function main(): Promise<void> {
 
   console.log("");
   console.log("Hotel data validation complete.");
-  console.log(`Total: ${hotels.length}`);
+  console.log(`Total: ${allHotels.length}`);
   console.log(`Valid: ${validCount}`);
   console.log(`Invalid: ${invalidCount}`);
   console.log(`Warnings: ${warningCount}`);
+
+  for (const source of sources) {
+    const count = Array.isArray(source.source.hotels) ? source.source.hotels.length : 0;
+    console.log(`${source.name}: ${count} hotel(s)`);
+  }
 
   if (invalidCount > 0) {
     process.exit(1);
