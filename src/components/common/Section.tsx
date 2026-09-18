@@ -22,6 +22,7 @@ export default function Section({
   return (
     <Component
       id={id}
+      scroll-mt={id ? "24" : undefined}
       py="12 sm:16 lg:20"
       border-t={borderTop ? "ct-line dark:ct-dark-line" : undefined}
       border-b={borderBottom ? "ct-line dark:ct-dark-line" : undefined}
