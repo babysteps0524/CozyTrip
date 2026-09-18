@@ -7,6 +7,7 @@ interface HotelListResultsProps {
 }
 
 type SortOption = "name" | "star-desc" | "star-asc";
+type StarFilter = "all" | "5" | "4" | "3" | "2";
 
 const PAGE_SIZE = 15;
 
@@ -37,6 +38,7 @@ function compareHotels(a: Hotel, b: Hotel, sort: SortOption): number {
 function buildListUrl(
   query: string,
   area: string,
+  star: StarFilter,
   sort: SortOption,
   page: number,
 ): string {
@@ -44,29 +46,66 @@ function buildListUrl(
 
   if (query.trim()) params.set("q", query.trim());
   if (area !== "all") params.set("area", area);
+  if (star !== "all") params.set("star", star);
   if (sort !== "name") params.set("sort", sort);
   if (page > 1) params.set("page", String(page));
 
   const queryString = params.toString();
-  const nextUrl = queryString
+  return queryString
     ? `${window.location.pathname}?${queryString}`
     : window.location.pathname;
-
-  return nextUrl;
 }
 
 function updateListUrl(
   query: string,
   area: string,
+  star: StarFilter,
   sort: SortOption,
   page: number,
 ): void {
-  window.history.replaceState(null, "", buildListUrl(query, area, sort, page));
+  window.history.replaceState(
+    null,
+    "",
+    buildListUrl(query, area, star, sort, page),
+  );
+}
+
+function getPageNumbers(currentPage: number, totalPages: number): Array<number | "ellipsis"> {
+  if (totalPages <= 7) {
+    return Array.from({ length: totalPages }, (_, index) => index + 1);
+  }
+
+  const pages = new Set<number>([
+    1,
+    totalPages,
+    currentPage,
+    currentPage - 1,
+    currentPage + 1,
+  ]);
+
+  const sorted = Array.from(pages)
+    .filter((page) => page >= 1 && page <= totalPages)
+    .sort((a, b) => a - b);
+
+  const result: Array<number | "ellipsis"> = [];
+
+  sorted.forEach((page, index) => {
+    const previous = sorted[index - 1];
+
+    if (previous !== undefined && page - previous > 1) {
+      result.push("ellipsis");
+    }
+
+    result.push(page);
+  });
+
+  return result;
 }
 
 export default function HotelListResults({ hotels }: HotelListResultsProps) {
   const [query, setQuery] = useState("");
   const [area, setArea] = useState("all");
+  const [star, setStar] = useState<StarFilter>("all");
   const [sort, setSort] = useState<SortOption>("name");
   const [page, setPage] = useState(1);
   const [isUrlInitialized, setIsUrlInitialized] = useState(false);
@@ -76,27 +115,37 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   useEffect(() => {
     const readUrlState = () => {
       const params = new URLSearchParams(window.location.search);
-    const nextQuery = params.get("q") ?? "";
-    const nextArea = params.get("area") ?? "all";
-    const nextSort = params.get("sort");
-    const nextPage = Number(params.get("page"));
+      const nextQuery = params.get("q") ?? "";
+      const nextArea = params.get("area") ?? "all";
+      const nextStar = params.get("star");
+      const nextSort = params.get("sort");
+      const nextPage = Number(params.get("page"));
 
-    setQuery(nextQuery);
-    setArea(areas.includes(nextArea) ? nextArea : "all");
+      setQuery(nextQuery);
+      setArea(areas.includes(nextArea) ? nextArea : "all");
 
-    if (
-      nextSort === "name" ||
-      nextSort === "star-desc" ||
-      nextSort === "star-asc"
-    ) {
-      setSort(nextSort);
-    }
-
-      if (Number.isInteger(nextPage) && nextPage > 0) {
-        setPage(nextPage);
+      if (
+        nextStar === "5" ||
+        nextStar === "4" ||
+        nextStar === "3" ||
+        nextStar === "2"
+      ) {
+        setStar(nextStar);
       } else {
-        setPage(1);
+        setStar("all");
       }
+
+      if (
+        nextSort === "name" ||
+        nextSort === "star-desc" ||
+        nextSort === "star-asc"
+      ) {
+        setSort(nextSort);
+      } else {
+        setSort("name");
+      }
+
+      setPage(Number.isInteger(nextPage) && nextPage > 0 ? nextPage : 1);
       setIsUrlInitialized(true);
     };
 
@@ -112,9 +161,11 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
     return hotels
       .filter((hotel) => {
         const matchesArea = area === "all" || hotel.area === area;
+        const matchesStar =
+          star === "all" || hotel.starRating === Number(star);
 
         if (!normalizedQuery) {
-          return matchesArea;
+          return matchesArea && matchesStar;
         }
 
         const searchableText = [
@@ -129,10 +180,14 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           .join(" ")
           .toLowerCase();
 
-        return matchesArea && searchableText.includes(normalizedQuery);
+        return (
+          matchesArea &&
+          matchesStar &&
+          searchableText.includes(normalizedQuery)
+        );
       })
       .sort((a, b) => compareHotels(a, b, sort));
-  }, [area, hotels, query, sort]);
+  }, [area, hotels, query, sort, star]);
 
   const totalPages = Math.max(1, Math.ceil(filteredHotels.length / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
@@ -144,12 +199,12 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   useEffect(() => {
     if (!isUrlInitialized) return;
     setPage(1);
-  }, [area, query, sort, isUrlInitialized]);
+  }, [area, query, sort, star, isUrlInitialized]);
 
   useEffect(() => {
     if (!isUrlInitialized) return;
-    updateListUrl(query, area, sort, currentPage);
-  }, [area, currentPage, isUrlInitialized, query, sort]);
+    updateListUrl(query, area, star, sort, currentPage);
+  }, [area, currentPage, isUrlInitialized, query, sort, star]);
 
   const goToPage = (nextPage: number) => {
     const safePage = Math.min(Math.max(nextPage, 1), totalPages);
@@ -158,11 +213,14 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
     window.history.pushState(
       null,
       "",
-      buildListUrl(query, area, sort, safePage),
+      buildListUrl(query, area, star, sort, safePage),
     );
     setPage(safePage);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
+  const hasFilters = query.trim() !== "" || area !== "all" || star !== "all" || sort !== "name";
+  const pageNumbers = getPageNumbers(currentPage, totalPages);
 
   return (
     <>
@@ -173,9 +231,14 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
         bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
         p="4 sm:5"
       >
-        <div grid="~ cols-1 lg:3" gap="3">
+        <div grid="~ cols-1 md:2 lg:4" gap="3">
           <label>
-            <span display="block" mb="2" text="xs ct-muted dark:text-ct-dark-muted" font="medium">
+            <span
+              display="block"
+              mb="2"
+              text="xs ct-muted dark:ct-dark-muted"
+              font="medium"
+            >
               호텔 검색
             </span>
             <input
@@ -198,7 +261,12 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           </label>
 
           <label>
-            <span display="block" mb="2" text="xs ct-muted dark:ct-dark-muted" font="medium">
+            <span
+              display="block"
+              mb="2"
+              text="xs ct-muted dark:ct-dark-muted"
+              font="medium"
+            >
               지역
             </span>
             <select
@@ -226,7 +294,44 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           </label>
 
           <label>
-            <span display="block" mb="2" text="xs ct-muted dark:text-ct-dark-muted" font="medium">
+            <span
+              display="block"
+              mb="2"
+              text="xs ct-muted dark:ct-dark-muted"
+              font="medium"
+            >
+              성급
+            </span>
+            <select
+              value={star}
+              onChange={(event) => setStar(event.target.value as StarFilter)}
+              aria-label="호텔 성급 필터"
+              w="full"
+              min-h="11"
+              rounded="xl"
+              border="~ ct-line dark:ct-dark-line"
+              bg="ct-surface dark:bg-ct-dark-surface"
+              px="4"
+              py="2.5"
+              text="sm ct-text dark:ct-dark-text"
+              outline="none"
+              focus="border-ct-primary"
+            >
+              <option value="all">전체 성급</option>
+              <option value="5">5성급</option>
+              <option value="4">4성급</option>
+              <option value="3">3성급</option>
+              <option value="2">2성급</option>
+            </select>
+          </label>
+
+          <label>
+            <span
+              display="block"
+              mb="2"
+              text="xs ct-muted dark:ct-dark-muted"
+              font="medium"
+            >
               정렬
             </span>
             <select
@@ -237,7 +342,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               min-h="11"
               rounded="xl"
               border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:ct-dark-surface"
+              bg="ct-surface dark:bg-ct-dark-surface"
               px="4"
               py="2.5"
               text="sm ct-text dark:ct-dark-text"
@@ -260,7 +365,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
             곳
           </p>
 
-          {(query || area !== "all" || sort !== "name") && (
+          {hasFilters && (
             <button
               type="button"
               border="0"
@@ -273,6 +378,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               onClick={() => {
                 setQuery("");
                 setArea("all");
+                setStar("all");
                 setSort("name");
               }}
             >
@@ -317,9 +423,22 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                 이전
               </button>
 
-              <div flex="~ wrap" items="center" gap="2">
-                {Array.from({ length: totalPages }, (_, index) => index + 1).map(
-                  (pageNumber) => (
+              <div flex="~ wrap" items="center" justify="center" gap="2">
+                {pageNumbers.map((pageNumber, index) =>
+                  pageNumber === "ellipsis" ? (
+                    <span
+                      key={`ellipsis-${index}`}
+                      min-w="11"
+                      min-h="11"
+                      flex="~"
+                      items="center"
+                      justify="center"
+                      text="sm ct-muted dark:ct-dark-muted"
+                      aria-hidden="true"
+                    >
+                      …
+                    </span>
+                  ) : (
                     <button
                       key={pageNumber}
                       type="button"
@@ -337,14 +456,11 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                     >
                       {pageNumber}
                     </button>
-                  ),
+                  )
                 )}
               </div>
 
-              <span
-                sr-only
-                aria-live="polite"
-              >
+              <span sr-only aria-live="polite">
                 현재 {currentPage}페이지, 전체 {totalPages}페이지
               </span>
 
@@ -356,7 +472,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                 min-h="11"
                 rounded="xl"
                 border="~ ct-line dark:ct-dark-line"
-                bg="ct-surface dark:ct-dark-surface"
+                bg="ct-surface dark:bg-ct-dark-surface"
                 px="4"
                 py="2.5"
                 text="sm ct-text dark:ct-dark-text"
@@ -382,7 +498,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
             조건에 맞는 호텔이 없습니다.
           </p>
           <p mt="2" mb="0" text="sm ct-muted dark:ct-dark-muted">
-            검색어나 지역을 변경해 다시 확인해 주세요.
+            검색어나 지역 또는 성급을 변경해 다시 확인해 주세요.
           </p>
         </div>
       )}
