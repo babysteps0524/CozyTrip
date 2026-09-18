@@ -50,7 +50,19 @@ async function getMarkdownFiles(directory: string): Promise<string[]> {
 
 async function loadDirectory(directory: string): Promise<MarkdownDocument[]> {
   const absoluteDirectory = join(contentRoot, directory);
-  const files = await getMarkdownFiles(absoluteDirectory);
+  let files: string[] = [];
+
+  try {
+    files = await getMarkdownFiles(absoluteDirectory);
+  } catch (error) {
+    const code = error instanceof Error && "code" in error ? (error as NodeJS.ErrnoException).code : undefined;
+
+    if (code !== "ENOENT") {
+      throw error;
+    }
+
+    return [];
+  }
   const documents: MarkdownDocument[] = [];
 
   for (const filePath of files) {
