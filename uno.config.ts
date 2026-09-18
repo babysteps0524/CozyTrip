@@ -1,4 +1,4 @@
-import { defineConfig, presetAttributify, presetWind4 } from "unocss";
+import { defineConfig, presetAttributify, presetWind4, transformerAttributifyJsx } from "unocss";
 
 export default defineConfig({
   presets: [
@@ -8,6 +8,8 @@ export default defineConfig({
 
     presetAttributify(),
   ],
+
+  transformers: [transformerAttributifyJsx()],
 
   theme: {
     breakpoints: {
