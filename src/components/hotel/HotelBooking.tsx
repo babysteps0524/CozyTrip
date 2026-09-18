@@ -11,7 +11,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
   const affiliateLinks = hotel.affiliateLinks ?? [];
 
   return (
-    <section id="booking" border="t ct-line dark:ct-dark-line">
+    <section id="booking" scroll-mt="24" border="t ct-line dark:ct-dark-line">
       <Container>
         <div py="12 sm:16">
           <div
