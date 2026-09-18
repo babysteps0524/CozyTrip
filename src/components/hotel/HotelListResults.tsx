@@ -34,12 +34,12 @@ function compareHotels(a: Hotel, b: Hotel, sort: SortOption): number {
   return a.name.localeCompare(b.name, "ko");
 }
 
-function updateListUrl(
+function buildListUrl(
   query: string,
   area: string,
   sort: SortOption,
   page: number,
-): void {
+): string {
   const params = new URLSearchParams();
 
   if (query.trim()) params.set("q", query.trim());
@@ -52,7 +52,16 @@ function updateListUrl(
     ? `${window.location.pathname}?${queryString}`
     : window.location.pathname;
 
-  window.history.replaceState(null, "", nextUrl);
+  return nextUrl;
+}
+
+function updateListUrl(
+  query: string,
+  area: string,
+  sort: SortOption,
+  page: number,
+): void {
+  window.history.replaceState(null, "", buildListUrl(query, area, sort, page));
 }
 
 export default function HotelListResults({ hotels }: HotelListResultsProps) {
@@ -144,6 +153,13 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
 
   const goToPage = (nextPage: number) => {
     const safePage = Math.min(Math.max(nextPage, 1), totalPages);
+    if (safePage === currentPage) return;
+
+    window.history.pushState(
+      null,
+      "",
+      buildListUrl(query, area, sort, safePage),
+    );
     setPage(safePage);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
