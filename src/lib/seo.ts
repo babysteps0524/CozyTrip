@@ -62,8 +62,10 @@ export function createSeoMetadata(
     const destination = destinations.find((item) => item.slug === destinationMatch[1]);
     if (destination) {
       return {
-        title: `${destination.name} 호텔과 여행 정보 | ${SITE_NAME}`,
-        description: normalizeDescription(destination.description),
+        title: `${destination.name} 호텔 및 여행 정보 | ${SITE_NAME}`,
+        description: normalizeDescription(
+          `${destination.name} 여행에 필요한 호텔, 주요 지역과 여행 정보를 확인해보세요. ${destination.description}`,
+        ),
         canonical: createCanonical(`/japan/${destination.slug}/`),
         ogType: "website",
         image: destination.heroImage,
