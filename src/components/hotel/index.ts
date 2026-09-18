@@ -17,3 +17,4 @@ export { default as HotelRestaurantCard } from "./HotelRestaurantCard";
 export { default as HotelStayInfo } from "./HotelStayInfo";
 
 export { default as RelatedHotels } from "./RelatedHotels";
+export { default as RelatedGuides } from "./RelatedGuides";
