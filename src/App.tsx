@@ -171,7 +171,7 @@ export default function App({
                   bg="ct-primary"
                   text="white"
                   hover="bg-ct-primary-dark"
-                  active-scale="0.95"
+                  active-scale="95"
                 >
                   홈으로 돌아가기
                 </a>

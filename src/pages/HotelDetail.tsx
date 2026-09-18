@@ -1,4 +1,9 @@
-import { getHotelPostByHotel, getHotelsByDestination, getPostsByDestination, getPostsByHotel } from "../data";
+import {
+  getHotelPostByHotel,
+  getHotelsByDestination,
+  getPostsByDestination,
+  getPostsByHotel,
+} from "../data";
 import { getDestinationById } from "../data/destinations";
 import { Container, Section } from "../components/common";
 import {
@@ -14,7 +19,12 @@ import {
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
 import type { Hotel } from "../types";
-import { createCanonical, createHotelStructuredData, createBreadcrumbStructuredData, createFaqStructuredData } from "../lib/seo";
+import {
+  createCanonical,
+  createHotelStructuredData,
+  createBreadcrumbStructuredData,
+  createFaqStructuredData,
+} from "../lib/seo";
 
 interface HotelDetailProps {
   hotel: Hotel;
@@ -50,7 +60,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               py="1"
               rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="0.95"
+              active-scale="95"
             >
               홈
             </a>
@@ -63,7 +73,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               py="1"
               rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="0.95"
+              active-scale="95"
             >
               {hotel.city}
             </a>
@@ -76,7 +86,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               py="1"
               rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="0.95"
+              active-scale="95"
             >
               호텔
             </a>
@@ -166,7 +176,10 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
             </h2>
             <div mt="8" grid="~ cols-1 lg:2" gap="5">
               {hotel.rooms.map((room, index) => (
-                <HotelRoomCard key={room.id ?? `${room.name}-${index}`} room={room} />
+                <HotelRoomCard
+                  key={room.id ?? `${room.name}-${index}`}
+                  room={room}
+                />
               ))}
             </div>
           </Container>
@@ -298,7 +311,10 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       )}
 
       {relatedHotels.length > 0 && (
-        <RelatedHotels hotels={relatedHotels.slice(0, 6)} currentHotelId={hotel.id} />
+        <RelatedHotels
+          hotels={relatedHotels.slice(0, 6)}
+          currentHotelId={hotel.id}
+        />
       )}
     </main>
   );
