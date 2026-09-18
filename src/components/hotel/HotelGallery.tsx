@@ -93,19 +93,46 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
           lg="col-span-2"
           style={{ aspectRatio: getImageAspectRatio(selectedImage) }}
         >
-          <img
-            key={selectedImage.id}
-            src={selectedImage.src}
-            alt={selectedImage.alt}
-            width={selectedImage.width || 1600}
-            height={selectedImage.height || 1000}
-            loading={safeIndex === 0 ? "eager" : "lazy"}
-            decoding="async"
-            fetchPriority={safeIndex === 0 ? "high" : "auto"}
-            w="full"
-            h="full"
-            object="cover"
-          />
+          {selectedImage.sourceUrl ? (
+            <a
+              href={selectedImage.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="이미지 출처 및 호텔 정보 확인"
+              display="block"
+              w="full"
+              h="full"
+              active-scale="98"
+            >
+              <img
+                key={selectedImage.id}
+                src={selectedImage.src}
+                alt={selectedImage.alt}
+                width={selectedImage.width || 1600}
+                height={selectedImage.height || 1000}
+                loading={safeIndex === 0 ? "eager" : "lazy"}
+                decoding="async"
+                fetchPriority={safeIndex === 0 ? "high" : "auto"}
+                w="full"
+                h="full"
+                object="cover"
+              />
+            </a>
+          ) : (
+            <img
+              key={selectedImage.id}
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              width={selectedImage.width || 1600}
+              height={selectedImage.height || 1000}
+              loading={safeIndex === 0 ? "eager" : "lazy"}
+              decoding="async"
+              fetchPriority={safeIndex === 0 ? "high" : "auto"}
+              w="full"
+              h="full"
+              object="cover"
+            />
+          )
 
           <div
             absolute
