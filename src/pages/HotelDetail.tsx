@@ -117,7 +117,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               ...(hotel.restaurants?.length ? [["#dining", "다이닝"]] : []),
               ...(hotelPost?.faq?.length ? [["#faq", "FAQ"]] : []),
               ["#location", "위치"],
-              ["#booking", "예약"],
+              ["#booking", "예약 정보"],
             ].map(([href, label]) => (
               <a key={href} href={href} shrink="0" rounded="full"
                 border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface"
@@ -134,9 +134,12 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
         <Container>
           <div>
             <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
-              HOTEL GUIDE
+              COZYTRIP HOTEL NOTE
             </p>
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">호텔 소개</h2>
+            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">호텔 소개와 여행 메모</h2>
+            <p mt="3" mb="0" max-w="3xl" text="sm ct-muted dark:ct-dark-muted" leading="relaxed">
+              CozyTrip가 여행자가 호텔을 살펴볼 때 참고할 수 있도록 정리한 정보입니다. 실제 예약 조건은 각 예약 플랫폼에서 다시 확인해 주세요.
+            </p>
           </div>
 
           {hotelPosts.length > 0 ? (
