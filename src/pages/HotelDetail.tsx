@@ -115,9 +115,10 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
           <nav py="3" flex="~ wrap" items="center" gap="2" text="sm" aria-label="호텔 상세 메뉴">
             <span mr="1" text="xs ct-muted dark:ct-dark-muted" font="medium">바로가기</span>
             {[
-              ["#rooms", "객실"],
-              ["#dining", "다이닝"],
-              ["#faq", "FAQ"],
+              ...(hotel.rooms?.length ? [["#rooms", "객실"]] : []),
+              ...(hotel.facilities?.length ? [["#facilities", "시설"]] : []),
+              ...(hotel.restaurants?.length ? [["#dining", "다이닝"]] : []),
+              ...(hotelPost?.faq?.length ? [["#faq", "FAQ"]] : []),
               ["#location", "위치"],
               ["#booking", "예약"],
             ].map(([href, label]) => (
