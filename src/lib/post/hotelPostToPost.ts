@@ -57,7 +57,7 @@ function getHeroImageId(
   const imageMap = toImageMap(images);
   const heroId = images.find((image) => image.type === "hero")?.id;
 
-  if (isUsableImage(imageMap.get(heroId))) {
+  if (heroId && isUsableImage(imageMap.get(heroId))) {
     return heroId;
   }
 
@@ -197,7 +197,7 @@ export function createHotelPostBlocks(
   );
 
   if (remainingPostImages.length > 1) {
-    addGallery(blocks, remainingPostImages, imageMap, usedImageIds, );
+    addGallery(blocks, remainingPostImages, imageMap, usedImageIds);
   } else {
     addImage(blocks, remainingPostImages[0], imageMap, usedImageIds);
   }
