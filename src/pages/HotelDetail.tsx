@@ -1,4 +1,4 @@
-import { getHotelPostByHotel, getHotelsByDestination, getPostsByHotel } from "../data";
+import { getHotelPostByHotel, getHotelsByDestination, getPostsByDestination, getPostsByHotel } from "../data";
 import { getDestinationById } from "../data/destinations";
 import { Container, Section } from "../components/common";
 import {
