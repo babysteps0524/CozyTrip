@@ -460,7 +460,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                 )}
               </div>
 
-              <span sr-only aria-live="polite">
+              <span className="sr-only" aria-live="polite">
                 현재 {currentPage}페이지, 전체 {totalPages}페이지
               </span>
 
