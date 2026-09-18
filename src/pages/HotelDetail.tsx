@@ -23,7 +23,10 @@ interface HotelDetailProps {
 export default function HotelDetail({ hotel }: HotelDetailProps) {
   const destination = getDestinationById(hotel.destinationId);
   const destinationSlug = destination?.slug ?? hotel.city.toLowerCase();
-  const relatedPosts = getPostsByHotel(hotel.id);
+  const hotelPosts = getPostsByHotel(hotel.id);
+  const relatedGuides = getPostsByDestination(hotel.destinationId).filter(
+    (post) => post.category === "guide" && post.hotelId !== hotel.id,
+  );
   const hotelPost = getHotelPostByHotel(hotel.id);
   const relatedHotels = getHotelsByDestination(hotel.destinationId).filter(
     (item) => item.id !== hotel.id,
@@ -97,7 +100,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <HotelGallery images={hotel.images} />
       <HotelSummary hotel={hotel} />
 
-      {relatedPosts.length > 0 ? (
+      {hotelPosts.length > 0 ? (
         <Section>
           <Container>
             <div>
@@ -114,7 +117,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               </h2>
             </div>
             <div mt="8">
-              {relatedPosts.map((post) => (
+              {hotelPosts.map((post) => (
                 <PostRenderer key={post.id} post={post} />
               ))}
             </div>
@@ -250,7 +253,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       <HotelLocation hotel={hotel} />
       <HotelBooking hotel={hotel} />
 
-      {relatedPosts.length > 0 && (
+      {relatedGuides.length > 0 && (
         <Section borderTop>
           <Container>
             <p
@@ -265,7 +268,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               함께 읽으면 좋은 글
             </h2>
             <div mt="8" grid="~ cols-1 sm:2" gap="5">
-              {relatedPosts.slice(0, 4).map((post) => (
+              {relatedGuides.slice(0, 4).map((post) => (
                 <a
                   key={post.id}
                   href={`/guides/${post.slug}/`}
