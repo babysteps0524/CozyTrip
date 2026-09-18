@@ -43,6 +43,9 @@ export interface HotelImage {
 
   sourceUrl?: string;
 
+  /** API 이미지의 이용 조건 또는 라이선스 메모 */
+  license?: string;
+
   rightsConfirmed: boolean;
 
   variants?: ResponsiveImageVariant[];
