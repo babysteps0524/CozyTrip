@@ -2,6 +2,17 @@ import type { Post } from "../../types";
 
 import { Image } from "../common";
 
+function createHeadingId(text: string, index: number): string {
+  const slug = text
+    .normalize("NFKD")
+    .toLowerCase()
+    .trim()
+    .replace(/[^\\p{Letter}\\p{Number}]+/gu, "-")
+    .replace(/^-+|-+$/g, "");
+
+  return `post-heading-${slug || "section"}-${index}`;
+}
+
 interface PostRendererProps {
   post: Post;
 }
@@ -10,7 +21,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
   return (
     <article max-w="3xl" text="base sm:lg ct-text dark:ct-dark-text">
       {post.blocks.map((block, index) => {
-        if (block.type === "heading") {
+        if (block.type === "heading") {\n          const headingId = createHeadingId(block.text, index);
           if (block.level === 2) {
             return (
               <h2
