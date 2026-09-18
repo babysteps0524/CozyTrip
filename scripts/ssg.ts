@@ -18,6 +18,7 @@ import {
   SITE_URL,
 } from "../src/lib/seo";
 import type { HotelImage, Post } from "../src/types";
+import { getHotelPostByHotel } from "../src/data/posts";
 
 const distDir = join(process.cwd(), "dist");
 const indexPath = join(distDir, "index.html");
@@ -174,7 +175,10 @@ function injectSeoMetadata(html: string, route: string, posts: Post[]): string {
       hotelSeoData.destination,
       hotelSeoData.hotel,
     );
-    const faqSchema = createFaqStructuredData(hotelSeoData.hotel);
+    const faqSchema = createFaqStructuredData(
+      hotelSeoData.hotel,
+      getHotelPostByHotel(hotelSeoData.hotel.id),
+    );
 
     tags.push(
       `<script type="application/ld+json">${serializeStructuredData(hotelSchema)}</script>`,
