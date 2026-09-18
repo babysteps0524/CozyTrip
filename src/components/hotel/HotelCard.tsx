@@ -26,7 +26,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
       bg="ct-surface dark:ct-dark-surface"
       transition="transform duration-150"
       hover="shadow-card"
-      active-scale="0.98"
+      active-scale="0.95"
     >
       {image ? (
         <Image
@@ -71,9 +71,38 @@ export default function HotelCard({ hotel }: HotelCardProps) {
           </p>
         )}
 
+        <div mt="4" flex="~ wrap" items="center" gap="2">
+          {hotel.accommodationType && (
+            <span
+              rounded="full"
+              border="~ ct-line dark:ct-dark-line"
+              bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+              px="3"
+              py="1"
+              text="xs ct-text-soft dark:ct-dark-text-soft"
+            >
+              {hotel.accommodationType}
+            </span>
+          )}
+
+          {hotel.starRating !== undefined && (
+            <span
+              rounded="full"
+              border="~ ct-line dark:ct-dark-line"
+              bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
+              px="3"
+              py="1"
+              text="xs ct-text-soft dark:ct-dark-text-soft"
+            >
+              {hotel.starRating}성급
+            </span>
+          )}
+        </div>
+
         <p
           mt="4"
           mb="0"
+          line-clamp="3"
           text="sm ct-text-soft dark:ct-dark-text-soft"
           leading="relaxed"
         >
