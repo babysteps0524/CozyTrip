@@ -93,6 +93,8 @@ function toHotel(
 
   return {
     id,
+    externalId: String(item.itemId),
+    provider: "myrealtrip",
     name: item.itemName,
     slug,
     country: "일본",
@@ -114,7 +116,7 @@ function toHotel(
         id: `myrealtrip-${item.itemId}-hero`,
         src: item.imageUrl,
         alt: `${item.itemName} 대표 이미지`,
-        source: "licensed",
+        source: "myrealtrip",
         type: "hero",
         hotelId: id,
         credit: "MyRealTrip Partner API",
