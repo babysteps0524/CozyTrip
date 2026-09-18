@@ -6,7 +6,8 @@ import { renderToString } from "react-dom/server";
 import App from "../src/App";
 import { destinations } from "../src/data/destinations";
 import { hotels } from "../src/data/hotels";
-import { posts, setRuntimePosts } from "../src/data/posts";
+import { setRuntimePosts } from "../src/data/posts";
+import { loadPosts } from "./lib/loadMarkdown";
 import {
   createBreadcrumbStructuredData,
   createFaqStructuredData,
@@ -242,7 +243,7 @@ async function writeRoute(route: string, html: string): Promise<void> {
 
 async function main(): Promise<void> {
   console.log("Loading generated and Markdown content...");
-  const loadedPosts = posts;
+  const loadedPosts = await loadPosts();
   console.log(`Loaded ${loadedPosts.length} post(s).`);
   setRuntimePosts(loadedPosts);
 
