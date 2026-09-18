@@ -143,11 +143,14 @@ function injectSeoMetadata(html: string, route: string, posts: Post[]): string {
     if (seo.image.width) tags.push(`<meta property="og:image:width" content="${seo.image.width}" />`);
     if (seo.image.height) tags.push(`<meta property="og:image:height" content="${seo.image.height}" />`);
     tags.push(`<meta property="og:image:alt" content="${imageAlt}" />`);
+    tags.push(`<meta property="og:image:type" content="image/jpeg" />`);
+    tags.push(`<meta property="og:image:secure_url" content="${imageUrl}" />`);
     tags.push(`<meta name="twitter:image" content="${imageUrl}" />`);
   }
 
   tags.push(`<meta name="twitter:card" content="summary_large_image" />`);
   tags.push(`<meta name="twitter:title" content="${title}" />`);
+  tags.push(`<meta name="twitter:domain" content="cozytrip.kr" />`);
   tags.push(`<meta name="twitter:description" content="${description}" />`);
 
   const hotelListMatch = normalizeRoute(route).match(/^\/japan\/([^/]+)\/hotels\/$/);
