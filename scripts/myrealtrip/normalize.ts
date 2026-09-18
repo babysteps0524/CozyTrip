@@ -125,7 +125,7 @@ function toHotel(
         credit: "MyRealTrip Partner API",
         sourceUrl: item.productUrl,
         license: imageUsageAllowed
-          ? "MyRealTrip Partner API 이미지 URL — 직접 표시 사용 조건 확인됨"
+          ? "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함"
           : "사용 조건 확인 전 — MyRealTrip Partner API 이용약관 확인 필요",
         rightsConfirmed: imageUsageAllowed,
       },
