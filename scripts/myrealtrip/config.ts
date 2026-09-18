@@ -3,10 +3,35 @@ const requiredEnvNames = ["MYREALTRIP_API_KEY"] as const;
 export interface MyRealTripConfig {
   apiKey: string;
   baseUrl: string;
+  imageUsageAllowed: boolean;
 }
 
 function getEnv(name: string): string {
   return (process.env[name] ?? "").trim();
+}
+
+function parseBooleanEnv(name: string, defaultValue: boolean): boolean {
+  const value = getEnv(name).toLowerCase();
+
+  if (!value) {
+    return defaultValue;
+  }
+
+  if (["true", "1", "yes", "y"].includes(value)) {
+    return true;
+  }
+
+  if (["false", "0", "no", "n"].includes(value)) {
+    return false;
+  }
+
+  throw new Error(
+    [
+      `${name}이 올바른 boolean 값이 아닙니다.`,
+      "",
+      "허용값: true, false, 1, 0, yes, no",
+    ].join("\n"),
+  );
 }
 
 export function getMyRealTripConfig(): MyRealTripConfig {
@@ -62,5 +87,9 @@ export function getMyRealTripConfig(): MyRealTripConfig {
   return {
     apiKey,
     baseUrl: normalizedBaseUrl,
+    imageUsageAllowed: parseBooleanEnv(
+      "MYREALTRIP_IMAGE_USAGE_ALLOWED",
+      false,
+    ),
   };
 }
