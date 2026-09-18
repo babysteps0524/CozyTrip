@@ -6,6 +6,7 @@ interface SectionProps {
   borderTop?: boolean;
   borderBottom?: boolean;
   surface?: boolean;
+  id?: string;
 }
 
 export default function Section({
@@ -14,11 +15,13 @@ export default function Section({
   borderTop = false,
   borderBottom = false,
   surface = false,
+  id,
 }: SectionProps) {
   const Component = as;
 
   return (
     <Component
+      id={id}
       py="12 sm:16 lg:20"
       border-t={borderTop ? "ct-line dark:ct-dark-line" : undefined}
       border-b={borderBottom ? "ct-line dark:ct-dark-line" : undefined}
