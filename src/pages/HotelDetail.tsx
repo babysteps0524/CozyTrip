@@ -171,7 +171,7 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
       )}
 
       {hotel.facilities && hotel.facilities.length > 0 && (
-        <HotelFacilities facilities={hotel.facilities} />
+        <HotelFacilities hotel={hotel} />
       )}
 
       {hotel.restaurants && hotel.restaurants.length > 0 && (
