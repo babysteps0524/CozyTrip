@@ -50,7 +50,7 @@ export interface MyRealTripDestination {
   cityEn: string;
   prefecture: string;
   regionKeyword: string;
-  regionId: number;
+  regionId?: number;
 }
 
 const DESTINATIONS: MyRealTripDestination[] = [
@@ -60,7 +60,6 @@ const DESTINATIONS: MyRealTripDestination[] = [
     cityEn: "Tokyo",
     prefecture: "Tokyo",
     regionKeyword: "도쿄",
-    regionId: 2955,
   },
 ];
 
@@ -121,8 +120,8 @@ function toHotel(
         hotelId: id,
         credit: "MyRealTrip Partner API",
         sourceUrl: item.productUrl,
-        license: "MyRealTrip Partner API 제공 이미지",
-        rightsConfirmed: true,
+        license: "권리 확인 전 — MyRealTrip API 이용약관 확인 필요",
+        rightsConfirmed: false,
       },
     ],
     facilities: [],
