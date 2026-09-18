@@ -23,6 +23,7 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
 
   return (
     <section
+      id="location"
       border="t ct-line dark:ct-dark-line"
       bg="ct-surface-soft dark:ct-dark-surface-soft"
     >
@@ -89,7 +90,7 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
                   text="sm ct-surface dark:text-ct-dark-bg"
                   font="bold"
                   hover="opacity-85"
-                  active="scale-0.95"
+                  active-scale="98"
                 >
                   지도에서 위치 확인
                 </a>
