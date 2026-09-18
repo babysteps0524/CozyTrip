@@ -7,7 +7,7 @@ function createHeadingId(text: string, index: number): string {
     .normalize("NFKD")
     .toLowerCase()
     .trim()
-    .replace(/[^\\p{Letter}\\p{Number}]+/gu, "-")
+    .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
     .replace(/^-+|-+$/g, "");
 
   return `post-heading-${slug || "section"}-${index}`;
@@ -21,17 +21,21 @@ export default function PostRenderer({ post }: PostRendererProps) {
   return (
     <article max-w="3xl" text="base sm:lg ct-text dark:ct-dark-text">
       {post.blocks.map((block, index) => {
-        if (block.type === "heading") {\n          const headingId = createHeadingId(block.text, index);
+        if (block.type === "heading") {
+          const headingId = createHeadingId(block.text, index);
+
           if (block.level === 2) {
             return (
               <h2
                 key={index}
+                id={headingId}
                 mt={index === 0 ? "0" : "12"}
                 mb="0"
                 text="2xl sm:3xl"
                 font="bold"
                 tracking="tight"
                 leading="tight"
+                scroll-mt="24"
               >
                 {block.text}
               </h2>
@@ -41,12 +45,14 @@ export default function PostRenderer({ post }: PostRendererProps) {
           return (
             <h3
               key={index}
+              id={headingId}
               mt="8"
               mb="0"
               text="xl sm:2xl"
               font="bold"
               tracking="tight"
               leading="tight"
+              scroll-mt="24"
             >
               {block.text}
             </h3>
