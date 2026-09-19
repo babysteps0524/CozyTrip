@@ -319,7 +319,7 @@ async function generateAndValidateHotelPost(
     generatedBy: result.provider,
   };
 
-  validateHotelPost(post, hotel, { availableImages: input.images });
+  validateHotelPost(post, hotel, { availableImages: input.images, strictFacts: true });
 
   return {
     post,

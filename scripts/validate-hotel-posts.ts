@@ -1,6 +1,7 @@
 import { resolve } from "node:path";
 import type { Hotel, HotelPost } from "../src/types";
 import { validateHotelPost } from "../src/lib/ai/validate";
+import { validateHotelPostFacts } from "../src/lib/ai/factual";
 
 interface MyRealTripHotelsFile {
   hotels: unknown[];
@@ -48,6 +49,10 @@ async function main(): Promise<void> {
       validateHotelPost(post, hotel, {
         availableImages: hotel.images.filter((image) => image.rightsConfirmed),
       });
+      const factWarnings = validateHotelPostFacts(post, hotel);
+      for (const warning of factWarnings) {
+        console.warn(`FACT WARNING [${post.id}] ${warning.message}`);
+      }
       console.log(`OK: ${post.id}`);
     } catch (error) {
       failed += 1;
@@ -58,7 +63,13 @@ async function main(): Promise<void> {
     }
   }
 
+  const factWarningCount = posts.reduce((count, post) => {
+    const hotel = hotelMap.get(post.hotelId);
+    return hotel ? count + validateHotelPostFacts(post, hotel).length : count;
+  }, 0);
+
   console.log(`HotelPost validation: ${posts.length - failed} passed, ${failed} failed.`);
+  console.log(`Factual content warnings: ${factWarningCount}`);
 
   if (failed > 0) process.exit(1);
 }
