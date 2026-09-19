@@ -6,11 +6,6 @@ interface HotelCardProps {
   hotel: Hotel;
 }
 
-function getHotelPath(hotel: Hotel): string {
-  const destinationSlug = hotel.destinationId.replace("japan-", "");
-  return `/japan/${destinationSlug}/hotels/`;
-}
-
 function getLocationLabel(city?: string, area?: string): string {
   const values = [city?.trim(), area?.trim()].filter(Boolean) as string[];
   return [...new Set(values)].join(" · ");
@@ -36,27 +31,27 @@ export default function HotelCard({ hotel }: HotelCardProps) {
         )}
       </a>
 
-      <div className="flex flex-1 flex-col p-5 sm:p-6">
+      <div className="flex flex-1 flex-col p-4 sm:p-5 lg:p-4">
         {location && <p className="m-0 text-xs font-semibold tracking-wide text-ct-primary dark:text-ct-dark-text-soft">{location}</p>}
 
-        <h2 className="mt-2 mb-0 text-lg font-bold leading-snug tracking-tight text-ct-text dark:text-ct-dark-text">
+        <h2 className="mt-2 mb-0 text-base font-bold leading-snug tracking-tight text-ct-text sm:text-lg dark:text-ct-dark-text">
           <a href={`/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`} className="ct-focus" active-scale="99">{hotel.name}</a>
         </h2>
 
-        {hotel.nameEn && <p className="mt-1 mb-0 truncate text-sm text-ct-muted dark:text-ct-dark-muted">{hotel.nameEn}</p>}
+        {hotel.nameEn && <p className="mt-1 mb-0 truncate text-xs text-ct-muted sm:text-sm dark:text-ct-dark-muted">{hotel.nameEn}</p>}
 
         {facts.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
+          <div className="mt-3 flex flex-wrap gap-2">
             {facts.map((fact) => (
               <span key={fact} className="rounded-full border border-ct-line bg-ct-surface-soft px-3 py-1 text-xs text-ct-text-soft dark:border-ct-dark-line dark:bg-ct-dark-surface-soft dark:text-ct-dark-text-soft">{fact}</span>
             ))}
           </div>
         )}
 
-        <p className="mt-4 mb-0 line-clamp-3 text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">{hotel.description}</p>
+        <p className="mt-3 mb-0 line-clamp-2 text-sm leading-6 text-ct-text-soft dark:text-ct-dark-text-soft">{hotel.description}</p>
 
-        <div className="mt-auto pt-6">
-          <a href={`/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`} className="ct-focus flex items-center justify-between rounded-xl bg-ct-primary-soft px-4 py-3 text-sm font-semibold text-ct-primary transition-colors hover:bg-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text dark:hover:bg-ct-dark-line" active-scale="98">
+        <div className="mt-auto pt-4">
+          <a href={`/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`} className="ct-focus flex items-center justify-between rounded-xl bg-ct-primary-soft px-4 py-2.5 text-sm font-semibold text-ct-primary transition-colors hover:bg-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text dark:hover:bg-ct-dark-line" active-scale="98">
             <span>호텔 소개 읽기</span><span aria-hidden="true">→</span>
           </a>
         </div>
