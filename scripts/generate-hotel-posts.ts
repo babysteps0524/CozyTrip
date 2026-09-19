@@ -423,6 +423,13 @@ async function main(): Promise<void> {
     if (!validation.valid) {
       validationFailureCount += 1;
       failureCount += 1;
+      failedHotelMap.set(hotel.id, {
+        hotelId: hotel.id,
+        destinationId: hotel.destinationId,
+        hotelName: hotel.name,
+        failedAt: new Date().toISOString(),
+        reason: formatHotelValidationFailure(hotel, validation),
+      });
       console.error(formatHotelValidationFailure(hotel, validation));
       continue;
     }
