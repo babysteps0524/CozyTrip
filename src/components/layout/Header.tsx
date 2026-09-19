@@ -5,24 +5,31 @@ import Navigation from "./Navigation";
 export default function Header() {
   return (
     <header
-      border="b ct-line dark:ct-dark-line"
-      bg="ct-surface dark:ct-dark-surface"
+      position="sticky"
+      top="0"
+      z="40"
+      border="b ct-line/80 dark:ct-dark-line/80"
+      bg="ct-surface/95 dark:ct-dark-surface/95"
+      backdrop="blur"
     >
       <Container>
-        <div min-h="16" flex="~" items="center" justify="between" gap="4">
+        <div min-h="16 sm:18" flex="~" items="center" justify="between" gap="4">
           <a
             href="/"
-            flex="~"
+            flex="~ col"
             shrink="0"
-            items="center"
-            text="xl sm:2xl ct-primary dark:ct-dark-text"
+            leading="tight"
+            text="ct-primary dark:ct-dark-text"
             font="bold"
             tracking="tight"
             transition="transform duration-100"
             active-scale="98"
             aria-label="CozyTrip 코지트립 홈"
           >
-            CozyTrip 코지트립
+            <span text="lg sm:xl">CozyTrip</span>
+            <span text="xs sm:sm ct-text-soft dark:ct-dark-text-soft" font="medium">
+              코지트립
+            </span>
           </a>
 
           <Navigation />
