@@ -1,29 +1,10 @@
 import { StrictMode, type ReactNode } from "react";
-import { StrictMode, type ReactNode } from "react";\nimport { hydrateRoot } from "react-dom/client";
+import { hydrateRoot } from "react-dom/client";
 
 import { destinations } from "./data/destinations";
 import { posts } from "./data/posts";
 import { loadClientHotels } from "./data/clientHotels";
 import type { Destination, Hotel, Post } from "./types";
-
-interface HomeProps {
-  destinations: Destination[];
-  hotels: Hotel[];
-  guides: Post[];
-}
-
-interface DestinationPageProps {
-  destination: Destination;
-  hotels: Hotel[];
-  posts: Post[];
-}
-
-interface HotelDetailPageProps {
-  hotel: Hotel;
-  hotelPosts: Post[];
-  relatedGuides: Post[];
-  relatedHotels: Hotel[];
-}
 
 type PageModule = { default: (props: any) => ReactNode };
 
@@ -56,12 +37,6 @@ function getPostsByDestination(destinationId: string): Post[] {
 
 function getPostsByHotel(hotelId: string): Post[] {
   return posts.filter((post) => post.hotelId === hotelId);
-}
-
-function getHotelPostByHotel(hotelId: string): Post | undefined {
-  return posts.find(
-    (post) => post.hotelId === hotelId && post.category === "hotel",
-  );
 }
 
 function createRoute(path: string) {
