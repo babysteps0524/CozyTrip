@@ -1,10 +1,17 @@
 import type { Hotel } from "../../types";
 import { Container } from "../common";
 
-interface HotelSummaryProps { hotel: Hotel; }
+interface HotelSummaryProps {
+  hotel: Hotel;
+}
 
 function formatRating(value: number): string {
   return Number.isInteger(value) ? String(value) : value.toFixed(1);
+}
+
+function getLocationLabel(city?: string, area?: string): string {
+  const values = [city?.trim(), area?.trim()].filter(Boolean) as string[];
+  return [...new Set(values)].join(" · ");
 }
 
 export default function HotelSummary({ hotel }: HotelSummaryProps) {
@@ -16,6 +23,8 @@ export default function HotelSummary({ hotel }: HotelSummaryProps) {
   const dataFetchedLabel = hotel.dataFetchedAt
     ? new Date(hotel.dataFetchedAt).toLocaleDateString("ko-KR")
     : undefined;
+
+  const locationLabel = getLocationLabel(hotel.location.city, hotel.location.area);
 
   const facts = [
     hotel.accommodationType ? ["숙소 유형", hotel.accommodationType] : undefined,
@@ -29,17 +38,11 @@ export default function HotelSummary({ hotel }: HotelSummaryProps) {
       <Container>
         <div className="grid grid-cols-1 gap-8 py-10 sm:py-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-12 lg:py-16">
           <div>
-            <p className="m-0 text-sm font-semibold text-ct-primary dark:text-ct-dark-text-soft">
-              {hotel.city} · {hotel.area}
-            </p>
+            {locationLabel && <p className="m-0 text-sm font-semibold text-ct-primary dark:text-ct-dark-text-soft">{locationLabel}</p>}
 
-            <h1 className="mt-2 mb-0 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-              {hotel.name}
-            </h1>
+            <h1 className="mt-2 mb-0 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">{hotel.name}</h1>
 
-            {hotel.nameEn && (
-              <p className="mt-2 mb-0 text-base text-ct-muted dark:text-ct-dark-muted">{hotel.nameEn}</p>
-            )}
+            {hotel.nameEn && <p className="mt-2 mb-0 text-base text-ct-muted dark:text-ct-dark-muted">{hotel.nameEn}</p>}
 
             <div className="mt-5 flex flex-wrap gap-2">
               {hotel.accommodationType && <span className="rounded-full bg-ct-surface-soft px-3 py-1.5 text-xs text-ct-text-soft dark:bg-ct-dark-surface-soft dark:text-ct-dark-text-soft">{hotel.accommodationType}</span>}
@@ -52,15 +55,9 @@ export default function HotelSummary({ hotel }: HotelSummaryProps) {
               )}
             </div>
 
-            {dataSourceLabel && (
-              <p className="mt-3 mb-0 text-xs text-ct-muted dark:text-ct-dark-muted">
-                데이터 출처: {dataSourceLabel}{dataFetchedLabel ? ` · 조회 기준일 ${dataFetchedLabel}` : ""}
-              </p>
-            )}
+            {dataSourceLabel && <p className="mt-3 mb-0 text-xs text-ct-muted dark:text-ct-dark-muted">데이터 출처: {dataSourceLabel}{dataFetchedLabel ? ` · 조회 기준일 ${dataFetchedLabel}` : ""}</p>}
 
-            <p className="mt-6 mb-0 max-w-3xl text-base leading-8 text-ct-text-soft sm:text-lg dark:text-ct-dark-text-soft">
-              {hotel.description}
-            </p>
+            <p className="mt-6 mb-0 max-w-3xl text-base leading-8 text-ct-text-soft sm:text-lg dark:text-ct-dark-text-soft">{hotel.description}</p>
           </div>
 
           <aside className="h-fit rounded-card border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
@@ -68,10 +65,12 @@ export default function HotelSummary({ hotel }: HotelSummaryProps) {
             <h2 className="mt-2 mb-0 text-xl font-bold tracking-tight">호텔 핵심 정보</h2>
 
             <dl className="mt-5 divide-y divide-ct-line dark:divide-ct-dark-line">
-              <div className="py-3 first:pt-0">
-                <dt className="text-xs text-ct-muted dark:text-ct-dark-muted">위치</dt>
-                <dd className="mt-1 text-sm font-medium text-ct-text dark:text-ct-dark-text">{hotel.location.city} · {hotel.location.area}</dd>
-              </div>
+              {locationLabel && (
+                <div className="py-3 first:pt-0">
+                  <dt className="text-xs text-ct-muted dark:text-ct-dark-muted">위치</dt>
+                  <dd className="mt-1 text-sm font-medium text-ct-text dark:text-ct-dark-text">{locationLabel}</dd>
+                </div>
+              )}
               {facts.map(([label, value]) => (
                 <div key={label} className="py-3 last:pb-0">
                   <dt className="text-xs text-ct-muted dark:text-ct-dark-muted">{label}</dt>
