@@ -354,6 +354,7 @@ export function selectHotels(
   hotels: Hotel[],
   existingPosts: HotelPost[],
   failedHotels: FailedHotelPost[],
+  planOverride?: Record<string, number>,
 ): Hotel[] {
   if (requestedHotelId) {
     const hotel = hotels.find((item) => item.id === requestedHotelId);
@@ -373,8 +374,10 @@ export function selectHotels(
       .map((failure) => failure.hotelId),
   );
 
-  if (dailyPlan) {
-    const plan = parseDailyPlan(dailyPlan);
+  const selectionPlan = planOverride ?? (dailyPlan ? parseDailyPlan(dailyPlan) : undefined);
+
+  if (selectionPlan) {
+    const plan = selectionPlan;
     const selected: Hotel[] = [];
 
     for (const [destinationId, count] of Object.entries(plan)) {
