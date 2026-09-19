@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19T06:20:29.110Z",
+  "generatedAt": "2026-09-19T15:01:22.856Z",
   "source": "ai",
-  "postCount": 62,
+  "postCount": 70,
   "posts": [
     {
       "id": "hotel-post-myrealtrip-5008360",
@@ -4427,6 +4427,611 @@
         "myrealtrip-4479180-hero"
       ],
       "generatedBy": "openrouter",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-1114361",
+      "hotelId": "myrealtrip-1114361",
+      "slug": "다이이치-호텔-도쿄-1114361",
+      "title": "다이이치 호텔 도쿄 - 도쿄",
+      "description": "다이이치 호텔 도쿄는 일본 도쿄에 위치한 4성급 호텔로, 마이리얼트립 숙소 검색 API에 등록된 정보입니다.",
+      "introduction": "다이이치 호텔 도쿄는 일본 도쿄에 위치한 4성급 호텔입니다. 숙소 유형은 호텔이며, 제공된 데이터에서는 추가적인 시설이나 레스토랑 정보가 확인되지 않습니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "다이이치 호텔 도쿄는 일본 도쿄에 위치한 호텔이며, 별점은 4점으로 표시됩니다.",
+            "숙소 유형은 호텔이며, 마이리얼트립 API에서 제공된 기본 정보만 확인됩니다."
+          ],
+          "imageIds": [
+            "myrealtrip-1114361-hero"
+          ]
+        },
+        {
+          "heading": "시설 정보",
+          "paragraphs": [
+            "제공된 데이터에서 시설 정보가 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "레스토랑 정보",
+          "paragraphs": [
+            "제공된 데이터에서 레스토랑 정보가 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "체크인 및 체크아웃",
+          "paragraphs": [
+            "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔의 이름은 무엇인가요?",
+          "answer": "다이이치 호텔 도쿄입니다."
+        },
+        {
+          "question": "호텔은 어느 도시에 있나요?",
+          "answer": "도쿄에 위치합니다."
+        },
+        {
+          "question": "호텔의 숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "호텔의 별점은 몇 점인가요?",
+          "answer": "4점입니다."
+        }
+      ],
+      "tags": [
+        "다이이치 호텔 도쿄",
+        "도쿄",
+        "일본",
+        "호텔",
+        "4성급"
+      ],
+      "imageIds": [
+        "myrealtrip-1114361-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-1310194",
+      "hotelId": "myrealtrip-1310194",
+      "slug": "apa-호텔-리조트-니시신주쿠-고초메-에키마에-타워-1310194",
+      "title": "APA 호텔 & 리소트 니시신주쿠 고초메 에키마에 타워 - 도쿄",
+      "description": "APA 호텔 & 리소트 니시신주쿠 고초메 에키마에 타워는 도쿄에 위치한 3성급 호텔입니다.",
+      "introduction": "APA 호텔 & 리소트 니시신주쿠 고초메 에키마에 타워는 일본 도쿄에 있는 호텔이며, 숙소 유형은 호텔입니다. 별점은 3성으로 제공됩니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "APA 호텔 & 리소트 니시신주쿠 고초메 에키마에 타워는 일본 도쿄에 위치한 3성급 호텔이며, 숙소 유형은 호텔입니다."
+          ],
+          "imageIds": [
+            "myrealtrip-1310194-hero"
+          ]
+        },
+        {
+          "heading": "위치 정보",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "시설",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "식음료",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔 이름은 무엇인가요?",
+          "answer": "APA 호텔 & 리소트 니시신주쿠 고초메 에키마에 타워입니다."
+        },
+        {
+          "question": "호텔은 어느 도시에 있나요?",
+          "answer": "도쿄에 있습니다."
+        },
+        {
+          "question": "숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "별점은 몇인가요?",
+          "answer": "3성입니다."
+        }
+      ],
+      "tags": [
+        "도쿄",
+        "Tokyo",
+        "APA 호텔",
+        "호텔",
+        "3성"
+      ],
+      "imageIds": [
+        "myrealtrip-1310194-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-5997658",
+      "hotelId": "myrealtrip-5997658",
+      "slug": "호텔-선라이트-신주쿠-5997658",
+      "title": "호텔 선라이트 신주쿠 - 도쿄",
+      "description": "일본 도쿄에 위치한 3성급 호텔 선라이트 신주쿠는 호텔 유형의 숙박 시설을 제공합니다.",
+      "introduction": "호텔 선라이트 신주쿠는 일본 도쿄에 위치한 3성급 호텔입니다. 숙소 유형은 호텔이며, 제공된 데이터에서는 체크인·체크아웃 시간 및 시설 정보가 명시되어 있지 않습니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "호텔 선라이트 신주쿠는 도쿄, 일본에 위치한 3성급 호텔이며, 숙소 유형은 호텔입니다."
+          ],
+          "imageIds": [
+            "myrealtrip-5997658-hero"
+          ]
+        },
+        {
+          "heading": "위치",
+          "paragraphs": [
+            "호텔은 도쿄에 위치해 있습니다. 제공된 데이터에서 구체적인 주소나 인근 역 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "숙소 유형 및 등급",
+          "paragraphs": [
+            "숙소 유형은 호텔이며, 별점은 3성급으로 표시됩니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "시설",
+          "paragraphs": [
+            "제공된 데이터에서 시설 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "식음료",
+          "paragraphs": [
+            "제공된 데이터에서 레스토랑 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔 이름은 무엇인가요?",
+          "answer": "호텔 선라이트 신주쿠입니다."
+        },
+        {
+          "question": "호텔이 위치한 도시는 어디인가요?",
+          "answer": "도쿄입니다."
+        },
+        {
+          "question": "숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "호텔의 별점은 몇인가요?",
+          "answer": "3성급입니다."
+        }
+      ],
+      "tags": [
+        "도쿄",
+        "Tokyo",
+        "일본",
+        "호텔",
+        "3성급",
+        "선라이트 신주쿠"
+      ],
+      "imageIds": [
+        "myrealtrip-5997658-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-1170153",
+      "hotelId": "myrealtrip-1170153",
+      "slug": "홀리데이-인-오사카-남바-바이-ihg-1170153",
+      "title": "홀리데이 인 오사카 남바 바이 IHG - 오사카",
+      "description": "일본 오사카에 위치한 4성급 호텔인 홀리데이 인 오사카 남바 바이 IHG에 대한 정보를 제공합니다.",
+      "introduction": "홀리데이 인 오사카 남바 바이 IHG는 일본 오사카에 위치한 호텔입니다. 이 숙소는 4성급으로 분류됩니다. 숙소 유형은 호텔이며, IHG 브랜드에 속합니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "홀리데이 인 오사카 남바 바이 IHG는 일본 오사카시에 위치하고 있습니다.",
+            "이 호텔은 4성급 호텔이며, IHG 브랜드에 속합니다."
+          ],
+          "imageIds": [
+            "myrealtrip-1170153-hero"
+          ]
+        },
+        {
+          "heading": "시설",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "레스토랑",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "체크인 및 체크아웃",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔의 숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "호텔의 별점은 몇인가요?",
+          "answer": "4성급입니다."
+        },
+        {
+          "question": "호텔이 위치한 도시는 어디인가요?",
+          "answer": "오사카시입니다."
+        },
+        {
+          "question": "호텔에 제공되는 시설이 있나요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "tags": [
+        "오사카",
+        "일본",
+        "호텔",
+        "4성급",
+        "홀리데이 인 오사카 남바 바이 IHG",
+        "IHG"
+      ],
+      "imageIds": [
+        "myrealtrip-1170153-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-1152864",
+      "hotelId": "myrealtrip-1152864",
+      "slug": "호텔-몬토레-라-수르-후쿠오카-1152864",
+      "title": "호텔 몬토레 라 수르 후쿠오카 - 후쿠오카",
+      "description": "일본 후쿠오카에 위치한 4성급 호텔 몬토레 라 수르 후쿠오카에 대한 기본 정보를 확인하세요.",
+      "introduction": "호텔 몬토레 라 수르 후쿠오카는 일본 후쿠오카에 위치한 호텔입니다. 숙소 유형은 호텔이며, 별점은 4성으로 표시됩니다. 제공된 데이터에서는 체크인·체크아웃 시간 및 시설 정보가 명시되지 않았습니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "호텔 몬토레 라 수르 후쿠오카는 후쿠오카 시에 위치한 숙박 시설이며, 숙소 유형은 호텔입니다.",
+            "별점은 4성으로 제공됩니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "위치 정보",
+          "paragraphs": [
+            "이 호텔은 일본 후쿠오카 현 후쿠오카시에 위치합니다.",
+            "구체적인 주소 정보는 제공되지 않았습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "시설 및 레스토랑",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다.",
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": [
+            "myrealtrip-1152864-hero"
+          ]
+        },
+        {
+          "heading": "체크인·체크아웃",
+          "paragraphs": [
+            "체크인 시간에 대한 정보는 제공되지 않았습니다.",
+            "체크아웃 시간에 대한 정보는 제공되지 않았습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔의 별점은 어떻게 되나요?",
+          "answer": "별점은 4성으로 제공됩니다."
+        },
+        {
+          "question": "호텔에 어떤 시설이 있나요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "question": "호텔에 레스토랑이 있나요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "question": "체크인 시간은 언제인가요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "tags": [
+        "후쿠오카",
+        "Fukuoka",
+        "일본",
+        "호텔",
+        "4성"
+      ],
+      "imageIds": [
+        "myrealtrip-1152864-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-1181987",
+      "hotelId": "myrealtrip-1181987",
+      "slug": "스마일-호텔-교토-시조-1181987",
+      "title": "스마일 호텔 교토 시조 - 교토",
+      "description": "스마일 호텔 교토 시조는 일본 교토에 위치한 3성급 호텔입니다.",
+      "introduction": "스마일 호텔 교토 시조는 교토에 위치한 호텔이며, 별점 3성을 보유하고 있습니다. 제공된 데이터에서 추가적인 정보는 확인되지 않습니다.",
+      "sections": [
+        {
+          "heading": "호텔 기본 정보",
+          "paragraphs": [
+            "호텔명은 스마일 호텔 교토 시조이며, 숙소 유형은 호텔입니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "위치",
+          "paragraphs": [
+            "호텔은 일본 교토에 위치합니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "시설",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "식음료",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "체크인 및 체크아웃",
+          "paragraphs": [
+            "체크인 및 체크아웃 시간에 대한 정보는 제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": [
+            "myrealtrip-1181987-hero"
+          ]
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔 이름은 무엇인가요?",
+          "answer": "스마일 호텔 교토 시조입니다."
+        },
+        {
+          "question": "호텔이 위치한 도시는 어디인가요?",
+          "answer": "교토입니다."
+        },
+        {
+          "question": "숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "별점은 몇 점인가요?",
+          "answer": "3점입니다."
+        },
+        {
+          "question": "제공된 시설이 있나요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "tags": [
+        "교토",
+        "Kyoto",
+        "호텔",
+        "3성",
+        "스마일 호텔 교토 시조"
+      ],
+      "imageIds": [
+        "myrealtrip-1181987-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-6215679",
+      "hotelId": "myrealtrip-6215679",
+      "slug": "류큐-호텔-리조트-나시로-비치-6215679",
+      "title": "류큐 호텔&리조트 나시로 비치 - 오키나와",
+      "description": "오키나와에 위치한 5성급 호텔인 류큐 호텔&리조트 나시로 비치를 소개합니다.",
+      "introduction": "류큐 호텔&리조트 나시로 비치는 일본 오키나와에 위치한 5성급 호텔입니다. 숙소 유형은 호텔이며, 제공된 데이터에서 체크인·체크아웃 정보는 확인되지 않습니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "류큐 호텔&리조트 나시로 비치는 일본 오키나와에 위치한 5성급 호텔입니다.",
+            "숙소 유형은 호텔이며, 이름은 '류큐 호텔&리조트 나시로 비치'입니다."
+          ],
+          "imageIds": [
+            "myrealtrip-6215679-hero"
+          ]
+        },
+        {
+          "heading": "시설 정보",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "레스토랑 정보",
+          "paragraphs": [
+            "제공된 데이터에서 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "체크인·체크아웃",
+          "paragraphs": [
+            "제공된 데이터에서 체크인 및 체크아웃 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "이 호텔의 숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "이 호텔은 몇 별인가요?",
+          "answer": "5성급입니다."
+        },
+        {
+          "question": "이 호텔이 위치한 도시는 어디인가요?",
+          "answer": "오키나와입니다."
+        },
+        {
+          "question": "이 호텔에 레스토랑이 있나요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "question": "이 호텔에 시설이 있나요?",
+          "answer": "제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "tags": [
+        "오키나와",
+        "Okinawa",
+        "일본",
+        "호텔",
+        "5성급"
+      ],
+      "imageIds": [
+        "myrealtrip-6215679-hero"
+      ],
+      "generatedBy": "groq",
+      "promptVersion": "hotel-post-v2"
+    },
+    {
+      "id": "hotel-post-myrealtrip-5516082",
+      "hotelId": "myrealtrip-5516082",
+      "slug": "호텔-메트로폴리탄-도쿄-이케부쿠로-5516082",
+      "title": "호텔 메트로폴리탄 도쿄 이케부쿠로 - 도쿄 4성급 호텔",
+      "description": "일본 도쿄에 위치한 4성급 호텔 메트로폴리탄 도쿄 이케부쿠로에 대한 기본 정보를 제공합니다.",
+      "introduction": "호텔 메트로폴리탄 도쿄 이케부쿠로는 도쿄에 위치한 4성급 호텔입니다. 숙소 유형은 호텔이며, 제공된 데이터에서 추가적인 시설이나 레스토랑 정보는 확인되지 않습니다.",
+      "sections": [
+        {
+          "heading": "호텔 개요",
+          "paragraphs": [
+            "호텔 메트로폴리탄 도쿄 이케부쿠로는 도쿄에 위치한 4성급 호텔이며, 숙소 유형은 호텔입니다."
+          ],
+          "imageIds": [
+            "myrealtrip-5516082-hero"
+          ]
+        },
+        {
+          "heading": "숙소 유형",
+          "paragraphs": [
+            "숙소 유형은 호텔입니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "시설",
+          "paragraphs": [
+            "제공된 데이터에서 시설 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "레스토랑",
+          "paragraphs": [
+            "제공된 데이터에서 레스토랑 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "체크인 및 체크아웃",
+          "paragraphs": [
+            "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
+          ],
+          "imageIds": []
+        },
+        {
+          "heading": "근처 역 정보",
+          "paragraphs": [
+            "제공된 데이터에서 가장 가까운 역에 대한 정보는 확인되지 않습니다."
+          ],
+          "imageIds": []
+        }
+      ],
+      "faq": [
+        {
+          "question": "호텔 메트로폴리탄 도쿄 이케부쿠로의 별점은 몇인가요?",
+          "answer": "별점은 4입니다."
+        },
+        {
+          "question": "이 호텔은 어느 도시에 위치해 있나요?",
+          "answer": "도쿄에 위치합니다."
+        },
+        {
+          "question": "숙소 유형은 무엇인가요?",
+          "answer": "호텔입니다."
+        },
+        {
+          "question": "제공된 데이터에 시설 정보가 있나요?",
+          "answer": "제공된 데이터에서 시설 정보는 확인되지 않습니다."
+        }
+      ],
+      "tags": [
+        "도쿄",
+        "일본",
+        "호텔",
+        "4성급",
+        "메트로폴리탄"
+      ],
+      "imageIds": [
+        "myrealtrip-5516082-hero"
+      ],
+      "generatedBy": "groq",
       "promptVersion": "hotel-post-v2"
     }
   ]

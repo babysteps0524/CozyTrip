@@ -1,78 +1,26 @@
 {
-  "generatedAt": "2026-09-19T06:20:29.113Z",
+  "generatedAt": "2026-09-19T15:01:22.858Z",
   "source": "ai",
   "plan": {
-    "japan-tokyo": 3,
-    "japan-osaka": 3,
-    "japan-kyoto": 2,
-    "japan-fukuoka": 2,
-    "japan-okinawa": 1
+    "japan-tokyo": 1
   },
-  "totalTarget": 11,
-  "totalSucceeded": 11,
+  "totalTarget": 1,
+  "totalSucceeded": 1,
   "totalFailed": 0,
-  "totalPublished": 62,
-  "totalInventory": 120,
-  "totalRemaining": 58,
+  "totalPublished": 70,
+  "totalInventory": 600,
+  "totalRemaining": 530,
   "destinations": [
     {
       "destinationId": "japan-tokyo",
-      "target": 3,
-      "inventory": 20,
-      "publishedBefore": 15,
-      "attempted": 3,
-      "succeeded": 3,
-      "failed": 0,
-      "publishedAfter": 18,
-      "remaining": 2,
-      "status": "target-reached"
-    },
-    {
-      "destinationId": "japan-osaka",
-      "target": 3,
-      "inventory": 20,
-      "publishedBefore": 13,
-      "attempted": 3,
-      "succeeded": 3,
-      "failed": 0,
-      "publishedAfter": 16,
-      "remaining": 4,
-      "status": "target-reached"
-    },
-    {
-      "destinationId": "japan-kyoto",
-      "target": 2,
-      "inventory": 20,
-      "publishedBefore": 9,
-      "attempted": 2,
-      "succeeded": 2,
-      "failed": 0,
-      "publishedAfter": 11,
-      "remaining": 9,
-      "status": "target-reached"
-    },
-    {
-      "destinationId": "japan-fukuoka",
-      "target": 2,
-      "inventory": 20,
-      "publishedBefore": 9,
-      "attempted": 2,
-      "succeeded": 2,
-      "failed": 0,
-      "publishedAfter": 11,
-      "remaining": 9,
-      "status": "target-reached"
-    },
-    {
-      "destinationId": "japan-okinawa",
       "target": 1,
-      "inventory": 20,
-      "publishedBefore": 5,
+      "inventory": 100,
+      "publishedBefore": 21,
       "attempted": 1,
       "succeeded": 1,
       "failed": 0,
-      "publishedAfter": 6,
-      "remaining": 14,
+      "publishedAfter": 22,
+      "remaining": 78,
       "status": "target-reached"
     }
   ]
