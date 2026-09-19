@@ -45,6 +45,9 @@ jobs:
       - name: Validate hotel posts
         run: bun run validate:hotel-posts
 
+      - name: Validate hotel run report
+        run: bun run validate:hotel-run
+
       - name: Typecheck
         run: bun run typecheck
 
