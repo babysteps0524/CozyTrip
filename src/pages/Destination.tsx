@@ -6,13 +6,12 @@ import { PostCard } from "../components/post";
 
 interface DestinationProps {
   destination: DestinationType;
+  hotels: import("../types").Hotel[];
+  posts: import("../types").Post[];
 }
 
-export default function Destination({ destination }: DestinationProps) {
-  const hotels = getHotelsByDestination(destination.id);
-  const posts = getPostsByDestination(destination.id).filter(
-    (post) => post.category === "guide",
-  );
+export default function Destination({ destination, hotels, posts }: DestinationProps) {
+  const guides = posts.filter((post) => post.category === "guide");
 
   return (
     <>
