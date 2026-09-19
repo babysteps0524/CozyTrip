@@ -26,7 +26,8 @@
     "agoda:validate": "bun scripts/validate-hotel-data.ts",
     "myrealtrip:status": "bun scripts/myrealtrip/status.ts",
     "myrealtrip:test": "bun scripts/myrealtrip/test-api.ts",
-    "myrealtrip:generate": "bun scripts/myrealtrip/generate-hotels.ts"
+    "myrealtrip:generate": "bun scripts/myrealtrip/generate-hotels.ts",
+    "validate:hotel-run": "bun scripts/validate-hotel-run.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
