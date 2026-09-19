@@ -7,33 +7,68 @@ interface RelatedHotelsProps {
   currentHotel: Hotel;
 }
 
-export default function RelatedHotels({ hotels, currentHotel }: RelatedHotelsProps) {
+function getRelationLabel(hotel: Hotel, currentHotel: Hotel): string {
+  if (hotel.area && currentHotel.area && hotel.area === currentHotel.area) {
+    return "같은 지역";
+  }
+
+  if (
+    hotel.accommodationType &&
+    currentHotel.accommodationType &&
+    hotel.accommodationType === currentHotel.accommodationType
+  ) {
+    return "같은 숙소 유형";
+  }
+
+  return "같은 지역의 다른 호텔";
+}
+
+export default function RelatedHotels({
+  hotels,
+  currentHotel,
+}: RelatedHotelsProps) {
   const relatedHotels = hotels
     .filter((hotel) => hotel.id !== currentHotel.id)
+    .map((hotel, index) => ({
+      hotel,
+      index,
+    }))
     .sort((a, b) => {
-      const aSameArea = a.area === currentHotel.area ? 1 : 0;
-      const bSameArea = b.area === currentHotel.area ? 1 : 0;
+      const aSameArea =
+        a.hotel.area && currentHotel.area && a.hotel.area === currentHotel.area ? 1 : 0;
+      const bSameArea =
+        b.hotel.area && currentHotel.area && b.hotel.area === currentHotel.area ? 1 : 0;
 
-      if (aSameArea !== bSameArea) return bSameArea - aSameArea;
+      if (aSameArea !== bSameArea) {
+        return bSameArea - aSameArea;
+      }
 
       const aSameType =
+        a.hotel.accommodationType &&
         currentHotel.accommodationType &&
-        a.accommodationType === currentHotel.accommodationType
+        a.hotel.accommodationType === currentHotel.accommodationType
           ? 1
           : 0;
       const bSameType =
+        b.hotel.accommodationType &&
         currentHotel.accommodationType &&
-        b.accommodationType === currentHotel.accommodationType
+        b.hotel.accommodationType === currentHotel.accommodationType
           ? 1
           : 0;
 
-      if (aSameType !== bSameType) return bSameType - aSameType;
+      if (aSameType !== bSameType) {
+        return bSameType - aSameType;
+      }
 
-      return a.name.localeCompare(b.name);
+      const nameOrder = a.hotel.name.localeCompare(b.hotel.name, "ko");
+      return nameOrder !== 0 ? nameOrder : a.index - b.index;
     })
-    .slice(0, 3);
+    .slice(0, 3)
+    .map(({ hotel }) => hotel);
 
-  if (relatedHotels.length === 0) return null;
+  if (relatedHotels.length === 0) {
+    return null;
+  }
 
   return (
     <section
@@ -42,21 +77,37 @@ export default function RelatedHotels({ hotels, currentHotel }: RelatedHotelsPro
       bg="ct-surface dark:ct-dark-surface"
     >
       <Container>
-        <div py="12 sm:16">
-          <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
-            RELATED HOTELS
-          </p>
+        <div py="12 sm:16 lg:20">
+          <div flex="~ col sm:row" sm="items-end justify-between" gap="3">
+            <div>
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
+                RELATED HOTELS
+              </p>
+              <h2
+                id="related-hotels-title"
+                mt="2"
+                mb="0"
+                text="2xl sm:3xl"
+                font="bold"
+                tracking="tight"
+              >
+                함께 살펴볼 호텔
+              </h2>
+            </div>
 
-          <h2
-            id="related-hotels-title"
-            mt="2"
-            mb="0"
-            text="2xl sm:3xl"
-            font="bold"
-            tracking="tight"
-          >
-            함께 살펴볼 호텔
-          </h2>
+            <a
+              href={`/japan/${currentHotel.destinationId.replace("japan-", "")}/hotels/`}
+              className="ct-focus shrink-0 self-start rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm font-semibold text-ct-text-soft transition-colors hover:border-ct-primary hover:text-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft dark:hover:border-ct-dark-text dark:hover:text-ct-dark-text"
+              active-scale="98"
+            >
+              지역 호텔 전체 보기
+            </a>
+          </div>
 
           <p
             mt="3"
@@ -65,12 +116,24 @@ export default function RelatedHotels({ hotels, currentHotel }: RelatedHotelsPro
             text="sm ct-text-soft dark:ct-dark-text-soft"
             leading="relaxed"
           >
-            같은 지역에서 함께 비교해 볼 수 있는 호텔을 확인해 보세요.
+            현재 호텔과 같은 지역 또는 숙소 유형을 기준으로 함께 살펴볼 수 있는 호텔입니다.
           </p>
 
-          <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
+          <div mt="6" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
             {relatedHotels.map((hotel) => (
-              <HotelCard key={hotel.id} hotel={hotel} />
+              <div key={hotel.id} flex="~ col" h="full">
+                <div
+                  mb="2"
+                  px="1"
+                  text="xs ct-muted dark:ct-dark-muted"
+                  font="medium"
+                >
+                  {getRelationLabel(hotel, currentHotel)}
+                </div>
+                <div flex="1">
+                  <HotelCard hotel={hotel} />
+                </div>
+              </div>
             ))}
           </div>
         </div>
