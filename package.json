@@ -27,7 +27,8 @@
     "myrealtrip:status": "bun scripts/myrealtrip/status.ts",
     "myrealtrip:test": "bun scripts/myrealtrip/test-api.ts",
     "myrealtrip:generate": "bun scripts/myrealtrip/generate-hotels.ts",
-    "validate:hotel-run": "bun scripts/validate-hotel-run.ts"
+    "validate:hotel-run": "bun scripts/validate-hotel-run.ts",
+    "validate:hotel-inventory": "bun scripts/validate-hotel-inventory.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
