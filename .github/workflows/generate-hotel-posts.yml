@@ -2,6 +2,16 @@ name: Generate hotel posts
 
 on:
   workflow_dispatch:
+    inputs:
+      hotel_id:
+        description: "재생성할 개별 호텔 ID (예: myrealtrip-5008360). 비워두면 일일 계획으로 생성"
+        required: false
+        type: string
+      post_limit:
+        description: "일일 계획을 사용하지 않을 때 생성할 게시글 수"
+        required: false
+        default: "1"
+        type: string
   schedule:
     - cron: "0 21 * * *"
 
@@ -20,6 +30,8 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      AI_HOTEL_ID: ${{ inputs.hotel_id }}
+      AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
       AI_DAILY_PLAN: "japan-tokyo:3,japan-osaka:3,japan-kyoto:2,japan-fukuoka:2,japan-okinawa:1"
 
     steps:
