@@ -42,6 +42,15 @@ jobs:
       - name: Validate hotel posts
         run: bun run validate:hotel-posts
 
+      - name: Typecheck
+        run: bun run typecheck
+
+      - name: Build
+        run: bun run build
+
+      - name: Validate SEO
+        run: bun run validate:seo
+
       - name: Commit generated posts
         run: |
           git config user.name "github-actions[bot]"
