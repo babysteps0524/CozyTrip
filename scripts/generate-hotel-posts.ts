@@ -31,13 +31,6 @@ const requestedHotelId = process.env.AI_HOTEL_ID?.trim() || undefined;
 const requestedLimit = Number(process.env.AI_POST_LIMIT ?? "1");
 const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
 
-const DEFAULT_DAILY_PLAN: Record<string, number> = {
-  "japan-tokyo": 3,
-  "japan-osaka": 3,
-  "japan-kyoto": 2,
-  "japan-fukuoka": 2,
-  "japan-okinawa": 1,
-};
 
 function toGenerationInput(hotel: Hotel): HotelPostGenerationInput {
   return {
