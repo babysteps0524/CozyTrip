@@ -59,6 +59,8 @@ jobs:
       - name: Validate MyRealTrip images
         run: bun run validate:myrealtrip-images
 
+      - name: Validate hotel daily plan
+        run: bun run validate:hotel-daily-plan
 
       - name: Generate hotel posts
         run: bun run ai:hotel-posts
