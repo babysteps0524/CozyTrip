@@ -49,6 +49,9 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
   const relatedHotels = getHotelsByDestination(hotel.destinationId).filter(
     (item) => item.id !== hotel.id,
   );
+  const articleImage = hotel.images.find(
+    (image) => image.rightsConfirmed && Boolean(image.src),
+  );
 
   const articleHeadings = hotelPosts.flatMap((post) =>
     post.blocks
@@ -222,9 +225,59 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               ))}
             </div>
           ) : (
-            <p mt="4" mb="0" max-w="3xl" text="base ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
-              {hotel.description}
-            </p>
+            <div mt="4" max-w="3xl">
+              <p m="0" text="base ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
+                {hotel.description}
+              </p>
+
+              {articleImage && (
+                <figure mt="8" mb="0">
+                  {articleImage.sourceUrl ? (
+                    <a
+                      href={articleImage.sourceUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      active-scale="98"
+                      display="block"
+                      rounded="2xl"
+                      overflow="hidden"
+                      border="~ ct-line dark:ct-dark-line"
+                      bg="ct-surface dark:ct-dark-surface"
+                    >
+                      <img
+                        src={articleImage.src}
+                        alt={articleImage.alt}
+                        width={articleImage.width ?? 1200}
+                        height={articleImage.height ?? 800}
+                        loading="lazy"
+                        decoding="async"
+                        w="full"
+                        h="auto"
+                        display="block"
+                      />
+                    </a>
+                  ) : (
+                    <img
+                      src={articleImage.src}
+                      alt={articleImage.alt}
+                      width={articleImage.width ?? 1200}
+                      height={articleImage.height ?? 800}
+                      loading="lazy"
+                      decoding="async"
+                      w="full"
+                      h="auto"
+                      display="block"
+                      rounded="2xl"
+                      border="~ ct-line dark:ct-dark-line"
+                    />
+                  )}
+
+                  <figcaption mt="2" text="xs ct-muted dark:ct-dark-muted">
+                    {articleImage.credit ?? "호텔 이미지"}
+                  </figcaption>
+                </figure>
+              )}
+            </div>
           )}
         </Container>
       </Section>
