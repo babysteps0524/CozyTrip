@@ -9,7 +9,7 @@ interface HotelListResultsProps {
 type SortOption = "name" | "star-desc" | "star-asc";
 type StarFilter = "all" | "5" | "4" | "3" | "2";
 
-const PAGE_SIZE = 15;
+const PAGE_SIZE = 16;
 
 function getAreaOptions(hotels: Hotel[]): string[] {
   return Array.from(
@@ -390,7 +390,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
 
       {filteredHotels.length > 0 ? (
         <>
-          <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
+          <div mt="8" grid="~ cols-1 sm:2 lg:3 xl:4" gap="4 lg:5">
             {pagedHotels.map((hotel) => (
               <HotelCard key={hotel.id} hotel={hotel} />
             ))}
