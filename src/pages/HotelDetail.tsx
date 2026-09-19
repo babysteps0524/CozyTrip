@@ -27,7 +27,6 @@ import {
   createCanonical,
   createHotelStructuredData,
   createBreadcrumbStructuredData,
-  createFaqStructuredData,
 } from "../lib/seo";
 
 interface HotelDetailProps {
@@ -133,7 +132,6 @@ export default function HotelDetail({
               ...(hotel.rooms?.length ? [["#rooms", "객실"]] : []),
               ...(hotel.facilities?.length ? [["#facilities", "시설"]] : []),
               ...(hotel.restaurants?.length ? [["#dining", "다이닝"]] : []),
-              ...(hotelPost?.faq?.length ? [["#faq", "FAQ"]] : []),
               ["#location", "위치"],
               ["#booking", "예약 정보"],
             ].map(([href, label]) => (
@@ -319,27 +317,7 @@ export default function HotelDetail({
 
       <HotelStayInfo hotel={hotel} />
 
-      {hotelPost?.faq && hotelPost.faq.length > 0 && (
-        <Section id="faq" borderTop>
-          <Container>
-            <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">FAQ</p>
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">자주 묻는 질문</h2>
-            <div mt="8" grid="~ cols-1" gap="4">
-              {hotelPost.faq.map((item) => (
-                <details key={item.question} rounded="xl"
-                  border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface" p="5">
-                  <summary cursor="pointer" text="base ct-text dark:ct-dark-text" font="bold">
-                    {item.question}
-                  </summary>
-                  <p mt="4" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
-                    {item.answer}
-                  </p>
-                </details>
-              ))}
-            </div>
-          </Container>
-        </Section>
-      )}
+
 
       <HotelLocation hotel={hotel} />
       <HotelBooking hotel={hotel} />
