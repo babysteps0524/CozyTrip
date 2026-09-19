@@ -1,19 +1,15 @@
 import type { Post } from "../types";
 
-import { getDestinationById } from "../data";
-
 import { Container, Section } from "../components/common";
 
 import { PostRenderer } from "../components/post";
 
 interface GuideProps {
   post: Post;
+  destination?: import("../types").Destination;
 }
 
-export default function Guide({ post }: GuideProps) {
-  const destination = post.destinationId
-    ? getDestinationById(post.destinationId)
-    : undefined;
+export default function Guide({ post, destination }: GuideProps) {
 
   return (
     <>
