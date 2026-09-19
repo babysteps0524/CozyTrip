@@ -1,13 +1,28 @@
 import { StrictMode, type ReactNode } from "react";
-import { Footer, Header } from "./components/layout";
 import { hydrateRoot } from "react-dom/client";
 
+import { destinations } from "./data/destinations";
+import { posts } from "./data/posts";
+import { loadClientHotels } from "./data/clientHotels";
 import type { Destination, Hotel, Post } from "./types";
 
-interface AppProps {
+interface HomeProps {
   destinations: Destination[];
   hotels: Hotel[];
+  guides: Post[];
+}
+
+interface DestinationPageProps {
+  destination: Destination;
+  hotels: Hotel[];
   posts: Post[];
+}
+
+interface HotelDetailPageProps {
+  hotel: Hotel;
+  hotelPosts: Post[];
+  relatedGuides: Post[];
+  relatedHotels: Hotel[];
 }
 
 type PageModule = { default: (props: any) => ReactNode };
@@ -27,37 +42,71 @@ function normalizePath(pathname: string): string {
   return pathname || "/";
 }
 
-function resolveRoute(path: string, props: AppProps) {
+function getDestinationBySlug(slug: string): Destination | undefined {
+  return destinations.find((item) => item.slug === slug);
+}
+
+function getPostBySlug(slug: string): Post | undefined {
+  return posts.find((item) => item.slug === slug);
+}
+
+function getPostsByDestination(destinationId: string): Post[] {
+  return posts.filter((post) => post.destinationId === destinationId);
+}
+
+function getPostsByHotel(hotelId: string): Post[] {
+  return posts.filter((post) => post.hotelId === hotelId);
+}
+
+function getHotelPostByHotel(hotelId: string): Post | undefined {
+  return posts.find(
+    (post) => post.hotelId === hotelId && post.category === "hotel",
+  );
+}
+
+function createRoute(path: string) {
   const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
   const hotelListMatch = path.match(/^\/japan\/([^/]+)\/hotels$/);
   const hotelDetailMatch = path.match(/^\/japan\/([^/]+)\/hotels\/([^/]+)$/);
   const guideMatch = path.match(/^\/guides\/([^/]+)$/);
 
-  const destinationSlug =
-    destinationMatch?.[1] ?? hotelListMatch?.[1] ?? hotelDetailMatch?.[1];
-  const destination = destinationSlug
-    ? props.destinations.find((item) => item.slug === destinationSlug)
-    : undefined;
-  const hotelSlug = hotelDetailMatch?.[2];
-  const hotel = hotelSlug
-    ? props.hotels.find((item) => item.slug === hotelSlug)
-    : undefined;
-  const guideSlug = guideMatch?.[1];
-  const guide = guideSlug ? props.posts.find((item) => item.slug === guideSlug) : undefined;
-  const destinationHotels = destination
-    ? props.hotels.filter((item) => item.destinationId === destination.id)
-    : [];
+  return {
+    destinationMatch,
+    hotelListMatch,
+    hotelDetailMatch,
+    guideMatch,
+    destinationSlug:
+      destinationMatch?.[1] ??
+      hotelListMatch?.[1] ??
+      hotelDetailMatch?.[1],
+    hotelSlug: hotelDetailMatch?.[2],
+    guideSlug: guideMatch?.[1],
+  };
+}
 
-  if (path === "/") return { key: "home", props: {} };
-  if (path === "/japan") return { key: "japan", props: {} };
-  if (path === "/guides") return { key: "guides", props: {} };
-  if (destinationMatch && destination) return { key: "destination", props: { destination } };
-  if (hotelListMatch && destination) return { key: "hotelList", props: { destination, hotels: destinationHotels } };
-  if (hotelDetailMatch && destination && hotel && hotel.destinationId === destination.id) {
-    return { key: "hotelDetail", props: { hotel } };
-  }
-  if (guideMatch && guide && guide.category === "guide") return { key: "guide", props: { post: guide } };
-  return { key: "notFound", props: {} };
+function notFoundElement() {
+  return (
+    <div min-h="screen" flex="~" items="center" justify="center" px="4" py="20">
+      <div text="center">
+        <p m="0" text="sm ct-muted dark:ct-dark-muted">404</p>
+        <h1 mt="2" mb="0" text="2xl sm:3xl" font="bold">
+          페이지를 찾을 수 없습니다.
+        </h1>
+        <a
+          href="/"
+          mt="6"
+          display="block"
+          className="ct-button"
+          bg="ct-primary"
+          text="white"
+          hover="bg-ct-primary-dark"
+          active-scale="95"
+        >
+          홈으로 돌아가기
+        </a>
+      </div>
+    </div>
+  );
 }
 
 async function start() {
@@ -65,33 +114,116 @@ async function start() {
   if (!rootElement) throw new Error("Root element not found.");
 
   const path = normalizePath(window.location.pathname);
-  const { destinations, hotels, posts } = await import("./data");
-  const route = resolveRoute(path, { destinations, hotels, posts });
-  const module = await pageImports[route.key]?.();
+  const {
+    destinationMatch,
+    hotelListMatch,
+    hotelDetailMatch,
+    guideMatch,
+    destinationSlug,
+    hotelSlug,
+    guideSlug,
+  } = createRoute(path);
 
+  let pageKey: string;
+  let pageProps: Record<string, unknown> = {};
+
+  if (path === "/") {
+    const hotels = await loadClientHotels("tokyo");
+    pageKey = "home";
+    pageProps = {
+      destinations,
+      hotels,
+      guides: posts.filter((post) => post.category === "guide").slice(0, 3),
+    };
+  } else if (path === "/japan") {
+    pageKey = "japan";
+    pageProps = { destinations };
+  } else if (path === "/guides") {
+    pageKey = "guides";
+    pageProps = {
+      posts: posts.filter((post) => post.category === "guide"),
+    };
+  } else if (guideMatch && guideSlug) {
+    const post = getPostBySlug(guideSlug);
+    if (!post || post.category !== "guide") {
+      pageKey = "notFound";
+    } else {
+      pageKey = "guide";
+      pageProps = { post };
+    }
+  } else if (destinationSlug) {
+    const destination = getDestinationBySlug(destinationSlug);
+
+    if (!destination) {
+      pageKey = "notFound";
+    } else {
+      const hotels = await loadClientHotels(destination.slug);
+      const destinationPosts = getPostsByDestination(destination.id);
+
+      if (hotelDetailMatch && hotelSlug) {
+        const hotel = hotels.find((item) => item.slug === hotelSlug);
+
+        if (!hotel) {
+          pageKey = "notFound";
+        } else {
+          pageKey = "hotelDetail";
+          pageProps = {
+            hotel,
+            hotelPosts: getPostsByHotel(hotel.id),
+            relatedGuides: destinationPosts.filter(
+              (post) => post.category === "guide" && post.hotelId !== hotel.id,
+            ),
+            relatedHotels: hotels.filter((item) => item.id !== hotel.id),
+          };
+        }
+      } else if (hotelListMatch) {
+        pageKey = "hotelList";
+        pageProps = { destination, hotels };
+      } else if (destinationMatch) {
+        pageKey = "destination";
+        pageProps: pageProps = {
+          destination,
+          hotels,
+          posts: destinationPosts,
+        };
+      } else {
+        pageKey = "notFound";
+      }
+    }
+  } else {
+    pageKey = "notFound";
+  }
+
+  if (pageKey === "notFound") {
+    hydrateRoot(
+      rootElement,
+      <StrictMode>{notFoundElement()}</StrictMode>,
+    );
+    return;
+  }
+
+  const module = await pageImports[pageKey]?.();
   if (!module) {
     hydrateRoot(
       rootElement,
-      <StrictMode>
-        <div min-h="screen" flex="~" items="center" justify="center" px="4" py="20">
-          <div text="center">
-            <p m="0" text="sm ct-muted dark:ct-dark-muted">404</p>
-            <h1 mt="2" mb="0" text="2xl sm:3xl" font="bold">페이지를 찾을 수 없습니다.</h1>
-            <a href="/" mt="6" display="block" className="ct-button" bg="ct-primary" text="white" hover="bg-ct-primary-dark" active-scale="95">홈으로 돌아가기</a>
-          </div>
-        </div>
-      </StrictMode>,
+      <StrictMode>{notFoundElement()}</StrictMode>,
     );
     return;
   }
 
   const Page = module.default;
-  const pageElement = <Page {...route.props} />;
+  const pageElement = <Page {...pageProps} />;
 
   hydrateRoot(
     rootElement,
     <StrictMode>
-      <div min-h="screen" overflow-x="hidden" bg="ct-bg" text="ct-text" dark="bg-ct-dark-bg text-ct-dark-text">
+      <div
+        min-h="screen"
+        overflow-x="hidden"
+        bg="ct-bg"
+        text="ct-text"
+        dark="bg-ct-dark-bg text-ct-dark-text"
+      >
         {pageElement}
       </div>
     </StrictMode>,
