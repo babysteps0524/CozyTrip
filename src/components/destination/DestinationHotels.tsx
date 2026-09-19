@@ -51,14 +51,14 @@ export default function DestinationHotels({
             </a>
           </div>
 
-          <div mt="8" grid="~ cols-1 sm:2 lg:3 xl:4" gap="4 lg:5">
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4">
             {hotels.length > 0 ? (
               hotels
                 .slice(0, 6)
                 .map((hotel) => <HotelCard key={hotel.id} hotel={hotel} />)
             ) : (
               <div
-                col="span-1 sm:span-2 lg:span-3 xl:span-4"
+                className="col-span-1 sm:col-span-2 lg:col-span-3 xl:col-span-4"
                 rounded="card"
                 border="~ ct-line dark:ct-dark-line"
                 bg="ct-surface dark:ct-dark-surface"
