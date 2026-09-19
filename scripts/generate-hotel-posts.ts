@@ -29,6 +29,15 @@ const outputPath = resolve(outputDir, "hotel-posts.generated.json");
 
 const requestedHotelId = process.env.AI_HOTEL_ID?.trim() || undefined;
 const requestedLimit = Number(process.env.AI_POST_LIMIT ?? "1");
+const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
+
+const DEFAULT_DAILY_PLAN: Record<string, number> = {
+  "japan-tokyo": 3,
+  "japan-osaka": 3,
+  "japan-kyoto": 2,
+  "japan-fukuoka": 2,
+  "japan-okinawa": 1,
+};
 
 function toGenerationInput(hotel: Hotel): HotelPostGenerationInput {
   return {
@@ -103,7 +112,40 @@ function mergePosts(
   return [...postMap.values()];
 }
 
-function selectHotels(hotels: Hotel[]): Hotel[] {
+function parseDailyPlan(value: string): Record<string, number> {
+  const plan: Record<string, number> = {};
+
+  for (const entry of value.split(",")) {
+    const [destinationId, rawCount] = entry.split(":").map((item) => item.trim());
+
+    if (!destinationId || !rawCount) {
+      throw new Error(
+        `Invalid AI_DAILY_PLAN entry: ${entry}. Expected destinationId:count.`,
+      );
+    }
+
+    const count = Number(rawCount);
+
+    if (!Number.isInteger(count) || count <= 0) {
+      throw new Error(
+        `Invalid AI_DAILY_PLAN count for ${destinationId}: ${rawCount}`,
+      );
+    }
+
+    plan[destinationId] = count;
+  }
+
+  if (Object.keys(plan).length === 0) {
+    throw new Error("AI_DAILY_PLAN must contain at least one destination.");
+  }
+
+  return plan;
+}
+
+function selectHotels(
+  hotels: Hotel[],
+  existingPosts: HotelPost[],
+): Hotel[] {
   if (requestedHotelId) {
     const hotel = hotels.find((item) => item.id === requestedHotelId);
 
@@ -114,11 +156,49 @@ function selectHotels(hotels: Hotel[]): Hotel[] {
     return [hotel];
   }
 
+  const existingHotelIds = new Set(existingPosts.map((post) => post.hotelId));
+
+  if (dailyPlan) {
+    const plan = parseDailyPlan(dailyPlan);
+    const selected: Hotel[] = [];
+
+    for (const [destinationId, count] of Object.entries(plan)) {
+      const candidates = hotels.filter(
+        (hotel) =>
+          hotel.destinationId === destinationId &&
+          !existingHotelIds.has(hotel.id),
+      );
+
+      selected.push(...candidates.slice(0, count));
+    }
+
+    return selected;
+  }
+
   if (!Number.isInteger(requestedLimit) || requestedLimit <= 0) {
     throw new Error("AI_POST_LIMIT must be a positive integer.");
   }
 
-  return hotels.slice(0, requestedLimit);
+  return hotels
+    .filter((hotel) => !existingHotelIds.has(hotel.id))
+    .slice(0, requestedLimit);
+}
+
+function hasDuplicateTopic(
+  post: HotelPost,
+  existingPosts: HotelPost[],
+  generatedPosts: HotelPost[],
+): boolean {
+  const normalize = (value: string): string =>
+    value
+      .toLowerCase()
+      .replace(/[^a-z0-9가-힣]+/g, "");
+
+  const title = normalize(post.title);
+
+  return [...existingPosts, ...generatedPosts].some(
+    (item) => item.hotelId !== post.hotelId && normalize(item.title) === title,
+  );
 }
 
 async function main(): Promise<void> {
@@ -149,8 +229,8 @@ async function main(): Promise<void> {
     return;
   }
 
-  const selectedHotels = selectHotels(source.hotels);
   const existingPosts = await readExistingPosts();
+  const selectedHotels = selectHotels(source.hotels, existingPosts);
   const generatedPosts: HotelPost[] = [];
   let successCount = 0;
   let failureCount = 0;
@@ -159,7 +239,9 @@ async function main(): Promise<void> {
   console.log(
     requestedHotelId
       ? `AI generation target: ${requestedHotelId}`
-      : `AI generation limit: ${selectedHotels.length} hotel(s)`,
+      : dailyPlan
+        ? `AI daily plan: ${dailyPlan} -> ${selectedHotels.length} hotel(s)`
+        : `AI generation limit: ${selectedHotels.length} new hotel(s)`,
   );
 
   for (const hotel of selectedHotels) {
@@ -190,6 +272,13 @@ async function main(): Promise<void> {
       };
 
       validateHotelPost(post, hotel, { availableImages: input.images });
+
+      if (hasDuplicateTopic(post, existingPosts, generatedPosts)) {
+        throw new Error(
+          `Duplicate hotel post topic detected: ${post.title}`,
+        );
+      }
+
       generatedPosts.push(post);
       successCount += 1;
       console.log(
