@@ -48,6 +48,12 @@ jobs:
       - name: Validate hotel run report
         run: bun run validate:hotel-run
 
+      - name: Generate hotel inventory
+        run: bun run generate:hotel-inventory
+
+      - name: Validate hotel inventory
+        run: bun run validate:hotel-inventory
+
       - name: Typecheck
         run: bun run typecheck
 
