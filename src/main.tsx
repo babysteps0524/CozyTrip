@@ -1,1 +1,3 @@
-import "virtual:uno.css";\n\nimport "./client";\n
+import "virtual:uno.css";
+
+import "./client";
