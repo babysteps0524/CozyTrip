@@ -12,6 +12,15 @@ function routeFile(route: string): string {
   return join(distDir, route, "index.html");
 }
 
+function escapeHtml(value: string): string {
+  return value
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
+}
+
 function assertIncludes(html: string, value: string, label: string): void {
   if (!html.includes(value)) {
     throw new Error(`SEO validation failed: ${label}`);
@@ -81,7 +90,7 @@ async function main(): Promise<void> {
       checks.push(
         validateRoute(route, [
           ['"@type":"FAQPage"', "FAQ JSON-LD"],
-          [`<title>${hotelPost.title} | CozyTrip 코지트립`, "generated hotel post title"],
+          [`<title>${escapeHtml(hotelPost.title)} | CozyTrip 코지트립</title>`, "generated hotel post title"],
         ]),
       );
     }
