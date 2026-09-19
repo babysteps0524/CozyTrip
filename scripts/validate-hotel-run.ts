@@ -258,8 +258,8 @@ async function main(): Promise<void> {
     }
 
     assertEqual(
-      `[${destinationId}] publishedBefore`,
-      destination.publishedBefore,
+      `[${destinationId}] publishedAfter`,
+      destination.publishedAfter,
       publishedByDestination.get(destinationId) ?? 0,
     );
   }
