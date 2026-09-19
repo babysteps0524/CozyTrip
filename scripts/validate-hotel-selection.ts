@@ -38,7 +38,12 @@ async function main(): Promise<void> {
 
   const dailyPlanValue = process.env.AI_DAILY_PLAN?.trim() || DEFAULT_DAILY_PLAN;
   const plan = parseDailyPlan(dailyPlanValue);
-  const selectedHotels = selectHotels(hotels, existingPosts, failedHotels);
+  const selectedHotels = selectHotels(
+    hotels,
+    existingPosts,
+    failedHotels,
+    plan,
+  );
 
   validateSelectedHotels(selectedHotels, hotels, existingPosts, failedHotels, plan);
 
