@@ -9,13 +9,13 @@ export default function Header() {
         <div className="flex min-h-16 items-center justify-between gap-4 sm:min-h-18">
           <a
             href="/"
-            className="ct-focus flex shrink-0 flex-col leading-tight text-ct-primary transition-transform duration-100 active:scale-98 dark:text-ct-dark-text"
             aria-label="CozyTrip 코지트립 홈"
+            className="ct-focus flex shrink-0 flex-col leading-none transition-transform duration-100 active:scale-98"
           >
-            <span className="text-lg font-bold tracking-tight sm:text-xl">
+            <span className="text-ct-primary text-lg font-bold tracking-tight sm:text-xl dark:text-ct-dark-text">
               CozyTrip
             </span>
-            <span className="text-xs font-medium text-ct-text-soft sm:text-sm dark:text-ct-dark-text-soft">
+            <span className="mt-1 text-ct-text-soft text-xs font-medium sm:text-sm dark:text-ct-dark-text-soft">
               코지트립
             </span>
           </a>
