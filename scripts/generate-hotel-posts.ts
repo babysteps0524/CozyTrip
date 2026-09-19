@@ -26,11 +26,17 @@ interface GeneratedHotelPostFile {
   posts: HotelPost[];
 }
 
+type FailedHotelPostStatus = "retrying" | "retry-exhausted";
+
 interface FailedHotelPost {
   hotelId: string;
   destinationId: string;
   hotelName: string;
   failedAt: string;
+  firstFailedAt: string;
+  lastFailedAt: string;
+  attemptCount: number;
+  status: FailedHotelPostStatus;
   reason: string;
 }
 
@@ -66,18 +72,64 @@ interface HotelPostRunReport {
   destinations: HotelPostDestinationReport[];
 }
 
+type HotelInventoryStatus =
+  | "published"
+  | "pending"
+  | "retrying"
+  | "retry-exhausted";
+
+interface HotelInventoryItem {
+  hotelId: string;
+  destinationId: string;
+  hotelName: string;
+  slug: string;
+  status: HotelInventoryStatus;
+  attemptCount: number;
+  firstFailedAt?: string;
+  lastFailedAt?: string;
+  lastFailureReason?: string;
+}
+
+interface HotelInventoryDestinationReport {
+  destinationId: string;
+  inventory: number;
+  published: number;
+  pending: number;
+  retrying: number;
+  retryExhausted: number;
+  remaining: number;
+}
+
+interface HotelInventoryReport {
+  generatedAt: string;
+  source: "myrealtrip";
+  totalInventory: number;
+  published: number;
+  pending: number;
+  retrying: number;
+  retryExhausted: number;
+  remaining: number;
+  destinations: HotelInventoryDestinationReport[];
+  hotels: HotelInventoryItem[];
+}
+
 const root = resolve(import.meta.dir, "..");
 const inputPath = resolve(root, "src/data/generated/myrealtrip-hotels.json");
 const outputDir = resolve(root, "src/data/generated");
 const outputPath = resolve(outputDir, "hotel-posts.generated.json");
 const failurePath = resolve(outputDir, "hotel-post-failures.generated.json");
 const runReportPath = resolve(outputDir, "hotel-post-run.generated.json");
+const inventoryReportPath = resolve(
+  outputDir,
+  "hotel-inventory.generated.json",
+);
 
 const requestedHotelId = process.env.AI_HOTEL_ID?.trim() || undefined;
 const requestedLimit = Number(process.env.AI_POST_LIMIT ?? "1");
 const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
 
 const MAX_GENERATION_ATTEMPTS = 2;
+const MAX_FAILURE_ATTEMPTS = 5;
 const RETRY_DELAY_MS = 1_500;
 
 function toGenerationInput(hotel: Hotel): HotelPostGenerationInput {
@@ -106,29 +158,64 @@ function toGenerationInput(hotel: Hotel): HotelPostGenerationInput {
   };
 }
 
+function normalizeFailure(
+  failure: Partial<FailedHotelPost>,
+): FailedHotelPost | undefined {
+  if (
+    typeof failure.hotelId !== "string" ||
+    typeof failure.destinationId !== "string" ||
+    typeof failure.hotelName !== "string" ||
+    typeof failure.reason !== "string"
+  ) return undefined;
+
+  const lastFailedAt =
+    typeof failure.lastFailedAt === "string"
+      ? failure.lastFailedAt
+      : typeof failure.failedAt === "string"
+        ? failure.failedAt
+        : undefined;
+
+  if (!lastFailedAt) return undefined;
+
+  const attemptCount =
+    typeof failure.attemptCount === "number" &&
+    Number.isInteger(failure.attemptCount) &&
+    failure.attemptCount > 0
+      ? failure.attemptCount
+      : 1;
+
+  return {
+    hotelId: failure.hotelId,
+    destinationId: failure.destinationId,
+    hotelName: failure.hotelName,
+    failedAt: lastFailedAt,
+    firstFailedAt:
+      typeof failure.firstFailedAt === "string"
+        ? failure.firstFailedAt
+        : lastFailedAt,
+    lastFailedAt,
+    attemptCount,
+    status:
+      attemptCount >= MAX_FAILURE_ATTEMPTS
+        ? "retry-exhausted"
+        : "retrying",
+    reason: failure.reason,
+  };
+}
+
 async function readFailedHotels(): Promise<FailedHotelPost[]> {
   const file = Bun.file(failurePath);
-
   if (!(await file.exists())) return [];
 
   try {
-    const raw = await file.text();
-    const parsed = JSON.parse(raw) as Partial<FailedHotelPostFile>;
-
+    const parsed = JSON.parse(await file.text()) as Partial<FailedHotelPostFile>;
     if (!Array.isArray(parsed.failures)) return [];
 
-    return parsed.failures.filter(
-      (failure): failure is FailedHotelPost =>
-        Boolean(
-          failure &&
-            typeof failure === "object" &&
-            typeof failure.hotelId === "string" &&
-            typeof failure.destinationId === "string" &&
-            typeof failure.hotelName === "string" &&
-            typeof failure.failedAt === "string" &&
-            typeof failure.reason === "string",
-        ),
-    );
+    return parsed.failures
+      .map((failure) =>
+        normalizeFailure(failure as Partial<FailedHotelPost>),
+      )
+      .filter((failure): failure is FailedHotelPost => Boolean(failure));
   } catch (error) {
     console.warn(
       "Could not read failed hotel post queue. Starting with an empty queue:",
@@ -136,6 +223,32 @@ async function readFailedHotels(): Promise<FailedHotelPost[]> {
     );
     return [];
   }
+}
+
+function recordFailure(
+  failedHotelMap: Map<string, FailedHotelPost>,
+  hotel: Hotel,
+  reason: string,
+): FailedHotelPost {
+  const previous = failedHotelMap.get(hotel.id);
+  const now = new Date().toISOString();
+  const attemptCount = (previous?.attemptCount ?? 0) + 1;
+  const failure: FailedHotelPost = {
+    hotelId: hotel.id,
+    destinationId: hotel.destinationId,
+    hotelName: hotel.name,
+    failedAt: now,
+    firstFailedAt: previous?.firstFailedAt ?? now,
+    lastFailedAt: now,
+    attemptCount,
+    status:
+      attemptCount >= MAX_FAILURE_ATTEMPTS
+        ? "retry-exhausted"
+        : "retrying",
+    reason,
+  };
+  failedHotelMap.set(hotel.id, failure);
+  return failure;
 }
 
 async function writeFailedHotels(failures: FailedHotelPost[]): Promise<void> {
@@ -244,6 +357,11 @@ function selectHotels(
 
   const existingHotelIds = new Set(existingPosts.map((post) => post.hotelId));
   const failedHotelIds = new Set(failedHotels.map((failure) => failure.hotelId));
+  const retryableFailedHotelIds = new Set(
+    failedHotels
+      .filter((failure) => failure.status !== "retry-exhausted")
+      .map((failure) => failure.hotelId),
+  );
 
   if (dailyPlan) {
     const plan = parseDailyPlan(dailyPlan);
@@ -257,7 +375,7 @@ function selectHotels(
       );
 
       const failedCandidates = candidates.filter((hotel) =>
-        failedHotelIds.has(hotel.id),
+        retryableFailedHotelIds.has(hotel.id),
       );
       const newCandidates = candidates.filter(
         (hotel) => !failedHotelIds.has(hotel.id),
@@ -278,7 +396,7 @@ function selectHotels(
 
   const candidates = hotels.filter((hotel) => !existingHotelIds.has(hotel.id));
   const failedCandidates = candidates.filter((hotel) =>
-    failedHotelIds.has(hotel.id),
+    retryableFailedHotelIds.has(hotel.id),
   );
   const newCandidates = candidates.filter(
     (hotel) => !failedHotelIds.has(hotel.id),
@@ -462,13 +580,11 @@ async function main(): Promise<void> {
     if (!validation.valid) {
       validationFailureCount += 1;
       failureCount += 1;
-      failedHotelMap.set(hotel.id, {
-        hotelId: hotel.id,
-        destinationId: hotel.destinationId,
-        hotelName: hotel.name,
-        failedAt: new Date().toISOString(),
-        reason: formatHotelValidationFailure(hotel, validation),
-      });
+      recordFailure(
+        failedHotelMap,
+        hotel,
+        formatHotelValidationFailure(hotel, validation),
+      );
       failureByDestination.set(
         hotel.destinationId,
         (failureByDestination.get(hotel.destinationId) ?? 0) + 1,
@@ -516,13 +632,11 @@ async function main(): Promise<void> {
     } catch (error) {
       failureCount += 1;
 
-      failedHotelMap.set(hotel.id, {
-        hotelId: hotel.id,
-        destinationId: hotel.destinationId,
-        hotelName: hotel.name,
-        failedAt: new Date().toISOString(),
-        reason: formatGenerationError(error),
-      });
+      recordFailure(
+        failedHotelMap,
+        hotel,
+        formatGenerationError(error),
+      );
       if (plan) {
         failureByDestination.set(
           hotel.destinationId,
@@ -607,6 +721,70 @@ async function main(): Promise<void> {
     totalRemaining: Math.max(0, source.hotels.length - posts.length),
     destinations,
   };
+
+  const publishedHotelIds = new Set(posts.map((post) => post.hotelId));
+  const inventoryHotels: HotelInventoryItem[] = source.hotels.map((hotel) => {
+    const failure = failedHotelMap.get(hotel.id);
+    let status: HotelInventoryStatus = "pending";
+
+    if (publishedHotelIds.has(hotel.id)) {
+      status = "published";
+    } else if (failure?.status === "retry-exhausted") {
+      status = "retry-exhausted";
+    } else if (failure) {
+      status = "retrying";
+    }
+
+    return {
+      hotelId: hotel.id,
+      destinationId: hotel.destinationId,
+      hotelName: hotel.name,
+      slug: hotel.slug,
+      status,
+      attemptCount: failure?.attemptCount ?? 0,
+      ...(failure?.firstFailedAt ? { firstFailedAt: failure.firstFailedAt } : {}),
+      ...(failure?.lastFailedAt ? { lastFailedAt: failure.lastFailedAt } : {}),
+      ...(failure?.reason ? { lastFailureReason: failure.reason } : {}),
+    };
+  });
+
+  const inventoryReport: HotelInventoryReport = {
+    generatedAt: new Date().toISOString(),
+    source: "myrealtrip",
+    totalInventory: inventoryHotels.length,
+    published: inventoryHotels.filter((item) => item.status === "published").length,
+    pending: inventoryHotels.filter((item) => item.status === "pending").length,
+    retrying: inventoryHotels.filter((item) => item.status === "retrying").length,
+    retryExhausted: inventoryHotels.filter(
+      (item) => item.status === "retry-exhausted",
+    ).length,
+    remaining: inventoryHotels.filter((item) => item.status !== "published").length,
+    destinations: [...new Set(inventoryHotels.map((item) => item.destinationId))]
+      .sort()
+      .map((destinationId) => {
+        const items = inventoryHotels.filter(
+          (item) => item.destinationId === destinationId,
+        );
+        return {
+          destinationId,
+          inventory: items.length,
+          published: items.filter((item) => item.status === "published").length,
+          pending: items.filter((item) => item.status === "pending").length,
+          retrying: items.filter((item) => item.status === "retrying").length,
+          retryExhausted: items.filter(
+            (item) => item.status === "retry-exhausted",
+          ).length,
+          remaining: items.filter((item) => item.status !== "published").length,
+        };
+      }),
+    hotels: inventoryHotels,
+  };
+
+  await writeFile(
+    inventoryReportPath,
+    `${JSON.stringify(inventoryReport, null, 2)}\n`,
+    "utf8",
+  );
 
   await writeFile(
     runReportPath,
