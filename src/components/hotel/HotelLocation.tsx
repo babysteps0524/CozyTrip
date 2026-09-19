@@ -65,7 +65,7 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
                 <ul mt="4" mb="0" list="none" p="0" divide="y ct-line dark:divide-ct-dark-line">
                   {stations.map((station,index)=>(
                     <li key={`${station}-${index}`} flex="~" items="start" gap="3" py="3" first:pt="0" last:pb="0">
-                      <span mt="0.5" flex="shrink-0" w="6" h="6" flex="~" items="center" justify="center" rounded="full" bg="ct-primary-soft dark:bg-ct-dark-surface-soft" text="xs ct-primary dark:ct-dark-text-soft" font="bold">{index+1}</span>
+                      <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-ct-primary-soft text-xs font-bold text-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text-soft">{index + 1}</span>
                       <span min-w="0" text="sm ct-text dark:ct-dark-text" leading="relaxed">{station}</span>
                     </li>
                   ))}
