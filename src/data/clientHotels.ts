@@ -31,5 +31,5 @@ export async function loadClientHotels(
   if (!loader) return [];
 
   const data = await loader();
-  return Array.isArray(data.hotels) ? data.hotels : [];
+  return Array.isArray(data.hotels) ? (data.hotels as Hotel[]) : [];
 }
