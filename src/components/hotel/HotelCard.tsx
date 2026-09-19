@@ -51,7 +51,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
         <p className="mt-3 mb-0 line-clamp-2 text-sm leading-6 text-ct-text-soft dark:text-ct-dark-text-soft">{hotel.description}</p>
 
         <div className="mt-auto pt-4">
-          <div className="flex items-center justify-between rounded-xl bg-ct-primary-soft px-4 py-2.5 text-sm font-semibold text-ct-primary transition-colors group-hover:bg-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text dark:group-hover:bg-ct-dark-line">
+          <div className="flex items-center justify-between rounded-xl bg-ct-primary-soft px-4 py-2.5 text-sm font-semibold text-ct-primary transition-colors group-hover:bg-ct-primary group-hover:text-white dark:bg-ct-dark-surface-soft dark:text-ct-dark-text dark:group-hover:bg-ct-dark-line dark:group-hover:text-white">
             <span>호텔 소개 읽기</span><span aria-hidden="true">→</span>
           </div>
         </div>
