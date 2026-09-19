@@ -663,8 +663,49 @@ async function main(): Promise<void> {
   const attemptedByDestination = new Map<string, number>();
   const successByDestination = new Map<string, number>();
   const failureByDestination = new Map<string, number>();
+  const attemptedHotelIds = new Set<string>();
 
-  for (const hotel of selectedHotels) {
+  const getReplacementHotel = (destinationId: string): Hotel | undefined => {
+    const retryable = failedHotels.find(
+      (failure) =>
+        failure.destinationId === destinationId &&
+        failure.status !== "retry-exhausted" &&
+        !attemptedHotelIds.has(failure.hotelId),
+    );
+
+    if (retryable) {
+      return source.hotels.find((hotel) => hotel.id === retryable.hotelId);
+    }
+
+    return source.hotels.find(
+      (hotel) =>
+        hotel.destinationId === destinationId &&
+        !attemptedHotelIds.has(hotel.id) &&
+        !existingPosts.some((post) => post.hotelId === hotel.id) &&
+        failedHotelMap.get(hotel.id)?.status !== "retry-exhausted",
+    );
+  };
+
+  const generationQueue = [...selectedHotels];
+
+  for (let queueIndex = 0; queueIndex < generationQueue.length; queueIndex += 1) {
+    const hotel = generationQueue[queueIndex];
+
+    if (attemptedHotelIds.has(hotel.id)) {
+      continue;
+    }
+
+    if (plan) {
+      const target = plan[hotel.destinationId] ?? 0;
+      const succeeded = successByDestination.get(hotel.destinationId) ?? 0;
+
+      if (succeeded >= target) {
+        continue;
+      }
+    }
+
+    attemptedHotelIds.add(hotel.id);
+
     if (plan) {
       attemptedByDestination.set(
         hotel.destinationId,
@@ -691,6 +732,21 @@ async function main(): Promise<void> {
         (failureByDestination.get(hotel.destinationId) ?? 0) + 1,
       );
       console.error(formatHotelValidationFailure(hotel, validation));
+
+      if (plan) {
+        const target = plan[hotel.destinationId] ?? 0;
+        const succeeded = successByDestination.get(hotel.destinationId) ?? 0;
+        if (succeeded < target) {
+          const replacement = getReplacementHotel(hotel.destinationId);
+          if (replacement) {
+            generationQueue.push(replacement);
+            console.log(
+              `Top-up queued after validation failure: ${replacement.name} (${replacement.id})`,
+            );
+          }
+        }
+      }
+
       continue;
     }
 
@@ -755,6 +811,24 @@ async function main(): Promise<void> {
       console.error(
         `Failed to generate or validate ${hotel.name} after ${MAX_GENERATION_ATTEMPTS} attempt(s): ${formatGenerationError(error)}`,
       );
+
+      if (plan) {
+        const target = plan[hotel.destinationId] ?? 0;
+        const succeeded = successByDestination.get(hotel.destinationId) ?? 0;
+        if (succeeded < target) {
+          const replacement = getReplacementHotel(hotel.destinationId);
+          if (replacement) {
+            generationQueue.push(replacement);
+            console.log(
+              `Top-up queued after generation failure: ${replacement.name} (${replacement.id})`,
+            );
+          } else {
+            console.warn(
+              `No eligible top-up hotel remains for ${hotel.destinationId}.`,
+            );
+          }
+        }
+      }
     }
   }
 
