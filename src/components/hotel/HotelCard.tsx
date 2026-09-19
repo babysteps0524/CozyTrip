@@ -19,9 +19,11 @@ export default function HotelCard({ hotel }: HotelCardProps) {
     hotel.starRating !== undefined ? `${hotel.starRating}성급` : undefined,
   ].filter(Boolean);
 
+  const hotelPath = `/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`;
+
   return (
-    <article className="group flex h-full flex-col overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-card transition-transform duration-150 hover:-translate-y-0.5 hover:shadow-soft dark:border-ct-dark-line dark:bg-ct-dark-surface">
-      <a href={`/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`} className="ct-focus block" aria-label={`${hotel.name} 호텔 소개 보기`} active-scale="99">
+    <article className="group h-full overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-card transition-transform duration-150 hover:-translate-y-0.5 hover:shadow-soft dark:border-ct-dark-line dark:bg-ct-dark-surface">
+      <a href={hotelPath} className="ct-focus flex h-full flex-col" aria-label={`${hotel.name} 호텔 소개 보기`} active-scale="99">
         {image ? (
           <Image src={image.src} alt={image.alt} width={image.width} height={image.height} image={image} aspectRatio="16/10" />
         ) : (
@@ -29,13 +31,11 @@ export default function HotelCard({ hotel }: HotelCardProps) {
             호텔 이미지를 준비 중입니다.
           </div>
         )}
-      </a>
-
       <div className="flex flex-1 flex-col p-4 sm:p-5 lg:p-4">
         {location && <p className="m-0 text-xs font-semibold tracking-wide text-ct-primary dark:text-ct-dark-text-soft">{location}</p>}
 
         <h2 className="mt-2 mb-0 text-base font-bold leading-snug tracking-tight text-ct-text sm:text-lg dark:text-ct-dark-text">
-          <a href={`/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`} className="ct-focus" active-scale="99">{hotel.name}</a>
+          {hotel.name}
         </h2>
 
         {hotel.nameEn && <p className="mt-1 mb-0 truncate text-xs text-ct-muted sm:text-sm dark:text-ct-dark-muted">{hotel.nameEn}</p>}
@@ -51,11 +51,12 @@ export default function HotelCard({ hotel }: HotelCardProps) {
         <p className="mt-3 mb-0 line-clamp-2 text-sm leading-6 text-ct-text-soft dark:text-ct-dark-text-soft">{hotel.description}</p>
 
         <div className="mt-auto pt-4">
-          <a href={`/japan/${hotel.destinationId.replace("japan-", "")}/hotels/${hotel.slug}/`} className="ct-focus flex items-center justify-between rounded-xl bg-ct-primary-soft px-4 py-2.5 text-sm font-semibold text-ct-primary transition-colors hover:bg-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text dark:hover:bg-ct-dark-line" active-scale="98">
+          <div className="flex items-center justify-between rounded-xl bg-ct-primary-soft px-4 py-2.5 text-sm font-semibold text-ct-primary transition-colors group-hover:bg-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text dark:group-hover:bg-ct-dark-line">
             <span>호텔 소개 읽기</span><span aria-hidden="true">→</span>
-          </a>
+          </div>
         </div>
       </div>
+      </a>
     </article>
   );
 }
