@@ -8,28 +8,12 @@ import {
   type MyRealTripAccommodationSearchResponse,
   type MyRealTripRegionAutocompleteResponse,
 } from "./normalize";
+import { getMyRealTripSearchWindow } from "./search-window";
 
-const CHECK_IN = process.env.MYREALTRIP_CHECK_IN?.trim() || "2026-10-15";
-const CHECK_OUT = process.env.MYREALTRIP_CHECK_OUT?.trim() || "2026-10-18";
+const { checkIn: CHECK_IN, checkOut: CHECK_OUT, source: SEARCH_WINDOW_SOURCE } =
+  getMyRealTripSearchWindow();
 const ADULT_COUNT = Number(process.env.MYREALTRIP_ADULT_COUNT ?? "2");
 const CHILD_COUNT = Number(process.env.MYREALTRIP_CHILD_COUNT ?? "0");
-
-function assertDateRange(): void {
-  if (
-    !/^\d{4}-\d{2}-\d{2}$/.test(CHECK_IN) ||
-    !/^\d{4}-\d{2}-\d{2}$/.test(CHECK_OUT)
-  ) {
-    throw new Error(
-      "MYREALTRIP_CHECK_IN / MYREALTRIP_CHECK_OUT must use YYYY-MM-DD.",
-    );
-  }
-
-  if (CHECK_IN >= CHECK_OUT) {
-    throw new Error(
-      "MYREALTRIP_CHECK_OUT must be later than MYREALTRIP_CHECK_IN.",
-    );
-  }
-}
 
 function assertCounts(): void {
   if (!Number.isInteger(ADULT_COUNT) || ADULT_COUNT <= 0) {
@@ -44,13 +28,14 @@ function assertCounts(): void {
 }
 
 async function main(): Promise<void> {
-  assertDateRange();
   assertCounts();
 
   console.log("MyRealTrip 숙소 검색 결과 진단");
   console.log("================================");
-  console.log(`숙박: ${CHECK_IN} ~ ${CHECK_OUT}`);
-  console.log(`인원: 성인 ${ADULT_COUNT}명 / 아동 ${CHILD_COUNT}명`);
+  console.log(
+    `API 조회 기간: ${CHECK_IN} ~ ${CHECK_OUT} (${SEARCH_WINDOW_SOURCE === "rolling" ? "자동 갱신" : "환경변수 지정"})`,
+  );
+  console.log(`API 조회 인원: 성인 ${ADULT_COUNT}명 / 아동 ${CHILD_COUNT}명`);
   console.log("");
 
   for (const destination of getMyRealTripDestinations()) {
@@ -91,9 +76,7 @@ async function main(): Promise<void> {
 
       const items = response.data?.items ?? [];
       const totalCount =
-        response.data?.totalCount ??
-        response.meta?.totalCount ??
-        0;
+        response.data?.totalCount ?? response.meta?.totalCount ?? 0;
 
       console.log(`  regionId: ${region.regionId}`);
       console.log(`  API totalCount: ${totalCount}`);
