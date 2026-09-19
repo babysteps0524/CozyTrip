@@ -4,7 +4,13 @@ import { DestinationCard } from "../components/destination";
 import { HotelCard } from "../components/hotel";
 import { PostCard } from "../components/post";
 
-interface HomeProps {\n  destinations: import("../types").Destination[];\n  hotels: import("../types").Hotel[];\n  guides: import("../types").Post[];\n}\n\nexport default function Home({ destinations, hotels, guides }: HomeProps) {
+interface HomeProps {
+  destinations: import("../types").Destination[];
+  hotels: import("../types").Hotel[];
+  guides: import("../types").Post[];
+}
+
+export default function Home({ destinations, hotels, guides }: HomeProps) {
   const featuredDestinations = destinations.slice(0, 6);
 
   const featuredHotels = hotels.slice(0, 3);
