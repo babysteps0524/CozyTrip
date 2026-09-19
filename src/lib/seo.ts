@@ -120,13 +120,21 @@ export function createSeoMetadata(
     const hotel = hotels.find((item) => item.slug === hotelDetailMatch[2]);
 
     if (destination && hotel && hotel.destinationId === destination.id) {
+      const hotelPost = posts.find(
+        (item) => item.category === "hotel" && item.hotelId === hotel.id,
+      );
+
       return {
-        title: `${hotel.name} | ${SITE_NAME}`,
-        description: normalizeDescription(hotel.description),
+        title: hotelPost?.title
+          ? `${hotelPost.title} | ${SITE_NAME}`
+          : `${hotel.name} | ${SITE_NAME}`,
+        description: normalizeDescription(
+          hotelPost?.description || hotel.description,
+        ),
         canonical: createCanonical(
           `/japan/${destination.slug}/hotels/${hotel.slug}/`,
         ),
-        ogType: "website",
+        ogType: hotelPost ? "article" : "website",
         image: getFirstImage(hotel.images),
       };
     }
