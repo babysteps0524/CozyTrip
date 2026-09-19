@@ -1,0 +1,1028 @@
+{
+  "generatedAt": "2026-09-19T06:20:29.261Z",
+  "source": "myrealtrip",
+  "totalInventory": 120,
+  "published": 62,
+  "pending": 58,
+  "retrying": 0,
+  "retryExhausted": 0,
+  "remaining": 58,
+  "destinations": [
+    {
+      "destinationId": "japan-fukuoka",
+      "inventory": 20,
+      "published": 11,
+      "pending": 9,
+      "retrying": 0,
+      "retryExhausted": 0,
+      "remaining": 9
+    },
+    {
+      "destinationId": "japan-kyoto",
+      "inventory": 20,
+      "published": 11,
+      "pending": 9,
+      "retrying": 0,
+      "retryExhausted": 0,
+      "remaining": 9
+    },
+    {
+      "destinationId": "japan-okinawa",
+      "inventory": 20,
+      "published": 6,
+      "pending": 14,
+      "retrying": 0,
+      "retryExhausted": 0,
+      "remaining": 14
+    },
+    {
+      "destinationId": "japan-osaka",
+      "inventory": 20,
+      "published": 16,
+      "pending": 4,
+      "retrying": 0,
+      "retryExhausted": 0,
+      "remaining": 4
+    },
+    {
+      "destinationId": "japan-sapporo",
+      "inventory": 20,
+      "published": 0,
+      "pending": 20,
+      "retrying": 0,
+      "retryExhausted": 0,
+      "remaining": 20
+    },
+    {
+      "destinationId": "japan-tokyo",
+      "inventory": 20,
+      "published": 18,
+      "pending": 2,
+      "retrying": 0,
+      "retryExhausted": 0,
+      "remaining": 2
+    }
+  ],
+  "hotels": [
+    {
+      "hotelId": "myrealtrip-5008360",
+      "destinationId": "japan-tokyo",
+      "hotelName": "신주쿠 워싱턴 호텔 도쿄 메인",
+      "slug": "신주쿠-워싱턴-호텔-도쿄-메인-5008360",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1126303",
+      "destinationId": "japan-tokyo",
+      "hotelName": "토부 호텔 레밴트 도쿄",
+      "slug": "토부-호텔-레밴트-도쿄-1126303",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1640875",
+      "destinationId": "japan-tokyo",
+      "hotelName": "APA 호텔 & 리조트 롯폰기 에키히가시",
+      "slug": "apa-호텔-리조트-롯폰기-에키히가시-1640875",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1178040",
+      "destinationId": "japan-tokyo",
+      "hotelName": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메",
+      "slug": "호텔-빌라-폰테인-그랜드-도쿄-시오도메-1178040",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1273819",
+      "destinationId": "japan-tokyo",
+      "hotelName": "렘 롯폰기",
+      "slug": "렘-롯폰기-1273819",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1261232",
+      "destinationId": "japan-tokyo",
+      "hotelName": "소테츠 프레사 인 긴자 나나초메",
+      "slug": "소테츠-프레사-인-긴자-나나초메-1261232",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1175943",
+      "destinationId": "japan-tokyo",
+      "hotelName": "호텔 빌라 퐁텐 도쿄 - 가야바초",
+      "slug": "호텔-빌라-퐁텐-도쿄-가야바초-1175943",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1111187",
+      "destinationId": "japan-tokyo",
+      "hotelName": "썬샤인 시티 프린스 호텔",
+      "slug": "썬샤인-시티-프린스-호텔-1111187",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1109436",
+      "destinationId": "japan-tokyo",
+      "hotelName": "시나가와 프린스 호텔",
+      "slug": "시나가와-프린스-호텔-1109436",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1306164",
+      "destinationId": "japan-tokyo",
+      "hotelName": "소테츠 프레사 인 도쿄 긴시초",
+      "slug": "소테츠-프레사-인-도쿄-긴시초-1306164",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1378163",
+      "destinationId": "japan-tokyo",
+      "hotelName": "긴자 캐피털 호텔 모에기",
+      "slug": "긴자-캐피털-호텔-모에기-1378163",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1503356",
+      "destinationId": "japan-tokyo",
+      "hotelName": "시퀀스 미야시타 파크",
+      "slug": "시퀀스-미야시타-파크-1503356",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1497848",
+      "destinationId": "japan-tokyo",
+      "hotelName": "도쿄 베이 시오미 프린스 호텔",
+      "slug": "도쿄-베이-시오미-프린스-호텔-1497848",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1220840",
+      "destinationId": "japan-tokyo",
+      "hotelName": "APA 호텔 신주쿠 교엠매",
+      "slug": "apa-호텔-신주쿠-교엠매-1220840",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1145543",
+      "destinationId": "japan-tokyo",
+      "hotelName": "호텔 몬토레 긴자",
+      "slug": "호텔-몬토레-긴자-1145543",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1105712",
+      "destinationId": "japan-tokyo",
+      "hotelName": "더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션",
+      "slug": "더-프린스-파크-타워-도쿄-프리퍼드-호텔-리조트-lvx-컬렉션-1105712",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1420676",
+      "destinationId": "japan-tokyo",
+      "hotelName": "미쓰이 가든 호텔 긴자 고초메",
+      "slug": "미쓰이-가든-호텔-긴자-고초메-1420676",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1167753",
+      "destinationId": "japan-tokyo",
+      "hotelName": "호텔 리스텔 신주쿠",
+      "slug": "호텔-리스텔-신주쿠-1167753",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1114361",
+      "destinationId": "japan-tokyo",
+      "hotelName": "다이이치 호텔 도쿄",
+      "slug": "다이이치-호텔-도쿄-1114361",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1310194",
+      "destinationId": "japan-tokyo",
+      "hotelName": "APA 호텔 & 리조트 니시신주쿠 고초메 에키마에 타워",
+      "slug": "apa-호텔-리조트-니시신주쿠-고초메-에키마에-타워-1310194",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3578504",
+      "destinationId": "japan-osaka",
+      "hotelName": "APA 호텔 & 리조트 오사카 난바 역앞 타워",
+      "slug": "apa-호텔-리조트-오사카-난바-역앞-타워-3578504",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-5022564",
+      "destinationId": "japan-osaka",
+      "hotelName": "소테츠 그랜드 프레사 오사카-난바",
+      "slug": "소테츠-그랜드-프레사-오사카-난바-5022564",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1431475",
+      "destinationId": "japan-osaka",
+      "hotelName": "호텔한큐레스파이어오사카",
+      "slug": "호텔한큐레스파이어오사카-1431475",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1286523",
+      "destinationId": "japan-osaka",
+      "hotelName": "칸데오 호텔 오사카 난바",
+      "slug": "칸데오-호텔-오사카-난바-1286523",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1268563",
+      "destinationId": "japan-osaka",
+      "hotelName": "호텔 일 쿠오레 남바",
+      "slug": "호텔-일-쿠오레-남바-1268563",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1560748",
+      "destinationId": "japan-osaka",
+      "hotelName": "호텔 포르자 오사카 난바 도톤보리",
+      "slug": "호텔-포르자-오사카-난바-도톤보리-1560748",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1185003",
+      "destinationId": "japan-osaka",
+      "hotelName": "오사카 테이코쿠 호텔",
+      "slug": "오사카-테이코쿠-호텔-1185003",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1162565",
+      "destinationId": "japan-osaka",
+      "hotelName": "호텔 몬토레 그라스미아 오사카",
+      "slug": "호텔-몬토레-그라스미아-오사카-1162565",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1141495",
+      "destinationId": "japan-osaka",
+      "hotelName": "남바 오리엔탈 호텔",
+      "slug": "남바-오리엔탈-호텔-1141495",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3576037",
+      "destinationId": "japan-osaka",
+      "hotelName": "더 원파이브 오사카 난바 도톤보리",
+      "slug": "더-원파이브-오사카-난바-도톤보리-3576037",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-5008384",
+      "destinationId": "japan-osaka",
+      "hotelName": "오사카 도톤보리,난바,에비스주택 모리하우스(집 전체,아파트형,주택형) ",
+      "slug": "오사카-도톤보리-난바-에비스주택-모리하우스-집-전체-아파트형-주택형-5008384",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1641612",
+      "destinationId": "japan-osaka",
+      "hotelName": "호텔 케이한 난바 그란데",
+      "slug": "호텔-케이한-난바-그란데-1641612",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1270212",
+      "destinationId": "japan-osaka",
+      "hotelName": "온야도 노노 남바 내추럴 핫 스프링",
+      "slug": "온야도-노노-남바-내추럴-핫-스프링-1270212",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1134335",
+      "destinationId": "japan-osaka",
+      "hotelName": "호텔 케이한 유니버설 타워",
+      "slug": "호텔-케이한-유니버설-타워-1134335",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3587508",
+      "destinationId": "japan-osaka",
+      "hotelName": "Toyoko Inn Osaka Namba",
+      "slug": "toyoko-inn-osaka-namba-3587508",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1285400",
+      "destinationId": "japan-osaka",
+      "hotelName": "더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬",
+      "slug": "더-싱귤러리-호텔-스카이스파-앳-유니버설-스튜디오-재팬-1285400",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1301211",
+      "destinationId": "japan-osaka",
+      "hotelName": "레드 루프 인 & 스위트 오사카 - 남바/닛폰바시",
+      "slug": "레드-루프-인-스위트-오사카-남바-닛폰바시-1301211",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1575824",
+      "destinationId": "japan-osaka",
+      "hotelName": "오리엔탈 호텔 유니버설 시티",
+      "slug": "오리엔탈-호텔-유니버설-시티-1575824",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1170153",
+      "destinationId": "japan-osaka",
+      "hotelName": "홀리데이 인 오사카 남바 바이 IHG",
+      "slug": "홀리데이-인-오사카-남바-바이-ihg-1170153",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-5009707",
+      "destinationId": "japan-osaka",
+      "hotelName": "센타라 그랜드 호텔 오사카",
+      "slug": "센타라-그랜드-호텔-오사카-5009707",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1652241",
+      "destinationId": "japan-kyoto",
+      "hotelName": "교토 우메코지 카덴쇼",
+      "slug": "교토-우메코지-카덴쇼-1652241",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1490406",
+      "destinationId": "japan-kyoto",
+      "hotelName": "온야도 노노 교토시치조 내추럴 핫 스프링스",
+      "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1208147",
+      "destinationId": "japan-kyoto",
+      "hotelName": "호텔 엘시안트 교토 하치조구치",
+      "slug": "호텔-엘시안트-교토-하치조구치-1208147",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1200282",
+      "destinationId": "japan-kyoto",
+      "hotelName": "알몬트 호텔 교토",
+      "slug": "알몬트-호텔-교토-1200282",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1581864",
+      "destinationId": "japan-kyoto",
+      "hotelName": "리치몬드 호텔 프리미어 교토 시조",
+      "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1571825",
+      "destinationId": "japan-kyoto",
+      "hotelName": "오크우드 호텔 오이케 교토",
+      "slug": "오크우드-호텔-오이케-교토-1571825",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1594516",
+      "destinationId": "japan-kyoto",
+      "hotelName": "소테츠 프레사 인 교토-키요미즈 고조",
+      "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1566383",
+      "destinationId": "japan-kyoto",
+      "hotelName": "호텔 포르자 교토 시조 카와라마치",
+      "slug": "호텔-포르자-교토-시조-카와라마치-1566383",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1254251",
+      "destinationId": "japan-kyoto",
+      "hotelName": "호텔 그레이스리 교토 산조",
+      "slug": "호텔-그레이스리-교토-산조-1254251",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1229514",
+      "destinationId": "japan-kyoto",
+      "hotelName": "사쿠라 테라스 더 갤러리",
+      "slug": "사쿠라-테라스-더-갤러리-1229514",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1369404",
+      "destinationId": "japan-kyoto",
+      "hotelName": "게이오 프렐리아 호텔 교토 가라스마 고조",
+      "slug": "게이오-프렐리아-호텔-교토-가라스마-고조-1369404",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1447756",
+      "destinationId": "japan-kyoto",
+      "hotelName": "오리엔탈 호텔 교토 로쿠조",
+      "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1186098",
+      "destinationId": "japan-kyoto",
+      "hotelName": "호텔 홋케 클럽 교토",
+      "slug": "호텔-홋케-클럽-교토-1186098",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1181987",
+      "destinationId": "japan-kyoto",
+      "hotelName": "스마일 호텔 교토 시조",
+      "slug": "스마일-호텔-교토-시조-1181987",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1409068",
+      "destinationId": "japan-kyoto",
+      "hotelName": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트",
+      "slug": "카덴쇼-아라시야마-온센-교토-교리츠-리조트-1409068",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1556707",
+      "destinationId": "japan-kyoto",
+      "hotelName": "호텔 앤드룸스 교토 시치조",
+      "slug": "호텔-앤드룸스-교토-시치조-1556707",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1440279",
+      "destinationId": "japan-kyoto",
+      "hotelName": "리치몬드 호텔 프리미어 교토 에키마에",
+      "slug": "리치몬드-호텔-프리미어-교토-에키마에-1440279",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3577397",
+      "destinationId": "japan-kyoto",
+      "hotelName": "알라 호텔 교토",
+      "slug": "알라-호텔-교토-3577397",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3648942",
+      "destinationId": "japan-kyoto",
+      "hotelName": "더블트리 바이 힐튼 교토 히가시야마",
+      "slug": "더블트리-바이-힐튼-교토-히가시야마-3648942",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1563593",
+      "destinationId": "japan-kyoto",
+      "hotelName": "교토 센트럴 인",
+      "slug": "교토-센트럴-인-1563593",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-5709842",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "컴포트 인 후쿠오카 텐진",
+      "slug": "컴포트-인-후쿠오카-텐진-5709842",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1460748",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "더 베이직스 후쿠오카",
+      "slug": "더-베이직스-후쿠오카-1460748",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1402095",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "미쓰이 가든 호텔 후쿠오카 기온",
+      "slug": "미쓰이-가든-호텔-후쿠오카-기온-1402095",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1188575",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 마이스테이스 후쿠오카 텐진",
+      "slug": "호텔-마이스테이스-후쿠오카-텐진-1188575",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1487512",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 몬토레 후쿠오카",
+      "slug": "호텔-몬토레-후쿠오카-1487512",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6339000",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "니시테츠 그랜드 호텔",
+      "slug": "니시테츠-그랜드-호텔-6339000",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1190993",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 홋케 클럽 후쿠오카",
+      "slug": "호텔-홋케-클럽-후쿠오카-1190993",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1559947",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 오리엔탈 익스프레스 후쿠오카 텐진",
+      "slug": "호텔-오리엔탈-익스프레스-후쿠오카-텐진-1559947",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1295093",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 포르자 하카타역 치쿠시 구치Ⅰ",
+      "slug": "호텔-포르자-하카타역-치쿠시-구치i-1295093",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1268921",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 몬테 에르마나 후쿠오카",
+      "slug": "호텔-몬테-에르마나-후쿠오카-1268921",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1144031",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "컴포트 호텔 하카타",
+      "slug": "컴포트-호텔-하카타-1144031",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1317449",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "네스트 호텔 하카타 스테이션",
+      "slug": "네스트-호텔-하카타-스테이션-1317449",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1152864",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 몬토레 라 수르 후쿠오카",
+      "slug": "호텔-몬토레-라-수르-후쿠오카-1152864",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1401198",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "오리엔탈 호텔 후쿠오카 하카타 스테이션",
+      "slug": "오리엔탈-호텔-후쿠오카-하카타-스테이션-1401198",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1190045",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "니시테츠 인 후쿠오카",
+      "slug": "니시테츠-인-후쿠오카-1190045",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1968779",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "앤드 호텔 하카타",
+      "slug": "앤드-호텔-하카타-1968779",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1579896",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "존크 호텔 하카타",
+      "slug": "존크-호텔-하카타-1579896",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1483995",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "미쓰이 가든 호텔 후쿠오카 나카스",
+      "slug": "미쓰이-가든-호텔-후쿠오카-나카스-1483995",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1638440",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "프린스 스마트 인 하카타",
+      "slug": "프린스-스마트-인-하카타-1638440",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1159751",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "커낼 시티 후쿠오카 워싱턴 호텔",
+      "slug": "커낼-시티-후쿠오카-워싱턴-호텔-1159751",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-4185957",
+      "destinationId": "japan-sapporo",
+      "hotelName": "삿포로 호텔 바이 그랑벨",
+      "slug": "삿포로-호텔-바이-그랑벨-4185957",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1495357",
+      "destinationId": "japan-sapporo",
+      "hotelName": "호텔 포르자 삿포로 스테이션",
+      "slug": "호텔-포르자-삿포로-스테이션-1495357",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215670",
+      "destinationId": "japan-sapporo",
+      "hotelName": "삿포로 그랜드 호텔",
+      "slug": "삿포로-그랜드-호텔-6215670",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1153897",
+      "destinationId": "japan-sapporo",
+      "hotelName": "호텔 몬토레 에델호프 삿포로",
+      "slug": "호텔-몬토레-에델호프-삿포로-1153897",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1186904",
+      "destinationId": "japan-sapporo",
+      "hotelName": "호텔 레졸 트리니티 삿포로",
+      "slug": "호텔-레졸-트리니티-삿포로-1186904",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6206720",
+      "destinationId": "japan-sapporo",
+      "hotelName": "퀸테사 호텔 삿포로 스스키노",
+      "slug": "퀸테사-호텔-삿포로-스스키노-6206720",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1259073",
+      "destinationId": "japan-sapporo",
+      "hotelName": "라젠트 스테이 삿포로 오도리 홋카이도",
+      "slug": "라젠트-스테이-삿포로-오도리-홋카이도-1259073",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1568912",
+      "destinationId": "japan-sapporo",
+      "hotelName": "그랑벨 호텔 스스키노",
+      "slug": "그랑벨-호텔-스스키노-1568912",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215631",
+      "destinationId": "japan-sapporo",
+      "hotelName": "삿포로 스트림 호텔",
+      "slug": "삿포로-스트림-호텔-6215631",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-4312114",
+      "destinationId": "japan-sapporo",
+      "hotelName": " 크로스호텔 삿포로",
+      "slug": "크로스호텔-삿포로-4312114",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1422010",
+      "destinationId": "japan-sapporo",
+      "hotelName": "퀸테사 호텔 삿포로 스스키노 63 릴렉스&스파",
+      "slug": "퀸테사-호텔-삿포로-스스키노-63-릴렉스-스파-1422010",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215599",
+      "destinationId": "japan-sapporo",
+      "hotelName": "스마일 호텔 프리미엄 삿포로스스키노",
+      "slug": "스마일-호텔-프리미엄-삿포로스스키노-6215599",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1482483",
+      "destinationId": "japan-sapporo",
+      "hotelName": "더 놋 삿포로",
+      "slug": "더-놋-삿포로-1482483",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1295524",
+      "destinationId": "japan-sapporo",
+      "hotelName": "카락사 호텔 삿포로",
+      "slug": "카락사-호텔-삿포로-1295524",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3585879",
+      "destinationId": "japan-sapporo",
+      "hotelName": "Jozankei Yurakusoan",
+      "slug": "jozankei-yurakusoan-3585879",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3588832",
+      "destinationId": "japan-sapporo",
+      "hotelName": "JR 웨스트 그룹 비아 인 프라임 삿포로 오도리",
+      "slug": "jr-웨스트-그룹-비아-인-프라임-삿포로-오도리-3588832",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1576808",
+      "destinationId": "japan-sapporo",
+      "hotelName": "더 로열 파크 캔버스 – 삿포로 오도리 파크",
+      "slug": "더-로열-파크-캔버스-삿포로-오도리-파크-1576808",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1548268",
+      "destinationId": "japan-sapporo",
+      "hotelName": "KOKO 호텔 삿포로 에키마에",
+      "slug": "koko-호텔-삿포로-에키마에-1548268",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6338994",
+      "destinationId": "japan-sapporo",
+      "hotelName": "솔라리아 니시테츠 호텔 삿포로",
+      "slug": "솔라리아-니시테츠-호텔-삿포로-6338994",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215696",
+      "destinationId": "japan-sapporo",
+      "hotelName": "게이오 플라자 호텔 삿포로",
+      "slug": "게이오-플라자-호텔-삿포로-6215696",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1499059",
+      "destinationId": "japan-okinawa",
+      "hotelName": "레쿠 오키나와 자탄 스파 & 리조트",
+      "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6196684",
+      "destinationId": "japan-okinawa",
+      "hotelName": "베셀 호텔 캄파나 오키나와",
+      "slug": "베셀-호텔-캄파나-오키나와-6196684",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6178095",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 JAL 시티 나하",
+      "slug": "호텔-jal-시티-나하-6178095",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6206151",
+      "destinationId": "japan-okinawa",
+      "hotelName": "하얏트 리젠시 세라가키 아일랜드 오키나와",
+      "slug": "하얏트-리젠시-세라가키-아일랜드-오키나와-6206151",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6183767",
+      "destinationId": "japan-okinawa",
+      "hotelName": "오리엔탈 호텔 오키나와 리조트 & 스파",
+      "slug": "오리엔탈-호텔-오키나와-리조트-스파-6183767",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-4479180",
+      "destinationId": "japan-okinawa",
+      "hotelName": "더 네스트 나하",
+      "slug": "더-네스트-나하-4479180",
+      "status": "published",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6206176",
+      "destinationId": "japan-okinawa",
+      "hotelName": "더 부세나 테라스",
+      "slug": "더-부세나-테라스-6206176",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1569706",
+      "destinationId": "japan-okinawa",
+      "hotelName": "네스트 호텔 나하 쿠모지",
+      "slug": "네스트-호텔-나하-쿠모지-1569706",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6203441",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 컬렉티브",
+      "slug": "호텔-컬렉티브-6203441",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215679",
+      "destinationId": "japan-okinawa",
+      "hotelName": "류큐 호텔&리조트 나시로 비치",
+      "slug": "류큐-호텔-리조트-나시로-비치-6215679",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1107701",
+      "destinationId": "japan-okinawa",
+      "hotelName": "오키나와 나하나 호텔 & 스파",
+      "slug": "오키나와-나하나-호텔-스파-1107701",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1505018",
+      "destinationId": "japan-okinawa",
+      "hotelName": "힐튼 오키나와 세소코 리조트",
+      "slug": "힐튼-오키나와-세소코-리조트-1505018",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1474186",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 스트라타 나하",
+      "slug": "호텔-스트라타-나하-1474186",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1245403",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 그레이서리 나하",
+      "slug": "호텔-그레이서리-나하-1245403",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6199109",
+      "destinationId": "japan-okinawa",
+      "hotelName": "라 젠트 호텔 오키나와 차탄",
+      "slug": "라-젠트-호텔-오키나와-차탄-6199109",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1277534",
+      "destinationId": "japan-okinawa",
+      "hotelName": "하얏트 리젠시 나하, 오키나와",
+      "slug": "하얏트-리젠시-나하-오키나와-1277534",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6206059",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 마하이나 웰니스 리조트 오키나와",
+      "slug": "호텔-마하이나-웰니스-리조트-오키나와-6206059",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215659",
+      "destinationId": "japan-okinawa",
+      "hotelName": "오끼나와 프린스 호텔 오션 뷰 기노완",
+      "slug": "오끼나와-프린스-호텔-오션-뷰-기노완-6215659",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6215627",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 아쿠아 시타 나하",
+      "slug": "호텔-아쿠아-시타-나하-6215627",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-6196600",
+      "destinationId": "japan-okinawa",
+      "hotelName": "호텔 몬토레 오키나와 스파 & 리조트",
+      "slug": "호텔-몬토레-오키나와-스파-리조트-6196600",
+      "status": "pending",
+      "attemptCount": 0
+    }
+  ]
+}
