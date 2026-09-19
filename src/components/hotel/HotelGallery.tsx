@@ -111,10 +111,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                   aria-label={`${index + 1}번째 호텔 이미지 보기`}
                   aria-pressed={index === safeIndex}
                   onClick={() => setSelectedIndex(index)}
-                  className="ct-focus relative h-18 w-24 shrink-0 overflow-hidden rounded-lg border bg-ct-surface dark:bg-ct-dark-surface"
-                  border={index === safeIndex ? "~ 2 ct-primary" : "~ ct-line dark:ct-dark-line"}
-                  opacity={index === safeIndex ? "100" : "70"}
-                  hover="opacity-100"
+                  className={`ct-focus relative h-18 w-24 shrink-0 overflow-hidden rounded-lg border bg-ct-surface dark:bg-ct-dark-surface ${index === safeIndex ? "border-2 border-ct-primary opacity-100" : "border-ct-line opacity-70 hover:opacity-100 dark:border-ct-dark-line"}`}
                   active-scale="98"
                 >
                   <img src={image.src} alt="" aria-hidden="true" width={240} height={180}
