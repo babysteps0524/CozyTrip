@@ -30,6 +30,9 @@ jobs:
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
       OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      MYREALTRIP_API_KEY: ${{ secrets.MYREALTRIP_API_KEY }}
+      MYREALTRIP_BASE_URL: ${{ secrets.MYREALTRIP_BASE_URL }}
+      MYREALTRIP_IMAGE_USAGE_ALLOWED: "true"
       AI_HOTEL_ID: ${{ inputs.hotel_id }}
       AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
       AI_DAILY_PLAN: "japan-tokyo:3,japan-osaka:3,japan-kyoto:2,japan-fukuoka:2,japan-okinawa:1"
@@ -47,6 +50,12 @@ jobs:
 
       - name: Install dependencies
         run: bun install --frozen-lockfile
+
+      - name: Refresh MyRealTrip hotel inventory
+        run: bun run myrealtrip:generate
+
+      - name: Validate hotel data
+        run: bun run validate:hotels
 
       - name: Generate hotel posts
         run: bun run ai:hotel-posts
@@ -80,11 +89,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json src/data/generated/hotel-inventory.generated.json; then
-            echo "No generated hotel post or failure queue changes."
+          if git diff --quiet -- src/data/generated/myrealtrip-hotels.json src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json src/data/generated/hotel-inventory.generated.json; then
+            echo "No generated hotel data changes."
             exit 0
           fi
 
-          git add src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json src/data/generated/hotel-inventory.generated.json
-          git commit -m "chore: generate daily hotel posts"
+          git add src/data/generated/myrealtrip-hotels.json src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json src/data/generated/hotel-inventory.generated.json
+          git commit -m "chore: refresh hotel inventory and posts"
           git push
