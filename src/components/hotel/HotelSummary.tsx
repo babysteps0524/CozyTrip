@@ -1,182 +1,84 @@
 import type { Hotel } from "../../types";
 import { Container } from "../common";
 
-interface HotelSummaryProps {
-  hotel: Hotel;
-}
+interface HotelSummaryProps { hotel: Hotel; }
 
 function formatRating(value: number): string {
   return Number.isInteger(value) ? String(value) : value.toFixed(1);
 }
 
 export default function HotelSummary({ hotel }: HotelSummaryProps) {
-  const hasRating = hotel.ratingAverage !== undefined;
-  const hasStayInfo = Boolean(hotel.checkIn || hotel.checkOut);
   const dataSourceLabel =
-    hotel.dataSource === "myrealtrip"
-      ? "마이리얼트립 숙소 검색 API"
-      : hotel.dataSource === "agoda"
-        ? "Agoda 숙소 데이터"
-        : hotel.dataSource === "manual"
-          ? "CozyTrip 수동 입력"
-          : undefined;
+    hotel.dataSource === "myrealtrip" ? "마이리얼트립 숙소 검색 API" :
+    hotel.dataSource === "agoda" ? "Agoda 숙소 데이터" :
+    hotel.dataSource === "manual" ? "CozyTrip 수동 입력" : undefined;
+
   const dataFetchedLabel = hotel.dataFetchedAt
     ? new Date(hotel.dataFetchedAt).toLocaleDateString("ko-KR")
     : undefined;
 
+  const facts = [
+    hotel.accommodationType ? ["숙소 유형", hotel.accommodationType] : undefined,
+    hotel.starRating !== undefined && hotel.starRating > 0 ? ["등급", `${hotel.starRating}성급`] : undefined,
+    hotel.location.nearestStations?.length ? ["가까운 역", hotel.location.nearestStations.slice(0, 2).join(" · ")] : undefined,
+    hotel.checkIn || hotel.checkOut ? ["체크인 · 체크아웃", [hotel.checkIn, hotel.checkOut].filter(Boolean).join(" · ")] : undefined,
+  ].filter((item): item is [string, string] => Boolean(item));
+
   return (
-    <section border="b ct-line dark:ct-dark-line">
+    <section className="border-b border-ct-line dark:border-ct-dark-line">
       <Container>
-        <div py="10 sm:12 lg:16" grid="~ cols-1 lg:3" gap="8 lg:12">
-          <div col="span-1 lg:span-2">
-            <p m="0" text="sm ct-primary dark:ct-dark-text-soft" font="medium">
+        <div className="grid grid-cols-1 gap-8 py-10 sm:py-12 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-12 lg:py-16">
+          <div>
+            <p className="m-0 text-sm font-semibold text-ct-primary dark:text-ct-dark-text-soft">
               {hotel.city} · {hotel.area}
             </p>
 
-            <h1
-              mt="2"
-              mb="0"
-              text="3xl sm:4xl lg:5xl"
-              font="bold"
-              tracking="tight"
-              leading="tight"
-            >
+            <h1 className="mt-2 mb-0 max-w-4xl text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
               {hotel.name}
             </h1>
 
             {hotel.nameEn && (
-              <p mt="2" mb="0" text="base ct-muted dark:ct-dark-muted">
-                {hotel.nameEn}
-              </p>
+              <p className="mt-2 mb-0 text-base text-ct-muted dark:text-ct-dark-muted">{hotel.nameEn}</p>
             )}
 
-            <div mt="5" flex="~ wrap" items="center" gap="2 sm:3">
-              {hotel.accommodationType && (
-                <span
-                  rounded="full"
-                  bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-                  px="3"
-                  py="1.5"
-                  text="xs sm:sm ct-text-soft dark:ct-dark-text-soft"
-                >
-                  {hotel.accommodationType}
-                </span>
-              )}
-
-              {hotel.starRating !== undefined && hotel.starRating > 0 && (
-                <span
-                  rounded="full"
-                  bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-                  px="3"
-                  py="1.5"
-                  text="xs sm:sm ct-text-soft dark:ct-dark-text-soft"
-                >
-                  {hotel.starRating}성급
-                </span>
-              )}
-
-              {hasRating && (
-                <span
-                  rounded="full"
-                  bg="ct-primary-soft dark:bg-ct-dark-surface-soft"
-                  px="3"
-                  py="1.5"
-                  text="xs sm:sm ct-text dark:ct-dark-text"
-                  font="medium"
-                >
-                  평점 {formatRating(hotel.ratingAverage!)}
-                  {hotel.numberOfReviews !== undefined &&
-                    ` · 리뷰 ${hotel.numberOfReviews.toLocaleString("ko-KR")}개`}
+            <div className="mt-5 flex flex-wrap gap-2">
+              {hotel.accommodationType && <span className="rounded-full bg-ct-surface-soft px-3 py-1.5 text-xs text-ct-text-soft dark:bg-ct-dark-surface-soft dark:text-ct-dark-text-soft">{hotel.accommodationType}</span>}
+              {hotel.starRating !== undefined && hotel.starRating > 0 && <span className="rounded-full bg-ct-surface-soft px-3 py-1.5 text-xs text-ct-text-soft dark:bg-ct-dark-surface-soft dark:text-ct-dark-text-soft">{hotel.starRating}성급</span>}
+              {hotel.ratingAverage !== undefined && (
+                <span className="rounded-full bg-ct-primary-soft px-3 py-1.5 text-xs font-medium text-ct-text dark:bg-ct-dark-surface-soft dark:text-ct-dark-text">
+                  평점 {formatRating(hotel.ratingAverage)}
+                  {hotel.numberOfReviews !== undefined ? ` · 리뷰 ${hotel.numberOfReviews.toLocaleString("ko-KR")}개` : ""}
                 </span>
               )}
             </div>
 
             {dataSourceLabel && (
-              <p mt="3" mb="0" text="xs ct-muted dark:ct-dark-muted">
-                데이터 출처: {dataSourceLabel}
-                {dataFetchedLabel ? ` · 조회 기준일 ${dataFetchedLabel}` : ""}
+              <p className="mt-3 mb-0 text-xs text-ct-muted dark:text-ct-dark-muted">
+                데이터 출처: {dataSourceLabel}{dataFetchedLabel ? ` · 조회 기준일 ${dataFetchedLabel}` : ""}
               </p>
             )}
 
-            <p
-              mt="6"
-              mb="0"
-              max-w="3xl"
-              text="base sm:lg ct-text-soft dark:ct-dark-text-soft"
-              leading="relaxed"
-            >
+            <p className="mt-6 mb-0 max-w-3xl text-base leading-8 text-ct-text-soft sm:text-lg dark:text-ct-dark-text-soft">
               {hotel.description}
             </p>
           </div>
 
-          <aside
-            rounded="card"
-            border="~ ct-line dark:ct-dark-line"
-            bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-            p="5 sm:6"
-          >
-            <p
-              m="0"
-              text="xs ct-primary dark:ct-dark-text-soft"
-              font="medium"
-              tracking="wide"
-            >
-              HOTEL INFO
-            </p>
+          <aside className="h-fit rounded-card border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
+            <p className="m-0 text-xs font-semibold tracking-wide text-ct-primary dark:text-ct-dark-text-soft">AT A GLANCE</p>
+            <h2 className="mt-2 mb-0 text-xl font-bold tracking-tight">호텔 핵심 정보</h2>
 
-            <div mt="4" grid="~ cols-1 sm:2 lg:cols-1" gap="4">
-              <div>
-                <p m="0" text="xs ct-muted dark:ct-dark-muted">
-                  위치
-                </p>
-                <p mt="1.5" mb="0" text="sm ct-text dark:ct-dark-text" font="medium">
-                  {hotel.location.city} · {hotel.location.area}
-                </p>
+            <dl className="mt-5 divide-y divide-ct-line dark:divide-ct-dark-line">
+              <div className="py-3 first:pt-0">
+                <dt className="text-xs text-ct-muted dark:text-ct-dark-muted">위치</dt>
+                <dd className="mt-1 text-sm font-medium text-ct-text dark:text-ct-dark-text">{hotel.location.city} · {hotel.location.area}</dd>
               </div>
-
-              {hotel.location.nearestStations &&
-                hotel.location.nearestStations.length > 0 && (
-                  <div>
-                    <p m="0" text="xs ct-muted dark:ct-dark-muted">
-                      가까운 역
-                    </p>
-                    <p
-                      mt="1.5"
-                      mb="0"
-                      text="sm ct-text-soft dark:ct-dark-text-soft"
-                      leading="relaxed"
-                    >
-                      {hotel.location.nearestStations.slice(0, 2).join(" · ")}
-                    </p>
-                  </div>
-                )}
-
-              {hasStayInfo && (
-                <div grid="~ cols-2" gap="3" sm="col-span-2" lg="col-span-1">
-                  {hotel.checkIn && (
-                    <div>
-                      <p m="0" text="xs ct-muted dark:ct-dark-muted">
-                        체크인
-                      </p>
-                      <p mt="1.5" mb="0" text="sm ct-text dark:ct-dark-text" font="medium">
-                        {hotel.checkIn}
-                      </p>
-                    </div>
-                  )}
-
-                  {hotel.checkOut && (
-                    <div>
-                      <p m="0" text="xs ct-muted dark:ct-dark-muted">
-                        체크아웃
-                      </p>
-                      <p mt="1.5" mb="0" text="sm ct-text dark:ct-dark-text" font="medium">
-                        {hotel.checkOut}
-                      </p>
-                    </div>
-                  )}
+              {facts.map(([label, value]) => (
+                <div key={label} className="py-3 last:pb-0">
+                  <dt className="text-xs text-ct-muted dark:text-ct-dark-muted">{label}</dt>
+                  <dd className="mt-1 text-sm font-medium leading-relaxed text-ct-text-soft dark:text-ct-dark-text-soft">{value}</dd>
                 </div>
-              )}
-            </div>
+              ))}
+            </dl>
           </aside>
         </div>
       </Container>
