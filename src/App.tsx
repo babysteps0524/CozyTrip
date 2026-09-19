@@ -126,23 +126,23 @@ export default function App({
       <Header />
 
       <main>
-        {path === "/" && <Home />}
+        {path === "/" && <Home destinations={destinations} hotels={hotels.filter((hotel) => hotel.city === "도쿄")} guides={posts.filter((post) => post.category === "guide").slice(0, 3)} />}
 
-        {path === "/japan" && <Japan />}
+        {path === "/japan" && <Japan destinations={destinations} />}
 
-        {path === "/guides" && <Guides />}
+        {path === "/guides" && <Guides posts={posts.filter((post) => post.category === "guide")} />}
 
         {destinationMatch && destination && (
-          <DestinationPage destination={destination} />
+          <DestinationPage destination={destination} hotels={getHotelsByDestination(hotels, destination.id)} posts={posts.filter((post) => post.destinationId === destination.id)} />
         )}
 
         {hotelListMatch && destination && (
           <HotelList destination={destination} hotels={destinationHotels} />
         )}
 
-        {isHotelDetail && hotel && <HotelDetail hotel={hotel} />}
+        {isHotelDetail && hotel && <HotelDetail hotel={hotel} destination={destination} hotelPosts={posts.filter((post) => post.hotelId === hotel.id)} relatedGuides={posts.filter((post) => post.destinationId === hotel.destinationId && post.category === "guide" && post.hotelId !== hotel.id)} relatedHotels={getHotelsByDestination(hotels, hotel.destinationId).filter((item) => item.id !== hotel.id)} />}
 
-        {isGuide && guide && <Guide post={guide} />}
+        {isGuide && guide && <Guide post={guide} destination={guide.destinationId ? destinations.find((item) => item.id === guide.destinationId) : undefined} />}
 
         {!isKnownRoute && (
           <section>
