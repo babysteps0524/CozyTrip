@@ -356,6 +356,7 @@ function selectHotels(
   }
 
   const existingHotelIds = new Set(existingPosts.map((post) => post.hotelId));
+  const failedHotelIds = new Set(failedHotels.map((failure) => failure.hotelId));
   const retryableFailedHotelIds = new Set(
     failedHotels
       .filter((failure) => failure.status !== "retry-exhausted")
@@ -377,7 +378,7 @@ function selectHotels(
         retryableFailedHotelIds.has(hotel.id),
       );
       const newCandidates = candidates.filter(
-        (hotel) => !retryableFailedHotelIds.has(hotel.id),
+        (hotel) => !failedHotelIds.has(hotel.id),
       );
 
       selected.push(
@@ -398,7 +399,7 @@ function selectHotels(
     retryableFailedHotelIds.has(hotel.id),
   );
   const newCandidates = candidates.filter(
-    (hotel) => !retryableFailedHotelIds.has(hotel.id),
+    (hotel) => !failedHotelIds.has(hotel.id),
   );
 
   return [
