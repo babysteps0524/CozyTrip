@@ -132,7 +132,7 @@ function getCliOption(name: string): string | undefined {
 }
 
 const requestedHotelId =
-  getCliOption("hotel-id") ?? process.env.AI_HOTEL_ID?.trim() || undefined;
+  getCliOption("hotel-id") ?? process.env.AI_HOTEL_ID?.trim() ?? undefined;
 const requestedLimit = Number(
   getCliOption("limit") ?? process.env.AI_POST_LIMIT ?? "1",
 );
