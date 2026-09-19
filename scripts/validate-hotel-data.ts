@@ -88,8 +88,46 @@ async function main(): Promise<void> {
   let validCount = 0;
   let invalidCount = 0;
   let warningCount = 0;
+  const seenIds = new Map<string, string>();
+  const seenProviderExternalIds = new Map<string, string>();
+  const seenDestinationSlugs = new Map<string, string>();
 
   for (const { hotel, sourceName } of allHotels) {
+    const sourceLabel = \`\\${sourceName} / \${hotel.id}\`;
+
+    const previousId = seenIds.get(hotel.id);
+    if (previousId) {
+      console.error(
+        \`Hotel data error [\\${sourceLabel}]: duplicate hotel id; already used by \${previousId}.\`,
+      );
+      invalidCount += 1;
+      continue;
+    }
+    seenIds.set(hotel.id, sourceLabel);
+
+    if (hotel.externalId && hotel.provider) {
+      const providerKey = \`\\${hotel.provider}:\\${hotel.externalId}\`;
+      const previousExternalId = seenProviderExternalIds.get(providerKey);
+      if (previousExternalId) {
+        console.error(
+          \`Hotel data error [\\${sourceLabel}]: duplicate provider/externalId \${providerKey}; already used by \${previousExternalId}.\`,
+        );
+        invalidCount += 1;
+        continue;
+      }
+      seenProviderExternalIds.set(providerKey, sourceLabel);
+    }
+
+    const destinationSlugKey = \`\\${hotel.destinationId}:\\${hotel.slug}\`;
+    const previousSlug = seenDestinationSlugs.get(destinationSlugKey);
+    if (previousSlug) {
+      console.error(
+        \`Hotel data error [\\${sourceLabel}]: duplicate destination/slug \${destinationSlugKey}; already used by \${previousSlug}.\`,
+      );
+      invalidCount += 1;
+      continue;
+    }
+    seenDestinationSlugs.set(destinationSlugKey, sourceLabel);
     const result = validateHotelData(hotel);
     warningCount += result.warnings.length;
 
@@ -114,6 +152,9 @@ async function main(): Promise<void> {
   console.log(`Valid: ${validCount}`);
   console.log(`Invalid: ${invalidCount}`);
   console.log(`Warnings: ${warningCount}`);
+  console.log(`Unique hotel IDs: ${seenIds.size}`);
+  console.log(`Unique provider/external IDs: ${seenProviderExternalIds.size}`);
+  console.log(`Unique destination/slugs: ${seenDestinationSlugs.size}`);
 
   for (const source of sources) {
     const count = Array.isArray(source.source.hotels)
