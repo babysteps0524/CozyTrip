@@ -124,8 +124,18 @@ const inventoryReportPath = resolve(
   "hotel-inventory.generated.json",
 );
 
-const requestedHotelId = process.env.AI_HOTEL_ID?.trim() || undefined;
-const requestedLimit = Number(process.env.AI_POST_LIMIT ?? "1");
+function getCliOption(name: string): string | undefined {
+  const prefix = `--${name}=`;
+  const argument = process.argv.find((item) => item.startsWith(prefix));
+
+  return argument ? argument.slice(prefix.length).trim() || undefined : undefined;
+}
+
+const requestedHotelId =
+  getCliOption("hotel-id") ?? process.env.AI_HOTEL_ID?.trim() || undefined;
+const requestedLimit = Number(
+  getCliOption("limit") ?? process.env.AI_POST_LIMIT ?? "1",
+);
 const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
 
 const MAX_GENERATION_ATTEMPTS = 2;
@@ -557,6 +567,13 @@ async function main(): Promise<void> {
         ? `AI daily plan: ${dailyPlan} -> ${selectedHotels.length} hotel(s)`
         : `AI generation limit: ${selectedHotels.length} new hotel(s)`,
   );
+
+  if (requestedHotelId && selectedHotels.length === 1) {
+    const target = selectedHotels[0];
+    console.log(
+      `Individual hotel post mode: ${target.name} -> /japan/${target.destinationId.replace("japan-", "")}/hotels/${target.slug}/`,
+    );
+  }
 
   const plan = dailyPlan ? parseDailyPlan(dailyPlan) : undefined;
   const attemptedByDestination = new Map<string, number>();
