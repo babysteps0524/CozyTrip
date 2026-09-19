@@ -80,7 +80,7 @@ function getDateLabels(hotel: Hotel, hotelPost?: Post) {
 }
 
 function getCheckpoints(hotel: Hotel): Array<[string, string]> {
-  return [
+  const checkpoints: Array<[string, string]> = [
     ["지역", [hotel.city, hotel.area].filter(Boolean).join(" · ")],
     ["숙소 유형", hotel.accommodationType ?? ""],
     [
@@ -91,7 +91,9 @@ function getCheckpoints(hotel: Hotel): Array<[string, string]> {
       "체크인 · 체크아웃",
       [hotel.checkIn, hotel.checkOut].filter(Boolean).join(" · "),
     ],
-  ].filter(([, value]) => Boolean(value));
+  ];
+
+  return checkpoints.filter(([, value]) => Boolean(value));
 }
 
 export default function HotelDetail({
