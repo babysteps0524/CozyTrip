@@ -2,7 +2,6 @@ import { StrictMode, type ReactNode } from "react";
 import { Footer, Header } from "./components/layout";
 import { hydrateRoot } from "react-dom/client";
 
-import { destinations, hotels, posts } from "./data";
 import type { Destination, Hotel, Post } from "./types";
 
 interface AppProps {
@@ -66,6 +65,7 @@ async function start() {
   if (!rootElement) throw new Error("Root element not found.");
 
   const path = normalizePath(window.location.pathname);
+  const { destinations, hotels, posts } = await import("./data");
   const route = resolveRoute(path, { destinations, hotels, posts });
   const module = await pageImports[route.key]?.();
 
