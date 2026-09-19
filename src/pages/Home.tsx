@@ -15,7 +15,7 @@ export default function Home({ destinations, hotels, guides }: HomeProps) {
 
   const featuredHotels = hotels.slice(0, 3);
 
-  const guides = getPostsByCategory("guide").slice(0, 3);
+
 
   return (
     <>
