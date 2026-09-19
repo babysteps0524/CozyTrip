@@ -17,6 +17,7 @@ import {
   HotelSummary,
   RelatedHotels,
   RelatedGuides,
+  AffiliateDisclosure,
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
 import type { Hotel } from "../types";
@@ -229,6 +230,10 @@ export default function HotelDetail({ hotel }: HotelDetailProps) {
               <p m="0" text="base ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
                 {hotel.description}
               </p>
+
+              {articleImage && (
+                <AffiliateDisclosure show={articleImage.source === "myrealtrip"} />
+              )}
 
               {articleImage && (
                 <figure mt="8" mb="0">
