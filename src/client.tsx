@@ -39,10 +39,10 @@ function getPostsByHotel(posts: Post[], hotelId: string): Post[] {
 }
 
 function createRoute(path: string) {
-  const destinationMatch = path.match(/^\\/japan\\/([^/]+)$/);
-  const hotelListMatch = path.match(/^\\/japan\\/([^/]+)\\/hotels$/);
-  const hotelDetailMatch = path.match(/^\\/japan\\/([^/]+)\\/hotels\\/([^/]+)$/);
-  const guideMatch = path.match(/^\\/guides\\/([^/]+)$/);
+  const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
+  const hotelListMatch = path.match(/^\/japan\/([^/]+)\/hotels$/);
+  const hotelDetailMatch = path.match(/^\/japan\/([^/]+)\/hotels\/([^/]+)$/);
+  const guideMatch = path.match(/^\/guides\/([^/]+)$/);
 
   return {
     destinationMatch,
