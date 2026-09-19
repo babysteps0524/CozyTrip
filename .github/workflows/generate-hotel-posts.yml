@@ -62,11 +62,11 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if git diff --quiet -- src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json; then
+          if git diff --quiet -- src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json src/data/generated/hotel-inventory.generated.json; then
             echo "No generated hotel post or failure queue changes."
             exit 0
           fi
 
-          git add src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json
+          git add src/data/generated/hotel-posts.generated.json src/data/generated/hotel-post-failures.generated.json src/data/generated/hotel-post-run.generated.json src/data/generated/hotel-inventory.generated.json
           git commit -m "chore: generate daily hotel posts"
           git push
