@@ -104,7 +104,7 @@ function toHotel(
     countryCode: "JP",
     prefecture: destination.prefecture,
     city: destination.city,
-    area: destination.city,
+    area: "",
     destinationId: `japan-${destination.slug}`,
     description: `${destination.city} 지역의 ${item.itemName} 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.`,
     location: {
@@ -112,7 +112,7 @@ function toHotel(
       countryCode: "JP",
       prefecture: destination.prefecture,
       city: destination.city,
-      area: destination.city,
+      area: "",
     },
     images: imageUsageAllowed && item.imageUrl
       ? [
