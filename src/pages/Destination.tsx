@@ -1,7 +1,5 @@
 import type { Destination as DestinationType } from "../types";
 
-import { getHotelsByDestination, getPostsByDestination } from "../data";
-
 import { Container, Section } from "../components/common";
 import { DestinationHero, DestinationHotels } from "../components/destination";
 import { PostCard } from "../components/post";
@@ -73,7 +71,7 @@ export default function Destination({ destination }: DestinationProps) {
         <DestinationHotels destination={destination} hotels={hotels} />
       </Section>
 
-      {posts.length > 0 && (
+      {guides.length > 0 && (
         <Section>
           <Container>
             <div flex="~ col sm:row" items="start sm:end" justify="between" gap="4">
@@ -91,7 +89,7 @@ export default function Destination({ destination }: DestinationProps) {
               </a>
             </div>
             <div mt="8" grid="~ cols-1 md:2 lg:3" gap="4 lg:6">
-              {posts.slice(0, 6).map((post) => <PostCard key={post.id} post={post} />)}
+              {guides.slice(0, 6).map((post) => <PostCard key={post.id} post={post} />)}
             </div>
           </Container>
         </Section>
