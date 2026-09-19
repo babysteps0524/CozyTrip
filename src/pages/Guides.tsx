@@ -2,7 +2,13 @@ import { Container, Section } from "../components/common";
 
 import { PostCard } from "../components/post";
 
-import type { Post } from "../types";\n\ninterface GuidesProps {\n  posts: Post[];\n}\n\nexport default function Guides({ posts }: GuidesProps) {
+import type { Post } from "../types";
+
+interface GuidesProps {
+  posts: Post[];
+}
+
+export default function Guides({ posts }: GuidesProps) {
   const guides = posts;
 
   return (
