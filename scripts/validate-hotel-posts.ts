@@ -24,24 +24,107 @@ function asHotel(value: unknown): Hotel | null {
   return value as unknown as Hotel;
 }
 
+function normalizeTitle(title: string): string {
+  return title
+    .normalize("NFKC")
+    .toLowerCase()
+    .replace(/\s+/g, "")
+    .replace(/[.,!?()[\]{}'"“”‘’·:;|/\-]/g, "");
+}
+
+function reportDuplicates(
+  label: string,
+  values: Array<{ key: string; postId: string; hotelId: string; title: string }>,
+): number {
+  const groups = new Map<
+    string,
+    Array<{ postId: string; hotelId: string; title: string }>
+  >();
+
+  for (const value of values) {
+    const group = groups.get(value.key) ?? [];
+    group.push({
+      postId: value.postId,
+      hotelId: value.hotelId,
+      title: value.title,
+    });
+    groups.set(value.key, group);
+  }
+
+  let duplicateCount = 0;
+
+  for (const [key, group] of groups) {
+    if (group.length < 2) continue;
+
+    duplicateCount += group.length - 1;
+    console.error("DUPLICATE " + label + ": " + key);
+
+    for (const item of group) {
+      console.error(
+        "  - post=" + item.postId + ", hotel=" + item.hotelId + ", title=" + item.title,
+      );
+    }
+  }
+
+  return duplicateCount;
+}
+
 async function main(): Promise<void> {
-  const hotelsFile = JSON.parse(await Bun.file(hotelsPath).text()) as MyRealTripHotelsFile;
-  const postsFile = JSON.parse(await Bun.file(postsPath).text()) as GeneratedHotelPostFile;
+  const hotelsFile = JSON.parse(
+    await Bun.file(hotelsPath).text(),
+  ) as MyRealTripHotelsFile;
+  const postsFile = JSON.parse(
+    await Bun.file(postsPath).text(),
+  ) as GeneratedHotelPostFile;
 
   const hotels = Array.isArray(hotelsFile.hotels)
-    ? hotelsFile.hotels.map(asHotel).filter((hotel): hotel is Hotel => hotel !== null)
+    ? hotelsFile.hotels
+        .map(asHotel)
+        .filter((hotel): hotel is Hotel => hotel !== null)
     : [];
   const posts = Array.isArray(postsFile.posts) ? postsFile.posts : [];
   const hotelMap = new Map(hotels.map((hotel) => [hotel.id, hotel]));
 
-  let failed = 0;
+  const duplicatePostIds = reportDuplicates(
+    "postId",
+    posts.map((post) => ({
+      key: post.id,
+      postId: post.id,
+      hotelId: post.hotelId,
+      title: post.title,
+    })),
+  );
+
+  const duplicateHotelIds = reportDuplicates(
+    "hotelId",
+    posts.map((post) => ({
+      key: post.hotelId,
+      postId: post.id,
+      hotelId: post.hotelId,
+      title: post.title,
+    })),
+  );
+
+  const duplicateTitles = reportDuplicates(
+    "title",
+    posts.map((post) => ({
+      key: normalizeTitle(post.title),
+      postId: post.id,
+      hotelId: post.hotelId,
+      title: post.title,
+    })),
+  );
+
+  let failed = duplicatePostIds + duplicateHotelIds + duplicateTitles;
 
   for (const post of posts) {
     const hotel = hotelMap.get(post.hotelId);
 
     if (!hotel) {
       failed += 1;
-      console.error(`HotelPost ${post.id} references missing hotel: ${post.hotelId}`);
+      console.error(
+        "HotelPost " + post.id + " references missing hotel: " + post.hotelId,
+      );
       continue;
     }
 
@@ -51,13 +134,13 @@ async function main(): Promise<void> {
       });
       const factWarnings = validateHotelPostFacts(post, hotel);
       for (const warning of factWarnings) {
-        console.warn(`FACT WARNING [${post.id}] ${warning.message}`);
+        console.warn("FACT WARNING [" + post.id + "] " + warning.message);
       }
-      console.log(`OK: ${post.id}`);
+      console.log("OK: " + post.id);
     } catch (error) {
       failed += 1;
       console.error(
-        `FAILED: ${post.id}`,
+        "FAILED: " + post.id,
         error instanceof Error ? error.message : error,
       );
     }
@@ -68,8 +151,15 @@ async function main(): Promise<void> {
     return hotel ? count + validateHotelPostFacts(post, hotel).length : count;
   }, 0);
 
-  console.log(`HotelPost validation: ${posts.length - failed} passed, ${failed} failed.`);
-  console.log(`Factual content warnings: ${factWarningCount}`);
+  console.log("Hotels in inventory: " + hotels.length);
+  console.log("Generated hotel posts: " + posts.length);
+  console.log("Duplicate post IDs: " + duplicatePostIds);
+  console.log("Duplicate hotel IDs: " + duplicateHotelIds);
+  console.log("Duplicate titles: " + duplicateTitles);
+  console.log(
+    "HotelPost validation: " + (posts.length - failed) + " passed, " + failed + " failed.",
+  );
+  console.log("Factual content warnings: " + factWarningCount);
 
   if (failed > 0) process.exit(1);
 }
