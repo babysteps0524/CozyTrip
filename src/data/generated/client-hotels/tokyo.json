@@ -1,0 +1,1034 @@
+{
+  "generatedAt": "2026-09-18T05:18:19.639Z",
+  "source": "myrealtrip",
+  "hotelCount": 20,
+  "search": {
+    "checkIn": "2026-10-15",
+    "checkOut": "2026-10-18",
+    "adultCount": 2,
+    "childCount": 0
+  },
+  "hotels": [
+    {
+      "id": "myrealtrip-5008360",
+      "name": "신주쿠 워싱턴 호텔 도쿄 메인",
+      "slug": "신주쿠-워싱턴-호텔-도쿄-메인-5008360",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 신주쿠 워싱턴 호텔 도쿄 메인 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-5008360-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/15/9TBV/kXuH0uXLEN.png?width=720",
+          "alt": "신주쿠 워싱턴 호텔 도쿄 메인 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5008360",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5008360?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 4335,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5008360?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1126303",
+      "name": "토부 호텔 레밴트 도쿄",
+      "slug": "토부-호텔-레밴트-도쿄-1126303",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 토부 호텔 레밴트 도쿄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1126303-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/12/20/uFkY/753g00BOEY.jpg?width=720",
+          "alt": "토부 호텔 레밴트 도쿄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1126303",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1126303?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 2924,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1126303?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1640875",
+      "name": "APA 호텔 & 리조트 롯폰기 에키히가시",
+      "slug": "apa-호텔-리조트-롯폰기-에키히가시-1640875",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 APA 호텔 & 리조트 롯폰기 에키히가시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1640875-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/N80t/sfc6zyLTCu.jpg?width=720",
+          "alt": "APA 호텔 & 리조트 롯폰기 에키히가시 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1640875",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1640875?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 2662,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1640875?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1178040",
+      "name": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메",
+      "slug": "호텔-빌라-폰테인-그랜드-도쿄-시오도메-1178040",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 호텔 빌라 폰테인 그랜드 도쿄 - 시오도메 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1178040-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/ix09/FxY1dBVoo3.jpg?width=720",
+          "alt": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1178040",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1178040?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 2422,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1178040?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1273819",
+      "name": "렘 롯폰기",
+      "slug": "렘-롯폰기-1273819",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 렘 롯폰기 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1273819-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/19/ohok/GWsB5hYetQ.jpg?width=720",
+          "alt": "렘 롯폰기 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1273819",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1273819?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1468,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1273819?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1261232",
+      "name": "소테츠 프레사 인 긴자 나나초메",
+      "slug": "소테츠-프레사-인-긴자-나나초메-1261232",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 소테츠 프레사 인 긴자 나나초메 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1261232-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/01/ZDJt/6ktQVNd20f.jpg?width=720",
+          "alt": "소테츠 프레사 인 긴자 나나초메 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1261232",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1261232?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1308,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1261232?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1175943",
+      "name": "호텔 빌라 퐁텐 도쿄 - 가야바초",
+      "slug": "호텔-빌라-퐁텐-도쿄-가야바초-1175943",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 호텔 빌라 퐁텐 도쿄 - 가야바초 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1175943-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/21/EMO2/yY2SXzuK7F.jpg?width=720",
+          "alt": "호텔 빌라 퐁텐 도쿄 - 가야바초 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1175943",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1175943?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1011,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1175943?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1111187",
+      "name": "썬샤인 시티 프린스 호텔",
+      "slug": "썬샤인-시티-프린스-호텔-1111187",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 썬샤인 시티 프린스 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1111187-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/Lc0A/YUu6NorIcB.jpg?width=720",
+          "alt": "썬샤인 시티 프린스 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1111187",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1111187?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1244,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1111187?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1109436",
+      "name": "시나가와 프린스 호텔",
+      "slug": "시나가와-프린스-호텔-1109436",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 시나가와 프린스 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1109436-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/27/FsYy/KMWcpulMKn.jpg?width=720",
+          "alt": "시나가와 프린스 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1109436",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1109436?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 5102,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1109436?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1306164",
+      "name": "소테츠 프레사 인 도쿄 긴시초",
+      "slug": "소테츠-프레사-인-도쿄-긴시초-1306164",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 소테츠 프레사 인 도쿄 긴시초 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1306164-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/j6Yk/mbkXfCFK1p.jpg?width=720",
+          "alt": "소테츠 프레사 인 도쿄 긴시초 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1306164",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1306164?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1044,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1306164?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1378163",
+      "name": "긴자 캐피털 호텔 모에기",
+      "slug": "긴자-캐피털-호텔-모에기-1378163",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 긴자 캐피털 호텔 모에기 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1378163-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/02/3UWA/4AAcITRtwH.jpg?width=720",
+          "alt": "긴자 캐피털 호텔 모에기 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1378163",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1378163?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 348,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1378163?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1503356",
+      "name": "시퀀스 미야시타 파크",
+      "slug": "시퀀스-미야시타-파크-1503356",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 시퀀스 미야시타 파크 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1503356-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/qjtb/LU25B1e3hu.jpg?width=720",
+          "alt": "시퀀스 미야시타 파크 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1503356",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1503356?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1463,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1503356?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1497848",
+      "name": "도쿄 베이 시오미 프린스 호텔",
+      "slug": "도쿄-베이-시오미-프린스-호텔-1497848",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 도쿄 베이 시오미 프린스 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1497848-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/07/ODd7/jzRKGUCdyl.jpg?width=720",
+          "alt": "도쿄 베이 시오미 프린스 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1497848",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1497848?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 5974,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1497848?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1220840",
+      "name": "APA 호텔 신주쿠 교엠매",
+      "slug": "apa-호텔-신주쿠-교엠매-1220840",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 APA 호텔 신주쿠 교엠매 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1220840-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/QJQQ/b6bxeQEKYY.jpg?width=720",
+          "alt": "APA 호텔 신주쿠 교엠매 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1220840",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1220840?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1965,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1220840?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1145543",
+      "name": "호텔 몬토레 긴자",
+      "slug": "호텔-몬토레-긴자-1145543",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 호텔 몬토레 긴자 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1145543-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/SLzU/Qzf38oH3hR.jpg?width=720",
+          "alt": "호텔 몬토레 긴자 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1145543",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1145543?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1145543?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1105712",
+      "name": "더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션",
+      "slug": "더-프린스-파크-타워-도쿄-프리퍼드-호텔-리조트-lvx-컬렉션-1105712",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1105712-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/08/Honv/2fwa1YvLVt.jpg?width=720",
+          "alt": "더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1105712",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1105712?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 2862,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1105712?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1420676",
+      "name": "미쓰이 가든 호텔 긴자 고초메",
+      "slug": "미쓰이-가든-호텔-긴자-고초메-1420676",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 미쓰이 가든 호텔 긴자 고초메 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1420676-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/21/5Mtg/4XQwKoRq82.jpg?width=720",
+          "alt": "미쓰이 가든 호텔 긴자 고초메 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1420676",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1420676?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1009,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1420676?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1167753",
+      "name": "호텔 리스텔 신주쿠",
+      "slug": "호텔-리스텔-신주쿠-1167753",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 호텔 리스텔 신주쿠 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1167753-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/19/shbo/swvcyQGseB.jpg?width=720",
+          "alt": "호텔 리스텔 신주쿠 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1167753",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1167753?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4,
+      "numberOfReviews": 1009,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1167753?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1114361",
+      "name": "다이이치 호텔 도쿄",
+      "slug": "다이이치-호텔-도쿄-1114361",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 다이이치 호텔 도쿄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1114361-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/27/mfdK/iyNWgFWkMj.jpg?width=720",
+          "alt": "다이이치 호텔 도쿄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1114361",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1114361?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 2066,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1114361?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1310194",
+      "name": "APA 호텔 & 리조트 니시신주쿠 고초메 에키마에 타워",
+      "slug": "apa-호텔-리조트-니시신주쿠-고초메-에키마에-타워-1310194",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Tokyo",
+      "city": "도쿄",
+      "area": "도쿄",
+      "destinationId": "japan-tokyo",
+      "description": "도쿄 지역의 APA 호텔 & 리조트 니시신주쿠 고초메 에키마에 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Tokyo",
+        "city": "도쿄",
+        "area": "도쿄"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1310194-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/yYSz/URpRyTIXfw.jpg?width=720",
+          "alt": "APA 호텔 & 리조트 니시신주쿠 고초메 에키마에 타워 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1310194",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1310194?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 2446,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1310194?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    }
+  ],
+  "imageUsageAllowed": true
+}
