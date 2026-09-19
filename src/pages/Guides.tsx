@@ -1,11 +1,9 @@
-import { getPostsByCategory } from "../data";
-
 import { Container, Section } from "../components/common";
 
 import { PostCard } from "../components/post";
 
-export default function Guides() {
-  const guides = getPostsByCategory("guide");
+import type { Post } from "../types";\n\ninterface GuidesProps {\n  posts: Post[];\n}\n\nexport default function Guides({ posts }: GuidesProps) {
+  const guides = posts;
 
   return (
     <>
