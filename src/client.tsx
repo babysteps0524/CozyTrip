@@ -1,4 +1,5 @@
-import { StrictMode } from "react";
+import { StrictMode, type ReactNode } from "react";
+import { Footer, Header } from "./components/layout";
 import { hydrateRoot } from "react-dom/client";
 
 import { destinations, hotels, posts } from "./data";
@@ -10,7 +11,7 @@ interface AppProps {
   posts: Post[];
 }
 
-type PageModule = { default: (props: any) => React.ReactNode };
+type PageModule = { default: (props: any) => ReactNode };
 
 const pageImports: Record<string, () => Promise<PageModule>> = {
   home: () => import("./pages/Home"),
