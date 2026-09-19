@@ -61,7 +61,11 @@ export function validateHotelPost(
 
     const images = options.availableImages ?? hotel.images;
     const imageMap = new Map(images.map((image) => [image.id, image]));
-    const referencedIds = new Set<string>();
+
+    // imageIds는 본문 전체에서 사용할 이미지 후보 목록이고,
+    // section.imageIds는 실제 배치 위치를 지정한다.
+    // 따라서 같은 이미지가 두 배열에 모두 등장하는 것은 정상이다.
+    const postImageIds = new Set<string>();
 
     for (const imageId of post.imageIds) {
       const image = imageMap.get(imageId);
@@ -74,8 +78,14 @@ export function validateHotelPost(
         throw new Error(`Post references an image without confirmed rights: ${imageId}`);
       }
 
-      referencedIds.add(imageId);
+      if (postImageIds.has(imageId)) {
+        throw new Error(`Post imageIds contains duplicate values: ${imageId}`);
+      }
+
+      postImageIds.add(imageId);
     }
+
+    const sectionImageIds = new Set<string>();
 
     for (let index = 0; index < post.sections.length; index += 1) {
       const section = post.sections[index];
@@ -107,11 +117,11 @@ export function validateHotelPost(
           );
         }
 
-        if (referencedIds.has(imageId)) {
-          throw new Error(`Image is referenced more than once: ${imageId}`);
+        if (sectionImageIds.has(imageId)) {
+          throw new Error(`Image is referenced by more than one section: ${imageId}`);
         }
 
-        referencedIds.add(imageId);
+        sectionImageIds.add(imageId);
       }
     }
 
