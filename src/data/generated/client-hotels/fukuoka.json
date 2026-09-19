@@ -1,24 +1,23 @@
 {
-  "generatedAt": "2026-09-18T05:18:19.639Z",
+  "generatedAt": "2026-09-19T09:23:06.087Z",
   "source": "myrealtrip",
-  "hotelCount": 20,
-  "search": {
-    "checkIn": "2026-10-15",
-    "checkOut": "2026-10-18",
-    "adultCount": 2,
-    "childCount": 0
-  },
-  "imageUsageAllowed": true,
+  "hotelCount": 100,
+  "search": {},
+  "imageUsageAllowed": false,
   "hotels": [
     {
       "id": "myrealtrip-5709842",
+      "externalId": "5709842",
+      "provider": "myrealtrip",
       "name": "컴포트 인 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "컴포트-인-후쿠오카-텐진-5709842",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 컴포트 인 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -26,22 +25,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-5709842-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/20/oINH/kUQezPlrOM.jpg?width=720",
-          "alt": "컴포트 인 후쿠오카 텐진 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-5709842",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5709842?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -51,25 +37,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5709842?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5709842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1460748",
+      "externalId": "1460748",
+      "provider": "myrealtrip",
       "name": "더 베이직스 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "더-베이직스-후쿠오카-1460748",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 더 베이직스 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -77,50 +67,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1460748-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/20/7mZQ/LwcAVlERcO.jpg?width=720",
-          "alt": "더 베이직스 후쿠오카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1460748",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460748?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.5,
-      "numberOfReviews": 2464,
+      "numberOfReviews": 2456,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1460748?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1460748?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1402095",
+      "externalId": "1402095",
+      "provider": "myrealtrip",
       "name": "미쓰이 가든 호텔 후쿠오카 기온",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "미쓰이-가든-호텔-후쿠오카-기온-1402095",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 미쓰이 가든 호텔 후쿠오카 기온 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -128,50 +109,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1402095-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/NUye/8LhaqtJIqy.jpg?width=720",
-          "alt": "미쓰이 가든 호텔 후쿠오카 기온 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1402095",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1402095?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.5,
-      "numberOfReviews": 1165,
+      "numberOfReviews": 1167,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1402095?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1402095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1188575",
+      "externalId": "1188575",
+      "provider": "myrealtrip",
       "name": "호텔 마이스테이스 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-마이스테이스-후쿠오카-텐진-1188575",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 마이스테이스 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -179,50 +151,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1188575-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/NHHA/vaEAHpyIoz.jpg?width=720",
-          "alt": "호텔 마이스테이스 후쿠오카 텐진 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1188575",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1188575?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.3,
-      "numberOfReviews": 1070,
+      "numberOfReviews": 1066,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1188575?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1188575?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1487512",
+      "externalId": "1487512",
+      "provider": "myrealtrip",
       "name": "호텔 몬토레 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-몬토레-후쿠오카-1487512",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 몬토레 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -230,50 +193,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1487512-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/31/XEsJ/EmTPYo2rVC.jpg?width=720",
-          "alt": "호텔 몬토레 후쿠오카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1487512",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1487512?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.5,
-      "numberOfReviews": 795,
+      "numberOfReviews": 796,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1487512?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1487512?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6339000",
+      "externalId": "6339000",
+      "provider": "myrealtrip",
       "name": "니시테츠 그랜드 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "니시테츠-그랜드-호텔-6339000",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 니시테츠 그랜드 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -281,50 +235,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6339000-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/20/IAOm/eGHmW4yP1C.jpg?width=720",
-          "alt": "니시테츠 그랜드 호텔 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6339000",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6339000?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.6,
-      "numberOfReviews": 2220,
+      "numberOfReviews": 2223,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6339000?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6339000?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1190993",
+      "externalId": "1190993",
+      "provider": "myrealtrip",
       "name": "호텔 홋케 클럽 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-홋케-클럽-후쿠오카-1190993",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 홋케 클럽 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -332,22 +277,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1190993-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/13/Lr86/aLWwFSsUPE.jpg?width=720",
-          "alt": "호텔 홋케 클럽 후쿠오카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1190993",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190993?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -357,25 +289,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1190993?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1190993?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1559947",
+      "externalId": "1559947",
+      "provider": "myrealtrip",
       "name": "호텔 오리엔탈 익스프레스 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-오리엔탈-익스프레스-후쿠오카-텐진-1559947",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 오리엔탈 익스프레스 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -383,50 +319,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1559947-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/27/ecwv/Gpndfk7wRX.jpg?width=720",
-          "alt": "호텔 오리엔탈 익스프레스 후쿠오카 텐진 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1559947",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1559947?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.2,
-      "numberOfReviews": 1065,
+      "numberOfReviews": 1062,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1559947?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1559947?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1295093",
+      "externalId": "1295093",
+      "provider": "myrealtrip",
       "name": "호텔 포르자 하카타역 치쿠시 구치Ⅰ",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-포르자-하카타역-치쿠시-구치i-1295093",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 포르자 하카타역 치쿠시 구치Ⅰ 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -434,50 +361,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1295093-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/G1sN/Uu24t2etgR.jpg?width=720",
-          "alt": "호텔 포르자 하카타역 치쿠시 구치Ⅰ 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1295093",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295093?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.3,
-      "numberOfReviews": 1031,
+      "numberOfReviews": 1032,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1295093?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1295093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1268921",
+      "externalId": "1268921",
+      "provider": "myrealtrip",
       "name": "호텔 몬테 에르마나 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-몬테-에르마나-후쿠오카-1268921",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 몬테 에르마나 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -485,22 +403,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1268921-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/tNz6/wssn5L0g1R.jpg?width=720",
-          "alt": "호텔 몬테 에르마나 후쿠오카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1268921",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1268921?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -510,25 +415,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1268921?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1268921?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1144031",
+      "externalId": "1144031",
+      "provider": "myrealtrip",
       "name": "컴포트 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "컴포트-호텔-하카타-1144031",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 컴포트 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -536,22 +445,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1144031-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/03/Z2hR/uQukY3VKi5.jpg?width=720",
-          "alt": "컴포트 호텔 하카타 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1144031",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1144031?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -561,25 +457,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1144031?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1144031?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1317449",
+      "externalId": "1317449",
+      "provider": "myrealtrip",
       "name": "네스트 호텔 하카타 스테이션",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "네스트-호텔-하카타-스테이션-1317449",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 네스트 호텔 하카타 스테이션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -587,50 +487,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1317449-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/05/kEJP/LtV0jJCiow.jpg?width=720",
-          "alt": "네스트 호텔 하카타 스테이션 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1317449",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1317449?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.2,
-      "numberOfReviews": 1026,
+      "numberOfReviews": 1027,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1317449?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1317449?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1152864",
+      "externalId": "1152864",
+      "provider": "myrealtrip",
       "name": "호텔 몬토레 라 수르 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "호텔-몬토레-라-수르-후쿠오카-1152864",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 호텔 몬토레 라 수르 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -638,22 +529,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1152864-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/tsGA/tMNjekMoqA.jpg?width=720",
-          "alt": "호텔 몬토레 라 수르 후쿠오카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1152864",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1152864?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -663,25 +541,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1152864?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1152864?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1401198",
+      "externalId": "1401198",
+      "provider": "myrealtrip",
       "name": "오리엔탈 호텔 후쿠오카 하카타 스테이션",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "오리엔탈-호텔-후쿠오카-하카타-스테이션-1401198",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 오리엔탈 호텔 후쿠오카 하카타 스테이션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -689,22 +571,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1401198-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/zecr/tHMZTWb2Ip.jpg?width=720",
-          "alt": "오리엔탈 호텔 후쿠오카 하카타 스테이션 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1401198",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1401198?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -714,25 +583,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1401198?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1401198?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1190045",
+      "externalId": "1190045",
+      "provider": "myrealtrip",
       "name": "니시테츠 인 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "니시테츠-인-후쿠오카-1190045",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 니시테츠 인 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -740,50 +613,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1190045-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/FbLP/euWySia3sq.jpg?width=720",
-          "alt": "니시테츠 인 후쿠오카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1190045",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190045?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.2,
-      "numberOfReviews": 1028,
+      "numberOfReviews": 1027,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1190045?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1190045?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1968779",
+      "externalId": "1968779",
+      "provider": "myrealtrip",
       "name": "앤드 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "앤드-호텔-하카타-1968779",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 앤드 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -791,22 +655,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1968779-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/30/SnrM/TXv3K7hz9s.jpg?width=720",
-          "alt": "앤드 호텔 하카타 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1968779",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1968779?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -816,25 +667,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1968779?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1968779?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1579896",
+      "externalId": "1579896",
+      "provider": "myrealtrip",
       "name": "존크 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "존크-호텔-하카타-1579896",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 존크 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -842,50 +697,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1579896-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/l9D9/MhcPYRcJcH.jpg?width=720",
-          "alt": "존크 호텔 하카타 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1579896",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1579896?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.2,
-      "numberOfReviews": 1063,
+      "numberOfReviews": 1061,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1579896?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1579896?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1483995",
+      "externalId": "1483995",
+      "provider": "myrealtrip",
       "name": "미쓰이 가든 호텔 후쿠오카 나카스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "미쓰이-가든-호텔-후쿠오카-나카스-1483995",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 미쓰이 가든 호텔 후쿠오카 나카스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -893,50 +739,41 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1483995-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/05/AVWE/xk9Sn3m78h.jpg?width=720",
-          "alt": "미쓰이 가든 호텔 후쿠오카 나카스 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1483995",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1483995?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.5,
-      "numberOfReviews": 1024,
+      "numberOfReviews": 1019,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1483995?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1483995?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1638440",
+      "externalId": "1638440",
+      "provider": "myrealtrip",
       "name": "프린스 스마트 인 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "프린스-스마트-인-하카타-1638440",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 프린스 스마트 인 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -944,22 +781,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1638440-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/oiTS/5DFtb6ArjT.jpg?width=720",
-          "alt": "프린스 스마트 인 하카타 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1638440",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1638440?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -969,25 +793,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1638440?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1638440?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1159751",
+      "externalId": "1159751",
+      "provider": "myrealtrip",
       "name": "커낼 시티 후쿠오카 워싱턴 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.045Z",
       "slug": "커낼-시티-후쿠오카-워싱턴-호텔-1159751",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Fukuoka",
       "city": "후쿠오카",
-      "area": "후쿠오카",
+      "area": "",
       "destinationId": "japan-fukuoka",
       "description": "후쿠오카 지역의 커낼 시티 후쿠오카 워싱턴 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -995,22 +823,9 @@
         "countryCode": "JP",
         "prefecture": "Fukuoka",
         "city": "후쿠오카",
-        "area": "후쿠오카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1159751-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/16/xNff/P9lmMyP6hV.jpg?width=720",
-          "alt": "커낼 시티 후쿠오카 워싱턴 호텔 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1159751",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1159751?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1020,15 +835,3364 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1159751?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1159751?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4133933",
+      "externalId": "4133933",
+      "provider": "myrealtrip",
+      "name": " 서튼 호텔 하카타 시티",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "서튼-호텔-하카타-시티-4133933",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의  서튼 호텔 하카타 시티 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4,
+      "numberOfReviews": 1021,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4133933?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1471318",
+      "externalId": "1471318",
+      "provider": "myrealtrip",
+      "name": "아미스타드 호텔 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "아미스타드-호텔-후쿠오카-1471318",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 아미스타드 호텔 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 125,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1471318?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1190654",
+      "externalId": "1190654",
+      "provider": "myrealtrip",
+      "name": "엔 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "엔-호텔-하카타-1190654",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 엔 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.8,
+      "numberOfReviews": 897,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1190654?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3585777",
+      "externalId": "3585777",
+      "provider": "myrealtrip",
+      "name": "더 로얄 파크 캔버스 후쿠오카 나카스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "더-로얄-파크-캔버스-후쿠오카-나카스-3585777",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 로얄 파크 캔버스 후쿠오카 나카스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 924,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3585777?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1423982",
+      "externalId": "1423982",
+      "provider": "myrealtrip",
+      "name": "더 블러썸 하카타 프리미어",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "더-블러썸-하카타-프리미어-1423982",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 블러썸 하카타 프리미어 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1714,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1423982?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1520900",
+      "externalId": "1520900",
+      "provider": "myrealtrip",
+      "name": "그랜드 인 캐널사이드",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "그랜드-인-캐널사이드-1520900",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 그랜드 인 캐널사이드 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.5,
+      "numberOfReviews": 492,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1520900?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1393024",
+      "externalId": "1393024",
+      "provider": "myrealtrip",
+      "name": "도큐스테이 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "도큐스테이-후쿠오카-텐진-1393024",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 도큐스테이 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1050,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1393024?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1193615",
+      "externalId": "1193615",
+      "provider": "myrealtrip",
+      "name": "호텔 레솔 트리니티 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "호텔-레솔-트리니티-하카타-1193615",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 레솔 트리니티 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1052,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1193615?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1469276",
+      "externalId": "1469276",
+      "provider": "myrealtrip",
+      "name": "호텔 포르자 하카타에키 치쿠시 - 구치 II",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "호텔-포르자-하카타에키-치쿠시-구치-ii-1469276",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 포르자 하카타에키 치쿠시 - 구치 II 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 856,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1469276?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1468317",
+      "externalId": "1468317",
+      "provider": "myrealtrip",
+      "name": "호텔 트라드 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "호텔-트라드-하카타-1468317",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 트라드 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 775,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1468317?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1178942",
+      "externalId": "1178942",
+      "provider": "myrealtrip",
+      "name": "플라자 호텔 프리미어",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "플라자-호텔-프리미어-1178942",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 플라자 호텔 프리미어 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.9,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1178942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1998163",
+      "externalId": "1998163",
+      "provider": "myrealtrip",
+      "name": "리치몬드 호텔 텐진 니시-도리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "리치몬드-호텔-텐진-니시-도리-1998163",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 리치몬드 호텔 텐진 니시-도리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 32,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1998163?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3795682",
+      "externalId": "3795682",
+      "provider": "myrealtrip",
+      "name": "더 라이블리 후쿠오카 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "더-라이블리-후쿠오카-하카타-3795682",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 라이블리 후쿠오카 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3795682?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1226280",
+      "externalId": "1226280",
+      "provider": "myrealtrip",
+      "name": "하카타 그린 호텔 넘버 1",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "하카타-그린-호텔-넘버-1-1226280",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 하카타 그린 호텔 넘버 1 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1226280?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1513170",
+      "externalId": "1513170",
+      "provider": "myrealtrip",
+      "name": "베스트 웨스턴 플러스 후쿠오카 텐진-미나미",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "베스트-웨스턴-플러스-후쿠오카-텐진-미나미-1513170",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 베스트 웨스턴 플러스 후쿠오카 텐진-미나미 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 203,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1513170?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6339001",
+      "externalId": "6339001",
+      "provider": "myrealtrip",
+      "name": "솔라리아 니시테츠 호텔 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "솔라리아-니시테츠-호텔-후쿠오카-6339001",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 솔라리아 니시테츠 호텔 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1112,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6339001?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5708188",
+      "externalId": "5708188",
+      "provider": "myrealtrip",
+      "name": "라이프 텐진 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "라이프-텐진-후쿠오카-5708188",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 라이프 텐진 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 896,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5708188?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1448402",
+      "externalId": "1448402",
+      "provider": "myrealtrip",
+      "name": "SG 레지던스 인 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "sg-레지던스-인-하카타-1448402",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 SG 레지던스 인 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.3,
+      "numberOfReviews": 526,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1448402?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1553508",
+      "externalId": "1553508",
+      "provider": "myrealtrip",
+      "name": "코코 호텔 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "코코-호텔-후쿠오카-텐진-1553508",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 코코 호텔 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 317,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1553508?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1123148",
+      "externalId": "1123148",
+      "provider": "myrealtrip",
+      "name": "하카타 엑셀 호텔 도큐",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:53.460Z",
+      "slug": "하카타-엑셀-호텔-도큐-1123148",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 하카타 엑셀 호텔 도큐 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1024,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1123148?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1442738",
+      "externalId": "1442738",
+      "provider": "myrealtrip",
+      "name": "더 밀레니얼스 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "더-밀레니얼스-후쿠오카-1442738",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 밀레니얼스 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 492,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1442738?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1216811",
+      "externalId": "1216811",
+      "provider": "myrealtrip",
+      "name": "호텔 마이스테이스 후쿠오카 텐진 미나미",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "호텔-마이스테이스-후쿠오카-텐진-미나미-1216811",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 마이스테이스 후쿠오카 텐진 미나미 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1008,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1216811?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1556352",
+      "externalId": "1556352",
+      "provider": "myrealtrip",
+      "name": "호텔 오리엔탈 익스프레스 후쿠오카 나카스 카와바타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "호텔-오리엔탈-익스프레스-후쿠오카-나카스-카와바타-1556352",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 오리엔탈 익스프레스 후쿠오카 나카스 카와바타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1024,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1556352?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1117462",
+      "externalId": "1117462",
+      "provider": "myrealtrip",
+      "name": "그랜드 하얏트 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "그랜드-하얏트-후쿠오카-1117462",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 그랜드 하얏트 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1007,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1117462?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1191510",
+      "externalId": "1191510",
+      "provider": "myrealtrip",
+      "name": "프레지던트 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "프레지던트-호텔-하카타-1191510",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 프레지던트 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 933,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1191510?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1108408",
+      "externalId": "1108408",
+      "provider": "myrealtrip",
+      "name": "호텔 니코 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "호텔-니코-후쿠오카-1108408",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 니코 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1010,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1108408?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3738281",
+      "externalId": "3738281",
+      "provider": "myrealtrip",
+      "name": "골든 게스트 하우스 하카타 - 호스텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "골든-게스트-하우스-하카타-호스텔-3738281",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 골든 게스트 하우스 하카타 - 호스텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.4,
+      "numberOfReviews": 130,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3738281?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6339002",
+      "externalId": "6339002",
+      "provider": "myrealtrip",
+      "name": "니시테츠 호텔 크룸 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "니시테츠-호텔-크룸-하카타-6339002",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 니시테츠 호텔 크룸 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1019,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6339002?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1585975",
+      "externalId": "1585975",
+      "provider": "myrealtrip",
+      "name": "램프 라이트 북스 호텔 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "램프-라이트-북스-호텔-후쿠오카-1585975",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 램프 라이트 북스 호텔 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 529,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1585975?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1583785",
+      "externalId": "1583785",
+      "provider": "myrealtrip",
+      "name": "APA 호텔 하카타 에키마에 3초메",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "apa-호텔-하카타-에키마에-3초메-1583785",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 APA 호텔 하카타 에키마에 3초메 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 903,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1583785?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5709843",
+      "externalId": "5709843",
+      "provider": "myrealtrip",
+      "name": "크로스 라이프 하카타 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "크로스-라이프-하카타-텐진-5709843",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 크로스 라이프 하카타 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1032,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5709843?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1286277",
+      "externalId": "1286277",
+      "provider": "myrealtrip",
+      "name": "더 브렉퍼스트 호텔 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "더-브렉퍼스트-호텔-후쿠오카-텐진-1286277",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 브렉퍼스트 호텔 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1028,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1286277?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1264256",
+      "externalId": "1264256",
+      "provider": "myrealtrip",
+      "name": "JR KYUSHU HOTEL Blossom Hakata Chuo",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "jr-kyushu-hotel-blossom-hakata-chuo-1264256",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 JR KYUSHU HOTEL Blossom Hakata Chuo 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1799,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1264256?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1373656",
+      "externalId": "1373656",
+      "provider": "myrealtrip",
+      "name": "드림 인 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "드림-인-하카타-1373656",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 드림 인 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 554,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1373656?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1460566",
+      "externalId": "1460566",
+      "provider": "myrealtrip",
+      "name": "퀸테사 호텔 후쿠오카 하카타 릴렉스&슬립",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "퀸테사-호텔-후쿠오카-하카타-릴렉스-슬립-1460566",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 퀸테사 호텔 후쿠오카 하카타 릴렉스&슬립 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 323,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1460566?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1567895",
+      "externalId": "1567895",
+      "provider": "myrealtrip",
+      "name": "토마리 호텔 & 콘도미니엄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "토마리-호텔-콘도미니엄-1567895",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 토마리 호텔 & 콘도미니엄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.4,
+      "numberOfReviews": 704,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1567895?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1557197",
+      "externalId": "1557197",
+      "provider": "myrealtrip",
+      "name": "호텔 라이브맥스 하카타 에키마에",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "호텔-라이브맥스-하카타-에키마에-1557197",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 라이브맥스 하카타 에키마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.6,
+      "numberOfReviews": 394,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1557197?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6338998",
+      "externalId": "6338998",
+      "provider": "myrealtrip",
+      "name": "하카타 나카수 워싱턴 호텔 플라자",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "하카타-나카수-워싱턴-호텔-플라자-6338998",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 하카타 나카수 워싱턴 호텔 플라자 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.6,
+      "numberOfReviews": 461,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6338998?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1264344",
+      "externalId": "1264344",
+      "provider": "myrealtrip",
+      "name": "하카타도 도큐 REI 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "하카타도-도큐-rei-호텔-1264344",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 하카타도 도큐 REI 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1058,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1264344?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1329656",
+      "externalId": "1329656",
+      "provider": "myrealtrip",
+      "name": "호텔 WBF 그란데 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:54.602Z",
+      "slug": "호텔-wbf-그란데-하카타-1329656",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 WBF 그란데 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1019,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1329656?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1400781",
+      "externalId": "1400781",
+      "provider": "myrealtrip",
+      "name": "JR 웨스트 그룹 비아 인 하카타구치 에키마에",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "jr-웨스트-그룹-비아-인-하카타구치-에키마에-1400781",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 JR 웨스트 그룹 비아 인 하카타구치 에키마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1400781?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1465537",
+      "externalId": "1465537",
+      "provider": "myrealtrip",
+      "name": "9 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "9-호텔-하카타-1465537",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 9 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 79,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1465537?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3575331",
+      "externalId": "3575331",
+      "provider": "myrealtrip",
+      "name": "Richmond Hotel Hakataekimae",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "richmond-hotel-hakataekimae-3575331",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 Richmond Hotel Hakataekimae 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 367,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3575331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1540520",
+      "externalId": "1540520",
+      "provider": "myrealtrip",
+      "name": "나인아워스 하카타 스테이션",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "나인아워스-하카타-스테이션-1540520",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 나인아워스 하카타 스테이션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4,
+      "numberOfReviews": 707,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1540520?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1550249",
+      "externalId": "1550249",
+      "provider": "myrealtrip",
+      "name": "퀸테사 호텔 후쿠오카 텐진 코믹 & 북스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "퀸테사-호텔-후쿠오카-텐진-코믹-북스-1550249",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 퀸테사 호텔 후쿠오카 텐진 코믹 & 북스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 704,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1550249?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5008175",
+      "externalId": "5008175",
+      "provider": "myrealtrip",
+      "name": "후쿠오카 고려민박",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "후쿠오카-고려민박-5008175",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 후쿠오카 고려민박 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.8,
+      "numberOfReviews": 131,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5008175?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1607881",
+      "externalId": "1607881",
+      "provider": "myrealtrip",
+      "name": "유 스타일 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "유-스타일-호텔-하카타-1607881",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 유 스타일 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 535,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1607881?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1577389",
+      "externalId": "1577389",
+      "provider": "myrealtrip",
+      "name": "코코 호텔 프리미어 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "코코-호텔-프리미어-하카타-1577389",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 코코 호텔 프리미어 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 941,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1577389?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1191800",
+      "externalId": "1191800",
+      "provider": "myrealtrip",
+      "name": "더 원파이브 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "더-원파이브-후쿠오카-텐진-1191800",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 원파이브 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.9,
+      "numberOfReviews": 735,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1191800?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6339003",
+      "externalId": "6339003",
+      "provider": "myrealtrip",
+      "name": "니시테츠 호텔 크롬 하카타 기온",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "니시테츠-호텔-크롬-하카타-기온-6339003",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 니시테츠 호텔 크롬 하카타 기온 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 766,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6339003?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1329648",
+      "externalId": "1329648",
+      "provider": "myrealtrip",
+      "name": "더 브렉퍼스트 호텔 후쿠오카 나카스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "더-브렉퍼스트-호텔-후쿠오카-나카스-1329648",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 브렉퍼스트 호텔 후쿠오카 나카스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1017,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1329648?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1230211",
+      "externalId": "1230211",
+      "provider": "myrealtrip",
+      "name": "미야코 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "미야코-호텔-하카타-1230211",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 미야코 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 1974,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1230211?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1539326",
+      "externalId": "1539326",
+      "provider": "myrealtrip",
+      "name": "호텔 토리피토 하카타 기온",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "호텔-토리피토-하카타-기온-1539326",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 토리피토 하카타 기온 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 630,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1539326?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1101087",
+      "externalId": "1101087",
+      "provider": "myrealtrip",
+      "name": "호텔 뉴 오타니 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "호텔-뉴-오타니-하카타-1101087",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 뉴 오타니 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1118,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1101087?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1237121",
+      "externalId": "1237121",
+      "provider": "myrealtrip",
+      "name": "칸데오 호텔 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "칸데오-호텔-후쿠오카-텐진-1237121",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 칸데오 호텔 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1009,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1237121?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1424268",
+      "externalId": "1424268",
+      "provider": "myrealtrip",
+      "name": "존크 호텔 나카스-데아이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "존크-호텔-나카스-데아이바시-1424268",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 존크 호텔 나카스-데아이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 750,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1424268?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1574344",
+      "externalId": "1574344",
+      "provider": "myrealtrip",
+      "name": "& 호텔 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "호텔-하카타-1574344",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 & 호텔 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 548,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1574344?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6339009",
+      "externalId": "6339009",
+      "provider": "myrealtrip",
+      "name": "야오지 하카타 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "야오지-하카타-호텔-6339009",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 야오지 하카타 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1007,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6339009?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1537280",
+      "externalId": "1537280",
+      "provider": "myrealtrip",
+      "name": "분쇼도 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "분쇼도-호텔-1537280",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 분쇼도 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 212,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1537280?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1200890",
+      "externalId": "1200890",
+      "provider": "myrealtrip",
+      "name": "코트 호텔 후쿠오카 톈진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:55.591Z",
+      "slug": "코트-호텔-후쿠오카-톈진-1200890",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 코트 호텔 후쿠오카 톈진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.9,
+      "numberOfReviews": 478,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1200890?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1453497",
+      "externalId": "1453497",
+      "provider": "myrealtrip",
+      "name": "호텔 포르자 하카타에키 하카타구치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "호텔-포르자-하카타에키-하카타구치-1453497",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 포르자 하카타에키 하카타구치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 621,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1453497?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1566492",
+      "externalId": "1566492",
+      "provider": "myrealtrip",
+      "name": "레가티오 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "레가티오-하카타-1566492",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 레가티오 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.4,
+      "numberOfReviews": 214,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1566492?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5007653",
+      "externalId": "5007653",
+      "provider": "myrealtrip",
+      "name": "야쿠인 테라스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "야쿠인-테라스-5007653",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 야쿠인 테라스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 5,
+      "numberOfReviews": 17,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5007653?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1474292",
+      "externalId": "1474292",
+      "provider": "myrealtrip",
+      "name": "스테이 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "스테이-하카타-1474292",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 스테이 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.5,
+      "numberOfReviews": 52,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1474292?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1178324",
+      "externalId": "1178324",
+      "provider": "myrealtrip",
+      "name": "더 노트 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "더-노트-후쿠오카-텐진-1178324",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 노트 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 119,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1178324?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1303339",
+      "externalId": "1303339",
+      "provider": "myrealtrip",
+      "name": "몬탄 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "몬탄-하카타-1303339",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 몬탄 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 2,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 515,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1303339?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1247391",
+      "externalId": "1247391",
+      "provider": "myrealtrip",
+      "name": "더 원파이브 테라스 후쿠오카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "더-원파이브-테라스-후쿠오카-1247391",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 원파이브 테라스 후쿠오카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 743,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1247391?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1423543",
+      "externalId": "1423543",
+      "provider": "myrealtrip",
+      "name": "다이와 로이넷 호텔 하카타 레이센 프리미어",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "다이와-로이넷-호텔-하카타-레이센-프리미어-1423543",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 다이와 로이넷 호텔 하카타 레이센 프리미어 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1005,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1423543?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1568557",
+      "externalId": "1568557",
+      "provider": "myrealtrip",
+      "name": "그랜드 스테이 하카타 스테이션 노스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "그랜드-스테이-하카타-스테이션-노스-1568557",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 그랜드 스테이 하카타 스테이션 노스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.2,
+      "numberOfReviews": 268,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1568557?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1192777",
+      "externalId": "1192777",
+      "provider": "myrealtrip",
+      "name": "아크 호텔 로열 후쿠오카 덴진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "아크-호텔-로열-후쿠오카-덴진-1192777",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 아크 호텔 로열 후쿠오카 덴진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4,
+      "numberOfReviews": 483,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1192777?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1555391",
+      "externalId": "1555391",
+      "provider": "myrealtrip",
+      "name": "리브맥스 후쿠오카 텐진-웨스트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "리브맥스-후쿠오카-텐진-웨스트-1555391",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 리브맥스 후쿠오카 텐진-웨스트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.8,
+      "numberOfReviews": 337,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1555391?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1551579",
+      "externalId": "1551579",
+      "provider": "myrealtrip",
+      "name": "호텔 JAL 시티 후쿠오카 텐진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "호텔-jal-시티-후쿠오카-텐진-1551579",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔 JAL 시티 후쿠오카 텐진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1551579?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4405415",
+      "externalId": "4405415",
+      "provider": "myrealtrip",
+      "name": "호텔&레지던스 하루요시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "호텔-레지던스-하루요시-4405415",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 호텔&레지던스 하루요시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.5,
+      "numberOfReviews": 58,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4405415?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1630648",
+      "externalId": "1630648",
+      "provider": "myrealtrip",
+      "name": "크로스 라이프 하카타 야나기바시, 오릭스 호텔 & 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "크로스-라이프-하카타-야나기바시-오릭스-호텔-리조트-1630648",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 크로스 라이프 하카타 야나기바시, 오릭스 호텔 & 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 646,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1630648?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1147258",
+      "externalId": "1147258",
+      "provider": "myrealtrip",
+      "name": "힐튼 후쿠오카 씨 호크",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "힐튼-후쿠오카-씨-호크-1147258",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 힐튼 후쿠오카 씨 호크 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1147258?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1327432",
+      "externalId": "1327432",
+      "provider": "myrealtrip",
+      "name": "델 스타일 후쿠오카 - 니시나카스 바이 다이와 로이넷 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "델-스타일-후쿠오카-니시나카스-바이-다이와-로이넷-호텔-1327432",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 델 스타일 후쿠오카 - 니시나카스 바이 다이와 로이넷 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1327432?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1579423",
+      "externalId": "1579423",
+      "provider": "myrealtrip",
+      "name": "언플랜 후쿠오카 - 호스텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "언플랜-후쿠오카-호스텔-1579423",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 언플랜 후쿠오카 - 호스텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4,
+      "numberOfReviews": 209,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1579423?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1173496",
+      "externalId": "1173496",
+      "provider": "myrealtrip",
+      "name": "더 비 하카타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "더-비-하카타-1173496",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 더 비 하카타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1010,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1173496?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1191568",
+      "externalId": "1191568",
+      "provider": "myrealtrip",
+      "name": "헤이와다이 호텔 톈진",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "헤이와다이-호텔-톈진-1191568",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 헤이와다이 호텔 톈진 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 3.8,
+      "numberOfReviews": 342,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1191568?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1281165",
+      "externalId": "1281165",
+      "provider": "myrealtrip",
+      "name": "스마일 호텔 하카타 에키마에",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:56.581Z",
+      "slug": "스마일-호텔-하카타-에키마에-1281165",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Fukuoka",
+      "city": "후쿠오카",
+      "area": "",
+      "destinationId": "japan-fukuoka",
+      "description": "후쿠오카 지역의 스마일 호텔 하카타 에키마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Fukuoka",
+        "city": "후쿠오카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1281165?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     }
   ]
 }

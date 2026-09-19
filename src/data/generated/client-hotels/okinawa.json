@@ -1,24 +1,23 @@
 {
-  "generatedAt": "2026-09-18T05:18:19.639Z",
+  "generatedAt": "2026-09-19T09:23:06.087Z",
   "source": "myrealtrip",
-  "hotelCount": 20,
-  "search": {
-    "checkIn": "2026-10-15",
-    "checkOut": "2026-10-18",
-    "adultCount": 2,
-    "childCount": 0
-  },
-  "imageUsageAllowed": true,
+  "hotelCount": 100,
+  "search": {},
+  "imageUsageAllowed": false,
   "hotels": [
     {
       "id": "myrealtrip-1499059",
+      "externalId": "1499059",
+      "provider": "myrealtrip",
       "name": "레쿠 오키나와 자탄 스파 & 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 레쿠 오키나와 자탄 스파 & 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -26,22 +25,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1499059-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/04/8asz/DsxgiMxNGi.jpg?width=720",
-          "alt": "레쿠 오키나와 자탄 스파 & 리조트 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1499059",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -51,25 +37,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6196684",
+      "externalId": "6196684",
+      "provider": "myrealtrip",
       "name": "베셀 호텔 캄파나 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "베셀-호텔-캄파나-오키나와-6196684",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 베셀 호텔 캄파나 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -77,22 +67,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6196684-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/09/25/mddX/PCQgBplnIS.jpg?width=720",
-          "alt": "베셀 호텔 캄파나 오키나와 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6196684",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -102,25 +79,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6178095",
+      "externalId": "6178095",
+      "provider": "myrealtrip",
       "name": "호텔 JAL 시티 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-jal-시티-나하-6178095",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 JAL 시티 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -128,22 +109,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6178095-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/egQj/Z0mKAFn32o.jpg?width=720",
-          "alt": "호텔 JAL 시티 나하 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6178095",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -153,25 +121,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6206151",
+      "externalId": "6206151",
+      "provider": "myrealtrip",
       "name": "하얏트 리젠시 세라가키 아일랜드 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "하얏트-리젠시-세라가키-아일랜드-오키나와-6206151",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 하얏트 리젠시 세라가키 아일랜드 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -179,22 +151,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6206151-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/w6T9/e2r9IPbUaz.jpg?width=720",
-          "alt": "하얏트 리젠시 세라가키 아일랜드 오키나와 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6206151",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -204,25 +163,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6183767",
+      "externalId": "6183767",
+      "provider": "myrealtrip",
       "name": "오리엔탈 호텔 오키나와 리조트 & 스파",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "오리엔탈-호텔-오키나와-리조트-스파-6183767",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 오리엔탈 호텔 오키나와 리조트 & 스파 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -230,22 +193,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6183767-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/11/HqPl/gIS34DxQTp.jpg?width=720",
-          "alt": "오리엔탈 호텔 오키나와 리조트 & 스파 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6183767",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -255,25 +205,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-4479180",
+      "externalId": "4479180",
+      "provider": "myrealtrip",
       "name": "더 네스트 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "더-네스트-나하-4479180",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 더 네스트 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -281,22 +235,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-4479180-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/24/PtU3/Zl6i9YcTfk.jpg?width=720",
-          "alt": "더 네스트 나하 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-4479180",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -306,25 +247,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6206176",
+      "externalId": "6206176",
+      "provider": "myrealtrip",
       "name": "더 부세나 테라스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "더-부세나-테라스-6206176",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 더 부세나 테라스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -332,22 +277,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6206176-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/s7Et/hHRqb1wKk9.jpg?width=720",
-          "alt": "더 부세나 테라스 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6206176",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -357,25 +289,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1569706",
+      "externalId": "1569706",
+      "provider": "myrealtrip",
       "name": "네스트 호텔 나하 쿠모지",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "네스트-호텔-나하-쿠모지-1569706",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 네스트 호텔 나하 쿠모지 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -383,50 +319,41 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1569706-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/05/10/SMuu/j3421OCa4u.jpg?width=720",
-          "alt": "네스트 호텔 나하 쿠모지 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1569706",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.6,
-      "numberOfReviews": 1302,
+      "numberOfReviews": 1301,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6203441",
+      "externalId": "6203441",
+      "provider": "myrealtrip",
       "name": "호텔 컬렉티브",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-컬렉티브-6203441",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 컬렉티브 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -434,22 +361,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6203441-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/1FC4/qS5qN0wW1y.jpg?width=720",
-          "alt": "호텔 컬렉티브 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6203441",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -459,25 +373,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6215679",
+      "externalId": "6215679",
+      "provider": "myrealtrip",
       "name": "류큐 호텔&리조트 나시로 비치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "류큐-호텔-리조트-나시로-비치-6215679",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 류큐 호텔&리조트 나시로 비치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -485,22 +403,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6215679-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/TOHX/7TczgdBder.jpg?width=720",
-          "alt": "류큐 호텔&리조트 나시로 비치 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6215679",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -510,25 +415,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1107701",
+      "externalId": "1107701",
+      "provider": "myrealtrip",
       "name": "오키나와 나하나 호텔 & 스파",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "오키나와-나하나-호텔-스파-1107701",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 오키나와 나하나 호텔 & 스파 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -536,22 +445,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1107701-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/07/13/GP4K/8EZ003XZnB.jpg?width=720",
-          "alt": "오키나와 나하나 호텔 & 스파 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1107701",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -561,25 +457,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1505018",
+      "externalId": "1505018",
+      "provider": "myrealtrip",
       "name": "힐튼 오키나와 세소코 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "힐튼-오키나와-세소코-리조트-1505018",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 힐튼 오키나와 세소코 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -587,50 +487,41 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1505018-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/03/23/J3xd/YAzHYWxTVq.jpg?width=720",
-          "alt": "힐튼 오키나와 세소코 리조트 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1505018",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 5,
       "ratingAverage": 4.4,
-      "numberOfReviews": 517,
+      "numberOfReviews": 518,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1474186",
+      "externalId": "1474186",
+      "provider": "myrealtrip",
       "name": "호텔 스트라타 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-스트라타-나하-1474186",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 스트라타 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -638,50 +529,41 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1474186-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/612g/EWNkNUMyNW.jpg?width=720",
-          "alt": "호텔 스트라타 나하 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1474186",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.6,
-      "numberOfReviews": 1022,
+      "numberOfReviews": 1019,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1245403",
+      "externalId": "1245403",
+      "provider": "myrealtrip",
       "name": "호텔 그레이서리 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-그레이서리-나하-1245403",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 그레이서리 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -689,22 +571,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1245403-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/20/CJXR/AImpatef8q.jpg?width=720",
-          "alt": "호텔 그레이서리 나하 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1245403",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -714,25 +583,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6199109",
+      "externalId": "6199109",
+      "provider": "myrealtrip",
       "name": "라 젠트 호텔 오키나와 차탄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "라-젠트-호텔-오키나와-차탄-6199109",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 라 젠트 호텔 오키나와 차탄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -740,22 +613,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6199109-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/10/YEga/v9u8vjeaFQ.jpg?width=720",
-          "alt": "라 젠트 호텔 오키나와 차탄 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6199109",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -765,25 +625,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1277534",
+      "externalId": "1277534",
+      "provider": "myrealtrip",
       "name": "하얏트 리젠시 나하, 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "하얏트-리젠시-나하-오키나와-1277534",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 하얏트 리젠시 나하, 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -791,50 +655,41 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1277534-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/HRAj/DFA9YE2ltF.jpg?width=720",
-          "alt": "하얏트 리젠시 나하, 오키나와 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1277534",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 5,
       "ratingAverage": 4.6,
-      "numberOfReviews": 1011,
+      "numberOfReviews": 1013,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6206059",
+      "externalId": "6206059",
+      "provider": "myrealtrip",
       "name": "호텔 마하이나 웰니스 리조트 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-마하이나-웰니스-리조트-오키나와-6206059",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 마하이나 웰니스 리조트 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -842,22 +697,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6206059-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/1bfc/SgLzyJZmOz.jpg?width=720",
-          "alt": "호텔 마하이나 웰니스 리조트 오키나와 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6206059",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -867,25 +709,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6215659",
+      "externalId": "6215659",
+      "provider": "myrealtrip",
       "name": "오끼나와 프린스 호텔 오션 뷰 기노완",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "오끼나와-프린스-호텔-오션-뷰-기노완-6215659",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 오끼나와 프린스 호텔 오션 뷰 기노완 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -893,22 +739,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6215659-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/uty2/hOu1We1Xn2.jpg?width=720",
-          "alt": "오끼나와 프린스 호텔 오션 뷰 기노완 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6215659",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -918,25 +751,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6215627",
+      "externalId": "6215627",
+      "provider": "myrealtrip",
       "name": "호텔 아쿠아 시타 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-아쿠아-시타-나하-6215627",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 아쿠아 시타 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -944,22 +781,9 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-6215627-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/11/rTCg/qjP03n19iY.jpg?width=720",
-          "alt": "호텔 아쿠아 시타 나하 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6215627",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -969,25 +793,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-6196600",
+      "externalId": "6196600",
+      "provider": "myrealtrip",
       "name": "호텔 몬토레 오키나와 스파 & 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
       "slug": "호텔-몬토레-오키나와-스파-리조트-6196600",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Okinawa",
       "city": "오키나와",
-      "area": "오키나와",
+      "area": "",
       "destinationId": "japan-okinawa",
       "description": "오키나와 지역의 호텔 몬토레 오키나와 스파 & 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -995,22 +823,51 @@
         "countryCode": "JP",
         "prefecture": "Okinawa",
         "city": "오키나와",
-        "area": "오키나와"
+        "area": ""
       },
-      "images": [
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
         {
-          "id": "myrealtrip-6196600-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/UC11/IPdyTbYdaZ.jpg?width=720",
-          "alt": "호텔 몬토레 오키나와 스파 & 리조트 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-6196600",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
         }
       ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1215613",
+      "externalId": "1215613",
+      "provider": "myrealtrip",
+      "name": "오리온 호텔 모토부 리조트 & 스파",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "오리온-호텔-모토부-리조트-스파-1215613",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 오리온 호텔 모토부 리조트 & 스파 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1020,15 +877,3327 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1215613?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1251483",
+      "externalId": "1251483",
+      "provider": "myrealtrip",
+      "name": "알몬트 호텔 나하 켄초마에",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "알몬트-호텔-나하-켄초마에-1251483",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 알몬트 호텔 나하 켄초마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1012,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1251483?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1298670",
+      "externalId": "1298670",
+      "provider": "myrealtrip",
+      "name": "JR KYUSHU HOTEL Blossom Naha",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "jr-kyushu-hotel-blossom-naha-1298670",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 JR KYUSHU HOTEL Blossom Naha 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1325,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1298670?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6215713",
+      "externalId": "6215713",
+      "provider": "myrealtrip",
+      "name": "프린스 스마트 인 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "프린스-스마트-인-나하-6215713",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 프린스 스마트 인 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 290,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215713?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206911",
+      "externalId": "6206911",
+      "provider": "myrealtrip",
+      "name": "오키나와 카리유시 비치 리조트 오션 스파",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "오키나와-카리유시-비치-리조트-오션-스파-6206911",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 오키나와 카리유시 비치 리조트 오션 스파 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206911?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1194964",
+      "externalId": "1194964",
+      "provider": "myrealtrip",
+      "name": "호텔 팜 로얄 리조트 국제거리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "호텔-팜-로얄-리조트-국제거리-1194964",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 팜 로얄 리조트 국제거리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1000,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1194964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206465",
+      "externalId": "6206465",
+      "provider": "myrealtrip",
+      "name": "더 비치 타워 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "더-비치-타워-오키나와-6206465",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더 비치 타워 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 696,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206465?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206598",
+      "externalId": "6206598",
+      "provider": "myrealtrip",
+      "name": "그랜드 머큐어 오키나와 케이프 잔파 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "그랜드-머큐어-오키나와-케이프-잔파-리조트-6206598",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 그랜드 머큐어 오키나와 케이프 잔파 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206141",
+      "externalId": "6206141",
+      "provider": "myrealtrip",
+      "name": "할레쿨라니 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "할레쿨라니-오키나와-6206141",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 할레쿨라니 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.9,
+      "numberOfReviews": 1562,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206141?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6196216",
+      "externalId": "6196216",
+      "provider": "myrealtrip",
+      "name": "라젠트 호텔 오키나와 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "라젠트-호텔-오키나와-나하-6196216",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 라젠트 호텔 오키나와 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 99,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6196216?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6205925",
+      "externalId": "6205925",
+      "provider": "myrealtrip",
+      "name": "리잔 시 파크 호텔 단차 베이",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "리잔-시-파크-호텔-단차-베이-6205925",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 리잔 시 파크 호텔 단차 베이 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6205925?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6199026",
+      "externalId": "6199026",
+      "provider": "myrealtrip",
+      "name": "노보텔 오키나와 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "노보텔-오키나와-나하-6199026",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 노보텔 오키나와 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1122,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6199026?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1213397",
+      "externalId": "1213397",
+      "provider": "myrealtrip",
+      "name": "힐튼 오키나와 차탄 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "힐튼-오키나와-차탄-리조트-1213397",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 힐튼 오키나와 차탄 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1213397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206021",
+      "externalId": "6206021",
+      "provider": "myrealtrip",
+      "name": "라구나 가든 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "라구나-가든-호텔-6206021",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 라구나 가든 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206021?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1591472",
+      "externalId": "1591472",
+      "provider": "myrealtrip",
+      "name": "네스트 호텔 나하니시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "네스트-호텔-나하니시-1591472",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 네스트 호텔 나하니시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 461,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1591472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6203741",
+      "externalId": "6203741",
+      "provider": "myrealtrip",
+      "name": "호텔 닛코 알리빌라",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "호텔-닛코-알리빌라-6203741",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 닛코 알리빌라 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6203741?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1169786",
+      "externalId": "1169786",
+      "provider": "myrealtrip",
+      "name": "루와지르 호텔 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "루와지르-호텔-나하-1169786",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 루와지르 호텔 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1009,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1169786?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1478556",
+      "externalId": "1478556",
+      "provider": "myrealtrip",
+      "name": "아쿠아 팰리스 자탄 바이 콜디오 프리미엄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "아쿠아-팰리스-자탄-바이-콜디오-프리미엄-1478556",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 아쿠아 팰리스 자탄 바이 콜디오 프리미엄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.5,
+      "numberOfReviews": 252,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1478556?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5816262",
+      "externalId": "5816262",
+      "provider": "myrealtrip",
+      "name": "리가 로열 리조트 오키나와 차탄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "리가-로열-리조트-오키나와-차탄-5816262",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 리가 로열 리조트 오키나와 차탄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 107,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5816262?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1536394",
+      "externalId": "1536394",
+      "provider": "myrealtrip",
+      "name": "히요리 오션 리조트 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "slug": "히요리-오션-리조트-오키나와-1536394",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 히요리 오션 리조트 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 288,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1536394?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6207208",
+      "externalId": "6207208",
+      "provider": "myrealtrip",
+      "name": "알라 마하이나 콘도 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "알라-마하이나-콘도-호텔-6207208",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 알라 마하이나 콘도 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 583,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6207208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1211831",
+      "externalId": "1211831",
+      "provider": "myrealtrip",
+      "name": "팰리스 인 문 비치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "팰리스-인-문-비치-1211831",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 팰리스 인 문 비치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 270,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1211831?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1460073",
+      "externalId": "1460073",
+      "provider": "myrealtrip",
+      "name": "도큐스테이 오키나와 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "도큐스테이-오키나와-나하-1460073",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 도큐스테이 오키나와 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1204,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1460073?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1107731",
+      "externalId": "1107731",
+      "provider": "myrealtrip",
+      "name": "ANA 인터컨티넨탈 만자 비치 리조트 바이 IHG",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "ana-인터컨티넨탈-만자-비치-리조트-바이-ihg-1107731",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 ANA 인터컨티넨탈 만자 비치 리조트 바이 IHG 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1000,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1107731?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1449283",
+      "externalId": "1449283",
+      "provider": "myrealtrip",
+      "name": "오키나와 하버뷰 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "오키나와-하버뷰-호텔-1449283",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 오키나와 하버뷰 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1232,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1449283?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1219297",
+      "externalId": "1219297",
+      "provider": "myrealtrip",
+      "name": "호텔 아베스트 나하 코쿠사이도리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "호텔-아베스트-나하-코쿠사이도리-1219297",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 아베스트 나하 코쿠사이도리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1219297?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4089334",
+      "externalId": "4089334",
+      "provider": "myrealtrip",
+      "name": "Royal Hotel OKINAWA ZANPAMISAKI",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "royal-hotel-okinawa-zanpamisaki-4089334",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Royal Hotel OKINAWA ZANPAMISAKI 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 5,
+      "numberOfReviews": 1,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4089334?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1321298",
+      "externalId": "1321298",
+      "provider": "myrealtrip",
+      "name": "더블트리 바이 힐튼 오키나와 자탄 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "더블트리-바이-힐튼-오키나와-자탄-리조트-1321298",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더블트리 바이 힐튼 오키나와 자탄 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 772,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1321298?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3693474",
+      "externalId": "3693474",
+      "provider": "myrealtrip",
+      "name": "Hotel Grand Consort Naha",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "hotel-grand-consort-naha-3693474",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Hotel Grand Consort Naha 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 133,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3693474?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1477410",
+      "externalId": "1477410",
+      "provider": "myrealtrip",
+      "name": "호시노야 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "호시노야-오키나와-1477410",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호시노야 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 306,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1477410?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6207107",
+      "externalId": "6207107",
+      "provider": "myrealtrip",
+      "name": "오키나와 그랜드 메르 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "오키나와-그랜드-메르-리조트-6207107",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 오키나와 그랜드 메르 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6207107?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6207029",
+      "externalId": "6207029",
+      "provider": "myrealtrip",
+      "name": "오쿠마 프라이빗 비치 & 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "오쿠마-프라이빗-비치-리조트-6207029",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 오쿠마 프라이빗 비치 & 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6207029?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1249348",
+      "externalId": "1249348",
+      "provider": "myrealtrip",
+      "name": "류큐 온센 세나가지마 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "류큐-온센-세나가지마-호텔-1249348",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 류큐 온센 세나가지마 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1000,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1249348?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1316277",
+      "externalId": "1316277",
+      "provider": "myrealtrip",
+      "name": "티사지 호텔 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "티사지-호텔-나하-1316277",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 티사지 호텔 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1316277?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3586184",
+      "externalId": "3586184",
+      "provider": "myrealtrip",
+      "name": "Southwest Grand Hotel",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "southwest-grand-hotel-3586184",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Southwest Grand Hotel 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 144,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3586184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1183011",
+      "externalId": "1183011",
+      "provider": "myrealtrip",
+      "name": "류큐 오리온 호텔, 나하 국제거리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "류큐-오리온-호텔-나하-국제거리-1183011",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 류큐 오리온 호텔, 나하 국제거리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 570,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1183011?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3690287",
+      "externalId": "3690287",
+      "provider": "myrealtrip",
+      "name": "풀 빌라 야가지 아일랜드 바이 콜디오 프리미엄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "풀-빌라-야가지-아일랜드-바이-콜디오-프리미엄-3690287",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 풀 빌라 야가지 아일랜드 바이 콜디오 프리미엄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.6,
+      "numberOfReviews": 36,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3690287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1340796",
+      "externalId": "1340796",
+      "provider": "myrealtrip",
+      "name": "선셋 비치 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "선셋-비치-호텔-1340796",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 선셋 비치 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 672,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1340796?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1442634",
+      "externalId": "1442634",
+      "provider": "myrealtrip",
+      "name": "선셋 리조트 캄푸",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "선셋-리조트-캄푸-1442634",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 선셋 리조트 캄푸 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.6,
+      "numberOfReviews": 105,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1442634?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1341257",
+      "externalId": "1341257",
+      "provider": "myrealtrip",
+      "name": "와이즈 캐빈 & 호텔 나하 코쿠사이 도리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "slug": "와이즈-캐빈-호텔-나하-코쿠사이-도리-1341257",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 와이즈 캐빈 & 호텔 나하 코쿠사이 도리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 950,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1341257?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1203208",
+      "externalId": "1203208",
+      "provider": "myrealtrip",
+      "name": "리가 로열 그랜 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "리가-로열-그랜-오키나와-1203208",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 리가 로열 그랜 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 1110,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1203208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6096842",
+      "externalId": "6096842",
+      "provider": "myrealtrip",
+      "name": "THE SENAGAJIMA STORY LINE",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "the-senagajima-story-line-6096842",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 THE SENAGAJIMA STORY LINE 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 232,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6096842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206127",
+      "externalId": "6206127",
+      "provider": "myrealtrip",
+      "name": "베스트 웨스턴 오키나와 코우키 비치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "베스트-웨스턴-오키나와-코우키-비치-6206127",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 베스트 웨스턴 오키나와 코우키 비치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 676,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206127?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4361093",
+      "externalId": "4361093",
+      "provider": "myrealtrip",
+      "name": "Chatan Beach Side Condominium Hotel Monpa",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "chatan-beach-side-condominium-hotel-monpa-4361093",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Chatan Beach Side Condominium Hotel Monpa 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1323,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4361093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1552331",
+      "externalId": "1552331",
+      "provider": "myrealtrip",
+      "name": "Hewitt Resort Naha",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "hewitt-resort-naha-1552331",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Hewitt Resort Naha 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 552,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1552331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1171753",
+      "externalId": "1171753",
+      "provider": "myrealtrip",
+      "name": "카후 리조트 후차쿠 콘도 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "카후-리조트-후차쿠-콘도-호텔-1171753",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 카후 리조트 후차쿠 콘도 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1000,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1171753?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1198409",
+      "externalId": "1198409",
+      "provider": "myrealtrip",
+      "name": "더 문 비치 뮤지엄 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "더-문-비치-뮤지엄-리조트-1198409",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더 문 비치 뮤지엄 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1198409?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1210282",
+      "externalId": "1210282",
+      "provider": "myrealtrip",
+      "name": "호텔 유가후 인 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "호텔-유가후-인-오키나와-1210282",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 유가후 인 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1210282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1626852",
+      "externalId": "1626852",
+      "provider": "myrealtrip",
+      "name": "BEB5 오키나와 세라가키 바이 호시노 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "beb5-오키나와-세라가키-바이-호시노-리조트-1626852",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 BEB5 오키나와 세라가키 바이 호시노 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 408,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1626852?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6215621",
+      "externalId": "6215621",
+      "provider": "myrealtrip",
+      "name": "호텔 앤드룸스 나하 포트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "호텔-앤드룸스-나하-포트-6215621",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 앤드룸스 나하 포트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 415,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215621?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6205893",
+      "externalId": "6205893",
+      "provider": "myrealtrip",
+      "name": "더 로열 파크 호텔 아이코닉 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "더-로열-파크-호텔-아이코닉-나하-6205893",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더 로열 파크 호텔 아이코닉 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 170,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6205893?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1667623",
+      "externalId": "1667623",
+      "provider": "myrealtrip",
+      "name": "호텔 알라 쿠주 오키나와",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "호텔-알라-쿠주-오키나와-1667623",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 알라 쿠주 오키나와 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 323,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1667623?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1340472",
+      "externalId": "1340472",
+      "provider": "myrealtrip",
+      "name": "코코셔스 몬파",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "코코셔스-몬파-1340472",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 코코셔스 몬파 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 289,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1340472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6205908",
+      "externalId": "6205908",
+      "provider": "myrealtrip",
+      "name": "REF Okinawa Arena by VESSEL HOTELS",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "ref-okinawa-arena-by-vessel-hotels-6205908",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 REF Okinawa Arena by VESSEL HOTELS 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 183,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6205908?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1169077",
+      "externalId": "1169077",
+      "provider": "myrealtrip",
+      "name": "오키나와 카리유시 리조트 엑시즈 온나",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "오키나와-카리유시-리조트-엑시즈-온나-1169077",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 오키나와 카리유시 리조트 엑시즈 온나 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1169077?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1161238",
+      "externalId": "1161238",
+      "provider": "myrealtrip",
+      "name": "컴포트 호텔 나하 프레펙추얼 오피스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "컴포트-호텔-나하-프레펙추얼-오피스-1161238",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 컴포트 호텔 나하 프레펙추얼 오피스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 537,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1161238?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3683601",
+      "externalId": "3683601",
+      "provider": "myrealtrip",
+      "name": "Private Condo Kourijima by Coldio Smart Resort",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "private-condo-kourijima-by-coldio-smart-resort-3683601",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Private Condo Kourijima by Coldio Smart Resort 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 2,
+      "ratingAverage": 4,
+      "numberOfReviews": 2,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3683601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5735331",
+      "externalId": "5735331",
+      "provider": "myrealtrip",
+      "name": "토요코인 오키나와 나하 아사히바시 에키마에",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "토요코인-오키나와-나하-아사히바시-에키마에-5735331",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 토요코인 오키나와 나하 아사히바시 에키마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 610,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5735331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1174382",
+      "externalId": "1174382",
+      "provider": "myrealtrip",
+      "name": "더 나하 테라스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "더-나하-테라스-1174382",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더 나하 테라스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1174382?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1295830",
+      "externalId": "1295830",
+      "provider": "myrealtrip",
+      "name": "호텔 아자트  나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "slug": "호텔-아자트-나하-1295830",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 아자트  나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1295830?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4081094",
+      "externalId": "4081094",
+      "provider": "myrealtrip",
+      "name": "Loisir Spa Tower Naha",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "loisir-spa-tower-naha-4081094",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 Loisir Spa Tower Naha 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4081094?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6206158",
+      "externalId": "6206158",
+      "provider": "myrealtrip",
+      "name": "쉐라톤 오키나와 선마리나 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "쉐라톤-오키나와-선마리나-리조트-6206158",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 쉐라톤 오키나와 선마리나 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1000,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206158?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1181933",
+      "externalId": "1181933",
+      "provider": "myrealtrip",
+      "name": "호텔 아트 스테이 나하 국제거리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "호텔-아트-스테이-나하-국제거리-1181933",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 아트 스테이 나하 국제거리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1181933?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1472967",
+      "externalId": "1472967",
+      "provider": "myrealtrip",
+      "name": "라핀 미하마 레지던스 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "라핀-미하마-레지던스-호텔-1472967",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 라핀 미하마 레지던스 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.8,
+      "numberOfReviews": 345,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1472967?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6338987",
+      "externalId": "6338987",
+      "provider": "myrealtrip",
+      "name": "니시테츠 리조트 인 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "니시테츠-리조트-인-나하-6338987",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 니시테츠 리조트 인 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6338987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1578228",
+      "externalId": "1578228",
+      "provider": "myrealtrip",
+      "name": "피닉스 파크 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "피닉스-파크-호텔-1578228",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 피닉스 파크 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 564,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1578228?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-6215566",
+      "externalId": "6215566",
+      "provider": "myrealtrip",
+      "name": "호텔 레솔 트리니티 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "호텔-레솔-트리니티-나하-6215566",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 레솔 트리니티 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 375,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215566?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1196267",
+      "externalId": "1196267",
+      "provider": "myrealtrip",
+      "name": "더 테라스 클럽 웰니스 탈라소 앳 부세나",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "더-테라스-클럽-웰니스-탈라소-앳-부세나-1196267",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더 테라스 클럽 웰니스 탈라소 앳 부세나 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 675,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1196267?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1203232",
+      "externalId": "1203232",
+      "provider": "myrealtrip",
+      "name": "타타미 노 야도 차탄 미하마",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "타타미-노-야도-차탄-미하마-1203232",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 타타미 노 야도 차탄 미하마 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 398,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1203232?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1195243",
+      "externalId": "1195243",
+      "provider": "myrealtrip",
+      "name": "머큐어 오키나와 나하",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "머큐어-오키나와-나하-1195243",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 머큐어 오키나와 나하 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 752,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1195243?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1165514",
+      "externalId": "1165514",
+      "provider": "myrealtrip",
+      "name": "로열 뷰 호텔 츄라우미 - 츄라우미와 가장 가까움",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "로열-뷰-호텔-츄라우미-츄라우미와-가장-가까움-1165514",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 로열 뷰 호텔 츄라우미 - 츄라우미와 가장 가까움 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1165514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1851316",
+      "externalId": "1851316",
+      "provider": "myrealtrip",
+      "name": "리에타 나카야마",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "리에타-나카야마-1851316",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 리에타 나카야마 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 1,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 251,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1851316?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1220735",
+      "externalId": "1220735",
+      "provider": "myrealtrip",
+      "name": "호텔 나하 시티 -국제 거리-",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "호텔-나하-시티-국제-거리-1220735",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 나하 시티 -국제 거리- 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 304,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1220735?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1286468",
+      "externalId": "1286468",
+      "provider": "myrealtrip",
+      "name": "우미노 료테이 오키나와 나카마소우",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "우미노-료테이-오키나와-나카마소우-1286468",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 우미노 료테이 오키나와 나카마소우 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.8,
+      "numberOfReviews": 173,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1286468?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1514088",
+      "externalId": "1514088",
+      "provider": "myrealtrip",
+      "name": "카리유시 LCH 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "카리유시-lch-리조트-1514088",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 카리유시 LCH 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 340,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1514088?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1290767",
+      "externalId": "1290767",
+      "provider": "myrealtrip",
+      "name": "풀 빌라 이마도마리 바이 콜디오 프리미엄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "slug": "풀-빌라-이마도마리-바이-콜디오-프리미엄-1290767",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 풀 빌라 이마도마리 바이 콜디오 프리미엄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.6,
+      "numberOfReviews": 91,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1290767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1262754",
+      "externalId": "1262754",
+      "provider": "myrealtrip",
+      "name": "스마일 호텔 나하 시티 리조트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "slug": "스마일-호텔-나하-시티-리조트-1262754",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 스마일 호텔 나하 시티 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.8,
+      "numberOfReviews": 847,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1262754?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1108217",
+      "externalId": "1108217",
+      "provider": "myrealtrip",
+      "name": "더블트리 바이 힐튼 나하 슈리 캐슬",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "slug": "더블트리-바이-힐튼-나하-슈리-캐슬-1108217",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 더블트리 바이 힐튼 나하 슈리 캐슬 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1001,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1108217?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1217760",
+      "externalId": "1217760",
+      "provider": "myrealtrip",
+      "name": "호텔 미유키 비치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "slug": "호텔-미유키-비치-1217760",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 호텔 미유키 비치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 3.7,
+      "numberOfReviews": 697,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1217760?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1353033",
+      "externalId": "1353033",
+      "provider": "myrealtrip",
+      "name": "미스터 긴조 인 모토부 오션 테라스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "slug": "미스터-긴조-인-모토부-오션-테라스-1353033",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 미스터 긴조 인 모토부 오션 테라스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 219,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1353033?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     }
   ]
 }

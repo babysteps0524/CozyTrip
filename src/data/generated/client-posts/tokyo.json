@@ -12,21 +12,6 @@
       "hotelId": "myrealtrip-5008360",
       "blocks": [
         {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-5008360-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/15/9TBV/kXuH0uXLEN.png?width=720",
-            "alt": "신주쿠 워싱턴 호텔 도쿄 메인 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-5008360",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5008360?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
-        {
           "type": "paragraph",
           "text": "신주쿠 워싱턴 호텔 도쿄 메인은 도쿄 신주쿠 지역에 자리잡고 있는 4성급 호텔입니다. 이 호텔은 편안한 숙소와 함께 도쿄의 다양한 관광지를 탐방하기에 적합한 위치를 자랑합니다."
         },
@@ -108,7 +93,7 @@
           "text": "주변 관광지에 대한 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "신주쿠",
@@ -128,21 +113,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1126303",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1126303-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/12/20/uFkY/753g00BOEY.jpg?width=720",
-            "alt": "토부 호텔 레밴트 도쿄 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1126303",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1126303?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "토부 호텔 레밴트 도쿄는 일본 도쿄에 위치한 4성급 호텔로, 편안한 숙박 경험을 제공합니다. 이 호텔은 여행객들에게 적합한 다양한 편의 시설을 갖추고 있습니다."
@@ -232,7 +202,7 @@
           "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -252,21 +222,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1640875",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1640875-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/N80t/sfc6zyLTCu.jpg?width=720",
-            "alt": "APA 호텔 & 리조트 롯폰기 에키히가시 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1640875",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1640875?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "APA 호텔 & 리조트 롯폰기 에키히가시는 도쿄에 위치한 3성급 호텔입니다. 이 호텔은 편리한 위치와 다양한 편의시설로 여행객들에게 인기가 있습니다."
@@ -356,7 +311,7 @@
           "text": "주변 관광지에 대한 정보가 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -375,21 +330,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1178040",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1178040-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/ix09/FxY1dBVoo3.jpg?width=720",
-            "alt": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1178040",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1178040?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메는 일본 도쿄에 위치한 4성급 호텔입니다. 이 호텔은 편안한 숙박 경험을 제공하며, 다양한 시설과 서비스를 갖추고 있습니다."
@@ -472,7 +412,7 @@
           "text": "주변 관광지에 대한 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -491,21 +431,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1273819",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1273819-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/19/ohok/GWsB5hYetQ.jpg?width=720",
-            "alt": "렘 롯폰기 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1273819",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1273819?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "렘 롯폰기는 도쿄에 위치한 4성급 호텔로, 현대적인 시설과 편안한 숙박 환경을 제공합니다. 이 호텔은 도쿄의 다양한 매력을 탐험하기에 좋은 위치에 자리하고 있습니다."
@@ -579,7 +504,7 @@
           "text": "도쿄 타워와 롯폰기 힐즈 등이 있습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -599,21 +524,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1261232",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1261232-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/01/ZDJt/6ktQVNd20f.jpg?width=720",
-            "alt": "소테츠 프레사 인 긴자 나나초메 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1261232",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1261232?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "소테츠 프레사 인 긴자 나나초메는 도쿄에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙소를 제공하며, 도쿄의 다양한 명소와 가까운 위치에 있습니다."
@@ -687,7 +597,7 @@
           "text": "주변 관광지 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -706,21 +616,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1175943",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1175943-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/21/EMO2/yY2SXzuK7F.jpg?width=720",
-            "alt": "호텔 빌라 퐁텐 도쿄 - 가야바초 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1175943",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1175943?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "호텔 빌라 퐁텐 도쿄 - 가야바초는 도쿄에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 도쿄의 다양한 매력을 경험하기에 좋은 위치에 있습니다."
@@ -810,7 +705,7 @@
           "text": "호텔 주변에는 도쿄의 다양한 관광지가 위치해 있습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -829,21 +724,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1111187",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1111187-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/Lc0A/YUu6NorIcB.jpg?width=720",
-            "alt": "썬샤인 시티 프린스 호텔 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1111187",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1111187?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "썬샤인 시티 프린스 호텔은 도쿄에 위치한 4성급 호텔로, 다양한 편의시설과 쾌적한 객실을 제공합니다. 이 호텔은 여행객들에게 이상적인 숙소입니다."
@@ -933,7 +813,7 @@
           "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -952,21 +832,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1109436",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1109436-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/27/FsYy/KMWcpulMKn.jpg?width=720",
-            "alt": "시나가와 프린스 호텔 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1109436",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1109436?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "시나가와 프린스 호텔은 도쿄 지역에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의시설과 서비스를 제공하여 편안한 여행을 지원합니다."
@@ -1069,7 +934,7 @@
           "text": "식음료 서비스에 대한 구체적인 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1088,21 +953,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1306164",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1306164-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/j6Yk/mbkXfCFK1p.jpg?width=720",
-            "alt": "소테츠 프레사 인 도쿄 긴시초 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1306164",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1306164?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "소테츠 프레사 인 도쿄 긴시초는 도쿄에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 도쿄 지역의 다양한 매력을 탐험하기에 적합한 장소입니다."
@@ -1176,7 +1026,7 @@
           "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1195,21 +1045,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1378163",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1378163-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/02/3UWA/4AAcITRtwH.jpg?width=720",
-            "alt": "긴자 캐피털 호텔 모에기 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1378163",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1378163?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "긴자 캐피털 호텔 모에기는 도쿄에서 4성급 호텔로, 편안한 숙소를 제공합니다. 이 호텔은 도쿄의 중심부에 위치하여 다양한 관광 명소와의 접근성이 뛰어납니다."
@@ -1283,7 +1118,7 @@
           "text": "호텔 주변에는 도쿄 타워와 같은 유명 관광지가 있습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1303,21 +1138,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1503356",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1503356-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/qjtb/LU25B1e3hu.jpg?width=720",
-            "alt": "시퀀스 미야시타 파크 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1503356",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1503356?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "시퀀스 미야시타 파크는 도쿄에 위치한 4성급 호텔로, 현대적인 시설과 편안한 숙박 환경을 제공합니다. 다양한 편의시설과 함께 도쿄의 매력을 만끽할 수 있는 최적의 장소입니다."
@@ -1420,7 +1240,7 @@
           "text": "주변 관광지에 대한 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1439,21 +1259,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1497848",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1497848-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/07/ODd7/jzRKGUCdyl.jpg?width=720",
-            "alt": "도쿄 베이 시오미 프린스 호텔 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1497848",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1497848?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "도쿄 베이 시오미 프린스 호텔은 일본 도쿄에 위치한 4성급 호텔입니다. 이 호텔은 다양한 시설과 서비스를 제공하며, 편안한 숙박을 위한 최적의 선택입니다."
@@ -1561,7 +1366,7 @@
           "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1580,21 +1385,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1220840",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1220840-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/QJQQ/b6bxeQEKYY.jpg?width=720",
-            "alt": "APA 호텔 신주쿠 교엠매 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1220840",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1220840?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "APA 호텔 신주쿠 교엠매는 도쿄에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의시설과 서비스를 제공하며, 도쿄 지역의 숙소로 적합합니다."
@@ -1693,7 +1483,7 @@
           "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1712,21 +1502,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1145543",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1145543-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/SLzU/Qzf38oH3hR.jpg?width=720",
-            "alt": "호텔 몬토레 긴자 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1145543",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1145543?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "호텔 몬토레 긴자는 일본 도쿄에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 제공하며, 도쿄 지역 내에서 편리한 숙박을 제공합니다."
@@ -1816,7 +1591,7 @@
           "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1835,21 +1610,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1105712",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1105712-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/08/Honv/2fwa1YvLVt.jpg?width=720",
-            "alt": "더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1105712",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1105712?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션은 일본 도쿄에 위치한 5성급 호텔입니다. 숙소 유형은 호텔이며, 현재 제공된 데이터에서는 구체적인 위치, 시설 및 레스토랑 정보가 확인되지 않습니다."
@@ -1932,7 +1692,7 @@
           "text": "5성급으로 표시됩니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -1952,21 +1712,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1420676",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1420676-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/21/5Mtg/4XQwKoRq82.jpg?width=720",
-            "alt": "미쓰이 가든 호텔 긴자 고초메 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1420676",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1420676?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "미쓰이 가든 호텔 긴자 고초메는 도쿄에 위치한 4성급 호텔입니다. 숙소 유형은 호텔이며, 마이리얼트립 API에서 제공된 기본 정보를 기반으로 소개합니다."
@@ -2053,7 +1798,7 @@
           "text": "숙소 유형은 호텔입니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",
@@ -2073,21 +1818,6 @@
       "destinationId": "japan-tokyo",
       "hotelId": "myrealtrip-1167753",
       "blocks": [
-        {
-          "type": "image",
-          "image": {
-            "id": "myrealtrip-1167753-hero",
-            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/19/shbo/swvcyQGseB.jpg?width=720",
-            "alt": "호텔 리스텔 신주쿠 대표 이미지",
-            "source": "myrealtrip",
-            "type": "hero",
-            "hotelId": "myrealtrip-1167753",
-            "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1167753?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            "rightsConfirmed": true
-          }
-        },
         {
           "type": "paragraph",
           "text": "호텔 리스텔 신주쿠는 일본 도쿄에 위치한 3성급 호텔이며, 숙소 유형은 호텔입니다. 체크인 및 체크아웃 시간 등 상세 정보는 제공된 데이터에서 확인되지 않습니다."
@@ -2174,7 +1904,7 @@
           "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-18",
+      "publishedAt": "2026-09-19",
       "author": "CozyTrip",
       "tags": [
         "도쿄",

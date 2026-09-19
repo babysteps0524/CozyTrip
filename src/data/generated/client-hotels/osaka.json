@@ -1,24 +1,23 @@
 {
-  "generatedAt": "2026-09-18T05:18:19.639Z",
+  "generatedAt": "2026-09-19T09:23:06.087Z",
   "source": "myrealtrip",
-  "hotelCount": 20,
-  "search": {
-    "checkIn": "2026-10-15",
-    "checkOut": "2026-10-18",
-    "adultCount": 2,
-    "childCount": 0
-  },
-  "imageUsageAllowed": true,
+  "hotelCount": 100,
+  "search": {},
+  "imageUsageAllowed": false,
   "hotels": [
     {
       "id": "myrealtrip-3578504",
+      "externalId": "3578504",
+      "provider": "myrealtrip",
       "name": "APA 호텔 & 리조트 오사카 난바 역앞 타워",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "apa-호텔-리조트-오사카-난바-역앞-타워-3578504",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 APA 호텔 & 리조트 오사카 난바 역앞 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -26,50 +25,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-3578504-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/jLkA/VyPo6uCxJw.jpg?width=720",
-          "alt": "APA 호텔 & 리조트 오사카 난바 역앞 타워 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-3578504",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3578504?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.4,
-      "numberOfReviews": 4852,
+      "numberOfReviews": 4863,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3578504?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3578504?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-5022564",
+      "externalId": "5022564",
+      "provider": "myrealtrip",
       "name": "소테츠 그랜드 프레사 오사카-난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "소테츠-그랜드-프레사-오사카-난바-5022564",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 소테츠 그랜드 프레사 오사카-난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -77,22 +67,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-5022564-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/07/y8Fp/VInbUDvate.jpg?width=720",
-          "alt": "소테츠 그랜드 프레사 오사카-난바 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-5022564",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5022564?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -102,25 +79,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5022564?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5022564?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1431475",
+      "externalId": "1431475",
+      "provider": "myrealtrip",
       "name": "호텔한큐레스파이어오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "호텔한큐레스파이어오사카-1431475",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 호텔한큐레스파이어오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -128,50 +109,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1431475-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/02/AH0Z/Kc1moGpnP2.jpg?width=720",
-          "alt": "호텔한큐레스파이어오사카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1431475",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1431475?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.6,
-      "numberOfReviews": 5739,
+      "numberOfReviews": 5746,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1431475?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1431475?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1286523",
+      "externalId": "1286523",
+      "provider": "myrealtrip",
       "name": "칸데오 호텔 오사카 난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "칸데오-호텔-오사카-난바-1286523",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 칸데오 호텔 오사카 난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -179,50 +151,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1286523-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/30/DmCk/3epU06jlC9.jpg?width=720",
-          "alt": "칸데오 호텔 오사카 난바 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1286523",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1286523?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.2,
-      "numberOfReviews": 1211,
+      "numberOfReviews": 1212,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1286523?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1286523?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1268563",
+      "externalId": "1268563",
+      "provider": "myrealtrip",
       "name": "호텔 일 쿠오레 남바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "호텔-일-쿠오레-남바-1268563",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 호텔 일 쿠오레 남바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -230,22 +193,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1268563-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/pmLw/AzPVuWByMl.jpg?width=720",
-          "alt": "호텔 일 쿠오레 남바 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1268563",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1268563?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -255,25 +205,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1268563?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1268563?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1560748",
+      "externalId": "1560748",
+      "provider": "myrealtrip",
       "name": "호텔 포르자 오사카 난바 도톤보리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "호텔-포르자-오사카-난바-도톤보리-1560748",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 호텔 포르자 오사카 난바 도톤보리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -281,50 +235,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1560748-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/MGk1/IcGEvTQ4uC.jpg?width=720",
-          "alt": "호텔 포르자 오사카 난바 도톤보리 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1560748",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1560748?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 3,
       "ratingAverage": 4.6,
-      "numberOfReviews": 1015,
+      "numberOfReviews": 1017,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1560748?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1560748?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1185003",
+      "externalId": "1185003",
+      "provider": "myrealtrip",
       "name": "오사카 테이코쿠 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "오사카-테이코쿠-호텔-1185003",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 오사카 테이코쿠 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -332,22 +277,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1185003-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/c3du/N9XZBbySD2.jpg?width=720",
-          "alt": "오사카 테이코쿠 호텔 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1185003",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185003?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -357,25 +289,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1185003?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1185003?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1162565",
+      "externalId": "1162565",
+      "provider": "myrealtrip",
       "name": "호텔 몬토레 그라스미아 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "호텔-몬토레-그라스미아-오사카-1162565",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 호텔 몬토레 그라스미아 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -383,22 +319,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1162565-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/01/j9SY/eaYVamxc30.jpg?width=720",
-          "alt": "호텔 몬토레 그라스미아 오사카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1162565",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1162565?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -408,25 +331,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1162565?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1162565?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1141495",
+      "externalId": "1141495",
+      "provider": "myrealtrip",
       "name": "남바 오리엔탈 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "남바-오리엔탈-호텔-1141495",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 남바 오리엔탈 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -434,50 +361,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1141495-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/tyAH/QBI1tR6MVK.jpg?width=720",
-          "alt": "남바 오리엔탈 호텔 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1141495",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1141495?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.4,
-      "numberOfReviews": 1644,
+      "numberOfReviews": 1647,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1141495?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1141495?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-3576037",
+      "externalId": "3576037",
+      "provider": "myrealtrip",
       "name": "더 원파이브 오사카 난바 도톤보리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "더-원파이브-오사카-난바-도톤보리-3576037",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 더 원파이브 오사카 난바 도톤보리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -485,22 +403,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-3576037-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/18/hvBA/Mja5rLdeou.jpg?width=720",
-          "alt": "더 원파이브 오사카 난바 도톤보리 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-3576037",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3576037?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -510,25 +415,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3576037?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3576037?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-5008384",
+      "externalId": "5008384",
+      "provider": "myrealtrip",
       "name": "오사카 도톤보리,난바,에비스주택 모리하우스(집 전체,아파트형,주택형) ",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "오사카-도톤보리-난바-에비스주택-모리하우스-집-전체-아파트형-주택형-5008384",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 오사카 도톤보리,난바,에비스주택 모리하우스(집 전체,아파트형,주택형)  호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -536,22 +445,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-5008384-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/10/ANWf/AC8I2VldAu.jpg?width=720",
-          "alt": "오사카 도톤보리,난바,에비스주택 모리하우스(집 전체,아파트형,주택형)  대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-5008384",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5008384?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -560,25 +456,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5008384?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5008384?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1641612",
+      "externalId": "1641612",
+      "provider": "myrealtrip",
       "name": "호텔 케이한 난바 그란데",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "호텔-케이한-난바-그란데-1641612",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 호텔 케이한 난바 그란데 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -586,22 +486,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1641612-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/JMg2/0U0eSRnsUm.jpg?width=720",
-          "alt": "호텔 케이한 난바 그란데 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1641612",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1641612?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -611,25 +498,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1641612?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1641612?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1270212",
+      "externalId": "1270212",
+      "provider": "myrealtrip",
       "name": "온야도 노노 남바 내추럴 핫 스프링",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "온야도-노노-남바-내추럴-핫-스프링-1270212",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 온야도 노노 남바 내추럴 핫 스프링 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -637,50 +528,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1270212-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/Tgfg/o86ycdifQP.jpg?width=720",
-          "alt": "온야도 노노 남바 내추럴 핫 스프링 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1270212",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1270212?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.6,
-      "numberOfReviews": 1501,
+      "numberOfReviews": 1503,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1270212?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1270212?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1134335",
+      "externalId": "1134335",
+      "provider": "myrealtrip",
       "name": "호텔 케이한 유니버설 타워",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "호텔-케이한-유니버설-타워-1134335",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 호텔 케이한 유니버설 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -688,22 +570,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1134335-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/v8Pd/vBfm8CcOx4.jpg?width=720",
-          "alt": "호텔 케이한 유니버설 타워 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1134335",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1134335?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -713,25 +582,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1134335?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1134335?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-3587508",
+      "externalId": "3587508",
+      "provider": "myrealtrip",
       "name": "Toyoko Inn Osaka Namba",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "toyoko-inn-osaka-namba-3587508",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 Toyoko Inn Osaka Namba 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -739,22 +612,9 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-3587508-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/21/3Wvd/QBTlC39q3J.jpg?width=720",
-          "alt": "Toyoko Inn Osaka Namba 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-3587508",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587508?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -764,25 +624,29 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3587508?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3587508?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1285400",
+      "externalId": "1285400",
+      "provider": "myrealtrip",
       "name": "더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "더-싱귤러리-호텔-스카이스파-앳-유니버설-스튜디오-재팬-1285400",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -790,50 +654,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1285400-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/amba/V7KOawCbxe.jpg?width=720",
-          "alt": "더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1285400",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1285400?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.4,
-      "numberOfReviews": 1247,
+      "numberOfReviews": 1250,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1285400?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1285400?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1301211",
+      "externalId": "1301211",
+      "provider": "myrealtrip",
       "name": "레드 루프 인 & 스위트 오사카 - 남바/닛폰바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "레드-루프-인-스위트-오사카-남바-닛폰바시-1301211",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 레드 루프 인 & 스위트 오사카 - 남바/닛폰바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -841,50 +696,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1301211-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/17/1lNp/bKDWDAqwbr.jpg?width=720",
-          "alt": "레드 루프 인 & 스위트 오사카 - 남바/닛폰바시 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1301211",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1301211?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.4,
-      "numberOfReviews": 1031,
+      "numberOfReviews": 1032,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1301211?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1301211?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1575824",
+      "externalId": "1575824",
+      "provider": "myrealtrip",
       "name": "오리엔탈 호텔 유니버설 시티",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "오리엔탈-호텔-유니버설-시티-1575824",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 오리엔탈 호텔 유니버설 시티 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -892,50 +738,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1575824-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/29/oDzn/0f34WJt4fK.jpg?width=720",
-          "alt": "오리엔탈 호텔 유니버설 시티 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1575824",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1575824?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.6,
-      "numberOfReviews": 1642,
+      "numberOfReviews": 1644,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1575824?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1575824?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-1170153",
+      "externalId": "1170153",
+      "provider": "myrealtrip",
       "name": "홀리데이 인 오사카 남바 바이 IHG",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "홀리데이-인-오사카-남바-바이-ihg-1170153",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 홀리데이 인 오사카 남바 바이 IHG 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -943,50 +780,41 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-1170153-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/03/38oZ/auuuUzTHur.jpg?width=720",
-          "alt": "홀리데이 인 오사카 남바 바이 IHG 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-1170153",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1170153?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 4,
       "ratingAverage": 4.2,
-      "numberOfReviews": 1035,
+      "numberOfReviews": 1036,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1170153?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1170153?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     },
     {
       "id": "myrealtrip-5009707",
+      "externalId": "5009707",
+      "provider": "myrealtrip",
       "name": "센타라 그랜드 호텔 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:41.383Z",
       "slug": "센타라-그랜드-호텔-오사카-5009707",
       "country": "일본",
       "countryCode": "JP",
       "prefecture": "Osaka",
       "city": "오사카",
-      "area": "오사카",
+      "area": "",
       "destinationId": "japan-osaka",
       "description": "오사카 지역의 센타라 그랜드 호텔 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
       "location": {
@@ -994,40 +822,3382 @@
         "countryCode": "JP",
         "prefecture": "Osaka",
         "city": "오사카",
-        "area": "오사카"
+        "area": ""
       },
-      "images": [
-        {
-          "id": "myrealtrip-5009707-hero",
-          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/13/ZJIZ/2zAOumm9tI.png?width=720",
-          "alt": "센타라 그랜드 호텔 오사카 대표 이미지",
-          "source": "myrealtrip",
-          "type": "hero",
-          "hotelId": "myrealtrip-5009707",
-          "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5009707?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
-          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-          "rightsConfirmed": true
-        }
-      ],
+      "images": [],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
       "starRating": 5,
       "ratingAverage": 4.7,
-      "numberOfReviews": 2109,
+      "numberOfReviews": 2113,
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5009707?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5009707?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-18",
-      "updatedAt": "2026-09-18"
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1287820",
+      "externalId": "1287820",
+      "provider": "myrealtrip",
+      "name": "APA 호텔 난바 에키히가시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "apa-호텔-난바-에키히가시-1287820",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 APA 호텔 난바 에키히가시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1217,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1287820?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1487930",
+      "externalId": "1487930",
+      "provider": "myrealtrip",
+      "name": "시타딘스 난바 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "시타딘스-난바-오사카-1487930",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 시타딘스 난바 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 1752,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1487930?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1158913",
+      "externalId": "1158913",
+      "provider": "myrealtrip",
+      "name": "호텔 유니버설 포트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "호텔-유니버설-포트-1158913",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 유니버설 포트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 2097,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1158913?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5034811",
+      "externalId": "5034811",
+      "provider": "myrealtrip",
+      "name": "스마일호텔 프리미엄 오사카 히가시 신사이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "스마일호텔-프리미엄-오사카-히가시-신사이바시-5034811",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 스마일호텔 프리미엄 오사카 히가시 신사이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1012,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5034811?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1558186",
+      "externalId": "1558186",
+      "provider": "myrealtrip",
+      "name": "호텔 인터게이트 오사카 우메다",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "호텔-인터게이트-오사카-우메다-1558186",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 인터게이트 오사카 우메다 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1271,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1558186?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3757271",
+      "externalId": "3757271",
+      "provider": "myrealtrip",
+      "name": "호텔한큐그란레스파이어오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "호텔한큐그란레스파이어오사카-3757271",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔한큐그란레스파이어오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 735,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3757271?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3575113",
+      "externalId": "3575113",
+      "provider": "myrealtrip",
+      "name": "칸데오 호텔 오사카 더 타워",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "칸데오-호텔-오사카-더-타워-3575113",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 칸데오 호텔 오사카 더 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 2081,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3575113?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1634667",
+      "externalId": "1634667",
+      "provider": "myrealtrip",
+      "name": "빌라 퐁텐 그랜드 오사카 우메다",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "빌라-퐁텐-그랜드-오사카-우메다-1634667",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 빌라 퐁텐 그랜드 오사카 우메다 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1051,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1634667?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1627989",
+      "externalId": "1627989",
+      "provider": "myrealtrip",
+      "name": "APA 호텔 & 리조트 오사카 우메다 에키 타워",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "apa-호텔-리조트-오사카-우메다-에키-타워-1627989",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 APA 호텔 & 리조트 오사카 우메다 에키 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 3816,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1627989?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3565649",
+      "externalId": "3565649",
+      "provider": "myrealtrip",
+      "name": "오사카 히노데 호텔 닛폰바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "오사카-히노데-호텔-닛폰바시-3565649",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 오사카 히노데 호텔 닛폰바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 664,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3565649?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1204415",
+      "externalId": "1204415",
+      "provider": "myrealtrip",
+      "name": "도미 인 프리미엄 난바 내추럴 핫스프링",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "도미-인-프리미엄-난바-내추럴-핫스프링-1204415",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 도미 인 프리미엄 난바 내추럴 핫스프링 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1380,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1204415?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1558124",
+      "externalId": "1558124",
+      "provider": "myrealtrip",
+      "name": "웰스테이 난바 9F",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "웰스테이-난바-9f-1558124",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 웰스테이 난바 9F 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 12,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1558124?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1170090",
+      "externalId": "1170090",
+      "provider": "myrealtrip",
+      "name": "하튼 호텔 니시우메다",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "하튼-호텔-니시우메다-1170090",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 하튼 호텔 니시우메다 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1009,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1170090?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1622416",
+      "externalId": "1622416",
+      "provider": "myrealtrip",
+      "name": "스마일 호텔 오사카 요츠바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "스마일-호텔-오사카-요츠바시-1622416",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 스마일 호텔 오사카 요츠바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1034,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1622416?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5015939",
+      "externalId": "5015939",
+      "provider": "myrealtrip",
+      "name": "더 파크 프런트 호텔 앳 유니버설 스튜디오 재팬",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.274Z",
+      "slug": "더-파크-프런트-호텔-앳-유니버설-스튜디오-재팬-5015939",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 더 파크 프런트 호텔 앳 유니버설 스튜디오 재팬 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 2247,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5015939?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1192769",
+      "externalId": "1192769",
+      "provider": "myrealtrip",
+      "name": "아크 호텔 오사카 신사이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.275Z",
+      "slug": "아크-호텔-오사카-신사이바시-1192769",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 아크 호텔 오사카 신사이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4,
+      "numberOfReviews": 1005,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1192769?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5624175",
+      "externalId": "5624175",
+      "provider": "myrealtrip",
+      "name": "오사카 / 도톤보리 / 코즈 민박",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.275Z",
+      "slug": "오사카-도톤보리-코즈-민박-5624175",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 오사카 / 도톤보리 / 코즈 민박 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 5,
+      "numberOfReviews": 23,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5624175?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1460552",
+      "externalId": "1460552",
+      "provider": "myrealtrip",
+      "name": "호텔 비스타 오사카 남바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.275Z",
+      "slug": "호텔-비스타-오사카-남바-1460552",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 비스타 오사카 남바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 843,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1460552?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1279270",
+      "externalId": "1279270",
+      "provider": "myrealtrip",
+      "name": "와이즈 캐빈 오사카 난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.275Z",
+      "slug": "와이즈-캐빈-오사카-난바-1279270",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 와이즈 캐빈 오사카 난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 583,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1279270?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5957419",
+      "externalId": "5957419",
+      "provider": "myrealtrip",
+      "name": "코코호텔 남바 센니치마에",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:42.275Z",
+      "slug": "코코호텔-남바-센니치마에-5957419",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 코코호텔 남바 센니치마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 177,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5957419?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1101376",
+      "externalId": "1101376",
+      "provider": "myrealtrip",
+      "name": "스위소텔 난카이 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "스위소텔-난카이-오사카-1101376",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 스위소텔 난카이 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1765,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1101376?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5005936",
+      "externalId": "5005936",
+      "provider": "myrealtrip",
+      "name": "오사카 모리하우스 난바점 (집전체, 아파트형 독채)",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "오사카-모리하우스-난바점-집전체-아파트형-독채-5005936",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 오사카 모리하우스 난바점 (집전체, 아파트형 독채) 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.9,
+      "numberOfReviews": 90,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5005936?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1171207",
+      "externalId": "1171207",
+      "provider": "myrealtrip",
+      "name": "하튼 호텔 신사이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "하튼-호텔-신사이바시-1171207",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 하튼 호텔 신사이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 1012,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1171207?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1434784",
+      "externalId": "1434784",
+      "provider": "myrealtrip",
+      "name": "히요리 호텔 오사카 남바 스테이션",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "히요리-호텔-오사카-남바-스테이션-1434784",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 히요리 호텔 오사카 남바 스테이션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1299,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1434784?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1325118",
+      "externalId": "1325118",
+      "provider": "myrealtrip",
+      "name": "호텔 몬토레 레 프레리 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "호텔-몬토레-레-프레리-오사카-1325118",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 몬토레 레 프레리 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 2915,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1325118?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1318112",
+      "externalId": "1318112",
+      "provider": "myrealtrip",
+      "name": "아트 호텔 오사카 베이 타워",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "아트-호텔-오사카-베이-타워-1318112",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 아트 호텔 오사카 베이 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1015,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1318112?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5649783",
+      "externalId": "5649783",
+      "provider": "myrealtrip",
+      "name": "OMO7 오사카 by 호시노 리조트 ",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "omo7-오사카-by-호시노-리조트-5649783",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 OMO7 오사카 by 호시노 리조트  호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1018,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5649783?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3590140",
+      "externalId": "3590140",
+      "provider": "myrealtrip",
+      "name": "칸데오 호텔 오사카 신사이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "칸데오-호텔-오사카-신사이바시-3590140",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 칸데오 호텔 오사카 신사이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 632,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3590140?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4883881",
+      "externalId": "4883881",
+      "provider": "myrealtrip",
+      "name": "호텔 아마넥 오사카 난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "호텔-아마넥-오사카-난바-4883881",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 아마넥 오사카 난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 354,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4883881?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1101778",
+      "externalId": "1101778",
+      "provider": "myrealtrip",
+      "name": "크로스 호텔 오사카（오릭스 호텔 & 리조트）",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "크로스-호텔-오사카-오릭스-호텔-리조트-1101778",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 크로스 호텔 오사카（오릭스 호텔 & 리조트） 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1259,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1101778?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1332146",
+      "externalId": "1332146",
+      "provider": "myrealtrip",
+      "name": "호텔 유니버설 포트 비타",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "호텔-유니버설-포트-비타-1332146",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 유니버설 포트 비타 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1566,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1332146?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1537813",
+      "externalId": "1537813",
+      "provider": "myrealtrip",
+      "name": "그리즈 프리미엄 호텔 오사카 난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "그리즈-프리미엄-호텔-오사카-난바-1537813",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 그리즈 프리미엄 호텔 오사카 난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 725,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1537813?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1302938",
+      "externalId": "1302938",
+      "provider": "myrealtrip",
+      "name": "호텔 비슈치오 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "호텔-비슈치오-오사카-1302938",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 비슈치오 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1006,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1302938?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1514329",
+      "externalId": "1514329",
+      "provider": "myrealtrip",
+      "name": "IAM 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "iam-호텔-1514329",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 IAM 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 146,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1514329?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1277621",
+      "externalId": "1277621",
+      "provider": "myrealtrip",
+      "name": "프리미어 호텔 캐빈 프레지던트 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "프리미어-호텔-캐빈-프레지던트-오사카-1277621",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 프리미어 호텔 캐빈 프레지던트 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1024,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1277621?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1459896",
+      "externalId": "1459896",
+      "provider": "myrealtrip",
+      "name": "호텔 지오메틱 오사카 우메다, 어센드 컬렉션 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "호텔-지오메틱-오사카-우메다-어센드-컬렉션-호텔-1459896",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 지오메틱 오사카 우메다, 어센드 컬렉션 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 41,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1459896?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1437676",
+      "externalId": "1437676",
+      "provider": "myrealtrip",
+      "name": "웰리나 호텔 프리미어 신사이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "웰리나-호텔-프리미어-신사이바시-1437676",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 웰리나 호텔 프리미어 신사이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 391,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1437676?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1362549",
+      "externalId": "1362549",
+      "provider": "myrealtrip",
+      "name": "도미 인 프리미엄 남바 아넥스 내추럴 핫 스프링",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "도미-인-프리미엄-남바-아넥스-내추럴-핫-스프링-1362549",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 도미 인 프리미엄 남바 아넥스 내추럴 핫 스프링 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1014,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1362549?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1191446",
+      "externalId": "1191446",
+      "provider": "myrealtrip",
+      "name": "미로 호텔 도톤보리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "미로-호텔-도톤보리-1191446",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 미로 호텔 도톤보리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.9,
+      "numberOfReviews": 357,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1191446?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1334308",
+      "externalId": "1334308",
+      "provider": "myrealtrip",
+      "name": "오사카 뷰 호텔 혼마치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:44.530Z",
+      "slug": "오사카-뷰-호텔-혼마치-1334308",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 오사카 뷰 호텔 혼마치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1334308?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1194722",
+      "externalId": "1194722",
+      "provider": "myrealtrip",
+      "name": "APA 호텔 난바 신사이바시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "apa-호텔-난바-신사이바시-1194722",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 APA 호텔 난바 신사이바시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1012,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1194722?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1331961",
+      "externalId": "1331961",
+      "provider": "myrealtrip",
+      "name": "도미 인 오사카 다니마치 내추럴 핫 스프링",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "도미-인-오사카-다니마치-내추럴-핫-스프링-1331961",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 도미 인 오사카 다니마치 내추럴 핫 스프링 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1331961?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1116644",
+      "externalId": "1116644",
+      "provider": "myrealtrip",
+      "name": "호텔 그란비아 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "호텔-그란비아-오사카-1116644",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 그란비아 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1583,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1116644?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1367664",
+      "externalId": "1367664",
+      "provider": "myrealtrip",
+      "name": "더 원파이브 오사카 남바 쿠로몬",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "더-원파이브-오사카-남바-쿠로몬-1367664",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 더 원파이브 오사카 남바 쿠로몬 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1014,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1367664?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3657007",
+      "externalId": "3657007",
+      "provider": "myrealtrip",
+      "name": "Acro Capsule Hotel Namba Dotonbori",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "acro-capsule-hotel-namba-dotonbori-3657007",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 Acro Capsule Hotel Namba Dotonbori 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 2,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 253,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3657007?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1301206",
+      "externalId": "1301206",
+      "provider": "myrealtrip",
+      "name": "카락사 호텔 오사카 난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "카락사-호텔-오사카-난바-1301206",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 카락사 호텔 오사카 난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1056,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1301206?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4451900",
+      "externalId": "4451900",
+      "provider": "myrealtrip",
+      "name": "UH 스위트 난바 스테이션",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "uh-스위트-난바-스테이션-4451900",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 UH 스위트 난바 스테이션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 64,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4451900?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1465977",
+      "externalId": "1465977",
+      "provider": "myrealtrip",
+      "name": "니폰바시 아트 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "니폰바시-아트-호텔-1465977",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 니폰바시 아트 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.5,
+      "numberOfReviews": 250,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1465977?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1613422",
+      "externalId": "1613422",
+      "provider": "myrealtrip",
+      "name": "미마루, 오사카 난바역",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "미마루-오사카-난바역-1613422",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 미마루, 오사카 난바역 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 448,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1613422?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5007184",
+      "externalId": "5007184",
+      "provider": "myrealtrip",
+      "name": "오사카 코코네 하우스 난바점",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "오사카-코코네-하우스-난바점-5007184",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 오사카 코코네 하우스 난바점 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.9,
+      "numberOfReviews": 18,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5007184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3731860",
+      "externalId": "3731860",
+      "provider": "myrealtrip",
+      "name": "웰리나 프리미어 오사카 남바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "웰리나-프리미어-오사카-남바-3731860",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 웰리나 프리미어 오사카 남바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 82,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3731860?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1280796",
+      "externalId": "1280796",
+      "provider": "myrealtrip",
+      "name": "신사이바시 그랜드 호텔 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "신사이바시-그랜드-호텔-오사카-1280796",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 신사이바시 그랜드 호텔 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 466,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1280796?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1125444",
+      "externalId": "1125444",
+      "provider": "myrealtrip",
+      "name": "호텔 한큐 인터내셔널",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "호텔-한큐-인터내셔널-1125444",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 한큐 인터내셔널 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1002,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1125444?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1589965",
+      "externalId": "1589965",
+      "provider": "myrealtrip",
+      "name": "신사이바시 아티 인",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "신사이바시-아티-인-1589965",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 신사이바시 아티 인 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 357,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1589965?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1400270",
+      "externalId": "1400270",
+      "provider": "myrealtrip",
+      "name": "호텔 그레서리 오사카 남바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "호텔-그레서리-오사카-남바-1400270",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 그레서리 오사카 남바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 999,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1400270?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1463063",
+      "externalId": "1463063",
+      "provider": "myrealtrip",
+      "name": "호텔 포르자 오사카 기타하마",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "호텔-포르자-오사카-기타하마-1463063",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 포르자 오사카 기타하마 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 724,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1463063?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5985097",
+      "externalId": "5985097",
+      "provider": "myrealtrip",
+      "name": "스가타 호텔 오사카 신사이바시, 시리즈 바이 메리어트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "스가타-호텔-오사카-신사이바시-시리즈-바이-메리어트-5985097",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 스가타 호텔 오사카 신사이바시, 시리즈 바이 메리어트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 93,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5985097?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1250443",
+      "externalId": "1250443",
+      "provider": "myrealtrip",
+      "name": "리치몬드 호텔 남바 다이코쿠쵸",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "리치몬드-호텔-남바-다이코쿠쵸-1250443",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 리치몬드 호텔 남바 다이코쿠쵸 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1006,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1250443?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4069388",
+      "externalId": "4069388",
+      "provider": "myrealtrip",
+      "name": "RIHGA Royal Hotel Osaka, Vignette Collect by IHG",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "rihga-royal-hotel-osaka-vignette-collect-by-ihg-4069388",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 RIHGA Royal Hotel Osaka, Vignette Collect by IHG 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1385,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4069388?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1215918",
+      "externalId": "1215918",
+      "provider": "myrealtrip",
+      "name": "호텔 릴리프 남바 다이코쿠초우",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:46.355Z",
+      "slug": "호텔-릴리프-남바-다이코쿠초우-1215918",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 릴리프 남바 다이코쿠초우 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1215918?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1296637",
+      "externalId": "1296637",
+      "provider": "myrealtrip",
+      "name": "가몬 호텔 남바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "가몬-호텔-남바-1296637",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 가몬 호텔 남바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 687,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1296637?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1342570",
+      "externalId": "1342570",
+      "provider": "myrealtrip",
+      "name": "웰리나 호텔 도톤보리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "웰리나-호텔-도톤보리-1342570",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 웰리나 호텔 도톤보리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 213,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1342570?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1427001",
+      "externalId": "1427001",
+      "provider": "myrealtrip",
+      "name": "카락사 호텔 그란데 신오사카 타워",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "카락사-호텔-그란데-신오사카-타워-1427001",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 카락사 호텔 그란데 신오사카 타워 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 2540,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1427001?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1537147",
+      "externalId": "1537147",
+      "provider": "myrealtrip",
+      "name": "베셀 인 난바",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "베셀-인-난바-1537147",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 베셀 인 난바 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 201,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1537147?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1976784",
+      "externalId": "1976784",
+      "provider": "myrealtrip",
+      "name": "호텔 보티보티 - 구. 호텔 리치리치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "호텔-보티보티-구-호텔-리치리치-1976784",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 보티보티 - 구. 호텔 리치리치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 19,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1976784?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1575220",
+      "externalId": "1575220",
+      "provider": "myrealtrip",
+      "name": "APA 호텔 난바 신사이바시 니시",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "apa-호텔-난바-신사이바시-니시-1575220",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 APA 호텔 난바 신사이바시 니시 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 736,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1575220?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-5725489",
+      "externalId": "5725489",
+      "provider": "myrealtrip",
+      "name": "젠티스 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "젠티스-오사카-5725489",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 젠티스 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 801,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/5725489?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1122333",
+      "externalId": "1122333",
+      "provider": "myrealtrip",
+      "name": "호텔 뉴 오타니 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "호텔-뉴-오타니-오사카-1122333",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 뉴 오타니 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 2472,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1122333?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1414120",
+      "externalId": "1414120",
+      "provider": "myrealtrip",
+      "name": "베스트 웨스턴 플러스 호텔 피노 오사카 기타하마",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "베스트-웨스턴-플러스-호텔-피노-오사카-기타하마-1414120",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 베스트 웨스턴 플러스 호텔 피노 오사카 기타하마 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1023,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1414120?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1321188",
+      "externalId": "1321188",
+      "provider": "myrealtrip",
+      "name": "하튼 호텔 신사이바시 나가호리도리",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "하튼-호텔-신사이바시-나가호리도리-1321188",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 하튼 호텔 신사이바시 나가호리도리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1003,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1321188?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1425101",
+      "externalId": "1425101",
+      "provider": "myrealtrip",
+      "name": "리버 호텔 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "리버-호텔-오사카-1425101",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 리버 호텔 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 2765,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1425101?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1121810",
+      "externalId": "1121810",
+      "provider": "myrealtrip",
+      "name": "호텔 뉴 한큐 오사카 아넥스",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "호텔-뉴-한큐-오사카-아넥스-1121810",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 뉴 한큐 오사카 아넥스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.1,
+      "numberOfReviews": 1008,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1121810?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1454615",
+      "externalId": "1454615",
+      "provider": "myrealtrip",
+      "name": "웰리나 호텔 신사이바시 나고미",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "웰리나-호텔-신사이바시-나고미-1454615",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 웰리나 호텔 신사이바시 나고미 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 47,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1454615?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1400426",
+      "externalId": "1400426",
+      "provider": "myrealtrip",
+      "name": "도톤보리 크리스탈 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "도톤보리-크리스탈-호텔-1400426",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 도톤보리 크리스탈 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 369,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1400426?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1595439",
+      "externalId": "1595439",
+      "provider": "myrealtrip",
+      "name": "코코 호텔 오사카 남바 에비스초",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "코코-호텔-오사카-남바-에비스초-1595439",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 코코 호텔 오사카 남바 에비스초 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 364,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1595439?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1498160",
+      "externalId": "1498160",
+      "provider": "myrealtrip",
+      "name": "호텔 엘시엔트 오사카 우메다",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "호텔-엘시엔트-오사카-우메다-1498160",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 호텔 엘시엔트 오사카 우메다 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 767,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1498160?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1169280",
+      "externalId": "1169280",
+      "provider": "myrealtrip",
+      "name": "야마토야 혼텐 료칸 오사카",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "야마토야-혼텐-료칸-오사카-1169280",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 야마토야 혼텐 료칸 오사카 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.2,
+      "numberOfReviews": 688,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1169280?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-3586829",
+      "externalId": "3586829",
+      "provider": "myrealtrip",
+      "name": "Eslead Hotel  Namba Daikokucho",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "eslead-hotel-namba-daikokucho-3586829",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 Eslead Hotel  Namba Daikokucho 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 196,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3586829?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1168402",
+      "externalId": "1168402",
+      "provider": "myrealtrip",
+      "name": "도톤보리 호텔",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "도톤보리-호텔-1168402",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 도톤보리 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 1013,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1168402?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-4139527",
+      "externalId": "4139527",
+      "provider": "myrealtrip",
+      "name": "유니토 남바 모토마치",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-19T09:22:47.710Z",
+      "slug": "유니토-남바-모토마치-4139527",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Osaka",
+      "city": "오사카",
+      "area": "",
+      "destinationId": "japan-osaka",
+      "description": "오사카 지역의 유니토 남바 모토마치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Osaka",
+        "city": "오사카",
+        "area": ""
+      },
+      "images": [],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 2,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 57,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4139527?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-19",
+      "updatedAt": "2026-09-19"
     }
   ]
 }
