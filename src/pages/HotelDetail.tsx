@@ -1,6 +1,7 @@
-import type { Destination } from "../types";
+import type { Destination, Hotel, Post } from "../types";
 import { Container, Section } from "../components/common";
 import {
+  AffiliateDisclosure,
   HotelBooking,
   HotelFacilities,
   HotelGallery,
@@ -9,32 +10,88 @@ import {
   HotelRoomCard,
   HotelStayInfo,
   HotelSummary,
-  RelatedHotels,
   RelatedGuides,
-  AffiliateDisclosure,
+  RelatedHotels,
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
-import type { Hotel } from "../types";
 import { isDisplayableHotelImage } from "../lib/image";
-
-function formatDate(value: string | undefined): string | undefined {
-  if (!value) return undefined;
-  const date = new Date(value);
-  if (Number.isNaN(date.getTime())) return value;
-  return new Intl.DateTimeFormat("ko-KR", { year: "numeric", month: "long", day: "numeric" }).format(date);
-}
-import {
-  createCanonical,
-  createHotelStructuredData,
-  createBreadcrumbStructuredData,
-} from "../lib/seo";
 
 interface HotelDetailProps {
   hotel: Hotel;
   destination?: Destination;
-  hotelPosts: import("../types").Post[];
-  relatedGuides: import("../types").Post[];
+  hotelPosts: Post[];
+  relatedGuides: Post[];
   relatedHotels: Hotel[];
+}
+
+interface ArticleHeading {
+  text: string;
+  id: string;
+}
+
+function formatDate(value: string | undefined): string | undefined {
+  if (!value) return undefined;
+
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return new Intl.DateTimeFormat("ko-KR", {
+    year: "numeric",
+    month: "long",
+    day: "numeric",
+  }).format(date);
+}
+
+function createHeadingId(text: string, index: number): string {
+  const slug = text
+    .normalize("NFKD")
+    .toLowerCase()
+    .trim()
+    .replace(/[^\p{Letter}\p{Number}]+/gu, "-")
+    .replace(/^-+|-+$/g, "");
+
+  return `post-heading-${slug || "section"}-${index}`;
+}
+
+function getArticleHeadings(posts: Post[]): ArticleHeading[] {
+  return posts.flatMap((post) =>
+    post.blocks.flatMap((block, index) =>
+      block.type === "heading" && block.level === 2
+        ? [{ text: block.text, id: createHeadingId(block.text, index) }]
+        : [],
+    ),
+  );
+}
+
+function getDestinationSlug(hotel: Hotel, destination?: Destination): string {
+  return destination?.slug ?? hotel.city.toLowerCase();
+}
+
+function getDateLabels(hotel: Hotel, hotelPost?: Post) {
+  const publishedLabel = formatDate(
+    hotelPost?.publishedAt ?? hotel.publishedAt,
+  );
+  const updatedLabel = formatDate(hotelPost?.updatedAt ?? hotel.updatedAt);
+
+  return { publishedLabel, updatedLabel };
+}
+
+function getCheckpoints(hotel: Hotel): Array<[string, string]> {
+  return [
+    ["지역", [hotel.city, hotel.area].filter(Boolean).join(" · ")],
+    ["숙소 유형", hotel.accommodationType ?? ""],
+    [
+      "가까운 역",
+      hotel.location.nearestStations?.slice(0, 2).filter(Boolean).join(" · ") ?? "",
+    ],
+    [
+      "체크인 · 체크아웃",
+      [hotel.checkIn, hotel.checkOut].filter(Boolean).join(" · "),
+    ],
+  ].filter(([, value]) => Boolean(value));
 }
 
 export default function HotelDetail({
@@ -44,21 +101,27 @@ export default function HotelDetail({
   relatedGuides,
   relatedHotels,
 }: HotelDetailProps) {
-  const destinationSlug = destination?.slug ?? hotel.city.toLowerCase();
+  const destinationSlug = getDestinationSlug(hotel, destination);
   const hotelPost = hotelPosts.find(
     (post) => post.category === "hotel" && post.hotelId === hotel.id,
   );
   const articleImage = hotel.images.find(isDisplayableHotelImage);
+  const articleHeadings = getArticleHeadings(hotelPosts);
+  const { publishedLabel, updatedLabel } = getDateLabels(hotel, hotelPost);
+  const checkpoints = getCheckpoints(hotel);
 
-  const articleHeadings = hotelPosts.flatMap((post) =>
-    post.blocks
-      .map((block, index) => ({ block, index }))
-      .filter(({ block }) => block.type === "heading" && block.level === 2)
-      .map(({ block, index }) => ({
-        text: block.type === "heading" ? block.text : "",
-        id: `post-heading-${block.type === "heading" ? block.text.normalize("NFKD").toLowerCase().trim().replace(/[^\\p{Letter}\\p{Number}]+/gu, "-").replace(/^-+|-+$/g, "") : "section"}-${index}`,
-      })),
-  );
+  const sectionLinks = [
+    { href: "#guide", label: "소개" },
+    ...(hotel.rooms?.length ? [{ href: "#rooms", label: "객실" }] : []),
+    ...(hotel.facilities?.length
+      ? [{ href: "#facilities", label: "시설" }]
+      : []),
+    ...(hotel.restaurants?.length
+      ? [{ href: "#dining", label: "다이닝" }]
+      : []),
+    { href: "#location", label: "위치" },
+    { href: "#booking", label: "예약 정보" },
+  ];
 
   return (
     <main>
@@ -72,26 +135,50 @@ export default function HotelDetail({
             text="xs ct-muted dark:ct-dark-muted"
             aria-label="Breadcrumb"
           >
-            <a href="/" px="1" py="1" rounded="md"
+            <a
+              href="/"
+              px="1"
+              py="1"
+              rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="98">
+              active-scale="98"
+              className="ct-focus"
+            >
               홈
             </a>
             <span px="1" aria-hidden="true">/</span>
-            <a href={`/japan/${destinationSlug}/`} px="1" py="1" rounded="md"
+            <a
+              href={`/japan/${destinationSlug}/`}
+              px="1"
+              py="1"
+              rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="98">
+              active-scale="98"
+              className="ct-focus"
+            >
               {hotel.city}
             </a>
             <span px="1" aria-hidden="true">/</span>
-            <a href={`/japan/${destinationSlug}/hotels/`} px="1" py="1" rounded="md"
+            <a
+              href={`/japan/${destinationSlug}/hotels/`}
+              px="1"
+              py="1"
+              rounded="md"
               hover="text-ct-primary dark:text-ct-dark-text bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-              active-scale="98">
+              active-scale="98"
+              className="ct-focus"
+            >
               호텔
             </a>
             <span px="1" aria-hidden="true">/</span>
-            <span max-w="full" overflow="hidden" text-overflow="ellipsis" whitespace="nowrap"
-              text="ct-text-soft dark:ct-dark-text-soft" aria-current="page">
+            <span
+              max-w="full"
+              overflow="hidden"
+              text-overflow="ellipsis"
+              whitespace="nowrap"
+              text="ct-text-soft dark:ct-dark-text-soft"
+              aria-current="page"
+            >
               {hotel.name}
             </span>
           </nav>
@@ -119,27 +206,30 @@ export default function HotelDetail({
             text="sm"
             aria-label="호텔 상세 메뉴"
           >
-            <span mr="1" shrink="0" text="xs ct-muted dark:ct-dark-muted" font="medium">
+            <span
+              mr="1"
+              shrink="0"
+              text="xs ct-muted dark:ct-dark-muted"
+              font="medium"
+            >
               바로가기
             </span>
-            <a href="#guide" shrink="0" rounded="full" border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:ct-dark-surface" px="3" py="1.5"
-              text="ct-text-soft dark:ct-dark-text-soft" hover="text-ct-primary dark:text-ct-dark-text"
-              active-scale="98">
-              소개
-            </a>
-            {[
-              ...(hotel.rooms?.length ? [["#rooms", "객실"]] : []),
-              ...(hotel.facilities?.length ? [["#facilities", "시설"]] : []),
-              ...(hotel.restaurants?.length ? [["#dining", "다이닝"]] : []),
-              ["#location", "위치"],
-              ["#booking", "예약 정보"],
-            ].map(([href, label]) => (
-              <a key={href} href={href} shrink="0" rounded="full"
-                border="~ ct-line dark:ct-dark-line" bg="ct-surface dark:ct-dark-surface"
-                px="3" py="1.5" text="ct-text-soft dark:ct-dark-text-soft"
-                hover="text-ct-primary dark:text-ct-dark-text" active-scale="98">
-                {label}
+            {sectionLinks.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                shrink="0"
+                rounded="full"
+                border="~ ct-line dark:ct-dark-line"
+                bg="ct-surface dark:ct-dark-surface"
+                px="3"
+                py="1.5"
+                text="ct-text-soft dark:ct-dark-text-soft"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                active-scale="98"
+                className="ct-focus"
+              >
+                {link.label}
               </a>
             ))}
           </nav>
@@ -149,20 +239,52 @@ export default function HotelDetail({
       <Section id="guide">
         <Container>
           <div>
-            <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+            <p
+              m="0"
+              text="xs ct-primary dark:ct-dark-text-soft"
+              font="medium"
+              tracking="wide"
+            >
               COZYTRIP HOTEL NOTE
             </p>
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">호텔 소개와 여행 메모</h2>
-            <div mt="4" flex="~ wrap" items="center" gap="2 sm:3" text="xs ct-muted dark:ct-dark-muted">
-              <span font="medium" text="ct-text-soft dark:ct-dark-text-soft">CozyTrip</span>
-              {(() => {
-                const publishedLabel = formatDate(hotelPost?.publishedAt ?? hotel.publishedAt);
-                const updatedLabel = formatDate(hotelPost?.updatedAt ?? hotel.updatedAt);
-                return <>{publishedLabel && <span>작성 {publishedLabel}</span>}{updatedLabel && updatedLabel !== publishedLabel && <span>수정 {updatedLabel}</span>}</>;
-              })()}
-            </div>
-            <p mt="3" mb="0" max-w="3xl" text="sm ct-muted dark:ct-dark-muted" leading="relaxed">
-              CozyTrip가 여행자가 호텔을 살펴볼 때 참고할 수 있도록 정리한 정보입니다. 실제 예약 조건은 각 예약 플랫폼에서 다시 확인해 주세요.
+            <h2
+              mt="2"
+              mb="0"
+              text="2xl sm:3xl"
+              font="bold"
+              tracking="tight"
+            >
+              호텔 소개와 여행 메모
+            </h2>
+
+            {(publishedLabel || updatedLabel) && (
+              <div
+                mt="4"
+                flex="~ wrap"
+                items="center"
+                gap="2 sm:3"
+                text="xs ct-muted dark:ct-dark-muted"
+              >
+                <span font="medium" text="ct-text-soft dark:ct-dark-text-soft">
+                  CozyTrip
+                </span>
+                {publishedLabel && <span>작성 {publishedLabel}</span>}
+                {updatedLabel && updatedLabel !== publishedLabel && (
+                  <span>수정 {updatedLabel}</span>
+                )}
+              </div>
+            )}
+
+            <p
+              mt="3"
+              mb="0"
+              max-w="3xl"
+              text="sm ct-muted dark:ct-dark-muted"
+              leading="relaxed"
+            >
+              CozyTrip가 여행자가 호텔을 살펴볼 때 참고할 수 있도록 정리한
+              정보입니다. 실제 예약 조건은 각 예약 플랫폼에서 다시 확인해
+              주세요.
             </p>
           </div>
 
@@ -175,14 +297,32 @@ export default function HotelDetail({
               p="5"
               aria-label="호텔 글 목차"
             >
-              <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">
+              <p
+                m="0"
+                text="xs ct-primary dark:ct-dark-text-soft"
+                font="medium"
+                tracking="wide"
+              >
                 ARTICLE CONTENTS
               </p>
-              <h3 mt="1.5" mb="0" text="lg" font="bold">이 글에서 살펴볼 내용</h3>
-              <ol mt="4" mb="0" pl="5" space-y="2" text="sm ct-text-soft dark:ct-dark-text-soft">
-                {articleHeadings.map((heading, index) => (
-                  <li key={`${heading.id}-${index}`}>
-                    <a href={`#${heading.id}`} hover="text-ct-primary dark:text-ct-dark-text" active-scale="98">
+              <h3 mt="1.5" mb="0" text="lg" font="bold">
+                이 글에서 살펴볼 내용
+              </h3>
+              <ol
+                mt="4"
+                mb="0"
+                pl="5"
+                space-y="2"
+                text="sm ct-text-soft dark:ct-dark-text-soft"
+              >
+                {articleHeadings.map((heading) => (
+                  <li key={heading.id}>
+                    <a
+                      href={`#${heading.id}`}
+                      hover="text-ct-primary dark:text-ct-dark-text"
+                      active-scale="98"
+                      className="ct-focus"
+                    >
                       {heading.text}
                     </a>
                   </li>
@@ -191,28 +331,62 @@ export default function HotelDetail({
             </nav>
           )}
 
-          <div mt="6" rounded="xl" border="~ ct-line dark:ct-dark-line" bg="ct-surface-soft dark:ct-dark-surface-soft" p="5 sm:6">
-            <div flex="~ col sm:row" sm="items-center justify-between" gap="2">
-              <div>
-                <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">CHECKPOINTS</p>
-                <h3 mt="1.5" mb="0" text="lg sm:xl" font="bold">살펴볼 핵심 정보</h3>
-              </div>
-              <span text="xs ct-muted dark:ct-dark-muted">제공된 호텔 정보 기준</span>
-            </div>
-            <div mt="5" grid="~ cols-1 sm:2 lg:4" gap="3">
-              {[
-                ["지역", [hotel.city, hotel.area].filter(Boolean).join(" · ")],
-                ["숙소 유형", hotel.accommodationType],
-                ["가까운 역", hotel.location.nearestStations?.slice(0, 2).join(" · ")],
-                ["체크인 · 체크아웃", [hotel.checkIn, hotel.checkOut].filter(Boolean).join(" · ")],
-              ].filter(([, value]) => Boolean(value)).map(([label, value]) => (
-                <div key={label} rounded="lg" bg="ct-surface dark:ct-dark-surface" p="4">
-                  <p m="0" text="xs ct-muted dark:ct-dark-muted">{label}</p>
-                  <p mt="1.5" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft" font="medium" leading="relaxed">{value}</p>
+          {checkpoints.length > 0 && (
+            <div
+              mt="6"
+              rounded="xl"
+              border="~ ct-line dark:ct-dark-line"
+              bg="ct-surface-soft dark:ct-dark-surface-soft"
+              p="5 sm:6"
+            >
+              <div
+                flex="~ col sm:row"
+                sm="items-center justify-between"
+                gap="2"
+              >
+                <div>
+                  <p
+                    m="0"
+                    text="xs ct-primary dark:ct-dark-text-soft"
+                    font="medium"
+                    tracking="wide"
+                  >
+                    CHECKPOINTS
+                  </p>
+                  <h3 mt="1.5" mb="0" text="lg sm:xl" font="bold">
+                    살펴볼 핵심 정보
+                  </h3>
                 </div>
-              ))}
+                <span text="xs ct-muted dark:ct-dark-muted">
+                  제공된 호텔 정보 기준
+                </span>
+              </div>
+
+              <div mt="5" grid="~ cols-1 sm:2 lg:4" gap="3">
+                {checkpoints.map(([label, value]) => (
+                  <div
+                    key={label}
+                    rounded="lg"
+                    bg="ct-surface dark:ct-dark-surface"
+                    p="4"
+                  >
+                    <p m="0" text="xs ct-muted dark:ct-dark-muted">
+                      {label}
+                    </p>
+                    <p
+                      mt="1.5"
+                      mb="0"
+                      text="sm ct-text-soft dark:ct-dark-text-soft"
+                      font="medium"
+                      leading="relaxed"
+                    >
+                      {value}
+                    </p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
+          )}
 
           {hotelPosts.length > 0 ? (
             <div mt="8">
@@ -222,12 +396,18 @@ export default function HotelDetail({
             </div>
           ) : (
             <div mt="4" max-w="3xl">
-              <p m="0" text="base ct-text-soft dark:ct-dark-text-soft" leading="relaxed">
+              <p
+                m="0"
+                text="base ct-text-soft dark:ct-dark-text-soft"
+                leading="relaxed"
+              >
                 {hotel.description}
               </p>
 
               {articleImage && (
-                <AffiliateDisclosure show={articleImage.source === "myrealtrip"} />
+                <AffiliateDisclosure
+                  show={articleImage.source === "myrealtrip"}
+                />
               )}
 
               {articleImage && (
@@ -243,6 +423,7 @@ export default function HotelDetail({
                       overflow="hidden"
                       border="~ ct-line dark:ct-dark-line"
                       bg="ct-surface dark:ct-dark-surface"
+                      className="ct-focus"
                     >
                       <img
                         src={articleImage.src}
@@ -272,7 +453,10 @@ export default function HotelDetail({
                     />
                   )}
 
-                  <figcaption mt="2" text="xs ct-muted dark:ct-dark-muted">
+                  <figcaption
+                    mt="2"
+                    text="xs ct-muted dark:ct-dark-muted"
+                  >
                     {articleImage.credit ?? "호텔 이미지"}
                   </figcaption>
                 </figure>
@@ -285,24 +469,59 @@ export default function HotelDetail({
       {hotel.rooms && hotel.rooms.length > 0 && (
         <Section id="rooms" borderTop>
           <Container>
-            <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">ROOMS</p>
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">객실</h2>
+            <p
+              m="0"
+              text="xs ct-primary dark:ct-dark-text-soft"
+              font="medium"
+              tracking="wide"
+            >
+              ROOMS
+            </p>
+            <h2
+              mt="2"
+              mb="0"
+              text="2xl sm:3xl"
+              font="bold"
+              tracking="tight"
+            >
+              객실
+            </h2>
             <div mt="8" grid="~ cols-1 lg:2" gap="5">
               {hotel.rooms.map((room, index) => (
-                <HotelRoomCard key={room.id ?? `${room.name}-${index}`} room={room} />
+                <HotelRoomCard
+                  key={room.id ?? `${room.name}-${index}`}
+                  room={room}
+                />
               ))}
             </div>
           </Container>
         </Section>
       )}
 
-      {hotel.facilities && hotel.facilities.length > 0 && <HotelFacilities hotel={hotel} />}
+      {hotel.facilities && hotel.facilities.length > 0 && (
+        <HotelFacilities hotel={hotel} />
+      )}
 
       {hotel.restaurants && hotel.restaurants.length > 0 && (
         <Section id="dining" borderTop>
           <Container>
-            <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">DINING</p>
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">다이닝</h2>
+            <p
+              m="0"
+              text="xs ct-primary dark:ct-dark-text-soft"
+              font="medium"
+              tracking="wide"
+            >
+              DINING
+            </p>
+            <h2
+              mt="2"
+              mb="0"
+              text="2xl sm:3xl"
+              font="bold"
+              tracking="tight"
+            >
+              다이닝
+            </h2>
             <div mt="8" grid="~ cols-1 lg:2" gap="5">
               {hotel.restaurants.map((restaurant, index) => (
                 <HotelRestaurantCard
@@ -316,12 +535,8 @@ export default function HotelDetail({
       )}
 
       <HotelStayInfo hotel={hotel} />
-
-
-
       <HotelLocation hotel={hotel} />
       <HotelBooking hotel={hotel} />
-
       <RelatedGuides posts={relatedGuides} />
 
       {relatedHotels.length > 0 && (
