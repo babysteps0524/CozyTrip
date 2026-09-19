@@ -16,6 +16,8 @@ export interface AccommodationSearchRequest {
   checkOut: string;
   adultCount: number;
   childCount: number;
+  page?: number;
+  size?: number;
 }
 
 export async function autocompleteAccommodationRegions(
