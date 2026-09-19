@@ -93,12 +93,12 @@ async function main(): Promise<void> {
   const seenDestinationSlugs = new Map<string, string>();
 
   for (const { hotel, sourceName } of allHotels) {
-    const sourceLabel = \`\\${sourceName} / \${hotel.id}\`;
+    const sourceLabel = `${sourceName} / \${hotel.id}`;
 
     const previousId = seenIds.get(hotel.id);
     if (previousId) {
       console.error(
-        \`Hotel data error [\\${sourceLabel}]: duplicate hotel id; already used by \${previousId}.\`,
+        `Hotel data error [${sourceLabel}]: duplicate hotel id; already used by \${previousId}.`,
       );
       invalidCount += 1;
       continue;
@@ -106,11 +106,11 @@ async function main(): Promise<void> {
     seenIds.set(hotel.id, sourceLabel);
 
     if (hotel.externalId && hotel.provider) {
-      const providerKey = \`\\${hotel.provider}:\\${hotel.externalId}\`;
+      const providerKey = `${hotel.provider}:${hotel.externalId}`;
       const previousExternalId = seenProviderExternalIds.get(providerKey);
       if (previousExternalId) {
         console.error(
-          \`Hotel data error [\\${sourceLabel}]: duplicate provider/externalId \${providerKey}; already used by \${previousExternalId}.\`,
+          `Hotel data error [${sourceLabel}]: duplicate provider/externalId \${providerKey}; already used by \${previousExternalId}.`,
         );
         invalidCount += 1;
         continue;
@@ -118,11 +118,11 @@ async function main(): Promise<void> {
       seenProviderExternalIds.set(providerKey, sourceLabel);
     }
 
-    const destinationSlugKey = \`\\${hotel.destinationId}:\\${hotel.slug}\`;
+    const destinationSlugKey = `${hotel.destinationId}:${hotel.slug}`;
     const previousSlug = seenDestinationSlugs.get(destinationSlugKey);
     if (previousSlug) {
       console.error(
-        \`Hotel data error [\\${sourceLabel}]: duplicate destination/slug \${destinationSlugKey}; already used by \${previousSlug}.\`,
+        `Hotel data error [${sourceLabel}]: duplicate destination/slug \${destinationSlugKey}; already used by \${previousSlug}.`,
       );
       invalidCount += 1;
       continue;
