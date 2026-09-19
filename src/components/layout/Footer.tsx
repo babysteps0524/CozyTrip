@@ -1,72 +1,89 @@
 import { Container } from "../common";
 
+const destinations = [
+  { name: "도쿄", href: "/japan/tokyo/" },
+  { name: "오사카", href: "/japan/osaka/" },
+  { name: "교토", href: "/japan/kyoto/" },
+  { name: "후쿠오카", href: "/japan/fukuoka/" },
+  { name: "삿포로", href: "/japan/sapporo/" },
+  { name: "오키나와", href: "/japan/okinawa/" },
+];
+
 export default function Footer() {
   return (
     <footer
+      mt="16 sm:20"
       border="t ct-line dark:ct-dark-line"
       bg="ct-surface dark:ct-dark-surface"
     >
       <Container>
-        <div py="10 sm:12" flex="~ col" gap="6">
+        <div py="12 sm:14 lg:16" grid="~ cols-1 md:3" gap="10 md:8">
           <div>
             <a
               href="/"
-              text="lg ct-primary dark:ct-dark-text"
+              flex="~ col"
+              w="fit"
+              leading="tight"
+              text="ct-primary dark:ct-dark-text"
               font="bold"
               tracking="tight"
-              un-active="scale-98"
+              active-scale="98"
+              className="ct-focus"
             >
-              CozyTrip
+              <span text="lg">CozyTrip</span>
+              <span text="xs ct-text-soft dark:ct-dark-text-soft" font="medium">
+                코지트립
+              </span>
             </a>
 
-            <p mt="2" mb="0" max-w="md" text="sm ct-muted dark:ct-dark-muted">
+            <p mt="3" mb="0" max-w="sm" text="sm ct-muted dark:ct-dark-muted" leading="7">
               일본 호텔과 여행 정보를 소개하는 여행 정보 사이트입니다.
             </p>
           </div>
 
-          <div
-            flex="~ wrap"
-            gap="4"
-            text="sm ct-text-soft dark:ct-dark-text-soft"
-          >
-            <a
-              href="/japan/tokyo/"
-              hover="text-ct-primary"
-              un-active="scale-98"
-            >
-              도쿄
-            </a>
+          <div>
+            <h2 m="0" text="sm ct-text dark:ct-dark-text" font="semibold">
+              일본 여행지
+            </h2>
+
+            <nav mt="3" flex="~ wrap" gap="x-4 y-2" text="sm ct-text-soft dark:ct-dark-text-soft" aria-label="여행지 링크">
+              {destinations.map((destination) => (
+                <a
+                  key={destination.href}
+                  href={destination.href}
+                  hover="text-ct-primary dark:text-ct-dark-text"
+                  transition="colors duration-150"
+                  active-scale="98"
+                  className="ct-focus"
+                >
+                  {destination.name}
+                </a>
+              ))}
+            </nav>
+          </div>
+
+          <div>
+            <h2 m="0" text="sm ct-text dark:ct-dark-text" font="semibold">
+              여행 정보
+            </h2>
 
             <a
-              href="/japan/osaka/"
-              hover="text-ct-primary"
-              un-active="scale-98"
+              href="/guides/"
+              mt="3"
+              display="inline-flex"
+              text="sm ct-text-soft dark:ct-dark-text-soft"
+              hover="text-ct-primary dark:text-ct-dark-text"
+              transition="colors duration-150"
+              active-scale="98"
+              className="ct-focus"
             >
-              오사카
-            </a>
-
-            <a
-              href="/japan/kyoto/"
-              hover="text-ct-primary"
-              un-active="scale-98"
-            >
-              교토
-            </a>
-
-            <a href="/guides/" hover="text-ct-primary" un-active="scale-98">
               여행 가이드
             </a>
           </div>
+        </div>
 
-          <div
-            border="t ct-line dark:ct-dark-line"
-            pt="6"
-            text="xs ct-muted dark:ct-dark-muted"
-          >
-            <p m="0">
-              © {new Date().getFullYear()} CozyTrip. All rights reserved.
-            </p>
-          </div>
+        <div border="t ct-line dark:ct-dark-line" py="5" text="xs ct-muted dark:ct-dark-muted">
+          <p m="0">© {new Date().getFullYear()} CozyTrip 코지트립. All rights reserved.</p>
         </div>
       </Container>
     </footer>
