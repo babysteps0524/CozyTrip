@@ -390,7 +390,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
 
       {filteredHotels.length > 0 ? (
         <>
-          <div mt="8" grid="~ cols-1 sm:2 lg:3 xl:4" gap="4 lg:5">
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-5 xl:grid-cols-4">
             {pagedHotels.map((hotel) => (
               <HotelCard key={hotel.id} hotel={hotel} />
             ))}
