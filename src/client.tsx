@@ -124,7 +124,12 @@ async function start() {
       pageKey = "notFound";
     } else {
       pageKey = "guide";
-      pageProps = {\n        post,\n        destination: post.destinationId\n          ? destinations.find((item) => item.id === post.destinationId)\n          : undefined,\n      };
+      pageProps = {
+        post,
+        destination: post.destinationId
+          ? destinations.find((item) => item.id === post.destinationId)
+          : undefined,
+      };
     }
   } else if (destinationSlug) {
     const destination = getDestinationBySlug(destinationSlug);
