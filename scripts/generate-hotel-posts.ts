@@ -619,6 +619,12 @@ async function main(): Promise<void> {
   }
 
   if (configuredProviders.length === 0) {
+    if (process.env.CI === "true") {
+      throw new Error(
+        "CI generation cannot continue because no AI provider API key is configured. Set GEMINI_API_KEY, GROQ_API_KEY, or OPENROUTER_API_KEY in GitHub Actions secrets.",
+      );
+    }
+
     console.log("Skipping generation because no AI provider is configured.");
     return;
   }
