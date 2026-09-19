@@ -149,7 +149,7 @@ async function start() {
       pageKey = "notFound";
     } else {
       pageKey = "guide";
-      pageProps = { post };
+      pageProps = {\n        post,\n        destination: post.destinationId\n          ? destinations.find((item) => item.id === post.destinationId)\n          : undefined,\n      };
     }
   } else if (destinationSlug) {
     const destination = getDestinationBySlug(destinationSlug);
@@ -169,6 +169,7 @@ async function start() {
           pageKey = "hotelDetail";
           pageProps = {
             hotel,
+            destination,
             hotelPosts: getPostsByHotel(hotel.id),
             relatedGuides: destinationPosts.filter(
               (post) => post.category === "guide" && post.hotelId !== hotel.id,
