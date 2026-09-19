@@ -224,14 +224,8 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
 
   return (
     <>
-      <div
-        mt="8"
-        rounded="2xl"
-        border="~ ct-line dark:ct-dark-line"
-        bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-        p="4 sm:5"
-      >
-        <div grid="~ cols-1 md:2 lg:4" gap="3">
+      <div className="mt-8 max-w-5xl rounded-2xl border border-ct-line bg-ct-surface-soft p-4 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft sm:p-5">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-4">
           <label>
             <span
               display="block"
@@ -247,16 +241,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               type="search"
               placeholder="호텔명, 지역, 숙소 유형"
               aria-label="호텔 검색"
-              w="full"
-              min-h="11"
-              rounded="xl"
-              border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:bg-ct-dark-surface"
-              px="4"
-              py="2.5"
-              text="sm ct-text dark:ct-dark-text"
-              outline="none"
-              focus="border-ct-primary"
+              className="h-11 w-full rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm text-ct-text outline-none transition-colors focus:border-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text"
             />
           </label>
 
@@ -273,16 +258,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               value={area}
               onChange={(event) => setArea(event.target.value)}
               aria-label="호텔 지역 필터"
-              w="full"
-              min-h="11"
-              rounded="xl"
-              border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:bg-ct-dark-surface"
-              px="4"
-              py="2.5"
-              text="sm ct-text dark:ct-dark-text"
-              outline="none"
-              focus="border-ct-primary"
+              className="h-11 w-full rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm text-ct-text outline-none transition-colors focus:border-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text"
             >
               <option value="all">전체 지역</option>
               {areas.map((item) => (
@@ -306,16 +282,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               value={star}
               onChange={(event) => setStar(event.target.value as StarFilter)}
               aria-label="호텔 성급 필터"
-              w="full"
-              min-h="11"
-              rounded="xl"
-              border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:bg-ct-dark-surface"
-              px="4"
-              py="2.5"
-              text="sm ct-text dark:ct-dark-text"
-              outline="none"
-              focus="border-ct-primary"
+              className="h-11 w-full rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm text-ct-text outline-none transition-colors focus:border-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text"
             >
               <option value="all">전체 성급</option>
               <option value="5">5성급</option>
@@ -338,16 +305,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               value={sort}
               onChange={(event) => setSort(event.target.value as SortOption)}
               aria-label="호텔 정렬"
-              w="full"
-              min-h="11"
-              rounded="xl"
-              border="~ ct-line dark:ct-dark-line"
-              bg="ct-surface dark:bg-ct-dark-surface"
-              px="4"
-              py="2.5"
-              text="sm ct-text dark:ct-dark-text"
-              outline="none"
-              focus="border-ct-primary"
+              className="h-11 w-full rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm text-ct-text outline-none transition-colors focus:border-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text"
             >
               <option value="name">호텔명 순</option>
               <option value="star-desc">성급 높은 순</option>
@@ -356,7 +314,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           </label>
         </div>
 
-        <div mt="4" flex="~ wrap" items="center" justify="between" gap="3">
+        <div className="mt-4 flex flex-wrap items-center justify-between gap-3 border-t border-ct-line pt-4 dark:border-ct-dark-line">
           <p m="0" text="sm ct-text-soft dark:ct-dark-text-soft">
             검색 결과{" "}
             <strong text="ct-text dark:ct-dark-text">
