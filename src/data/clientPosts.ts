@@ -16,12 +16,18 @@ const destinationLoaders: Record<
   DestinationSlug,
   () => Promise<ClientPostFile>
 > = {
-  tokyo: () => import("./generated/client-posts/tokyo.json"),
-  osaka: () => import("./generated/client-posts/osaka.json"),
-  kyoto: () => import("./generated/client-posts/kyoto.json"),
-  fukuoka: () => import("./generated/client-posts/fukuoka.json"),
-  sapporo: () => import("./generated/client-posts/sapporo.json"),
-  okinawa: () => import("./generated/client-posts/okinawa.json"),
+  tokyo: async () =>
+    (await import("./generated/client-posts/tokyo.json")) as unknown as ClientPostFile,
+  osaka: async () =>
+    (await import("./generated/client-posts/osaka.json")) as unknown as ClientPostFile,
+  kyoto: async () =>
+    (await import("./generated/client-posts/kyoto.json")) as unknown as ClientPostFile,
+  fukuoka: async () =>
+    (await import("./generated/client-posts/fukuoka.json")) as unknown as ClientPostFile,
+  sapporo: async () =>
+    (await import("./generated/client-posts/sapporo.json")) as unknown as ClientPostFile,
+  okinawa: async () =>
+    (await import("./generated/client-posts/okinawa.json")) as unknown as ClientPostFile,
 };
 
 export async function loadClientPostsByDestination(
