@@ -1,0 +1,1033 @@
+{
+  "generatedAt": "2026-09-18T05:18:19.639Z",
+  "source": "myrealtrip",
+  "hotelCount": 20,
+  "search": {
+    "checkIn": "2026-10-15",
+    "checkOut": "2026-10-18",
+    "adultCount": 2,
+    "childCount": 0
+  },
+  "hotels": [
+    {
+      "id": "myrealtrip-1652241",
+      "name": "교토 우메코지 카덴쇼",
+      "slug": "교토-우메코지-카덴쇼-1652241",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 교토 우메코지 카덴쇼 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1652241-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/26/U4I8/zer9m5zunP.jpg?width=720",
+          "alt": "교토 우메코지 카덴쇼 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1652241",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 324,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1490406",
+      "name": "온야도 노노 교토시치조 내추럴 핫 스프링스",
+      "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 온야도 노노 교토시치조 내추럴 핫 스프링스 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1490406-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/06/AXzw/U4AhpP6bfS.jpg?width=720",
+          "alt": "온야도 노노 교토시치조 내추럴 핫 스프링스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1490406",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 4165,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1208147",
+      "name": "호텔 엘시안트 교토 하치조구치",
+      "slug": "호텔-엘시안트-교토-하치조구치-1208147",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 호텔 엘시안트 교토 하치조구치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1208147-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/22/ZK4P/rfXoLzSaUb.jpg?width=720",
+          "alt": "호텔 엘시안트 교토 하치조구치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1208147",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1011,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1200282",
+      "name": "알몬트 호텔 교토",
+      "slug": "알몬트-호텔-교토-1200282",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 알몬트 호텔 교토 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1200282-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/21/Ksuj/a4nRuMT5tS.jpg?width=720",
+          "alt": "알몬트 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1200282",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1015,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1581864",
+      "name": "리치몬드 호텔 프리미어 교토 시조",
+      "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 리치몬드 호텔 프리미어 교토 시조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1581864-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/12/Er6J/0eiPJxIqgy.jpg?width=720",
+          "alt": "리치몬드 호텔 프리미어 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1581864",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 126,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1571825",
+      "name": "오크우드 호텔 오이케 교토",
+      "slug": "오크우드-호텔-오이케-교토-1571825",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 오크우드 호텔 오이케 교토 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1571825-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/76PQ/VpqsfS4fW3.jpg?width=720",
+          "alt": "오크우드 호텔 오이케 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1571825",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1096,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1594516",
+      "name": "소테츠 프레사 인 교토-키요미즈 고조",
+      "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 소테츠 프레사 인 교토-키요미즈 고조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1594516-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/wwA2/G2JB58si1f.jpg?width=720",
+          "alt": "소테츠 프레사 인 교토-키요미즈 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1594516",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 1005,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1566383",
+      "name": "호텔 포르자 교토 시조 카와라마치",
+      "slug": "호텔-포르자-교토-시조-카와라마치-1566383",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 호텔 포르자 교토 시조 카와라마치 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1566383-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/gaAI/RYFE8LsQ5O.jpg?width=720",
+          "alt": "호텔 포르자 교토 시조 카와라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1566383",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 1649,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1254251",
+      "name": "호텔 그레이스리 교토 산조",
+      "slug": "호텔-그레이스리-교토-산조-1254251",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 호텔 그레이스리 교토 산조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1254251-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/30/gSO6/uHPbggDDAa.jpg?width=720",
+          "alt": "호텔 그레이스리 교토 산조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1254251",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1101,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1229514",
+      "name": "사쿠라 테라스 더 갤러리",
+      "slug": "사쿠라-테라스-더-갤러리-1229514",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 사쿠라 테라스 더 갤러리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1229514-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/18/LJSr/AdNdviaaRY.jpg?width=720",
+          "alt": "사쿠라 테라스 더 갤러리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1229514",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1256,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1369404",
+      "name": "게이오 프렐리아 호텔 교토 가라스마 고조",
+      "slug": "게이오-프렐리아-호텔-교토-가라스마-고조-1369404",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 게이오 프렐리아 호텔 교토 가라스마 고조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1369404-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/12/QMo7/QTD1I8SbG5.jpg?width=720",
+          "alt": "게이오 프렐리아 호텔 교토 가라스마 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1369404",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 1005,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1447756",
+      "name": "오리엔탈 호텔 교토 로쿠조",
+      "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 오리엔탈 호텔 교토 로쿠조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1447756-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/13/ZIPB/PgKesaYRMu.jpg?width=720",
+          "alt": "오리엔탈 호텔 교토 로쿠조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1447756",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1174,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1186098",
+      "name": "호텔 홋케 클럽 교토",
+      "slug": "호텔-홋케-클럽-교토-1186098",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 호텔 홋케 클럽 교토 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1186098-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/CDOX/aXcwH7bKDB.jpg?width=720",
+          "alt": "호텔 홋케 클럽 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1186098",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1009,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1181987",
+      "name": "스마일 호텔 교토 시조",
+      "slug": "스마일-호텔-교토-시조-1181987",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 스마일 호텔 교토 시조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1181987-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/M9jl/S9LnT7ftnC.jpg?width=720",
+          "alt": "스마일 호텔 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1181987",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1005,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1409068",
+      "name": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트",
+      "slug": "카덴쇼-아라시야마-온센-교토-교리츠-리조트-1409068",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1409068-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/26/L5oX/4JQHbscndA.jpg?width=720",
+          "alt": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1409068",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.6,
+      "numberOfReviews": 474,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1556707",
+      "name": "호텔 앤드룸스 교토 시치조",
+      "slug": "호텔-앤드룸스-교토-시치조-1556707",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 호텔 앤드룸스 교토 시치조 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1556707-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/11/GImd/ZE4AZ3SH6w.jpg?width=720",
+          "alt": "호텔 앤드룸스 교토 시치조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1556707",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 335,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1440279",
+      "name": "리치몬드 호텔 프리미어 교토 에키마에",
+      "slug": "리치몬드-호텔-프리미어-교토-에키마에-1440279",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 리치몬드 호텔 프리미어 교토 에키마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1440279-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/03/vVTe/XhSWGwqPSv.jpg?width=720",
+          "alt": "리치몬드 호텔 프리미어 교토 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1440279",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.8,
+      "numberOfReviews": 1006,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-3577397",
+      "name": "알라 호텔 교토",
+      "slug": "알라-호텔-교토-3577397",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 알라 호텔 교토 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-3577397-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/J7Po/obUMPSo75i.jpg?width=720",
+          "alt": "알라 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3577397",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.7,
+      "numberOfReviews": 523,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-3648942",
+      "name": "더블트리 바이 힐튼 교토 히가시야마",
+      "slug": "더블트리-바이-힐튼-교토-히가시야마-3648942",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 더블트리 바이 힐튼 교토 히가시야마 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-3648942-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/14/d372/v8J7ecqj2o.jpg?width=720",
+          "alt": "더블트리 바이 힐튼 교토 히가시야마 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3648942",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 390,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1563593",
+      "name": "교토 센트럴 인",
+      "slug": "교토-센트럴-인-1563593",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "교토",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 교토 센트럴 인 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": "교토"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1563593-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/02/01/EYHR/c6CIR6joUS.jpg?width=720",
+          "alt": "교토 센트럴 인 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1563593",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 3.8,
+      "numberOfReviews": 675,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    }
+  ],
+  "imageUsageAllowed": true
+}
