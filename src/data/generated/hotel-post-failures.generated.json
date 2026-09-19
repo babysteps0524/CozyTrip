@@ -1,5 +1,20 @@
 {
-  "generatedAt": "2026-09-19T04:30:47.237Z",
+  "generatedAt": "2026-09-19T04:46:10.694Z",
   "source": "ai",
-  "failures": []
+  "failures": [
+    {
+      "hotelId": "myrealtrip-3576037",
+      "destinationId": "japan-osaka",
+      "hotelName": "더 원파이브 오사카 난바 도톤보리",
+      "failedAt": "2026-09-19T04:45:17.690Z",
+      "reason": "gemini: Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n | groq: groq API 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n | openrouter: HotelPost must contain 4-6 sections."
+    },
+    {
+      "hotelId": "myrealtrip-1559947",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 오리엔탈 익스프레스 후쿠오카 텐진",
+      "failedAt": "2026-09-19T04:46:02.260Z",
+      "reason": "gemini: Gemini API 404: {\n  \"error\": {\n    \"code\": 404,\n    \"message\": \"This model models/gemini-2.5-flash is no longer available to new users. Please update your code to use models/gemini-3.6-flash for the latest features and improvements. We recommend you to use the Interactions API.\",\n    \"status\": \"NOT_FOUND\"\n  }\n}\n | groq: groq API 404: {\"error\":{\"message\":\"The model `llama-3.3-70b-versatile` does not exist or you do not have access to it.\",\"type\":\"invalid_request_error\",\"code\":\"model_not_found\"}}\n | openrouter: HotelPost must contain 4-6 sections."
+    }
+  ]
 }
