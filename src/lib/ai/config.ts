@@ -19,9 +19,9 @@ export interface AIConfig {
 
 export const aiConfig: AIConfig = {
   geminiApiKey: getEnv("GEMINI_API_KEY"),
-  geminiModel: getEnv("GEMINI_MODEL") ?? "gemini-2.5-flash",
+  geminiModel: getEnv("GEMINI_MODEL") ?? "gemini-3.6-flash",
   groqApiKey: getEnv("GROQ_API_KEY"),
-  groqModel: getEnv("GROQ_MODEL") ?? "llama-3.3-70b-versatile",
+  groqModel: getEnv("GROQ_MODEL") ?? "openai/gpt-oss-120b",
   openRouterApiKey: getEnv("OPENROUTER_API_KEY"),
   openRouterModel:
     getEnv("OPENROUTER_MODEL") ?? "openai/gpt-4o-mini",
