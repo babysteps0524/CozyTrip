@@ -181,7 +181,7 @@ async function start() {
         pageProps = { destination, hotels };
       } else if (destinationMatch) {
         pageKey = "destination";
-        pageProps: pageProps = {
+        pageProps = {
           destination,
           hotels,
           posts: destinationPosts,
