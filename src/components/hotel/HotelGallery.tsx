@@ -3,6 +3,7 @@ import { useState } from "react";
 import type { HotelImage } from "../../types";
 
 import { Container } from "../common";
+import { getDisplayableHotelImages } from "../../lib/image";
 
 interface HotelGalleryProps {
   images: HotelImage[];
@@ -19,7 +20,7 @@ const IMAGE_TYPE_LABEL: Record<HotelImage["type"], string> = {
 };
 
 function getVisibleImages(images: HotelImage[]): HotelImage[] {
-  return images.filter((image) => image.rightsConfirmed && Boolean(image.src));
+  return getDisplayableHotelImages(images);
 }
 
 function getImageAspectRatio(image: HotelImage): string {
