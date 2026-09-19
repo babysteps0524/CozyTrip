@@ -2,7 +2,10 @@ import { StrictMode, type ReactNode } from "react";
 import { hydrateRoot } from "react-dom/client";
 
 import { destinations } from "./data/destinations";
-import { posts } from "./data/posts";
+import {
+  loadClientGuidePosts,
+  loadClientPostsByDestination,
+} from "./data/clientPosts";
 import { loadClientHotels } from "./data/clientHotels";
 import type { Destination, Hotel, Post } from "./types";
 
@@ -27,23 +30,19 @@ function getDestinationBySlug(slug: string): Destination | undefined {
   return destinations.find((item) => item.slug === slug);
 }
 
-function getPostBySlug(slug: string): Post | undefined {
+function getPostBySlug(posts: Post[], slug: string): Post | undefined {
   return posts.find((item) => item.slug === slug);
 }
 
-function getPostsByDestination(destinationId: string): Post[] {
-  return posts.filter((post) => post.destinationId === destinationId);
-}
-
-function getPostsByHotel(hotelId: string): Post[] {
+function getPostsByHotel(posts: Post[], hotelId: string): Post[] {
   return posts.filter((post) => post.hotelId === hotelId);
 }
 
 function createRoute(path: string) {
-  const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
-  const hotelListMatch = path.match(/^\/japan\/([^/]+)\/hotels$/);
-  const hotelDetailMatch = path.match(/^\/japan\/([^/]+)\/hotels\/([^/]+)$/);
-  const guideMatch = path.match(/^\/guides\/([^/]+)$/);
+  const destinationMatch = path.match(/^\\/japan\\/([^/]+)$/);
+  const hotelListMatch = path.match(/^\\/japan\\/([^/]+)\\/hotels$/);
+  const hotelDetailMatch = path.match(/^\\/japan\\/([^/]+)\\/hotels\\/([^/]+)$/);
+  const guideMatch = path.match(/^\\/guides\\/([^/]+)$/);
 
   return {
     destinationMatch,
@@ -103,23 +102,29 @@ async function start() {
   let pageProps: Record<string, unknown> = {};
 
   if (path === "/") {
-    const hotels = await loadClientHotels("tokyo");
+    const [hotels, guides] = await Promise.all([
+      loadClientHotels("tokyo"),
+      loadClientGuidePosts(),
+    ]);
+
     pageKey = "home";
     pageProps = {
       destinations,
       hotels,
-      guides: posts.filter((post) => post.category === "guide").slice(0, 3),
+      guides: guides.slice(0, 3),
     };
   } else if (path === "/japan") {
     pageKey = "japan";
     pageProps = { destinations };
   } else if (path === "/guides") {
+    const guides = await loadClientGuidePosts();
+
     pageKey = "guides";
-    pageProps = {
-      posts: posts.filter((post) => post.category === "guide"),
-    };
+    pageProps = { posts: guides };
   } else if (guideMatch && guideSlug) {
-    const post = getPostBySlug(guideSlug);
+    const guides = await loadClientGuidePosts();
+    const post = getPostBySlug(guides, guideSlug);
+
     if (!post || post.category !== "guide") {
       pageKey = "notFound";
     } else {
@@ -137,8 +142,10 @@ async function start() {
     if (!destination) {
       pageKey = "notFound";
     } else {
-      const hotels = await loadClientHotels(destination.slug);
-      const destinationPosts = getPostsByDestination(destination.id);
+      const [hotels, destinationPosts] = await Promise.all([
+        loadClientHotels(destination.slug),
+        loadClientPostsByDestination(destination.slug),
+      ]);
 
       if (hotelDetailMatch && hotelSlug) {
         const hotel = hotels.find((item) => item.slug === hotelSlug);
@@ -150,7 +157,7 @@ async function start() {
           pageProps = {
             hotel,
             destination,
-            hotelPosts: getPostsByHotel(hotel.id),
+            hotelPosts: getPostsByHotel(destinationPosts, hotel.id),
             relatedGuides: destinationPosts.filter(
               (post) => post.category === "guide" && post.hotelId !== hotel.id,
             ),
