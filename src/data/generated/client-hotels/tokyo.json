@@ -8,6 +8,7 @@
     "adultCount": 2,
     "childCount": 0
   },
+  "imageUsageAllowed": true,
   "hotels": [
     {
       "id": "myrealtrip-5008360",
@@ -1029,6 +1030,5 @@
       "publishedAt": "2026-09-18",
       "updatedAt": "2026-09-18"
     }
-  ],
-  "imageUsageAllowed": true
+  ]
 }
