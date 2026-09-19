@@ -25,6 +25,7 @@ function getInitialIndex(images: HotelImage[]): number {
 export default function HotelGallery({ images }: HotelGalleryProps) {
   const visibleImages = getDisplayableHotelImages(images);
   const [selectedIndex, setSelectedIndex] = useState(() => getInitialIndex(visibleImages));
+  const [failedImageIds, setFailedImageIds] = useState<Set<string>>(() => new Set());
 
   if (visibleImages.length === 0) {
     return (
@@ -41,6 +42,19 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
   const safeIndex = Math.min(selectedIndex, visibleImages.length - 1);
   const selectedImage = visibleImages[safeIndex];
   const hasMultipleImages = visibleImages.length > 1;
+  const selectedImageFailed = failedImageIds.has(selectedImage.id);
+
+  const markImageFailed = (imageId: string) => {
+    setFailedImageIds((current) => {
+      if (current.has(imageId)) {
+        return current;
+      }
+
+      const next = new Set(current);
+      next.add(imageId);
+      return next;
+    });
+  };
 
   const moveImage = (direction: -1 | 1) => {
     setSelectedIndex((current) => (current + direction + visibleImages.length) % visibleImages.length);
@@ -51,7 +65,15 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
       <Container>
         <div className="overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-soft dark:border-ct-dark-line dark:bg-ct-dark-surface">
           <div className="relative aspect-[16/10] bg-ct-surface-soft dark:bg-ct-dark-surface-soft sm:aspect-[16/9]">
-            {selectedImage.sourceUrl ? (
+            {selectedImageFailed ? (
+              <div
+                className="flex h-full w-full items-center justify-center bg-ct-surface-soft px-4 text-center text-sm text-ct-muted dark:bg-ct-dark-surface-soft dark:text-ct-dark-muted"
+                role="img"
+                aria-label={selectedImage.alt || "호텔 이미지를 불러올 수 없습니다"}
+              >
+                호텔 이미지를 불러올 수 없습니다.
+              </div>
+            ) : selectedImage.sourceUrl ? (
               <a
                 href={selectedImage.sourceUrl}
                 target="_blank"
@@ -70,6 +92,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                   decoding="async"
                   fetchPriority={safeIndex === 0 ? "high" : "auto"}
                   className="h-full w-full object-cover"
+                  onError={() => markImageFailed(selectedImage.id)}
                 />
               </a>
             ) : (
@@ -83,6 +106,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                 decoding="async"
                 fetchPriority={safeIndex === 0 ? "high" : "auto"}
                 className="h-full w-full object-cover"
+                onError={() => markImageFailed(selectedImage.id)}
               />
             )}
 
@@ -114,8 +138,23 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
                   className={`ct-focus relative h-18 w-24 shrink-0 overflow-hidden rounded-lg border bg-ct-surface dark:bg-ct-dark-surface ${index === safeIndex ? "border-2 border-ct-primary opacity-100" : "border-ct-line opacity-70 hover:opacity-100 dark:border-ct-dark-line"}`}
                   active-scale="98"
                 >
-                  <img src={image.src} alt="" aria-hidden="true" width={240} height={180}
-                    loading="lazy" decoding="async" className="h-full w-full object-cover" />
+                  {failedImageIds.has(image.id) ? (
+                    <span className="flex h-full w-full items-center justify-center bg-ct-surface-soft px-2 text-[10px] text-ct-muted dark:bg-ct-dark-surface-soft dark:text-ct-dark-muted">
+                      이미지 없음
+                    </span>
+                  ) : (
+                    <img
+                      src={image.src}
+                      alt=""
+                      aria-hidden="true"
+                      width={240}
+                      height={180}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover"
+                      onError={() => markImageFailed(image.id)}
+                    />
+                  )}
                 </button>
               ))}
             </div>
