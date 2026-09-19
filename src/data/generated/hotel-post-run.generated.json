@@ -1,0 +1,79 @@
+{
+  "generatedAt": "2026-09-19T05:41:53.755Z",
+  "source": "ai",
+  "plan": {
+    "japan-tokyo": 3,
+    "japan-osaka": 3,
+    "japan-kyoto": 2,
+    "japan-fukuoka": 2,
+    "japan-okinawa": 1
+  },
+  "totalTarget": 11,
+  "totalSucceeded": 11,
+  "totalFailed": 0,
+  "totalPublished": 51,
+  "totalInventory": 120,
+  "totalRemaining": 69,
+  "destinations": [
+    {
+      "destinationId": "japan-tokyo",
+      "target": 3,
+      "inventory": 20,
+      "publishedBefore": 12,
+      "attempted": 3,
+      "succeeded": 3,
+      "failed": 0,
+      "publishedAfter": 15,
+      "remaining": 5,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-osaka",
+      "target": 3,
+      "inventory": 20,
+      "publishedBefore": 10,
+      "attempted": 3,
+      "succeeded": 3,
+      "failed": 0,
+      "publishedAfter": 13,
+      "remaining": 7,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-kyoto",
+      "target": 2,
+      "inventory": 20,
+      "publishedBefore": 7,
+      "attempted": 2,
+      "succeeded": 2,
+      "failed": 0,
+      "publishedAfter": 9,
+      "remaining": 11,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-fukuoka",
+      "target": 2,
+      "inventory": 20,
+      "publishedBefore": 7,
+      "attempted": 2,
+      "succeeded": 2,
+      "failed": 0,
+      "publishedAfter": 9,
+      "remaining": 11,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-okinawa",
+      "target": 1,
+      "inventory": 20,
+      "publishedBefore": 4,
+      "attempted": 1,
+      "succeeded": 1,
+      "failed": 0,
+      "publishedAfter": 5,
+      "remaining": 15,
+      "status": "target-reached"
+    }
+  ]
+}
