@@ -39,6 +39,9 @@ jobs:
       - name: Generate hotel posts
         run: bun run ai:hotel-posts
 
+      - name: Generate client post data
+        run: bun scripts/split-client-post-data.ts
+
       - name: Validate hotel posts
         run: bun run validate:hotel-posts
 
