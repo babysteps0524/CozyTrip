@@ -8,6 +8,17 @@ export default function Navigation() {
       whitespace="nowrap"
     >
       <a
+        href="/"
+        px="1"
+        py="2"
+        hover="text-ct-primary dark:text-ct-dark-text"
+        active-scale="98"
+        aria-label="CozyTrip 코지트립 홈"
+      >
+        홈
+      </a>
+
+      <a
         href="/japan/tokyo/"
         px="1"
         py="2"
