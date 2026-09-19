@@ -1,7 +1,9 @@
 import type { Hotel, HotelPost } from "../../types";
+import { validateHotelPostFacts } from "./factual";
 
 export interface HotelPostValidationOptions {
   availableImages?: Hotel["images"];
+  strictFacts?: boolean;
 }
 
 function normalize(value: string): string {
@@ -123,6 +125,13 @@ export function validateHotelPost(
 
         sectionImageIds.add(imageId);
       }
+    }
+
+    const factWarnings = validateHotelPostFacts(post, hotel);
+    if (options.strictFacts && factWarnings.length > 0) {
+      throw new Error(
+        `Factual content validation failed: ${factWarnings.map((warning) => warning.message).join(" | ")}`,
+      );
     }
 
     for (const item of post.faq) {
