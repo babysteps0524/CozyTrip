@@ -1,0 +1,57 @@
+name: Generate hotel posts
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 21 * * *"
+
+concurrency:
+  group: generate-hotel-posts
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+      OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+      AI_DAILY_PLAN: "japan-tokyo:3,japan-osaka:3,japan-kyoto:2,japan-fukuoka:2,japan-okinawa:1"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 1
+
+      - name: Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.4.2"
+
+      - name: Install dependencies
+        run: bun install --frozen-lockfile
+
+      - name: Generate hotel posts
+        run: bun run ai:hotel-posts
+
+      - name: Validate hotel posts
+        run: bun run validate:hotel-posts
+
+      - name: Commit generated posts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if git diff --quiet -- src/data/generated/hotel-posts.generated.json; then
+            echo "No new hotel posts were generated."
+            exit 0
+          fi
+
+          git add src/data/generated/hotel-posts.generated.json
+          git commit -m "chore: generate daily hotel posts"
+          git push
