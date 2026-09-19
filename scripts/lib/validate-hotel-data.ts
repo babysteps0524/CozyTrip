@@ -84,6 +84,16 @@ export function validateHotelData(hotel: Hotel): HotelValidationResult {
     if (!image.rightsConfirmed) {
       warnings.push(`Image ${image.id || "unknown"} is not rights-confirmed.`);
     }
+
+    if (image.source === "myrealtrip" && image.rightsConfirmed) {
+      if (!image.sourceUrl?.trim()) {
+        errors.push(`MyRealTrip image ${image.id || "unknown"} is missing sourceUrl.`);
+      }
+
+      if (!image.license?.trim()) {
+        errors.push(`MyRealTrip image ${image.id || "unknown"} is missing license metadata.`);
+      }
+    }
   }
 
   if (hotel.latitude !== undefined && !isFiniteNumber(hotel.latitude)) {
