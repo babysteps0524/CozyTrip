@@ -40,11 +40,38 @@ interface FailedHotelPostFile {
   failures: FailedHotelPost[];
 }
 
+interface HotelPostDestinationReport {
+  destinationId: string;
+  target: number;
+  inventory: number;
+  publishedBefore: number;
+  attempted: number;
+  succeeded: number;
+  failed: number;
+  publishedAfter: number;
+  remaining: number;
+  status: "target-reached" | "shortfall" | "exhausted";
+}
+
+interface HotelPostRunReport {
+  generatedAt: string;
+  source: "ai";
+  plan: Record<string, number>;
+  totalTarget: number;
+  totalSucceeded: number;
+  totalFailed: number;
+  totalPublished: number;
+  totalInventory: number;
+  totalRemaining: number;
+  destinations: HotelPostDestinationReport[];
+}
+
 const root = resolve(import.meta.dir, "..");
 const inputPath = resolve(root, "src/data/generated/myrealtrip-hotels.json");
 const outputDir = resolve(root, "src/data/generated");
 const outputPath = resolve(outputDir, "hotel-posts.generated.json");
 const failurePath = resolve(outputDir, "hotel-post-failures.generated.json");
+const runReportPath = resolve(outputDir, "hotel-post-run.generated.json");
 
 const requestedHotelId = process.env.AI_HOTEL_ID?.trim() || undefined;
 const requestedLimit = Number(process.env.AI_POST_LIMIT ?? "1");
@@ -413,7 +440,19 @@ async function main(): Promise<void> {
         : `AI generation limit: ${selectedHotels.length} new hotel(s)`,
   );
 
+  const plan = dailyPlan ? parseDailyPlan(dailyPlan) : undefined;
+  const attemptedByDestination = new Map<string, number>();
+  const successByDestination = new Map<string, number>();
+  const failureByDestination = new Map<string, number>();
+
   for (const hotel of selectedHotels) {
+    if (plan) {
+      attemptedByDestination.set(
+        hotel.destinationId,
+        (attemptedByDestination.get(hotel.destinationId) ?? 0) + 1,
+      );
+    }
+
     const validation = validateHotelData(hotel);
 
     for (const warning of validation.warnings) {
@@ -430,6 +469,10 @@ async function main(): Promise<void> {
         failedAt: new Date().toISOString(),
         reason: formatHotelValidationFailure(hotel, validation),
       });
+      failureByDestination.set(
+        hotel.destinationId,
+        (failureByDestination.get(hotel.destinationId) ?? 0) + 1,
+      );
       console.error(formatHotelValidationFailure(hotel, validation));
       continue;
     }
@@ -453,6 +496,12 @@ async function main(): Promise<void> {
 
       generatedPosts.push(result.post);
       successCount += 1;
+      if (plan) {
+        successByDestination.set(
+          hotel.destinationId,
+          (successByDestination.get(hotel.destinationId) ?? 0) + 1,
+        );
+      }
       failedHotelMap.delete(hotel.id);
 
       console.log(
@@ -474,6 +523,12 @@ async function main(): Promise<void> {
         failedAt: new Date().toISOString(),
         reason: formatGenerationError(error),
       });
+      if (plan) {
+        failureByDestination.set(
+          hotel.destinationId,
+          (failureByDestination.get(hotel.destinationId) ?? 0) + 1,
+        );
+      }
 
       if (
         error instanceof Error &&
@@ -501,6 +556,64 @@ async function main(): Promise<void> {
 
   await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
   await writeFailedHotels([...failedHotelMap.values()]);
+  const destinations: HotelPostDestinationReport[] = plan
+    ? Object.entries(plan).map(([destinationId, target]) => {
+        const inventory = source.hotels.filter(
+          (hotel) => hotel.destinationId === destinationId,
+        ).length;
+        const publishedBefore = existingPosts.filter(
+          (post) => source.hotels.some(
+            (hotel) =>
+              hotel.destinationId === destinationId &&
+              hotel.id === post.hotelId,
+          ),
+        ).length;
+        const attempted = attemptedByDestination.get(destinationId) ?? 0;
+        const succeeded = successByDestination.get(destinationId) ?? 0;
+        const failed = failureByDestination.get(destinationId) ?? 0;
+        const publishedAfter = publishedBefore + succeeded;
+        const remaining = Math.max(0, inventory - publishedAfter);
+        const status =
+          succeeded >= target
+            ? "target-reached"
+            : remaining === 0
+              ? "exhausted"
+              : "shortfall";
+
+        return {
+          destinationId,
+          target,
+          inventory,
+          publishedBefore,
+          attempted,
+          succeeded,
+          failed,
+          publishedAfter,
+          remaining,
+          status,
+        };
+      })
+    : [];
+
+  const runReport: HotelPostRunReport = {
+    generatedAt: new Date().toISOString(),
+    source: "ai",
+    plan: plan ?? {},
+    totalTarget: destinations.reduce((sum, item) => sum + item.target, 0),
+    totalSucceeded: successCount,
+    totalFailed: failureCount,
+    totalPublished: posts.length,
+    totalInventory: source.hotels.length,
+    totalRemaining: Math.max(0, source.hotels.length - posts.length),
+    destinations,
+  };
+
+  await writeFile(
+    runReportPath,
+    `${JSON.stringify(runReport, null, 2)}\n`,
+    "utf8",
+  );
+
 
   console.log(`Saved ${posts.length} hotel post(s): ${outputPath}`);
   console.log(
