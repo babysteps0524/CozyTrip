@@ -52,10 +52,6 @@ function fail(message: string): never {
   throw new Error(`Hotel run report validation failed: ${message}`);
 }
 
-function readJson<T>(path: string): T {
-  throw new Error("unreachable");
-}
-
 async function readFileJson<T>(path: string): Promise<T> {
   const file = Bun.file(path);
 
