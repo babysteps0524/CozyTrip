@@ -1,5 +1,4 @@
 import { Container, Section } from "../components/common";
-
 import { DestinationCard } from "../components/destination";
 import { HotelCard } from "../components/hotel";
 import { PostCard } from "../components/post";
@@ -12,113 +11,74 @@ interface HomeProps {
 
 export default function Home({ destinations, hotels, guides }: HomeProps) {
   const featuredDestinations = destinations.slice(0, 6);
-
-  const featuredHotels = hotels.slice(0, 3);
-
-
+  const featuredHotels = hotels.slice(0, 6);
+  const featuredGuides = guides.slice(0, 3);
 
   return (
     <>
-      <Section>
+      <section className="border-b border-ct-line dark:border-ct-dark-line">
         <Container>
-          <div max-w="4xl" py="8 sm:12 lg:16">
-            <p
-              mb="4"
-              text="sm ct-primary dark:ct-dark-text-soft"
-              font="medium"
-              tracking="wide"
-            >
-              TRAVEL · HOTELS · JAPAN
+          <div className="max-w-4xl py-16 sm:py-20 lg:py-24">
+            <p className="m-0 text-xs font-semibold tracking-[0.18em] text-ct-primary dark:text-ct-dark-text-soft">
+              COZYTRIP · HOTEL GUIDE
             </p>
 
-            <h1
-              m="0"
-              text="4xl sm:5xl lg:6xl"
-              font="bold"
-              tracking="tight"
-              leading="tight"
-            >
-              일본 여행을
+            <h1 className="mt-5 mb-0 max-w-3xl text-4xl font-bold leading-tight tracking-tight text-ct-text sm:text-5xl lg:text-6xl dark:text-ct-dark-text">
+              일본 호텔을 알아보고
               <br />
-              조금 더 편안하게
+              여행에 맞는 숙소를 찾아보세요.
             </h1>
 
-            <p
-              mt="6"
-              max-w="2xl"
-              text="base sm:lg ct-text-soft dark:ct-dark-text-soft"
-              leading="relaxed"
-            >
-              일본의 여행지와 호텔을 살펴보고 여행 목적에 맞는 숙소를
-              찾아보세요.
+            <p className="mt-6 mb-0 max-w-2xl text-base leading-8 text-ct-text-soft sm:text-lg dark:text-ct-dark-text-soft">
+              CozyTrip 코지트립은 일본 호텔 정보를 읽기 쉽게 정리해 소개합니다.
+              호텔의 위치, 객실, 시설, 식음료와 같은 제공 정보를 확인하고
+              예약 사이트로 이동할 수 있습니다.
             </p>
 
-            <div mt="8" flex="~ wrap" gap="3">
+            <div className="mt-8 flex flex-wrap gap-3">
               <a
                 href="/japan/tokyo/hotels/"
-                className="ct-button"
-                bg="ct-primary"
-                text="white"
-                hover="bg-ct-primary-dark"
-                un-active="scale-98"
+                className="ct-button ct-focus bg-ct-primary text-white hover:bg-ct-primary-dark"
+                active-scale="95"
               >
                 도쿄 호텔 보기
               </a>
-
               <a
-                href="/guides/"
-                className="ct-button"
-                border="~ ct-line dark:ct-dark-line"
-                bg="ct-surface dark:ct-dark-surface"
-                text="ct-text dark:ct-dark-text"
-                hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                un-active="scale-98"
+                href="/japan/"
+                className="ct-button ct-focus border border-ct-line bg-ct-surface text-ct-text hover:bg-ct-surface-soft dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text dark:hover:bg-ct-dark-surface-soft"
+                active-scale="95"
               >
-                여행 가이드
+                일본 여행지 보기
               </a>
             </div>
           </div>
         </Container>
-      </Section>
+      </section>
 
-      <Section borderTop surface>
+      <Section>
         <Container>
-          <div
-            flex="~ col sm:row"
-            items="start sm:center"
-            justify="between"
-            gap="4"
-          >
+          <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
                 DESTINATIONS
               </p>
-
-              <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
-                인기 여행지
+              <h2 className="mt-2 mb-0 text-2xl font-bold tracking-tight sm:text-3xl">
+                일본 여행지
               </h2>
-
-              <p mt="2" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft">
-                일본에서 많이 찾는 주요 여행지를 살펴보세요.
+              <p className="mt-2 mb-0 text-sm text-ct-text-soft dark:text-ct-dark-text-soft">
+                도시별 호텔 소개와 여행 정보를 확인하세요.
               </p>
             </div>
-
             <a
               href="/japan/"
-              text="sm ct-primary dark:ct-dark-text"
-              font="medium"
-              un-active="scale-98"
+              className="ct-focus text-sm font-medium text-ct-primary dark:text-ct-dark-text"
+              active-scale="98"
             >
               전체 여행지 보기 →
             </a>
           </div>
 
-          <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
+          <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {featuredDestinations.map((destination) => (
               <DestinationCard key={destination.id} destination={destination} />
             ))}
@@ -126,131 +86,95 @@ export default function Home({ destinations, hotels, guides }: HomeProps) {
         </Container>
       </Section>
 
-      <Section>
+      <Section borderTop surface>
         <Container>
-          <div
-            flex="~ col sm:row"
-            items="start sm:center"
-            justify="between"
-            gap="4"
-          >
+          <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
-                FEATURED HOTELS
+              <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
+                HOTEL STORIES
               </p>
-
-              <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
-                추천 호텔
+              <h2 className="mt-2 mb-0 text-2xl font-bold tracking-tight sm:text-3xl">
+                최근 호텔 소개
               </h2>
-
-              <p mt="2" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft">
-                여행 목적에 맞는 호텔을 찾아보세요.
+              <p className="mt-2 mb-0 text-sm text-ct-text-soft dark:text-ct-dark-text-soft">
+                실제 제공 데이터에 기반해 호텔의 주요 정보를 정리했습니다.
               </p>
             </div>
-
             <a
               href="/japan/tokyo/hotels/"
-              text="sm ct-primary dark:ct-dark-text"
-              font="medium"
-              un-active="scale-98"
+              className="ct-focus text-sm font-medium text-ct-primary dark:text-ct-dark-text"
+              active-scale="98"
             >
-              도쿄 호텔 전체 보기 →
+              호텔 둘러보기 →
             </a>
           </div>
 
-          <div mt="8" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
-            {featuredHotels.length > 0 ? (
-              featuredHotels.map((hotel) => (
+          {featuredHotels.length > 0 ? (
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+              {featuredHotels.map((hotel) => (
                 <HotelCard key={hotel.id} hotel={hotel} />
-              ))
-            ) : (
-              <div
-                col="span-1 sm:span-2 lg:span-3"
-                rounded="card"
-                border="~ ct-line dark:ct-dark-line"
-                bg="ct-surface dark:ct-dark-surface"
-                p="8"
-                text="center sm:left ct-muted dark:ct-dark-muted"
-              >
-                추천 호텔을 준비하고 있습니다.
-              </div>
-            )}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <p className="mt-8 rounded-card border border-ct-line bg-ct-surface p-8 text-center text-sm text-ct-muted dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-muted">
+              호텔 소개를 준비하고 있습니다.
+            </p>
+          )}
         </Container>
       </Section>
 
-      <Section borderTop surface>
+      <Section>
         <Container>
-          <div
-            flex="~ col sm:row"
-            items="start sm:center"
-            justify="between"
-            gap="4"
-          >
+          <div className="flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <p
-                m="0"
-                text="xs ct-primary dark:ct-dark-text-soft"
-                font="medium"
-                tracking="wide"
-              >
+              <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
                 TRAVEL GUIDES
               </p>
-
-              <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
+              <h2 className="mt-2 mb-0 text-2xl font-bold tracking-tight sm:text-3xl">
                 일본 여행 가이드
               </h2>
-
-              <p mt="2" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft">
-                호텔과 여행지를 선택할 때 필요한 정보를 확인하세요.
+              <p className="mt-2 mb-0 text-sm text-ct-text-soft dark:text-ct-dark-text-soft">
+                호텔과 여행지를 살펴볼 때 참고할 수 있는 정보를 모았습니다.
               </p>
             </div>
-
             <a
               href="/guides/"
-              text="sm ct-primary dark:ct-dark-text"
-              font="medium"
-              un-active="scale-98"
+              className="ct-focus text-sm font-medium text-ct-primary dark:text-ct-dark-text"
+              active-scale="98"
             >
               전체 가이드 보기 →
             </a>
           </div>
 
-          <div mt="8" grid="~ cols-1 md:2 lg:3" gap="4 lg:6">
-            {guides.map((post) => (
-              <PostCard key={post.id} post={post} />
-            ))}
-          </div>
+          {featuredGuides.length > 0 ? (
+            <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 lg:gap-6">
+              {featuredGuides.map((post) => (
+                <PostCard key={post.id} post={post} />
+              ))}
+            </div>
+          ) : (
+            <p className="mt-8 text-sm text-ct-muted dark:text-ct-dark-muted">
+              여행 가이드를 준비하고 있습니다.
+            </p>
+          )}
         </Container>
       </Section>
 
-      <Section>
+      <Section borderTop surface>
         <Container>
-          <div max-w="2xl">
-            <p
-              m="0"
-              text="xs ct-primary dark:ct-dark-text-soft"
-              font="medium"
-              tracking="wide"
-            >
-              POPULAR AREAS
+          <div className="max-w-2xl">
+            <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
+              EXPLORE BY AREA
             </p>
-
-            <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
-              인기 지역
+            <h2 className="mt-2 mb-0 text-2xl font-bold tracking-tight sm:text-3xl">
+              지역별로 찾아보기
             </h2>
-
-            <p mt="2" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft">
-              여행 목적에 따라 숙박 지역을 선택해보세요.
+            <p className="mt-2 mb-0 text-sm text-ct-text-soft dark:text-ct-dark-text-soft">
+              호텔 데이터에 등록된 주요 지역을 살펴볼 수 있습니다.
             </p>
           </div>
 
-          <div mt="8" grid="~ cols-2 sm:3 lg:6" gap="3">
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
             {destinations
               .flatMap((destination) => destination.popularAreas ?? [])
               .slice(0, 12)
@@ -258,18 +182,8 @@ export default function Home({ destinations, hotels, guides }: HomeProps) {
                 <a
                   key={`${area}-${index}`}
                   href="/japan/"
-                  min-h="24"
-                  flex="~"
-                  items="center"
-                  justify="center"
-                  rounded="xl"
-                  border="~ ct-line dark:ct-dark-line"
-                  bg="ct-surface dark:ct-dark-surface"
-                  px="3"
-                  py="4"
-                  text="sm center ct-text dark:ct-dark-text"
-                  hover="bg-ct-surface-soft dark:bg-ct-dark-surface-soft"
-                  un-active="scale-98"
+                  className="ct-focus flex min-h-24 items-center justify-center rounded-xl border border-ct-line bg-ct-surface px-3 py-4 text-center text-sm text-ct-text transition-transform hover:bg-ct-surface-soft dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text dark:hover:bg-ct-dark-surface-soft"
+                  active-scale="98"
                 >
                   {area}
                 </a>
