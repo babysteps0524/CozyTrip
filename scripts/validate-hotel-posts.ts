@@ -2,7 +2,7 @@ import { resolve } from "node:path";
 import type { Hotel, HotelPost } from "../src/types";
 import { validateHotelPost } from "../src/lib/ai/validate";
 
-interface AgodaHotelsFile {
+interface MyRealTripHotelsFile {
   hotels: unknown[];
 }
 
@@ -11,7 +11,7 @@ interface GeneratedHotelPostFile {
 }
 
 const root = resolve(import.meta.dir, "..");
-const hotelsPath = resolve(root, "src/data/generated/agoda-hotels.json");
+const hotelsPath = resolve(root, "src/data/generated/myrealtrip-hotels.json");
 const postsPath = resolve(root, "src/data/generated/hotel-posts.generated.json");
 
 function isRecord(value: unknown): value is Record<string, unknown> {
@@ -24,7 +24,7 @@ function asHotel(value: unknown): Hotel | null {
 }
 
 async function main(): Promise<void> {
-  const hotelsFile = JSON.parse(await Bun.file(hotelsPath).text()) as AgodaHotelsFile;
+  const hotelsFile = JSON.parse(await Bun.file(hotelsPath).text()) as MyRealTripHotelsFile;
   const postsFile = JSON.parse(await Bun.file(postsPath).text()) as GeneratedHotelPostFile;
 
   const hotels = Array.isArray(hotelsFile.hotels)
