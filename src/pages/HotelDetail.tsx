@@ -15,6 +15,7 @@ import {
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
 import type { Hotel } from "../types";
+import { isDisplayableHotelImage } from "../lib/image";
 
 function formatDate(value: string | undefined): string | undefined {
   if (!value) return undefined;
@@ -48,9 +49,7 @@ export default function HotelDetail({
   const hotelPost = hotelPosts.find(
     (post) => post.category === "hotel" && post.hotelId === hotel.id,
   );
-  const articleImage = hotel.images.find(
-    (image) => image.rightsConfirmed && Boolean(image.src),
-  );
+  const articleImage = hotel.images.find(isDisplayableHotelImage);
 
   const articleHeadings = hotelPosts.flatMap((post) =>
     post.blocks
