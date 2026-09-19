@@ -67,6 +67,9 @@ async function main(): Promise<void> {
     if (!destination) continue;
 
     const route = `/japan/${destination.slug}/hotels/${hotel.slug}/`;
+    const hotelPost = posts.find(
+      (post) => post.category === "hotel" && post.hotelId === hotel.id,
+    );
     checks.push(
       validateRoute(route, [
         ['"@type":"Hotel"', "Hotel JSON-LD"],
@@ -74,13 +77,11 @@ async function main(): Promise<void> {
       ]),
     );
 
-    const hotelPost = posts.find(
-      (post) => post.category === "hotel" && post.hotelId === hotel.id,
-    );
     if (hotelPost) {
       checks.push(
         validateRoute(route, [
           ['"@type":"FAQPage"', "FAQ JSON-LD"],
+          [`<title>${hotelPost.title} | CozyTrip 코지트립`, "generated hotel post title"],
         ]),
       );
     }
