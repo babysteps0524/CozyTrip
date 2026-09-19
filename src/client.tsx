@@ -1,5 +1,5 @@
 import { StrictMode, type ReactNode } from "react";
-import { hydrateRoot } from "react-dom/client";
+import { StrictMode, type ReactNode } from "react";\nimport { hydrateRoot } from "react-dom/client";
 
 import { destinations } from "./data/destinations";
 import { posts } from "./data/posts";
