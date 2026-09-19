@@ -1,0 +1,1033 @@
+{
+  "generatedAt": "2026-09-18T05:18:19.639Z",
+  "source": "myrealtrip",
+  "hotelCount": 20,
+  "search": {
+    "checkIn": "2026-10-15",
+    "checkOut": "2026-10-18",
+    "adultCount": 2,
+    "childCount": 0
+  },
+  "hotels": [
+    {
+      "id": "myrealtrip-4185957",
+      "name": "삿포로 호텔 바이 그랑벨",
+      "slug": "삿포로-호텔-바이-그랑벨-4185957",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 삿포로 호텔 바이 그랑벨 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-4185957-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/iGpx/6vaz3BU5CR.jpg?width=720",
+          "alt": "삿포로 호텔 바이 그랑벨 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4185957",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4185957?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 869,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4185957?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1495357",
+      "name": "호텔 포르자 삿포로 스테이션",
+      "slug": "호텔-포르자-삿포로-스테이션-1495357",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 호텔 포르자 삿포로 스테이션 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1495357-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/sj4E/Rwu3PqHjMm.jpg?width=720",
+          "alt": "호텔 포르자 삿포로 스테이션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1495357",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1495357?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 998,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1495357?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-6215670",
+      "name": "삿포로 그랜드 호텔",
+      "slug": "삿포로-그랜드-호텔-6215670",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 삿포로 그랜드 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-6215670-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/ykPt/ksnKIIVDLq.jpg?width=720",
+          "alt": "삿포로 그랜드 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215670",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215670?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1889,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215670?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1153897",
+      "name": "호텔 몬토레 에델호프 삿포로",
+      "slug": "호텔-몬토레-에델호프-삿포로-1153897",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 호텔 몬토레 에델호프 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1153897-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/KJHD/o39rAKc4S9.jpg?width=720",
+          "alt": "호텔 몬토레 에델호프 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1153897",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1153897?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1662,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1153897?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1186904",
+      "name": "호텔 레졸 트리니티 삿포로",
+      "slug": "호텔-레졸-트리니티-삿포로-1186904",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 호텔 레졸 트리니티 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1186904-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/29/ZU2l/2EojLErJwZ.jpg?width=720",
+          "alt": "호텔 레졸 트리니티 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1186904",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186904?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1008,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1186904?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-6206720",
+      "name": "퀸테사 호텔 삿포로 스스키노",
+      "slug": "퀸테사-호텔-삿포로-스스키노-6206720",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 퀸테사 호텔 삿포로 스스키노 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-6206720-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/dU9O/w3k46wP7ov.jpg?width=720",
+          "alt": "퀸테사 호텔 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206720",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206720?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 887,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206720?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1259073",
+      "name": "라젠트 스테이 삿포로 오도리 홋카이도",
+      "slug": "라젠트-스테이-삿포로-오도리-홋카이도-1259073",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 라젠트 스테이 삿포로 오도리 홋카이도 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1259073-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/02/7X4c/BHCEnMyxxu.jpg?width=720",
+          "alt": "라젠트 스테이 삿포로 오도리 홋카이도 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1259073",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1259073?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1020,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1259073?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1568912",
+      "name": "그랑벨 호텔 스스키노",
+      "slug": "그랑벨-호텔-스스키노-1568912",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 그랑벨 호텔 스스키노 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1568912-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/ScGz/j8j3vCIMoG.jpg?width=720",
+          "alt": "그랑벨 호텔 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1568912",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1568912?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.3,
+      "numberOfReviews": 446,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1568912?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-6215631",
+      "name": "삿포로 스트림 호텔",
+      "slug": "삿포로-스트림-호텔-6215631",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 삿포로 스트림 호텔 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-6215631-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/YsdA/ZDGC36qS2e.jpg?width=720",
+          "alt": "삿포로 스트림 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215631",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215631?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 511,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215631?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-4312114",
+      "name": " 크로스호텔 삿포로",
+      "slug": "크로스호텔-삿포로-4312114",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의  크로스호텔 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-4312114-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/14/oe4Z/JDoaXppWDQ.jpg?width=720",
+          "alt": " 크로스호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4312114",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4312114?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1089,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/4312114?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1422010",
+      "name": "퀸테사 호텔 삿포로 스스키노 63 릴렉스&스파",
+      "slug": "퀸테사-호텔-삿포로-스스키노-63-릴렉스-스파-1422010",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 퀸테사 호텔 삿포로 스스키노 63 릴렉스&스파 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1422010-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/26/0I8H/ZdmUagTGRb.jpg?width=720",
+          "alt": "퀸테사 호텔 삿포로 스스키노 63 릴렉스&스파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1422010",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1422010?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 365,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1422010?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-6215599",
+      "name": "스마일 호텔 프리미엄 삿포로스스키노",
+      "slug": "스마일-호텔-프리미엄-삿포로스스키노-6215599",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 스마일 호텔 프리미엄 삿포로스스키노 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-6215599-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/HAbt/LhVjUSXQxE.jpg?width=720",
+          "alt": "스마일 호텔 프리미엄 삿포로스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215599",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215599?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.4,
+      "numberOfReviews": 693,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215599?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1482483",
+      "name": "더 놋 삿포로",
+      "slug": "더-놋-삿포로-1482483",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 더 놋 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1482483-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/U5Lo/PlsHJpPMpk.jpg?width=720",
+          "alt": "더 놋 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1482483",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1482483?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 937,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1482483?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1295524",
+      "name": "카락사 호텔 삿포로",
+      "slug": "카락사-호텔-삿포로-1295524",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 카락사 호텔 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1295524-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/ax4H/20UiRqTqjy.jpg?width=720",
+          "alt": "카락사 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1295524",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295524?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1012,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1295524?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-3585879",
+      "name": "Jozankei Yurakusoan",
+      "slug": "jozankei-yurakusoan-3585879",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 Jozankei Yurakusoan 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-3585879-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/17/ryFo/5JCMUQnHmh.jpg?width=720",
+          "alt": "Jozankei Yurakusoan 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3585879",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3585879?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "ratingAverage": 4.8,
+      "numberOfReviews": 168,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3585879?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-3588832",
+      "name": "JR 웨스트 그룹 비아 인 프라임 삿포로 오도리",
+      "slug": "jr-웨스트-그룹-비아-인-프라임-삿포로-오도리-3588832",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 JR 웨스트 그룹 비아 인 프라임 삿포로 오도리 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-3588832-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/01/mP60/8vy4bzm7yf.jpg?width=720",
+          "alt": "JR 웨스트 그룹 비아 인 프라임 삿포로 오도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3588832",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3588832?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 317,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/3588832?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1576808",
+      "name": "더 로열 파크 캔버스 – 삿포로 오도리 파크",
+      "slug": "더-로열-파크-캔버스-삿포로-오도리-파크-1576808",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 더 로열 파크 캔버스 – 삿포로 오도리 파크 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1576808-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/FtP0/HK6EHeCruX.jpg?width=720",
+          "alt": "더 로열 파크 캔버스 – 삿포로 오도리 파크 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1576808",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1576808?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1367,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1576808?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-1548268",
+      "name": "KOKO 호텔 삿포로 에키마에",
+      "slug": "koko-호텔-삿포로-에키마에-1548268",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 KOKO 호텔 삿포로 에키마에 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1548268-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/20/DMS2/NEiUj2hneq.jpg?width=720",
+          "alt": "KOKO 호텔 삿포로 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1548268",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1548268?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.2,
+      "numberOfReviews": 1085,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1548268?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-6338994",
+      "name": "솔라리아 니시테츠 호텔 삿포로",
+      "slug": "솔라리아-니시테츠-호텔-삿포로-6338994",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 솔라리아 니시테츠 호텔 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-6338994-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/14/I9ng/WKfkMOY4cQ.jpg?width=720",
+          "alt": "솔라리아 니시테츠 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6338994",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6338994?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1022,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6338994?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    },
+    {
+      "id": "myrealtrip-6215696",
+      "name": "게이오 플라자 호텔 삿포로",
+      "slug": "게이오-플라자-호텔-삿포로-6215696",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Hokkaido",
+      "city": "삿포로",
+      "area": "삿포로",
+      "destinationId": "japan-sapporo",
+      "description": "삿포로 지역의 게이오 플라자 호텔 삿포로 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Hokkaido",
+        "city": "삿포로",
+        "area": "삿포로"
+      },
+      "images": [
+        {
+          "id": "myrealtrip-6215696-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/02/0Kjc/naGwIqVw1P.jpg?width=720",
+          "alt": "게이오 플라자 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215696",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215696?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 5,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 1039,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215696?checkIn=2026-10-15&checkOut=2026-10-18&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-18",
+      "updatedAt": "2026-09-18"
+    }
+  ],
+  "imageUsageAllowed": true
+}
