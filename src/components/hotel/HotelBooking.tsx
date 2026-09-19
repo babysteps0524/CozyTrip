@@ -2,6 +2,7 @@ import type { Hotel } from "../../types";
 
 import { getAffiliateProviderConfig } from "../../lib/affiliate";
 import { Container } from "../common";
+import AffiliateDisclosure from "./AffiliateDisclosure";
 
 interface HotelBookingProps {
   hotel: Hotel;
@@ -9,6 +10,9 @@ interface HotelBookingProps {
 
 export default function HotelBooking({ hotel }: HotelBookingProps) {
   const affiliateLinks = hotel.affiliateLinks ?? [];
+  const hasMyRealTripLink = affiliateLinks.some(
+    (link) => link.provider === "myrealtrip",
+  );
 
   return (
     <section id="booking" scroll-mt="24" border="t ct-line dark:ct-dark-line">
@@ -34,6 +38,8 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                 </p>
               </div>
             </div>
+
+            <AffiliateDisclosure show={hasMyRealTripLink} />
 
             {affiliateLinks.length > 0 ? (
               <>
