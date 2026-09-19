@@ -2,7 +2,13 @@ import { Container, Section } from "../components/common";
 
 import { DestinationCard } from "../components/destination";
 
-import type { Destination } from "../types";\n\ninterface JapanProps {\n  destinations: Destination[];\n}\n\nexport default function Japan({ destinations }: JapanProps) {
+import type { Destination } from "../types";
+
+interface JapanProps {
+  destinations: Destination[];
+}
+
+export default function Japan({ destinations }: JapanProps) {
   return (
     <>
       <Section>
