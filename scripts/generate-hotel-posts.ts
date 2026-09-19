@@ -421,6 +421,78 @@ function selectHotels(
   ];
 }
 
+function validateSelectedHotels(
+  selectedHotels: Hotel[],
+  hotels: Hotel[],
+  existingPosts: HotelPost[],
+  failedHotels: FailedHotelPost[],
+  plan: Record<string, number> | undefined,
+): void {
+  const selectedIds = new Set<string>();
+
+  for (const hotel of selectedHotels) {
+    if (selectedIds.has(hotel.id)) {
+      throw new Error(`Duplicate hotel selected for generation: ${hotel.id}`);
+    }
+    selectedIds.add(hotel.id);
+  }
+
+  if (!plan) {
+    return;
+  }
+
+  const existingIds = new Set(existingPosts.map((post) => post.hotelId));
+  const failedById = new Map(failedHotels.map((failure) => [failure.hotelId, failure]));
+
+  for (const [destinationId, target] of Object.entries(plan)) {
+    const inventoryCount = hotels.filter(
+      (hotel) => hotel.destinationId === destinationId,
+    ).length;
+
+    const selected = selectedHotels.filter(
+      (hotel) => hotel.destinationId === destinationId,
+    );
+
+    const eligible = hotels.filter((hotel) => {
+      if (hotel.destinationId !== destinationId || existingIds.has(hotel.id)) {
+        return false;
+      }
+
+      const failure = failedById.get(hotel.id);
+      return !failure || failure.status !== "retry-exhausted";
+    });
+
+    if (inventoryCount === 0) {
+      throw new Error(
+        `AI_DAILY_PLAN references a destination with no inventory: ${destinationId}`,
+      );
+    }
+
+    if (eligible.length < target) {
+      throw new Error(
+        `AI_DAILY_PLAN cannot provide ${target} hotel(s) for ${destinationId}; only ${eligible.length} eligible hotel(s) remain.`,
+      );
+    }
+
+    if (selected.length !== target) {
+      throw new Error(
+        `AI_DAILY_PLAN selection mismatch for ${destinationId}: expected ${target}, selected ${selected.length}.`,
+      );
+    }
+  }
+
+  const plannedTotal = Object.values(plan).reduce(
+    (total, count) => total + count,
+    0,
+  );
+
+  if (selectedHotels.length !== plannedTotal) {
+    throw new Error(
+      `AI_DAILY_PLAN selection total mismatch: expected ${plannedTotal}, selected ${selectedHotels.length}.`,
+    );
+  }
+}
+
 function hasDuplicateTopic(
   post: HotelPost,
   existingPosts: HotelPost[],
@@ -554,6 +626,16 @@ async function main(): Promise<void> {
     failedHotels.map((failure) => [failure.hotelId, failure]),
   );
   const selectedHotels = selectHotels(source.hotels, existingPosts, failedHotels);
+  const plan = dailyPlan ? parseDailyPlan(dailyPlan) : undefined;
+
+  validateSelectedHotels(
+    selectedHotels,
+    source.hotels,
+    existingPosts,
+    failedHotels,
+    plan,
+  );
+
   const generatedPosts: HotelPost[] = [];
   let successCount = 0;
   let failureCount = 0;
@@ -575,7 +657,6 @@ async function main(): Promise<void> {
     );
   }
 
-  const plan = dailyPlan ? parseDailyPlan(dailyPlan) : undefined;
   const attemptedByDestination = new Map<string, number>();
   const successByDestination = new Map<string, number>();
   const failureByDestination = new Map<string, number>();
