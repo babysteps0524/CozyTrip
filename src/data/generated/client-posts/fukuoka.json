@@ -12,6 +12,21 @@
       "hotelId": "myrealtrip-5709842",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-5709842-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/20/oINH/kUQezPlrOM.jpg?width=720",
+            "alt": "컴포트 인 후쿠오카 텐진 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-5709842",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5709842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "컴포트 인 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 다양한 매력을 탐방하기에 좋은 위치에 있습니다."
         },
@@ -103,6 +118,21 @@
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-1460748",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1460748-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/20/7mZQ/LwcAVlERcO.jpg?width=720",
+            "alt": "더 베이직스 후쿠오카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1460748",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460748?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "더 베이직스 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 시설과 편안한 숙박 환경을 제공합니다."
@@ -225,6 +255,21 @@
       "hotelId": "myrealtrip-1402095",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1402095-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/NUye/8LhaqtJIqy.jpg?width=720",
+            "alt": "미쓰이 가든 호텔 후쿠오카 기온 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1402095",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1402095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "미쓰이 가든 호텔 후쿠오카 기온은 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 매력을 느낄 수 있는 최적의 장소입니다."
         },
@@ -318,6 +363,21 @@
       "hotelId": "myrealtrip-1188575",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1188575-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/NHHA/vaEAHpyIoz.jpg?width=720",
+            "alt": "호텔 마이스테이스 후쿠오카 텐진 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1188575",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1188575?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 마이스테이스 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 후쿠오카 지역의 다양한 관광지와 가까운 위치에 있습니다."
         },
@@ -409,6 +469,21 @@
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-1487512",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1487512-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/31/XEsJ/EmTPYo2rVC.jpg?width=720",
+            "alt": "호텔 몬토레 후쿠오카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1487512",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1487512?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 몬토레 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 다양한 매력을 경험할 수 있는 최적의 장소입니다."
@@ -519,6 +594,21 @@
       "hotelId": "myrealtrip-6339000",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6339000-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/20/IAOm/eGHmW4yP1C.jpg?width=720",
+            "alt": "니시테츠 그랜드 호텔 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6339000",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6339000?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "니시테츠 그랜드 호텔은 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 갖추고 있어 여행객들에게 적합한 선택입니다."
         },
@@ -627,6 +717,21 @@
       "hotelId": "myrealtrip-1190993",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1190993-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/13/Lr86/aLWwFSsUPE.jpg?width=720",
+            "alt": "호텔 홋케 클럽 후쿠오카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1190993",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190993?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 홋케 클럽 후쿠오카는 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 다양한 매력을 즐기기에 좋은 장소입니다."
         },
@@ -718,6 +823,21 @@
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-1559947",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1559947-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/27/ecwv/Gpndfk7wRX.jpg?width=720",
+            "alt": "호텔 오리엔탈 익스프레스 후쿠오카 텐진 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1559947",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1559947?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 오리엔탈 익스프레스 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 기본적인 숙박 시설을 제공하며, 후쿠오카 지역의 중심부에 자리잡고 있습니다."
@@ -826,6 +946,21 @@
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-1295093",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1295093-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/G1sN/Uu24t2etgR.jpg?width=720",
+            "alt": "호텔 포르자 하카타역 치쿠시 구치Ⅰ 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1295093",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 포르자 하카타역 치쿠시 구치Ⅰ은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설을 갖추고 있으며, 후쿠오카 지역의 여행에 적합한 숙소입니다."
@@ -966,6 +1101,21 @@
       "hotelId": "myrealtrip-1268921",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1268921-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/tNz6/wssn5L0g1R.jpg?width=720",
+            "alt": "호텔 몬테 에르마나 후쿠오카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1268921",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1268921?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 몬테 에르마나 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다. 제공된 데이터 기준으로 확인 가능한 핵심 숙소 정보를 안내합니다."
         },
@@ -1076,6 +1226,21 @@
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-1144031",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1144031-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/03/Z2hR/uQukY3VKi5.jpg?width=720",
+            "alt": "컴포트 호텔 하카타 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1144031",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1144031?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "컴포트 호텔 하카타는 일본 후쿠오카에 위치한 호텔이며, 3성급으로 분류됩니다. 제공된 데이터에 따라 숙소의 기본 정보를 확인할 수 있습니다."

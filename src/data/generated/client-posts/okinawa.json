@@ -12,6 +12,21 @@
       "hotelId": "myrealtrip-1499059",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1499059-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/04/8asz/DsxgiMxNGi.jpg?width=720",
+            "alt": "레쿠 오키나와 자탄 스파 & 리조트 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1499059",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "레쿠 오키나와 자탄 스파 & 리조트는 일본 오키나와 지역에 위치한 4성급 호텔입니다. 이곳은 편안한 숙소와 함께 특별한 휴식 경험을 제공합니다."
         },
@@ -104,6 +119,21 @@
       "hotelId": "myrealtrip-6196684",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6196684-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/09/25/mddX/PCQgBplnIS.jpg?width=720",
+            "alt": "베셀 호텔 캄파나 오키나와 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6196684",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "베셀 호텔 캄파나 오키나와는 일본 오키나와 지역에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 시설과 편안한 객실을 갖추고 있습니다."
         },
@@ -195,6 +225,21 @@
       "destinationId": "japan-okinawa",
       "hotelId": "myrealtrip-6178095",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6178095-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/egQj/Z0mKAFn32o.jpg?width=720",
+            "alt": "호텔 JAL 시티 나하 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6178095",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 JAL 시티 나하는 오키나와 지역에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 편의 시설과 쾌적한 객실을 제공하여 여행객들에게 안락한 휴식을 선사합니다."
@@ -316,6 +361,21 @@
       "destinationId": "japan-okinawa",
       "hotelId": "myrealtrip-6206151",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6206151-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/w6T9/e2r9IPbUaz.jpg?width=720",
+            "alt": "하얏트 리젠시 세라가키 아일랜드 오키나와 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6206151",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "하얏트 리젠시 세라가키 아일랜드 오키나와는 일본 오키나와에 위치한 5성급 호텔입니다. 이 호텔은 고급스러운 숙소와 함께 편안한 휴식을 제공합니다."
@@ -439,6 +499,21 @@
       "hotelId": "myrealtrip-6183767",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6183767-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/11/HqPl/gIS34DxQTp.jpg?width=720",
+            "alt": "오리엔탈 호텔 오키나와 리조트 & 스파 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6183767",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "오리엔탈 호텔 오키나와 리조트 & 스파는 일본 오키나와에 위치한 5성급 호텔입니다. 이 호텔은 숙소 검색 API를 통해 확인된 정보를 바탕으로 소개됩니다."
         },
@@ -559,6 +634,21 @@
       "destinationId": "japan-okinawa",
       "hotelId": "myrealtrip-4479180",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-4479180-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/24/PtU3/Zl6i9YcTfk.jpg?width=720",
+            "alt": "더 네스트 나하 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-4479180",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "더 네스트 나하는 일본 오키나와에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설이 갖춰져 있으며, 오키나와 지역의 특성을 살린 숙소입니다."

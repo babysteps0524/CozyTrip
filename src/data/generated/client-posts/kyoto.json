@@ -12,6 +12,21 @@
       "hotelId": "myrealtrip-1652241",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1652241-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/26/U4I8/zer9m5zunP.jpg?width=720",
+            "alt": "교토 우메코지 카덴쇼 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1652241",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "교토 우메코지 카덴쇼는 일본 교토에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의시설과 함께 아늑한 숙소를 제공합니다."
         },
@@ -121,6 +136,21 @@
       "hotelId": "myrealtrip-1490406",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1490406-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/06/AXzw/U4AhpP6bfS.jpg?width=720",
+            "alt": "온야도 노노 교토시치조 내추럴 핫 스프링스 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1490406",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "온야도 노노 교토시치조 내추럴 핫 스프링스는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 자연 온천을 제공하며, 편안한 숙박을 위한 다양한 시설을 갖추고 있습니다."
         },
@@ -229,6 +259,21 @@
       "hotelId": "myrealtrip-1208147",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1208147-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/22/ZK4P/rfXoLzSaUb.jpg?width=720",
+            "alt": "호텔 엘시안트 교토 하치조구치 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1208147",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 엘시안트 교토 하치조구치는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 교토 지역의 다양한 매력을 탐험하기에 좋은 위치에 있습니다."
         },
@@ -336,6 +381,21 @@
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1200282",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1200282-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/21/Ksuj/a4nRuMT5tS.jpg?width=720",
+            "alt": "알몬트 호텔 교토 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1200282",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "알몬트 호텔 교토는 교토 지역에 위치한 4성급 호텔입니다. 다양한 편의시설과 함께 여행객들에게 쾌적한 숙소를 제공합니다."
@@ -458,6 +518,21 @@
       "hotelId": "myrealtrip-1581864",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1581864-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/12/Er6J/0eiPJxIqgy.jpg?width=720",
+            "alt": "리치몬드 호텔 프리미어 교토 시조 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1581864",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "리치몬드 호텔 프리미어 교토 시조는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설을 갖춘 숙소로, 여행객들에게 적합한 선택입니다."
         },
@@ -549,6 +624,21 @@
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1571825",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1571825-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/76PQ/VpqsfS4fW3.jpg?width=720",
+            "alt": "오크우드 호텔 오이케 교토 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1571825",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "오크우드 호텔 오이케 교토는 일본 교토에 위치한 4성급 호텔로, 편안한 숙소를 제공합니다. 다양한 편의시설과 함께 교토의 매력을 느낄 수 있는 최적의 장소입니다."
@@ -658,6 +748,21 @@
       "hotelId": "myrealtrip-1594516",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1594516-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/wwA2/G2JB58si1f.jpg?width=720",
+            "alt": "소테츠 프레사 인 교토-키요미즈 고조 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1594516",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "소테츠 프레사 인 교토-키요미즈 고조는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 교토 지역의 다양한 매력을 경험할 수 있는 좋은 위치에 있습니다."
         },
@@ -765,6 +870,21 @@
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1566383",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1566383-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/gaAI/RYFE8LsQ5O.jpg?width=720",
+            "alt": "호텔 포르자 교토 시조 카와라마치 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1566383",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 포르자 교토 시조 카와라마치는 일본 교토에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의시설과 서비스를 제공하며, 교토 지역의 관광지와의 접근성도 좋은 위치에 있습니다."
@@ -874,6 +994,21 @@
       "hotelId": "myrealtrip-1254251",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1254251-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/30/gSO6/uHPbggDDAa.jpg?width=720",
+            "alt": "호텔 그레이스리 교토 산조 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1254251",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 그레이스리 교토 산조는 일본 교토에 위치한 4성급 호텔입니다. 이 호텔은 고객에게 다양한 편의시설을 제공하며, 교토 지역의 매력을 경험할 수 있는 최적의 장소입니다."
         },
@@ -982,6 +1117,21 @@
       "hotelId": "myrealtrip-1229514",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1229514-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/18/LJSr/AdNdviaaRY.jpg?width=720",
+            "alt": "사쿠라 테라스 더 갤러리 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1229514",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "사쿠라 테라스 더 갤러리는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 제공하며, 여행객들에게 적합한 숙소입니다."
         },
@@ -1089,6 +1239,21 @@
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1369404",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1369404-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/12/QMo7/QTD1I8SbG5.jpg?width=720",
+            "alt": "게이오 프렐리아 호텔 교토 가라스마 고조 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1369404",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "게이오 프렐리아 호텔 교토 가라스마 고조는 일본 교토에 위치한 4성급 호텔입니다. 숙소 유형은 호텔이며, 제공된 데이터에서 확인된 별점은 4점입니다."

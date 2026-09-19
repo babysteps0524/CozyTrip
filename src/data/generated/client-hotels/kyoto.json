@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T09:23:06.087Z",
+  "generatedAt": "2026-09-19T09:30:06.832Z",
   "source": "myrealtrip",
   "hotelCount": 100,
   "search": {},
-  "imageUsageAllowed": false,
+  "imageUsageAllowed": true,
   "hotels": [
     {
       "id": "myrealtrip-1652241",
@@ -11,7 +11,7 @@
       "provider": "myrealtrip",
       "name": "교토 우메코지 카덴쇼",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "교토-우메코지-카덴쇼-1652241",
       "country": "일본",
       "countryCode": "JP",
@@ -27,7 +27,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1652241-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/26/U4I8/zer9m5zunP.jpg?width=720",
+          "alt": "교토 우메코지 카덴쇼 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1652241",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -53,7 +66,7 @@
       "provider": "myrealtrip",
       "name": "온야도 노노 교토시치조 내추럴 핫 스프링스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
       "country": "일본",
       "countryCode": "JP",
@@ -69,7 +82,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1490406-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/06/AXzw/U4AhpP6bfS.jpg?width=720",
+          "alt": "온야도 노노 교토시치조 내추럴 핫 스프링스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1490406",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -95,7 +121,7 @@
       "provider": "myrealtrip",
       "name": "호텔 엘시안트 교토 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "호텔-엘시안트-교토-하치조구치-1208147",
       "country": "일본",
       "countryCode": "JP",
@@ -111,7 +137,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1208147-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/22/ZK4P/rfXoLzSaUb.jpg?width=720",
+          "alt": "호텔 엘시안트 교토 하치조구치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1208147",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -137,7 +176,7 @@
       "provider": "myrealtrip",
       "name": "알몬트 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "알몬트-호텔-교토-1200282",
       "country": "일본",
       "countryCode": "JP",
@@ -153,7 +192,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1200282-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/21/Ksuj/a4nRuMT5tS.jpg?width=720",
+          "alt": "알몬트 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1200282",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -179,7 +231,7 @@
       "provider": "myrealtrip",
       "name": "리치몬드 호텔 프리미어 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
       "country": "일본",
       "countryCode": "JP",
@@ -195,7 +247,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1581864-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/12/Er6J/0eiPJxIqgy.jpg?width=720",
+          "alt": "리치몬드 호텔 프리미어 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1581864",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -221,7 +286,7 @@
       "provider": "myrealtrip",
       "name": "오크우드 호텔 오이케 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "오크우드-호텔-오이케-교토-1571825",
       "country": "일본",
       "countryCode": "JP",
@@ -237,7 +302,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1571825-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/76PQ/VpqsfS4fW3.jpg?width=720",
+          "alt": "오크우드 호텔 오이케 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1571825",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -263,7 +341,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 교토-키요미즈 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
       "country": "일본",
       "countryCode": "JP",
@@ -279,7 +357,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1594516-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/wwA2/G2JB58si1f.jpg?width=720",
+          "alt": "소테츠 프레사 인 교토-키요미즈 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1594516",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -305,7 +396,7 @@
       "provider": "myrealtrip",
       "name": "호텔 포르자 교토 시조 카와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "호텔-포르자-교토-시조-카와라마치-1566383",
       "country": "일본",
       "countryCode": "JP",
@@ -321,7 +412,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1566383-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/gaAI/RYFE8LsQ5O.jpg?width=720",
+          "alt": "호텔 포르자 교토 시조 카와라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1566383",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -347,7 +451,7 @@
       "provider": "myrealtrip",
       "name": "호텔 그레이스리 교토 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "호텔-그레이스리-교토-산조-1254251",
       "country": "일본",
       "countryCode": "JP",
@@ -363,7 +467,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1254251-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/30/gSO6/uHPbggDDAa.jpg?width=720",
+          "alt": "호텔 그레이스리 교토 산조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1254251",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -389,7 +506,7 @@
       "provider": "myrealtrip",
       "name": "사쿠라 테라스 더 갤러리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "사쿠라-테라스-더-갤러리-1229514",
       "country": "일본",
       "countryCode": "JP",
@@ -405,7 +522,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1229514-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/18/LJSr/AdNdviaaRY.jpg?width=720",
+          "alt": "사쿠라 테라스 더 갤러리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1229514",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -431,7 +561,7 @@
       "provider": "myrealtrip",
       "name": "게이오 프렐리아 호텔 교토 가라스마 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "게이오-프렐리아-호텔-교토-가라스마-고조-1369404",
       "country": "일본",
       "countryCode": "JP",
@@ -447,7 +577,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1369404-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/12/QMo7/QTD1I8SbG5.jpg?width=720",
+          "alt": "게이오 프렐리아 호텔 교토 가라스마 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1369404",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -473,7 +616,7 @@
       "provider": "myrealtrip",
       "name": "오리엔탈 호텔 교토 로쿠조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
       "country": "일본",
       "countryCode": "JP",
@@ -489,7 +632,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1447756-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/13/ZIPB/PgKesaYRMu.jpg?width=720",
+          "alt": "오리엔탈 호텔 교토 로쿠조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1447756",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -515,7 +671,7 @@
       "provider": "myrealtrip",
       "name": "호텔 홋케 클럽 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "호텔-홋케-클럽-교토-1186098",
       "country": "일본",
       "countryCode": "JP",
@@ -531,7 +687,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1186098-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/CDOX/aXcwH7bKDB.jpg?width=720",
+          "alt": "호텔 홋케 클럽 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1186098",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -557,7 +726,7 @@
       "provider": "myrealtrip",
       "name": "스마일 호텔 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "스마일-호텔-교토-시조-1181987",
       "country": "일본",
       "countryCode": "JP",
@@ -573,7 +742,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1181987-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/M9jl/S9LnT7ftnC.jpg?width=720",
+          "alt": "스마일 호텔 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1181987",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -599,7 +781,7 @@
       "provider": "myrealtrip",
       "name": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "카덴쇼-아라시야마-온센-교토-교리츠-리조트-1409068",
       "country": "일본",
       "countryCode": "JP",
@@ -615,7 +797,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1409068-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/26/L5oX/4JQHbscndA.jpg?width=720",
+          "alt": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1409068",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -640,7 +835,7 @@
       "provider": "myrealtrip",
       "name": "호텔 앤드룸스 교토 시치조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "호텔-앤드룸스-교토-시치조-1556707",
       "country": "일본",
       "countryCode": "JP",
@@ -656,7 +851,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1556707-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/11/GImd/ZE4AZ3SH6w.jpg?width=720",
+          "alt": "호텔 앤드룸스 교토 시치조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1556707",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -682,7 +890,7 @@
       "provider": "myrealtrip",
       "name": "리치몬드 호텔 프리미어 교토 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "리치몬드-호텔-프리미어-교토-에키마에-1440279",
       "country": "일본",
       "countryCode": "JP",
@@ -698,7 +906,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1440279-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/03/vVTe/XhSWGwqPSv.jpg?width=720",
+          "alt": "리치몬드 호텔 프리미어 교토 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1440279",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -724,7 +945,7 @@
       "provider": "myrealtrip",
       "name": "알라 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "알라-호텔-교토-3577397",
       "country": "일본",
       "countryCode": "JP",
@@ -740,7 +961,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3577397-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/J7Po/obUMPSo75i.jpg?width=720",
+          "alt": "알라 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3577397",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -766,7 +1000,7 @@
       "provider": "myrealtrip",
       "name": "더블트리 바이 힐튼 교토 히가시야마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "더블트리-바이-힐튼-교토-히가시야마-3648942",
       "country": "일본",
       "countryCode": "JP",
@@ -782,7 +1016,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3648942-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/14/d372/v8J7ecqj2o.jpg?width=720",
+          "alt": "더블트리 바이 힐튼 교토 히가시야마 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3648942",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -808,7 +1055,7 @@
       "provider": "myrealtrip",
       "name": "교토 센트럴 인",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.122Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
       "slug": "교토-센트럴-인-1563593",
       "country": "일본",
       "countryCode": "JP",
@@ -824,7 +1071,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1563593-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/02/01/EYHR/c6CIR6joUS.jpg?width=720",
+          "alt": "교토 센트럴 인 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1563593",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -850,7 +1110,7 @@
       "provider": "myrealtrip",
       "name": "미츠이 가든 호텔 교토 카와라마치 조쿄지",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "미츠이-가든-호텔-교토-카와라마치-조쿄지-1537604",
       "country": "일본",
       "countryCode": "JP",
@@ -866,7 +1126,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1537604-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/07/02/0REA/eWq5OBXiM5.jpg?width=720",
+          "alt": "미츠이 가든 호텔 교토 카와라마치 조쿄지 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1537604",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1537604?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -892,7 +1165,7 @@
       "provider": "myrealtrip",
       "name": "머큐어 교토 스테이션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "머큐어-교토-스테이션-1513682",
       "country": "일본",
       "countryCode": "JP",
@@ -908,7 +1181,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1513682-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/24/pZi3/G78UdlbRfI.jpg?width=720",
+          "alt": "머큐어 교토 스테이션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1513682",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1513682?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -934,7 +1220,7 @@
       "provider": "myrealtrip",
       "name": "미야코 호텔 교토 하치조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "미야코-호텔-교토-하치조-1113469",
       "country": "일본",
       "countryCode": "JP",
@@ -950,7 +1236,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1113469-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/07/feNi/3UrSIfo624.jpg?width=720",
+          "alt": "미야코 호텔 교토 하치조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1113469",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1113469?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -976,7 +1275,7 @@
       "provider": "myrealtrip",
       "name": "에이스 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "에이스-호텔-교토-1504598",
       "country": "일본",
       "countryCode": "JP",
@@ -992,7 +1291,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1504598-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/KwUb/rfURv7ldy7.jpg?width=720",
+          "alt": "에이스 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1504598",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1504598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1018,7 +1330,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아마넥 교토 가와라마치 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "호텔-아마넥-교토-가와라마치-고조-1447922",
       "country": "일본",
       "countryCode": "JP",
@@ -1034,7 +1346,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1447922-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/07/dssL/FNAIVvMZad.jpg?width=720",
+          "alt": "호텔 아마넥 교토 가와라마치 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1447922",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447922?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1060,7 +1385,7 @@
       "provider": "myrealtrip",
       "name": "호텔 더 엠스 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "호텔-더-엠스-교토-1555679",
       "country": "일본",
       "countryCode": "JP",
@@ -1076,7 +1401,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1555679-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/dJnE/k6B3AfLb1U.jpg?width=720",
+          "alt": "호텔 더 엠스 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1555679",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1555679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1102,7 +1440,7 @@
       "provider": "myrealtrip",
       "name": "호텔 에미온 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "호텔-에미온-교토-1503457",
       "country": "일본",
       "countryCode": "JP",
@@ -1118,7 +1456,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1503457-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/26/X5pG/CYLWVI50O7.jpg?width=720",
+          "alt": "호텔 에미온 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1503457",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1503457?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1144,7 +1495,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 교토 에키히가시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "apa-호텔-교토-에키히가시-1468476",
       "country": "일본",
       "countryCode": "JP",
@@ -1160,7 +1511,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1468476-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/02/02/2rGc/JYsIHboocZ.jpg?width=720",
+          "alt": "APA 호텔 교토 에키히가시 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1468476",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1468476?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1186,7 +1550,7 @@
       "provider": "myrealtrip",
       "name": "베셀 호텔 캄파나 교토 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "베셀-호텔-캄파나-교토-고조-1234480",
       "country": "일본",
       "countryCode": "JP",
@@ -1202,7 +1566,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1234480-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/08/17/I9BR/G3gkqImehk.jpg?width=720",
+          "alt": "베셀 호텔 캄파나 교토 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1234480",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1234480?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1228,7 +1605,7 @@
       "provider": "myrealtrip",
       "name": "리가 로얄 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "리가-로얄-호텔-교토-1121997",
       "country": "일본",
       "countryCode": "JP",
@@ -1244,7 +1621,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1121997-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/06/24/JOR8/d01lswvMeP.jpg?width=720",
+          "alt": "리가 로얄 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1121997",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1121997?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1270,7 +1660,7 @@
       "provider": "myrealtrip",
       "name": "호텔 케이한 교토 그란데",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "호텔-케이한-교토-그란데-1181728",
       "country": "일본",
       "countryCode": "JP",
@@ -1286,7 +1676,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1181728-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/25/M0GQ/t5wjZSGovT.jpg?width=720",
+          "alt": "호텔 케이한 교토 그란데 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1181728",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181728?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1312,7 +1715,7 @@
       "provider": "myrealtrip",
       "name": "JR 웨스트 그룹 비아 인 프라임 교토역 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "jr-웨스트-그룹-비아-인-프라임-교토역-하치조구치-1409663",
       "country": "일본",
       "countryCode": "JP",
@@ -1328,7 +1731,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1409663-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/USle/5CSJG9wLPY.jpg?width=720",
+          "alt": "JR 웨스트 그룹 비아 인 프라임 교토역 하치조구치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1409663",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409663?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1354,7 +1770,7 @@
       "provider": "myrealtrip",
       "name": "솔라리아 니시테츠 호텔 교토 프리미어",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "솔라리아-니시테츠-호텔-교토-프리미어-1279161",
       "country": "일본",
       "countryCode": "JP",
@@ -1370,7 +1786,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1279161-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/03/JIVF/qbtPq9E8y4.jpg?width=720",
+          "alt": "솔라리아 니시테츠 호텔 교토 프리미어 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1279161",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1279161?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1396,7 +1825,7 @@
       "provider": "myrealtrip",
       "name": "유노야도 쇼에이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "유노야도-쇼에이-1357118",
       "country": "일본",
       "countryCode": "JP",
@@ -1412,7 +1841,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1357118-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/03/cnMG/lmOZaZr2VC.jpg?width=720",
+          "alt": "유노야도 쇼에이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1357118",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1357118?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1437,7 +1879,7 @@
       "provider": "myrealtrip",
       "name": "호텔 비스치오 교코 바이 그란비아",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "호텔-비스치오-교코-바이-그란비아-1391789",
       "country": "일본",
       "countryCode": "JP",
@@ -1453,7 +1895,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1391789-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/rBsT/IhqdmNx27W.jpg?width=720",
+          "alt": "호텔 비스치오 교코 바이 그란비아 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1391789",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1391789?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1479,7 +1934,7 @@
       "provider": "myrealtrip",
       "name": "유겐 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "유겐-교토-시조-4691575",
       "country": "일본",
       "countryCode": "JP",
@@ -1495,7 +1950,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4691575-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/22/fpA9/gvI8Q15Mbq.jpg?width=720",
+          "alt": "유겐 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4691575",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4691575?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1521,7 +1989,7 @@
       "provider": "myrealtrip",
       "name": "호텔 칸라 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "호텔-칸라-교토-1185184",
       "country": "일본",
       "countryCode": "JP",
@@ -1537,7 +2005,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1185184-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/j8Tf/hg3EJuQ5Jy.jpg?width=720",
+          "alt": "호텔 칸라 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1185184",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1563,7 +2044,7 @@
       "provider": "myrealtrip",
       "name": "트래블로지 교토 시조 카와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "트래블로지-교토-시조-카와라마치-3585686",
       "country": "일본",
       "countryCode": "JP",
@@ -1579,7 +2060,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3585686-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/11/04/zaSS/iQPnBA09fd.jpg?width=720",
+          "alt": "트래블로지 교토 시조 카와라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3585686",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3585686?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1605,7 +2099,7 @@
       "provider": "myrealtrip",
       "name": "피스 호스텔 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "피스-호스텔-산조-1237188",
       "country": "일본",
       "countryCode": "JP",
@@ -1621,7 +2115,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1237188-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/26/PY3k/Ka2e6BLgUa.jpg?width=720",
+          "alt": "피스 호스텔 산조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1237188",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1237188?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1646,7 +2153,7 @@
       "provider": "myrealtrip",
       "name": "HOTEL ARU KYOTO",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:48.464Z",
+      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
       "slug": "hotel-aru-kyoto-3587284",
       "country": "일본",
       "countryCode": "JP",
@@ -1662,7 +2169,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3587284-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/30/kA6h/Exeps3kGvJ.jpg?width=720",
+          "alt": "HOTEL ARU KYOTO 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3587284",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587284?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1688,7 +2208,7 @@
       "provider": "myrealtrip",
       "name": "기온 료칸 가라쿠",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "기온-료칸-가라쿠-1189495",
       "country": "일본",
       "countryCode": "JP",
@@ -1704,7 +2224,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1189495-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/05/YHPB/wYkjZ1W5P3.jpg?width=720",
+          "alt": "기온 료칸 가라쿠 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1189495",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1189495?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1729,7 +2262,7 @@
       "provider": "myrealtrip",
       "name": "교토 오하라 료칸 세료",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "교토-오하라-료칸-세료-1364004",
       "country": "일본",
       "countryCode": "JP",
@@ -1745,7 +2278,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1364004-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/BGVl/1JlDVEj8DO.jpg?width=720",
+          "alt": "교토 오하라 료칸 세료 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1364004",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1364004?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1770,7 +2316,7 @@
       "provider": "myrealtrip",
       "name": "호텔 게이한 교토에키 미나미",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "호텔-게이한-교토에키-미나미-1468601",
       "country": "일본",
       "countryCode": "JP",
@@ -1786,7 +2332,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1468601-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/06/15/55UD/IDetscU8ri.jpg?width=720",
+          "alt": "호텔 게이한 교토에키 미나미 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1468601",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1468601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1812,7 +2371,7 @@
       "provider": "myrealtrip",
       "name": "뮤즈 교토 시조 카와라마치 메이테츠 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "뮤즈-교토-시조-카와라마치-메이테츠-호텔-1532764",
       "country": "일본",
       "countryCode": "JP",
@@ -1828,7 +2387,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1532764-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/7zqT/jxGX7RjaGf.jpg?width=720",
+          "alt": "뮤즈 교토 시조 카와라마치 메이테츠 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1532764",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1532764?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1854,7 +2426,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 교토 시조카라스마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "소테츠-프레사-인-교토-시조카라스마-1277418",
       "country": "일본",
       "countryCode": "JP",
@@ -1870,7 +2442,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1277418-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/Jvz5/iiwEMIL4rg.jpg?width=720",
+          "alt": "소테츠 프레사 인 교토 시조카라스마 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1277418",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277418?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1896,7 +2481,7 @@
       "provider": "myrealtrip",
       "name": "시즈테츠 호텔 프레지오 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "시즈테츠-호텔-프레지오-교토-시조-1443828",
       "country": "일본",
       "countryCode": "JP",
@@ -1912,7 +2497,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1443828-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/PWtc/4EcmvXOahm.jpg?width=720",
+          "alt": "시즈테츠 호텔 프레지오 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1443828",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1443828?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1938,7 +2536,7 @@
       "provider": "myrealtrip",
       "name": "교토 도큐 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "교토-도큐-호텔-1103124",
       "country": "일본",
       "countryCode": "JP",
@@ -1954,7 +2552,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1103124-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/oSP6/LnGHMrhn1G.jpg?width=720",
+          "alt": "교토 도큐 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1103124",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1103124?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1980,7 +2591,7 @@
       "provider": "myrealtrip",
       "name": "소라 니와 테라스 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "소라-니와-테라스-교토-1608345",
       "country": "일본",
       "countryCode": "JP",
@@ -1996,7 +2607,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1608345-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/23/QrCL/8xtnkWRENS.jpg?width=720",
+          "alt": "소라 니와 테라스 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1608345",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1608345?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2022,7 +2646,7 @@
       "provider": "myrealtrip",
       "name": "로이저 호텔 클래식 가든 교토 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "로이저-호텔-클래식-가든-교토-산조-3578877",
       "country": "일본",
       "countryCode": "JP",
@@ -2038,7 +2662,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3578877-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/28/JEKT/zZU5i0Hf7n.jpg?width=720",
+          "alt": "로이저 호텔 클래식 가든 교토 산조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3578877",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3578877?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2064,7 +2701,7 @@
       "provider": "myrealtrip",
       "name": "반얀 트리 히가시야마 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "반얀-트리-히가시야마-교토-3594757",
       "country": "일본",
       "countryCode": "JP",
@@ -2080,7 +2717,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3594757-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/08/jg4l/2L1w7bum3m.jpg?width=720",
+          "alt": "반얀 트리 히가시야마 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3594757",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3594757?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2106,7 +2756,7 @@
       "provider": "myrealtrip",
       "name": "더 밀레니얼스 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "더-밀레니얼스-교토-1298271",
       "country": "일본",
       "countryCode": "JP",
@@ -2122,7 +2772,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1298271-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/RNvA/pKfb5ur19l.jpg?width=720",
+          "alt": "더 밀레니얼스 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1298271",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1298271?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2148,7 +2811,7 @@
       "provider": "myrealtrip",
       "name": "Saka Hotel Kyoto",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "saka-hotel-kyoto-4011374",
       "country": "일본",
       "countryCode": "JP",
@@ -2164,7 +2827,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4011374-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/30/1kmN/7GBpWIbmpD.jpg?width=720",
+          "alt": "Saka Hotel Kyoto 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4011374",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4011374?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2190,7 +2866,7 @@
       "provider": "myrealtrip",
       "name": "호텔 몬토레 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "호텔-몬토레-교토-1152856",
       "country": "일본",
       "countryCode": "JP",
@@ -2206,7 +2882,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1152856-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/12/2DLz/9aP1e0b6Jw.jpg?width=720",
+          "alt": "호텔 몬토레 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1152856",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1152856?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2232,7 +2921,7 @@
       "provider": "myrealtrip",
       "name": "교토 타워 호텔 아넥스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "교토-타워-호텔-아넥스-1207859",
       "country": "일본",
       "countryCode": "JP",
@@ -2248,7 +2937,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1207859-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/25/K2e1/JWynxJr17G.jpg?width=720",
+          "alt": "교토 타워 호텔 아넥스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1207859",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1207859?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2274,7 +2976,7 @@
       "provider": "myrealtrip",
       "name": "교마치야 료칸 사쿠라 - 우루시테이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "교마치야-료칸-사쿠라-우루시테이-4051708",
       "country": "일본",
       "countryCode": "JP",
@@ -2290,7 +2992,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4051708-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/26/wyUb/ibnvKHsVWp.jpg?width=720",
+          "alt": "교마치야 료칸 사쿠라 - 우루시테이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4051708",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4051708?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2316,7 +3031,7 @@
       "provider": "myrealtrip",
       "name": "라쿠텐 스테이 어반 시조 테라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "라쿠텐-스테이-어반-시조-테라마치-1545942",
       "country": "일본",
       "countryCode": "JP",
@@ -2332,7 +3047,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1545942-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/07/mgbF/YjsB7qeXsV.jpg?width=720",
+          "alt": "라쿠텐 스테이 어반 시조 테라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1545942",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1545942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2358,7 +3086,7 @@
       "provider": "myrealtrip",
       "name": "료칸 쿄우노야도 카기헤이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "료칸-쿄우노야도-카기헤이-1204603",
       "country": "일본",
       "countryCode": "JP",
@@ -2374,7 +3102,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1204603-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/SEeu/MEEEEGJ6nH.jpg?width=720",
+          "alt": "료칸 쿄우노야도 카기헤이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1204603",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204603?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2399,7 +3140,7 @@
       "provider": "myrealtrip",
       "name": "호텔 토우 니시노토인 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "호텔-토우-니시노토인-교토-1554386",
       "country": "일본",
       "countryCode": "JP",
@@ -2415,7 +3156,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1554386-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/tUmk/gODIOQX0l9.jpg?width=720",
+          "alt": "호텔 토우 니시노토인 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1554386",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1554386?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2441,7 +3195,7 @@
       "provider": "myrealtrip",
       "name": "더 로얄 파크 호텔 교토 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "더-로얄-파크-호텔-교토-산조-1191109",
       "country": "일본",
       "countryCode": "JP",
@@ -2457,7 +3211,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1191109-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/12/17/BOIp/63Ij6Etm6D.jpg?width=720",
+          "alt": "더 로얄 파크 호텔 교토 산조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1191109",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1191109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2483,7 +3250,7 @@
       "provider": "myrealtrip",
       "name": "다이와 로이넷 호텔 교토 에키마에 프리미어",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:49.435Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
       "slug": "다이와-로이넷-호텔-교토-에키마에-프리미어-1258889",
       "country": "일본",
       "countryCode": "JP",
@@ -2499,7 +3266,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1258889-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/15/t2ll/Yi1PGT0sal.jpg?width=720",
+          "alt": "다이와 로이넷 호텔 교토 에키마에 프리미어 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1258889",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1258889?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2525,7 +3305,7 @@
       "provider": "myrealtrip",
       "name": "시퀀스 교토 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "시퀀스-교토-고조-1498522",
       "country": "일본",
       "countryCode": "JP",
@@ -2541,7 +3321,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1498522-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/09/Kfi8/Ater0BaJEy.jpg?width=720",
+          "alt": "시퀀스 교토 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1498522",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1498522?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2567,7 +3360,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 교토 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "apa-호텔-교토-에키마에-1185740",
       "country": "일본",
       "countryCode": "JP",
@@ -2583,7 +3376,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1185740-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/25/SZhi/tnTQtJ2KET.jpg?width=720",
+          "alt": "APA 호텔 교토 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1185740",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185740?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2609,7 +3415,7 @@
       "provider": "myrealtrip",
       "name": "호텔 리브맥스 교토 니조조 니시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "호텔-리브맥스-교토-니조조-니시-1564435",
       "country": "일본",
       "countryCode": "JP",
@@ -2625,7 +3431,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1564435-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/su96/v1vzr1wBM7.jpg?width=720",
+          "alt": "호텔 리브맥스 교토 니조조 니시 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1564435",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1564435?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2651,7 +3470,7 @@
       "provider": "myrealtrip",
       "name": "이비스 스타일스 교토 스테이션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "이비스-스타일스-교토-스테이션-1208270",
       "country": "일본",
       "countryCode": "JP",
@@ -2667,7 +3486,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1208270-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/25/LX6B/UZp4HvngWU.jpg?width=720",
+          "alt": "이비스 스타일스 교토 스테이션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1208270",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208270?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2693,7 +3525,7 @@
       "provider": "myrealtrip",
       "name": "테라스 기요미즈 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "테라스-기요미즈-교토-1345487",
       "country": "일본",
       "countryCode": "JP",
@@ -2709,7 +3541,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1345487-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/vfXS/i26lhV9WpZ.jpg?width=720",
+          "alt": "테라스 기요미즈 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1345487",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1345487?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2735,7 +3580,7 @@
       "provider": "myrealtrip",
       "name": "리브맥스 호스텔 교토 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "리브맥스-호스텔-교토-에키마에-4876650",
       "country": "일본",
       "countryCode": "JP",
@@ -2751,7 +3596,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4876650-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/02/Vso1/EVdG4b4pNp.jpg?width=720",
+          "alt": "리브맥스 호스텔 교토 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4876650",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4876650?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2777,7 +3635,7 @@
       "provider": "myrealtrip",
       "name": "West Japan Kyoto Kiyomizu",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "west-japan-kyoto-kiyomizu-1659638",
       "country": "일본",
       "countryCode": "JP",
@@ -2793,7 +3651,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1659638-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/17/tYY4/j4feD3m3Jl.jpg?width=720",
+          "alt": "West Japan Kyoto Kiyomizu 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1659638",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1659638?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2819,7 +3690,7 @@
       "provider": "myrealtrip",
       "name": "아사이 교토 시조 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "아사이-교토-시조-호텔-3676952",
       "country": "일본",
       "countryCode": "JP",
@@ -2835,7 +3706,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3676952-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/06/FAzV/5BD2fAtdlN.jpg?width=720",
+          "alt": "아사이 교토 시조 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3676952",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3676952?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2861,7 +3745,7 @@
       "provider": "myrealtrip",
       "name": "도큐스테이 교토 사카이자 시조-가와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "도큐스테이-교토-사카이자-시조-가와라마치-1374486",
       "country": "일본",
       "countryCode": "JP",
@@ -2877,7 +3761,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1374486-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/yUFu/cT1G1zJ30S.jpg?width=720",
+          "alt": "도큐스테이 교토 사카이자 시조-가와라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1374486",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1374486?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2903,7 +3800,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 교토 에키 호리카와도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "apa-호텔-교토-에키-호리카와도리-1186260",
       "country": "일본",
       "countryCode": "JP",
@@ -2919,7 +3816,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1186260-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/07/28/LdBv/ew2ymu8qVR.jpg?width=720",
+          "alt": "APA 호텔 교토 에키 호리카와도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1186260",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186260?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2945,7 +3855,7 @@
       "provider": "myrealtrip",
       "name": "EN 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.077Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "en-호텔-교토-1506928",
       "country": "일본",
       "countryCode": "JP",
@@ -2961,7 +3871,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1506928-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/11/22/IJE9/M3SkgTeFzP.jpg?width=720",
+          "alt": "EN 호텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1506928",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1506928?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2987,7 +3910,7 @@
       "provider": "myrealtrip",
       "name": "호텔 M’s 플러스 시조 - 오미야",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "호텔-m-s-플러스-시조-오미야-1279431",
       "country": "일본",
       "countryCode": "JP",
@@ -3003,7 +3926,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1279431-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/EXFE/gnYyATxZmF.jpg?width=720",
+          "alt": "호텔 M’s 플러스 시조 - 오미야 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1279431",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1279431?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3029,7 +3965,7 @@
       "provider": "myrealtrip",
       "name": "M’s 호텔, 교토역, 카스가",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "m-s-호텔-교토역-카스가-1475364",
       "country": "일본",
       "countryCode": "JP",
@@ -3045,7 +3981,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1475364-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/06/09/aDDZ/RK4VvLG2TM.jpg?width=720",
+          "alt": "M’s 호텔, 교토역, 카스가 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1475364",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1475364?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3071,7 +4020,7 @@
       "provider": "myrealtrip",
       "name": "호텔 게이한 교토 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "호텔-게이한-교토-하치조구치-1325196",
       "country": "일본",
       "countryCode": "JP",
@@ -3087,7 +4036,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1325196-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/07/16/7ddc/1PsAGpL6aE.jpg?width=720",
+          "alt": "호텔 게이한 교토 하치조구치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1325196",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1325196?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3113,7 +4075,7 @@
       "provider": "myrealtrip",
       "name": "교토 타워 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "교토-타워-호텔-1210804",
       "country": "일본",
       "countryCode": "JP",
@@ -3129,7 +4091,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1210804-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/21/ytD4/w5EN4VK4S1.jpg?width=720",
+          "alt": "교토 타워 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1210804",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1210804?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3155,7 +4130,7 @@
       "provider": "myrealtrip",
       "name": "힐튼 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "힐튼-교토-2982305",
       "country": "일본",
       "countryCode": "JP",
@@ -3171,7 +4146,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-2982305-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/31/Dcr2/ycbE06hs1a.jpg?width=720",
+          "alt": "힐튼 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-2982305",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2982305?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3197,7 +4185,7 @@
       "provider": "myrealtrip",
       "name": "호텔 비스타 프레미오 교토 가와라마치 스트리트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "호텔-비스타-프레미오-교토-가와라마치-스트리트-1190115",
       "country": "일본",
       "countryCode": "JP",
@@ -3213,7 +4201,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1190115-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/11/20/86S3/a0Z12TvsrX.jpg?width=720",
+          "alt": "호텔 비스타 프레미오 교토 가와라마치 스트리트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1190115",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190115?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3239,7 +4240,7 @@
       "provider": "myrealtrip",
       "name": "호텔 라이브맥스 교토 데라마치도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "호텔-라이브맥스-교토-데라마치도리-1476489",
       "country": "일본",
       "countryCode": "JP",
@@ -3255,7 +4256,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1476489-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/MGYP/hZVWymMpPH.jpg?width=720",
+          "alt": "호텔 라이브맥스 교토 데라마치도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1476489",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1476489?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3281,7 +4295,7 @@
       "provider": "myrealtrip",
       "name": "세이코로 료칸",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "세이코로-료칸-1183436",
       "country": "일본",
       "countryCode": "JP",
@@ -3297,7 +4311,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1183436-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/11/06/5NKT/2KUHIdjIQe.jpg?width=720",
+          "alt": "세이코로 료칸 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1183436",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1183436?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3322,7 +4349,7 @@
       "provider": "myrealtrip",
       "name": "교토 그랑벨 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:51.078Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
       "slug": "교토-그랑벨-호텔-1293501",
       "country": "일본",
       "countryCode": "JP",
@@ -3338,7 +4365,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1293501-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/13/HzYE/MN9Wh6Uevy.jpg?width=720",
+          "alt": "교토 그랑벨 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1293501",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1293501?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3364,7 +4404,7 @@
       "provider": "myrealtrip",
       "name": "더 원파이브 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "더-원파이브-교토-시조-1336516",
       "country": "일본",
       "countryCode": "JP",
@@ -3380,7 +4420,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1336516-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/L7KQ/LbIvneGlXd.jpg?width=720",
+          "alt": "더 원파이브 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1336516",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1336516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3406,7 +4459,7 @@
       "provider": "myrealtrip",
       "name": "20 피스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "20-피스-1550557",
       "country": "일본",
       "countryCode": "JP",
@@ -3422,7 +4475,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1550557-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/dAgN/7ykCx5Mzl9.jpg?width=720",
+          "alt": "20 피스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1550557",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1550557?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3447,7 +4513,7 @@
       "provider": "myrealtrip",
       "name": "아파 호텔 교토 기온 엑셀런트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "아파-호텔-교토-기온-엑셀런트-1184287",
       "country": "일본",
       "countryCode": "JP",
@@ -3463,7 +4529,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1184287-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/08/29/6Vuw/cm0K8X9Tuo.jpg?width=720",
+          "alt": "아파 호텔 교토 기온 엑셀런트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1184287",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1184287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3489,7 +4568,7 @@
       "provider": "myrealtrip",
       "name": "헨나 호텔 프리미어 교토 고조 가라스마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "헨나-호텔-프리미어-교토-고조-가라스마-1511679",
       "country": "일본",
       "countryCode": "JP",
@@ -3505,7 +4584,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1511679-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/16/WMD2/PmdcsjOGxa.jpg?width=720",
+          "alt": "헨나 호텔 프리미어 교토 고조 가라스마 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1511679",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1511679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3531,7 +4623,7 @@
       "provider": "myrealtrip",
       "name": "라쿠텐 스테이 어반 시조 가와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "라쿠텐-스테이-어반-시조-가와라마치-1483049",
       "country": "일본",
       "countryCode": "JP",
@@ -3547,7 +4639,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1483049-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/07/3Eoi/Tu8aWGBdN6.jpg?width=720",
+          "alt": "라쿠텐 스테이 어반 시조 가와라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1483049",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1483049?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3573,7 +4678,7 @@
       "provider": "myrealtrip",
       "name": "Minn Kiyomizu Gojo",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "minn-kiyomizu-gojo-3587667",
       "country": "일본",
       "countryCode": "JP",
@@ -3589,7 +4694,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3587667-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/23/tcF9/NtkXzpo9OU.jpg?width=720",
+          "alt": "Minn Kiyomizu Gojo 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3587667",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587667?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3614,7 +4732,7 @@
       "provider": "myrealtrip",
       "name": "와카 교토 카와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "와카-교토-카와라마치-3587587",
       "country": "일본",
       "countryCode": "JP",
@@ -3630,7 +4748,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3587587-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/10/01/egSR/SwwOZEpTa6.jpg?width=720",
+          "alt": "와카 교토 카와라마치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3587587",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587587?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3656,7 +4787,7 @@
       "provider": "myrealtrip",
       "name": "히푸미 료칸",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "히푸미-료칸-1264815",
       "country": "일본",
       "countryCode": "JP",
@@ -3672,7 +4803,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1264815-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/07/9KrL/hLr637XbFI.jpg?width=720",
+          "alt": "히푸미 료칸 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1264815",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1264815?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3697,7 +4841,7 @@
       "provider": "myrealtrip",
       "name": "칸데오 호텔 교토 가라스마 롯카쿠",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "칸데오-호텔-교토-가라스마-롯카쿠-1566960",
       "country": "일본",
       "countryCode": "JP",
@@ -3713,7 +4857,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1566960-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/12/wsMg/42T4jqn7Wc.jpg?width=720",
+          "alt": "칸데오 호텔 교토 가라스마 롯카쿠 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1566960",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566960?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3739,7 +4896,7 @@
       "provider": "myrealtrip",
       "name": "호텔 라이브맥스 교토 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "호텔-라이브맥스-교토-고조-1122299",
       "country": "일본",
       "countryCode": "JP",
@@ -3755,7 +4912,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1122299-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/07/09/HpTm/L6aSem5Jzt.jpg?width=720",
+          "alt": "호텔 라이브맥스 교토 고조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1122299",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1122299?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3781,7 +4951,7 @@
       "provider": "myrealtrip",
       "name": "피스 호스텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "피스-호스텔-교토-1204446",
       "country": "일본",
       "countryCode": "JP",
@@ -3797,7 +4967,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1204446-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/z3Oo/Vu8T3YQUhu.jpg?width=720",
+          "alt": "피스 호스텔 교토 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1204446",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204446?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3822,7 +5005,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 교토 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "소테츠-프레사-인-교토-하치조구치-5871918",
       "country": "일본",
       "countryCode": "JP",
@@ -3838,7 +5021,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5871918-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/27/9DIO/fHbeNTIvAh.png?width=720",
+          "alt": "소테츠 프레사 인 교토 하치조구치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5871918",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5871918?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3864,7 +5060,7 @@
       "provider": "myrealtrip",
       "name": "교토 센추리 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "교토-센추리-호텔-1204564",
       "country": "일본",
       "countryCode": "JP",
@@ -3880,7 +5076,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1204564-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/12/Xhy1/wAAMzqxJOd.jpg?width=720",
+          "alt": "교토 센추리 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1204564",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204564?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3906,7 +5115,7 @@
       "provider": "myrealtrip",
       "name": "미마루 교토 신마치 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "미마루-교토-신마치-산조-1357113",
       "country": "일본",
       "countryCode": "JP",
@@ -3922,7 +5131,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1357113-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/05/26/VyQK/Fe814r14cO.jpg?width=720",
+          "alt": "미마루 교토 신마치 산조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1357113",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1357113?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3948,7 +5170,7 @@
       "provider": "myrealtrip",
       "name": "북 호텔 교토 쿠조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "북-호텔-교토-쿠조-2791529",
       "country": "일본",
       "countryCode": "JP",
@@ -3964,7 +5186,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-2791529-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/07/17/S9wq/nujrBhl0ET.jpeg?width=720",
+          "alt": "북 호텔 교토 쿠조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-2791529",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2791529?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3990,7 +5225,7 @@
       "provider": "myrealtrip",
       "name": "\"BON 교토 Kiyomizu\"",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "bon-교토-kiyomizu-1568964",
       "country": "일본",
       "countryCode": "JP",
@@ -4006,7 +5241,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1568964-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/8Z4b/9Y2u846S64.jpg?width=720",
+          "alt": "\"BON 교토 Kiyomizu\" 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1568964",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1568964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4032,7 +5280,7 @@
       "provider": "myrealtrip",
       "name": "민 카라스마 고조 교토역",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "민-카라스마-고조-교토역-4450526",
       "country": "일본",
       "countryCode": "JP",
@@ -4048,7 +5296,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4450526-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/04/19/vJcG/W7I718rlqF.jpg?width=720",
+          "alt": "민 카라스마 고조 교토역 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4450526",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4450526?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4074,7 +5335,7 @@
       "provider": "myrealtrip",
       "name": "이비스 스타일스 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "이비스-스타일스-교토-시조-5632807",
       "country": "일본",
       "countryCode": "JP",
@@ -4090,7 +5351,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5632807-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/15/qyvf/xBOd21lecb.jpg?width=720",
+          "alt": "이비스 스타일스 교토 시조 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5632807",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5632807?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4116,7 +5390,7 @@
       "provider": "myrealtrip",
       "name": "더 챕터 교토, 트리뷰트 포트폴리오 호텔 바이 메리어트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "더-챕터-교토-트리뷰트-포트폴리오-호텔-바이-메리어트-7128788",
       "country": "일본",
       "countryCode": "JP",
@@ -4132,7 +5406,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-7128788-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/14/BzkL/SAcpPNDw2M.png?width=720",
+          "alt": "더 챕터 교토, 트리뷰트 포트폴리오 호텔 바이 메리어트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-7128788",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/7128788?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4158,7 +5445,7 @@
       "provider": "myrealtrip",
       "name": "미마루 스위트, 교토 센트럴",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:52.672Z",
+      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
       "slug": "미마루-스위트-교토-센트럴-3664174",
       "country": "일본",
       "countryCode": "JP",
@@ -4174,7 +5461,20 @@
         "city": "교토",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3664174-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/10/08/6CsG/aZIUq6zoeP.jpg?width=720",
+          "alt": "미마루 스위트, 교토 센트럴 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3664174",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3664174?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",

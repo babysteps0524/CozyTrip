@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T09:23:06.087Z",
+  "generatedAt": "2026-09-19T09:30:06.832Z",
   "source": "myrealtrip",
   "hotelCount": 100,
   "search": {},
-  "imageUsageAllowed": false,
+  "imageUsageAllowed": true,
   "hotels": [
     {
       "id": "myrealtrip-1499059",
@@ -11,7 +11,7 @@
       "provider": "myrealtrip",
       "name": "레쿠 오키나와 자탄 스파 & 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
       "country": "일본",
       "countryCode": "JP",
@@ -27,7 +27,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1499059-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/04/8asz/DsxgiMxNGi.jpg?width=720",
+          "alt": "레쿠 오키나와 자탄 스파 & 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1499059",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -53,7 +66,7 @@
       "provider": "myrealtrip",
       "name": "베셀 호텔 캄파나 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "베셀-호텔-캄파나-오키나와-6196684",
       "country": "일본",
       "countryCode": "JP",
@@ -69,7 +82,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6196684-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/09/25/mddX/PCQgBplnIS.jpg?width=720",
+          "alt": "베셀 호텔 캄파나 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6196684",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -95,7 +121,7 @@
       "provider": "myrealtrip",
       "name": "호텔 JAL 시티 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-jal-시티-나하-6178095",
       "country": "일본",
       "countryCode": "JP",
@@ -111,7 +137,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6178095-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/egQj/Z0mKAFn32o.jpg?width=720",
+          "alt": "호텔 JAL 시티 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6178095",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -137,7 +176,7 @@
       "provider": "myrealtrip",
       "name": "하얏트 리젠시 세라가키 아일랜드 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "하얏트-리젠시-세라가키-아일랜드-오키나와-6206151",
       "country": "일본",
       "countryCode": "JP",
@@ -153,7 +192,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206151-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/w6T9/e2r9IPbUaz.jpg?width=720",
+          "alt": "하얏트 리젠시 세라가키 아일랜드 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206151",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -179,7 +231,7 @@
       "provider": "myrealtrip",
       "name": "오리엔탈 호텔 오키나와 리조트 & 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "오리엔탈-호텔-오키나와-리조트-스파-6183767",
       "country": "일본",
       "countryCode": "JP",
@@ -195,7 +247,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6183767-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/11/HqPl/gIS34DxQTp.jpg?width=720",
+          "alt": "오리엔탈 호텔 오키나와 리조트 & 스파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6183767",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -221,7 +286,7 @@
       "provider": "myrealtrip",
       "name": "더 네스트 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "더-네스트-나하-4479180",
       "country": "일본",
       "countryCode": "JP",
@@ -237,7 +302,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4479180-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/24/PtU3/Zl6i9YcTfk.jpg?width=720",
+          "alt": "더 네스트 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4479180",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -263,7 +341,7 @@
       "provider": "myrealtrip",
       "name": "더 부세나 테라스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "더-부세나-테라스-6206176",
       "country": "일본",
       "countryCode": "JP",
@@ -279,7 +357,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206176-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/s7Et/hHRqb1wKk9.jpg?width=720",
+          "alt": "더 부세나 테라스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206176",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -305,7 +396,7 @@
       "provider": "myrealtrip",
       "name": "네스트 호텔 나하 쿠모지",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "네스트-호텔-나하-쿠모지-1569706",
       "country": "일본",
       "countryCode": "JP",
@@ -321,7 +412,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1569706-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/05/10/SMuu/j3421OCa4u.jpg?width=720",
+          "alt": "네스트 호텔 나하 쿠모지 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1569706",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -347,7 +451,7 @@
       "provider": "myrealtrip",
       "name": "호텔 컬렉티브",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-컬렉티브-6203441",
       "country": "일본",
       "countryCode": "JP",
@@ -363,7 +467,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6203441-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/1FC4/qS5qN0wW1y.jpg?width=720",
+          "alt": "호텔 컬렉티브 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6203441",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -389,7 +506,7 @@
       "provider": "myrealtrip",
       "name": "류큐 호텔&리조트 나시로 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "류큐-호텔-리조트-나시로-비치-6215679",
       "country": "일본",
       "countryCode": "JP",
@@ -405,7 +522,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215679-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/TOHX/7TczgdBder.jpg?width=720",
+          "alt": "류큐 호텔&리조트 나시로 비치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215679",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -431,7 +561,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 나하나 호텔 & 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "오키나와-나하나-호텔-스파-1107701",
       "country": "일본",
       "countryCode": "JP",
@@ -447,7 +577,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1107701-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/07/13/GP4K/8EZ003XZnB.jpg?width=720",
+          "alt": "오키나와 나하나 호텔 & 스파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1107701",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -473,7 +616,7 @@
       "provider": "myrealtrip",
       "name": "힐튼 오키나와 세소코 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "힐튼-오키나와-세소코-리조트-1505018",
       "country": "일본",
       "countryCode": "JP",
@@ -489,7 +632,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1505018-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/03/23/J3xd/YAzHYWxTVq.jpg?width=720",
+          "alt": "힐튼 오키나와 세소코 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1505018",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -515,7 +671,7 @@
       "provider": "myrealtrip",
       "name": "호텔 스트라타 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-스트라타-나하-1474186",
       "country": "일본",
       "countryCode": "JP",
@@ -531,7 +687,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1474186-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/612g/EWNkNUMyNW.jpg?width=720",
+          "alt": "호텔 스트라타 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1474186",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -557,7 +726,7 @@
       "provider": "myrealtrip",
       "name": "호텔 그레이서리 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-그레이서리-나하-1245403",
       "country": "일본",
       "countryCode": "JP",
@@ -573,7 +742,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1245403-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/20/CJXR/AImpatef8q.jpg?width=720",
+          "alt": "호텔 그레이서리 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1245403",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -599,7 +781,7 @@
       "provider": "myrealtrip",
       "name": "라 젠트 호텔 오키나와 차탄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "라-젠트-호텔-오키나와-차탄-6199109",
       "country": "일본",
       "countryCode": "JP",
@@ -615,7 +797,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6199109-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/10/YEga/v9u8vjeaFQ.jpg?width=720",
+          "alt": "라 젠트 호텔 오키나와 차탄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6199109",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -641,7 +836,7 @@
       "provider": "myrealtrip",
       "name": "하얏트 리젠시 나하, 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "하얏트-리젠시-나하-오키나와-1277534",
       "country": "일본",
       "countryCode": "JP",
@@ -657,7 +852,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1277534-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/HRAj/DFA9YE2ltF.jpg?width=720",
+          "alt": "하얏트 리젠시 나하, 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1277534",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -683,7 +891,7 @@
       "provider": "myrealtrip",
       "name": "호텔 마하이나 웰니스 리조트 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-마하이나-웰니스-리조트-오키나와-6206059",
       "country": "일본",
       "countryCode": "JP",
@@ -699,7 +907,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206059-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/1bfc/SgLzyJZmOz.jpg?width=720",
+          "alt": "호텔 마하이나 웰니스 리조트 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206059",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -725,7 +946,7 @@
       "provider": "myrealtrip",
       "name": "오끼나와 프린스 호텔 오션 뷰 기노완",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "오끼나와-프린스-호텔-오션-뷰-기노완-6215659",
       "country": "일본",
       "countryCode": "JP",
@@ -741,7 +962,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215659-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/uty2/hOu1We1Xn2.jpg?width=720",
+          "alt": "오끼나와 프린스 호텔 오션 뷰 기노완 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215659",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -767,7 +1001,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아쿠아 시타 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-아쿠아-시타-나하-6215627",
       "country": "일본",
       "countryCode": "JP",
@@ -783,7 +1017,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215627-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/11/rTCg/qjP03n19iY.jpg?width=720",
+          "alt": "호텔 아쿠아 시타 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215627",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -809,7 +1056,7 @@
       "provider": "myrealtrip",
       "name": "호텔 몬토레 오키나와 스파 & 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.534Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
       "slug": "호텔-몬토레-오키나와-스파-리조트-6196600",
       "country": "일본",
       "countryCode": "JP",
@@ -825,7 +1072,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6196600-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/UC11/IPdyTbYdaZ.jpg?width=720",
+          "alt": "호텔 몬토레 오키나와 스파 & 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6196600",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -851,7 +1111,7 @@
       "provider": "myrealtrip",
       "name": "오리온 호텔 모토부 리조트 & 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "오리온-호텔-모토부-리조트-스파-1215613",
       "country": "일본",
       "countryCode": "JP",
@@ -867,7 +1127,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1215613-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/08/13/GxBI/yFpYVOfoYK.jpg?width=720",
+          "alt": "오리온 호텔 모토부 리조트 & 스파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1215613",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1215613?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -893,7 +1166,7 @@
       "provider": "myrealtrip",
       "name": "알몬트 호텔 나하 켄초마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "알몬트-호텔-나하-켄초마에-1251483",
       "country": "일본",
       "countryCode": "JP",
@@ -909,7 +1182,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1251483-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/05/bDHP/IPrguo3KIM.jpg?width=720",
+          "alt": "알몬트 호텔 나하 켄초마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1251483",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1251483?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -935,7 +1221,7 @@
       "provider": "myrealtrip",
       "name": "JR KYUSHU HOTEL Blossom Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "jr-kyushu-hotel-blossom-naha-1298670",
       "country": "일본",
       "countryCode": "JP",
@@ -951,7 +1237,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1298670-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/3PV2/oKrFOHIqKR.jpg?width=720",
+          "alt": "JR KYUSHU HOTEL Blossom Naha 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1298670",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1298670?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -977,7 +1276,7 @@
       "provider": "myrealtrip",
       "name": "프린스 스마트 인 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "프린스-스마트-인-나하-6215713",
       "country": "일본",
       "countryCode": "JP",
@@ -993,7 +1292,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215713-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/EKZ0/E7ctedhE4P.jpg?width=720",
+          "alt": "프린스 스마트 인 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215713",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215713?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1019,7 +1331,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 카리유시 비치 리조트 오션 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "오키나와-카리유시-비치-리조트-오션-스파-6206911",
       "country": "일본",
       "countryCode": "JP",
@@ -1035,7 +1347,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206911-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/odMj/zbAlvcaQ3z.jpg?width=720",
+          "alt": "오키나와 카리유시 비치 리조트 오션 스파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206911",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206911?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1061,7 +1386,7 @@
       "provider": "myrealtrip",
       "name": "호텔 팜 로얄 리조트 국제거리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "호텔-팜-로얄-리조트-국제거리-1194964",
       "country": "일본",
       "countryCode": "JP",
@@ -1077,7 +1402,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1194964-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/66bu/WlLLWHUV2G.jpg?width=720",
+          "alt": "호텔 팜 로얄 리조트 국제거리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1194964",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1194964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1103,7 +1441,7 @@
       "provider": "myrealtrip",
       "name": "더 비치 타워 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "더-비치-타워-오키나와-6206465",
       "country": "일본",
       "countryCode": "JP",
@@ -1119,7 +1457,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206465-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/24/ynSq/Rc7ssu8pJ5.jpg?width=720",
+          "alt": "더 비치 타워 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206465",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206465?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1145,7 +1496,7 @@
       "provider": "myrealtrip",
       "name": "그랜드 머큐어 오키나와 케이프 잔파 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "그랜드-머큐어-오키나와-케이프-잔파-리조트-6206598",
       "country": "일본",
       "countryCode": "JP",
@@ -1161,7 +1512,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206598-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/14/46ht/OncuNHRE16.png?width=720",
+          "alt": "그랜드 머큐어 오키나와 케이프 잔파 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206598",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1187,7 +1551,7 @@
       "provider": "myrealtrip",
       "name": "할레쿨라니 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "할레쿨라니-오키나와-6206141",
       "country": "일본",
       "countryCode": "JP",
@@ -1203,7 +1567,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206141-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/uAOv/4ErPo1zhLE.jpg?width=720",
+          "alt": "할레쿨라니 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206141",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206141?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1229,7 +1606,7 @@
       "provider": "myrealtrip",
       "name": "라젠트 호텔 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "라젠트-호텔-오키나와-나하-6196216",
       "country": "일본",
       "countryCode": "JP",
@@ -1245,7 +1622,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6196216-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/11/56Uj/6ts02w9NrO.jpg?width=720",
+          "alt": "라젠트 호텔 오키나와 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6196216",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196216?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1271,7 +1661,7 @@
       "provider": "myrealtrip",
       "name": "리잔 시 파크 호텔 단차 베이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "리잔-시-파크-호텔-단차-베이-6205925",
       "country": "일본",
       "countryCode": "JP",
@@ -1287,7 +1677,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6205925-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/22/bz30/K0LGcoRIg7.jpg?width=720",
+          "alt": "리잔 시 파크 호텔 단차 베이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6205925",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205925?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1313,7 +1716,7 @@
       "provider": "myrealtrip",
       "name": "노보텔 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "노보텔-오키나와-나하-6199026",
       "country": "일본",
       "countryCode": "JP",
@@ -1329,7 +1732,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6199026-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/UNfJ/BqwPDORNLr.jpg?width=720",
+          "alt": "노보텔 오키나와 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6199026",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199026?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1355,7 +1771,7 @@
       "provider": "myrealtrip",
       "name": "힐튼 오키나와 차탄 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "힐튼-오키나와-차탄-리조트-1213397",
       "country": "일본",
       "countryCode": "JP",
@@ -1371,7 +1787,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1213397-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/22/7D2M/lk5zpXvOv3.jpg?width=720",
+          "alt": "힐튼 오키나와 차탄 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1213397",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1213397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1397,7 +1826,7 @@
       "provider": "myrealtrip",
       "name": "라구나 가든 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "라구나-가든-호텔-6206021",
       "country": "일본",
       "countryCode": "JP",
@@ -1413,7 +1842,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206021-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/Cola/txpwQmUqpR.jpg?width=720",
+          "alt": "라구나 가든 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206021",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206021?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1439,7 +1881,7 @@
       "provider": "myrealtrip",
       "name": "네스트 호텔 나하니시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "네스트-호텔-나하니시-1591472",
       "country": "일본",
       "countryCode": "JP",
@@ -1455,7 +1897,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1591472-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/Qsfm/6qJutXkhrU.jpg?width=720",
+          "alt": "네스트 호텔 나하니시 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1591472",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1591472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1481,7 +1936,7 @@
       "provider": "myrealtrip",
       "name": "호텔 닛코 알리빌라",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "호텔-닛코-알리빌라-6203741",
       "country": "일본",
       "countryCode": "JP",
@@ -1497,7 +1952,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6203741-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/02/qX6j/jua30ELBQH.jpg?width=720",
+          "alt": "호텔 닛코 알리빌라 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6203741",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203741?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1523,7 +1991,7 @@
       "provider": "myrealtrip",
       "name": "루와지르 호텔 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "루와지르-호텔-나하-1169786",
       "country": "일본",
       "countryCode": "JP",
@@ -1539,7 +2007,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1169786-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/xyFZ/edTRfMktT7.jpg?width=720",
+          "alt": "루와지르 호텔 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1169786",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1169786?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1565,7 +2046,7 @@
       "provider": "myrealtrip",
       "name": "아쿠아 팰리스 자탄 바이 콜디오 프리미엄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "아쿠아-팰리스-자탄-바이-콜디오-프리미엄-1478556",
       "country": "일본",
       "countryCode": "JP",
@@ -1581,7 +2062,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1478556-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/12/03/dIHS/Ko4UH6QpBn.jpg?width=720",
+          "alt": "아쿠아 팰리스 자탄 바이 콜디오 프리미엄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1478556",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1478556?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1606,7 +2100,7 @@
       "provider": "myrealtrip",
       "name": "리가 로열 리조트 오키나와 차탄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "리가-로열-리조트-오키나와-차탄-5816262",
       "country": "일본",
       "countryCode": "JP",
@@ -1622,7 +2116,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5816262-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/16/FJ4F/qoQ8Ph6NAe.jpg?width=720",
+          "alt": "리가 로열 리조트 오키나와 차탄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5816262",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5816262?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1648,7 +2155,7 @@
       "provider": "myrealtrip",
       "name": "히요리 오션 리조트 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.879Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
       "slug": "히요리-오션-리조트-오키나와-1536394",
       "country": "일본",
       "countryCode": "JP",
@@ -1664,7 +2171,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1536394-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/KLtc/2Tx9kBEdiB.jpg?width=720",
+          "alt": "히요리 오션 리조트 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1536394",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1536394?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1690,7 +2210,7 @@
       "provider": "myrealtrip",
       "name": "알라 마하이나 콘도 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "알라-마하이나-콘도-호텔-6207208",
       "country": "일본",
       "countryCode": "JP",
@@ -1706,7 +2226,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6207208-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/OhBu/mW0HZNtyMs.jpg?width=720",
+          "alt": "알라 마하이나 콘도 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6207208",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1732,7 +2265,7 @@
       "provider": "myrealtrip",
       "name": "팰리스 인 문 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "팰리스-인-문-비치-1211831",
       "country": "일본",
       "countryCode": "JP",
@@ -1748,7 +2281,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1211831-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/12/13/O1fV/89eolOarTz.jpg?width=720",
+          "alt": "팰리스 인 문 비치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1211831",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1211831?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1774,7 +2320,7 @@
       "provider": "myrealtrip",
       "name": "도큐스테이 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "도큐스테이-오키나와-나하-1460073",
       "country": "일본",
       "countryCode": "JP",
@@ -1790,7 +2336,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1460073-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/31/rUhw/HZdb1wlZsA.jpg?width=720",
+          "alt": "도큐스테이 오키나와 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1460073",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460073?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1816,7 +2375,7 @@
       "provider": "myrealtrip",
       "name": "ANA 인터컨티넨탈 만자 비치 리조트 바이 IHG",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "ana-인터컨티넨탈-만자-비치-리조트-바이-ihg-1107731",
       "country": "일본",
       "countryCode": "JP",
@@ -1832,7 +2391,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1107731-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/03/Xmbu/A19GNicLXI.jpg?width=720",
+          "alt": "ANA 인터컨티넨탈 만자 비치 리조트 바이 IHG 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1107731",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107731?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1858,7 +2430,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 하버뷰 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "오키나와-하버뷰-호텔-1449283",
       "country": "일본",
       "countryCode": "JP",
@@ -1874,7 +2446,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1449283-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/13/liPc/TETUgOgr03.jpg?width=720",
+          "alt": "오키나와 하버뷰 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1449283",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1449283?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1900,7 +2485,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아베스트 나하 코쿠사이도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "호텔-아베스트-나하-코쿠사이도리-1219297",
       "country": "일본",
       "countryCode": "JP",
@@ -1916,7 +2501,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1219297-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/IzBl/VHcbI8DU9O.jpg?width=720",
+          "alt": "호텔 아베스트 나하 코쿠사이도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1219297",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1219297?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1942,7 +2540,7 @@
       "provider": "myrealtrip",
       "name": "Royal Hotel OKINAWA ZANPAMISAKI",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "royal-hotel-okinawa-zanpamisaki-4089334",
       "country": "일본",
       "countryCode": "JP",
@@ -1958,7 +2556,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4089334-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/14/H0ZD/sN2ertghfm.jpg?width=720",
+          "alt": "Royal Hotel OKINAWA ZANPAMISAKI 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4089334",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4089334?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1984,7 +2595,7 @@
       "provider": "myrealtrip",
       "name": "더블트리 바이 힐튼 오키나와 자탄 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "더블트리-바이-힐튼-오키나와-자탄-리조트-1321298",
       "country": "일본",
       "countryCode": "JP",
@@ -2000,7 +2611,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1321298-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/07/25/RoVG/GGLVPaURUH.jpg?width=720",
+          "alt": "더블트리 바이 힐튼 오키나와 자탄 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1321298",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1321298?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2026,7 +2650,7 @@
       "provider": "myrealtrip",
       "name": "Hotel Grand Consort Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "hotel-grand-consort-naha-3693474",
       "country": "일본",
       "countryCode": "JP",
@@ -2042,7 +2666,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3693474-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/m7zD/F7UK1RuY9U.jpg?width=720",
+          "alt": "Hotel Grand Consort Naha 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3693474",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3693474?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2068,7 +2705,7 @@
       "provider": "myrealtrip",
       "name": "호시노야 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "호시노야-오키나와-1477410",
       "country": "일본",
       "countryCode": "JP",
@@ -2084,7 +2721,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1477410-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/02/06/696g/iGF2SvY03J.jpg?width=720",
+          "alt": "호시노야 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1477410",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1477410?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2110,7 +2760,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 그랜드 메르 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "오키나와-그랜드-메르-리조트-6207107",
       "country": "일본",
       "countryCode": "JP",
@@ -2126,7 +2776,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6207107-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/78TL/9Om9kw7Evk.jpg?width=720",
+          "alt": "오키나와 그랜드 메르 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6207107",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207107?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2152,7 +2815,7 @@
       "provider": "myrealtrip",
       "name": "오쿠마 프라이빗 비치 & 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "오쿠마-프라이빗-비치-리조트-6207029",
       "country": "일본",
       "countryCode": "JP",
@@ -2168,7 +2831,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6207029-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/14/sqPz/OlU4VR5tWY.jpg?width=720",
+          "alt": "오쿠마 프라이빗 비치 & 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6207029",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207029?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2194,7 +2870,7 @@
       "provider": "myrealtrip",
       "name": "류큐 온센 세나가지마 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "류큐-온센-세나가지마-호텔-1249348",
       "country": "일본",
       "countryCode": "JP",
@@ -2210,7 +2886,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1249348-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/06/c3YW/N8UvLE6WaV.jpg?width=720",
+          "alt": "류큐 온센 세나가지마 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1249348",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1249348?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2236,7 +2925,7 @@
       "provider": "myrealtrip",
       "name": "티사지 호텔 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "티사지-호텔-나하-1316277",
       "country": "일본",
       "countryCode": "JP",
@@ -2252,7 +2941,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1316277-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/26/9u7k/Xrw3VPRU7c.jpg?width=720",
+          "alt": "티사지 호텔 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1316277",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1316277?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2278,7 +2980,7 @@
       "provider": "myrealtrip",
       "name": "Southwest Grand Hotel",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "southwest-grand-hotel-3586184",
       "country": "일본",
       "countryCode": "JP",
@@ -2294,7 +2996,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3586184-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/jKKA/oZzId2hlyf.jpg?width=720",
+          "alt": "Southwest Grand Hotel 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3586184",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3586184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2320,7 +3035,7 @@
       "provider": "myrealtrip",
       "name": "류큐 오리온 호텔, 나하 국제거리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "류큐-오리온-호텔-나하-국제거리-1183011",
       "country": "일본",
       "countryCode": "JP",
@@ -2336,7 +3051,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1183011-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/08/1A2x/NlEKRReJ7z.jpg?width=720",
+          "alt": "류큐 오리온 호텔, 나하 국제거리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1183011",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1183011?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2362,7 +3090,7 @@
       "provider": "myrealtrip",
       "name": "풀 빌라 야가지 아일랜드 바이 콜디오 프리미엄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "풀-빌라-야가지-아일랜드-바이-콜디오-프리미엄-3690287",
       "country": "일본",
       "countryCode": "JP",
@@ -2378,7 +3106,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3690287-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/09/j6By/6E14h3sS8r.jpg?width=720",
+          "alt": "풀 빌라 야가지 아일랜드 바이 콜디오 프리미엄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3690287",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3690287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2403,7 +3144,7 @@
       "provider": "myrealtrip",
       "name": "선셋 비치 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "선셋-비치-호텔-1340796",
       "country": "일본",
       "countryCode": "JP",
@@ -2419,7 +3160,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1340796-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/02/21/XMnT/iLM7ozT0z5.jpg?width=720",
+          "alt": "선셋 비치 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1340796",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1340796?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2445,7 +3199,7 @@
       "provider": "myrealtrip",
       "name": "선셋 리조트 캄푸",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "선셋-리조트-캄푸-1442634",
       "country": "일본",
       "countryCode": "JP",
@@ -2461,7 +3215,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1442634-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/05/26/BjyW/WeWqRX8vQ4.jpg?width=720",
+          "alt": "선셋 리조트 캄푸 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1442634",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1442634?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2486,7 +3253,7 @@
       "provider": "myrealtrip",
       "name": "와이즈 캐빈 & 호텔 나하 코쿠사이 도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:03.161Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
       "slug": "와이즈-캐빈-호텔-나하-코쿠사이-도리-1341257",
       "country": "일본",
       "countryCode": "JP",
@@ -2502,7 +3269,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1341257-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/11/BiTx/j59brVC8Gs.jpg?width=720",
+          "alt": "와이즈 캐빈 & 호텔 나하 코쿠사이 도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1341257",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1341257?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2528,7 +3308,7 @@
       "provider": "myrealtrip",
       "name": "리가 로열 그랜 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "리가-로열-그랜-오키나와-1203208",
       "country": "일본",
       "countryCode": "JP",
@@ -2544,7 +3324,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1203208-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/08/12/jvmH/z44cDdbcUz.jpg?width=720",
+          "alt": "리가 로열 그랜 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1203208",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1203208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2570,7 +3363,7 @@
       "provider": "myrealtrip",
       "name": "THE SENAGAJIMA STORY LINE",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "the-senagajima-story-line-6096842",
       "country": "일본",
       "countryCode": "JP",
@@ -2586,7 +3379,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6096842-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/04/xU1Y/3QAOJeg2A8.png?width=720",
+          "alt": "THE SENAGAJIMA STORY LINE 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6096842",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6096842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2612,7 +3418,7 @@
       "provider": "myrealtrip",
       "name": "베스트 웨스턴 오키나와 코우키 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "베스트-웨스턴-오키나와-코우키-비치-6206127",
       "country": "일본",
       "countryCode": "JP",
@@ -2628,7 +3434,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206127-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/22/3gt9/GJkpxVrC0z.jpg?width=720",
+          "alt": "베스트 웨스턴 오키나와 코우키 비치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206127",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206127?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2654,7 +3473,7 @@
       "provider": "myrealtrip",
       "name": "Chatan Beach Side Condominium Hotel Monpa",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "chatan-beach-side-condominium-hotel-monpa-4361093",
       "country": "일본",
       "countryCode": "JP",
@@ -2670,7 +3489,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4361093-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/09/I0E9/6akKEHYR6y.jpg?width=720",
+          "alt": "Chatan Beach Side Condominium Hotel Monpa 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4361093",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4361093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2696,7 +3528,7 @@
       "provider": "myrealtrip",
       "name": "Hewitt Resort Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "hewitt-resort-naha-1552331",
       "country": "일본",
       "countryCode": "JP",
@@ -2712,7 +3544,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1552331-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/f4VR/vjc99uSSPy.jpg?width=720",
+          "alt": "Hewitt Resort Naha 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1552331",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1552331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2738,7 +3583,7 @@
       "provider": "myrealtrip",
       "name": "카후 리조트 후차쿠 콘도 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "카후-리조트-후차쿠-콘도-호텔-1171753",
       "country": "일본",
       "countryCode": "JP",
@@ -2754,7 +3599,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1171753-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/04/19/F1St/EkJLLJhisZ.jpg?width=720",
+          "alt": "카후 리조트 후차쿠 콘도 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1171753",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1171753?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2780,7 +3638,7 @@
       "provider": "myrealtrip",
       "name": "더 문 비치 뮤지엄 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "더-문-비치-뮤지엄-리조트-1198409",
       "country": "일본",
       "countryCode": "JP",
@@ -2796,7 +3654,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1198409-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/kSs4/RfYuMj4uk4.jpg?width=720",
+          "alt": "더 문 비치 뮤지엄 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1198409",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1198409?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2822,7 +3693,7 @@
       "provider": "myrealtrip",
       "name": "호텔 유가후 인 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "호텔-유가후-인-오키나와-1210282",
       "country": "일본",
       "countryCode": "JP",
@@ -2838,7 +3709,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1210282-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/23/axVK/jl4v6j3QL4.jpg?width=720",
+          "alt": "호텔 유가후 인 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1210282",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1210282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2864,7 +3748,7 @@
       "provider": "myrealtrip",
       "name": "BEB5 오키나와 세라가키 바이 호시노 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "beb5-오키나와-세라가키-바이-호시노-리조트-1626852",
       "country": "일본",
       "countryCode": "JP",
@@ -2880,7 +3764,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1626852-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/02/15/DbQo/3SsL4HkeWq.jpg?width=720",
+          "alt": "BEB5 오키나와 세라가키 바이 호시노 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1626852",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1626852?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2906,7 +3803,7 @@
       "provider": "myrealtrip",
       "name": "호텔 앤드룸스 나하 포트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "호텔-앤드룸스-나하-포트-6215621",
       "country": "일본",
       "countryCode": "JP",
@@ -2922,7 +3819,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215621-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/fSPc/VTD58JlVMV.jpg?width=720",
+          "alt": "호텔 앤드룸스 나하 포트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215621",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215621?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2948,7 +3858,7 @@
       "provider": "myrealtrip",
       "name": "더 로열 파크 호텔 아이코닉 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "더-로열-파크-호텔-아이코닉-나하-6205893",
       "country": "일본",
       "countryCode": "JP",
@@ -2964,7 +3874,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6205893-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/pwSa/mYPI6vf93A.jpg?width=720",
+          "alt": "더 로열 파크 호텔 아이코닉 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6205893",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205893?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2990,7 +3913,7 @@
       "provider": "myrealtrip",
       "name": "호텔 알라 쿠주 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "호텔-알라-쿠주-오키나와-1667623",
       "country": "일본",
       "countryCode": "JP",
@@ -3006,7 +3929,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1667623-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/19/NM0e/Eq7tGSpxJi.jpg?width=720",
+          "alt": "호텔 알라 쿠주 오키나와 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1667623",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1667623?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3032,7 +3968,7 @@
       "provider": "myrealtrip",
       "name": "코코셔스 몬파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "코코셔스-몬파-1340472",
       "country": "일본",
       "countryCode": "JP",
@@ -3048,7 +3984,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1340472-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/6wOR/O37FnbnADd.jpg?width=720",
+          "alt": "코코셔스 몬파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1340472",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1340472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3074,7 +4023,7 @@
       "provider": "myrealtrip",
       "name": "REF Okinawa Arena by VESSEL HOTELS",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "ref-okinawa-arena-by-vessel-hotels-6205908",
       "country": "일본",
       "countryCode": "JP",
@@ -3090,7 +4039,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6205908-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/03/06/j6gA/KAm8DravXa.jpg?width=720",
+          "alt": "REF Okinawa Arena by VESSEL HOTELS 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6205908",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205908?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3116,7 +4078,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 카리유시 리조트 엑시즈 온나",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "오키나와-카리유시-리조트-엑시즈-온나-1169077",
       "country": "일본",
       "countryCode": "JP",
@@ -3132,7 +4094,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1169077-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/20/MQVK/c9onBmhJxF.jpg?width=720",
+          "alt": "오키나와 카리유시 리조트 엑시즈 온나 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1169077",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1169077?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3158,7 +4133,7 @@
       "provider": "myrealtrip",
       "name": "컴포트 호텔 나하 프레펙추얼 오피스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "컴포트-호텔-나하-프레펙추얼-오피스-1161238",
       "country": "일본",
       "countryCode": "JP",
@@ -3174,7 +4149,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1161238-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/18/zetb/CKCxUeL8lX.jpg?width=720",
+          "alt": "컴포트 호텔 나하 프레펙추얼 오피스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1161238",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1161238?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3200,7 +4188,7 @@
       "provider": "myrealtrip",
       "name": "Private Condo Kourijima by Coldio Smart Resort",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "private-condo-kourijima-by-coldio-smart-resort-3683601",
       "country": "일본",
       "countryCode": "JP",
@@ -3216,7 +4204,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3683601-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/18/yvzk/x3G8Cv7F2Y.jpg?width=720",
+          "alt": "Private Condo Kourijima by Coldio Smart Resort 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3683601",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3683601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3242,7 +4243,7 @@
       "provider": "myrealtrip",
       "name": "토요코인 오키나와 나하 아사히바시 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "토요코인-오키나와-나하-아사히바시-에키마에-5735331",
       "country": "일본",
       "countryCode": "JP",
@@ -3258,7 +4259,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5735331-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/13/T8Lt/JrJjqkG4cS.png?width=720",
+          "alt": "토요코인 오키나와 나하 아사히바시 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5735331",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5735331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3284,7 +4298,7 @@
       "provider": "myrealtrip",
       "name": "더 나하 테라스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "더-나하-테라스-1174382",
       "country": "일본",
       "countryCode": "JP",
@@ -3300,7 +4314,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1174382-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/16/ITjT/7vkPLCPhw6.jpg?width=720",
+          "alt": "더 나하 테라스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1174382",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1174382?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3326,7 +4353,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아자트  나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:04.662Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
       "slug": "호텔-아자트-나하-1295830",
       "country": "일본",
       "countryCode": "JP",
@@ -3342,7 +4369,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1295830-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/18/y2Cv/Kqkb5YBKcC.jpg?width=720",
+          "alt": "호텔 아자트  나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1295830",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295830?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3368,7 +4408,7 @@
       "provider": "myrealtrip",
       "name": "Loisir Spa Tower Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "loisir-spa-tower-naha-4081094",
       "country": "일본",
       "countryCode": "JP",
@@ -3384,7 +4424,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4081094-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/24/RPX5/iPc7lVrLaX.jpg?width=720",
+          "alt": "Loisir Spa Tower Naha 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4081094",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4081094?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3410,7 +4463,7 @@
       "provider": "myrealtrip",
       "name": "쉐라톤 오키나와 선마리나 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "쉐라톤-오키나와-선마리나-리조트-6206158",
       "country": "일본",
       "countryCode": "JP",
@@ -3426,7 +4479,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206158-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/rIW5/0iqrOWbtHC.jpg?width=720",
+          "alt": "쉐라톤 오키나와 선마리나 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206158",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206158?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3452,7 +4518,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아트 스테이 나하 국제거리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "호텔-아트-스테이-나하-국제거리-1181933",
       "country": "일본",
       "countryCode": "JP",
@@ -3468,7 +4534,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1181933-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/05/uiUx/TOE7GoOf5q.jpg?width=720",
+          "alt": "호텔 아트 스테이 나하 국제거리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1181933",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181933?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3494,7 +4573,7 @@
       "provider": "myrealtrip",
       "name": "라핀 미하마 레지던스 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "라핀-미하마-레지던스-호텔-1472967",
       "country": "일본",
       "countryCode": "JP",
@@ -3510,7 +4589,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1472967-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/8RyR/QDZj5Ob33G.jpg?width=720",
+          "alt": "라핀 미하마 레지던스 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1472967",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1472967?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3535,7 +4627,7 @@
       "provider": "myrealtrip",
       "name": "니시테츠 리조트 인 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "니시테츠-리조트-인-나하-6338987",
       "country": "일본",
       "countryCode": "JP",
@@ -3551,7 +4643,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6338987-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/20/A6Bw/OQ1mOSVF58.jpg?width=720",
+          "alt": "니시테츠 리조트 인 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6338987",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6338987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3577,7 +4682,7 @@
       "provider": "myrealtrip",
       "name": "피닉스 파크 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "피닉스-파크-호텔-1578228",
       "country": "일본",
       "countryCode": "JP",
@@ -3593,7 +4698,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1578228-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/08/25/6VTj/JSWsesDfAs.jpg?width=720",
+          "alt": "피닉스 파크 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1578228",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1578228?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3619,7 +4737,7 @@
       "provider": "myrealtrip",
       "name": "호텔 레솔 트리니티 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "호텔-레솔-트리니티-나하-6215566",
       "country": "일본",
       "countryCode": "JP",
@@ -3635,7 +4753,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215566-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/08/10/SHDH/l81iQrcGgI.jpg?width=720",
+          "alt": "호텔 레솔 트리니티 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215566",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215566?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3661,7 +4792,7 @@
       "provider": "myrealtrip",
       "name": "더 테라스 클럽 웰니스 탈라소 앳 부세나",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "더-테라스-클럽-웰니스-탈라소-앳-부세나-1196267",
       "country": "일본",
       "countryCode": "JP",
@@ -3677,7 +4808,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1196267-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/21/GdKe/hHc2pJo91E.jpg?width=720",
+          "alt": "더 테라스 클럽 웰니스 탈라소 앳 부세나 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1196267",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1196267?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3703,7 +4847,7 @@
       "provider": "myrealtrip",
       "name": "타타미 노 야도 차탄 미하마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "타타미-노-야도-차탄-미하마-1203232",
       "country": "일본",
       "countryCode": "JP",
@@ -3719,7 +4863,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1203232-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/12/LFZi/bFf3pLk6KR.jpg?width=720",
+          "alt": "타타미 노 야도 차탄 미하마 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1203232",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1203232?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3745,7 +4902,7 @@
       "provider": "myrealtrip",
       "name": "머큐어 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "머큐어-오키나와-나하-1195243",
       "country": "일본",
       "countryCode": "JP",
@@ -3761,7 +4918,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1195243-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/14/uWQK/5TYypTAy8F.jpg?width=720",
+          "alt": "머큐어 오키나와 나하 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1195243",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1195243?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3787,7 +4957,7 @@
       "provider": "myrealtrip",
       "name": "로열 뷰 호텔 츄라우미 - 츄라우미와 가장 가까움",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "로열-뷰-호텔-츄라우미-츄라우미와-가장-가까움-1165514",
       "country": "일본",
       "countryCode": "JP",
@@ -3803,7 +4973,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1165514-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/FKrB/hvr1EJNwGe.jpg?width=720",
+          "alt": "로열 뷰 호텔 츄라우미 - 츄라우미와 가장 가까움 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1165514",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1165514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3829,7 +5012,7 @@
       "provider": "myrealtrip",
       "name": "리에타 나카야마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "리에타-나카야마-1851316",
       "country": "일본",
       "countryCode": "JP",
@@ -3845,7 +5028,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1851316-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/27/7JSM/uFmZrWWvut.jpg?width=720",
+          "alt": "리에타 나카야마 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1851316",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1851316?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3871,7 +5067,7 @@
       "provider": "myrealtrip",
       "name": "호텔 나하 시티 -국제 거리-",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "호텔-나하-시티-국제-거리-1220735",
       "country": "일본",
       "countryCode": "JP",
@@ -3887,7 +5083,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1220735-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/27/BcSP/KfZqyO5HKK.jpg?width=720",
+          "alt": "호텔 나하 시티 -국제 거리- 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1220735",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1220735?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3913,7 +5122,7 @@
       "provider": "myrealtrip",
       "name": "우미노 료테이 오키나와 나카마소우",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "우미노-료테이-오키나와-나카마소우-1286468",
       "country": "일본",
       "countryCode": "JP",
@@ -3929,7 +5138,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1286468-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/npMa/O4RyV4hflX.jpg?width=720",
+          "alt": "우미노 료테이 오키나와 나카마소우 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1286468",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1286468?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3954,7 +5176,7 @@
       "provider": "myrealtrip",
       "name": "카리유시 LCH 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "카리유시-lch-리조트-1514088",
       "country": "일본",
       "countryCode": "JP",
@@ -3970,7 +5192,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1514088-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/02/J3Vo/NmM9bHZNOD.jpg?width=720",
+          "alt": "카리유시 LCH 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1514088",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1514088?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3996,7 +5231,7 @@
       "provider": "myrealtrip",
       "name": "풀 빌라 이마도마리 바이 콜디오 프리미엄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.086Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "풀-빌라-이마도마리-바이-콜디오-프리미엄-1290767",
       "country": "일본",
       "countryCode": "JP",
@@ -4012,7 +5247,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1290767-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/22/1x2q/QJe0yWFSe1.jpg?width=720",
+          "alt": "풀 빌라 이마도마리 바이 콜디오 프리미엄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1290767",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1290767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4037,7 +5285,7 @@
       "provider": "myrealtrip",
       "name": "스마일 호텔 나하 시티 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "스마일-호텔-나하-시티-리조트-1262754",
       "country": "일본",
       "countryCode": "JP",
@@ -4053,7 +5301,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1262754-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/J32g/2WESi7PA69.jpg?width=720",
+          "alt": "스마일 호텔 나하 시티 리조트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1262754",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1262754?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4079,7 +5340,7 @@
       "provider": "myrealtrip",
       "name": "더블트리 바이 힐튼 나하 슈리 캐슬",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "더블트리-바이-힐튼-나하-슈리-캐슬-1108217",
       "country": "일본",
       "countryCode": "JP",
@@ -4095,7 +5356,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1108217-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/22/4vKD/KV8mP2veF1.jpg?width=720",
+          "alt": "더블트리 바이 힐튼 나하 슈리 캐슬 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1108217",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1108217?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4121,7 +5395,7 @@
       "provider": "myrealtrip",
       "name": "호텔 미유키 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "호텔-미유키-비치-1217760",
       "country": "일본",
       "countryCode": "JP",
@@ -4137,7 +5411,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1217760-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/Q7Pv/sOa0VgUYq5.jpg?width=720",
+          "alt": "호텔 미유키 비치 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1217760",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1217760?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4163,7 +5450,7 @@
       "provider": "myrealtrip",
       "name": "미스터 긴조 인 모토부 오션 테라스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:06.087Z",
+      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
       "slug": "미스터-긴조-인-모토부-오션-테라스-1353033",
       "country": "일본",
       "countryCode": "JP",
@@ -4179,7 +5466,20 @@
         "city": "오키나와",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1353033-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/06/14/Uxpa/YEqIp484iA.jpg?width=720",
+          "alt": "미스터 긴조 인 모토부 오션 테라스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1353033",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1353033?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",

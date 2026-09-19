@@ -12,6 +12,21 @@
       "hotelId": "myrealtrip-5022564",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-5022564-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/07/y8Fp/VInbUDvate.jpg?width=720",
+            "alt": "소테츠 그랜드 프레사 오사카-난바 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-5022564",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5022564?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "소테츠 그랜드 프레사 오사카-난바는 일본 오사카에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 다양한 편의 시설과 서비스를 갖추고 있습니다."
         },
@@ -139,6 +154,21 @@
       "hotelId": "myrealtrip-1431475",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1431475-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/02/AH0Z/Kc1moGpnP2.jpg?width=720",
+            "alt": "호텔한큐레스파이어오사카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1431475",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1431475?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔한큐레스파이어오사카는 오사카 지역에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 제공하며, 오사카의 매력을 느낄 수 있는 최적의 장소입니다."
         },
@@ -231,6 +261,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-3578504",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-3578504-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/jLkA/VyPo6uCxJw.jpg?width=720",
+            "alt": "APA 호텔 & 리조트 오사카 난바 역앞 타워 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-3578504",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3578504?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "APA 호텔 & 리조트 오사카 난바 역앞 타워는 오사카 지역에 위치한 3성급 호텔입니다. 이 호텔은 편리한 위치와 다양한 편의시설로 여행객들에게 인기가 많습니다."
@@ -340,6 +385,21 @@
       "hotelId": "myrealtrip-1286523",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1286523-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/30/DmCk/3epU06jlC9.jpg?width=720",
+            "alt": "칸데오 호텔 오사카 난바 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1286523",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1286523?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "칸데오 호텔 오사카 난바는 일본 오사카에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 시설과 편안한 객실을 갖추고 있습니다."
         },
@@ -431,6 +491,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-1268563",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1268563-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/pmLw/AzPVuWByMl.jpg?width=720",
+            "alt": "호텔 일 쿠오레 남바 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1268563",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1268563?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 일 쿠오레 남바는 일본 오사카에 위치한 3성급 호텔입니다. 이 호텔은 오사카 지역에서 편안한 숙박을 원하는 여행객들에게 적합합니다."
@@ -540,6 +615,21 @@
       "hotelId": "myrealtrip-1560748",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1560748-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/MGk1/IcGEvTQ4uC.jpg?width=720",
+            "alt": "호텔 포르자 오사카 난바 도톤보리 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1560748",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1560748?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 포르자 오사카 난바 도톤보리는 오사카 지역에 위치한 3성급 호텔입니다. 다양한 편의시설과 함께 오사카의 매력을 만끽할 수 있는 최적의 장소입니다."
         },
@@ -632,6 +722,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-1185003",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1185003-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/c3du/N9XZBbySD2.jpg?width=720",
+            "alt": "오사카 테이코쿠 호텔 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1185003",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185003?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "오사카 테이코쿠 호텔은 오사카 지역에 위치한 3성급 호텔로, 다양한 여행객들에게 적합한 숙소입니다. 기본적인 편의시설을 갖추고 있으며, 오사카의 중심에서 편리한 접근성을 제공합니다."
@@ -734,6 +839,21 @@
       "hotelId": "myrealtrip-1162565",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1162565-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/01/j9SY/eaYVamxc30.jpg?width=720",
+            "alt": "호텔 몬토레 그라스미아 오사카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1162565",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1162565?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 몬토레 그라스미아 오사카는 일본 오사카에 위치한 4성급 호텔입니다. 이 호텔은 오사카 지역의 다양한 매력을 경험하기에 적합한 숙소입니다."
         },
@@ -825,6 +945,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-1141495",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1141495-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/tyAH/QBI1tR6MVK.jpg?width=720",
+            "alt": "남바 오리엔탈 호텔 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1141495",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1141495?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "남바 오리엔탈 호텔은 일본 오사카에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 제공하며, 오사카 지역에서 편안한 숙박을 원하는 여행객들에게 적합합니다."
@@ -935,6 +1070,21 @@
       "hotelId": "myrealtrip-5008384",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-5008384-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/10/ANWf/AC8I2VldAu.jpg?width=720",
+            "alt": "오사카 도톤보리,난바,에비스주택 모리하우스(집 전체,아파트형,주택형)  대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-5008384",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5008384?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "오사카 도톤보리, 난바, 에비스주택 모리하우스는 일본 오사카에 위치한 아파트형 숙소입니다. 집 전체를 이용할 수 있는 형태로, 편리한 숙박을 제공합니다."
         },
@@ -1027,6 +1177,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-3576037",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-3576037-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/18/hvBA/Mja5rLdeou.jpg?width=720",
+            "alt": "더 원파이브 오사카 난바 도톤보리 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-3576037",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3576037?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "더 원파이브 오사카 난바 도톤보리는 일본 오사카에 위치한 2성급 호텔입니다. 이 호텔은 오사카 지역에서 다양한 여행객들에게 편안한 숙소를 제공합니다."
@@ -1145,6 +1310,21 @@
       "hotelId": "myrealtrip-1641612",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1641612-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/JMg2/0U0eSRnsUm.jpg?width=720",
+            "alt": "호텔 케이한 난바 그란데 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1641612",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1641612?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "호텔 케이한 난바 그란데는 일본 오사카에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 제공하며, 고객의 편안한 숙박을 위해 최선을 다하고 있습니다."
         },
@@ -1253,6 +1433,21 @@
       "hotelId": "myrealtrip-1270212",
       "blocks": [
         {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1270212-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/Tgfg/o86ycdifQP.jpg?width=720",
+            "alt": "온야도 노노 남바 내추럴 핫 스프링 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1270212",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1270212?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
           "type": "paragraph",
           "text": "온야도 노노 남바 내추럴 핫 스프링은 일본 오사카에 위치한 4성급 호텔입니다. 이 호텔은 온천을 주제로 한 숙소로, 편안한 휴식을 제공합니다."
         },
@@ -1344,6 +1539,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-1134335",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1134335-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/v8Pd/vBfm8CcOx4.jpg?width=720",
+            "alt": "호텔 케이한 유니버설 타워 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1134335",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1134335?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "호텔 케이한 유니버설 타워는 일본 오사카에 위치한 호텔입니다. 숙소 유형은 호텔이며, 별점은 4점(4성급)으로 표시됩니다."
@@ -1447,6 +1657,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-3587508",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-3587508-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/21/3Wvd/QBTlC39q3J.jpg?width=720",
+            "alt": "Toyoko Inn Osaka Namba 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-3587508",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587508?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "Toyoko Inn Osaka Namba는 일본 오사카에 위치한 3성급 호텔입니다. 제공된 데이터 기준으로 숙소 유형은 호텔로 확인됩니다. 체크인 및 체크아웃 시간을 포함한 세부 운영 정책 정보는 제공된 데이터에서 확인되지 않습니다."
@@ -1562,6 +1787,21 @@
       "destinationId": "japan-osaka",
       "hotelId": "myrealtrip-1285400",
       "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1285400-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/08/amba/V7KOawCbxe.jpg?width=720",
+            "alt": "더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1285400",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1285400?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
         {
           "type": "paragraph",
           "text": "더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬은 일본 오사카에 위치한 4성급 호텔입니다. 마이리얼트립 숙소 검색 API 데이터를 기준으로 기본 정보를 제공합니다. 체크인/체크아웃 시간 및 상세 시설 등 일부 정보는 제공된 데이터에서 확인되지 않습니다."

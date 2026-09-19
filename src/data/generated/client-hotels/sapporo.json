@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-19T09:23:06.087Z",
+  "generatedAt": "2026-09-19T09:30:06.832Z",
   "source": "myrealtrip",
   "hotelCount": 100,
   "search": {},
-  "imageUsageAllowed": false,
+  "imageUsageAllowed": true,
   "hotels": [
     {
       "id": "myrealtrip-4185957",
@@ -11,7 +11,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 호텔 바이 그랑벨",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "삿포로-호텔-바이-그랑벨-4185957",
       "country": "일본",
       "countryCode": "JP",
@@ -27,7 +27,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4185957-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/06/iGpx/6vaz3BU5CR.jpg?width=720",
+          "alt": "삿포로 호텔 바이 그랑벨 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4185957",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4185957?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -53,7 +66,7 @@
       "provider": "myrealtrip",
       "name": "호텔 포르자 삿포로 스테이션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "호텔-포르자-삿포로-스테이션-1495357",
       "country": "일본",
       "countryCode": "JP",
@@ -69,7 +82,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1495357-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/sj4E/Rwu3PqHjMm.jpg?width=720",
+          "alt": "호텔 포르자 삿포로 스테이션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1495357",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1495357?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -95,7 +121,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 그랜드 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "삿포로-그랜드-호텔-6215670",
       "country": "일본",
       "countryCode": "JP",
@@ -111,7 +137,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215670-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/ykPt/ksnKIIVDLq.jpg?width=720",
+          "alt": "삿포로 그랜드 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215670",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215670?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -137,7 +176,7 @@
       "provider": "myrealtrip",
       "name": "호텔 몬토레 에델호프 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "호텔-몬토레-에델호프-삿포로-1153897",
       "country": "일본",
       "countryCode": "JP",
@@ -153,7 +192,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1153897-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/KJHD/o39rAKc4S9.jpg?width=720",
+          "alt": "호텔 몬토레 에델호프 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1153897",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1153897?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -179,7 +231,7 @@
       "provider": "myrealtrip",
       "name": "호텔 레졸 트리니티 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "호텔-레졸-트리니티-삿포로-1186904",
       "country": "일본",
       "countryCode": "JP",
@@ -195,7 +247,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1186904-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/29/ZU2l/2EojLErJwZ.jpg?width=720",
+          "alt": "호텔 레졸 트리니티 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1186904",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186904?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -221,7 +286,7 @@
       "provider": "myrealtrip",
       "name": "퀸테사 호텔 삿포로 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "퀸테사-호텔-삿포로-스스키노-6206720",
       "country": "일본",
       "countryCode": "JP",
@@ -237,7 +302,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206720-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/dU9O/w3k46wP7ov.jpg?width=720",
+          "alt": "퀸테사 호텔 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206720",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206720?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -263,7 +341,7 @@
       "provider": "myrealtrip",
       "name": "라젠트 스테이 삿포로 오도리 홋카이도",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "라젠트-스테이-삿포로-오도리-홋카이도-1259073",
       "country": "일본",
       "countryCode": "JP",
@@ -279,7 +357,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1259073-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/02/7X4c/BHCEnMyxxu.jpg?width=720",
+          "alt": "라젠트 스테이 삿포로 오도리 홋카이도 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1259073",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1259073?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -305,7 +396,7 @@
       "provider": "myrealtrip",
       "name": "그랑벨 호텔 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "그랑벨-호텔-스스키노-1568912",
       "country": "일본",
       "countryCode": "JP",
@@ -321,7 +412,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1568912-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/ScGz/j8j3vCIMoG.jpg?width=720",
+          "alt": "그랑벨 호텔 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1568912",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1568912?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -347,7 +451,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 스트림 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "삿포로-스트림-호텔-6215631",
       "country": "일본",
       "countryCode": "JP",
@@ -363,7 +467,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215631-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/YsdA/ZDGC36qS2e.jpg?width=720",
+          "alt": "삿포로 스트림 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215631",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215631?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -389,7 +506,7 @@
       "provider": "myrealtrip",
       "name": " 크로스호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "크로스호텔-삿포로-4312114",
       "country": "일본",
       "countryCode": "JP",
@@ -405,7 +522,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4312114-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/14/oe4Z/JDoaXppWDQ.jpg?width=720",
+          "alt": " 크로스호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4312114",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4312114?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -431,7 +561,7 @@
       "provider": "myrealtrip",
       "name": "퀸테사 호텔 삿포로 스스키노 63 릴렉스&스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "퀸테사-호텔-삿포로-스스키노-63-릴렉스-스파-1422010",
       "country": "일본",
       "countryCode": "JP",
@@ -447,7 +577,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1422010-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/26/0I8H/ZdmUagTGRb.jpg?width=720",
+          "alt": "퀸테사 호텔 삿포로 스스키노 63 릴렉스&스파 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1422010",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1422010?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -473,7 +616,7 @@
       "provider": "myrealtrip",
       "name": "스마일 호텔 프리미엄 삿포로스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "스마일-호텔-프리미엄-삿포로스스키노-6215599",
       "country": "일본",
       "countryCode": "JP",
@@ -489,7 +632,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215599-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/HAbt/LhVjUSXQxE.jpg?width=720",
+          "alt": "스마일 호텔 프리미엄 삿포로스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215599",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215599?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -515,7 +671,7 @@
       "provider": "myrealtrip",
       "name": "더 놋 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "더-놋-삿포로-1482483",
       "country": "일본",
       "countryCode": "JP",
@@ -531,7 +687,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1482483-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/U5Lo/PlsHJpPMpk.jpg?width=720",
+          "alt": "더 놋 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1482483",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1482483?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -557,7 +726,7 @@
       "provider": "myrealtrip",
       "name": "카락사 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "카락사-호텔-삿포로-1295524",
       "country": "일본",
       "countryCode": "JP",
@@ -573,7 +742,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1295524-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/ax4H/20UiRqTqjy.jpg?width=720",
+          "alt": "카락사 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1295524",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295524?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -599,7 +781,7 @@
       "provider": "myrealtrip",
       "name": "Jozankei Yurakusoan",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "jozankei-yurakusoan-3585879",
       "country": "일본",
       "countryCode": "JP",
@@ -615,7 +797,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3585879-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/17/ryFo/5JCMUQnHmh.jpg?width=720",
+          "alt": "Jozankei Yurakusoan 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3585879",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3585879?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -640,7 +835,7 @@
       "provider": "myrealtrip",
       "name": "JR 웨스트 그룹 비아 인 프라임 삿포로 오도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "jr-웨스트-그룹-비아-인-프라임-삿포로-오도리-3588832",
       "country": "일본",
       "countryCode": "JP",
@@ -656,7 +851,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3588832-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/01/mP60/8vy4bzm7yf.jpg?width=720",
+          "alt": "JR 웨스트 그룹 비아 인 프라임 삿포로 오도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3588832",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3588832?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -682,7 +890,7 @@
       "provider": "myrealtrip",
       "name": "더 로열 파크 캔버스 – 삿포로 오도리 파크",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "더-로열-파크-캔버스-삿포로-오도리-파크-1576808",
       "country": "일본",
       "countryCode": "JP",
@@ -698,7 +906,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1576808-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/FtP0/HK6EHeCruX.jpg?width=720",
+          "alt": "더 로열 파크 캔버스 – 삿포로 오도리 파크 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1576808",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1576808?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -724,7 +945,7 @@
       "provider": "myrealtrip",
       "name": "KOKO 호텔 삿포로 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "koko-호텔-삿포로-에키마에-1548268",
       "country": "일본",
       "countryCode": "JP",
@@ -740,7 +961,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1548268-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/20/DMS2/NEiUj2hneq.jpg?width=720",
+          "alt": "KOKO 호텔 삿포로 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1548268",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1548268?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -766,7 +1000,7 @@
       "provider": "myrealtrip",
       "name": "솔라리아 니시테츠 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "솔라리아-니시테츠-호텔-삿포로-6338994",
       "country": "일본",
       "countryCode": "JP",
@@ -782,7 +1016,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6338994-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/14/I9ng/WKfkMOY4cQ.jpg?width=720",
+          "alt": "솔라리아 니시테츠 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6338994",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6338994?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -808,7 +1055,7 @@
       "provider": "myrealtrip",
       "name": "게이오 플라자 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.118Z",
+      "dataFetchedAt": "2026-09-19T09:30:03.902Z",
       "slug": "게이오-플라자-호텔-삿포로-6215696",
       "country": "일본",
       "countryCode": "JP",
@@ -824,7 +1071,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215696-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/02/0Kjc/naGwIqVw1P.jpg?width=720",
+          "alt": "게이오 플라자 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215696",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215696?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -850,7 +1110,7 @@
       "provider": "myrealtrip",
       "name": "홀리데이 인 & 스위트 삿포로 오도리 공원 바이 IHG",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "홀리데이-인-스위트-삿포로-오도리-공원-바이-ihg-1182634",
       "country": "일본",
       "countryCode": "JP",
@@ -866,7 +1126,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1182634-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/06/Jtxu/BNtiPHaB8R.jpg?width=720",
+          "alt": "홀리데이 인 & 스위트 삿포로 오도리 공원 바이 IHG 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1182634",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1182634?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -892,7 +1165,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 뷰 호텔 오도리 파크",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "삿포로-뷰-호텔-오도리-파크-6215664",
       "country": "일본",
       "countryCode": "JP",
@@ -908,7 +1181,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215664-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/22/PhxK/0TqCX3YCAH.jpg?width=720",
+          "alt": "삿포로 뷰 호텔 오도리 파크 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215664",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215664?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -934,7 +1220,7 @@
       "provider": "myrealtrip",
       "name": "하나모미지",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "하나모미지-1228586",
       "country": "일본",
       "countryCode": "JP",
@@ -950,7 +1236,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1228586-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/04/20/3Qwe/ycqLiJke7H.jpg?width=720",
+          "alt": "하나모미지 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1228586",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1228586?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -975,7 +1274,7 @@
       "provider": "myrealtrip",
       "name": "프리미어 호텔 츠바키 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "프리미어-호텔-츠바키-삿포로-6215589",
       "country": "일본",
       "countryCode": "JP",
@@ -991,7 +1290,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215589-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/h8oT/XxWFhMMk3k.jpg?width=720",
+          "alt": "프리미어 호텔 츠바키 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215589",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215589?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1017,7 +1329,7 @@
       "provider": "myrealtrip",
       "name": "호텔 마이스테이스 삿포로 아스펜",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "호텔-마이스테이스-삿포로-아스펜-1168298",
       "country": "일본",
       "countryCode": "JP",
@@ -1033,7 +1345,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1168298-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/P5Jq/cl59EE0UFi.jpg?width=720",
+          "alt": "호텔 마이스테이스 삿포로 아스펜 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1168298",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1168298?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1059,7 +1384,7 @@
       "provider": "myrealtrip",
       "name": "조잔케이 다이이치 호텔 스이잔테이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "조잔케이-다이이치-호텔-스이잔테이-1317774",
       "country": "일본",
       "countryCode": "JP",
@@ -1075,7 +1400,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1317774-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/RCKP/Z26Pi8sHB6.jpg?width=720",
+          "alt": "조잔케이 다이이치 호텔 스이잔테이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1317774",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1317774?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1100,7 +1438,7 @@
       "provider": "myrealtrip",
       "name": "게이오 프렐리아 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "게이오-프렐리아-호텔-삿포로-1429245",
       "country": "일본",
       "countryCode": "JP",
@@ -1116,7 +1454,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1429245-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/16/G75s/ExZ1fub1NW.jpg?width=720",
+          "alt": "게이오 프렐리아 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1429245",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1429245?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1142,7 +1493,7 @@
       "provider": "myrealtrip",
       "name": "온센 료칸 유엔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.261Z",
       "slug": "온센-료칸-유엔-삿포로-1502125",
       "country": "일본",
       "countryCode": "JP",
@@ -1158,7 +1509,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1502125-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/03/21/tzPp/IImXFWlwb9.jpg?width=720",
+          "alt": "온센 료칸 유엔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1502125",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1502125?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1184,7 +1548,7 @@
       "provider": "myrealtrip",
       "name": "코코 호텔 삿포로 오도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "코코-호텔-삿포로-오도리-1538662",
       "country": "일본",
       "countryCode": "JP",
@@ -1200,7 +1564,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1538662-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/20/d7rf/iHEewDTHgm.jpg?width=720",
+          "alt": "코코 호텔 삿포로 오도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1538662",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1538662?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1226,7 +1603,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 삿포로-스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "소테츠-프레사-인-삿포로-스스키노-1635912",
       "country": "일본",
       "countryCode": "JP",
@@ -1242,7 +1619,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1635912-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/YZ6R/27cbuwBdtw.jpg?width=720",
+          "alt": "소테츠 프레사 인 삿포로-스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1635912",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1635912?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1268,7 +1658,7 @@
       "provider": "myrealtrip",
       "name": "컴포트 호텔 ERA 삿포로 노스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "컴포트-호텔-era-삿포로-노스-4678740",
       "country": "일본",
       "countryCode": "JP",
@@ -1284,7 +1674,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4678740-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/23/0A0w/o4vpF2vYSs.jpg?width=720",
+          "alt": "컴포트 호텔 ERA 삿포로 노스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4678740",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4678740?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1310,7 +1713,7 @@
       "provider": "myrealtrip",
       "name": "JR 타워 호텔 닛코 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "jr-타워-호텔-닛코-삿포로-1182423",
       "country": "일본",
       "countryCode": "JP",
@@ -1326,7 +1729,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1182423-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/21/M8RP/hh3cus8LYU.jpg?width=720",
+          "alt": "JR 타워 호텔 닛코 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1182423",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1182423?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1352,7 +1768,7 @@
       "provider": "myrealtrip",
       "name": "그랜드 머큐어 삿포로 오도리 파크",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "그랜드-머큐어-삿포로-오도리-파크-1184088",
       "country": "일본",
       "countryCode": "JP",
@@ -1368,7 +1784,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1184088-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/12/yDmu/5wGXwhvZkw.jpg?width=720",
+          "alt": "그랜드 머큐어 삿포로 오도리 파크 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1184088",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1184088?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1394,7 +1823,7 @@
       "provider": "myrealtrip",
       "name": "코코 호텔 삿포로 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "코코-호텔-삿포로-스스키노-6215632",
       "country": "일본",
       "countryCode": "JP",
@@ -1410,7 +1839,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215632-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/24/3Mn1/a1CKH79sku.jpg?width=720",
+          "alt": "코코 호텔 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215632",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215632?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1436,7 +1878,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 도큐 REI 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "삿포로-도큐-rei-호텔-6215675",
       "country": "일본",
       "countryCode": "JP",
@@ -1452,7 +1894,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215675-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/7u0h/deQS5WXMtP.jpg?width=720",
+          "alt": "삿포로 도큐 REI 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215675",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215675?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1478,7 +1933,7 @@
       "provider": "myrealtrip",
       "name": "호텔 호케 클럽 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "호텔-호케-클럽-삿포로-1197208",
       "country": "일본",
       "countryCode": "JP",
@@ -1494,7 +1949,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1197208-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/15/mXSL/DjUovgRGei.jpg?width=720",
+          "alt": "호텔 호케 클럽 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1197208",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1197208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1520,7 +1988,7 @@
       "provider": "myrealtrip",
       "name": "토요코인훗카이도삿포로스스키노코사텐",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "토요코인훗카이도삿포로스스키노코사텐-1274208",
       "country": "일본",
       "countryCode": "JP",
@@ -1536,7 +2004,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1274208-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/08/31/VTdq/2ZBkl58lpw.jpg?width=720",
+          "alt": "토요코인훗카이도삿포로스스키노코사텐 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1274208",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1274208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1562,7 +2043,7 @@
       "provider": "myrealtrip",
       "name": "그란벨 호텔 타누키, 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "그란벨-호텔-타누키-삿포로-1558205",
       "country": "일본",
       "countryCode": "JP",
@@ -1578,7 +2059,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1558205-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/26/DKMT/uJsab1F3wy.jpg?width=720",
+          "alt": "그란벨 호텔 타누키, 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1558205",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1558205?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1604,7 +2098,7 @@
       "provider": "myrealtrip",
       "name": "티마크 시티 호텔 삿포로 오도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "티마크-시티-호텔-삿포로-오도리-1461118",
       "country": "일본",
       "countryCode": "JP",
@@ -1620,7 +2114,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1461118-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/23/JugJ/WIDZzltl3Z.jpg?width=720",
+          "alt": "티마크 시티 호텔 삿포로 오도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1461118",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1461118?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1646,7 +2153,7 @@
       "provider": "myrealtrip",
       "name": "네스트 호텔 알트. 삿포로 오도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:57.512Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.262Z",
       "slug": "네스트-호텔-알트-삿포로-오도리-1204658",
       "country": "일본",
       "countryCode": "JP",
@@ -1662,7 +2169,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1204658-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/28/L9Rr/IT8Oagraf7.jpg?width=720",
+          "alt": "네스트 호텔 알트. 삿포로 오도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1204658",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204658?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1688,7 +2208,7 @@
       "provider": "myrealtrip",
       "name": "비스포크 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "비스포크-호텔-삿포로-1565901",
       "country": "일본",
       "countryCode": "JP",
@@ -1704,7 +2224,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1565901-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/0ww5/g0bIOQN6Nl.jpg?width=720",
+          "alt": "비스포크 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1565901",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1565901?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1730,7 +2263,7 @@
       "provider": "myrealtrip",
       "name": "41피스 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "41피스-삿포로-1658793",
       "country": "일본",
       "countryCode": "JP",
@@ -1746,7 +2279,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1658793-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/05/17/1JLa/IDjS1JZAks.jpg?width=720",
+          "alt": "41피스 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1658793",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1658793?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1772,7 +2318,7 @@
       "provider": "myrealtrip",
       "name": "FAV LUX 삿포로 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "fav-lux-삿포로-스스키노-4415202",
       "country": "일본",
       "countryCode": "JP",
@@ -1788,7 +2334,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4415202-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/27/RF6A/pPKfGVC1tp.jpg?width=720",
+          "alt": "FAV LUX 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4415202",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4415202?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1814,7 +2373,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아베스트 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "호텔-아베스트-삿포로-1578123",
       "country": "일본",
       "countryCode": "JP",
@@ -1830,7 +2389,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1578123-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/26/1nlJ/ftfiTz56id.jpg?width=720",
+          "alt": "호텔 아베스트 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1578123",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1578123?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1856,7 +2428,7 @@
       "provider": "myrealtrip",
       "name": "HELIO HOSTEL SAPPORO",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "helio-hostel-sapporo-3704352",
       "country": "일본",
       "countryCode": "JP",
@@ -1872,7 +2444,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3704352-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/10/11/Z8XV/HvhWMVlKxD.jpg?width=720",
+          "alt": "HELIO HOSTEL SAPPORO 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3704352",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3704352?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1897,7 +2482,7 @@
       "provider": "myrealtrip",
       "name": "호텔 그레이서리 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "호텔-그레이서리-삿포로-6215579",
       "country": "일본",
       "countryCode": "JP",
@@ -1913,7 +2498,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215579-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/7hGT/ixiooPSGpq.jpg?width=720",
+          "alt": "호텔 그레이서리 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215579",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215579?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1939,7 +2537,7 @@
       "provider": "myrealtrip",
       "name": "도큐스테이 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "도큐스테이-삿포로-1312383",
       "country": "일본",
       "countryCode": "JP",
@@ -1955,7 +2553,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1312383-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/06/u1z9/GJUDfW65Qk.jpg?width=720",
+          "alt": "도큐스테이 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1312383",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1312383?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -1981,7 +2592,7 @@
       "provider": "myrealtrip",
       "name": "Randor Hotel Sapporo Suites",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "randor-hotel-sapporo-suites-3138164",
       "country": "일본",
       "countryCode": "JP",
@@ -1997,7 +2608,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3138164-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/21/gaVz/HBni1WmvS1.jpg?width=720",
+          "alt": "Randor Hotel Sapporo Suites 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3138164",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3138164?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2023,7 +2647,7 @@
       "provider": "myrealtrip",
       "name": "가든스 캐빈",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "가든스-캐빈-1452025",
       "country": "일본",
       "countryCode": "JP",
@@ -2039,7 +2663,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1452025-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/26/ywvK/xcU0mtfrK2.jpg?width=720",
+          "alt": "가든스 캐빈 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1452025",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1452025?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2065,7 +2702,7 @@
       "provider": "myrealtrip",
       "name": "퀸테사 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "퀸테사-호텔-삿포로-6206821",
       "country": "일본",
       "countryCode": "JP",
@@ -2081,7 +2718,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6206821-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/AEV0/mKoII9uhNC.jpg?width=720",
+          "alt": "퀸테사 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6206821",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206821?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2107,7 +2757,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 파크 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "삿포로-파크-호텔-1156337",
       "country": "일본",
       "countryCode": "JP",
@@ -2123,7 +2773,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1156337-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/12/bGSS/IUOevysu02.jpg?width=720",
+          "alt": "삿포로 파크 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1156337",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1156337?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2149,7 +2812,7 @@
       "provider": "myrealtrip",
       "name": "머큐어 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "머큐어-삿포로-1170638",
       "country": "일본",
       "countryCode": "JP",
@@ -2165,7 +2828,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1170638-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/09/22/RQ4l/8Mq4y1tH4Z.jpg?width=720",
+          "alt": "머큐어 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1170638",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1170638?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2191,7 +2867,7 @@
       "provider": "myrealtrip",
       "name": "베셀 호텔 캄파나 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "베셀-호텔-캄파나-스스키노-6215582",
       "country": "일본",
       "countryCode": "JP",
@@ -2207,7 +2883,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215582-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/01/GRbe/ojzhqmupbL.jpg?width=720",
+          "alt": "베셀 호텔 캄파나 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215582",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215582?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2233,7 +2922,7 @@
       "provider": "myrealtrip",
       "name": "호텔 네츠 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "호텔-네츠-삿포로-1291929",
       "country": "일본",
       "countryCode": "JP",
@@ -2249,7 +2938,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1291929-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/hp01/xWYLcGnC5A.jpg?width=720",
+          "alt": "호텔 네츠 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1291929",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1291929?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2275,7 +2977,7 @@
       "provider": "myrealtrip",
       "name": "리치먼드 호텔 삿포로 오도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "리치먼드-호텔-삿포로-오도리-1411106",
       "country": "일본",
       "countryCode": "JP",
@@ -2291,7 +2993,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1411106-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/23/r5FL/ghe70RFGq8.jpg?width=720",
+          "alt": "리치먼드 호텔 삿포로 오도리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1411106",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1411106?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2317,7 +3032,7 @@
       "provider": "myrealtrip",
       "name": "티마크 시티 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "티마크-시티-호텔-삿포로-6210463",
       "country": "일본",
       "countryCode": "JP",
@@ -2333,7 +3048,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6210463-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/11/iJI1/Q2OfUn31LC.jpg?width=720",
+          "alt": "티마크 시티 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6210463",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6210463?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2359,7 +3087,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 삿포로 스스키노 에키니시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "apa-호텔-삿포로-스스키노-에키니시-1200183",
       "country": "일본",
       "countryCode": "JP",
@@ -2375,7 +3103,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1200183-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/31/NUoy/sdY9z4WlDD.jpg?width=720",
+          "alt": "APA 호텔 삿포로 스스키노 에키니시 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1200183",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200183?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2401,7 +3142,7 @@
       "provider": "myrealtrip",
       "name": "다이와 로이넷 호텔 삿포로 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "다이와-로이넷-호텔-삿포로-스스키노-1199226",
       "country": "일본",
       "countryCode": "JP",
@@ -2417,7 +3158,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1199226-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/ZFWX/jxAiJXTpp6.jpg?width=720",
+          "alt": "다이와 로이넷 호텔 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1199226",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1199226?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2443,7 +3197,7 @@
       "provider": "myrealtrip",
       "name": "미쓰이 가든 호텔 삿포로 웨스트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "미쓰이-가든-호텔-삿포로-웨스트-1473380",
       "country": "일본",
       "countryCode": "JP",
@@ -2459,7 +3213,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1473380-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/26/bEUr/QoyHTjvxPH.jpg?width=720",
+          "alt": "미쓰이 가든 호텔 삿포로 웨스트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1473380",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1473380?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2485,7 +3252,7 @@
       "provider": "myrealtrip",
       "name": "리브맥스 호스텔 삿포로 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:58.761Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.606Z",
       "slug": "리브맥스-호스텔-삿포로-스스키노-5567771",
       "country": "일본",
       "countryCode": "JP",
@@ -2501,7 +3268,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5567771-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/23/xFu3/ODC3QOZB01.jpg?width=720",
+          "alt": "리브맥스 호스텔 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5567771",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5567771?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2526,7 +3306,7 @@
       "provider": "myrealtrip",
       "name": "스이잔테이 클럽 조잔케이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "스이잔테이-클럽-조잔케이-1325424",
       "country": "일본",
       "countryCode": "JP",
@@ -2542,7 +3322,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1325424-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/13/u8h0/zDB6R9pl8R.jpg?width=720",
+          "alt": "스이잔테이 클럽 조잔케이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1325424",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1325424?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2567,7 +3360,7 @@
       "provider": "myrealtrip",
       "name": "호텔 라이브맥스 삿포로 스스키노",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "호텔-라이브맥스-삿포로-스스키노-1424676",
       "country": "일본",
       "countryCode": "JP",
@@ -2583,7 +3376,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1424676-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/FfaZ/FPlum8kJBk.jpg?width=720",
+          "alt": "호텔 라이브맥스 삿포로 스스키노 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1424676",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1424676?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2609,7 +3415,7 @@
       "provider": "myrealtrip",
       "name": "구리야스이잔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "구리야스이잔-1316634",
       "country": "일본",
       "countryCode": "JP",
@@ -2625,7 +3431,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1316634-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/12/04/kU52/xFguPvzNEN.jpg?width=720",
+          "alt": "구리야스이잔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1316634",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1316634?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2650,7 +3469,7 @@
       "provider": "myrealtrip",
       "name": "Hotel Plus Hostel SAPPORO",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "hotel-plus-hostel-sapporo-3586254",
       "country": "일본",
       "countryCode": "JP",
@@ -2666,7 +3485,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3586254-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/5WVl/q1esZe3uaV.jpg?width=720",
+          "alt": "Hotel Plus Hostel SAPPORO 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3586254",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3586254?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2691,7 +3523,7 @@
       "provider": "myrealtrip",
       "name": "호텔 시카노유",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "호텔-시카노유-1232530",
       "country": "일본",
       "countryCode": "JP",
@@ -2707,7 +3539,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1232530-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/26/9tog/W6Jn0N5Xlw.jpg?width=720",
+          "alt": "호텔 시카노유 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1232530",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1232530?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2732,7 +3577,7 @@
       "provider": "myrealtrip",
       "name": "프리미어 호텔 나카지마 파크 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "프리미어-호텔-나카지마-파크-삿포로-6215591",
       "country": "일본",
       "countryCode": "JP",
@@ -2748,7 +3593,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215591-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/r5NW/n1NQ3yPo6t.jpg?width=720",
+          "alt": "프리미어 호텔 나카지마 파크 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215591",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215591?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2774,7 +3632,7 @@
       "provider": "myrealtrip",
       "name": "이비스 스타일 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "이비스-스타일-삿포로-1220542",
       "country": "일본",
       "countryCode": "JP",
@@ -2790,7 +3648,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1220542-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/29/PQbz/rok4ajniGr.jpg?width=720",
+          "alt": "이비스 스타일 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1220542",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1220542?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2816,7 +3687,7 @@
       "provider": "myrealtrip",
       "name": "플랫 호스텔 케이큐 삿포로 스카이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "플랫-호스텔-케이큐-삿포로-스카이-1573405",
       "country": "일본",
       "countryCode": "JP",
@@ -2832,7 +3703,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1573405-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/02/07/Tfs1/bJelUs3NYC.jpg?width=720",
+          "alt": "플랫 호스텔 케이큐 삿포로 스카이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1573405",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1573405?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2857,7 +3741,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 프린스 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "삿포로-프린스-호텔-6215662",
       "country": "일본",
       "countryCode": "JP",
@@ -2873,7 +3757,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215662-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/09/nRqk/r85KFyx595.jpg?width=720",
+          "alt": "삿포로 프린스 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215662",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215662?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2899,7 +3796,7 @@
       "provider": "myrealtrip",
       "name": "도큐스테이 삿포로 오도오리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "도큐스테이-삿포로-오도오리-1370690",
       "country": "일본",
       "countryCode": "JP",
@@ -2915,7 +3812,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1370690-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/23/3gKm/0xY29BOx8e.jpg?width=720",
+          "alt": "도큐스테이 삿포로 오도오리 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1370690",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1370690?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2941,7 +3851,7 @@
       "provider": "myrealtrip",
       "name": "호텔 마이스테이스 삿포로 스테이션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "호텔-마이스테이스-삿포로-스테이션-1179693",
       "country": "일본",
       "countryCode": "JP",
@@ -2957,7 +3867,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1179693-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/v7CO/gzEjd7ni9m.jpg?width=720",
+          "alt": "호텔 마이스테이스 삿포로 스테이션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1179693",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1179693?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -2983,7 +3906,7 @@
       "provider": "myrealtrip",
       "name": "조잔케이 뷰 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "조잔케이-뷰-호텔-1214869",
       "country": "일본",
       "countryCode": "JP",
@@ -2999,7 +3922,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1214869-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/isOc/w2XsVODnK4.jpg?width=720",
+          "alt": "조잔케이 뷰 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1214869",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1214869?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3025,7 +3961,7 @@
       "provider": "myrealtrip",
       "name": "도미 인 삿포로 아넥스 핫 스프링",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "도미-인-삿포로-아넥스-핫-스프링-1170558",
       "country": "일본",
       "countryCode": "JP",
@@ -3041,7 +3977,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1170558-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/05/21/I75H/HbG8tpqs8l.jpg?width=720",
+          "alt": "도미 인 삿포로 아넥스 핫 스프링 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1170558",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1170558?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3067,7 +4016,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 워싱턴 호텔 플라자",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "삿포로-워싱턴-호텔-플라자-6114524",
       "country": "일본",
       "countryCode": "JP",
@@ -3083,7 +4032,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6114524-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/16/C03U/G50A1J5DcT.jpg?width=720",
+          "alt": "삿포로 워싱턴 호텔 플라자 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6114524",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6114524?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3109,7 +4071,7 @@
       "provider": "myrealtrip",
       "name": "삿포로 돈키호테 스스키노 오도리공원 도보 6분 방2개 2박이상 시계탑 니조시장 숙박 ",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "삿포로-돈키호테-스스키노-오도리공원-도보-6분-방2개-2박이상-시계탑-니조시장-숙박-5007626",
       "country": "일본",
       "countryCode": "JP",
@@ -3125,7 +4087,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5007626-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/06/veqL/CbyLCjV7ZN.jpeg?width=720",
+          "alt": "삿포로 돈키호테 스스키노 오도리공원 도보 6분 방2개 2박이상 시계탑 니조시장 숙박  대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5007626",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5007626?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3150,7 +4125,7 @@
       "provider": "myrealtrip",
       "name": "JR 인 삿포로 사우스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "jr-인-삿포로-사우스-1270939",
       "country": "일본",
       "countryCode": "JP",
@@ -3166,7 +4141,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1270939-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/tOed/6XktmSKxj5.jpg?width=720",
+          "alt": "JR 인 삿포로 사우스 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1270939",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1270939?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3192,7 +4180,7 @@
       "provider": "myrealtrip",
       "name": "랜도르 호텔 삿포로 헤리티지",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "랜도르-호텔-삿포로-헤리티지-5960332",
       "country": "일본",
       "countryCode": "JP",
@@ -3208,7 +4196,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5960332-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/07/FQhA/CyZr87Eb7E.jpg?width=720",
+          "alt": "랜도르 호텔 삿포로 헤리티지 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5960332",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5960332?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3234,7 +4235,7 @@
       "provider": "myrealtrip",
       "name": "쇼게쓰 그랜드 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "쇼게쓰-그랜드-호텔-1194753",
       "country": "일본",
       "countryCode": "JP",
@@ -3250,7 +4251,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1194753-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/07/11/P9Ji/ncmV0O6sNU.jpg?width=720",
+          "alt": "쇼게쓰 그랜드 호텔 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1194753",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1194753?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3276,7 +4290,7 @@
       "provider": "myrealtrip",
       "name": "단세츠 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "단세츠-삿포로-4192366",
       "country": "일본",
       "countryCode": "JP",
@@ -3292,7 +4306,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4192366-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/01/V39v/5Jxcmh16uR.jpg?width=720",
+          "alt": "단세츠 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4192366",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4192366?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3318,7 +4345,7 @@
       "provider": "myrealtrip",
       "name": "호텔 소세이 삿포로 - MGallery 컬렉션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:22:59.933Z",
+      "dataFetchedAt": "2026-09-19T09:30:04.921Z",
       "slug": "호텔-소세이-삿포로-mgallery-컬렉션-1191165",
       "country": "일본",
       "countryCode": "JP",
@@ -3334,7 +4361,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1191165-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/09/16/yxw4/yHkSa5qKjP.jpg?width=720",
+          "alt": "호텔 소세이 삿포로 - MGallery 컬렉션 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1191165",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1191165?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3360,7 +4400,7 @@
       "provider": "myrealtrip",
       "name": "the b sapporo",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "the-b-sapporo-3665451",
       "country": "일본",
       "countryCode": "JP",
@@ -3376,7 +4416,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3665451-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/03/5Ek1/0nb8dYrtsD.jpg?width=720",
+          "alt": "the b sapporo 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3665451",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3665451?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3402,7 +4455,7 @@
       "provider": "myrealtrip",
       "name": "뉴 오타니 인 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "뉴-오타니-인-삿포로-1129638",
       "country": "일본",
       "countryCode": "JP",
@@ -3418,7 +4471,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1129638-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/09/14/xngD/Edg2yfTP4y.jpg?width=720",
+          "alt": "뉴 오타니 인 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1129638",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1129638?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3444,7 +4510,7 @@
       "provider": "myrealtrip",
       "name": "Theatel Sapporo",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "theatel-sapporo-1535308",
       "country": "일본",
       "countryCode": "JP",
@@ -3460,7 +4526,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1535308-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/06/xJ9y/EkAKW7Z3aG.jpg?width=720",
+          "alt": "Theatel Sapporo 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1535308",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1535308?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3486,7 +4565,7 @@
       "provider": "myrealtrip",
       "name": "리치먼드 호텔 삿포로 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "리치먼드-호텔-삿포로-에키마에-1208139",
       "country": "일본",
       "countryCode": "JP",
@@ -3502,7 +4581,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1208139-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/05/31/W4lO/wJT9WjV3eE.jpg?width=720",
+          "alt": "리치먼드 호텔 삿포로 에키마에 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1208139",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208139?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3528,7 +4620,7 @@
       "provider": "myrealtrip",
       "name": "그랜드 블리센 호텔 조잔케이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "그랜드-블리센-호텔-조잔케이-1669554",
       "country": "일본",
       "countryCode": "JP",
@@ -3544,7 +4636,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1669554-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/8RA9/EYbKeeGSxa.jpg?width=720",
+          "alt": "그랜드 블리센 호텔 조잔케이 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1669554",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1669554?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3570,7 +4675,7 @@
       "provider": "myrealtrip",
       "name": "더 게이트 호텔 삿포로 바이 훌릭",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "더-게이트-호텔-삿포로-바이-훌릭-4655153",
       "country": "일본",
       "countryCode": "JP",
@@ -3586,7 +4691,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4655153-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/02/Yv8C/F92zbq7vH2.jpg?width=720",
+          "alt": "더 게이트 호텔 삿포로 바이 훌릭 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4655153",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4655153?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3612,7 +4730,7 @@
       "provider": "myrealtrip",
       "name": "스마일 호텔 삿포로 스스키노 미나미",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "스마일-호텔-삿포로-스스키노-미나미-2539939",
       "country": "일본",
       "countryCode": "JP",
@@ -3628,7 +4746,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-2539939-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/21/G1RN/orASHSK70Q.jpg?width=720",
+          "alt": "스마일 호텔 삿포로 스스키노 미나미 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-2539939",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2539939?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3654,7 +4785,7 @@
       "provider": "myrealtrip",
       "name": "게이큐 엑스 호텔 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "게이큐-엑스-호텔-삿포로-1613072",
       "country": "일본",
       "countryCode": "JP",
@@ -3670,7 +4801,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1613072-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/12/16/eWxU/4Iyk66z6cf.jpg?width=720",
+          "alt": "게이큐 엑스 호텔 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1613072",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1613072?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3696,7 +4840,7 @@
       "provider": "myrealtrip",
       "name": "플랫 호스텔 케이큐 사포로 이치바",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "플랫-호스텔-케이큐-사포로-이치바-3585560",
       "country": "일본",
       "countryCode": "JP",
@@ -3712,7 +4856,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3585560-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/10/01/NhJ3/poJejxeStK.jpg?width=720",
+          "alt": "플랫 호스텔 케이큐 사포로 이치바 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3585560",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3585560?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3737,7 +4894,7 @@
       "provider": "myrealtrip",
       "name": "인터컨티넨탈 삿포로 바이 IHG",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "인터컨티넨탈-삿포로-바이-ihg-4428056",
       "country": "일본",
       "countryCode": "JP",
@@ -3753,7 +4910,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-4428056-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/01/01/Ohli/qhA1a0t819.jpg?width=720",
+          "alt": "인터컨티넨탈 삿포로 바이 IHG 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-4428056",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4428056?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3779,7 +4949,7 @@
       "provider": "myrealtrip",
       "name": "JR 동일본 호텔 메츠 프리미어 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "jr-동일본-호텔-메츠-프리미어-삿포로-1392921",
       "country": "일본",
       "countryCode": "JP",
@@ -3795,7 +4965,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1392921-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/25/KRzf/CKfS0XboGo.jpg?width=720",
+          "alt": "JR 동일본 호텔 메츠 프리미어 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1392921",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1392921?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3821,7 +5004,7 @@
       "provider": "myrealtrip",
       "name": "JR 인 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "jr-인-삿포로-1189805",
       "country": "일본",
       "countryCode": "JP",
@@ -3837,7 +5020,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1189805-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/28/2t78/NyRploF4Ml.jpg?width=720",
+          "alt": "JR 인 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1189805",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1189805?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3863,7 +5059,7 @@
       "provider": "myrealtrip",
       "name": "일본 홋카이도 삿포로의 조잔케이 츠루가 리조트 스파 모리노우타",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "일본-홋카이도-삿포로의-조잔케이-츠루가-리조트-스파-모리노우타-3212541",
       "country": "일본",
       "countryCode": "JP",
@@ -3879,7 +5075,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3212541-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/25/uFD5/eWY483g4Jv.jpeg?width=720",
+          "alt": "일본 홋카이도 삿포로의 조잔케이 츠루가 리조트 스파 모리노우타 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3212541",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3212541?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3905,7 +5114,7 @@
       "provider": "myrealtrip",
       "name": "조잔케이 만세이카쿠 호텔 밀리오네",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "조잔케이-만세이카쿠-호텔-밀리오네-1212608",
       "country": "일본",
       "countryCode": "JP",
@@ -3921,7 +5130,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1212608-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/25/urVr/x6EZqln9Mv.jpg?width=720",
+          "alt": "조잔케이 만세이카쿠 호텔 밀리오네 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1212608",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1212608?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3947,7 +5169,7 @@
       "provider": "myrealtrip",
       "name": "호텔 쇼 삿포로 (파크사이드 호텔)",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "호텔-쇼-삿포로-파크사이드-호텔-1115834",
       "country": "일본",
       "countryCode": "JP",
@@ -3963,7 +5185,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-1115834-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/06/27/CHt5/AH19rGkgoC.jpg?width=720",
+          "alt": "호텔 쇼 삿포로 (파크사이드 호텔) 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1115834",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1115834?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -3989,7 +5224,7 @@
       "provider": "myrealtrip",
       "name": "Hotel Emion Sapporo",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "hotel-emion-sapporo-3584751",
       "country": "일본",
       "countryCode": "JP",
@@ -4005,7 +5240,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3584751-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/08/16/FIkq/bKCHZov0bT.jpg?width=720",
+          "alt": "Hotel Emion Sapporo 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3584751",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3584751?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4031,7 +5279,7 @@
       "provider": "myrealtrip",
       "name": "호텔 스트라이프 삿포로",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "호텔-스트라이프-삿포로-5710303",
       "country": "일본",
       "countryCode": "JP",
@@ -4047,7 +5295,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-5710303-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/11/IrGD/DpCuYiYYVD.jpg?width=720",
+          "alt": "호텔 스트라이프 삿포로 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-5710303",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5710303?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4072,7 +5333,7 @@
       "provider": "myrealtrip",
       "name": "코코 호텔 삿포로 스스키노 2nd",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "코코-호텔-삿포로-스스키노-2nd-6104806",
       "country": "일본",
       "countryCode": "JP",
@@ -4088,7 +5349,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6104806-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/14/F2f5/RA1QG9fXs1.jpg?width=720",
+          "alt": "코코 호텔 삿포로 스스키노 2nd 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6104806",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6104806?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4114,7 +5388,7 @@
       "provider": "myrealtrip",
       "name": "더 센츄리온 사우나 레스트 앤 스테이 삿포로 남성 전용",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "더-센츄리온-사우나-레스트-앤-스테이-삿포로-남성-전용-3418874",
       "country": "일본",
       "countryCode": "JP",
@@ -4130,7 +5404,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-3418874-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/02/20/BFBT/DnmFtmA5cL.jpg?width=720",
+          "alt": "더 센츄리온 사우나 레스트 앤 스테이 삿포로 남성 전용 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-3418874",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3418874?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
@@ -4156,7 +5443,7 @@
       "provider": "myrealtrip",
       "name": "베셀 인 삿포로 나카지마 파크",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:23:01.119Z",
+      "dataFetchedAt": "2026-09-19T09:30:05.249Z",
       "slug": "베셀-인-삿포로-나카지마-파크-6215585",
       "country": "일본",
       "countryCode": "JP",
@@ -4172,7 +5459,20 @@
         "city": "삿포로",
         "area": ""
       },
-      "images": [],
+      "images": [
+        {
+          "id": "myrealtrip-6215585-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/20/2bzC/SkKAJMREZ1.jpg?width=720",
+          "alt": "베셀 인 삿포로 나카지마 파크 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-6215585",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215585?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
       "facilities": [],
       "restaurants": [],
       "accommodationType": "호텔",
