@@ -1,7 +1,11 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type { Hotel, HotelPost, HotelPostGenerationInput } from "../src/types";
-import { generateHotelPost, getConfiguredAIProviders } from "../src/lib/ai";
+import {
+  AllAIProvidersFailedError,
+  generateHotelPost,
+  getConfiguredAIProviders,
+} from "../src/lib/ai";
 import { validateHotelPost } from "../src/lib/ai/validate";
 import {
   formatHotelValidationFailure,
@@ -31,6 +35,8 @@ const requestedHotelId = process.env.AI_HOTEL_ID?.trim() || undefined;
 const requestedLimit = Number(process.env.AI_POST_LIMIT ?? "1");
 const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
 
+const MAX_GENERATION_ATTEMPTS = 2;
+const RETRY_DELAY_MS = 1_500;
 
 function toGenerationInput(hotel: Hotel): HotelPostGenerationInput {
   return {
@@ -109,7 +115,9 @@ function parseDailyPlan(value: string): Record<string, number> {
   const plan: Record<string, number> = {};
 
   for (const entry of value.split(",")) {
-    const [destinationId, rawCount] = entry.split(":").map((item) => item.trim());
+    const [destinationId, rawCount] = entry
+      .split(":")
+      .map((item) => item.trim());
 
     if (!destinationId || !rawCount) {
       throw new Error(
@@ -194,6 +202,88 @@ function hasDuplicateTopic(
   );
 }
 
+function formatGenerationError(error: unknown): string {
+  if (error instanceof AllAIProvidersFailedError) {
+    if (error.errors.length === 0) {
+      return "All configured AI providers failed without a provider-specific error.";
+    }
+
+    return error.errors
+      .map(({ provider, message }) => `${provider}: ${message}`)
+      .join(" | ");
+  }
+
+  return error instanceof Error ? error.message : String(error);
+}
+
+async function sleep(milliseconds: number): Promise<void> {
+  await new Promise((resolvePromise) => {
+    setTimeout(resolvePromise, milliseconds);
+  });
+}
+
+async function generateAndValidateHotelPost(
+  hotel: Hotel,
+  input: HotelPostGenerationInput,
+): Promise<{
+  post: HotelPost;
+  provider: HotelPost["generatedBy"];
+  attemptedProviders: string[];
+}> {
+  const result = await generateHotelPost(input);
+  const post: HotelPost = {
+    ...result.post,
+    hotelId: hotel.id,
+    slug: hotel.slug,
+    generatedBy: result.provider,
+  };
+
+  validateHotelPost(post, hotel, { availableImages: input.images });
+
+  return {
+    post,
+    provider: result.provider,
+    attemptedProviders: result.attemptedProviders,
+  };
+}
+
+async function generateWithRetry(
+  hotel: Hotel,
+  input: HotelPostGenerationInput,
+): Promise<{
+  post: HotelPost;
+  provider: HotelPost["generatedBy"];
+  attemptedProviders: string[];
+  attempts: number;
+}> {
+  let lastError: unknown;
+
+  for (let attempt = 1; attempt <= MAX_GENERATION_ATTEMPTS; attempt += 1) {
+    if (attempt > 1) {
+      console.log(
+        `Retrying hotel post: ${hotel.name} (${hotel.id}) - attempt ${attempt}/${MAX_GENERATION_ATTEMPTS}`,
+      );
+      await sleep(RETRY_DELAY_MS);
+    }
+
+    try {
+      const result = await generateAndValidateHotelPost(hotel, input);
+
+      return {
+        ...result,
+        attempts: attempt,
+      };
+    } catch (error) {
+      lastError = error;
+      console.warn(
+        `Generation attempt ${attempt}/${MAX_GENERATION_ATTEMPTS} failed for ${hotel.name}: ${formatGenerationError(error)}`,
+      );
+    }
+  }
+
+  throw lastError ?? new Error("Hotel post generation failed.");
+}
+
 async function main(): Promise<void> {
   const raw = await Bun.file(inputPath).text();
   const source = JSON.parse(raw) as MyRealTripHotelsFile;
@@ -228,6 +318,7 @@ async function main(): Promise<void> {
   let successCount = 0;
   let failureCount = 0;
   let validationFailureCount = 0;
+  let retrySuccessCount = 0;
 
   console.log(
     requestedHotelId
@@ -256,41 +347,42 @@ async function main(): Promise<void> {
     console.log(`Generating hotel post: ${hotel.name} (${hotel.id})`);
 
     try {
-      const result = await generateHotelPost(input);
-      const post: HotelPost = {
-        ...result.post,
-        hotelId: hotel.id,
-        slug: hotel.slug,
-        generatedBy: result.provider,
-      };
+      const result = await generateWithRetry(hotel, input);
 
-      validateHotelPost(post, hotel, { availableImages: input.images });
+      if (result.attempts > 1) {
+        retrySuccessCount += 1;
+      }
 
-      if (hasDuplicateTopic(post, existingPosts, generatedPosts)) {
+      if (hasDuplicateTopic(result.post, existingPosts, generatedPosts)) {
         throw new Error(
-          `Duplicate hotel post topic detected: ${post.title}`,
+          `Duplicate hotel post topic detected: ${result.post.title}`,
         );
       }
 
-      generatedPosts.push(post);
+      generatedPosts.push(result.post);
       successCount += 1;
+
       console.log(
-        `Generated and validated with ${result.provider}: ${post.title}`,
+        `Generated and validated with ${result.provider}: ${result.post.title}`,
       );
       console.log(
         `Provider attempts: ${result.attemptedProviders.join(" -> ")}`,
       );
+      if (result.attempts > 1) {
+        console.log(`Retry succeeded on attempt ${result.attempts}.`);
+      }
     } catch (error) {
       failureCount += 1;
+
       if (
         error instanceof Error &&
         error.message.includes("HotelPost validation failed")
       ) {
         validationFailureCount += 1;
       }
+
       console.error(
-        `Failed to generate or validate ${hotel.name}:`,
-        error instanceof Error ? error.message : error,
+        `Failed to generate or validate ${hotel.name} after ${MAX_GENERATION_ATTEMPTS} attempt(s): ${formatGenerationError(error)}`,
       );
     }
   }
@@ -310,7 +402,7 @@ async function main(): Promise<void> {
 
   console.log(`Saved ${posts.length} hotel post(s): ${outputPath}`);
   console.log(
-    `Generation result: ${successCount} succeeded, ${failureCount} failed, ${validationFailureCount} validation failed, ${existingPosts.length} existing preserved.`,
+    `Generation result: ${successCount} succeeded, ${failureCount} failed, ${validationFailureCount} validation failed, ${retrySuccessCount} retry succeeded, ${existingPosts.length} existing preserved.`,
   );
 }
 
