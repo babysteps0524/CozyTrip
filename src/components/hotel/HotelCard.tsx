@@ -1,6 +1,7 @@
 import type { Hotel } from "../../types";
 
 import { Image } from "../common";
+import { isDisplayableHotelImage } from "../../lib/image";
 
 interface HotelCardProps {
   hotel: Hotel;
@@ -13,7 +14,7 @@ function getHotelPath(hotel: Hotel): string {
 }
 
 export default function HotelCard({ hotel }: HotelCardProps) {
-  const image = hotel.images.find((item) => item.src && item.rightsConfirmed);
+  const image = hotel.images.find(isDisplayableHotelImage);
 
   return (
     <a
