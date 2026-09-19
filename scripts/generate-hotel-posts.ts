@@ -318,7 +318,7 @@ function mergePosts(
   return [...postMap.values()];
 }
 
-function parseDailyPlan(value: string): Record<string, number> {
+export function parseDailyPlan(value: string): Record<string, number> {
   const plan: Record<string, number> = {};
 
   for (const entry of value.split(",")) {
@@ -350,7 +350,7 @@ function parseDailyPlan(value: string): Record<string, number> {
   return plan;
 }
 
-function selectHotels(
+export function selectHotels(
   hotels: Hotel[],
   existingPosts: HotelPost[],
   failedHotels: FailedHotelPost[],
@@ -421,7 +421,7 @@ function selectHotels(
   ];
 }
 
-function validateSelectedHotels(
+export function validateSelectedHotels(
   selectedHotels: Hotel[],
   hotels: Hotel[],
   existingPosts: HotelPost[],
@@ -900,4 +900,6 @@ async function main(): Promise<void> {
   );
 }
 
-await main();
+if (import.meta.main) {
+  await main();
+}
