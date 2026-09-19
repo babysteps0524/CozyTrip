@@ -1,10 +1,4 @@
-import {
-  getHotelPostByHotel,
-  getHotelsByDestination,
-  getPostsByDestination,
-  getPostsByHotel,
-} from "../data";
-import { getDestinationById } from "../data/destinations";
+import type { Destination } from "../types";
 import { Container, Section } from "../components/common";
 import {
   HotelBooking,
@@ -37,18 +31,22 @@ import {
 
 interface HotelDetailProps {
   hotel: Hotel;
+  destination?: Destination;
+  hotelPosts: import("../types").Post[];
+  relatedGuides: import("../types").Post[];
+  relatedHotels: Hotel[];
 }
 
-export default function HotelDetail({ hotel }: HotelDetailProps) {
-  const destination = getDestinationById(hotel.destinationId);
+export default function HotelDetail({
+  hotel,
+  destination,
+  hotelPosts,
+  relatedGuides,
+  relatedHotels,
+}: HotelDetailProps) {
   const destinationSlug = destination?.slug ?? hotel.city.toLowerCase();
-  const hotelPosts = getPostsByHotel(hotel.id);
-  const relatedGuides = getPostsByDestination(hotel.destinationId).filter(
-    (post) => post.category === "guide" && post.hotelId !== hotel.id,
-  );
-  const hotelPost = getHotelPostByHotel(hotel.id);
-  const relatedHotels = getHotelsByDestination(hotel.destinationId).filter(
-    (item) => item.id !== hotel.id,
+  const hotelPost = hotelPosts.find(
+    (post) => post.category === "hotel" && post.hotelId === hotel.id,
   );
   const articleImage = hotel.images.find(
     (image) => image.rightsConfirmed && Boolean(image.src),
