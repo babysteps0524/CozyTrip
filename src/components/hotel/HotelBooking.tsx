@@ -9,7 +9,19 @@ interface HotelBookingProps {
 }
 
 export default function HotelBooking({ hotel }: HotelBookingProps) {
-  const affiliateLinks = hotel.affiliateLinks ?? [];
+  const affiliateLinks = (hotel.affiliateLinks ?? []).filter((link) => {
+    try {
+      const url = new URL(link.url);
+      return (
+        url.protocol === "https:" &&
+        url.pathname !== "/" &&
+        url.pathname !== ""
+      );
+    } catch {
+      return false;
+    }
+  });
+
   const hasMyRealTripLink = affiliateLinks.some(
     (link) => link.provider === "myrealtrip",
   );
