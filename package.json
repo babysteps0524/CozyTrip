@@ -30,7 +30,8 @@
     "validate:hotel-run": "bun scripts/validate-hotel-run.ts",
     "validate:hotel-inventory": "bun scripts/validate-hotel-inventory.ts",
     "generate:hotel-inventory": "bun scripts/generate-hotel-inventory.ts",
-    "myrealtrip:inspect": "bun scripts/myrealtrip/inspect-accommodation-results.ts"
+    "myrealtrip:inspect": "bun scripts/myrealtrip/inspect-accommodation-results.ts",
+    "myrealtrip:inspect-pagination": "bun scripts/myrealtrip/inspect-accommodation-pagination.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
