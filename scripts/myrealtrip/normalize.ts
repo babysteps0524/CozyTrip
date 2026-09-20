@@ -1,5 +1,13 @@
-import type { AffiliateLink, Hotel } from "../../src/types";
+import type { AffiliateLink, Hotel, HotelImage, ImageType } from "../../src/types";
 import { getMyRealTripConfig } from "./config";
+
+export interface MyRealTripAccommodationImage {
+  url: string;
+  type?: ImageType;
+  alt?: string;
+  width?: number;
+  height?: number;
+}
 
 export interface MyRealTripAccommodationItem {
   itemId: number;
@@ -12,6 +20,7 @@ export interface MyRealTripAccommodationItem {
   imageUrl: string;
   productUrl: string;
   deepLink: string;
+  images?: MyRealTripAccommodationImage[];
 }
 
 export interface MyRealTripAccommodationSearchResponse {
@@ -21,14 +30,8 @@ export interface MyRealTripAccommodationSearchResponse {
     page?: number;
     size?: number;
   };
-  meta?: {
-    totalCount?: number;
-  };
-  result?: {
-    status?: number;
-    message?: string;
-    code?: string;
-  };
+  meta?: { totalCount?: number };
+  result?: { status?: number; message?: string; code?: string };
 }
 
 export interface MyRealTripRegion {
@@ -40,9 +43,7 @@ export interface MyRealTripRegion {
 }
 
 export interface MyRealTripRegionAutocompleteResponse {
-  data?: {
-    regions?: MyRealTripRegion[];
-  };
+  data?: { regions?: MyRealTripRegion[] };
 }
 
 export interface MyRealTripDestination {
@@ -85,6 +86,51 @@ function slugify(value: string): string {
   return slug || "hotel";
 }
 
+function toHotelImages(
+  item: MyRealTripAccommodationItem,
+  hotelId: string,
+  imageUsageAllowed: boolean,
+): HotelImage[] {
+  if (!imageUsageAllowed) return [];
+
+  const candidates = (item.images ?? [])
+    .filter((image) => image.url.trim())
+    .filter((image) => image.type && image.type !== "hero")
+    .slice(0, 8);
+
+  const typedImages = candidates.map((image, index) => ({
+    id: `myrealtrip-${item.itemId}-${image.type}-${index + 1}`,
+    src: image.url,
+    alt: image.alt || `${item.itemName} ${image.type} 이미지`,
+    width: image.width,
+    height: image.height,
+    source: "myrealtrip" as const,
+    type: image.type as ImageType,
+    hotelId,
+    credit: "MyRealTrip Partner API",
+    sourceUrl: item.productUrl,
+    license: "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+    rightsConfirmed: true,
+  }));
+
+  const hero = item.imageUrl
+    ? [{
+        id: `myrealtrip-${item.itemId}-hero`,
+        src: item.imageUrl,
+        alt: `${item.itemName} 대표 이미지`,
+        source: "myrealtrip" as const,
+        type: "hero" as const,
+        hotelId,
+        credit: "MyRealTrip Partner API",
+        sourceUrl: item.productUrl,
+        license: "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+        rightsConfirmed: true,
+      }]
+    : [];
+
+  return [...hero, ...typedImages];
+}
+
 function toHotel(
   item: MyRealTripAccommodationItem,
   destination: MyRealTripDestination,
@@ -92,6 +138,7 @@ function toHotel(
 ): Hotel {
   const id = `myrealtrip-${item.itemId}`;
   const slug = `${slugify(item.itemName)}-${item.itemId}`;
+
   return {
     id,
     externalId: String(item.itemId),
@@ -114,22 +161,7 @@ function toHotel(
       city: destination.city,
       area: "",
     },
-    images: imageUsageAllowed && item.imageUrl
-      ? [
-          {
-            id: `myrealtrip-${item.itemId}-hero`,
-            src: item.imageUrl,
-            alt: `${item.itemName} 대표 이미지`,
-            source: "myrealtrip",
-            type: "hero",
-            hotelId: id,
-            credit: "MyRealTrip Partner API",
-            sourceUrl: item.productUrl,
-            license: "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
-            rightsConfirmed: true,
-          },
-        ]
-      : [],
+    images: toHotelImages(item, id, imageUsageAllowed),
     facilities: [],
     restaurants: [],
     accommodationType: "호텔",
@@ -151,9 +183,7 @@ export function findCityRegion(
   const regions = response.data?.regions ?? [];
 
   return (
-    regions.find(
-      (region) => region.name === city && region.type === "CITY",
-    ) ??
+    regions.find((region) => region.name === city && region.type === "CITY") ??
     regions.find(
       (region) =>
         region.name === city ||
@@ -170,9 +200,7 @@ export function normalizeAccommodationItems(
   const items = response.data?.items ?? [];
   const imageUsageAllowed = getMyRealTripConfig().imageUsageAllowed;
 
-  return items.map((item) =>
-    toHotel(item, destination, imageUsageAllowed),
-  );
+  return items.map((item) => toHotel(item, destination, imageUsageAllowed));
 }
 
 export function getMyRealTripDestinations(): MyRealTripDestination[] {
