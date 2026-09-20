@@ -2,6 +2,8 @@ import type { HotelImage, ImageType } from "./image";
 
 export type PostCategory = "hotel" | "guide";
 
+export type HotelPostStatus = "draft" | "review" | "published";
+
 export type PostBlock =
   | PostHeadingBlock
   | PostParagraphBlock
@@ -65,6 +67,7 @@ export interface HotelPostFaqItem {
 }
 
 export interface HotelPost {
+  status: HotelPostStatus;
   id: string;
   hotelId: string;
   slug: string;
