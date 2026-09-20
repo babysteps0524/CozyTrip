@@ -17,7 +17,9 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
     }
   });
 
-  const hasMyRealTripLink = affiliateLinks.some((link) => link.provider === "myrealtrip");
+  const affiliateProviders = Array.from(
+    new Set(affiliateLinks.map((link) => link.provider)),
+  );
 
   return (
     <section id="booking" className="scroll-mt-24 border-t border-ct-line dark:border-ct-dark-line">
@@ -35,7 +37,10 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
                 객실 요금과 예약 가능 여부는 예약 플랫폼에서 날짜와 조건을 입력해 확인할 수 있습니다.
               </p>
 
-              <AffiliateDisclosure show={hasMyRealTripLink} />
+              <AffiliateDisclosure
+                show={affiliateLinks.length > 0}
+                providers={affiliateProviders}
+              />
 
               {affiliateLinks.length > 0 ? (
                 <>
