@@ -275,6 +275,21 @@ async function writeFailedHotels(failures: FailedHotelPost[]): Promise<void> {
   await writeFile(failurePath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
 }
 
+async function writeGeneratedPosts(posts: HotelPost[]): Promise<void> {
+  const output: GeneratedHotelPostFile = {
+    generatedAt: new Date().toISOString(),
+    source: "ai",
+    postCount: posts.length,
+    posts,
+  };
+
+  await writeFile(
+    outputPath,
+    `${JSON.stringify(output, null, 2)}\n`,
+    "utf8",
+  );
+}
+
 async function readExistingPosts(): Promise<HotelPost[]> {
   const file = Bun.file(outputPath);
 
@@ -832,6 +847,11 @@ async function main(): Promise<void> {
       if (result.attempts > 1) {
         console.log(`Retry succeeded on attempt ${result.attempts}.`);
       }
+
+      // Persist successful posts immediately so interrupted CI runs can resume safely.
+      await writeGeneratedPosts(mergePosts(existingPosts, generatedPosts));
+      await writeFailedHotels([...failedHotelMap.values()]);
+      console.log(`Checkpoint saved: ${existingPosts.length + generatedPosts.length} published post(s), ${failedHotelMap.size} failed hotel(s).`);
     } catch (error) {
       failureCount += 1;
 
@@ -858,6 +878,10 @@ async function main(): Promise<void> {
         `Failed to generate or validate ${hotel.name} after ${MAX_GENERATION_ATTEMPTS} attempt(s): ${formatGenerationError(error)}`,
       );
 
+      // Persist failures immediately so the next run can retry them.
+      await writeFailedHotels([...failedHotelMap.values()]);
+      console.log(`Failure checkpoint saved: ${failedHotelMap.size} failed hotel(s).`);
+
       if (plan) {
         const target = plan[hotel.destinationId] ?? 0;
         const succeeded = successByDestination.get(hotel.destinationId) ?? 0;
@@ -882,14 +906,7 @@ async function main(): Promise<void> {
 
   await mkdir(outputDir, { recursive: true });
 
-  const output: GeneratedHotelPostFile = {
-    generatedAt: new Date().toISOString(),
-    source: "ai",
-    postCount: posts.length,
-    posts,
-  };
-
-  await writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+  await writeGeneratedPosts(posts);
   await writeFailedHotels([...failedHotelMap.values()]);
   const destinations: HotelPostDestinationReport[] = plan
     ? Object.entries(plan).map(([destinationId, target]) => {
