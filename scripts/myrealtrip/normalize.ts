@@ -3,7 +3,7 @@ import { getMyRealTripConfig } from "./config";
 
 export interface MyRealTripAccommodationImage {
   url: string;
-  type?: ImageType;
+  type?: string;
   alt?: string;
   width?: number;
   height?: number;
@@ -75,11 +75,33 @@ const MYREALTRIP_IMAGE_TYPES: readonly ImageType[] = [
   "attraction",
 ];
 
-function isImageType(value: unknown): value is ImageType {
-  return (
-    typeof value === "string" &&
-    MYREALTRIP_IMAGE_TYPES.includes(value as ImageType)
-  );
+const MYREALTRIP_IMAGE_TYPE_ALIASES: Record<string, ImageType> = {
+  hero: "hero",
+  main: "hero",
+  gallery: "gallery",
+  exterior: "gallery",
+  room: "room",
+  rooms: "room",
+  bedroom: "room",
+  bathroom: "bathroom",
+  bath: "bathroom",
+  toilet: "bathroom",
+  restroom: "bathroom",
+  facility: "facility",
+  facilities: "facility",
+  amenity: "facility",
+  restaurant: "restaurant",
+  dining: "restaurant",
+  breakfast: "restaurant",
+  location: "location",
+  attraction: "attraction",
+};
+
+function normalizeImageType(value: unknown): ImageType | undefined {
+  if (typeof value !== "string") return undefined;
+
+  const normalized = value.trim().toLowerCase();
+  return MYREALTRIP_IMAGE_TYPE_ALIASES[normalized];
 }
 
 const affiliateLinks = (productUrl: string): AffiliateLink[] => [
@@ -112,18 +134,28 @@ function toHotelImages(
   if (!imageUsageAllowed) return [];
 
   const candidates = (item.images ?? [])
+    .map((image) => ({
+      ...image,
+      normalizedType: normalizeImageType(image.type),
+    }))
     .filter((image) => image.url.trim())
-    .filter((image) => image.type && image.type !== "hero" && isImageType(image.type))
-    .slice(0, 12);
+    .filter((image) => image.normalizedType && image.normalizedType !== "hero")
+    .filter(
+      (image, index, all) =>
+        all.findIndex((candidate) => candidate.url === image.url) === index,
+    )
+    .slice(0, 24);
 
   const typedImages = candidates.map((image, index) => ({
-    id: `myrealtrip-${item.itemId}-${image.type}-${index + 1}`,
+    id: `myrealtrip-${item.itemId}-${image.normalizedType}-${index + 1}`,
     src: image.url,
-    alt: image.alt || `${item.itemName} ${image.type} 이미지`,
+    alt:
+      image.alt ||
+      `${item.itemName} ${image.normalizedType} 이미지`,
     width: image.width,
     height: image.height,
     source: "myrealtrip" as const,
-    type: image.type!,
+    type: image.normalizedType!,
     hotelId,
     credit: "MyRealTrip Partner API",
     sourceUrl: item.productUrl,
