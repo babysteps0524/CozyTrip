@@ -78,11 +78,6 @@ export default function App({
     : undefined;
 
   const hotelSlug = hotelDetailMatch?.[2];
-  const publishedHotelIds = new Set(\n    posts\n      .filter((post) => post.category === "hotel" && post.hotelId)\n      .map((post) => post.hotelId as string),\n  );\n\n  const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));\n  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;
-  const staticPage = path === "/about" ? "about" : path === "/privacy" ? "privacy" : path === "/affiliate" ? "affiliate" : path === "/contact" ? "contact" : undefined;
-  const guideSlug = guideMatch?.[1];
-  const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
-
   const publishedHotelIds = new Set(
     posts
       .filter((post) => post.category === "hotel" && post.hotelId)
@@ -90,6 +85,10 @@ export default function App({
   );
 
   const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));
+  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;  const publishedHotelIds = new Set(\n    posts\n      .filter((post) => post.category === "hotel" && post.hotelId)\n      .map((post) => post.hotelId as string),\n  );\n\n  const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));\n  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;
+  const staticPage = path === "/about" ? "about" : path === "/privacy" ? "privacy" : path === "/affiliate" ? "affiliate" : path === "/contact" ? "contact" : undefined;
+  const guideSlug = guideMatch?.[1];
+  const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
 
   const destinationHotels = destination
     ? getHotelsByDestination(visibleHotels, destination.id)
