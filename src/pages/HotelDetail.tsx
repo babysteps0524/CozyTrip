@@ -403,7 +403,7 @@ export default function HotelDetail({
                     <PostRenderer post={post} />
                   </div>
 
-                  {post.faq.length > 0 && (
+                  {(post.faq?.length ?? 0) > 0 && (
                     <section
                       className="mt-12 rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft"
                       aria-labelledby={`hotel-faq-${post.id}`}
@@ -418,7 +418,7 @@ export default function HotelDetail({
                         자주 묻는 내용
                       </h3>
                       <div className="mt-6 divide-y divide-ct-line dark:divide-ct-dark-line">
-                        {post.faq.map((item) => (
+                        {post.faq?.map((item) => (
                           <details
                             key={item.question}
                             className="group py-4 first:pt-0 last:pb-0"
