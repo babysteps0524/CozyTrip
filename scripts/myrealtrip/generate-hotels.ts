@@ -31,6 +31,13 @@ const OUTPUT_PATH = resolve(
   "src/data/generated/myrealtrip-hotels.json",
 );
 
+const ALLOWED_DESTINATION_SLUGS = new Set([
+  "tokyo",
+  "osaka",
+  "fukuoka",
+  "sapporo",
+]);
+
 interface GeneratedHotelFile {
   generatedAt?: string;
   source?: string;
@@ -54,7 +61,9 @@ async function readExistingHotels(): Promise<Hotel[]> {
       throw new Error("기존 MyRealTrip 호텔 데이터의 hotels가 배열이 아닙니다.");
     }
 
-    return parsed.hotels;
+    return parsed.hotels.filter((hotel) =>
+      ALLOWED_DESTINATION_SLUGS.has(hotel.destinationId.replace("japan-", "")),
+    );
   } catch (error) {
     if (
       error instanceof Error &&
