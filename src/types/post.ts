@@ -1,8 +1,6 @@
-import type { HotelImage } from "./image";
+import type { HotelImage, ImageType } from "./image";
 
-export type PostCategory =
-  | "hotel"
-  | "guide";
+export type PostCategory = "hotel" | "guide";
 
 export type PostBlock =
   | PostHeadingBlock
@@ -47,10 +45,16 @@ export interface Post {
   tags?: string[];
 }
 
+export interface HotelPostImageAssignment {
+  imageId: string;
+  imageType: ImageType;
+}
+
 export interface HotelPostSection {
   heading: string;
   paragraphs: string[];
   imageIds?: string[];
+  imageAssignments?: HotelPostImageAssignment[];
 }
 
 export interface HotelPostFaqItem {
