@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v15";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v16";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -52,10 +52,18 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 - 단, 내용과 무관한 이미지를 채우기용으로 넣지 않는다.
 
 섹션 구성:
-- sections는 반드시 6~8개. 4~5개로 끝내지 않는다.
-- 가능한 경우 객실, 욕실/화장실, 시설, 다이닝, 위치, 교통/주변 정보, 숙박 정보를 구성한다.
-- 데이터가 부족한 주제는 같은 사실을 반복하지 말고, 기본 정보·예약 전 확인사항·숙박 조건 등 실제 제공 데이터로 구분되는 주제를 사용한다.
-- 해당 데이터가 없는 주제는 억지로 만들지 말고 다른 확인 가능한 호텔 정보로 구성한다.
+- sections는 정확히 6개로 구성한다.
+- section heading은 아래 6개를 순서대로 그대로 사용한다.
+  1. "호텔 기본 정보"
+  2. "객실과 숙박 정보"
+  3. "이용 가능한 시설"
+  4. "위치와 교통"
+  5. "주변 정보 또는 예약 전 확인사항"
+  6. "호텔을 선택할 때 확인할 점"
+- "객실과 숙박 정보" section에서 객실과 욕실 정보를 함께 설명한다.
+- 수영장, 헬스장/피트니스, 레스토랑, 조식, 라운지 등의 정보가 없으면 해당 내용을 억지로 만들지 않는다.
+- 5번 section의 heading은 반드시 "주변 정보 또는 예약 전 확인사항"으로 작성한다. 주변 정보가 부족하면 예약 전 확인 가능한 호텔 데이터를 사용한다.
+- 6번 section은 제공된 사실을 바탕으로 예약 전에 확인할 내용을 정리하되 광고성 평가나 직접적인 추천을 하지 않는다.
 - 각 section은 1~2개의 자연스러운 문단으로 작성한다.
 - 각 문단은 2~4문장으로 구성하고, 핵심 정보가 충분히 전달되도록 작성한다.
 - 전체 본문은 공백 포함 최소 500자, 가능하면 700~1,200자 범위로 작성한다.
@@ -84,18 +92,37 @@ JSON 구조:
   "introduction": "친근한 도입부",
   "sections": [
     {
-      "heading": "객실을 살펴볼게요",
+      "heading": "호텔 기본 정보",
       "paragraphs": ["핵심 정보를 충분히 설명하는 문단..."],
+      "imageAssignments": []
+    },
+    {
+      "heading": "객실과 숙박 정보",
+      "paragraphs": ["객실 정보를 설명하는 문단...", "욕실과 화장실 정보를 설명하는 문단..."],
       "imageAssignments": [
-        {"imageId": "실제 ID", "imageType": "room"}
+        {"imageId": "실제 room 이미지 ID", "imageType": "room"},
+        {"imageId": "실제 bathroom 이미지 ID", "imageType": "bathroom"}
       ]
     },
     {
-      "heading": "욕실과 화장실",
-      "paragraphs": ["..."],
-      "imageAssignments": [
-        {"imageId": "실제 ID", "imageType": "bathroom"}
-      ]
+      "heading": "이용 가능한 시설",
+      "paragraphs": ["실제 제공된 시설 정보만 설명한다."],
+      "imageAssignments": []
+    },
+    {
+      "heading": "위치와 교통",
+      "paragraphs": ["실제 제공된 위치와 역 정보를 설명한다."],
+      "imageAssignments": []
+    },
+    {
+      "heading": "주변 정보 또는 예약 전 확인사항",
+      "paragraphs": ["주변 정보가 부족하면 체크인·체크아웃 등 확인 가능한 예약 정보를 설명한다."],
+      "imageAssignments": []
+    },
+    {
+      "heading": "호텔을 선택할 때 확인할 점",
+      "paragraphs": ["제공된 사실을 바탕으로 예약 전에 확인할 내용을 정리한다."],
+      "imageAssignments": []
     }
   ],
   "faq": [
