@@ -168,13 +168,20 @@ export function parseHotelPost(text: string, provider: AIProviderName, inputHote
         provider,
         `Section ${index + 1} image assignment`,
       )[0];
+      const imageType = validateImageType(
+        assignment.imageType,
+        provider,
+        `Section ${index + 1} image assignment imageType`,
+      );
+      if (imageType === "hero") {
+        throw new AIProviderError(
+          provider,
+          `Section ${index + 1} cannot assign a hero image.`,
+        );
+      }
       assignments.push({
         imageId,
-        imageType: validateImageType(
-          assignment.imageType,
-          provider,
-          `Section ${index + 1} image assignment imageType`,
-        ),
+        imageType,
       });
     }
 
