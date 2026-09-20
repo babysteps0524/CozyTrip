@@ -166,6 +166,45 @@ export function createHotelPostBlocks(
     }
   }
 
+  // 최종 안전장치: 각 섹션에서 이미지가 선택되었다면 반드시
+  // 해당 섹션 heading 바로 다음에 오도록 블록 순서를 정규화한다.
+  // 이 단계는 향후 이미지 선택 로직이 변경되어도 렌더링 검증 조건을 보장한다.
+  const normalizedBlocks: PostBlock[] = [];
+
+  for (let index = 0; index < blocks.length; ) {
+    const block = blocks[index];
+
+    if (block.type !== "heading") {
+      normalizedBlocks.push(block);
+      index += 1;
+      continue;
+    }
+
+    normalizedBlocks.push(block);
+    index += 1;
+
+    const sectionBlocks: PostBlock[] = [];
+    while (index < blocks.length && blocks[index].type !== "heading") {
+      sectionBlocks.push(blocks[index]);
+      index += 1;
+    }
+
+    const firstImageIndex = sectionBlocks.findIndex(
+      (sectionBlock) =>
+        sectionBlock.type === "image" || sectionBlock.type === "gallery",
+    );
+
+    if (firstImageIndex > 0) {
+      const [imageBlock] = sectionBlocks.splice(firstImageIndex, 1);
+      if (imageBlock) sectionBlocks.unshift(imageBlock);
+    }
+
+    normalizedBlocks.push(...sectionBlocks);
+  }
+
+  blocks.length = 0;
+  blocks.push(...normalizedBlocks);
+
   const remainingPostImages = getRemainingPostImageIds(
     post,
     imageMap,
