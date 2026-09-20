@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19T09:30:06.832Z",
+  "generatedAt": "2026-09-20T01:04:55.537Z",
   "source": "myrealtrip",
-  "hotelCount": 100,
+  "hotelCount": 101,
   "search": {},
   "imageUsageAllowed": true,
   "hotels": [
@@ -11,7 +11,7 @@
       "provider": "myrealtrip",
       "name": "교토 우메코지 카덴쇼",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "교토-우메코지-카덴쇼-1652241",
       "country": "일본",
       "countryCode": "JP",
@@ -36,7 +36,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1652241",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -50,15 +50,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1490406",
@@ -66,7 +66,7 @@
       "provider": "myrealtrip",
       "name": "온야도 노노 교토시치조 내추럴 핫 스프링스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
       "country": "일본",
       "countryCode": "JP",
@@ -91,7 +91,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1490406",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -105,15 +105,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1208147",
@@ -121,7 +121,7 @@
       "provider": "myrealtrip",
       "name": "호텔 엘시안트 교토 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "호텔-엘시안트-교토-하치조구치-1208147",
       "country": "일본",
       "countryCode": "JP",
@@ -146,7 +146,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1208147",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -160,15 +160,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1200282",
@@ -176,7 +176,7 @@
       "provider": "myrealtrip",
       "name": "알몬트 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "알몬트-호텔-교토-1200282",
       "country": "일본",
       "countryCode": "JP",
@@ -201,7 +201,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1200282",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -215,15 +215,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1581864",
@@ -231,7 +231,7 @@
       "provider": "myrealtrip",
       "name": "리치몬드 호텔 프리미어 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
       "country": "일본",
       "countryCode": "JP",
@@ -256,7 +256,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1581864",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -270,15 +270,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1571825",
@@ -286,7 +286,7 @@
       "provider": "myrealtrip",
       "name": "오크우드 호텔 오이케 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "오크우드-호텔-오이케-교토-1571825",
       "country": "일본",
       "countryCode": "JP",
@@ -311,7 +311,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1571825",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -325,15 +325,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1594516",
@@ -341,7 +341,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 교토-키요미즈 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
       "country": "일본",
       "countryCode": "JP",
@@ -366,7 +366,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1594516",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -380,15 +380,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1566383",
@@ -396,7 +396,7 @@
       "provider": "myrealtrip",
       "name": "호텔 포르자 교토 시조 카와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "호텔-포르자-교토-시조-카와라마치-1566383",
       "country": "일본",
       "countryCode": "JP",
@@ -421,7 +421,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1566383",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -435,15 +435,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1254251",
@@ -451,7 +451,7 @@
       "provider": "myrealtrip",
       "name": "호텔 그레이스리 교토 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "호텔-그레이스리-교토-산조-1254251",
       "country": "일본",
       "countryCode": "JP",
@@ -476,7 +476,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1254251",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -490,15 +490,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1229514",
@@ -506,7 +506,7 @@
       "provider": "myrealtrip",
       "name": "사쿠라 테라스 더 갤러리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "사쿠라-테라스-더-갤러리-1229514",
       "country": "일본",
       "countryCode": "JP",
@@ -531,7 +531,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1229514",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -545,15 +545,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1369404",
@@ -561,7 +561,7 @@
       "provider": "myrealtrip",
       "name": "게이오 프렐리아 호텔 교토 가라스마 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "게이오-프렐리아-호텔-교토-가라스마-고조-1369404",
       "country": "일본",
       "countryCode": "JP",
@@ -586,7 +586,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1369404",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -600,15 +600,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1447756",
@@ -616,7 +616,7 @@
       "provider": "myrealtrip",
       "name": "오리엔탈 호텔 교토 로쿠조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
       "country": "일본",
       "countryCode": "JP",
@@ -641,7 +641,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1447756",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -655,15 +655,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1186098",
@@ -671,7 +671,7 @@
       "provider": "myrealtrip",
       "name": "호텔 홋케 클럽 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "호텔-홋케-클럽-교토-1186098",
       "country": "일본",
       "countryCode": "JP",
@@ -696,7 +696,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1186098",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -710,15 +710,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1181987",
@@ -726,7 +726,7 @@
       "provider": "myrealtrip",
       "name": "스마일 호텔 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "스마일-호텔-교토-시조-1181987",
       "country": "일본",
       "countryCode": "JP",
@@ -751,7 +751,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1181987",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -765,15 +765,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1409068",
@@ -781,7 +781,7 @@
       "provider": "myrealtrip",
       "name": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "카덴쇼-아라시야마-온센-교토-교리츠-리조트-1409068",
       "country": "일본",
       "countryCode": "JP",
@@ -806,7 +806,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1409068",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -819,15 +819,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1409068?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1556707",
@@ -835,7 +835,7 @@
       "provider": "myrealtrip",
       "name": "호텔 앤드룸스 교토 시치조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "호텔-앤드룸스-교토-시치조-1556707",
       "country": "일본",
       "countryCode": "JP",
@@ -860,7 +860,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1556707",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -874,15 +874,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1556707?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1440279",
@@ -890,7 +890,7 @@
       "provider": "myrealtrip",
       "name": "리치몬드 호텔 프리미어 교토 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "리치몬드-호텔-프리미어-교토-에키마에-1440279",
       "country": "일본",
       "countryCode": "JP",
@@ -915,7 +915,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1440279",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -929,15 +929,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1440279?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3577397",
@@ -945,7 +945,7 @@
       "provider": "myrealtrip",
       "name": "알라 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "알라-호텔-교토-3577397",
       "country": "일본",
       "countryCode": "JP",
@@ -970,7 +970,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3577397",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -984,15 +984,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3577397?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3648942",
@@ -1000,7 +1000,7 @@
       "provider": "myrealtrip",
       "name": "더블트리 바이 힐튼 교토 히가시야마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "더블트리-바이-힐튼-교토-히가시야마-3648942",
       "country": "일본",
       "countryCode": "JP",
@@ -1025,7 +1025,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3648942",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1039,15 +1039,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3648942?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1563593",
@@ -1055,7 +1055,7 @@
       "provider": "myrealtrip",
       "name": "교토 센트럴 인",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.428Z",
+      "dataFetchedAt": "2026-09-20T01:04:26.376Z",
       "slug": "교토-센트럴-인-1563593",
       "country": "일본",
       "countryCode": "JP",
@@ -1080,7 +1080,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1563593",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1094,15 +1094,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1563593?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1537604",
@@ -1110,7 +1110,7 @@
       "provider": "myrealtrip",
       "name": "미츠이 가든 호텔 교토 카와라마치 조쿄지",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "미츠이-가든-호텔-교토-카와라마치-조쿄지-1537604",
       "country": "일본",
       "countryCode": "JP",
@@ -1135,7 +1135,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1537604",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1537604?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1537604?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1149,15 +1149,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1537604?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1537604?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1513682",
@@ -1165,7 +1165,7 @@
       "provider": "myrealtrip",
       "name": "머큐어 교토 스테이션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "머큐어-교토-스테이션-1513682",
       "country": "일본",
       "countryCode": "JP",
@@ -1190,7 +1190,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1513682",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1513682?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1513682?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1204,15 +1204,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1513682?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1513682?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1113469",
@@ -1220,7 +1220,7 @@
       "provider": "myrealtrip",
       "name": "미야코 호텔 교토 하치조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "미야코-호텔-교토-하치조-1113469",
       "country": "일본",
       "countryCode": "JP",
@@ -1245,7 +1245,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1113469",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1113469?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1113469?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1259,15 +1259,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1113469?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1113469?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1504598",
@@ -1275,7 +1275,7 @@
       "provider": "myrealtrip",
       "name": "에이스 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "에이스-호텔-교토-1504598",
       "country": "일본",
       "countryCode": "JP",
@@ -1300,7 +1300,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1504598",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1504598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1504598?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1314,15 +1314,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1504598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1504598?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1447922",
@@ -1330,7 +1330,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아마넥 교토 가와라마치 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "호텔-아마넥-교토-가와라마치-고조-1447922",
       "country": "일본",
       "countryCode": "JP",
@@ -1355,7 +1355,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1447922",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447922?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447922?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1369,15 +1369,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1447922?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1447922?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1555679",
@@ -1385,7 +1385,7 @@
       "provider": "myrealtrip",
       "name": "호텔 더 엠스 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "호텔-더-엠스-교토-1555679",
       "country": "일본",
       "countryCode": "JP",
@@ -1410,7 +1410,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1555679",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1555679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1555679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1424,15 +1424,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1555679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1555679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1503457",
@@ -1440,7 +1440,7 @@
       "provider": "myrealtrip",
       "name": "호텔 에미온 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "호텔-에미온-교토-1503457",
       "country": "일본",
       "countryCode": "JP",
@@ -1465,7 +1465,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1503457",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1503457?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1503457?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1479,15 +1479,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1503457?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1503457?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1468476",
@@ -1495,7 +1495,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 교토 에키히가시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "apa-호텔-교토-에키히가시-1468476",
       "country": "일본",
       "countryCode": "JP",
@@ -1520,7 +1520,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1468476",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1468476?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1468476?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1534,15 +1534,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1468476?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1468476?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1234480",
@@ -1550,7 +1550,7 @@
       "provider": "myrealtrip",
       "name": "베셀 호텔 캄파나 교토 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "베셀-호텔-캄파나-교토-고조-1234480",
       "country": "일본",
       "countryCode": "JP",
@@ -1575,7 +1575,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1234480",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1234480?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1234480?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1589,15 +1589,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1234480?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1234480?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1121997",
@@ -1605,7 +1605,7 @@
       "provider": "myrealtrip",
       "name": "리가 로얄 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "리가-로얄-호텔-교토-1121997",
       "country": "일본",
       "countryCode": "JP",
@@ -1630,7 +1630,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1121997",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1121997?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1121997?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1644,15 +1644,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1121997?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1121997?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1181728",
@@ -1660,7 +1660,7 @@
       "provider": "myrealtrip",
       "name": "호텔 케이한 교토 그란데",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "호텔-케이한-교토-그란데-1181728",
       "country": "일본",
       "countryCode": "JP",
@@ -1685,7 +1685,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1181728",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181728?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181728?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1699,15 +1699,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1181728?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1181728?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1409663",
@@ -1715,7 +1715,7 @@
       "provider": "myrealtrip",
       "name": "JR 웨스트 그룹 비아 인 프라임 교토역 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "jr-웨스트-그룹-비아-인-프라임-교토역-하치조구치-1409663",
       "country": "일본",
       "countryCode": "JP",
@@ -1740,7 +1740,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1409663",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409663?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1409663?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1754,15 +1754,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1409663?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1409663?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1279161",
@@ -1770,7 +1770,7 @@
       "provider": "myrealtrip",
       "name": "솔라리아 니시테츠 호텔 교토 프리미어",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "솔라리아-니시테츠-호텔-교토-프리미어-1279161",
       "country": "일본",
       "countryCode": "JP",
@@ -1795,7 +1795,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1279161",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1279161?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1279161?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1809,15 +1809,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1279161?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1279161?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1357118",
@@ -1825,7 +1825,7 @@
       "provider": "myrealtrip",
       "name": "유노야도 쇼에이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "유노야도-쇼에이-1357118",
       "country": "일본",
       "countryCode": "JP",
@@ -1850,7 +1850,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1357118",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1357118?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1357118?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1863,15 +1863,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1357118?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1357118?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1391789",
@@ -1879,7 +1879,7 @@
       "provider": "myrealtrip",
       "name": "호텔 비스치오 교코 바이 그란비아",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "호텔-비스치오-교코-바이-그란비아-1391789",
       "country": "일본",
       "countryCode": "JP",
@@ -1904,7 +1904,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1391789",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1391789?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1391789?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1918,15 +1918,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1391789?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1391789?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4691575",
@@ -1934,7 +1934,7 @@
       "provider": "myrealtrip",
       "name": "유겐 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "유겐-교토-시조-4691575",
       "country": "일본",
       "countryCode": "JP",
@@ -1959,7 +1959,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4691575",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4691575?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4691575?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1973,15 +1973,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4691575?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4691575?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1185184",
@@ -1989,7 +1989,7 @@
       "provider": "myrealtrip",
       "name": "호텔 칸라 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "호텔-칸라-교토-1185184",
       "country": "일본",
       "countryCode": "JP",
@@ -2014,7 +2014,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1185184",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185184?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2028,15 +2028,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1185184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1185184?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3585686",
@@ -2044,7 +2044,7 @@
       "provider": "myrealtrip",
       "name": "트래블로지 교토 시조 카와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "트래블로지-교토-시조-카와라마치-3585686",
       "country": "일본",
       "countryCode": "JP",
@@ -2069,7 +2069,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3585686",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3585686?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3585686?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2083,15 +2083,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3585686?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3585686?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1237188",
@@ -2099,7 +2099,7 @@
       "provider": "myrealtrip",
       "name": "피스 호스텔 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "피스-호스텔-산조-1237188",
       "country": "일본",
       "countryCode": "JP",
@@ -2124,7 +2124,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1237188",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1237188?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1237188?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2137,15 +2137,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1237188?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1237188?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3587284",
@@ -2153,7 +2153,7 @@
       "provider": "myrealtrip",
       "name": "HOTEL ARU KYOTO",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:00.708Z",
+      "dataFetchedAt": "2026-09-20T01:04:27.420Z",
       "slug": "hotel-aru-kyoto-3587284",
       "country": "일본",
       "countryCode": "JP",
@@ -2178,7 +2178,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3587284",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587284?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587284?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2192,15 +2192,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3587284?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3587284?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1189495",
@@ -2208,7 +2208,7 @@
       "provider": "myrealtrip",
       "name": "기온 료칸 가라쿠",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "기온-료칸-가라쿠-1189495",
       "country": "일본",
       "countryCode": "JP",
@@ -2233,7 +2233,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1189495",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1189495?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1189495?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2246,15 +2246,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1189495?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1189495?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1364004",
@@ -2262,7 +2262,7 @@
       "provider": "myrealtrip",
       "name": "교토 오하라 료칸 세료",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "교토-오하라-료칸-세료-1364004",
       "country": "일본",
       "countryCode": "JP",
@@ -2287,7 +2287,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1364004",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1364004?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1364004?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2300,15 +2300,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1364004?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1364004?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1468601",
@@ -2316,7 +2316,7 @@
       "provider": "myrealtrip",
       "name": "호텔 게이한 교토에키 미나미",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "호텔-게이한-교토에키-미나미-1468601",
       "country": "일본",
       "countryCode": "JP",
@@ -2341,7 +2341,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1468601",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1468601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1468601?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2355,15 +2355,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1468601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1468601?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1532764",
@@ -2371,7 +2371,7 @@
       "provider": "myrealtrip",
       "name": "뮤즈 교토 시조 카와라마치 메이테츠 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "뮤즈-교토-시조-카와라마치-메이테츠-호텔-1532764",
       "country": "일본",
       "countryCode": "JP",
@@ -2396,7 +2396,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1532764",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1532764?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1532764?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2410,15 +2410,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1532764?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1532764?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1277418",
@@ -2426,7 +2426,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 교토 시조카라스마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "소테츠-프레사-인-교토-시조카라스마-1277418",
       "country": "일본",
       "countryCode": "JP",
@@ -2451,7 +2451,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1277418",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277418?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277418?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2465,15 +2465,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1277418?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1277418?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1443828",
@@ -2481,7 +2481,7 @@
       "provider": "myrealtrip",
       "name": "시즈테츠 호텔 프레지오 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "시즈테츠-호텔-프레지오-교토-시조-1443828",
       "country": "일본",
       "countryCode": "JP",
@@ -2506,7 +2506,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1443828",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1443828?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1443828?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2520,15 +2520,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1443828?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1443828?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1103124",
@@ -2536,7 +2536,7 @@
       "provider": "myrealtrip",
       "name": "교토 도큐 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "교토-도큐-호텔-1103124",
       "country": "일본",
       "countryCode": "JP",
@@ -2561,7 +2561,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1103124",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1103124?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1103124?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2575,15 +2575,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1103124?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1103124?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1608345",
@@ -2591,7 +2591,7 @@
       "provider": "myrealtrip",
       "name": "소라 니와 테라스 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "소라-니와-테라스-교토-1608345",
       "country": "일본",
       "countryCode": "JP",
@@ -2616,7 +2616,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1608345",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1608345?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1608345?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2630,15 +2630,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1608345?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1608345?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3578877",
@@ -2646,7 +2646,7 @@
       "provider": "myrealtrip",
       "name": "로이저 호텔 클래식 가든 교토 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "로이저-호텔-클래식-가든-교토-산조-3578877",
       "country": "일본",
       "countryCode": "JP",
@@ -2671,7 +2671,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3578877",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3578877?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3578877?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2685,15 +2685,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3578877?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3578877?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3594757",
@@ -2701,7 +2701,7 @@
       "provider": "myrealtrip",
       "name": "반얀 트리 히가시야마 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "반얀-트리-히가시야마-교토-3594757",
       "country": "일본",
       "countryCode": "JP",
@@ -2726,7 +2726,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3594757",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3594757?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3594757?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2740,15 +2740,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3594757?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3594757?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1298271",
@@ -2756,7 +2756,7 @@
       "provider": "myrealtrip",
       "name": "더 밀레니얼스 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "더-밀레니얼스-교토-1298271",
       "country": "일본",
       "countryCode": "JP",
@@ -2781,7 +2781,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1298271",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1298271?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1298271?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2795,15 +2795,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1298271?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1298271?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4011374",
@@ -2811,7 +2811,7 @@
       "provider": "myrealtrip",
       "name": "Saka Hotel Kyoto",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "saka-hotel-kyoto-4011374",
       "country": "일본",
       "countryCode": "JP",
@@ -2836,7 +2836,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4011374",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4011374?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4011374?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2850,15 +2850,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4011374?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4011374?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1152856",
@@ -2866,7 +2866,7 @@
       "provider": "myrealtrip",
       "name": "호텔 몬토레 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "호텔-몬토레-교토-1152856",
       "country": "일본",
       "countryCode": "JP",
@@ -2891,7 +2891,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1152856",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1152856?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1152856?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2905,15 +2905,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1152856?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1152856?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1207859",
@@ -2921,7 +2921,7 @@
       "provider": "myrealtrip",
       "name": "교토 타워 호텔 아넥스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "교토-타워-호텔-아넥스-1207859",
       "country": "일본",
       "countryCode": "JP",
@@ -2946,7 +2946,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1207859",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1207859?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1207859?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2960,15 +2960,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1207859?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1207859?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4051708",
@@ -2976,7 +2976,7 @@
       "provider": "myrealtrip",
       "name": "교마치야 료칸 사쿠라 - 우루시테이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "교마치야-료칸-사쿠라-우루시테이-4051708",
       "country": "일본",
       "countryCode": "JP",
@@ -3001,7 +3001,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4051708",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4051708?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4051708?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3015,15 +3015,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4051708?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4051708?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1545942",
@@ -3031,7 +3031,7 @@
       "provider": "myrealtrip",
       "name": "라쿠텐 스테이 어반 시조 테라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "라쿠텐-스테이-어반-시조-테라마치-1545942",
       "country": "일본",
       "countryCode": "JP",
@@ -3056,7 +3056,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1545942",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1545942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1545942?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3070,15 +3070,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1545942?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1545942?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1204603",
@@ -3086,7 +3086,7 @@
       "provider": "myrealtrip",
       "name": "료칸 쿄우노야도 카기헤이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "료칸-쿄우노야도-카기헤이-1204603",
       "country": "일본",
       "countryCode": "JP",
@@ -3111,7 +3111,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1204603",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204603?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204603?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3124,15 +3124,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1204603?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1204603?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1554386",
@@ -3140,7 +3140,7 @@
       "provider": "myrealtrip",
       "name": "호텔 토우 니시노토인 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "호텔-토우-니시노토인-교토-1554386",
       "country": "일본",
       "countryCode": "JP",
@@ -3165,7 +3165,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1554386",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1554386?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1554386?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3179,15 +3179,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1554386?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1554386?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1191109",
@@ -3195,7 +3195,7 @@
       "provider": "myrealtrip",
       "name": "더 로얄 파크 호텔 교토 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "더-로얄-파크-호텔-교토-산조-1191109",
       "country": "일본",
       "countryCode": "JP",
@@ -3220,7 +3220,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1191109",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1191109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1191109?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3234,15 +3234,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1191109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1191109?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1258889",
@@ -3250,7 +3250,7 @@
       "provider": "myrealtrip",
       "name": "다이와 로이넷 호텔 교토 에키마에 프리미어",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.024Z",
+      "dataFetchedAt": "2026-09-20T01:04:29.100Z",
       "slug": "다이와-로이넷-호텔-교토-에키마에-프리미어-1258889",
       "country": "일본",
       "countryCode": "JP",
@@ -3275,7 +3275,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1258889",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1258889?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1258889?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3289,15 +3289,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1258889?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1258889?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1498522",
@@ -3305,7 +3305,7 @@
       "provider": "myrealtrip",
       "name": "시퀀스 교토 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "시퀀스-교토-고조-1498522",
       "country": "일본",
       "countryCode": "JP",
@@ -3330,7 +3330,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1498522",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1498522?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1498522?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3344,15 +3344,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1498522?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1498522?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1185740",
@@ -3360,7 +3360,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 교토 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "apa-호텔-교토-에키마에-1185740",
       "country": "일본",
       "countryCode": "JP",
@@ -3385,7 +3385,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1185740",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185740?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1185740?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3399,15 +3399,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1185740?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1185740?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1564435",
@@ -3415,7 +3415,7 @@
       "provider": "myrealtrip",
       "name": "호텔 리브맥스 교토 니조조 니시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "호텔-리브맥스-교토-니조조-니시-1564435",
       "country": "일본",
       "countryCode": "JP",
@@ -3440,7 +3440,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1564435",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1564435?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1564435?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3454,15 +3454,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1564435?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1564435?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1208270",
@@ -3470,7 +3470,7 @@
       "provider": "myrealtrip",
       "name": "이비스 스타일스 교토 스테이션",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "이비스-스타일스-교토-스테이션-1208270",
       "country": "일본",
       "countryCode": "JP",
@@ -3495,7 +3495,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1208270",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208270?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208270?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3509,15 +3509,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1208270?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1208270?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1345487",
@@ -3525,7 +3525,7 @@
       "provider": "myrealtrip",
       "name": "테라스 기요미즈 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "테라스-기요미즈-교토-1345487",
       "country": "일본",
       "countryCode": "JP",
@@ -3550,7 +3550,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1345487",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1345487?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1345487?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3564,15 +3564,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1345487?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1345487?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4876650",
@@ -3580,7 +3580,7 @@
       "provider": "myrealtrip",
       "name": "리브맥스 호스텔 교토 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "리브맥스-호스텔-교토-에키마에-4876650",
       "country": "일본",
       "countryCode": "JP",
@@ -3605,7 +3605,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4876650",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4876650?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4876650?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3619,15 +3619,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4876650?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4876650?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1659638",
@@ -3635,7 +3635,7 @@
       "provider": "myrealtrip",
       "name": "West Japan Kyoto Kiyomizu",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "west-japan-kyoto-kiyomizu-1659638",
       "country": "일본",
       "countryCode": "JP",
@@ -3660,7 +3660,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1659638",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1659638?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1659638?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3674,15 +3674,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1659638?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1659638?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3676952",
@@ -3690,7 +3690,7 @@
       "provider": "myrealtrip",
       "name": "아사이 교토 시조 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "아사이-교토-시조-호텔-3676952",
       "country": "일본",
       "countryCode": "JP",
@@ -3715,7 +3715,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3676952",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3676952?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3676952?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3729,15 +3729,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3676952?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3676952?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1374486",
@@ -3745,7 +3745,7 @@
       "provider": "myrealtrip",
       "name": "도큐스테이 교토 사카이자 시조-가와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "도큐스테이-교토-사카이자-시조-가와라마치-1374486",
       "country": "일본",
       "countryCode": "JP",
@@ -3770,7 +3770,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1374486",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1374486?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1374486?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3784,15 +3784,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1374486?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1374486?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1186260",
@@ -3800,7 +3800,7 @@
       "provider": "myrealtrip",
       "name": "APA 호텔 교토 에키 호리카와도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "apa-호텔-교토-에키-호리카와도리-1186260",
       "country": "일본",
       "countryCode": "JP",
@@ -3825,7 +3825,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1186260",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186260?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186260?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3839,15 +3839,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1186260?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1186260?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1506928",
@@ -3855,7 +3855,7 @@
       "provider": "myrealtrip",
       "name": "EN 호텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "en-호텔-교토-1506928",
       "country": "일본",
       "countryCode": "JP",
@@ -3880,7 +3880,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1506928",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1506928?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1506928?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3894,15 +3894,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1506928?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1506928?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1279431",
@@ -3910,7 +3910,7 @@
       "provider": "myrealtrip",
       "name": "호텔 M’s 플러스 시조 - 오미야",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "호텔-m-s-플러스-시조-오미야-1279431",
       "country": "일본",
       "countryCode": "JP",
@@ -3935,7 +3935,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1279431",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1279431?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1279431?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3949,15 +3949,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1279431?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1279431?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1475364",
@@ -3965,7 +3965,7 @@
       "provider": "myrealtrip",
       "name": "M’s 호텔, 교토역, 카스가",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "m-s-호텔-교토역-카스가-1475364",
       "country": "일본",
       "countryCode": "JP",
@@ -3990,7 +3990,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1475364",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1475364?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1475364?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4004,15 +4004,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1475364?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1475364?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1325196",
@@ -4020,7 +4020,7 @@
       "provider": "myrealtrip",
       "name": "호텔 게이한 교토 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
       "slug": "호텔-게이한-교토-하치조구치-1325196",
       "country": "일본",
       "countryCode": "JP",
@@ -4045,7 +4045,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1325196",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1325196?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1325196?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4059,15 +4059,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1325196?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1325196?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1210804",
@@ -4075,7 +4075,7 @@
       "provider": "myrealtrip",
       "name": "교토 타워 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.405Z",
       "slug": "교토-타워-호텔-1210804",
       "country": "일본",
       "countryCode": "JP",
@@ -4100,7 +4100,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1210804",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1210804?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1210804?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4114,15 +4114,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1210804?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1210804?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-2982305",
@@ -4130,7 +4130,7 @@
       "provider": "myrealtrip",
       "name": "힐튼 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.405Z",
       "slug": "힐튼-교토-2982305",
       "country": "일본",
       "countryCode": "JP",
@@ -4155,7 +4155,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-2982305",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2982305?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2982305?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4169,15 +4169,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/2982305?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/2982305?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1190115",
@@ -4185,7 +4185,7 @@
       "provider": "myrealtrip",
       "name": "호텔 비스타 프레미오 교토 가와라마치 스트리트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.405Z",
       "slug": "호텔-비스타-프레미오-교토-가와라마치-스트리트-1190115",
       "country": "일본",
       "countryCode": "JP",
@@ -4210,7 +4210,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1190115",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190115?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190115?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4224,15 +4224,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1190115?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1190115?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1476489",
@@ -4240,7 +4240,7 @@
       "provider": "myrealtrip",
       "name": "호텔 라이브맥스 교토 데라마치도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.405Z",
       "slug": "호텔-라이브맥스-교토-데라마치도리-1476489",
       "country": "일본",
       "countryCode": "JP",
@@ -4265,7 +4265,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1476489",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1476489?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1476489?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4279,15 +4279,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1476489?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1476489?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1183436",
@@ -4295,7 +4295,7 @@
       "provider": "myrealtrip",
       "name": "세이코로 료칸",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:30.405Z",
       "slug": "세이코로-료칸-1183436",
       "country": "일본",
       "countryCode": "JP",
@@ -4320,7 +4320,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1183436",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1183436?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1183436?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4333,15 +4333,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1183436?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1183436?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1293501",
@@ -4349,7 +4349,7 @@
       "provider": "myrealtrip",
       "name": "교토 그랑벨 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.320Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "교토-그랑벨-호텔-1293501",
       "country": "일본",
       "countryCode": "JP",
@@ -4374,7 +4374,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1293501",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1293501?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1293501?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4388,15 +4388,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1293501?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1293501?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1336516",
@@ -4404,7 +4404,7 @@
       "provider": "myrealtrip",
       "name": "더 원파이브 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "더-원파이브-교토-시조-1336516",
       "country": "일본",
       "countryCode": "JP",
@@ -4429,7 +4429,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1336516",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1336516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1336516?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4443,15 +4443,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1336516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1336516?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1550557",
@@ -4459,7 +4459,7 @@
       "provider": "myrealtrip",
       "name": "20 피스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "20-피스-1550557",
       "country": "일본",
       "countryCode": "JP",
@@ -4484,7 +4484,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1550557",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1550557?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1550557?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4497,15 +4497,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1550557?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1550557?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1184287",
@@ -4513,7 +4513,7 @@
       "provider": "myrealtrip",
       "name": "아파 호텔 교토 기온 엑셀런트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "아파-호텔-교토-기온-엑셀런트-1184287",
       "country": "일본",
       "countryCode": "JP",
@@ -4538,7 +4538,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1184287",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1184287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1184287?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4552,15 +4552,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1184287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1184287?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1511679",
@@ -4568,7 +4568,7 @@
       "provider": "myrealtrip",
       "name": "헨나 호텔 프리미어 교토 고조 가라스마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "헨나-호텔-프리미어-교토-고조-가라스마-1511679",
       "country": "일본",
       "countryCode": "JP",
@@ -4593,7 +4593,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1511679",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1511679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1511679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4607,15 +4607,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1511679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1511679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1483049",
@@ -4623,7 +4623,7 @@
       "provider": "myrealtrip",
       "name": "라쿠텐 스테이 어반 시조 가와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "라쿠텐-스테이-어반-시조-가와라마치-1483049",
       "country": "일본",
       "countryCode": "JP",
@@ -4648,7 +4648,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1483049",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1483049?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1483049?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4662,15 +4662,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1483049?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1483049?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3587667",
@@ -4678,7 +4678,7 @@
       "provider": "myrealtrip",
       "name": "Minn Kiyomizu Gojo",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "minn-kiyomizu-gojo-3587667",
       "country": "일본",
       "countryCode": "JP",
@@ -4703,7 +4703,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3587667",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587667?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587667?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4716,15 +4716,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3587667?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3587667?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3587587",
@@ -4732,7 +4732,7 @@
       "provider": "myrealtrip",
       "name": "와카 교토 카와라마치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "와카-교토-카와라마치-3587587",
       "country": "일본",
       "countryCode": "JP",
@@ -4757,7 +4757,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3587587",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587587?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3587587?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4771,15 +4771,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3587587?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3587587?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1264815",
@@ -4787,7 +4787,7 @@
       "provider": "myrealtrip",
       "name": "히푸미 료칸",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "히푸미-료칸-1264815",
       "country": "일본",
       "countryCode": "JP",
@@ -4812,7 +4812,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1264815",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1264815?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1264815?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4825,15 +4825,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1264815?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1264815?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1566960",
@@ -4841,7 +4841,7 @@
       "provider": "myrealtrip",
       "name": "칸데오 호텔 교토 가라스마 롯카쿠",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "칸데오-호텔-교토-가라스마-롯카쿠-1566960",
       "country": "일본",
       "countryCode": "JP",
@@ -4866,7 +4866,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1566960",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566960?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566960?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4880,15 +4880,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1566960?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1566960?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1122299",
@@ -4896,7 +4896,7 @@
       "provider": "myrealtrip",
       "name": "호텔 라이브맥스 교토 고조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "호텔-라이브맥스-교토-고조-1122299",
       "country": "일본",
       "countryCode": "JP",
@@ -4921,7 +4921,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1122299",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1122299?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1122299?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4935,15 +4935,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1122299?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1122299?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1204446",
@@ -4951,7 +4951,7 @@
       "provider": "myrealtrip",
       "name": "피스 호스텔 교토",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "피스-호스텔-교토-1204446",
       "country": "일본",
       "countryCode": "JP",
@@ -4976,7 +4976,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1204446",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204446?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204446?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4989,15 +4989,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1204446?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1204446?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-5871918",
@@ -5005,7 +5005,7 @@
       "provider": "myrealtrip",
       "name": "소테츠 프레사 인 교토 하치조구치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "소테츠-프레사-인-교토-하치조구치-5871918",
       "country": "일본",
       "countryCode": "JP",
@@ -5030,7 +5030,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-5871918",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5871918?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5871918?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5044,15 +5044,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5871918?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5871918?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1204564",
@@ -5060,7 +5060,7 @@
       "provider": "myrealtrip",
       "name": "교토 센추리 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "교토-센추리-호텔-1204564",
       "country": "일본",
       "countryCode": "JP",
@@ -5085,7 +5085,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1204564",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204564?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1204564?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5099,15 +5099,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1204564?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1204564?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1357113",
@@ -5115,7 +5115,7 @@
       "provider": "myrealtrip",
       "name": "미마루 교토 신마치 산조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "미마루-교토-신마치-산조-1357113",
       "country": "일본",
       "countryCode": "JP",
@@ -5140,7 +5140,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1357113",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1357113?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1357113?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5154,15 +5154,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1357113?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1357113?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-2791529",
@@ -5170,7 +5170,7 @@
       "provider": "myrealtrip",
       "name": "북 호텔 교토 쿠조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "북-호텔-교토-쿠조-2791529",
       "country": "일본",
       "countryCode": "JP",
@@ -5195,7 +5195,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-2791529",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2791529?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/2791529?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5209,15 +5209,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/2791529?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/2791529?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1568964",
@@ -5225,7 +5225,7 @@
       "provider": "myrealtrip",
       "name": "\"BON 교토 Kiyomizu\"",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "bon-교토-kiyomizu-1568964",
       "country": "일본",
       "countryCode": "JP",
@@ -5250,7 +5250,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1568964",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1568964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1568964?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5264,15 +5264,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1568964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1568964?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4450526",
@@ -5280,7 +5280,7 @@
       "provider": "myrealtrip",
       "name": "민 카라스마 고조 교토역",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "민-카라스마-고조-교토역-4450526",
       "country": "일본",
       "countryCode": "JP",
@@ -5305,7 +5305,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4450526",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4450526?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4450526?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5319,15 +5319,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4450526?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4450526?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-5632807",
@@ -5335,7 +5335,7 @@
       "provider": "myrealtrip",
       "name": "이비스 스타일스 교토 시조",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "이비스-스타일스-교토-시조-5632807",
       "country": "일본",
       "countryCode": "JP",
@@ -5360,7 +5360,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-5632807",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5632807?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5632807?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5374,15 +5374,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5632807?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5632807?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-7128788",
@@ -5390,7 +5390,7 @@
       "provider": "myrealtrip",
       "name": "더 챕터 교토, 트리뷰트 포트폴리오 호텔 바이 메리어트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:01.568Z",
+      "dataFetchedAt": "2026-09-20T01:04:31.977Z",
       "slug": "더-챕터-교토-트리뷰트-포트폴리오-호텔-바이-메리어트-7128788",
       "country": "일본",
       "countryCode": "JP",
@@ -5415,7 +5415,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-7128788",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/7128788?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/7128788?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5429,15 +5429,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/7128788?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/7128788?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3664174",
@@ -5493,6 +5493,61 @@
       ],
       "publishedAt": "2026-09-19",
       "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1215811",
+      "externalId": "1215811",
+      "provider": "myrealtrip",
+      "name": "호텔 그랑드 바흐 교토 셀렉트",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-20T01:04:30.404Z",
+      "slug": "호텔-그랑드-바흐-교토-셀렉트-1215811",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Kyoto",
+      "city": "교토",
+      "area": "",
+      "destinationId": "japan-kyoto",
+      "description": "교토 지역의 호텔 그랑드 바흐 교토 셀렉트 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Kyoto",
+        "city": "교토",
+        "area": ""
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1215811-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/11/01/ZGlj/PEW7zb6aLo.jpg?width=720",
+          "alt": "호텔 그랑드 바흐 교토 셀렉트 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1215811",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1215811?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 4,
+      "ratingAverage": 4.5,
+      "numberOfReviews": 1004,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1215811?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     }
   ]
 }

@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-19T09:30:06.832Z",
+  "generatedAt": "2026-09-20T01:04:55.537Z",
   "source": "myrealtrip",
-  "hotelCount": 100,
+  "hotelCount": 101,
   "search": {},
   "imageUsageAllowed": true,
   "hotels": [
@@ -11,7 +11,7 @@
       "provider": "myrealtrip",
       "name": "레쿠 오키나와 자탄 스파 & 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
       "country": "일본",
       "countryCode": "JP",
@@ -36,7 +36,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1499059",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -50,15 +50,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6196684",
@@ -66,7 +66,7 @@
       "provider": "myrealtrip",
       "name": "베셀 호텔 캄파나 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "베셀-호텔-캄파나-오키나와-6196684",
       "country": "일본",
       "countryCode": "JP",
@@ -91,7 +91,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6196684",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -105,15 +105,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6178095",
@@ -121,7 +121,7 @@
       "provider": "myrealtrip",
       "name": "호텔 JAL 시티 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-jal-시티-나하-6178095",
       "country": "일본",
       "countryCode": "JP",
@@ -146,7 +146,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6178095",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -160,15 +160,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206151",
@@ -176,7 +176,7 @@
       "provider": "myrealtrip",
       "name": "하얏트 리젠시 세라가키 아일랜드 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "하얏트-리젠시-세라가키-아일랜드-오키나와-6206151",
       "country": "일본",
       "countryCode": "JP",
@@ -201,7 +201,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206151",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -215,15 +215,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6183767",
@@ -231,7 +231,7 @@
       "provider": "myrealtrip",
       "name": "오리엔탈 호텔 오키나와 리조트 & 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "오리엔탈-호텔-오키나와-리조트-스파-6183767",
       "country": "일본",
       "countryCode": "JP",
@@ -256,7 +256,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6183767",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -270,15 +270,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4479180",
@@ -286,7 +286,7 @@
       "provider": "myrealtrip",
       "name": "더 네스트 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "더-네스트-나하-4479180",
       "country": "일본",
       "countryCode": "JP",
@@ -311,7 +311,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4479180",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -325,15 +325,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206176",
@@ -341,7 +341,7 @@
       "provider": "myrealtrip",
       "name": "더 부세나 테라스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "더-부세나-테라스-6206176",
       "country": "일본",
       "countryCode": "JP",
@@ -366,7 +366,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206176",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -380,15 +380,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1569706",
@@ -396,7 +396,7 @@
       "provider": "myrealtrip",
       "name": "네스트 호텔 나하 쿠모지",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "네스트-호텔-나하-쿠모지-1569706",
       "country": "일본",
       "countryCode": "JP",
@@ -421,7 +421,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1569706",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -435,15 +435,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1569706?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6203441",
@@ -451,7 +451,7 @@
       "provider": "myrealtrip",
       "name": "호텔 컬렉티브",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-컬렉티브-6203441",
       "country": "일본",
       "countryCode": "JP",
@@ -476,7 +476,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6203441",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -490,15 +490,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6203441?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6215679",
@@ -506,7 +506,7 @@
       "provider": "myrealtrip",
       "name": "류큐 호텔&리조트 나시로 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "류큐-호텔-리조트-나시로-비치-6215679",
       "country": "일본",
       "countryCode": "JP",
@@ -531,7 +531,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6215679",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -545,15 +545,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1107701",
@@ -561,7 +561,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 나하나 호텔 & 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "오키나와-나하나-호텔-스파-1107701",
       "country": "일본",
       "countryCode": "JP",
@@ -586,7 +586,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1107701",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -600,15 +600,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1107701?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1505018",
@@ -616,7 +616,7 @@
       "provider": "myrealtrip",
       "name": "힐튼 오키나와 세소코 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "힐튼-오키나와-세소코-리조트-1505018",
       "country": "일본",
       "countryCode": "JP",
@@ -641,7 +641,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1505018",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -655,15 +655,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1505018?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1474186",
@@ -671,7 +671,7 @@
       "provider": "myrealtrip",
       "name": "호텔 스트라타 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-스트라타-나하-1474186",
       "country": "일본",
       "countryCode": "JP",
@@ -696,7 +696,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1474186",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -710,15 +710,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1474186?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1245403",
@@ -726,7 +726,7 @@
       "provider": "myrealtrip",
       "name": "호텔 그레이서리 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-그레이서리-나하-1245403",
       "country": "일본",
       "countryCode": "JP",
@@ -751,7 +751,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1245403",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -765,15 +765,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1245403?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6199109",
@@ -781,7 +781,7 @@
       "provider": "myrealtrip",
       "name": "라 젠트 호텔 오키나와 차탄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "라-젠트-호텔-오키나와-차탄-6199109",
       "country": "일본",
       "countryCode": "JP",
@@ -806,7 +806,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6199109",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -820,15 +820,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6199109?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1277534",
@@ -836,7 +836,7 @@
       "provider": "myrealtrip",
       "name": "하얏트 리젠시 나하, 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "하얏트-리젠시-나하-오키나와-1277534",
       "country": "일본",
       "countryCode": "JP",
@@ -861,7 +861,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1277534",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -875,15 +875,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1277534?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206059",
@@ -891,7 +891,7 @@
       "provider": "myrealtrip",
       "name": "호텔 마하이나 웰니스 리조트 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-마하이나-웰니스-리조트-오키나와-6206059",
       "country": "일본",
       "countryCode": "JP",
@@ -916,7 +916,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206059",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -930,15 +930,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206059?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6215659",
@@ -946,7 +946,7 @@
       "provider": "myrealtrip",
       "name": "오끼나와 프린스 호텔 오션 뷰 기노완",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "오끼나와-프린스-호텔-오션-뷰-기노완-6215659",
       "country": "일본",
       "countryCode": "JP",
@@ -971,7 +971,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6215659",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -985,15 +985,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215659?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6215627",
@@ -1001,7 +1001,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아쿠아 시타 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-아쿠아-시타-나하-6215627",
       "country": "일본",
       "countryCode": "JP",
@@ -1026,7 +1026,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6215627",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1040,15 +1040,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215627?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6196600",
@@ -1056,7 +1056,7 @@
       "provider": "myrealtrip",
       "name": "호텔 몬토레 오키나와 스파 & 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.632Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "호텔-몬토레-오키나와-스파-리조트-6196600",
       "country": "일본",
       "countryCode": "JP",
@@ -1081,7 +1081,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6196600",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1095,15 +1095,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6196600?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1215613",
@@ -1111,7 +1111,7 @@
       "provider": "myrealtrip",
       "name": "오리온 호텔 모토부 리조트 & 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:48.224Z",
       "slug": "오리온-호텔-모토부-리조트-스파-1215613",
       "country": "일본",
       "countryCode": "JP",
@@ -1136,7 +1136,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1215613",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1215613?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1215613?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1150,15 +1150,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1215613?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1215613?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1251483",
@@ -1166,7 +1166,7 @@
       "provider": "myrealtrip",
       "name": "알몬트 호텔 나하 켄초마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "알몬트-호텔-나하-켄초마에-1251483",
       "country": "일본",
       "countryCode": "JP",
@@ -1191,7 +1191,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1251483",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1251483?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1251483?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1205,15 +1205,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1251483?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1251483?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1298670",
@@ -1221,7 +1221,7 @@
       "provider": "myrealtrip",
       "name": "JR KYUSHU HOTEL Blossom Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "jr-kyushu-hotel-blossom-naha-1298670",
       "country": "일본",
       "countryCode": "JP",
@@ -1246,7 +1246,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1298670",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1298670?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1298670?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1260,15 +1260,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1298670?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1298670?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6215713",
@@ -1276,7 +1276,7 @@
       "provider": "myrealtrip",
       "name": "프린스 스마트 인 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "프린스-스마트-인-나하-6215713",
       "country": "일본",
       "countryCode": "JP",
@@ -1301,7 +1301,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6215713",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215713?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215713?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1315,15 +1315,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215713?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215713?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206911",
@@ -1331,7 +1331,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 카리유시 비치 리조트 오션 스파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "오키나와-카리유시-비치-리조트-오션-스파-6206911",
       "country": "일본",
       "countryCode": "JP",
@@ -1356,7 +1356,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206911",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206911?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206911?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1370,15 +1370,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206911?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206911?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1194964",
@@ -1386,7 +1386,7 @@
       "provider": "myrealtrip",
       "name": "호텔 팜 로얄 리조트 국제거리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "호텔-팜-로얄-리조트-국제거리-1194964",
       "country": "일본",
       "countryCode": "JP",
@@ -1411,7 +1411,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1194964",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1194964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1194964?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1425,15 +1425,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1194964?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1194964?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206465",
@@ -1441,7 +1441,7 @@
       "provider": "myrealtrip",
       "name": "더 비치 타워 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "더-비치-타워-오키나와-6206465",
       "country": "일본",
       "countryCode": "JP",
@@ -1466,7 +1466,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206465",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206465?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206465?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1480,15 +1480,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206465?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206465?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206598",
@@ -1496,7 +1496,7 @@
       "provider": "myrealtrip",
       "name": "그랜드 머큐어 오키나와 케이프 잔파 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "그랜드-머큐어-오키나와-케이프-잔파-리조트-6206598",
       "country": "일본",
       "countryCode": "JP",
@@ -1521,7 +1521,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206598",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206598?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1535,15 +1535,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206598?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206598?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206141",
@@ -1551,7 +1551,7 @@
       "provider": "myrealtrip",
       "name": "할레쿨라니 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "할레쿨라니-오키나와-6206141",
       "country": "일본",
       "countryCode": "JP",
@@ -1576,7 +1576,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206141",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206141?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206141?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1590,15 +1590,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206141?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206141?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6196216",
@@ -1606,7 +1606,7 @@
       "provider": "myrealtrip",
       "name": "라젠트 호텔 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "라젠트-호텔-오키나와-나하-6196216",
       "country": "일본",
       "countryCode": "JP",
@@ -1631,7 +1631,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6196216",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196216?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196216?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1645,15 +1645,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6196216?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6196216?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6205925",
@@ -1661,7 +1661,7 @@
       "provider": "myrealtrip",
       "name": "리잔 시 파크 호텔 단차 베이",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "리잔-시-파크-호텔-단차-베이-6205925",
       "country": "일본",
       "countryCode": "JP",
@@ -1686,7 +1686,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6205925",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205925?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205925?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1700,15 +1700,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6205925?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6205925?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6199026",
@@ -1716,7 +1716,7 @@
       "provider": "myrealtrip",
       "name": "노보텔 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "노보텔-오키나와-나하-6199026",
       "country": "일본",
       "countryCode": "JP",
@@ -1741,7 +1741,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6199026",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199026?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6199026?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1755,15 +1755,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6199026?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6199026?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1213397",
@@ -1771,7 +1771,7 @@
       "provider": "myrealtrip",
       "name": "힐튼 오키나와 차탄 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "힐튼-오키나와-차탄-리조트-1213397",
       "country": "일본",
       "countryCode": "JP",
@@ -1796,7 +1796,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1213397",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1213397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1213397?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1810,15 +1810,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1213397?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1213397?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206021",
@@ -1826,7 +1826,7 @@
       "provider": "myrealtrip",
       "name": "라구나 가든 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "라구나-가든-호텔-6206021",
       "country": "일본",
       "countryCode": "JP",
@@ -1851,7 +1851,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206021",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206021?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206021?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1865,15 +1865,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206021?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206021?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1591472",
@@ -1881,7 +1881,7 @@
       "provider": "myrealtrip",
       "name": "네스트 호텔 나하니시",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "네스트-호텔-나하니시-1591472",
       "country": "일본",
       "countryCode": "JP",
@@ -1906,7 +1906,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1591472",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1591472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1591472?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1920,15 +1920,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1591472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1591472?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6203741",
@@ -1936,7 +1936,7 @@
       "provider": "myrealtrip",
       "name": "호텔 닛코 알리빌라",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "호텔-닛코-알리빌라-6203741",
       "country": "일본",
       "countryCode": "JP",
@@ -1961,7 +1961,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6203741",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203741?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6203741?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -1975,15 +1975,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6203741?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6203741?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1169786",
@@ -1991,7 +1991,7 @@
       "provider": "myrealtrip",
       "name": "루와지르 호텔 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "루와지르-호텔-나하-1169786",
       "country": "일본",
       "countryCode": "JP",
@@ -2016,7 +2016,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1169786",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1169786?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1169786?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2030,15 +2030,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1169786?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1169786?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1478556",
@@ -2046,7 +2046,7 @@
       "provider": "myrealtrip",
       "name": "아쿠아 팰리스 자탄 바이 콜디오 프리미엄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "아쿠아-팰리스-자탄-바이-콜디오-프리미엄-1478556",
       "country": "일본",
       "countryCode": "JP",
@@ -2071,7 +2071,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1478556",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1478556?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1478556?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2084,15 +2084,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1478556?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1478556?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-5816262",
@@ -2100,7 +2100,7 @@
       "provider": "myrealtrip",
       "name": "리가 로열 리조트 오키나와 차탄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "리가-로열-리조트-오키나와-차탄-5816262",
       "country": "일본",
       "countryCode": "JP",
@@ -2125,7 +2125,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-5816262",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5816262?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5816262?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2139,15 +2139,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5816262?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5816262?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1536394",
@@ -2155,7 +2155,7 @@
       "provider": "myrealtrip",
       "name": "히요리 오션 리조트 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:05.917Z",
+      "dataFetchedAt": "2026-09-20T01:04:49.684Z",
       "slug": "히요리-오션-리조트-오키나와-1536394",
       "country": "일본",
       "countryCode": "JP",
@@ -2180,7 +2180,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1536394",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1536394?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1536394?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2194,15 +2194,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1536394?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1536394?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6207208",
@@ -2210,7 +2210,7 @@
       "provider": "myrealtrip",
       "name": "알라 마하이나 콘도 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "알라-마하이나-콘도-호텔-6207208",
       "country": "일본",
       "countryCode": "JP",
@@ -2235,7 +2235,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6207208",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207208?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2249,15 +2249,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6207208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6207208?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1211831",
@@ -2265,7 +2265,7 @@
       "provider": "myrealtrip",
       "name": "팰리스 인 문 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "팰리스-인-문-비치-1211831",
       "country": "일본",
       "countryCode": "JP",
@@ -2290,7 +2290,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1211831",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1211831?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1211831?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2304,15 +2304,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1211831?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1211831?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1460073",
@@ -2320,7 +2320,7 @@
       "provider": "myrealtrip",
       "name": "도큐스테이 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "도큐스테이-오키나와-나하-1460073",
       "country": "일본",
       "countryCode": "JP",
@@ -2345,7 +2345,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1460073",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460073?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460073?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2359,15 +2359,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1460073?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1460073?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1107731",
@@ -2375,7 +2375,7 @@
       "provider": "myrealtrip",
       "name": "ANA 인터컨티넨탈 만자 비치 리조트 바이 IHG",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "ana-인터컨티넨탈-만자-비치-리조트-바이-ihg-1107731",
       "country": "일본",
       "countryCode": "JP",
@@ -2400,7 +2400,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1107731",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107731?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1107731?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2414,15 +2414,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1107731?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1107731?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1449283",
@@ -2430,7 +2430,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 하버뷰 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "오키나와-하버뷰-호텔-1449283",
       "country": "일본",
       "countryCode": "JP",
@@ -2455,7 +2455,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1449283",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1449283?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1449283?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2469,15 +2469,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1449283?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1449283?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1219297",
@@ -2485,7 +2485,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아베스트 나하 코쿠사이도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "호텔-아베스트-나하-코쿠사이도리-1219297",
       "country": "일본",
       "countryCode": "JP",
@@ -2510,7 +2510,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1219297",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1219297?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1219297?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2524,15 +2524,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1219297?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1219297?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4089334",
@@ -2540,7 +2540,7 @@
       "provider": "myrealtrip",
       "name": "Royal Hotel OKINAWA ZANPAMISAKI",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "royal-hotel-okinawa-zanpamisaki-4089334",
       "country": "일본",
       "countryCode": "JP",
@@ -2565,7 +2565,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4089334",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4089334?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4089334?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2579,15 +2579,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4089334?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4089334?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1321298",
@@ -2595,7 +2595,7 @@
       "provider": "myrealtrip",
       "name": "더블트리 바이 힐튼 오키나와 자탄 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "더블트리-바이-힐튼-오키나와-자탄-리조트-1321298",
       "country": "일본",
       "countryCode": "JP",
@@ -2620,7 +2620,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1321298",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1321298?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1321298?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2634,15 +2634,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1321298?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1321298?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3693474",
@@ -2650,7 +2650,7 @@
       "provider": "myrealtrip",
       "name": "Hotel Grand Consort Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "hotel-grand-consort-naha-3693474",
       "country": "일본",
       "countryCode": "JP",
@@ -2675,7 +2675,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3693474",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3693474?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3693474?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2689,15 +2689,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3693474?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3693474?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1477410",
@@ -2705,7 +2705,7 @@
       "provider": "myrealtrip",
       "name": "호시노야 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "호시노야-오키나와-1477410",
       "country": "일본",
       "countryCode": "JP",
@@ -2730,7 +2730,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1477410",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1477410?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1477410?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2744,15 +2744,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1477410?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1477410?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6207107",
@@ -2760,7 +2760,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 그랜드 메르 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "오키나와-그랜드-메르-리조트-6207107",
       "country": "일본",
       "countryCode": "JP",
@@ -2785,7 +2785,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6207107",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207107?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207107?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2799,15 +2799,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6207107?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6207107?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6207029",
@@ -2815,7 +2815,7 @@
       "provider": "myrealtrip",
       "name": "오쿠마 프라이빗 비치 & 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "오쿠마-프라이빗-비치-리조트-6207029",
       "country": "일본",
       "countryCode": "JP",
@@ -2840,7 +2840,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6207029",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207029?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6207029?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2854,15 +2854,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6207029?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6207029?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1249348",
@@ -2870,7 +2870,7 @@
       "provider": "myrealtrip",
       "name": "류큐 온센 세나가지마 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "류큐-온센-세나가지마-호텔-1249348",
       "country": "일본",
       "countryCode": "JP",
@@ -2895,7 +2895,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1249348",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1249348?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1249348?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2909,15 +2909,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1249348?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1249348?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1316277",
@@ -2925,7 +2925,7 @@
       "provider": "myrealtrip",
       "name": "티사지 호텔 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "티사지-호텔-나하-1316277",
       "country": "일본",
       "countryCode": "JP",
@@ -2950,7 +2950,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1316277",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1316277?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1316277?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -2964,15 +2964,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1316277?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1316277?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3586184",
@@ -2980,7 +2980,7 @@
       "provider": "myrealtrip",
       "name": "Southwest Grand Hotel",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "southwest-grand-hotel-3586184",
       "country": "일본",
       "countryCode": "JP",
@@ -3005,7 +3005,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3586184",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3586184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3586184?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3019,15 +3019,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3586184?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3586184?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1183011",
@@ -3035,7 +3035,7 @@
       "provider": "myrealtrip",
       "name": "류큐 오리온 호텔, 나하 국제거리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "류큐-오리온-호텔-나하-국제거리-1183011",
       "country": "일본",
       "countryCode": "JP",
@@ -3060,7 +3060,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1183011",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1183011?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1183011?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3074,15 +3074,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1183011?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1183011?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3690287",
@@ -3090,7 +3090,7 @@
       "provider": "myrealtrip",
       "name": "풀 빌라 야가지 아일랜드 바이 콜디오 프리미엄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "풀-빌라-야가지-아일랜드-바이-콜디오-프리미엄-3690287",
       "country": "일본",
       "countryCode": "JP",
@@ -3115,7 +3115,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3690287",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3690287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3690287?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3128,15 +3128,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3690287?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3690287?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1340796",
@@ -3144,7 +3144,7 @@
       "provider": "myrealtrip",
       "name": "선셋 비치 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "선셋-비치-호텔-1340796",
       "country": "일본",
       "countryCode": "JP",
@@ -3169,7 +3169,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1340796",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1340796?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1340796?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3183,15 +3183,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1340796?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1340796?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1442634",
@@ -3199,7 +3199,7 @@
       "provider": "myrealtrip",
       "name": "선셋 리조트 캄푸",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "선셋-리조트-캄푸-1442634",
       "country": "일본",
       "countryCode": "JP",
@@ -3224,7 +3224,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1442634",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1442634?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1442634?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3237,15 +3237,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1442634?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1442634?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1341257",
@@ -3253,7 +3253,7 @@
       "provider": "myrealtrip",
       "name": "와이즈 캐빈 & 호텔 나하 코쿠사이 도리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.243Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "와이즈-캐빈-호텔-나하-코쿠사이-도리-1341257",
       "country": "일본",
       "countryCode": "JP",
@@ -3278,7 +3278,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1341257",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1341257?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1341257?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3292,15 +3292,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1341257?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1341257?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1203208",
@@ -3308,7 +3308,7 @@
       "provider": "myrealtrip",
       "name": "리가 로열 그랜 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "리가-로열-그랜-오키나와-1203208",
       "country": "일본",
       "countryCode": "JP",
@@ -3333,7 +3333,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1203208",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1203208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1203208?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3347,15 +3347,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1203208?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1203208?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6096842",
@@ -3363,7 +3363,7 @@
       "provider": "myrealtrip",
       "name": "THE SENAGAJIMA STORY LINE",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "the-senagajima-story-line-6096842",
       "country": "일본",
       "countryCode": "JP",
@@ -3388,7 +3388,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6096842",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6096842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6096842?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3402,15 +3402,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6096842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6096842?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206127",
@@ -3418,7 +3418,7 @@
       "provider": "myrealtrip",
       "name": "베스트 웨스턴 오키나와 코우키 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "베스트-웨스턴-오키나와-코우키-비치-6206127",
       "country": "일본",
       "countryCode": "JP",
@@ -3443,7 +3443,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206127",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206127?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206127?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3457,15 +3457,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206127?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206127?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4361093",
@@ -3473,7 +3473,7 @@
       "provider": "myrealtrip",
       "name": "Chatan Beach Side Condominium Hotel Monpa",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "chatan-beach-side-condominium-hotel-monpa-4361093",
       "country": "일본",
       "countryCode": "JP",
@@ -3498,7 +3498,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4361093",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4361093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4361093?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3512,15 +3512,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4361093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4361093?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1552331",
@@ -3528,7 +3528,7 @@
       "provider": "myrealtrip",
       "name": "Hewitt Resort Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "hewitt-resort-naha-1552331",
       "country": "일본",
       "countryCode": "JP",
@@ -3553,7 +3553,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1552331",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1552331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1552331?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3567,15 +3567,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1552331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1552331?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1171753",
@@ -3583,7 +3583,7 @@
       "provider": "myrealtrip",
       "name": "카후 리조트 후차쿠 콘도 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "카후-리조트-후차쿠-콘도-호텔-1171753",
       "country": "일본",
       "countryCode": "JP",
@@ -3608,7 +3608,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1171753",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1171753?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1171753?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3622,15 +3622,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1171753?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1171753?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1198409",
@@ -3638,7 +3638,7 @@
       "provider": "myrealtrip",
       "name": "더 문 비치 뮤지엄 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "더-문-비치-뮤지엄-리조트-1198409",
       "country": "일본",
       "countryCode": "JP",
@@ -3663,7 +3663,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1198409",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1198409?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1198409?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3677,15 +3677,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1198409?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1198409?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1210282",
@@ -3693,7 +3693,7 @@
       "provider": "myrealtrip",
       "name": "호텔 유가후 인 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "호텔-유가후-인-오키나와-1210282",
       "country": "일본",
       "countryCode": "JP",
@@ -3718,7 +3718,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1210282",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1210282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1210282?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3732,15 +3732,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1210282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1210282?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1626852",
@@ -3748,7 +3748,7 @@
       "provider": "myrealtrip",
       "name": "BEB5 오키나와 세라가키 바이 호시노 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "beb5-오키나와-세라가키-바이-호시노-리조트-1626852",
       "country": "일본",
       "countryCode": "JP",
@@ -3773,7 +3773,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1626852",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1626852?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1626852?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3787,15 +3787,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1626852?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1626852?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6215621",
@@ -3803,7 +3803,7 @@
       "provider": "myrealtrip",
       "name": "호텔 앤드룸스 나하 포트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "호텔-앤드룸스-나하-포트-6215621",
       "country": "일본",
       "countryCode": "JP",
@@ -3828,7 +3828,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6215621",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215621?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215621?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3842,15 +3842,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215621?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215621?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6205893",
@@ -3858,7 +3858,7 @@
       "provider": "myrealtrip",
       "name": "더 로열 파크 호텔 아이코닉 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "더-로열-파크-호텔-아이코닉-나하-6205893",
       "country": "일본",
       "countryCode": "JP",
@@ -3883,7 +3883,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6205893",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205893?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205893?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3897,15 +3897,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6205893?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6205893?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1667623",
@@ -3913,7 +3913,7 @@
       "provider": "myrealtrip",
       "name": "호텔 알라 쿠주 오키나와",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "호텔-알라-쿠주-오키나와-1667623",
       "country": "일본",
       "countryCode": "JP",
@@ -3938,7 +3938,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1667623",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1667623?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1667623?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -3952,15 +3952,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1667623?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1667623?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1340472",
@@ -3968,7 +3968,7 @@
       "provider": "myrealtrip",
       "name": "코코셔스 몬파",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "코코셔스-몬파-1340472",
       "country": "일본",
       "countryCode": "JP",
@@ -3993,7 +3993,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1340472",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1340472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1340472?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4007,15 +4007,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1340472?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1340472?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6205908",
@@ -4023,7 +4023,7 @@
       "provider": "myrealtrip",
       "name": "REF Okinawa Arena by VESSEL HOTELS",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "ref-okinawa-arena-by-vessel-hotels-6205908",
       "country": "일본",
       "countryCode": "JP",
@@ -4048,7 +4048,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6205908",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205908?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6205908?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4062,15 +4062,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6205908?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6205908?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1169077",
@@ -4078,7 +4078,7 @@
       "provider": "myrealtrip",
       "name": "오키나와 카리유시 리조트 엑시즈 온나",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "오키나와-카리유시-리조트-엑시즈-온나-1169077",
       "country": "일본",
       "countryCode": "JP",
@@ -4103,7 +4103,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1169077",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1169077?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1169077?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4117,15 +4117,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1169077?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1169077?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1161238",
@@ -4133,7 +4133,7 @@
       "provider": "myrealtrip",
       "name": "컴포트 호텔 나하 프레펙추얼 오피스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.673Z",
       "slug": "컴포트-호텔-나하-프레펙추얼-오피스-1161238",
       "country": "일본",
       "countryCode": "JP",
@@ -4158,7 +4158,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1161238",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1161238?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1161238?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4172,15 +4172,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1161238?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1161238?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-3683601",
@@ -4188,7 +4188,7 @@
       "provider": "myrealtrip",
       "name": "Private Condo Kourijima by Coldio Smart Resort",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.672Z",
       "slug": "private-condo-kourijima-by-coldio-smart-resort-3683601",
       "country": "일본",
       "countryCode": "JP",
@@ -4213,7 +4213,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-3683601",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3683601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/3683601?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4227,15 +4227,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/3683601?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/3683601?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-5735331",
@@ -4243,7 +4243,7 @@
       "provider": "myrealtrip",
       "name": "토요코인 오키나와 나하 아사히바시 에키마에",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.673Z",
       "slug": "토요코인-오키나와-나하-아사히바시-에키마에-5735331",
       "country": "일본",
       "countryCode": "JP",
@@ -4268,7 +4268,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-5735331",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5735331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5735331?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4282,15 +4282,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/5735331?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/5735331?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1174382",
@@ -4298,7 +4298,7 @@
       "provider": "myrealtrip",
       "name": "더 나하 테라스",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "더-나하-테라스-1174382",
       "country": "일본",
       "countryCode": "JP",
@@ -4323,7 +4323,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1174382",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1174382?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1174382?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4337,15 +4337,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1174382?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1174382?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1295830",
@@ -4353,7 +4353,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아자트  나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.529Z",
+      "dataFetchedAt": "2026-09-20T01:04:52.673Z",
       "slug": "호텔-아자트-나하-1295830",
       "country": "일본",
       "countryCode": "JP",
@@ -4378,7 +4378,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1295830",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295830?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295830?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4392,15 +4392,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1295830?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1295830?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-4081094",
@@ -4408,7 +4408,7 @@
       "provider": "myrealtrip",
       "name": "Loisir Spa Tower Naha",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:51.392Z",
       "slug": "loisir-spa-tower-naha-4081094",
       "country": "일본",
       "countryCode": "JP",
@@ -4433,7 +4433,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-4081094",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4081094?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4081094?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4447,15 +4447,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/4081094?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/4081094?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6206158",
@@ -4463,7 +4463,7 @@
       "provider": "myrealtrip",
       "name": "쉐라톤 오키나와 선마리나 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "쉐라톤-오키나와-선마리나-리조트-6206158",
       "country": "일본",
       "countryCode": "JP",
@@ -4488,7 +4488,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6206158",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206158?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206158?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4502,15 +4502,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6206158?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6206158?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1181933",
@@ -4518,7 +4518,7 @@
       "provider": "myrealtrip",
       "name": "호텔 아트 스테이 나하 국제거리",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "호텔-아트-스테이-나하-국제거리-1181933",
       "country": "일본",
       "countryCode": "JP",
@@ -4543,7 +4543,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1181933",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181933?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181933?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4557,15 +4557,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1181933?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1181933?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1472967",
@@ -4573,7 +4573,7 @@
       "provider": "myrealtrip",
       "name": "라핀 미하마 레지던스 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "라핀-미하마-레지던스-호텔-1472967",
       "country": "일본",
       "countryCode": "JP",
@@ -4598,7 +4598,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1472967",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1472967?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1472967?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4611,15 +4611,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1472967?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1472967?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6338987",
@@ -4627,7 +4627,7 @@
       "provider": "myrealtrip",
       "name": "니시테츠 리조트 인 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "니시테츠-리조트-인-나하-6338987",
       "country": "일본",
       "countryCode": "JP",
@@ -4652,7 +4652,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6338987",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6338987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6338987?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4666,15 +4666,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6338987?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6338987?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1578228",
@@ -4682,7 +4682,7 @@
       "provider": "myrealtrip",
       "name": "피닉스 파크 호텔",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "피닉스-파크-호텔-1578228",
       "country": "일본",
       "countryCode": "JP",
@@ -4707,7 +4707,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1578228",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1578228?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1578228?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4721,15 +4721,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1578228?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1578228?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-6215566",
@@ -4737,7 +4737,7 @@
       "provider": "myrealtrip",
       "name": "호텔 레솔 트리니티 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "호텔-레솔-트리니티-나하-6215566",
       "country": "일본",
       "countryCode": "JP",
@@ -4762,7 +4762,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-6215566",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215566?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215566?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4776,15 +4776,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/6215566?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/6215566?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1196267",
@@ -4792,7 +4792,7 @@
       "provider": "myrealtrip",
       "name": "더 테라스 클럽 웰니스 탈라소 앳 부세나",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "더-테라스-클럽-웰니스-탈라소-앳-부세나-1196267",
       "country": "일본",
       "countryCode": "JP",
@@ -4817,7 +4817,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1196267",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1196267?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1196267?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4831,15 +4831,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1196267?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1196267?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1203232",
@@ -4847,7 +4847,7 @@
       "provider": "myrealtrip",
       "name": "타타미 노 야도 차탄 미하마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "타타미-노-야도-차탄-미하마-1203232",
       "country": "일본",
       "countryCode": "JP",
@@ -4872,7 +4872,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1203232",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1203232?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1203232?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4886,15 +4886,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1203232?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1203232?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1195243",
@@ -4902,7 +4902,7 @@
       "provider": "myrealtrip",
       "name": "머큐어 오키나와 나하",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "머큐어-오키나와-나하-1195243",
       "country": "일본",
       "countryCode": "JP",
@@ -4927,7 +4927,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1195243",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1195243?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1195243?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4941,15 +4941,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1195243?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1195243?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1165514",
@@ -4957,7 +4957,7 @@
       "provider": "myrealtrip",
       "name": "로열 뷰 호텔 츄라우미 - 츄라우미와 가장 가까움",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "로열-뷰-호텔-츄라우미-츄라우미와-가장-가까움-1165514",
       "country": "일본",
       "countryCode": "JP",
@@ -4982,7 +4982,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1165514",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1165514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1165514?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -4996,15 +4996,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1165514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1165514?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1851316",
@@ -5012,7 +5012,7 @@
       "provider": "myrealtrip",
       "name": "리에타 나카야마",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "리에타-나카야마-1851316",
       "country": "일본",
       "countryCode": "JP",
@@ -5037,7 +5037,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1851316",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1851316?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1851316?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5051,15 +5051,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1851316?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1851316?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1220735",
@@ -5067,7 +5067,7 @@
       "provider": "myrealtrip",
       "name": "호텔 나하 시티 -국제 거리-",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "호텔-나하-시티-국제-거리-1220735",
       "country": "일본",
       "countryCode": "JP",
@@ -5092,7 +5092,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1220735",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1220735?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1220735?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5106,15 +5106,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1220735?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1220735?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1286468",
@@ -5122,7 +5122,7 @@
       "provider": "myrealtrip",
       "name": "우미노 료테이 오키나와 나카마소우",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "우미노-료테이-오키나와-나카마소우-1286468",
       "country": "일본",
       "countryCode": "JP",
@@ -5147,7 +5147,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1286468",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1286468?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1286468?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5160,15 +5160,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1286468?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1286468?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1514088",
@@ -5176,7 +5176,7 @@
       "provider": "myrealtrip",
       "name": "카리유시 LCH 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "카리유시-lch-리조트-1514088",
       "country": "일본",
       "countryCode": "JP",
@@ -5201,7 +5201,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1514088",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1514088?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1514088?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5215,15 +5215,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1514088?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1514088?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1290767",
@@ -5231,7 +5231,7 @@
       "provider": "myrealtrip",
       "name": "풀 빌라 이마도마리 바이 콜디오 프리미엄",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "풀-빌라-이마도마리-바이-콜디오-프리미엄-1290767",
       "country": "일본",
       "countryCode": "JP",
@@ -5256,7 +5256,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1290767",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1290767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1290767?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5269,15 +5269,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1290767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1290767?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1262754",
@@ -5285,7 +5285,7 @@
       "provider": "myrealtrip",
       "name": "스마일 호텔 나하 시티 리조트",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "스마일-호텔-나하-시티-리조트-1262754",
       "country": "일본",
       "countryCode": "JP",
@@ -5310,7 +5310,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1262754",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1262754?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1262754?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5324,15 +5324,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1262754?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1262754?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1108217",
@@ -5340,7 +5340,7 @@
       "provider": "myrealtrip",
       "name": "더블트리 바이 힐튼 나하 슈리 캐슬",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "더블트리-바이-힐튼-나하-슈리-캐슬-1108217",
       "country": "일본",
       "countryCode": "JP",
@@ -5365,7 +5365,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1108217",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1108217?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1108217?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5379,15 +5379,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1108217?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1108217?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1217760",
@@ -5395,7 +5395,7 @@
       "provider": "myrealtrip",
       "name": "호텔 미유키 비치",
       "dataSource": "myrealtrip",
-      "dataFetchedAt": "2026-09-19T09:30:06.831Z",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
       "slug": "호텔-미유키-비치-1217760",
       "country": "일본",
       "countryCode": "JP",
@@ -5420,7 +5420,7 @@
           "type": "hero",
           "hotelId": "myrealtrip-1217760",
           "credit": "MyRealTrip Partner API",
-          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1217760?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1217760?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
           "rightsConfirmed": true
         }
@@ -5434,15 +5434,15 @@
       "affiliateLinks": [
         {
           "provider": "myrealtrip",
-          "url": "https://accommodation.myrealtrip.com/union/products/1217760?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+          "url": "https://accommodation.myrealtrip.com/union/products/1217760?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
           "label": "마이리얼트립에서 호텔 확인",
           "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
           "rel": "sponsored",
           "external": true
         }
       ],
-      "publishedAt": "2026-09-19",
-      "updatedAt": "2026-09-19"
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     },
     {
       "id": "myrealtrip-1353033",
@@ -5498,6 +5498,61 @@
       ],
       "publishedAt": "2026-09-19",
       "updatedAt": "2026-09-19"
+    },
+    {
+      "id": "myrealtrip-1478966",
+      "externalId": "1478966",
+      "provider": "myrealtrip",
+      "name": "아쿠아리조트 인 차탄",
+      "dataSource": "myrealtrip",
+      "dataFetchedAt": "2026-09-20T01:04:55.536Z",
+      "slug": "아쿠아리조트-인-차탄-1478966",
+      "country": "일본",
+      "countryCode": "JP",
+      "prefecture": "Okinawa",
+      "city": "오키나와",
+      "area": "",
+      "destinationId": "japan-okinawa",
+      "description": "오키나와 지역의 아쿠아리조트 인 차탄 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.",
+      "location": {
+        "country": "일본",
+        "countryCode": "JP",
+        "prefecture": "Okinawa",
+        "city": "오키나와",
+        "area": ""
+      },
+      "images": [
+        {
+          "id": "myrealtrip-1478966-hero",
+          "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/03/09/FGJ4/qFlUZYAjsO.jpg?width=720",
+          "alt": "아쿠아리조트 인 차탄 대표 이미지",
+          "source": "myrealtrip",
+          "type": "hero",
+          "hotelId": "myrealtrip-1478966",
+          "credit": "MyRealTrip Partner API",
+          "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1478966?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+          "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+          "rightsConfirmed": true
+        }
+      ],
+      "facilities": [],
+      "restaurants": [],
+      "accommodationType": "호텔",
+      "starRating": 3,
+      "ratingAverage": 4.6,
+      "numberOfReviews": 87,
+      "affiliateLinks": [
+        {
+          "provider": "myrealtrip",
+          "url": "https://accommodation.myrealtrip.com/union/products/1478966?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+          "label": "마이리얼트립에서 호텔 확인",
+          "description": "최신 객실 요금과 예약 조건은 마이리얼트립에서 확인하세요.",
+          "rel": "sponsored",
+          "external": true
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "updatedAt": "2026-09-20"
     }
   ]
 }

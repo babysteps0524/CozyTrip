@@ -1,13 +1,13 @@
 {
   "destinationId": "japan-okinawa",
-  "postCount": 6,
+  "postCount": 8,
   "posts": [
     {
       "id": "hotel-post-myrealtrip-1499059",
       "category": "hotel",
-      "title": "레쿠 오키나와 자탄 스파 & 리조트 - 오키나와",
+      "title": "일본 오키나와 레쿠 오키나와 자탄 스파 & 리조트 정보",
       "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
-      "description": "오키나와에 위치한 레쿠 오키나와 자탄 스파 & 리조트에서 편안한 휴식을 즐겨보세요.",
+      "description": "일본 오키나와에 위치한 4성급 호텔 레쿠 오키나와 자탄 스파 & 리조트의 확인된 기본 정보입니다.",
       "destinationId": "japan-okinawa",
       "hotelId": "myrealtrip-1499059",
       "blocks": [
@@ -21,100 +21,82 @@
             "type": "hero",
             "hotelId": "myrealtrip-1499059",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1499059?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "레쿠 오키나와 자탄 스파 & 리조트는 일본 오키나와 지역에 위치한 4성급 호텔입니다. 이곳은 편안한 숙소와 함께 특별한 휴식 경험을 제공합니다."
+          "text": "레쿠 오키나와 자탄 스파 & 리조트는 일본 오키나와(Okinawa)에 위치하고 있습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 성급은 4성급입니다. 영문명 정보는 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "체크인 및 체크아웃 정보"
         },
         {
           "type": "paragraph",
-          "text": "레쿠 오키나와 자탄 스파 & 리조트는 오키나와의 아름다운 자연 속에 자리 잡고 있습니다. 이곳은 여행객들에게 편안한 숙박 환경을 제공하며, 다양한 편의 시설과 서비스를 갖추고 있습니다."
+          "text": "레쿠 오키나와 자탄 스파 & 리조트의 체크인 시간과 체크아웃 시간은 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "부대시설 정보"
         },
         {
           "type": "paragraph",
-          "text": "호텔은 현대적인 디자인과 편안한 분위기를 자랑합니다. 오키나와의 매력을 느낄 수 있는 다양한 객실 옵션이 마련되어 있습니다."
+          "text": "호텔 내 부대시설 목록은 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "식음료 시설 정보"
         },
         {
           "type": "paragraph",
-          "text": "오키나와 지역은 아름다운 해변과 다양한 관광지로 유명합니다. 레쿠 오키나와 자탄 스파 & 리조트에 머무는 동안 이 지역의 자연과 문화를 경험해 보세요."
+          "text": "호텔 내 레스토랑 및 식음료 시설 정보는 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "편의 시설"
+          "text": "위치 및 주변 정보"
         },
         {
           "type": "paragraph",
-          "text": "호텔 내에는 다양한 편의 시설이 마련되어 있어 여행객들이 편리하게 이용할 수 있습니다. 세심한 서비스와 함께 편안한 휴식을 제공하는 공간입니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "레쿠 오키나와 자탄 스파 & 리조트의 체크인 및 체크아웃 시간은 무엇인가요?"
+          "text": "숙소는 일본 오키나와 지역에 위치해 있습니다."
         },
         {
           "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에서 수영장이나 스파 시설이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "수영장이나 스파 시설에 대한 정보는 제공되지 않았습니다."
+          "text": "상세 주소, 인근 역 정보, 주변 관광지 관련 사항은 제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
+        "일본",
         "오키나와",
-        "리조트",
+        "Okinawa",
         "호텔",
-        "휴식",
-        "여행"
+        "4성급",
+        "레쿠 오키나와 자탄 스파 & 리조트"
       ]
     },
     {
       "id": "hotel-post-myrealtrip-6196684",
       "category": "hotel",
-      "title": "베셀 호텔 캄파나 오키나와 - 일본 오키나와",
+      "title": "일본 오키나와 베셀 호텔 캄파나 오키나와 정보",
       "slug": "베셀-호텔-캄파나-오키나와-6196684",
-      "description": "오키나와에 위치한 베셀 호텔 캄파나 오키나와는 편안한 숙소를 제공합니다.",
+      "description": "일본 오키나와에 위치한 4성급 호텔인 베셀 호텔 캄파나 오키나와의 기본 정보입니다.",
       "destinationId": "japan-okinawa",
       "hotelId": "myrealtrip-6196684",
       "blocks": [
@@ -128,100 +110,82 @@
             "type": "hero",
             "hotelId": "myrealtrip-6196684",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6196684?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "베셀 호텔 캄파나 오키나와는 일본 오키나와 지역에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 시설과 편안한 객실을 갖추고 있습니다."
+          "text": "베셀 호텔 캄파나 오키나와는 일본 Okinawa 오키나와에 위치해 있습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 성급은 4성급으로 등록되어 있습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "체크인 및 체크아웃"
         },
         {
           "type": "paragraph",
-          "text": "베셀 호텔 캄파나 오키나와는 오키나와 지역의 중심부에 위치하여 편리한 접근성을 자랑합니다. 이곳은 현대적인 디자인과 편안한 분위기로 여행객들에게 인기가 많습니다."
+          "text": "베셀 호텔 캄파나 오키나와의 체크인 시간과 체크아웃 시간은 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "부대시설 정보"
         },
         {
           "type": "paragraph",
-          "text": "호텔의 객실은 깔끔하고 아늑하게 꾸며져 있어 편안한 휴식을 제공합니다. 다양한 편의 시설이 마련되어 있어 여행 중에도 불편함이 없습니다."
+          "text": "수영장, 피트니스, 사우나 등 호텔 내 부대시설 정보는 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "식음료 서비스"
         },
         {
           "type": "paragraph",
-          "text": "오키나와 지역은 아름다운 자연경관과 다양한 관광명소로 유명합니다. 호텔 근처에서 오키나와의 매력을 만끽할 수 있는 기회를 제공합니다."
+          "text": "호텔 내 레스토랑 운영 여부 및 조식 서비스 관련 내용은 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "편리한 위치"
+          "text": "위치 및 대중교통"
         },
         {
           "type": "paragraph",
-          "text": "베셀 호텔 캄파나 오키나와는 주요 교통편과 가까워 이동이 편리합니다. 여행 계획 시 유용한 위치에 자리하고 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
+          "text": "숙소는 일본 Okinawa 오키나와에 위치해 있습니다."
         },
         {
           "type": "paragraph",
-          "text": "정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 정보는 제공되지 않았습니다."
+          "text": "인근 역 이름이나 상세 도보 및 이동 시간 정보는 제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
+        "일본",
+        "Okinawa",
         "오키나와",
         "호텔",
-        "숙소",
-        "여행",
-        "일본"
+        "4성급",
+        "베셀 호텔 캄파나 오키나와"
       ]
     },
     {
       "id": "hotel-post-myrealtrip-6178095",
       "category": "hotel",
-      "title": "호텔 JAL 시티 나하 - 오키나와",
+      "title": "호텔 JAL 시티 나하 - 오키나와 호텔",
       "slug": "호텔-jal-시티-나하-6178095",
-      "description": "오키나와에 위치한 호텔 JAL 시티 나하에서 편안한 숙박을 경험해보세요.",
+      "description": "호텔 JAL 시티 나하은 일본 오키나와에 위치한 4성급 호텔로, 마이리얼트립 숙소 검색 API에 등록된 정보를 기반으로 합니다.",
       "destinationId": "japan-okinawa",
       "hotelId": "myrealtrip-6178095",
       "blocks": [
@@ -235,14 +199,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-6178095",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6178095?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 JAL 시티 나하는 오키나와 지역에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 편의 시설과 쾌적한 객실을 제공하여 여행객들에게 안락한 휴식을 선사합니다."
         },
         {
           "type": "heading",
@@ -251,24 +211,34 @@
         },
         {
           "type": "paragraph",
-          "text": "호텔 JAL 시티 나하는 오키나와의 중심부에 위치하여 여행객들에게 편리한 접근성을 제공합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "현대적인 디자인과 편안한 분위기로 다양한 고객층에게 사랑받고 있습니다."
+          "text": "호텔 JAL 시티 나하(호텔 JAL 시티 나하)는 일본 오키나와에 위치한 4성급 호텔입니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "위치"
         },
         {
           "type": "paragraph",
-          "text": "이 호텔은 다양한 편의 시설을 갖추고 있으며, 쾌적한 객실에서 편안한 휴식을 취할 수 있습니다."
+          "text": "호텔은 오키나와 시에 위치합니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 유형 및 등급"
         },
         {
           "type": "paragraph",
-          "text": "호텔의 위치는 관광 명소와 가까워 여행에 적합합니다."
+          "text": "숙소 유형은 호텔이며, 별점은 4성급으로 제공됩니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
@@ -277,79 +247,26 @@
         },
         {
           "type": "paragraph",
-          "text": "호텔 내 식당 및 바에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 지역의 다양한 식사 옵션을 탐색하는 것도 좋은 선택입니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "교통 편의성"
+          "text": "체크인 및 체크아웃"
         },
         {
           "type": "paragraph",
-          "text": "호텔 JAL 시티 나하는 오키나와의 주요 교통 수단과 가까운 위치에 있습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "교통 정보는 제공되지 않았으나, 지역 내 이동이 용이할 것으로 예상됩니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "주변 관광지"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "오키나와의 아름다운 자연과 문화유산을 경험해보시길 추천합니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인/체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 수영장이나 헬스장이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔의 시설에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "오키나와",
+        "일본",
         "호텔",
-        "숙박",
-        "여행",
-        "관광"
+        "4성급",
+        "호텔 JAL 시티 나하"
       ]
     },
     {
@@ -371,14 +288,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-6206151",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206151?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "하얏트 리젠시 세라가키 아일랜드 오키나와는 일본 오키나와에 위치한 5성급 호텔입니다. 이 호텔은 고급스러운 숙소와 함께 편안한 휴식을 제공합니다."
         },
         {
           "type": "heading",
@@ -444,41 +357,9 @@
         {
           "type": "paragraph",
           "text": "고급스러운 서비스와 함께 편안한 휴식을 제공합니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "하얏트 리젠시 세라가키 아일랜드 오키나와의 별점은 몇 개인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "이 호텔은 5성급입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 위치는 어디인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔은 일본 오키나와에 위치하고 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에서 제공하는 식사는 어떤 종류인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에서는 다양한 메뉴를 제공합니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "오키나와",
@@ -508,14 +389,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-6183767",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6183767?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "오리엔탈 호텔 오키나와 리조트 & 스파는 일본 오키나와에 위치한 5성급 호텔입니다. 이 호텔은 숙소 검색 API를 통해 확인된 정보를 바탕으로 소개됩니다."
         },
         {
           "type": "heading",
@@ -581,41 +458,9 @@
         {
           "type": "paragraph",
           "text": "호텔 근처의 교통편이나 접근성에 대한 세부 사항도 확인할 수 없습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 위치는 어디인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔의 정확한 위치는 제공되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당과 관련된 정보는 제공되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "오키나와",
@@ -644,14 +489,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-4479180",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/4479180?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "더 네스트 나하는 일본 오키나와에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설이 갖춰져 있으며, 오키나와 지역의 특성을 살린 숙소입니다."
         },
         {
           "type": "heading",
@@ -704,41 +545,9 @@
         {
           "type": "paragraph",
           "text": "주변 관광지나 이동 편의성에 대한 정보도 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 수영장이나 헬스장 같은 시설은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 시설에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변에 관광 명소는 어떤 것이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "오키나와",
@@ -746,6 +555,174 @@
         "숙소",
         "여행",
         "일본"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-6215679",
+      "category": "hotel",
+      "title": "류큐 호텔&리조트 나시로 비치 - 오키나와",
+      "slug": "류큐-호텔-리조트-나시로-비치-6215679",
+      "description": "오키나와에 위치한 5성급 호텔인 류큐 호텔&리조트 나시로 비치를 소개합니다.",
+      "destinationId": "japan-okinawa",
+      "hotelId": "myrealtrip-6215679",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6215679-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/TOHX/7TczgdBder.jpg?width=720",
+            "alt": "류큐 호텔&리조트 나시로 비치 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6215679",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6215679?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 개요"
+        },
+        {
+          "type": "paragraph",
+          "text": "류큐 호텔&리조트 나시로 비치는 일본 오키나와에 위치한 5성급 호텔입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 이름은 '류큐 호텔&리조트 나시로 비치'입니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "레스토랑 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인·체크아웃"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 체크인 및 체크아웃 정보는 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "오키나와",
+        "Okinawa",
+        "일본",
+        "호텔",
+        "5성급"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-6206176",
+      "category": "hotel",
+      "title": "일본 오키나와 더 부세나 테라스 호텔 정보",
+      "slug": "더-부세나-테라스-6206176",
+      "description": "일본 오키나와에 위치한 5성급 숙소인 더 부세나 테라스의 기본 정보를 전달합니다.",
+      "destinationId": "japan-okinawa",
+      "hotelId": "myrealtrip-6206176",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-6206176-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/07/13/s7Et/hHRqb1wKk9.jpg?width=720",
+            "alt": "더 부세나 테라스 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-6206176",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6206176?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 기본 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "더 부세나 테라스는 일본 오키나와(Okinawa) 지역에 위치한 숙소입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 별점은 5성급으로 등록되어 있습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "위치 및 주변 교통"
+        },
+        {
+          "type": "paragraph",
+          "text": "해당 숙소의 국가 정보는 일본이며 도시는 오키나와로 확인됩니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "상세 주소, 인근 역 이름 및 이동 거리 정보는 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인 및 체크아웃 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "더 부세나 테라스의 체크인 시간과 체크아웃 시간은 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "부대시설 및 식음료 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 내 레스토랑 운영 정보는 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "수영장, 온천, 피트니스 등 시설 목록 정보는 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "객실 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "객실 유형, 객실 크기, 침대 구성에 관한 세부 정보는 제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "일본",
+        "오키나와",
+        "더부세나테라스",
+        "호텔",
+        "5성급",
+        "Okinawa"
       ]
     }
   ]

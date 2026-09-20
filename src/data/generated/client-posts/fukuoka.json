@@ -1,13 +1,13 @@
 {
   "destinationId": "japan-fukuoka",
-  "postCount": 11,
+  "postCount": 14,
   "posts": [
     {
       "id": "hotel-post-myrealtrip-5709842",
       "category": "hotel",
       "title": "컴포트 인 후쿠오카 텐진 - 후쿠오카",
       "slug": "컴포트-인-후쿠오카-텐진-5709842",
-      "description": "후쿠오카에 위치한 컴포트 인 후쿠오카 텐진 호텔의 정보를 확인해보세요.",
+      "description": "컴포트 인 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다.",
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-5709842",
       "blocks": [
@@ -21,92 +21,66 @@
             "type": "hero",
             "hotelId": "myrealtrip-5709842",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5709842?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/5709842?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "컴포트 인 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 다양한 매력을 탐방하기에 좋은 위치에 있습니다."
+          "text": "호텔명은 컴포트 인 후쿠오카 텐진이며, 일본 후쿠오카에 있습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "숙소 유형"
         },
         {
           "type": "paragraph",
-          "text": "컴포트 인 후쿠오카 텐진은 후쿠오카 지역에서 편안한 숙박을 제공하는 호텔입니다. 이 호텔은 여행객들에게 필요한 기본적인 시설을 갖추고 있습니다."
+          "text": "이 숙소는 호텔 유형으로 분류됩니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "위치 정보"
+          "text": "시설"
         },
         {
           "type": "paragraph",
-          "text": "후쿠오카의 중심부에 위치하여, 주변 관광지와의 접근성이 좋습니다. 이 호텔은 후쿠오카의 다양한 문화와 음식을 경험하기에 적합한 장소입니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 특징"
+          "text": "레스토랑"
         },
         {
           "type": "paragraph",
-          "text": "컴포트 인 후쿠오카 텐진은 깔끔하고 아늑한 객실을 제공하여, 여행 중 편안한 휴식을 취할 수 있습니다. 다양한 편의시설이 마련되어 있어 편리한 숙박을 보장합니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "체크인·체크아웃"
         },
         {
           "type": "paragraph",
-          "text": "후쿠오카는 다양한 관광명소가 있는 도시입니다. 이 호텔에 머무는 동안 후쿠오카의 유명한 관광지를 방문해보세요."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "체크인과 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "식당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변 관광지는 어떤 곳이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "후쿠오카의 다양한 관광지를 방문할 수 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
+        "컴포트 인 후쿠오카 텐진",
         "후쿠오카",
+        "Fukuoka",
+        "일본",
         "호텔",
-        "숙소",
-        "여행",
-        "편안한 숙박"
+        "3성급"
       ]
     },
     {
@@ -128,14 +102,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1460748",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460748?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1460748?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "더 베이직스 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 현대적인 시설과 편안한 숙박 환경을 제공합니다."
         },
         {
           "type": "heading",
@@ -201,41 +171,9 @@
         {
           "type": "paragraph",
           "text": "호텔에서 가까운 관광지를 방문하며 즐거운 시간을 보낼 수 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "더 베이직스 후쿠오카의 체크인/체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "정보가 없습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에 대한 정보가 없습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "후쿠오카 공항에서 호텔까지의 교통편은 어떤가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "교통편에 대한 정보가 없습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -264,14 +202,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1402095",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1402095?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1402095?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "미쓰이 가든 호텔 후쿠오카 기온은 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 매력을 느낄 수 있는 최적의 장소입니다."
         },
         {
           "type": "heading",
@@ -308,41 +242,9 @@
         {
           "type": "paragraph",
           "text": "후쿠오카 기온 주변에는 다양한 관광명소가 있습니다. 지역의 문화와 역사를 체험할 수 있는 기회를 제공합니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변 관광지는 어떤 곳이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "후쿠오카 기온 주변에는 다양한 관광명소가 있습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -372,14 +274,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1188575",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1188575?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1188575?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 마이스테이스 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 후쿠오카 지역의 다양한 관광지와 가까운 위치에 있습니다."
         },
         {
           "type": "heading",
@@ -416,41 +314,9 @@
         {
           "type": "paragraph",
           "text": "호텔 내에는 다양한 편의 시설이 마련되어 있어 여행객들이 편리하게 이용할 수 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 근처에는 후쿠오카의 주요 관광명소가 있습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -463,9 +329,9 @@
     {
       "id": "hotel-post-myrealtrip-1487512",
       "category": "hotel",
-      "title": "호텔 몬토레 후쿠오카, 후쿠오카",
+      "title": "호텔 몬토레 후쿠오카 - 후쿠오카",
       "slug": "호텔-몬토레-후쿠오카-1487512",
-      "description": "후쿠오카에 위치한 호텔 몬토레 후쿠오카의 정보를 확인해보세요.",
+      "description": "일본 후쿠오카에 위치한 4성급 호텔 몬토레 후쿠오카의 기본 정보를 확인하세요.",
       "destinationId": "japan-fukuoka",
       "hotelId": "myrealtrip-1487512",
       "blocks": [
@@ -479,14 +345,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1487512",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1487512?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1487512?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 몬토레 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 다양한 매력을 경험할 수 있는 최적의 장소입니다."
         },
         {
           "type": "heading",
@@ -495,93 +357,61 @@
         },
         {
           "type": "paragraph",
-          "text": "호텔 몬토레 후쿠오카는 후쿠오카 지역에 위치한 호텔로, 현대적인 시설과 편안한 객실을 갖추고 있습니다."
+          "text": "호텔 몬토레 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다."
         },
         {
           "type": "paragraph",
-          "text": "여행객들에게 적합한 숙소로, 후쿠오카의 다양한 관광지와의 접근성이 좋습니다."
+          "text": "숙소 유형은 호텔이며, 별점은 4점으로 제공됩니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "위치"
         },
         {
           "type": "paragraph",
-          "text": "호텔 몬토레 후쿠오카는 4성급 호텔로, 고급스러운 분위기를 자랑합니다."
+          "text": "호텔이 위치한 도시는 후쿠오카이며, 현지의 후쿠오카 현에 속합니다."
         },
         {
           "type": "paragraph",
-          "text": "편안한 숙박을 위한 다양한 서비스와 시설을 제공합니다."
+          "text": "제공된 데이터에서 구체적인 주소는 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "시설"
         },
         {
           "type": "paragraph",
-          "text": "후쿠오카는 일본의 문화와 역사를 느낄 수 있는 다양한 관광지가 있습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 근처에는 유명한 관광명소들이 위치해 있어 편리하게 방문할 수 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "교통 편의성"
+          "text": "식음료"
         },
         {
           "type": "paragraph",
-          "text": "호텔 몬토레 후쿠오카는 후쿠오카의 중심부에 위치하여 교통이 편리합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "대중교통을 이용하여 쉽게 이동할 수 있는 장점이 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 몬토레 후쿠오카의 별점은 몇 개인가요?"
+          "text": "체크인 및 체크아웃"
         },
         {
           "type": "paragraph",
-          "text": "호텔 몬토레 후쿠오카는 4성급 호텔입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간은 정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 근처에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "후쿠오카에는 다양한 관광지가 있으며, 호텔 근처에 유명한 명소들이 위치해 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
+        "일본",
         "후쿠오카",
         "호텔",
-        "숙소",
-        "여행",
-        "일본",
-        "4성급"
+        "4성급",
+        "Fukuoka"
       ]
     },
     {
@@ -603,14 +433,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-6339000",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6339000?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/6339000?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "니시테츠 그랜드 호텔은 일본 후쿠오카에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 갖추고 있어 여행객들에게 적합한 선택입니다."
         },
         {
           "type": "heading",
@@ -663,41 +489,9 @@
         {
           "type": "paragraph",
           "text": "주변에는 다양한 관광 명소와 편의 시설이 있어 여행에 편리합니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "니시테츠 그랜드 호텔의 별점은 얼마인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "니시테츠 그랜드 호텔은 4성급 호텔입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에 주차 공간이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "해당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에서 체크인과 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -726,14 +520,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1190993",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190993?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1190993?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 홋케 클럽 후쿠오카는 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 후쿠오카 지역의 다양한 매력을 즐기기에 좋은 장소입니다."
         },
         {
           "type": "heading",
@@ -770,41 +560,9 @@
         {
           "type": "paragraph",
           "text": "후쿠오카는 다양한 문화유산과 현대적인 매력을 동시에 지닌 도시입니다. 호텔 인근에는 유명한 관광 명소들이 있어, 여행 중 다양한 경험을 할 수 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "해당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "후쿠오카에는 다양한 관광 명소가 있습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -833,14 +591,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1559947",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1559947?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1559947?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 오리엔탈 익스프레스 후쿠오카 텐진은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 기본적인 숙박 시설을 제공하며, 후쿠오카 지역의 중심부에 자리잡고 있습니다."
         },
         {
           "type": "heading",
@@ -893,41 +647,9 @@
         {
           "type": "paragraph",
           "text": "주변 관광지나 이동 편의성에 대한 정보도 확인할 수 없습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 무엇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내에 어떤 시설이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에서 식사는 어떻게 하나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -956,14 +678,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1295093",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295093?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1295093?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 포르자 하카타역 치쿠시 구치Ⅰ은 일본 후쿠오카에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설을 갖추고 있으며, 후쿠오카 지역의 여행에 적합한 숙소입니다."
         },
         {
           "type": "heading",
@@ -1029,59 +747,9 @@
         {
           "type": "paragraph",
           "text": "주변 관광지나 교통편에 대한 정보도 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내에 어떤 시설이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "식사는 어떻게 제공되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 위치는 어디인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변에 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -1110,14 +778,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1268921",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1268921?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1268921?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 몬테 에르마나 후쿠오카는 일본 후쿠오카에 위치한 4성급 호텔입니다. 제공된 데이터 기준으로 확인 가능한 핵심 숙소 정보를 안내합니다."
         },
         {
           "type": "heading",
@@ -1163,50 +827,9 @@
         {
           "type": "paragraph",
           "text": "객실 종류, 객실 크기, 침대 구성 및 기타 서비스 정책에 관한 상세 내용은 제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 몬테 에르마나 후쿠오카는 어디에 위치해 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "일본 후쿠오카현 후쿠오카 지역에 위치하고 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 등급은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "4성급 호텔입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 부대시설이나 식당 정보가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "부대시설 및 레스토랑 관련 상세 정보는 제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "일본여행",
@@ -1236,14 +859,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1144031",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1144031?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1144031?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "컴포트 호텔 하카타는 일본 후쿠오카에 위치한 호텔이며, 3성급으로 분류됩니다. 제공된 데이터에 따라 숙소의 기본 정보를 확인할 수 있습니다."
         },
         {
           "type": "heading",
@@ -1284,41 +903,9 @@
         {
           "type": "paragraph",
           "text": "제공된 데이터에서 식당 정보가 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "이 호텔의 이름은 무엇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "컴포트 호텔 하카타입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔이 위치한 도시는 어디인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "후쿠오카입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 별점은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "별점은 3입니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "후쿠오카",
@@ -1326,6 +913,263 @@
         "호텔",
         "컴포트 호텔 하카타",
         "3성급"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-1152864",
+      "category": "hotel",
+      "title": "호텔 몬토레 라 수르 후쿠오카 - 후쿠오카",
+      "slug": "호텔-몬토레-라-수르-후쿠오카-1152864",
+      "description": "일본 후쿠오카에 위치한 4성급 호텔 몬토레 라 수르 후쿠오카에 대한 기본 정보를 확인하세요.",
+      "destinationId": "japan-fukuoka",
+      "hotelId": "myrealtrip-1152864",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1152864-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/tsGA/tMNjekMoqA.jpg?width=720",
+            "alt": "호텔 몬토레 라 수르 후쿠오카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1152864",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1152864?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 개요"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔 몬토레 라 수르 후쿠오카는 후쿠오카 시에 위치한 숙박 시설이며, 숙소 유형은 호텔입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "별점은 4성으로 제공됩니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "위치 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "이 호텔은 일본 후쿠오카 현 후쿠오카시에 위치합니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "구체적인 주소 정보는 제공되지 않았습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설 및 레스토랑"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인·체크아웃"
+        },
+        {
+          "type": "paragraph",
+          "text": "체크인 시간에 대한 정보는 제공되지 않았습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "체크아웃 시간에 대한 정보는 제공되지 않았습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "후쿠오카",
+        "Fukuoka",
+        "일본",
+        "호텔",
+        "4성"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-1317449",
+      "category": "hotel",
+      "title": "네스트 호텔 하카타 스테이션 - 후쿠오카",
+      "slug": "네스트-호텔-하카타-스테이션-1317449",
+      "description": "후쿠오카에 위치한 네스트 호텔 하카타 스테이션은 3성급 호텔이며, 마이리얼트립 데이터에 기반한 기본 정보를 제공합니다.",
+      "destinationId": "japan-fukuoka",
+      "hotelId": "myrealtrip-1317449",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1317449-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/05/kEJP/LtV0jJCiow.jpg?width=720",
+            "alt": "네스트 호텔 하카타 스테이션 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1317449",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1317449?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 개요"
+        },
+        {
+          "type": "paragraph",
+          "text": "네스트 호텔 하카타 스테이션은 후쿠오카 시에 위치한 호텔이며, 3성급 등급을 가지고 있습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 마이리얼트립 데이터에 따르면 추가적인 위치 상세 정보는 제공되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "레스토랑"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인 및 체크아웃"
+        },
+        {
+          "type": "paragraph",
+          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "근처 역 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "네스트 호텔 하카타 스테이션",
+        "후쿠오카",
+        "Fukuoka",
+        "일본",
+        "호텔",
+        "3성"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-1401198",
+      "category": "hotel",
+      "title": "오리엔탈 호텔 후쿠오카 하카타 스테이션 - 후쿠오카",
+      "slug": "오리엔탈-호텔-후쿠오카-하카타-스테이션-1401198",
+      "description": "일본 후쿠오카에 위치한 4성급 오리엔탈 호텔 후쿠오카 하카타 스테이션의 기본 정보를 확인할 수 있습니다.",
+      "destinationId": "japan-fukuoka",
+      "hotelId": "myrealtrip-1401198",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1401198-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2025/10/10/zecr/tHMZTWb2Ip.jpg?width=720",
+            "alt": "오리엔탈 호텔 후쿠오카 하카타 스테이션 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1401198",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1401198?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 기본 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "오리엔탈 호텔 후쿠오카 하카타 스테이션은 일본 후쿠오카시에 위치한 4성급 호텔입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 별점은 4점입니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "위치"
+        },
+        {
+          "type": "paragraph",
+          "text": "이 호텔은 후쿠오카시(후쿠오카 현)에 위치합니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "레스토랑"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인 및 체크아웃"
+        },
+        {
+          "type": "paragraph",
+          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "오리엔탈 호텔 후쿠오카 하카타 스테이션",
+        "후쿠오카",
+        "Fukuoka",
+        "일본",
+        "호텔",
+        "4성급"
       ]
     }
   ]

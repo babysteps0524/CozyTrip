@@ -1,13 +1,13 @@
 {
   "destinationId": "japan-kyoto",
-  "postCount": 11,
+  "postCount": 14,
   "posts": [
     {
       "id": "hotel-post-myrealtrip-1652241",
       "category": "hotel",
-      "title": "교토 우메코지 카덴쇼 - 일본 교토",
+      "title": "일본 교토의 4성급 숙소 교토 우메코지 카덴쇼",
       "slug": "교토-우메코지-카덴쇼-1652241",
-      "description": "교토 우메코지 카덴쇼는 일본 교토에 위치한 4성급 호텔로, 편안한 숙박을 제공합니다.",
+      "description": "일본 교토에 위치한 4성급 호텔 교토 우메코지 카덴쇼의 확인된 기본 정보를 안내합니다.",
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1652241",
       "blocks": [
@@ -21,117 +21,74 @@
             "type": "hero",
             "hotelId": "myrealtrip-1652241",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1652241?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "교토 우메코지 카덴쇼는 일본 교토에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의시설과 함께 아늑한 숙소를 제공합니다."
+          "text": "교토 우메코지 카덴쇼는 일본 교토에 위치한 숙소입니다. 숙소 등급은 4성급이며 숙소 유형은 호텔로 확인됩니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "위치 정보"
         },
         {
           "type": "paragraph",
-          "text": "교토 우메코지 카덴쇼는 교토 지역에서 편안한 숙박을 원하는 여행객들에게 적합한 호텔입니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔은 현대적인 디자인과 아늑한 분위기를 갖추고 있어, 여행의 피로를 풀기에 좋은 장소입니다."
+          "text": "이 숙소는 일본 Kyoto prefecture 교토시에 위치하고 있습니다. 상세 주소 및 인근 역 정보는 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "체크인 및 체크아웃"
         },
         {
           "type": "paragraph",
-          "text": "이 호텔은 다양한 객실 유형을 제공하여, 개인 여행객부터 가족 단위 여행객까지 모두에게 적합합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "편안한 침대와 현대적인 시설이 갖춰져 있어, 쾌적한 숙면을 취할 수 있습니다."
+          "text": "교토 우메코지 카덴쇼의 체크인 시간과 체크아웃 시간은 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "위치 및 주변"
+          "text": "부대시설 및 식음료 시설"
         },
         {
           "type": "paragraph",
-          "text": "교토 우메코지 카덴쇼는 교토의 중심부에 위치해 있어, 주요 관광지와의 접근성이 좋습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "주변에는 다양한 음식점과 상점들이 있어 편리한 이용이 가능합니다."
+          "text": "숙소 내 이용 가능한 부대시설 목록 및 레스토랑 정보는 제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "편의시설"
+          "text": "객실 정보"
         },
         {
           "type": "paragraph",
-          "text": "호텔 내에는 다양한 편의시설이 마련되어 있어, 고객의 편의를 돕습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "자세한 시설 정보는 호텔에 직접 문의하시기 바랍니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "교토 우메코지 카덴쇼의 체크인/체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 근처에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에 대한 정보는 제공되지 않았습니다."
+          "text": "객실 종류, 객실 크기, 침대 구성에 대한 상세 정보는 제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
+        "일본",
         "교토",
+        "Kyoto",
         "호텔",
-        "숙소",
         "4성급",
-        "여행",
-        "일본"
+        "교토우메코지카덴쇼"
       ]
     },
     {
       "id": "hotel-post-myrealtrip-1490406",
       "category": "hotel",
-      "title": "온야도 노노 교토시치조 내추럴 핫 스프링스 - 교토",
+      "title": "온야도 노노 교토시치조 내추럴 핫 스프링스 (교토)",
       "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
-      "description": "교토의 온야도 노노 교토시치조 내추럴 핫 스프링스 호텔에서 편안한 휴식을 즐겨보세요.",
+      "description": "온야도 노노 교토시치조 내추럴 핫 스프링스는 일본 교토에 위치한 3성급 호텔입니다. 제공된 데이터에서는 체크인·체크아웃 시간과 시설·레스토랑 정보가 명시되어 있지 않습니다.",
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1490406",
       "blocks": [
@@ -145,116 +102,64 @@
             "type": "hero",
             "hotelId": "myrealtrip-1490406",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1490406?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "온야도 노노 교토시치조 내추럴 핫 스프링스는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 자연 온천을 제공하며, 편안한 숙박을 위한 다양한 시설을 갖추고 있습니다."
+          "text": "온야도 노노 교토시치조 내추럴 핫 스프링스는 일본 교토에 위치한 호텔이며, 별점은 3성급으로 표시됩니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "숙소 유형"
         },
         {
           "type": "paragraph",
-          "text": "온야도 노노 교토시치조 내추럴 핫 스프링스는 교토의 중심부에 위치하여 여행객들에게 편리한 접근성을 제공합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔은 자연 온천을 특징으로 하여, 피로를 풀고 휴식을 취할 수 있는 최적의 공간입니다."
+          "text": "숙소 유형은 호텔이며, 이는 제공된 데이터에 명시되어 있습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "시설"
         },
         {
           "type": "paragraph",
-          "text": "이 호텔은 다양한 객실 옵션을 제공하여, 개인 여행객부터 가족 단위 여행객까지 모두에게 적합합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "편안한 침대와 아늑한 분위기로 여행의 피로를 잊게 해줄 것입니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "온천 시설"
+          "text": "레스토랑"
         },
         {
           "type": "paragraph",
-          "text": "온야도 노노 교토시치조 내추럴 핫 스프링스는 자연 온천을 이용할 수 있는 시설이 마련되어 있어, 여행 중 편안한 휴식을 제공합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "온천은 몸과 마음을 치유하는 데 도움을 줄 것입니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "교통 정보"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔은 교토 시내의 주요 관광지와 가까운 위치에 있어, 편리한 이동이 가능합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "대중교통을 이용하면 다양한 명소를 쉽게 방문할 수 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "온야도 노노 교토시치조 내추럴 핫 스프링스의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "온천 이용은 어떻게 하나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "온천 이용에 대한 구체적인 정보는 제공되지 않았습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
-        "온천",
+        "일본",
         "호텔",
-        "여행",
-        "숙박"
+        "3성급",
+        "온야도 노노 교토시치조 내추럴 핫 스프링스"
       ]
     },
     {
       "id": "hotel-post-myrealtrip-1208147",
       "category": "hotel",
-      "title": "호텔 엘시안트 교토 하치조구치 - 교토",
+      "title": "호텔 엘시안트 교토 하치조구치 (교토)",
       "slug": "호텔-엘시안트-교토-하치조구치-1208147",
-      "description": "교토에 위치한 호텔 엘시안트 교토 하치조구치에 대한 정보를 확인해보세요.",
+      "description": "일본 교토에 위치한 3성 호텔 엘시안트 교토 하치조구치에 대한 정보를 제공합니다.",
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1208147",
       "blocks": [
@@ -268,108 +173,64 @@
             "type": "hero",
             "hotelId": "myrealtrip-1208147",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1208147?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "호텔 엘시안트 교토 하치조구치는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 교토 지역의 다양한 매력을 탐험하기에 좋은 위치에 있습니다."
+          "text": "호텔 엘시안트 교토 하치조구치는 일본 교토에 위치한 3성급 호텔입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔이며, 별점은 3성입니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "위치"
         },
         {
           "type": "paragraph",
-          "text": "호텔 엘시안트 교토 하치조구치는 교토 지역에 위치한 호텔로, 여행객들에게 편안한 숙소를 제공합니다."
+          "text": "본 호텔은 교토시에 위치해 있습니다."
         },
         {
           "type": "paragraph",
-          "text": "교토의 다양한 관광지를 탐방하기에 적합한 위치에 자리잡고 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "시설"
         },
         {
           "type": "paragraph",
-          "text": "이 호텔은 3성급으로, 기본적인 숙박 시설을 갖추고 있습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "편안한 객실에서 여유로운 시간을 보낼 수 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "식음료"
         },
         {
           "type": "paragraph",
-          "text": "호텔 주변에는 교토의 유명한 관광지들이 많이 있습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "여행 중 다양한 문화와 역사를 경험할 수 있는 기회를 제공합니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "교통 편의성"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 엘시안트 교토 하치조구치는 교통이 편리한 위치에 있어, 이동이 용이합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "교토의 주요 명소로의 접근성이 좋습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "해당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에서 제공하는 식사는 무엇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "식당 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
+        "일본",
         "호텔",
-        "숙박",
-        "여행",
-        "일본"
+        "3성",
+        "Kyoto"
       ]
     },
     {
@@ -391,14 +252,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1200282",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1200282?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "알몬트 호텔 교토는 교토 지역에 위치한 4성급 호텔입니다. 다양한 편의시설과 함께 여행객들에게 쾌적한 숙소를 제공합니다."
         },
         {
           "type": "heading",
@@ -464,41 +321,9 @@
         {
           "type": "paragraph",
           "text": "교통편에 대한 구체적인 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "알몬트 호텔 교토의 체크인 및 체크아웃 시간은 무엇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내에 어떤 시설이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "구체적인 시설 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변 관광지는 어떤 곳이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
@@ -511,9 +336,9 @@
     {
       "id": "hotel-post-myrealtrip-1581864",
       "category": "hotel",
-      "title": "리치몬드 호텔 프리미어 교토 시조 - 교토",
+      "title": "리치몬드 호텔 프리미어 교토 시조 - 교토 호텔",
       "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
-      "description": "교토에 위치한 리치몬드 호텔 프리미어 교토 시조는 편안한 숙소를 제공합니다.",
+      "description": "일본 교토에 위치한 리치몬드 호텔 프리미어 교토 시조는 3성급 호텔이며, 마이리얼트립 데이터에 기반한 정보를 제공합니다.",
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1581864",
       "blocks": [
@@ -527,14 +352,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1581864",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1581864?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "리치몬드 호텔 프리미어 교토 시조는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설을 갖춘 숙소로, 여행객들에게 적합한 선택입니다."
         },
         {
           "type": "heading",
@@ -543,76 +364,48 @@
         },
         {
           "type": "paragraph",
-          "text": "리치몬드 호텔 프리미어 교토 시조는 교토 지역에서 편안한 숙박을 제공하는 호텔입니다. 이곳은 여행객들에게 쾌적한 환경을 제공합니다."
+          "text": "리치몬드 호텔 프리미어 교토 시조는 교토에 위치한 호텔이며, 숙소 유형은 호텔입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "이 호텔은 3성급으로 평가됩니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙소 정보"
+          "text": "위치"
         },
         {
           "type": "paragraph",
-          "text": "호텔은 3성급으로, 기본적인 숙소 편의 시설을 갖추고 있습니다. 교토의 중심부에 위치하여 접근성이 좋습니다."
+          "text": "리치몬드 호텔 프리미어 교토 시조는 교토시에 위치해 있습니다. 제공된 데이터에서 구체적인 주소나 주변 역 정보는 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "시설"
         },
         {
           "type": "paragraph",
-          "text": "교토는 역사적인 명소가 많은 도시로, 호텔 근처에는 다양한 관광지가 있습니다. 여행 계획 시 참고할 수 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "교통 정보"
+          "text": "식음료"
         },
         {
           "type": "paragraph",
-          "text": "호텔의 위치는 교통이 편리하여, 다양한 교통 수단을 이용해 쉽게 이동할 수 있습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "리치몬드 호텔 프리미어 교토 시조의 체크인/체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 내 식당에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지에 대한 구체적인 정보는 제공되지 않았습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
+        "Kyoto",
+        "일본",
         "호텔",
-        "숙소",
-        "여행",
-        "리치몬드 호텔"
+        "3성급"
       ]
     },
     {
@@ -634,14 +427,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1571825",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1571825?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "오크우드 호텔 오이케 교토는 일본 교토에 위치한 4성급 호텔로, 편안한 숙소를 제공합니다. 다양한 편의시설과 함께 교토의 매력을 느낄 수 있는 최적의 장소입니다."
         },
         {
           "type": "heading",
@@ -694,41 +483,9 @@
         {
           "type": "paragraph",
           "text": "전통적인 일본 문화를 체험할 수 있는 기회가 많은 지역입니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "식당 정보가 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "주변 관광지 정보는 제공되지 않았습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
@@ -741,9 +498,9 @@
     {
       "id": "hotel-post-myrealtrip-1594516",
       "category": "hotel",
-      "title": "소테츠 프레사 인 교토-키요미즈 고조, 교토",
+      "title": "소테츠 프레사 인 교토-키요미즈 고조 (교토) 호텔",
       "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
-      "description": "교토에 위치한 소테츠 프레사 인 교토-키요미즈 고조 호텔의 정보입니다.",
+      "description": "소테츠 프레사 인 교토-키요미즈 고조는 일본 교토에 위치한 3성 호텔입니다.",
       "destinationId": "japan-kyoto",
       "hotelId": "myrealtrip-1594516",
       "blocks": [
@@ -757,108 +514,70 @@
             "type": "hero",
             "hotelId": "myrealtrip-1594516",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1594516?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
         },
         {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 기본 정보"
+        },
+        {
           "type": "paragraph",
-          "text": "소테츠 프레사 인 교토-키요미즈 고조는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 편안한 숙박을 제공하며, 교토 지역의 다양한 매력을 경험할 수 있는 좋은 위치에 있습니다."
+          "text": "호텔명은 소테츠 프레사 인 교토-키요미즈 고조이며, 숙소 유형은 호텔입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "별점은 3점으로 제공됩니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "호텔 개요"
+          "text": "위치"
         },
         {
           "type": "paragraph",
-          "text": "소테츠 프레사 인 교토-키요미즈 고조는 교토 지역에 위치한 호텔로, 여행객들에게 편안한 숙소를 제공합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "이 호텔은 현대적인 시설과 깔끔한 객실을 갖추고 있어 쾌적한 숙박을 보장합니다."
+          "text": "호텔은 일본 교토에 위치해 있습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "위치 정보"
+          "text": "시설"
         },
         {
           "type": "paragraph",
-          "text": "교토의 중심부에 위치하여 주요 관광지와의 접근성이 좋습니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 주변에는 다양한 식당과 상점이 있어 편리한 여행이 가능합니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "숙박 정보"
+          "text": "식음료"
         },
         {
           "type": "paragraph",
-          "text": "소테츠 프레사 인 교토-키요미즈 고조는 여행객들에게 안락한 객실을 제공합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔의 객실은 깔끔하고 현대적인 디자인으로 꾸며져 있습니다."
+          "text": "제공된 데이터에서 확인되지 않습니다."
         },
         {
           "type": "heading",
           "level": 2,
-          "text": "주변 관광지"
+          "text": "체크인 및 체크아웃"
         },
         {
           "type": "paragraph",
-          "text": "호텔 근처에는 교토의 유명한 관광지들이 위치해 있어 관광에 매우 유리합니다."
-        },
-        {
-          "type": "paragraph",
-          "text": "교토의 전통적인 문화와 아름다운 경관을 즐길 수 있는 최적의 장소입니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "소테츠 프레사 인 교토-키요미즈 고조의 체크인/체크아웃 시간은 무엇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 레스토랑은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "레스토랑에 대한 정보는 제공되지 않았습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변 관광지는 어떤 곳이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 주변에는 교토의 유명 관광지들이 위치해 있습니다."
+          "text": "체크인 및 체크아웃 시간은 제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
+        "소테츠 프레사 인 교토-키요미즈 고조",
         "교토",
+        "Kyoto",
+        "일본",
         "호텔",
-        "소테츠 프레사",
-        "숙소",
-        "여행"
+        "3성"
       ]
     },
     {
@@ -880,14 +599,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1566383",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1566383?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 포르자 교토 시조 카와라마치는 일본 교토에 위치한 4성급 호텔입니다. 이 호텔은 다양한 편의시설과 서비스를 제공하며, 교토 지역의 관광지와의 접근성도 좋은 위치에 있습니다."
         },
         {
           "type": "heading",
@@ -940,41 +655,9 @@
         {
           "type": "paragraph",
           "text": "주변 관광지와의 접근성에 대한 정보는 제공되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 무엇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내에 수영장이나 헬스장이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변 관광지는 어떤 곳이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
@@ -1003,14 +686,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1254251",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1254251?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 그레이스리 교토 산조는 일본 교토에 위치한 4성급 호텔입니다. 이 호텔은 고객에게 다양한 편의시설을 제공하며, 교토 지역의 매력을 경험할 수 있는 최적의 장소입니다."
         },
         {
           "type": "heading",
@@ -1063,41 +742,9 @@
         {
           "type": "paragraph",
           "text": "주변 관광지에 대한 정보도 제공되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내에 어떤 시설이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 근처에 어떤 관광지가 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
@@ -1126,14 +773,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1229514",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1229514?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "사쿠라 테라스 더 갤러리는 일본 교토에 위치한 3성급 호텔입니다. 이 호텔은 다양한 편의 시설과 서비스를 제공하며, 여행객들에게 적합한 숙소입니다."
         },
         {
           "type": "heading",
@@ -1186,41 +829,9 @@
         {
           "type": "paragraph",
           "text": "주변 관광지에 대한 정보도 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "체크인 및 체크아웃 시간은 어떻게 되나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔 내 식당은 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "주변 관광지는 무엇이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
@@ -1249,14 +860,10 @@
             "type": "hero",
             "hotelId": "myrealtrip-1369404",
             "credit": "MyRealTrip Partner API",
-            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-19&checkOut=2026-10-22&adultCount=2&childCount=0&childAges=",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1369404?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
             "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
             "rightsConfirmed": true
           }
-        },
-        {
-          "type": "paragraph",
-          "text": "게이오 프렐리아 호텔 교토 가라스마 고조는 일본 교토에 위치한 4성급 호텔입니다. 숙소 유형은 호텔이며, 제공된 데이터에서 확인된 별점은 4점입니다."
         },
         {
           "type": "heading",
@@ -1293,50 +900,9 @@
         {
           "type": "paragraph",
           "text": "제공된 데이터에서 레스토랑 정보가 확인되지 않습니다."
-        },
-        {
-          "type": "heading",
-          "level": 2,
-          "text": "자주 묻는 질문"
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔의 별점은 몇인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "별점은 4점입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔은 어떤 유형의 숙소인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "호텔 유형입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔이 위치한 도시는 어디인가요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "교토시입니다."
-        },
-        {
-          "type": "heading",
-          "level": 3,
-          "text": "호텔에 레스토랑이 있나요?"
-        },
-        {
-          "type": "paragraph",
-          "text": "제공된 데이터에서 레스토랑 정보가 확인되지 않습니다."
         }
       ],
-      "publishedAt": "2026-09-19",
+      "publishedAt": "2026-09-20",
       "author": "CozyTrip",
       "tags": [
         "교토",
@@ -1344,6 +910,255 @@
         "호텔",
         "게이오 프렐리아",
         "4성급"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-1181987",
+      "category": "hotel",
+      "title": "스마일 호텔 교토 시조 - 교토",
+      "slug": "스마일-호텔-교토-시조-1181987",
+      "description": "스마일 호텔 교토 시조는 일본 교토에 위치한 3성급 호텔입니다.",
+      "destinationId": "japan-kyoto",
+      "hotelId": "myrealtrip-1181987",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1181987-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/06/20/M9jl/S9LnT7ftnC.jpg?width=720",
+            "alt": "스마일 호텔 교토 시조 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1181987",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1181987?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 기본 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔명은 스마일 호텔 교토 시조이며, 숙소 유형은 호텔입니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "위치"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔은 일본 교토에 위치합니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "식음료"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인 및 체크아웃"
+        },
+        {
+          "type": "paragraph",
+          "text": "체크인 및 체크아웃 시간에 대한 정보는 제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "교토",
+        "Kyoto",
+        "호텔",
+        "3성",
+        "스마일 호텔 교토 시조"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-1447756",
+      "category": "hotel",
+      "title": "오리엔탈 호텔 교토 로쿠조 - 교토, 일본",
+      "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
+      "description": "오리엔탈 호텔 교토 로쿠조는 일본 교토에 위치한 4성급 호텔로, 마이리얼트립 숙소 검색 API에 등록된 정보를 기반으로 합니다.",
+      "destinationId": "japan-kyoto",
+      "hotelId": "myrealtrip-1447756",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1447756-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/13/ZIPB/PgKesaYRMu.jpg?width=720",
+            "alt": "오리엔탈 호텔 교토 로쿠조 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1447756",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1447756?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔 기본 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "오리엔탈 호텔 교토 로쿠조는 일본 교토에 위치한 4성급 호텔입니다. 숙소 유형은 호텔이며, 마이리얼트립 데이터에 따라 별점은 4입니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 유형 및 등급"
+        },
+        {
+          "type": "paragraph",
+          "text": "이 숙소는 호텔이며, 별 4개의 등급을 가지고 있습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "시설 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "레스토랑 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인 및 체크아웃 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "교토",
+        "Kyoto",
+        "일본",
+        "호텔",
+        "4성"
+      ]
+    },
+    {
+      "id": "hotel-post-myrealtrip-1186098",
+      "category": "hotel",
+      "title": "일본 교토의 3성급 숙소 호텔 홋케 클럽 교토 정보",
+      "slug": "호텔-홋케-클럽-교토-1186098",
+      "description": "일본 교토에 위치한 3성급 숙소인 호텔 홋케 클럽 교토의 기본 정보입니다.",
+      "destinationId": "japan-kyoto",
+      "hotelId": "myrealtrip-1186098",
+      "blocks": [
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1186098-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2023/04/27/CDOX/aXcwH7bKDB.jpg?width=720",
+            "alt": "호텔 홋케 클럽 교토 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1186098",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1186098?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "숙소 기본 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔 홋케 클럽 교토는 일본 Kyoto Prefecture 교토에 위치한 숙소입니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 유형은 호텔로 분류되어 있으며, 3성급 등급의 숙소입니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "체크인 및 체크아웃"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔 홋케 클럽 교토의 체크인 시간과 체크아웃 시간은 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "부대시설 안내"
+        },
+        {
+          "type": "paragraph",
+          "text": "숙소 내 편의시설 및 부대시설 목록은 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "식음료 시설"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔 내 레스토랑 및 식사 관련 시설 정보는 제공된 데이터에서 확인되지 않습니다."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "위치 및 주변 교통"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔 홋케 클럽 교토는 일본 교토 지역에 위치해 있습니다."
+        },
+        {
+          "type": "paragraph",
+          "text": "인근 역 정보, 거리, 도보 시간 등 위치 상세 데이터는 제공된 데이터에서 확인되지 않습니다."
+        }
+      ],
+      "publishedAt": "2026-09-20",
+      "author": "CozyTrip",
+      "tags": [
+        "일본",
+        "교토",
+        "Kyoto",
+        "호텔",
+        "3성급",
+        "호텔 홋케 클럽 교토"
       ]
     }
   ]
