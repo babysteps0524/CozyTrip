@@ -58,10 +58,8 @@ export interface MyRealTripDestination {
 const DESTINATIONS: MyRealTripDestination[] = [
   { slug: "tokyo", city: "도쿄", cityEn: "Tokyo", prefecture: "Tokyo", regionKeyword: "도쿄", regionId: 2955 },
   { slug: "osaka", city: "오사카", cityEn: "Osaka", prefecture: "Osaka", regionKeyword: "오사카", regionId: 2225 },
-  { slug: "kyoto", city: "교토", cityEn: "Kyoto", prefecture: "Kyoto", regionKeyword: "교토", regionId: 8958 },
   { slug: "fukuoka", city: "후쿠오카", cityEn: "Fukuoka", prefecture: "Fukuoka", regionKeyword: "후쿠오카", regionId: 193957 },
   { slug: "sapporo", city: "삿포로", cityEn: "Sapporo", prefecture: "Hokkaido", regionKeyword: "삿포로", regionId: 2674 },
-  { slug: "okinawa", city: "오키나와", cityEn: "Okinawa", prefecture: "Okinawa", regionKeyword: "오키나와", regionId: 9336 },
 ];
 
 const MYREALTRIP_IMAGE_TYPES: readonly ImageType[] = [
