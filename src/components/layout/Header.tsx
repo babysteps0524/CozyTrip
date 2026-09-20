@@ -1,6 +1,5 @@
 import { Container } from "../common";
 import MobileNavigation from "./MobileNavigation";
-import Navigation from "./Navigation";
 
 const destinations = [
   { name: "도쿄", href: "/japan/tokyo/" },
@@ -22,7 +21,9 @@ export default function Header() {
             <span className="text-lg font-bold tracking-tight sm:text-xl">
               CozyTrip
             </span>
-            <span className="mt-1 text-xs font-medium sm:text-sm">코지트립</span>
+            <span className="mt-1 text-xs font-medium sm:text-sm">
+              코지트립
+            </span>
           </a>
 
           <nav
@@ -41,10 +42,6 @@ export default function Header() {
               ))}
             </div>
           </nav>
-
-          <div className="hidden shrink-0 lg:block">
-            <Navigation />
-          </div>
 
           <MobileNavigation />
         </div>
