@@ -104,7 +104,8 @@
         "myrealtrip-5008360-hero"
       ],
       "generatedBy": "openrouter",
-      "promptVersion": "hotel-post-v11"
+      "promptVersion": "hotel-post-v11",
+      "status": "published"
     }
   ]
 }
