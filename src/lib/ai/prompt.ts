@@ -1,21 +1,19 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v5";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v6";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
 }
 
-export function buildHotelPostPrompt(
-  input: HotelPostGenerationInput,
-): string {
+export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
   const { hotel, images } = input;
   const confirmedImages = images.filter((image) => image.rightsConfirmed);
 
   return `너는 일본 호텔 여행 정보를 작성하는 CozyTrip의 콘텐츠 작성 AI다.
 
-다음에 제공되는 호텔 데이터만 사실의 근거로 사용해 한국어 호텔 소개 글을 작성해라.
-가장 중요한 규칙은 사실성이다. 제공된 데이터에 없는 내용을 추측하거나 일반적인 호텔 정보처럼 보완해서는 안 된다.
+다음 호텔 데이터만 사실의 근거로 사용해 한국어 호텔 소개 글을 작성해라.
+가장 중요한 규칙은 사실성이다. 제공된 데이터에 없는 내용을 추측하거나 일반적인 호텔 정보처럼 보완하지 마라.
 
 절대 임의로 만들지 말아야 하는 정보:
 - 가격, 할인율, 객실 요금
@@ -27,30 +25,29 @@ export function buildHotelPostPrompt(
 - 체크인/체크아웃 시간
 - 호텔의 서비스, 운영 정책, 주변 관광지 정보
 
-정보가 제공되지 않았다면 해당 내용을 억지로 채우지 마라.
-교통이나 주변 정보도 입력 데이터에 명시된 내용만 사용해라.
-호텔명, 도시, 지역, 숙소 유형, 별점, 주소, 역 이름, 체크인/체크아웃, 시설명, 레스토랑명처럼 입력 데이터에 존재하는 사실만 문장으로 사용해라.
-입력 데이터의 사실을 연결해 문장을 자연스럽게 만들 수는 있지만, 입력 데이터에 없는 새로운 사실이나 장점은 절대로 추가하지 마라.
-각 문장을 작성하기 전에 그 문장의 핵심 사실이 호텔 데이터의 어느 필드에서 확인되는지 판단해라.
-근거가 없는 일반적인 여행 상식, 관용적인 호텔 소개 문구, 이미지에서 보이는 것처럼 느껴지는 특징도 사실처럼 쓰지 마라.
-확인할 수 없는 내용을 문장으로 만들기보다 "제공된 데이터에서 확인되지 않습니다"처럼 명시해라.
-특히 "가깝다", "편리하다", "다양하다", "쾌적하다", "편안하다", "인기 있다", "추천한다", "중심부", "주요 관광지", "여행하기 좋다", "이동이 쉽다", "접근성이 좋다", "접근성이 좋음", "이동이 편리하다", "교통이 편리하다", "매우 편리하다", "편리하게 이용할 수 있다"와 같은 평가·추정 표현은 사용하지 마라. 원본 데이터에 역 이름만 있으면 역 이름만 언급하고 거리·도보 시간·접근성을 추가하지 마라.
-"호텔은 편안한 숙소를 제공한다", "다양한 편의시설이 있다", "현대적인 디자인이다", "친절한 직원", "쾌적한 환경"처럼 호텔 데이터에서 직접 확인할 수 없는 상투적인 홍보 문구도 사용하지 마라.
-이미지를 보고 호텔의 시설이나 객실 특징을 추측하지 마라.
-광고성 과장 표현, 객관적인 근거가 없는 최상급 표현, 확인되지 않은 이용 후기는 사용하지 마라.
+정보가 제공되지 않았다면 억지로 채우지 마라.
+특히 "가깝다", "편리하다", "다양하다", "쾌적하다", "편안하다", "인기 있다", "추천한다", "중심부", "주요 관광지", "여행하기 좋다", "이동이 쉽다", "접근성이 좋다", "교통이 편리하다" 같은 평가·추정 표현을 사용하지 마라.
 
-반드시 JSON 객체 하나만 출력해라. Markdown 코드블록이나 설명 문장은 출력하지 마라.
+이미지는 글의 주제와 실제 이미지 type을 명시적으로 연결해야 한다.
+이미지의 alt나 URL을 보고 시설이나 객실 특징을 추측하지 마라.
+
+반드시 JSON 객체 하나만 출력해라.
 
 JSON 구조:
 {
   "title": "한국어 제목",
-  "description": "검색 결과에 사용할 자연스러운 설명",
-  "introduction": "호텔의 확인된 핵심 정보를 소개하는 2~4문장",
+  "description": "검색 결과용 설명",
+  "introduction": "확인된 핵심 정보 소개",
   "sections": [
     {
-      "heading": "섹션 제목",
-      "paragraphs": ["문단 1", "문단 2"],
-      "imageIds": ["사용할 이미지 ID"]
+      "heading": "객실",
+      "paragraphs": ["..."],
+      "imageAssignments": [
+        {
+          "imageId": "실제 이미지 ID",
+          "imageType": "room"
+        }
+      ]
     }
   ],
   "faq": [
@@ -60,67 +57,61 @@ JSON 구조:
   "imageIds": ["본문에서 사용할 이미지 ID"]
 }
 
+섹션 이미지 연결 규칙:
+- "객실", "객실 정보", "룸"처럼 객실을 설명하는 section은 imageType을 "room"으로 지정한다.
+- "시설", "편의시설"을 설명하는 section은 imageType을 "facility"로 지정한다.
+- "조식", "레스토랑", "식음료", "다이닝"을 설명하는 section은 imageType을 "restaurant"로 지정한다.
+- "위치", "주소", "역 정보"를 설명하는 section은 imageType을 "location"으로 지정한다.
+- "주변 관광지"를 실제 입력 데이터로 설명할 수 있는 경우에만 imageType을 "attraction"으로 지정한다.
+- 호텔 전반을 보여주는 일반 이미지는 imageType "gallery"를 사용할 수 있다.
+- 대표 이미지는 section 이미지로 사용하지 말고 "hero"로 취급한다.
+- 반드시 실제 이미지의 type과 imageType이 일치하는 경우에만 연결한다.
+- 적합한 이미지가 없으면 imageAssignments를 빈 배열로 둔다. 다른 type의 이미지를 억지로 연결하지 마라.
+- 동일한 imageId를 여러 section에 배치하지 마라.
+- imageAssignments의 imageId는 아래 사용 가능한 이미지 목록의 ID만 사용한다.
+- imageAssignments의 imageType은 해당 이미지의 실제 type과 정확히 일치해야 한다.
+- imageIds는 section에서 실제 사용할 이미지들의 전체 목록이다. section imageAssignments에 사용한 ID를 포함한다.
+- 이미지가 없으면 imageIds와 모든 imageAssignments를 빈 배열로 작성한다.
+
 작성 규칙:
-- sections는 4~6개로 작성한다.
-- 가능한 경우 위치, 숙소 기본 정보, 시설, 식음료, 체크인/체크아웃, 제공된 역 정보 등을 다루되 데이터가 없는 주제는 억지로 만들지 말고 "제공된 데이터에서 확인되지 않습니다"라고 짧게 안내하거나 확인 가능한 다른 주제로 대체한다.
-- 데이터가 적은 호텔은 문장 수를 억지로 늘리지 않는다. 확인 가능한 사실을 반복하거나 일반적인 호텔 장점을 추가하지 않는다.
-- 시설은 입력 데이터의 facilities에 실제로 존재하는 이름만 언급한다. 예를 들어 facilities에 수영장, 온천, 헬스장, 피트니스, 스파, 사우나가 없으면 해당 시설을 언급하지 않는다.
-- 역 정보는 nearestStations에 실제로 존재하는 역 이름만 언급한다. 역 이름만으로 역과 호텔의 거리, 도보 시간, 접근성, 교통 편의성을 추론하지 않는다.
-- 객실 종류, 객실 크기, 침대 구성은 입력 데이터에 실제 객실 정보가 전달된 경우에만 작성한다. 현재 입력에는 객실 상세 데이터가 없으므로 객실을 임의로 설명하지 마라.
-- 주변 관광지, 역까지의 거리, 도보 시간, 이동 편의성은 입력 데이터에 직접 포함된 경우에만 작성한다.
-- 각 section은 1~3개의 자연스러운 문단으로 작성한다.
-- FAQ는 3~5개로 작성한다. 데이터로 답할 수 없는 질문은 만들지 마라. "근처에 무엇이 있나요?", "역에서 얼마나 걸리나요?", "교통이 편리한가요?"처럼 입력 데이터로 답할 수 없는 질문은 만들지 마라.
-- tags는 5~8개로 작성한다. 태그도 호텔 데이터에 직접 확인되는 도시, 지역, 숙소 유형, 시설명, 레스토랑명 등의 사실만 사용하고 "추천", "인기", "접근성", "교통편리" 같은 평가성 태그는 사용하지 않는다.
-- title은 호텔명과 도시 또는 지역 등 확인 가능한 핵심 정보를 중심으로 작성한다.
-- introduction은 2~4문장이라도 의미 없는 홍보 문구로 분량을 채우지 말고, 실제 확인된 사실만 간결하게 작성한다.
-- description과 tags에도 입력 데이터에 없는 특징이나 평가를 넣지 마라.
-- introduction과 각 section의 모든 사실 주장은 입력 데이터에서 직접 확인할 수 있어야 한다.
+- sections는 4~6개.
+- 각 section은 1~3개의 문단.
+- FAQ는 3~5개.
+- tags는 5~8개.
+- 객실 상세 데이터가 없으면 객실 특징을 만들지 마라.
+- 시설은 facilities에 실제 존재하는 이름만 사용한다.
+- 레스토랑은 restaurants에 실제 존재하는 정보만 사용한다.
+- 역 정보는 nearestStations에 실제 존재하는 역 이름만 사용하고 거리나 접근성을 추론하지 마라.
 - 데이터가 빈 배열이면 해당 시설이나 서비스가 없다고 단정하지 말고 "제공된 데이터에서 확인되지 않습니다"라고 표현한다.
-- 위치 정보가 도시/지역 수준이면 거리, 접근성, 주변 관광지, 이동 편의성을 추론하지 않는다.
-- description은 검색 결과에 적합한 자연스러운 한국어 설명으로 작성한다. 확인되지 않은 장점을 넣지 마라.
-- imageIds에는 아래의 '사용 가능한 이미지'에 있는 ID만 사용한다.
-- section의 imageIds에도 동일한 이미지 ID만 사용할 수 있다.
-- 이미지가 없으면 모든 imageIds를 빈 배열로 작성한다.
-- 이미지 사용은 본문 흐름을 방해하지 않도록 1~2개 섹션마다 필요한 경우에만 배치한다.
-- 동일한 이미지 ID를 여러 section에 반복하지 마라.
-- 권리 확인이 완료된 이미지(rightsConfirmed=true)만 사용 가능하다고 가정한다.
-- 이미지의 alt나 type을 근거로 실제 시설의 존재를 추론하지 마라.
 - JSON 문자열 안에는 줄바꿈을 넣지 말고 유효한 JSON을 출력한다.
 
 호텔 데이터:
-${JSON.stringify(
-  {
-    id: hotel.id,
-    name: hotel.name,
-    nameEn: clean(hotel.nameEn),
-    country: hotel.country,
-    prefecture: hotel.prefecture,
-    city: hotel.city,
-    area: hotel.area,
-    description: hotel.description,
-    location: hotel.location,
-    accommodationType: clean(hotel.accommodationType),
-    starRating: hotel.starRating ?? null,
-    checkIn: clean(hotel.checkIn),
-    checkOut: clean(hotel.checkOut),
-    facilities: hotel.facilities ?? [],
-    restaurants: hotel.restaurants ?? [],
-  },
-  null,
-  2,
-)}
+${JSON.stringify({
+  id: hotel.id,
+  name: hotel.name,
+  nameEn: clean(hotel.nameEn),
+  country: hotel.country,
+  prefecture: hotel.prefecture,
+  city: hotel.city,
+  area: hotel.area,
+  description: hotel.description,
+  location: hotel.location,
+  accommodationType: clean(hotel.accommodationType),
+  starRating: hotel.starRating ?? null,
+  checkIn: clean(hotel.checkIn),
+  checkOut: clean(hotel.checkOut),
+  facilities: hotel.facilities ?? [],
+  restaurants: hotel.restaurants ?? [],
+}, null, 2)}
 
 사용 가능한 이미지:
-${JSON.stringify(
-  confirmedImages.map((image) => ({
-    id: image.id,
-    alt: image.alt,
-    type: image.type,
-    width: image.width,
-    height: image.height,
-    rightsConfirmed: image.rightsConfirmed,
-  })),
-  null,
-  2,
-)}`;
+${JSON.stringify(confirmedImages.map((image) => ({
+  id: image.id,
+  type: image.type,
+  alt: image.alt,
+  width: image.width,
+  height: image.height,
+  rightsConfirmed: image.rightsConfirmed,
+})), null, 2)}
+`;
 }
