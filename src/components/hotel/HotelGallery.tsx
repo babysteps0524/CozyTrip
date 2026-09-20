@@ -7,6 +7,19 @@ interface HotelGalleryProps {
   images: HotelImage[];
 }
 
+const IMAGE_SOURCE_LABEL: Record<string, string> = {
+  myrealtrip: "마이리얼트립",
+  rakuten: "라쿠텐",
+  agoda: "Agoda",
+  official: "호텔 공식 사이트",
+  owned: "CozyTrip 자체 제작",
+  licensed: "라이선스 이미지",
+};
+
+function getImageSourceLabel(source: string): string {
+  return IMAGE_SOURCE_LABEL[source] ?? source;
+}
+
 const IMAGE_TYPE_LABEL: Record<HotelImage["type"], string> = {
   hero: "대표 이미지",
   gallery: "호텔 전경",
@@ -187,8 +200,9 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
             {safeIndex + 1} / {visibleImages.length}
           </p>
           <p className="m-0 max-w-[75%] text-right text-[11px] leading-5 text-ct-muted dark:text-ct-dark-muted sm:text-xs">
-            {IMAGE_TYPE_LABEL[selectedImage.type]}
+            출처: {getImageSourceLabel(selectedImage.source)}
             {selectedImage.credit ? ` · ${selectedImage.credit}` : ""}
+            {selectedImage.sourceUrl ? " · 원본/숙소 정보 링크 제공" : ""}
           </p>
         </div>
       </Container>
