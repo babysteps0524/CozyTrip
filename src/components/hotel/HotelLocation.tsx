@@ -26,9 +26,9 @@ export default function HotelLocation({ hotel }: HotelLocationProps) {
   const hasCoordinates = location.latitude !== undefined && location.longitude !== undefined;
 
   return (
-    <section id="location" aria-labelledby="hotel-location-title" border="t ct-line dark:ct-dark-line" bg="ct-surface-soft dark:ct-dark-surface-soft">
+    <section id="location" aria-labelledby="hotel-location-title" className="scroll-mt-24 border-t border-ct-line bg-ct-surface-soft dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
       <Container>
-        <div py="12 sm:16 lg:20">
+        <div className="py-12 sm:py-16 lg:py-20">
           <div flex="~ col sm:row" sm="items-end justify-between" gap="3">
             <div>
               <p m="0" text="xs ct-primary dark:ct-dark-text-soft" font="medium" tracking="wide">LOCATION</p>
