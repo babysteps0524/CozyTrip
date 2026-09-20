@@ -11,8 +11,7 @@ export type DestinationSlug =
   | "tokyo"
   | "osaka"
   | "fukuoka"
-  | "sapporo"
-;
+  | "sapporo";
 
 const loaders: Record<
   DestinationSlug,
