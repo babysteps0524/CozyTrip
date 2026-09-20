@@ -42,6 +42,8 @@ function createPostsFromGeneratedHotelPosts(): Post[] {
   const posts: Post[] = [];
 
   for (const hotelPost of getGeneratedHotelPosts()) {
+    if (hotelPost.status !== "published") continue;
+
     const hotel = getHotelById(hotelPost.hotelId);
 
     if (!hotel) {
@@ -114,5 +116,7 @@ export function getPostsByHotel(hotelId: string): Post[] {
 }
 
 export function getHotelPostByHotel(hotelId: string): HotelPost | undefined {
-  return getGeneratedHotelPosts().find((post) => post.hotelId === hotelId);
+  return getGeneratedHotelPosts().find(
+    (post) => post.hotelId === hotelId && post.status === "published",
+  );
 }
