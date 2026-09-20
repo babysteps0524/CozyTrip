@@ -18,19 +18,10 @@ const MAX_FAQ_ANSWER_LENGTH = 700;
 const MAX_TAG_LENGTH = 40;
 
 function extractJson(text: string): string {
-  const cleaned = text
-    .trim()
-    .replace(/^```(?:json)?\s*/i, "")
-    .replace(/\s*```$/i, "")
-    .trim();
-
+  const cleaned = text.trim().replace(/^\`\`\`(?:json)?\s*/i, "").replace(/\s*\`\`\`$/i, "").trim();
   const start = cleaned.indexOf("{");
   const end = cleaned.lastIndexOf("}");
-
-  if (start < 0 || end <= start) {
-    throw new Error("AI response does not contain a JSON object.");
-  }
-
+  if (start < 0 || end <= start) throw new Error("AI response does not contain a JSON object.");
   return cleaned.slice(start, end + 1);
 }
 
@@ -49,39 +40,20 @@ function cleanString(value: string): string {
 function uniqueStrings(values: string[]): string[] {
   const seen = new Set<string>();
   const result: string[] = [];
-
   for (const value of values) {
     const cleaned = cleanString(value);
     const key = cleaned.toLocaleLowerCase("ko-KR");
-
     if (!cleaned || seen.has(key)) continue;
-
     seen.add(key);
     result.push(cleaned);
   }
-
   return result;
 }
 
-function validateLength(
-  value: string,
-  max: number,
-  field: string,
-  provider: AIProviderName,
-): string {
+function validateLength(value: string, max: number, field: string, provider: AIProviderName): string {
   const cleaned = cleanString(value);
-
-  if (!cleaned) {
-    throw new AIProviderError(provider, `${field} cannot be empty.`);
-  }
-
-  if (cleaned.length > max) {
-    throw new AIProviderError(
-      provider,
-      `${field} is too long (maximum ${max} characters).`,
-    );
-  }
-
+  if (!cleaned) throw new AIProviderError(provider, `${field} cannot be empty.`);
+  if (cleaned.length > max) throw new AIProviderError(provider, `${field} is too long (maximum ${max} characters).`);
   return cleaned;
 }
 
@@ -93,14 +65,9 @@ function validateImageIds(
 ): string[] {
   const uniqueIds = uniqueStrings(imageIds);
   const invalidIds = uniqueIds.filter((id) => !availableImageIds.has(id));
-
   if (invalidIds.length > 0) {
-    throw new AIProviderError(
-      provider,
-      `${field} contains unknown image ID(s): ${invalidIds.join(", ")}`,
-    );
+    throw new AIProviderError(provider, `${field} contains unknown image ID(s): ${invalidIds.join(", ")}`);
   }
-
   return uniqueIds;
 }
 
@@ -111,13 +78,10 @@ export function parseHotelPost(
   availableImageIds: string[] = [],
 ): HotelPost {
   let value: unknown;
-
   try {
     value = JSON.parse(extractJson(text));
   } catch (error) {
-    const message =
-      error instanceof Error ? error.message : "Invalid JSON response.";
-    throw new AIProviderError(provider, message);
+    throw new AIProviderError(provider, error instanceof Error ? error.message : "Invalid JSON response.");
   }
 
   if (!value || typeof value !== "object") {
@@ -125,117 +89,60 @@ export function parseHotelPost(
   }
 
   const data = value as Record<string, unknown>;
-
-  if (
-    !isString(data.title) ||
-    !isString(data.description) ||
-    !isString(data.introduction) ||
-    !Array.isArray(data.sections) ||
-    !Array.isArray(data.faq) ||
-    !isStringArray(data.tags) ||
-    !isStringArray(data.imageIds)
-  ) {
-    throw new AIProviderError(
-      provider,
-      "AI response does not match the HotelPost structure.",
-    );
+  if (!isString(data.title) || !isString(data.description) || !isString(data.introduction) ||
+      !Array.isArray(data.sections) || !Array.isArray(data.faq) ||
+      !isStringArray(data.tags) || !isStringArray(data.imageIds)) {
+    throw new AIProviderError(provider, "AI response does not match the HotelPost structure.");
   }
 
   if (data.sections.length < MIN_SECTIONS || data.sections.length > MAX_SECTIONS) {
-    throw new AIProviderError(
-      provider,
-      `HotelPost must contain ${MIN_SECTIONS}-${MAX_SECTIONS} sections.`,
-    );
+    throw new AIProviderError(provider, `HotelPost must contain ${MIN_SECTIONS}-${MAX_SECTIONS} sections.`);
   }
-
   if (data.faq.length < MIN_FAQ || data.faq.length > MAX_FAQ) {
-    throw new AIProviderError(
-      provider,
-      `HotelPost must contain ${MIN_FAQ}-${MAX_FAQ} FAQ items.`,
-    );
+    throw new AIProviderError(provider, `HotelPost must contain ${MIN_FAQ}-${MAX_FAQ} FAQ items.`);
   }
 
   const tags = uniqueStrings(data.tags);
-
   if (tags.length < MIN_TAGS || tags.length > MAX_TAGS) {
-    throw new AIProviderError(
-      provider,
-      `HotelPost must contain ${MIN_TAGS}-${MAX_TAGS} unique tags.`,
-    );
+    throw new AIProviderError(provider, `HotelPost must contain ${MIN_TAGS}-${MAX_TAGS} unique tags.`);
   }
-
   for (const tag of tags) {
-    if (tag.length > MAX_TAG_LENGTH) {
-      throw new AIProviderError(provider, "A tag is too long.");
-    }
+    if (tag.length > MAX_TAG_LENGTH) throw new AIProviderError(provider, "A tag is too long.");
   }
 
   const availableIds = new Set(availableImageIds);
-  const imageIds = validateImageIds(
-    data.imageIds,
-    availableIds,
-    provider,
-    "imageIds",
-  );
+  const imageIds = validateImageIds(data.imageIds, availableIds, provider, "imageIds");
 
   const sections = data.sections.map((section, index) => {
     if (!section || typeof section !== "object") {
       throw new AIProviderError(provider, `Invalid hotel post section ${index + 1}.`);
     }
-
     const item = section as Record<string, unknown>;
-
     if (!isString(item.heading) || !isStringArray(item.paragraphs)) {
-      throw new AIProviderError(
-        provider,
-        `Invalid hotel post section ${index + 1} fields.`,
-      );
+      throw new AIProviderError(provider, `Invalid hotel post section ${index + 1} fields.`);
     }
-
     if (item.paragraphs.length === 0) {
-      throw new AIProviderError(
-        provider,
-        `Hotel post section ${index + 1} must contain a paragraph.`,
-      );
+      throw new AIProviderError(provider, `Hotel post section ${index + 1} must contain a paragraph.`);
     }
-
     if (item.imageIds !== undefined && !isStringArray(item.imageIds)) {
       throw new AIProviderError(provider, "Invalid section imageIds.");
     }
 
-    const heading = validateLength(
-      item.heading,
-      MAX_SECTION_HEADING_LENGTH,
-      `Section ${index + 1} heading`,
-      provider,
-    );
-
+    const heading = validateLength(item.heading, MAX_SECTION_HEADING_LENGTH, `Section ${index + 1} heading`, provider);
     const paragraphs = item.paragraphs.map((paragraph, paragraphIndex) =>
-      validateLength(
-        paragraph,
-        MAX_PARAGRAPH_LENGTH,
-        `Section ${index + 1} paragraph ${paragraphIndex + 1}`,
-        provider,
-      ),
+      validateLength(paragraph, MAX_PARAGRAPH_LENGTH, `Section ${index + 1} paragraph ${paragraphIndex + 1}`, provider),
     );
-
     const sectionImageIds = validateImageIds(
-      item.imageIds as string[] | undefined ?? [],
+      (item.imageIds as string[] | undefined) ?? [],
       availableIds,
       provider,
       `Section ${index + 1} imageIds`,
     );
 
-    return {
-      heading,
-      paragraphs,
-      imageIds: sectionImageIds,
-    };
+    return { heading, paragraphs, imageIds: sectionImageIds };
   });
 
-  const sectionHeadings = uniqueStrings(sections.map((section) => section.heading));
-
-  if (sectionHeadings.length !== sections.length) {
+  if (uniqueStrings(sections.map((section) => section.heading)).length !== sections.length) {
     throw new AIProviderError(provider, "Hotel post section headings must be unique.");
   }
 
@@ -243,32 +150,17 @@ export function parseHotelPost(
     if (!item || typeof item !== "object") {
       throw new AIProviderError(provider, `Invalid FAQ item ${index + 1}.`);
     }
-
     const faqItem = item as Record<string, unknown>;
-
     if (!isString(faqItem.question) || !isString(faqItem.answer)) {
       throw new AIProviderError(provider, `Invalid FAQ ${index + 1} fields.`);
     }
-
     return {
-      question: validateLength(
-        faqItem.question,
-        MAX_FAQ_QUESTION_LENGTH,
-        `FAQ ${index + 1} question`,
-        provider,
-      ),
-      answer: validateLength(
-        faqItem.answer,
-        MAX_FAQ_ANSWER_LENGTH,
-        `FAQ ${index + 1} answer`,
-        provider,
-      ),
+      question: validateLength(faqItem.question, MAX_FAQ_QUESTION_LENGTH, `FAQ ${index + 1} question`, provider),
+      answer: validateLength(faqItem.answer, MAX_FAQ_ANSWER_LENGTH, `FAQ ${index + 1} answer`, provider),
     };
   });
 
-  const faqQuestions = uniqueStrings(faq.map((item) => item.question));
-
-  if (faqQuestions.length !== faq.length) {
+  if (uniqueStrings(faq.map((item) => item.question)).length !== faq.length) {
     throw new AIProviderError(provider, "FAQ questions must be unique.");
   }
 
@@ -277,23 +169,13 @@ export function parseHotelPost(
     hotelId: inputHotelId,
     slug: "",
     title: validateLength(data.title, MAX_TITLE_LENGTH, "Title", provider),
-    description: validateLength(
-      data.description,
-      MAX_DESCRIPTION_LENGTH,
-      "Description",
-      provider,
-    ),
-    introduction: validateLength(
-      data.introduction,
-      MAX_INTRODUCTION_LENGTH,
-      "Introduction",
-      provider,
-    ),
+    description: validateLength(data.description, MAX_DESCRIPTION_LENGTH, "Description", provider),
+    introduction: validateLength(data.introduction, MAX_INTRODUCTION_LENGTH, "Introduction", provider),
     sections,
     faq,
     tags,
     imageIds,
     generatedBy: provider,
-    promptVersion: "hotel-post-v2",
+    promptVersion: "hotel-post-v5",
   };
 }
