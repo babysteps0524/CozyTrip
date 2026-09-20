@@ -61,10 +61,10 @@ export default function App({
   posts,
 }: AppProps) {
   const path = normalizePath(initialPath ?? getCurrentPath());
-  const destinationMatch = path.match(/^/japan/([^/]+)$/);
-  const hotelListMatch = path.match(/^/japan/([^/]+)/hotels$/);
-  const hotelDetailMatch = path.match(/^/japan/([^/]+)/hotels/([^/]+)$/);
-  const guideMatch = path.match(/^/guides/([^/]+)$/);
+  const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
+  const hotelListMatch = path.match(/^\/japan\/([^/]+)\/hotels$/);
+  const hotelDetailMatch = path.match(/^\/japan\/([^/]+)\/hotels\/([^/]+)$/);
+  const guideMatch = path.match(/^\/guides\/([^/]+)$/);
 
   const destinationSlug =
     destinationMatch?.[1] ?? hotelListMatch?.[1] ?? hotelDetailMatch?.[1];
