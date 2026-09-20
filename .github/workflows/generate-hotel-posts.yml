@@ -13,7 +13,7 @@ on:
         default: "1"
         type: string
       repair_invalid:
-        description: "기존 게시글 중 v5 엄격 사실 검증에 실패한 글만 재생성"
+        description: "기존 게시글 중 엄격 사실 검증에 실패한 글만 재생성"
         required: false
         default: false
         type: boolean
@@ -40,7 +40,7 @@ jobs:
       MYREALTRIP_IMAGE_USAGE_ALLOWED: "true"
       AI_HOTEL_ID: ${{ inputs.hotel_id }}
       AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
-      AI_DAILY_PLAN: "japan-tokyo:3,japan-osaka:3,japan-kyoto:2,japan-fukuoka:2,japan-okinawa:1"
+      AI_DAILY_PLAN: "japan-tokyo:2,japan-osaka:2,japan-kyoto:2,japan-fukuoka:2,japan-sapporo:2,japan-okinawa:2"
       AI_REPAIR_INVALID: ${{ inputs.repair_invalid || false }}
 
     timeout-minutes: 30
