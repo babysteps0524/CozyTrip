@@ -46,7 +46,7 @@ export interface HotelPolicy {
   bookingNotes?: string[];
 }
 
-export type HotelDataSource = "manual" | "agoda" | "myrealtrip";
+export type HotelDataSource = "manual" | "myrealtrip";
 
 export interface Hotel {
   id: string;
