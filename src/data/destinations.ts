@@ -31,20 +31,7 @@ export const destinations: Destination[] = [
       "신세카이",
     ],
   },
-
-  {
-    id: "japan-kyoto",
-    name: "교토",
-    nameEn: "Kyoto",
-    slug: "kyoto",
-    country: "일본",
-    countryCode: "JP",
-    prefecture: "Kyoto",
-    description: "교토역, 기온, 가와라마치 등 주요 여행 지역과 주변 호텔 정보를 확인해보세요.",
-    popularAreas: ["교토역", "기온", "가와라마치", "아라시야마"],
-    popularAttractions: ["기요미즈데라", "후시미 이나리", "아라시야마", "기온"],
-  },
-
+ 
   {
     id: "japan-fukuoka",
     name: "후쿠오카",
@@ -82,24 +69,6 @@ export const destinations: Destination[] = [
     ],
   },
 
-  {
-    id: "japan-okinawa",
-    name: "오키나와",
-    nameEn: "Okinawa",
-    slug: "okinawa",
-    country: "일본",
-    countryCode: "JP",
-    prefecture: "Okinawa",
-    description:
-      "나하, 온나손, 차탄 등 주요 지역과 오키나와 여행을 위한 호텔 정보를 확인해보세요.",
-    popularAreas: ["나하", "온나손", "차탄", "아메리칸 빌리지"],
-    popularAttractions: [
-      "슈리성",
-      "국제거리",
-      "아메리칸 빌리지",
-      "추라우미 수족관",
-    ],
-  },
 ];
 
 export const destinationMap = new Map(
