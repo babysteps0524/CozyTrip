@@ -8,7 +8,7 @@ const navigationItems = [
 export default function Navigation() {
   return (
     <nav
-      className="hidden items-center gap-1 whitespace-nowrap text-sm text-ct-text-soft dark:text-ct-dark-text-soft lg:flex"
+      className="flex items-center gap-1 whitespace-nowrap text-sm text-ct-text-soft dark:text-ct-dark-text-soft"
       aria-label="도시별 여행지 메뉴"
     >
       {navigationItems.map((item) => (
