@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-20T02:37:57.955Z",
+  "generatedAt": "2026-09-20T11:21:41.175Z",
   "source": "ai",
   "plan": {},
   "totalTarget": 0,
-  "totalSucceeded": 3,
-  "totalFailed": 1,
-  "totalPublished": 81,
+  "totalSucceeded": 0,
+  "totalFailed": 0,
+  "totalPublished": 0,
   "totalInventory": 606,
-  "totalRemaining": 525,
+  "totalRemaining": 606,
   "destinations": []
 }
