@@ -35,7 +35,8 @@
     "validate:myrealtrip-images": "bun scripts/validate-myrealtrip-images.ts",
     "validate:hotel-daily-plan": "bun scripts/validate-hotel-daily-plan.ts",
     "validate:hotel-selection": "bun scripts/validate-hotel-selection.ts",
-    "ai:repair-hotel-posts": "bun scripts/generate-hotel-posts.ts --repair-invalid=true"
+    "ai:repair-hotel-posts": "bun scripts/generate-hotel-posts.ts --repair-invalid=true",
+    "myrealtrip:inspect-images": "bun scripts/myrealtrip/inspect-accommodation-images.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
