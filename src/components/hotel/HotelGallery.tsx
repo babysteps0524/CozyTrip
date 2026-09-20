@@ -11,6 +11,7 @@ const IMAGE_TYPE_LABEL: Record<HotelImage["type"], string> = {
   hero: "대표 이미지",
   gallery: "호텔 전경",
   room: "객실",
+  bathroom: "욕실",
   facility: "시설",
   restaurant: "다이닝",
   location: "위치",
