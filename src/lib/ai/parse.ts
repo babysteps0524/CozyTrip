@@ -1,4 +1,4 @@
-import type { HotelPost } from "../../types";
+import type { HotelPost, HotelPostImageAssignment, ImageType } from "../../types";
 import type { AIProviderName } from "./types";
 import { AIProviderError } from "./types";
 
@@ -16,6 +16,16 @@ const MAX_PARAGRAPH_LENGTH = 1_500;
 const MAX_FAQ_QUESTION_LENGTH = 200;
 const MAX_FAQ_ANSWER_LENGTH = 700;
 const MAX_TAG_LENGTH = 40;
+
+const IMAGE_TYPES: ImageType[] = [
+  "hero",
+  "gallery",
+  "room",
+  "facility",
+  "restaurant",
+  "location",
+  "attraction",
+];
 
 function extractJson(text: string): string {
   const cleaned = text.trim().replace(/^\`\`\`(?:json)?\s*/i, "").replace(/\s*\`\`\`$/i, "").trim();
@@ -57,12 +67,7 @@ function validateLength(value: string, max: number, field: string, provider: AIP
   return cleaned;
 }
 
-function validateImageIds(
-  imageIds: string[],
-  availableImageIds: Set<string>,
-  provider: AIProviderName,
-  field: string,
-): string[] {
+function validateImageIds(imageIds: string[], availableImageIds: Set<string>, provider: AIProviderName, field: string): string[] {
   const uniqueIds = uniqueStrings(imageIds);
   const invalidIds = uniqueIds.filter((id) => !availableImageIds.has(id));
   if (invalidIds.length > 0) {
@@ -71,12 +76,14 @@ function validateImageIds(
   return uniqueIds;
 }
 
-export function parseHotelPost(
-  text: string,
-  provider: AIProviderName,
-  inputHotelId: string,
-  availableImageIds: string[] = [],
-): HotelPost {
+function validateImageType(value: unknown, provider: AIProviderName, field: string): ImageType {
+  if (typeof value !== "string" || !IMAGE_TYPES.includes(value as ImageType)) {
+    throw new AIProviderError(provider, `${field} must be a valid image type.`);
+  }
+  return value as ImageType;
+}
+
+export function parseHotelPost(text: string, provider: AIProviderName, inputHotelId: string, availableImageIds: string[] = []): HotelPost {
   let value: unknown;
   try {
     value = JSON.parse(extractJson(text));
@@ -117,6 +124,7 @@ export function parseHotelPost(
     if (!section || typeof section !== "object") {
       throw new AIProviderError(provider, `Invalid hotel post section ${index + 1}.`);
     }
+
     const item = section as Record<string, unknown>;
     if (!isString(item.heading) || !isStringArray(item.paragraphs)) {
       throw new AIProviderError(provider, `Invalid hotel post section ${index + 1} fields.`);
@@ -124,32 +132,76 @@ export function parseHotelPost(
     if (item.paragraphs.length === 0) {
       throw new AIProviderError(provider, `Hotel post section ${index + 1} must contain a paragraph.`);
     }
+
     if (item.imageIds !== undefined && !isStringArray(item.imageIds)) {
       throw new AIProviderError(provider, "Invalid section imageIds.");
+    }
+
+    if (item.imageAssignments !== undefined && !Array.isArray(item.imageAssignments)) {
+      throw new AIProviderError(provider, "Invalid section imageAssignments.");
     }
 
     const heading = validateLength(item.heading, MAX_SECTION_HEADING_LENGTH, `Section ${index + 1} heading`, provider);
     const paragraphs = item.paragraphs.map((paragraph, paragraphIndex) =>
       validateLength(paragraph, MAX_PARAGRAPH_LENGTH, `Section ${index + 1} paragraph ${paragraphIndex + 1}`, provider),
     );
-    const sectionImageIds = validateImageIds(
+
+    const legacyIds = validateImageIds(
       (item.imageIds as string[] | undefined) ?? [],
       availableIds,
       provider,
       `Section ${index + 1} imageIds`,
     );
 
-    return { heading, paragraphs, imageIds: sectionImageIds };
+    const assignments: HotelPostImageAssignment[] = [];
+    for (const [assignmentIndex, raw] of ((item.imageAssignments as unknown[] | undefined) ?? []).entries()) {
+      if (!raw || typeof raw !== "object") {
+        throw new AIProviderError(provider, `Invalid section ${index + 1} image assignment ${assignmentIndex + 1}.`);
+      }
+      const assignment = raw as Record<string, unknown>;
+      if (!isString(assignment.imageId)) {
+        throw new AIProviderError(provider, `Section ${index + 1} image assignment requires imageId.`);
+      }
+      const imageId = validateImageIds(
+        [assignment.imageId],
+        availableIds,
+        provider,
+        `Section ${index + 1} image assignment`,
+      )[0];
+      assignments.push({
+        imageId,
+        imageType: validateImageType(
+          assignment.imageType,
+          provider,
+          `Section ${index + 1} image assignment imageType`,
+        ),
+      });
+    }
+
+    return {
+      heading,
+      paragraphs,
+      imageIds: legacyIds,
+      imageAssignments: assignments,
+    };
   });
+
+  const assignedImageIds = new Set<string>();
+  for (const section of sections) {
+    for (const assignment of section.imageAssignments ?? []) {
+      if (assignedImageIds.has(assignment.imageId)) {
+        throw new AIProviderError(provider, `Image ID is assigned to more than one section: ${assignment.imageId}`);
+      }
+      assignedImageIds.add(assignment.imageId);
+    }
+  }
 
   if (uniqueStrings(sections.map((section) => section.heading)).length !== sections.length) {
     throw new AIProviderError(provider, "Hotel post section headings must be unique.");
   }
 
   const faq = data.faq.map((item, index) => {
-    if (!item || typeof item !== "object") {
-      throw new AIProviderError(provider, `Invalid FAQ item ${index + 1}.`);
-    }
+    if (!item || typeof item !== "object") throw new AIProviderError(provider, `Invalid FAQ item ${index + 1}.`);
     const faqItem = item as Record<string, unknown>;
     if (!isString(faqItem.question) || !isString(faqItem.answer)) {
       throw new AIProviderError(provider, `Invalid FAQ ${index + 1} fields.`);
@@ -176,6 +228,6 @@ export function parseHotelPost(
     tags,
     imageIds,
     generatedBy: provider,
-    promptVersion: "hotel-post-v5",
+    promptVersion: "hotel-post-v6",
   };
 }
