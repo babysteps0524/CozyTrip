@@ -111,8 +111,15 @@ function getHotelSeoData(route: string) {
   const match = normalizeRoute(route).match(/^\/japan\/([^/]+)\/hotels\/([^/]+)\/$/);
   if (!match) return null;
 
-  const destination = destinations.find((item) => item.slug === match[1]);
-  const hotel = hotels.find((item) => item.slug === match[2]);
+  const destinationSlug = match[1].normalize("NFC");
+  const hotelSlug = match[2].normalize("NFC");
+
+  const destination = destinations.find(
+    (item) => item.slug.normalize("NFC") === destinationSlug,
+  );
+  const hotel = hotels.find(
+    (item) => item.slug.normalize("NFC") === hotelSlug,
+  );
 
   if (!destination || !hotel || hotel.destinationId !== destination.id) return null;
   return { destination, hotel };
