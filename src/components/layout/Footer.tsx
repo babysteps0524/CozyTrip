@@ -65,18 +65,59 @@ export default function Footer() {
               여행 정보
             </h2>
 
-            <a
-              href="/guides/"
+            <nav
               mt="3"
-              display="inline-flex"
+              flex="~ wrap"
+              gap="x-4 y-2"
               text="sm ct-text-soft dark:ct-dark-text-soft"
-              hover="text-ct-primary dark:text-ct-dark-text"
-              transition="colors duration-150"
-              active-scale="98"
-              className="ct-focus"
+              aria-label="사이트 정보 링크"
             >
-              여행 가이드
-            </a>
+              <a
+                href="/guides/"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                transition="colors duration-150"
+                active-scale="98"
+                className="ct-focus"
+              >
+                여행 가이드
+              </a>
+              <a
+                href="/about/"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                transition="colors duration-150"
+                active-scale="98"
+                className="ct-focus"
+              >
+                코지트립 소개
+              </a>
+              <a
+                href="/affiliate/"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                transition="colors duration-150"
+                active-scale="98"
+                className="ct-focus"
+              >
+                제휴 및 광고
+              </a>
+              <a
+                href="/privacy/"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                transition="colors duration-150"
+                active-scale="98"
+                className="ct-focus"
+              >
+                개인정보처리방침
+              </a>
+              <a
+                href="/contact/"
+                hover="text-ct-primary dark:text-ct-dark-text"
+                transition="colors duration-150"
+                active-scale="98"
+                className="ct-focus"
+              >
+                문의
+              </a>
+            </nav>
           </div>
         </div>
 
