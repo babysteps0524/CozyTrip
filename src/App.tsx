@@ -1,6 +1,4 @@
-import type { Post } from "./types";
-import type { Destination } from "./types";
-import type { Hotel } from "./types";
+import type { Post, Destination, Hotel } from "./types";
 import { Footer, Header } from "./components/layout";
 import Home from "./pages/Home";
 import Japan from "./pages/Japan";
@@ -77,7 +75,6 @@ export default function App({
     ? getDestinationBySlug(destinations, destinationSlug)
     : undefined;
 
-  const hotelSlug = hotelDetailMatch?.[2];
   const publishedHotelIds = new Set(
     posts
       .filter((post) => post.category === "hotel" && post.hotelId)
@@ -85,8 +82,21 @@ export default function App({
   );
 
   const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));
-  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;  const publishedHotelIds = new Set(\n    posts\n      .filter((post) => post.category === "hotel" && post.hotelId)\n      .map((post) => post.hotelId as string),\n  );\n\n  const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));\n  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;
-  const staticPage = path === "/about" ? "about" : path === "/privacy" ? "privacy" : path === "/affiliate" ? "affiliate" : path === "/contact" ? "contact" : undefined;
+
+  const hotelSlug = hotelDetailMatch?.[2];
+  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;
+
+  const staticPage =
+    path === "/about"
+      ? "about"
+      : path === "/privacy"
+        ? "privacy"
+        : path === "/affiliate"
+          ? "affiliate"
+          : path === "/contact"
+            ? "contact"
+            : undefined;
+
   const guideSlug = guideMatch?.[1];
   const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
 
@@ -100,6 +110,7 @@ export default function App({
       hotel &&
       hotel.destinationId === destination.id,
   );
+
   const isGuide = Boolean(guideMatch && guide && guide.category === "guide");
 
   const isKnownRoute =
@@ -156,9 +167,10 @@ export default function App({
             destination={destination}
             hotelPosts={posts.filter((post) => post.hotelId === hotel.id)}
             relatedGuides={[]}
-            relatedHotels={getHotelsByDestination(visibleHotels, hotel.destinationId).filter(
-              (item) => item.id !== hotel.id,
-            )}
+            relatedHotels={getHotelsByDestination(
+              visibleHotels,
+              hotel.destinationId,
+            ).filter((item) => item.id !== hotel.id)}
           />
         )}
 
@@ -184,7 +196,9 @@ export default function App({
               py="20"
             >
               <div text="center">
-                <p m="0" text="sm ct-muted dark:ct-dark-muted">404</p>
+                <p m="0" text="sm ct-muted dark:ct-dark-muted">
+                  404
+                </p>
                 <h1 mt="2" mb="0" text="2xl sm:3xl" font="bold">
                   페이지를 찾을 수 없습니다.
                 </h1>
