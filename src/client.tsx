@@ -135,10 +135,36 @@ async function start() {
   } else if (path === "/contact") {
     pageKey = "contact";
   } else if (path === "/") {
-    const [hotels, guides] = await Promise.all([
-      loadClientHotels("tokyo"),
-      loadClientGuidePosts(),
-    ]);
+    const [tokyoHotels, osakaHotels, fukuokaHotels, sapporoHotels] =
+      await Promise.all([
+        loadClientHotels("tokyo"),
+        loadClientHotels("osaka"),
+        loadClientHotels("fukuoka"),
+        loadClientHotels("sapporo"),
+      ]);
+
+    const [guides, tokyoPosts, osakaPosts, fukuokaPosts, sapporoPosts] =
+      await Promise.all([
+        loadClientGuidePosts(),
+        loadClientPostsByDestination("tokyo"),
+        loadClientPostsByDestination("osaka"),
+        loadClientPostsByDestination("fukuoka"),
+        loadClientPostsByDestination("sapporo"),
+      ]);
+
+    const publishedHotelIds = new Set(
+      [tokyoPosts, osakaPosts, fukuokaPosts, sapporoPosts]
+        .flat()
+        .filter((post) => post.category === "hotel" && post.hotelId)
+        .map((post) => post.hotelId as string),
+    );
+
+    const hotels = [
+      ...tokyoHotels,
+      ...osakaHotels,
+      ...fukuokaHotels,
+      ...sapporoHotels,
+    ].filter((hotel) => publishedHotelIds.has(hotel.id));
 
     pageKey = "home";
     pageProps = {
@@ -175,10 +201,20 @@ async function start() {
     if (!destination) {
       pageKey = "notFound";
     } else {
-      const [hotels, destinationPosts] = await Promise.all([
+      const [allHotels, destinationPosts] = await Promise.all([
         loadClientHotels(destination.slug),
         loadClientPostsByDestination(destination.slug),
       ]);
+
+      const publishedHotelIds = new Set(
+        destinationPosts
+          .filter((post) => post.category === "hotel" && post.hotelId)
+          .map((post) => post.hotelId as string),
+      );
+
+      const hotels = allHotels.filter((hotel) =>
+        publishedHotelIds.has(hotel.id),
+      );
 
       if (hotelDetailMatch && hotelSlug) {
         const normalizedHotelSlug = hotelSlug.normalize("NFC");
@@ -249,7 +285,7 @@ async function start() {
         dark="bg-ct-dark-bg text-ct-dark-text"
       >
         <Header />
-        <main>{pageElement}</main>
+        <main pt="20 sm:22">{pageElement}</main>
         <Footer />
       </div>
     </StrictMode>,
