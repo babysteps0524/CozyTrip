@@ -12,6 +12,7 @@ const EXPECTED_DAILY_PLAN = new Map<string, number>([
   ["japan-tokyo", 3],
   ["japan-osaka", 3],
   ["japan-fukuoka", 3],
+  ["japan-sapporo", 2],
 ]);
 
 function fail(message: string): never {
