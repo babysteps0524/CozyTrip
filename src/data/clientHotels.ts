@@ -1,6 +1,4 @@
 import type { Hotel } from "../types";
-import myRealTripHotels from "./generated/myrealtrip-hotels.json";
-
 interface ClientHotelFile {
   hotels?: Hotel[];
 }
@@ -35,16 +33,26 @@ export async function loadClientHotels(
     const data = await loader();
     return Array.isArray(data.hotels) ? (data.hotels as Hotel[]) : [];
   } catch (error) {
-    const source = myRealTripHotels as { hotels?: Hotel[] };
-    const fallbackHotels = Array.isArray(source.hotels) ? source.hotels : [];
+    try {
+      const source = (await import("./generated/myrealtrip-hotels.json")) as unknown as {
+        hotels?: Hotel[];
+      };
+      const fallbackHotels = Array.isArray(source.hotels) ? source.hotels : [];
 
-    console.warn(
-      `Client hotel chunk is unavailable for ${destinationSlug}; using source hotel data fallback.`,
-      error,
-    );
+      console.warn(
+        `Client hotel chunk is unavailable for ${destinationSlug}; using source hotel data fallback.`,
+        error,
+      );
 
-    return fallbackHotels.filter(
-      (hotel) => hotel.destinationId === `japan-${destinationSlug}`,
-    );
+      return fallbackHotels.filter(
+        (hotel) => hotel.destinationId === `japan-${destinationSlug}`,
+      );
+    } catch (fallbackError) {
+      console.warn(
+        `Client hotel fallback is unavailable for ${destinationSlug}.`,
+        fallbackError,
+      );
+      return []; 
+    }
   }
 }
