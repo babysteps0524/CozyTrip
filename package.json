@@ -19,7 +19,8 @@
     "ai:repair": "bun scripts/generate-hotel-posts.ts --repair-invalid=true",
     "myrealtrip:generate": "bun scripts/myrealtrip/generate-hotels.ts",
     "autoPost": "bun scripts/myrealtrip/generate-hotels.ts && bun scripts/generate-hotel-posts.ts && bun scripts/split-client-post-data.ts && bun scripts/generate-hotel-inventory.ts",
-    "ai:review": "bun scripts/review-hotel-posts.ts"
+    "ai:review": "bun scripts/review-hotel-posts.ts",
+    "ai:review:post": "bun scripts/review-hotel-post.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
