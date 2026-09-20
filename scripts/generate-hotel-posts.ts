@@ -137,6 +137,9 @@ const requestedLimit = Number(
   getCliOption("limit") ?? process.env.AI_POST_LIMIT ?? "1",
 );
 const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
+const repairInvalid =
+  getCliOption("repair-invalid") === "true" ||
+  process.env.AI_REPAIR_INVALID === "true";
 
 const MAX_GENERATION_ATTEMPTS = 2;
 const MAX_FAILURE_ATTEMPTS = 5;
@@ -513,6 +516,33 @@ function hasDuplicateTopic(
   );
 }
 
+function findInvalidExistingPosts(
+  posts: HotelPost[],
+  hotels: Hotel[],
+): Hotel[] {
+  const hotelsById = new Map(hotels.map((hotel) => [hotel.id, hotel]));
+  const invalidHotels: Hotel[] = [];
+
+  for (const post of posts) {
+    const hotel = hotelsById.get(post.hotelId);
+    if (!hotel) continue;
+
+    try {
+      validateHotelPost(post, hotel, {
+        availableImages: hotel.images.filter((image) => image.rightsConfirmed),
+        strictFacts: true,
+      });
+    } catch (error) {
+      console.warn(
+        `Existing hotel post requires repair [${post.hotelId}]: ${formatGenerationError(error)}`,
+      );
+      invalidHotels.push(hotel);
+    }
+  }
+
+  return invalidHotels;
+}
+
 function formatGenerationError(error: unknown): string {
   if (error instanceof AllAIProvidersFailedError) {
     if (error.errors.length === 0) {
@@ -634,16 +664,22 @@ async function main(): Promise<void> {
   const failedHotelMap = new Map(
     failedHotels.map((failure) => [failure.hotelId, failure]),
   );
-  const selectedHotels = selectHotels(source.hotels, existingPosts, failedHotels);
-  const plan = dailyPlan ? parseDailyPlan(dailyPlan) : undefined;
+  const plan = repairInvalid || requestedHotelId || !dailyPlan
+    ? undefined
+    : parseDailyPlan(dailyPlan);
+  const selectedHotels = repairInvalid
+    ? findInvalidExistingPosts(existingPosts, source.hotels)
+    : selectHotels(source.hotels, existingPosts, failedHotels, plan);
 
-  validateSelectedHotels(
-    selectedHotels,
-    source.hotels,
-    existingPosts,
-    failedHotels,
-    plan,
-  );
+  if (!repairInvalid) {
+    validateSelectedHotels(
+      selectedHotels,
+      source.hotels,
+      existingPosts,
+      failedHotels,
+      plan,
+    );
+  }
 
   const generatedPosts: HotelPost[] = [];
   let successCount = 0;
@@ -652,11 +688,13 @@ async function main(): Promise<void> {
   let retrySuccessCount = 0;
 
   console.log(
-    requestedHotelId
-      ? `AI generation target: ${requestedHotelId}`
-      : dailyPlan
-        ? `AI daily plan: ${dailyPlan} -> ${selectedHotels.length} hotel(s)`
-        : `AI generation limit: ${selectedHotels.length} new hotel(s)`,
+    repairInvalid
+      ? `AI repair mode: ${selectedHotels.length} invalid existing hotel post(s)`
+      : requestedHotelId
+        ? `AI generation target: ${requestedHotelId}`
+        : dailyPlan
+          ? `AI daily plan: ${dailyPlan} -> ${selectedHotels.length} hotel(s)`
+          : `AI generation limit: ${selectedHotels.length} new hotel(s)`,
   );
 
   if (requestedHotelId && selectedHotels.length === 1) {
