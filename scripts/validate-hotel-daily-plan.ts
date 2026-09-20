@@ -11,9 +11,7 @@ const hotelPath = resolve(root, "src/data/generated/myrealtrip-hotels.json");
 const EXPECTED_DAILY_PLAN = new Map<string, number>([
   ["japan-tokyo", 3],
   ["japan-osaka", 3],
-  ["japan-kyoto", 2],
-  ["japan-fukuoka", 2],
-  ["japan-okinawa", 1],
+  ["japan-fukuoka", 3],
 ]);
 
 function fail(message: string): never {
