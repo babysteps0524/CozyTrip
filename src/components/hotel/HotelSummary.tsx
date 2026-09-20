@@ -18,11 +18,9 @@ export default function HotelSummary({ hotel }: HotelSummaryProps) {
   const dataSourceLabel =
     hotel.dataSource === "myrealtrip"
       ? "마이리얼트립 숙소 검색 API"
-      : hotel.dataSource === "agoda"
-        ? "Agoda 숙소 데이터"
-        : hotel.dataSource === "manual"
-          ? "CozyTrip 수동 입력"
-          : undefined;
+      : hotel.dataSource === "manual"
+        ? "CozyTrip 수동 입력"
+        : undefined;
 
   const dataFetchedLabel = hotel.dataFetchedAt
     ? new Date(hotel.dataFetchedAt).toLocaleDateString("ko-KR")
