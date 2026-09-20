@@ -55,6 +55,30 @@ async function main(): Promise<void> {
     throw new Error(`Source hotel not found: ${hotelId}`);
   }
 
+  if (post.status !== "review") {
+    throw new Error(
+      `Only review posts can be published. Current status: ${post.status}`,
+    );
+  }
+
+  const selectedImages = post.imageIds.map((imageId) =>
+    hotel.images.find((image) => image.id === imageId),
+  );
+
+  if (selectedImages.some((image) => !image)) {
+    throw new Error("The post references an image that does not exist in the source hotel data.");
+  }
+
+  const unconfirmedImages = selectedImages.filter(
+    (image) => !image?.rightsConfirmed,
+  );
+
+  if (unconfirmedImages.length > 0) {
+    throw new Error(
+      `Cannot publish: ${unconfirmedImages.length} selected image(s) are not rights-confirmed.`,
+    );
+  }
+
   validateHotelPost(post, hotel, {
     availableImages: hotel.images.filter((image) => image.rightsConfirmed),
     strictFacts: true,
