@@ -2,6 +2,9 @@ interface AffiliateDisclosureProps {
   show: boolean;
 }
 
+const MYREALTRIP_DISCLOSURE_IMAGE =
+  "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/02/F8Hc/GPgE8DOyg5.png";
+
 export default function AffiliateDisclosure({
   show,
 }: AffiliateDisclosureProps) {
@@ -9,17 +12,18 @@ export default function AffiliateDisclosure({
 
   return (
     <aside
-      className="mt-6 rounded-xl border border-ct-primary/30 bg-ct-primary-soft px-4 py-4 text-sm leading-7 text-ct-text dark:border-ct-primary/40 dark:bg-ct-dark-surface-soft dark:text-ct-dark-text"
+      className="mt-6 overflow-hidden rounded-xl border border-ct-line bg-ct-surface-soft dark:border-ct-dark-line dark:bg-ct-dark-surface-soft"
       aria-label="경제적 이해관계 안내"
     >
-      <p className="m-0 text-sm font-bold text-ct-primary dark:text-ct-dark-text">
-        경제적 이해관계 안내
-      </p>
-      <p className="mt-2 mb-0 text-sm font-medium text-ct-text dark:text-ct-dark-text">
-        이 글에는 마이리얼트립 마케팅 파트너십을 통한 광고 링크가 포함되어 있습니다.
-        여행자가 해당 링크를 통해 구매하면 CozyTrip는 마이리얼트립으로부터 일정 비율의
-        수수료를 지급받습니다.
-      </p>
+      <img
+        src={MYREALTRIP_DISCLOSURE_IMAGE}
+        alt="마이리얼트립과 함께하는 마케팅 파트너십을 통해 여행자가 구매할 때마다 일정 비율의 수수료를 지급받습니다."
+        width={1200}
+        height={180}
+        loading="lazy"
+        decoding="async"
+        className="block h-auto w-full"
+      />
     </aside>
   );
 }
