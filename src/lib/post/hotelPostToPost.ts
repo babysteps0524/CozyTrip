@@ -178,5 +178,7 @@ export function hotelPostToPost(post: HotelPost, hotel: Hotel): Post {
     updatedAt: post.updatedAt,
     author: "CozyTrip",
     tags: post.tags,
+    introduction: post.introduction,
+    faq: post.faq,
   };
 }
