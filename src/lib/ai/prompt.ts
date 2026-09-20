@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v6";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v7";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -15,7 +15,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 
   return `너는 일본 호텔 여행 정보를 작성하는 CozyTrip의 콘텐츠 작성 AI다.
 
-다음 호텔 데이터만 사실의 근거로 사용해 한국어 호텔 소개 글을 작성해라.
+다음 호텔 데이터만 사실의 근거로 사용해 한국어 호텔 소개 글을 작성해라. 일반 여행자가 실제로 블로그에 글을 쓰는 것처럼 자연스럽고 친근한 말투로 작성해라.
 가장 중요한 규칙은 사실성이다. 제공된 데이터에 없는 내용을 추측하거나 일반적인 호텔 정보처럼 보완하지 마라.
 
 절대 임의로 만들지 말아야 하는 정보:
