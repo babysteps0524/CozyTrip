@@ -1,29 +1,27 @@
 const navigationItems = [
-  { name: "홈", href: "/" },
-  { name: "도쿄", href: "/japan/tokyo/" },
-  { name: "오사카", href: "/japan/osaka/" },
-  { name: "교토", href: "/japan/kyoto/" },
-  { name: "후쿠오카", href: "/japan/fukuoka/" },
-  { name: "삿포로", href: "/japan/sapporo/" },
-  { name: "오키나와", href: "/japan/okinawa/" },
-  { name: "여행 가이드", href: "/guides/" },
+  { name: "도쿄 호텔", href: "/japan/tokyo/hotels/" },
+  { name: "오사카 호텔", href: "/japan/osaka/hotels/" },
+  { name: "교토 호텔", href: "/japan/kyoto/hotels/" },
+  { name: "후쿠오카 호텔", href: "/japan/fukuoka/hotels/" },
+  { name: "삿포로 호텔", href: "/japan/sapporo/hotels/" },
+  { name: "오키나와 호텔", href: "/japan/okinawa/hotels/" },
 ];
 
 export default function Navigation() {
   return (
     <nav
-      un-hidden="~ md:flex"
+      un-hidden="~ lg:flex"
       items="center"
-      gap="1 lg:2"
+      gap="1"
       text="sm ct-text-soft dark:ct-dark-text-soft"
       whitespace="nowrap"
-      aria-label="주요 메뉴"
+      aria-label="도시별 호텔 메뉴"
     >
       {navigationItems.map((item) => (
         <a
           key={item.href}
           href={item.href}
-          px="2"
+          px="2.5"
           py="2"
           rounded="lg"
           hover="bg-ct-surface-soft text-ct-primary dark:bg-ct-dark-surface-soft dark:text-ct-dark-text"
