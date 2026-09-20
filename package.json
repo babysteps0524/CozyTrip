@@ -18,7 +18,8 @@
     "ai:hotel-posts": "bun scripts/generate-hotel-posts.ts",
     "ai:repair": "bun scripts/generate-hotel-posts.ts --repair-invalid=true",
     "myrealtrip:generate": "bun scripts/myrealtrip/generate-hotels.ts",
-    "autoPost": "bun scripts/myrealtrip/generate-hotels.ts && bun scripts/generate-hotel-posts.ts && bun scripts/split-client-post-data.ts && bun scripts/generate-hotel-inventory.ts"
+    "autoPost": "bun scripts/myrealtrip/generate-hotels.ts && bun scripts/generate-hotel-posts.ts && bun scripts/split-client-post-data.ts && bun scripts/generate-hotel-inventory.ts",
+    "ai:review": "bun scripts/review-hotel-posts.ts"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
