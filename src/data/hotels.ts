@@ -119,10 +119,8 @@ const manualHotels: Hotel[] = [
 
 const additionalSampleHotels: Hotel[] = [
   ["osaka", "오사카", "Osaka", "난바", "도톤보리와 난바 지역의 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
-  ["kyoto", "교토", "Kyoto", "교토역", "교토역 주변 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
   ["fukuoka", "후쿠오카", "Fukuoka", "하카타", "하카타 지역의 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
   ["sapporo", "삿포로", "Hokkaido", "삿포로역", "삿포로역 주변 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
-  ["okinawa", "오키나와", "Okinawa", "나하", "나하 지역의 호텔 페이지 구조를 검증하기 위한 샘플 숙소입니다."],
 ].map(([slugCity, city, prefecture, area, description]) => ({
   id: `sample-${slugCity}-hotel`,
   name: `Sample ${city} Hotel`,
