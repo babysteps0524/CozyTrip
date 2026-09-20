@@ -66,7 +66,7 @@ export default function HotelGallery({ images }: HotelGalleryProps) {
     >
       <Container>
         <div className="overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-soft dark:border-ct-dark-line dark:bg-ct-dark-surface">
-          <div className="relative aspect-[4/3] bg-ct-surface-soft dark:bg-ct-dark-surface-soft sm:aspect-[16/9]">
+          <div className="relative aspect-[16/8] bg-ct-surface-soft dark:bg-ct-dark-surface-soft sm:aspect-[16/7]">
             {selectedImageFailed ? (
               <div
                 className="flex h-full w-full items-center justify-center bg-ct-surface-soft px-4 text-center text-sm text-ct-muted dark:bg-ct-dark-surface-soft dark:text-ct-dark-muted"
