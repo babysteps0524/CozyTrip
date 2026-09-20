@@ -1,5 +1,4 @@
 import type { AffiliateLink, Hotel } from "../types";
-import agodaHotels from "./generated/agoda-hotels.json";
 import myRealTripHotels from "./generated/myrealtrip-hotels.json";
 
 interface MyRealTripHotelFile {
@@ -9,30 +8,7 @@ interface MyRealTripHotelFile {
   hotels: Hotel[];
 }
 
-interface AgodaHotelFile {
-  generatedAt: string;
-  source: "agoda";
-  hotelCount: number;
-  hotels: Hotel[];
-}
-
 const sampleAffiliateLinks: AffiliateLink[] = [
-  {
-    provider: "agoda",
-    url: "https://www.agoda.com/",
-    label: "Agoda에서 호텔 확인",
-    description: "실제 객실 요금과 예약 가능 여부는 Agoda에서 확인하세요.",
-    rel: "sponsored",
-    external: true,
-  },
-  {
-    provider: "tripcom",
-    url: "https://www.trip.com/",
-    label: "Trip.com에서 호텔 확인",
-    description: "예약 조건과 객실 정보는 Trip.com에서 확인하세요.",
-    rel: "sponsored",
-    external: true,
-  },
   {
     provider: "myrealtrip",
     url: "https://www.myrealtrip.com/",
@@ -198,8 +174,6 @@ const additionalSampleHotels: Hotel[] = [
   updatedAt: "2026-09-18",
 } as Hotel));
 
-const generated = agodaHotels as AgodaHotelFile;
-const generatedHotels = Array.isArray(generated.hotels) ? generated.hotels : [];
 const myRealTripGenerated = myRealTripHotels as MyRealTripHotelFile;
 const myRealTripGeneratedHotels = Array.isArray(myRealTripGenerated.hotels)
   ? myRealTripGenerated.hotels
@@ -207,16 +181,10 @@ const myRealTripGeneratedHotels = Array.isArray(myRealTripGenerated.hotels)
 
 const sampleHotels = [...manualHotels, ...additionalSampleHotels];
 
-/*
- * Agoda API 데이터가 들어오면 샘플 호텔을 자동으로 대체합니다.
- * API 승인 전에는 generatedHotels가 비어 있으므로 샘플 데이터로 개발합니다.
- */
 const sourceHotels =
-  generatedHotels.length > 0
-    ? generatedHotels
-    : myRealTripGeneratedHotels.length > 0
-      ? myRealTripGeneratedHotels
-      : sampleHotels;
+  myRealTripGeneratedHotels.length > 0
+    ? myRealTripGeneratedHotels
+    : sampleHotels;
 
 const hotelMap = new Map<string, Hotel>();
 
