@@ -79,7 +79,7 @@ function updateListUrl(
   window.history.replaceState(
     null,
     "",
-    buildListUrl(query, city, area, star, sort, page),
+    buildListUrl(query, area, star, sort, page),
   );
 }
 
@@ -217,7 +217,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   useEffect(() => {
     if (!isUrlInitialized) return;
     setPage(1);
-  }, [area, city, query, sort, star, isUrlInitialized]);
+  }, [area, query, sort, star, isUrlInitialized]);
 
   useEffect(() => {
     if (!isUrlInitialized) return;
