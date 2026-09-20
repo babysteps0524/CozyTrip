@@ -16,6 +16,7 @@ import {
   formatHotelValidationFailure,
   validateHotelData,
 } from "../lib/validate-hotel-data";
+import { getMyRealTripConfig } from "./config";
 import type { Hotel } from "../src/types";
 
 const { checkIn: CHECK_IN, checkOut: CHECK_OUT, source: SEARCH_WINDOW_SOURCE } =
@@ -236,8 +237,7 @@ async function main(): Promise<void> {
   const output = {
     generatedAt: new Date().toISOString(),
     source: "myrealtrip",
-    imageUsageAllowed:
-      process.env.MYREALTRIP_IMAGE_USAGE_ALLOWED?.trim().toLowerCase() === "true",
+    imageUsageAllowed: getMyRealTripConfig().imageUsageAllowed,
     hotelCount: hotels.length,
     hotels,
   };
