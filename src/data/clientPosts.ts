@@ -3,6 +3,10 @@ interface ClientPostFile {
   posts?: Post[];
 }
 
+interface ClientPostModule {
+  default?: ClientPostFile;
+}
+
 export type DestinationSlug =
   | "tokyo"
   | "osaka"
@@ -38,7 +42,8 @@ export async function loadClientPostsByDestination(
   if (!loader) return [];
 
   try {
-    const data = await loader();
+    const module = (await loader()) as unknown as ClientPostModule;
+    const data = module.default ?? (module as unknown as ClientPostFile);
     return Array.isArray(data.posts) ? data.posts : [];
   } catch (error) {
     console.warn(
@@ -51,7 +56,8 @@ export async function loadClientPostsByDestination(
 
 export async function loadClientGuidePosts(): Promise<Post[]> {
   try {
-    const data = await import("./generated/client-posts/guides.json");
+    const module = await import("./generated/client-posts/guides.json");
+    const data = module.default as ClientPostFile;
     return Array.isArray(data.posts) ? data.posts : [];
   } catch (error) {
     console.warn("Client guide chunk is unavailable.", error);
