@@ -393,14 +393,32 @@ export default function HotelDetail({
           {hotelPosts.length > 0 ? (
             <div className="mt-10 max-w-3xl">
               {hotelPosts.map((post) => (
-                <article key={post.id} aria-labelledby={`hotel-article-title-${post.id}`}>
+                <article
+                  key={post.id}
+                  aria-labelledby={`hotel-article-title-${post.id}`}
+                >
                   <header className="rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-7 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
-                    <p className="m-0 text-xs font-semibold tracking-wide text-ct-primary dark:text-ct-dark-text-soft">
-                      HOTEL ARTICLE
-                    </p>
-                    <h3 id={`hotel-article-title-${post.id}`} className="mt-2 mb-0 text-2xl font-bold leading-[1.35] tracking-tight sm:text-3xl">
+                    <div className="flex flex-wrap items-center justify-between gap-3">
+                      <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
+                        HOTEL ARTICLE
+                      </p>
+                      {post.publishedAt && (
+                        <time
+                          dateTime={post.publishedAt}
+                          className="text-xs text-ct-muted dark:text-ct-dark-muted"
+                        >
+                          {formatDate(post.publishedAt)}
+                        </time>
+                      )}
+                    </div>
+
+                    <h3
+                      id={`hotel-article-title-${post.id}`}
+                      className="mt-3 mb-0 text-2xl font-bold leading-[1.35] tracking-tight sm:text-3xl"
+                    >
                       {post.title}
                     </h3>
+
                     <p className="mt-4 mb-0 text-base leading-8 text-ct-text-soft dark:text-ct-dark-text-soft">
                       {post.introduction}
                     </p>
@@ -411,17 +429,26 @@ export default function HotelDetail({
                   </div>
 
                   {post.faq.length > 0 && (
-                    <section className="mt-10 rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft" aria-labelledby={`hotel-faq-${post.id}`}>
+                    <section
+                      className="mt-12 rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft"
+                      aria-labelledby={`hotel-faq-${post.id}`}
+                    >
                       <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
                         FAQ
                       </p>
-                      <h3 id={`hotel-faq-${post.id}`} className="mt-2 mb-0 text-xl font-bold tracking-tight sm:text-2xl">
+                      <h3
+                        id={`hotel-faq-${post.id}`}
+                        className="mt-2 mb-0 text-xl font-bold tracking-tight sm:text-2xl"
+                      >
                         자주 묻는 내용
                       </h3>
                       <div className="mt-6 divide-y divide-ct-line dark:divide-ct-dark-line">
                         {post.faq.map((item) => (
-                          <details key={item.question} className="group py-4 first:pt-0 last:pb-0">
-                            <summary className="ct-focus cursor-pointer list-none pr-8 text-base font-semibold text-ct-text dark:text-ct-dark-text">
+                          <details
+                            key={item.question}
+                            className="group py-4 first:pt-0 last:pb-0"
+                          >
+                            <summary className="ct-focus cursor-pointer pr-8 text-base font-semibold leading-7 text-ct-text dark:text-ct-dark-text">
                               {item.question}
                             </summary>
                             <p className="mt-3 mb-0 text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">
@@ -433,26 +460,35 @@ export default function HotelDetail({
                     </section>
                   )}
 
-                  {(post.tags?.length ?? 0) > 0 && (
-                    <footer className="mt-8 rounded-2xl border border-ct-line bg-ct-surface-soft p-5 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
-                      <div className="flex flex-wrap items-center gap-2">
-                        <span className="mr-1 text-xs font-semibold tracking-[0.12em] text-ct-muted dark:text-ct-dark-muted">
-                          TAGS
-                        </span>
-                        {post.tags?.map((tag) => (
-                          <span
-                            key={tag}
-                            className="rounded-full border border-ct-line bg-ct-surface px-3 py-1.5 text-xs font-medium text-ct-text-soft dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft"
-                          >
-                            {tag}
+                  <footer className="mt-8 border-t border-ct-line pt-6 dark:border-ct-dark-line">
+                    {(post.tags?.length ?? 0) > 0 && (
+                      <div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="mr-1 text-xs font-semibold tracking-[0.12em] text-ct-muted dark:text-ct-dark-muted">
+                            TAGS
                           </span>
-                        ))}
+                          {post.tags?.map((tag) => (
+                            <span
+                              key={tag}
+                              className="rounded-full border border-ct-line bg-ct-surface px-3 py-1.5 text-xs font-medium text-ct-text-soft dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft"
+                            >
+                              {tag}
+                            </span>
+                          ))}
+                        </div>
                       </div>
-                      <p className="mt-4 mb-0 text-xs leading-6 text-ct-muted dark:text-ct-dark-muted">
-                        이 글은 제공된 호텔 정보와 확인 가능한 이미지 자료를 바탕으로 작성되었습니다. 요금, 객실 재고와 예약 조건은 외부 예약 플랫폼에서 최종 확인해 주세요.
+                    )}
+
+                    <div className="mt-5 rounded-xl bg-ct-surface-soft px-4 py-4 dark:bg-ct-dark-surface-soft">
+                      <p className="m-0 text-xs font-semibold text-ct-text-soft dark:text-ct-dark-text-soft">
+                        정보 확인 안내
                       </p>
-                    </footer>
-                  )}
+                      <p className="mt-1.5 mb-0 text-xs leading-6 text-ct-muted dark:text-ct-dark-muted">
+                        이 글은 제공된 호텔 정보와 확인 가능한 이미지 자료를 바탕으로 작성되었습니다.
+                        요금, 객실 재고와 예약 조건은 외부 예약 플랫폼에서 최종 확인해 주세요.
+                      </p>
+                    </div>
+                  </footer>
                 </article>
               ))}
             </div>
