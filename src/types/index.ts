@@ -28,6 +28,7 @@ export type {
   PostGalleryBlock,
   HotelPost,
   HotelPostSection,
+  HotelPostImageAssignment,
   HotelPostFaqItem,
   HotelPostGenerationInput,
 } from "./post";
