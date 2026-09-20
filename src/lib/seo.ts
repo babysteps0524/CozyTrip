@@ -27,6 +27,10 @@ function normalizeDescription(description: string): string {
   return description.replace(/\s+/g, " ").trim();
 }
 
+function normalizeNfc(value: string): string {
+  return value.normalize("NFC");
+}
+
 function normalizeCanonicalPath(path: string): string {
   if (path === "/") return "/";
   return path.endsWith("/") ? path : `${path}/`;
@@ -46,7 +50,7 @@ export function createSeoMetadata(
   hotels: Hotel[],
   posts: Post[],
 ): SeoMetadata {
-  const normalizedRoute = normalizeCanonicalPath(route);
+  const normalizedRoute = normalizeNfc(normalizeCanonicalPath(route));
 
   if (normalizedRoute === "/") {
     return {
@@ -77,7 +81,7 @@ export function createSeoMetadata(
 
   const destinationMatch = normalizedRoute.match(/^\/japan\/([^/]+)\/$/);
   if (destinationMatch) {
-    const destination = destinations.find((item) => item.slug === destinationMatch[1]);
+    const destination = destinations.find((item) => normalizeNfc(item.slug) === normalizeNfc(destinationMatch[1]));
     if (destination) {
       return {
         title: `${destination.name} 호텔 및 여행 정보 | ${SITE_NAME}`,
@@ -93,7 +97,7 @@ export function createSeoMetadata(
 
   const hotelListMatch = normalizedRoute.match(/^\/japan\/([^/]+)\/hotels\/$/);
   if (hotelListMatch) {
-    const destination = destinations.find((item) => item.slug === hotelListMatch[1]);
+    const destination = destinations.find((item) => normalizeNfc(item.slug) === normalizeNfc(hotelListMatch[1]));
     if (destination) {
       const firstHotelImage = hotels
         .filter((hotel) => hotel.destinationId === destination.id)
@@ -116,8 +120,12 @@ export function createSeoMetadata(
     /^\/japan\/([^/]+)\/hotels\/([^/]+)\/$/,
   );
   if (hotelDetailMatch) {
-    const destination = destinations.find((item) => item.slug === hotelDetailMatch[1]);
-    const hotel = hotels.find((item) => item.slug === hotelDetailMatch[2]);
+    const destination = destinations.find(
+      (item) => normalizeNfc(item.slug) === normalizeNfc(hotelDetailMatch[1]),
+    );
+    const hotel = hotels.find(
+      (item) => normalizeNfc(item.slug) === normalizeNfc(hotelDetailMatch[2]),
+    );
 
     if (destination && hotel && hotel.destinationId === destination.id) {
       const hotelPost = posts.find(
@@ -143,7 +151,7 @@ export function createSeoMetadata(
   const guideMatch = normalizedRoute.match(/^\/guides\/([^/]+)\/$/);
   if (guideMatch) {
     const guide = posts.find(
-      (item) => item.slug === guideMatch[1] && item.category === "guide",
+      (item) => normalizeNfc(item.slug) === normalizeNfc(guideMatch[1]) && item.category === "guide",
     );
 
     if (guide) {
