@@ -94,17 +94,6 @@ export function hotelPostToPost(
       });
     }
 
-    for (const paragraph of section.paragraphs) {
-      const text = paragraph.trim();
-
-      if (!text) continue;
-
-      blocks.push({
-        type: "paragraph",
-        text,
-      });
-    }
-
     const explicitImageIds = getExplicitImageIds(section);
     let hasRenderedImage = false;
 
@@ -133,12 +122,24 @@ export function hotelPostToPost(
 
       if (fallbackImage) {
         usedImageIds.add(fallbackImage.id);
+        hasRenderedImage = true;
 
         blocks.push({
           type: "image",
           image: fallbackImage,
         });
       }
+    }
+
+    for (const paragraph of section.paragraphs) {
+      const text = paragraph.trim();
+
+      if (!text) continue;
+
+      blocks.push({
+        type: "paragraph",
+        text,
+      });
     }
 
   }
