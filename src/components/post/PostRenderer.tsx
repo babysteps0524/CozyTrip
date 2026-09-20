@@ -80,7 +80,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
                 <a
                   href={image.sourceUrl}
                   target="_blank"
-                  rel="sponsored noopener noreferrer"
+                  rel="noopener noreferrer"
                   aria-label="숙소 정보 확인"
                   className="block active-scale-99"
                 >
