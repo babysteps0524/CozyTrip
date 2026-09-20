@@ -97,23 +97,19 @@ export function hotelPostToPost(
     const explicitImageIds = getExplicitImageIds(section);
     let hasRenderedImage = false;
 
+    const sectionImages: HotelImage[] = [];
+
     for (const imageId of explicitImageIds) {
       if (usedImageIds.has(imageId)) continue;
 
       const image = imagesById.get(imageId);
-
       if (!image) continue;
 
       usedImageIds.add(imageId);
-      hasRenderedImage = true;
-
-      blocks.push({
-        type: "image",
-        image,
-      });
+      sectionImages.push(image);
     }
 
-    if (!hasRenderedImage && heading) {
+    if (sectionImages.length === 0 && heading) {
       const fallbackImage = selectFallbackImage(
         heading,
         usableImages,
@@ -122,24 +118,37 @@ export function hotelPostToPost(
 
       if (fallbackImage) {
         usedImageIds.add(fallbackImage.id);
-        hasRenderedImage = true;
-
-        blocks.push({
-          type: "image",
-          image: fallbackImage,
-        });
+        sectionImages.push(fallbackImage);
       }
     }
 
-    for (const paragraph of section.paragraphs) {
-      const text = paragraph.trim();
+    const paragraphs = section.paragraphs
+      .map((paragraph) => paragraph.trim())
+      .filter(Boolean);
 
-      if (!text) continue;
-
+    for (let paragraphIndex = 0; paragraphIndex < paragraphs.length; paragraphIndex += 1) {
       blocks.push({
         type: "paragraph",
-        text,
+        text: paragraphs[paragraphIndex],
       });
+
+      if (paragraphIndex === 0) {
+        for (const image of sectionImages) {
+          blocks.push({
+            type: "image",
+            image,
+          });
+        }
+      }
+    }
+
+    if (paragraphs.length === 0) {
+      for (const image of sectionImages) {
+        blocks.push({
+          type: "image",
+          image,
+        });
+      }
     }
 
   }
