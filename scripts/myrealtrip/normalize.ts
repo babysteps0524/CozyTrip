@@ -21,6 +21,17 @@ export interface MyRealTripAccommodationItem {
   productUrl: string;
   deepLink: string;
   images?: MyRealTripAccommodationImage[];
+  area?: string;
+  district?: string;
+  neighborhood?: string;
+  regionName?: string;
+  location?: {
+    area?: string;
+    district?: string;
+    neighborhood?: string;
+    address?: string;
+  };
+  region?: { name?: string };
 }
 
 export interface MyRealTripAccommodationSearchResponse {
@@ -179,6 +190,21 @@ function toHotelImages(
   return [...hero, ...typedImages];
 }
 
+function resolveHotelArea(item: MyRealTripAccommodationItem): string {
+  const candidates = [
+    item.area,
+    item.district,
+    item.neighborhood,
+    item.regionName,
+    item.location?.area,
+    item.location?.district,
+    item.location?.neighborhood,
+    item.region?.name,
+  ];
+
+  return candidates.find((value) => typeof value === "string" && value.trim())?.trim() ?? "";
+}
+
 function toHotel(
   item: MyRealTripAccommodationItem,
   destination: MyRealTripDestination,
@@ -186,6 +212,7 @@ function toHotel(
 ): Hotel {
   const id = `myrealtrip-${item.itemId}`;
   const slug = `${slugify(item.itemName)}-${item.itemId}`;
+  const area = resolveHotelArea(item);
 
   return {
     id,
@@ -199,7 +226,7 @@ function toHotel(
     countryCode: "JP",
     prefecture: destination.prefecture,
     city: destination.city,
-    area: "",
+    area,
     destinationId: `japan-${destination.slug}`,
     description: `${destination.city} 지역의 ${item.itemName} 호텔 정보를 마이리얼트립 숙소 검색 API에서 확인할 수 있는 데이터 기준으로 소개합니다.`,
     location: {
@@ -207,7 +234,7 @@ function toHotel(
       countryCode: "JP",
       prefecture: destination.prefecture,
       city: destination.city,
-      area: "",
+      area,
     },
     images: toHotelImages(item, id, imageUsageAllowed),
     facilities: [],
