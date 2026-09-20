@@ -121,6 +121,7 @@ export default function HotelDetail({
     ...(hotel.restaurants?.length
       ? [{ href: "#dining", label: "다이닝" }]
       : []),
+    { href: "#stay-info", label: "숙소 정보" },
     { href: "#location", label: "위치" },
     { href: "#booking", label: "예약 정보" },
   ];
@@ -190,46 +191,20 @@ export default function HotelDetail({
       <HotelGallery images={hotel.images} />
       <HotelSummary hotel={hotel} />
 
-      <section
-        position="sticky"
-        top="0"
-        z="20"
-        border="b ct-line dark:ct-dark-line"
-        bg="ct-surface-soft dark:ct-dark-surface-soft"
-      >
+      <section className="sticky top-0 z-20 border-b border-ct-line bg-ct-surface-soft/95 backdrop-blur dark:border-ct-dark-line dark:bg-ct-dark-surface-soft/95">
         <Container>
           <nav
-            py="2.5"
-            flex="~"
-            items="center"
-            gap="2"
-            overflow-x="auto"
-            whitespace="nowrap"
-            text="sm"
+            className="flex items-center gap-2 overflow-x-auto py-2.5 whitespace-nowrap text-sm"
             aria-label="호텔 상세 메뉴"
           >
-            <span
-              mr="1"
-              shrink="0"
-              text="xs ct-muted dark:ct-dark-muted"
-              font="medium"
-            >
+            <span className="mr-1 shrink-0 text-xs font-medium text-ct-muted dark:text-ct-dark-muted">
               바로가기
             </span>
             {sectionLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                shrink="0"
-                rounded="full"
-                border="~ ct-line dark:ct-dark-line"
-                bg="ct-surface dark:ct-dark-surface"
-                px="3"
-                py="1.5"
-                text="ct-text-soft dark:ct-dark-text-soft"
-                hover="text-ct-primary dark:text-ct-dark-text"
-                active-scale="98"
-                className="ct-focus"
+                className="ct-focus shrink-0 rounded-full border border-ct-line bg-ct-surface px-3 py-1.5 text-xs text-ct-text-soft hover:text-ct-primary active-scale-98 dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft dark:hover:text-ct-dark-text sm:text-sm"
               >
                 {link.label}
               </a>
