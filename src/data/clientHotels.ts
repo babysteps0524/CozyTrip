@@ -3,6 +3,10 @@ interface ClientHotelFile {
   hotels?: Hotel[];
 }
 
+interface ClientHotelModule {
+  default?: ClientHotelFile;
+}
+
 export type DestinationSlug =
   | "tokyo"
   | "osaka"
@@ -30,7 +34,8 @@ export async function loadClientHotels(
   if (!loader) return [];
 
   try {
-    const data = await loader();
+    const module = (await loader()) as unknown as ClientHotelModule;
+    const data = module.default ?? (module as unknown as ClientHotelFile);
     return Array.isArray(data.hotels) ? (data.hotels as Hotel[]) : [];
   } catch (error) {
     console.warn(
