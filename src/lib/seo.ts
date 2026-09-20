@@ -223,7 +223,9 @@ export function createSeoMetadata(
 function getGeneratedHotelPost(hotelId: string): HotelPost | undefined {
   const source = generatedHotelPosts as GeneratedHotelPostsFile;
   if (!Array.isArray(source.posts)) return undefined;
-  return source.posts.find((post) => post.hotelId === hotelId);
+  return source.posts.find(
+    (post) => post.hotelId === hotelId && post.status === "published",
+  );
 }
 
 function createFaqItems(hotel: Hotel, hotelPost?: HotelPost) {
