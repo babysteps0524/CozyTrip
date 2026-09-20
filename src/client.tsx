@@ -22,16 +22,25 @@ const pageImports: Record<string, () => Promise<PageModule>> = {
 };
 
 function normalizePath(pathname: string): string {
-  if (pathname.length > 1 && pathname.endsWith("/")) return pathname.slice(0, -1);
-  return pathname || "/";
+  const normalized = (pathname || "/").normalize("NFC");
+  if (normalized.length > 1 && normalized.endsWith("/")) {
+    return normalized.slice(0, -1);
+  }
+  return normalized;
 }
 
 function getDestinationBySlug(slug: string): Destination | undefined {
-  return destinations.find((item) => item.slug === slug);
+  const normalizedSlug = slug.normalize("NFC");
+  return destinations.find(
+    (item) => item.slug.normalize("NFC") === normalizedSlug,
+  );
 }
 
 function getPostBySlug(posts: Post[], slug: string): Post | undefined {
-  return posts.find((item) => item.slug === slug);
+  const normalizedSlug = slug.normalize("NFC");
+  return posts.find(
+    (item) => item.slug.normalize("NFC") === normalizedSlug,
+  );
 }
 
 function getPostsByHotel(posts: Post[], hotelId: string): Post[] {
@@ -148,7 +157,10 @@ async function start() {
       ]);
 
       if (hotelDetailMatch && hotelSlug) {
-        const hotel = hotels.find((item) => item.slug === hotelSlug);
+        const normalizedHotelSlug = hotelSlug.normalize("NFC");
+        const hotel = hotels.find(
+          (item) => item.slug.normalize("NFC") === normalizedHotelSlug,
+        );
 
         if (!hotel) {
           pageKey = "notFound";
