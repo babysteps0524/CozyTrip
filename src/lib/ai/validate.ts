@@ -80,20 +80,9 @@ export function validateHotelPost(
     const images = options.availableImages ?? hotel.images;
     const imageMap = new Map(images.map((image) => [image.id, image]));
 
-    for (const requiredType of ["room", "bathroom"] as const) {
-      const hasAvailableImage = images.some(
-        (image) =>
-          image.type === requiredType &&
-          image.rightsConfirmed &&
-          image.src.trim(),
-      );
-
-      if (!hasAvailableImage) {
-        throw new Error(
-          `Required ${requiredType} image is not available for this hotel.`,
-        );
-      }
-    }
+    // 이미지가 제공되지 않은 호텔도 유효한 게시글로 처리한다.
+    // AI가 실제로 제공된 이미지와 다른 유형의 이미지를 만들어내지 않도록
+    // 존재하는 이미지의 ID와 type 일치 여부만 검증한다.
 
     const postImageIds = new Set<string>();
     for (const imageId of post.imageIds) {
@@ -184,40 +173,9 @@ export function validateHotelPost(
       throw new Error(`post.imageIds and section image references must match exactly. ${details.join(" | ")}`);
     }
 
-    const lodgingSection = post.sections[1];
-
-    for (const requiredType of ["room", "bathroom"] as const) {
-      const requiredImage = images.find(
-        (image) =>
-          image.type === requiredType &&
-          image.rightsConfirmed &&
-          image.src.trim(),
-      );
-
-      if (!requiredImage) {
-        throw new Error(
-          `Required ${requiredType} image is not available for this hotel.`,
-        );
-      }
-
-      if (!postImageIds.has(requiredImage.id)) {
-        throw new Error(
-          `Required ${requiredType} image is not assigned to the post: ${requiredImage.id}`,
-        );
-      }
-
-      const assignedToLodgingSection = (lodgingSection.imageAssignments ?? []).some(
-        (assignment) =>
-          assignment.imageId === requiredImage.id &&
-          assignment.imageType === requiredType,
-      );
-
-      if (!assignedToLodgingSection) {
-        throw new Error(
-          `Required ${requiredType} image must be assigned to the "객실과 숙박 정보" section: ${requiredImage.id}`,
-        );
-      }
-    }
+    // room/bathroom 이미지가 없는 경우에는 강제하지 않는다.
+    // 해당 이미지가 실제로 제공된 경우에만 imageAssignments의 type 일치 여부를
+    // 위의 일반 이미지 검증에서 확인한다.
 
     for (const imageId of postImageIds) {
       if (!sectionImageIds.has(imageId)) {
