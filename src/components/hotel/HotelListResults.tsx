@@ -11,6 +11,13 @@ type StarFilter = "all" | "5" | "4" | "3" | "2";
 
 const PAGE_SIZE = 16;
 
+const CITY_AREA_OPTIONS: Record<string, string[]> = {
+  "도쿄": ["신주쿠", "시부야", "긴자", "롯폰기", "우에노", "아사쿠사", "이케부쿠로", "아키하바라", "도쿄역", "마루노우치", "아카사카", "시나가와", "오다이바"],
+  "오사카": ["난바", "도톤보리", "신사이바시", "우메다", "오사카역", "혼마치", "텐노지", "신세카이", "오사카성", "교바시"],
+  "후쿠오카": ["하카타", "텐진", "나카스", "기온", "야쿠인", "오호리", "모모치"],
+  "삿포로": ["삿포로역", "오도리", "스스키노", "나카지마공원", "시로이시", "히가시구", "기타 24조"],
+};
+
 function getAreaSearchText(hotel: Hotel): string {
   return [
     hotel.area,
@@ -24,10 +31,14 @@ function getAreaSearchText(hotel: Hotel): string {
     .toLocaleLowerCase("ko-KR");
 }
 
-function getAreaOptions(hotels: Hotel[]): string[] {
-  return Array.from(
-    new Set(hotels.map((hotel) => hotel.area.trim()).filter(Boolean)),
-  ).sort((a, b) => a.localeCompare(b, "ko"));
+function getAreaOptions(hotels: Hotel[], city: string): string[] {
+  const actualAreas = hotels
+    .map((hotel) => hotel.area.trim())
+    .filter(Boolean);
+  const configuredAreas = CITY_AREA_OPTIONS[city] ?? [];
+
+  return Array.from(new Set([...configuredAreas, ...actualAreas]))
+    .sort((a, b) => a.localeCompare(b, "ko"));
 }
 
 function compareHotels(a: Hotel, b: Hotel, sort: SortOption): number {
@@ -123,7 +134,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   const [page, setPage] = useState(1);
   const [isUrlInitialized, setIsUrlInitialized] = useState(false);
 
-  const areas = useMemo(() => getAreaOptions(hotels), [hotels]);
+  const city = hotels[0]?.city?.trim() ?? "";\n  const areas = useMemo(() => getAreaOptions(hotels, city), [hotels, city]);
 
   useEffect(() => {
     const readUrlState = () => {
