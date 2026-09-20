@@ -62,10 +62,27 @@ function validateSectionImagePlacement(
       (firstSectionBlock.type !== "image" &&
         firstSectionBlock.type !== "gallery")
     ) {
+      const blockSummary = blocks
+        .map((candidate, blockIndex) => {
+          if (candidate.type === "heading") {
+            return String(blockIndex) + ":heading(" + candidate.text + ")";
+          }
+          if (candidate.type === "image") {
+            return String(blockIndex) + ":image(" + candidate.image.id + ")";
+          }
+          if (candidate.type === "gallery") {
+            return String(blockIndex) + ":gallery(" + candidate.images.map((image) => image.id).join(",") + ")";
+          }
+          return String(blockIndex) + ":" + candidate.type;
+        })
+        .join(" -> ");
+
+      console.error("[" + post.id + "] block order: " + blockSummary);
       failures.push(
-        `[${post.id}] section "${block.text}" has an article image, but the first section block is not an image.`,
+        "[" + post.id + '] section "' + block.text + '" has an article image, but the first section block is not an image.',
       );
     }
+
   }
 
   return failures;
