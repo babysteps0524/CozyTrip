@@ -17,6 +17,11 @@ on:
         required: false
         default: false
         type: boolean
+      test_batch:
+        description: "수동 테스트용: 6개 지역에서 각 1개씩 생성"
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: "0 21 * * *"
 
@@ -40,7 +45,7 @@ jobs:
       MYREALTRIP_IMAGE_USAGE_ALLOWED: "true"
       AI_HOTEL_ID: ${{ inputs.hotel_id }}
       AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
-      AI_DAILY_PLAN: "japan-tokyo:2,japan-osaka:2,japan-kyoto:2,japan-fukuoka:2,japan-sapporo:2,japan-okinawa:2"
+      AI_DAILY_PLAN: ${{ inputs.test_batch && 'japan-tokyo:1,japan-osaka:1,japan-kyoto:1,japan-fukuoka:1,japan-sapporo:1,japan-okinawa:1' || 'japan-tokyo:2,japan-osaka:2,japan-kyoto:2,japan-fukuoka:2,japan-sapporo:2,japan-okinawa:2' }}
       AI_REPAIR_INVALID: ${{ inputs.repair_invalid || false }}
 
     timeout-minutes: 30
