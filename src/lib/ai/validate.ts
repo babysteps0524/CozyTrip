@@ -48,9 +48,9 @@ export function validateHotelPost(
       .join(" ")
       .trim();
 
-    if (bodyText.length < 1000) {
+    if (bodyText.length < 500) {
       throw new Error(
-        `body content is too short: ${bodyText.length} characters (minimum 1000).`,
+        `body content is too short: ${bodyText.length} characters (minimum 500).`,
       );
     }
 
