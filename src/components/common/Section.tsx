@@ -22,11 +22,15 @@ export default function Section({
   return (
     <Component
       id={id}
-      scroll-mt={id ? "24" : undefined}
-      py="12 sm:16 lg:20"
-      border-t={borderTop ? "ct-line dark:ct-dark-line" : undefined}
-      border-b={borderBottom ? "ct-line dark:ct-dark-line" : undefined}
-      bg={surface ? "ct-surface dark:ct-dark-surface" : "transparent"}
+      className={[
+        "py-12 sm:py-16 lg:py-20",
+        id ? "scroll-mt-24" : "",
+        borderTop ? "border-t border-ct-line dark:border-ct-dark-line" : "",
+        borderBottom ? "border-b border-ct-line dark:border-ct-dark-line" : "",
+        surface ? "bg-ct-surface dark:bg-ct-dark-surface" : "",
+      ]
+        .filter(Boolean)
+        .join(" ")}
     >
       {children}
     </Component>
