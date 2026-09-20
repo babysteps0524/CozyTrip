@@ -7,9 +7,16 @@ import { posts } from "../src/data/posts";
 
 const distDir = join(process.cwd(), "dist");
 
+function normalizeRoute(route: string): string {
+  const normalized = route.normalize("NFC");
+  if (normalized === "/") return "/";
+  return normalized.endsWith("/") ? normalized : `${normalized}/`;
+}
+
 function routeFile(route: string): string {
-  if (route === "/") return join(distDir, "index.html");
-  return join(distDir, route, "index.html");
+  const normalizedRoute = normalizeRoute(route);
+  if (normalizedRoute === "/") return join(distDir, "index.html");
+  return join(distDir, normalizedRoute, "index.html");
 }
 
 function escapeHtml(value: string): string {
