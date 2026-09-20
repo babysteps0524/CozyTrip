@@ -11,7 +11,46 @@ type StarFilter = "all" | "5" | "4" | "3" | "2";
 
 const PAGE_SIZE = 16;
 
-function getAreaOptions(hotels: Hotel[]): string[] {
+const CITY_AREA_OPTIONS: Record<string, string[]> = {
+  "도쿄": ["신주쿠", "시부야", "긴자", "롯폰기", "우에노", "아사쿠사", "이케부쿠로", "아키하바라", "도쿄역", "마루노우치", "아카사카", "시나가와", "오다이바"],
+  "오사카": ["난바", "도톤보리", "신사이바시", "우메다", "오사카역", "혼마치", "텐노지", "신세카이", "오사카성", "교바시"],
+  "후쿠오카": ["하카타", "텐진", "나카스", "기온", "야쿠인", "오호리", "모모치"],
+  "삿포로": ["삿포로역", "오도리", "스스키노", "나카지마공원", "시로이시", "히가시구", "기타 24조"],
+};
+
+function getCityOptions(hotels: Hotel[]): string[] {
+  return Array.from(new Set(hotels.map((hotel) => hotel.city.trim()).filter(Boolean)))
+    .sort((a, b) => a.localeCompare(b, "ko"));
+}
+
+function getAreaSearchText(hotel: Hotel): string {
+  return [
+    hotel.area,
+    hotel.location?.area,
+    hotel.name,
+    hotel.nameEn,
+    hotel.description,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLocaleLowerCase("ko-KR");
+}
+
+function getAreaOptions(hotels: Hotel[], city: string): string[] {
+  const cityHotels = city === "all" ? hotels : hotels.filter((hotel) => hotel.city === city);
+  const actualAreas = cityHotels
+    .map((hotel) => hotel.area.trim())
+    .filter(Boolean);
+  const configuredAreas = city === "all"
+    ? []
+    : CITY_AREA_OPTIONS[city] ?? [];
+
+  return Array.from(new Set([...actualAreas, ...configuredAreas]))
+    .sort((a, b) => a.localeCompare(b, "ko"));
+}
+
+/* Legacy area helper removed: city-aware area options are defined above. */
+function getLegacyAreaOptions(hotels: Hotel[]): string[] {
   return Array.from(
     new Set(hotels.map((hotel) => hotel.area.trim()).filter(Boolean)),
   ).sort((a, b) => a.localeCompare(b, "ko"));
@@ -37,6 +76,7 @@ function compareHotels(a: Hotel, b: Hotel, sort: SortOption): number {
 
 function buildListUrl(
   query: string,
+  city: string,
   area: string,
   star: StarFilter,
   sort: SortOption,
@@ -45,6 +85,7 @@ function buildListUrl(
   const params = new URLSearchParams();
 
   if (query.trim()) params.set("q", query.trim());
+  if (city !== "all") params.set("city", city);
   if (area !== "all") params.set("area", area);
   if (star !== "all") params.set("star", star);
   if (sort !== "name") params.set("sort", sort);
@@ -58,6 +99,7 @@ function buildListUrl(
 
 function updateListUrl(
   query: string,
+  city: string,
   area: string,
   star: StarFilter,
   sort: SortOption,
@@ -66,7 +108,7 @@ function updateListUrl(
   window.history.replaceState(
     null,
     "",
-    buildListUrl(query, area, star, sort, page),
+    buildListUrl(query, city, area, star, sort, page),
   );
 }
 
@@ -104,24 +146,28 @@ function getPageNumbers(currentPage: number, totalPages: number): Array<number |
 
 export default function HotelListResults({ hotels }: HotelListResultsProps) {
   const [query, setQuery] = useState("");
+  const [city, setCity] = useState("all");
   const [area, setArea] = useState("all");
   const [star, setStar] = useState<StarFilter>("all");
   const [sort, setSort] = useState<SortOption>("name");
   const [page, setPage] = useState(1);
   const [isUrlInitialized, setIsUrlInitialized] = useState(false);
 
-  const areas = useMemo(() => getAreaOptions(hotels), [hotels]);
+  const cities = useMemo(() => getCityOptions(hotels), [hotels]);
+  const areas = useMemo(() => getAreaOptions(hotels, city), [city, hotels]);
 
   useEffect(() => {
     const readUrlState = () => {
       const params = new URLSearchParams(window.location.search);
       const nextQuery = params.get("q") ?? "";
+      const nextCity = params.get("city") ?? "all";
       const nextArea = params.get("area") ?? "all";
       const nextStar = params.get("star");
       const nextSort = params.get("sort");
       const nextPage = Number(params.get("page"));
 
       setQuery(nextQuery);
+      setCity(cities.includes(nextCity) ? nextCity : "all");
       setArea(areas.includes(nextArea) ? nextArea : "all");
 
       if (
@@ -153,19 +199,21 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
     window.addEventListener("popstate", readUrlState);
 
     return () => window.removeEventListener("popstate", readUrlState);
-  }, [areas]);
+  }, [areas, cities]);
 
   const filteredHotels = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
 
     return hotels
       .filter((hotel) => {
-        const matchesArea = area === "all" || hotel.area === area;
+        const matchesCity = city === "all" || hotel.city === city;
+        const areaText = getAreaSearchText(hotel);
+        const matchesArea = area === "all" || hotel.area === area || areaText.includes(area.toLocaleLowerCase("ko-KR"));
         const matchesStar =
           star === "all" || hotel.starRating === Number(star);
 
         if (!normalizedQuery) {
-          return matchesArea && matchesStar;
+          return matchesCity && matchesArea && matchesStar;
         }
 
         const searchableText = [
@@ -181,13 +229,14 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           .toLowerCase();
 
         return (
+          matchesCity &&
           matchesArea &&
           matchesStar &&
           searchableText.includes(normalizedQuery)
         );
       })
       .sort((a, b) => compareHotels(a, b, sort));
-  }, [area, hotels, query, sort, star]);
+  }, [area, city, hotels, query, sort, star]);
 
   const totalPages = Math.max(1, Math.ceil(filteredHotels.length / PAGE_SIZE));
   const currentPage = Math.min(page, totalPages);
@@ -199,12 +248,12 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   useEffect(() => {
     if (!isUrlInitialized) return;
     setPage(1);
-  }, [area, query, sort, star, isUrlInitialized]);
+  }, [area, city, query, sort, star, isUrlInitialized]);
 
   useEffect(() => {
     if (!isUrlInitialized) return;
-    updateListUrl(query, area, star, sort, currentPage);
-  }, [area, currentPage, isUrlInitialized, query, sort, star]);
+    updateListUrl(query, city, area, star, sort, currentPage);
+  }, [area, city, currentPage, isUrlInitialized, query, sort, star]);
 
   const goToPage = (nextPage: number) => {
     const safePage = Math.min(Math.max(nextPage, 1), totalPages);
@@ -213,13 +262,13 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
     window.history.pushState(
       null,
       "",
-      buildListUrl(query, area, star, sort, safePage),
+      buildListUrl(query, city, area, star, sort, safePage),
     );
     setPage(safePage);
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
-  const hasFilters = query.trim() !== "" || area !== "all" || star !== "all" || sort !== "name";
+  const hasFilters = query.trim() !== "" || city !== "all" || area !== "all" || star !== "all" || sort !== "name";
   const pageNumbers = getPageNumbers(currentPage, totalPages);
 
   return (
@@ -260,7 +309,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               aria-label="호텔 지역 필터"
               className="h-11 w-full rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm text-ct-text outline-none transition-colors focus:border-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text"
             >
-              <option value="all">전체 지역</option>
+              <option value="all">{city === "all" ? "도시를 먼저 선택하세요" : "전체 지역"}</option>
               {areas.map((item) => (
                 <option key={item} value={item}>
                   {item}
@@ -456,7 +505,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
             조건에 맞는 호텔이 없습니다.
           </p>
           <p mt="2" mb="0" text="sm ct-muted dark:ct-dark-muted">
-            검색어나 지역 또는 성급을 변경해 다시 확인해 주세요.
+            검색어나 도시, 지역 또는 성급을 변경해 다시 확인해 주세요.
           </p>
         </div>
       )}
