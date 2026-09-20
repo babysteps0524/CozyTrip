@@ -45,7 +45,7 @@ jobs:
       MYREALTRIP_IMAGE_USAGE_ALLOWED: "true"
       AI_HOTEL_ID: ${{ inputs.hotel_id }}
       AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
-      AI_DAILY_PLAN: ${{ inputs.test_batch && 'japan-tokyo:1,japan-osaka:1,japan-kyoto:1,japan-fukuoka:1,japan-sapporo:1,japan-okinawa:1' || 'japan-tokyo:2,japan-osaka:2,japan-kyoto:2,japan-fukuoka:2,japan-sapporo:2,japan-okinawa:2' }}
+      AI_DAILY_PLAN: ${{ inputs.test_batch && 'japan-tokyo:1,japan-osaka:1,japan-fukuoka:1,japan-sapporo:1' || 'japan-tokyo:3,japan-osaka:3,japan-fukuoka:3,japan-sapporo:2' }}
       AI_REPAIR_INVALID: ${{ inputs.repair_invalid || false }}
 
     timeout-minutes: 30
