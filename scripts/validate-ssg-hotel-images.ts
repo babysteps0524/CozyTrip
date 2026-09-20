@@ -1,6 +1,7 @@
 import { readdir, readFile } from "node:fs/promises";
 import { join, relative } from "node:path";
 
+import { destinations } from "../src/data/destinations";
 import { hotels } from "../src/data/hotels";
 
 const distDir = join(process.cwd(), "dist");
@@ -29,25 +30,31 @@ async function collectIndexFiles(directory: string): Promise<string[]> {
   return files;
 }
 
-function getHotelRoute(hotel: (typeof hotels)[number]): string {
+function getHotelRoute(hotel: (typeof hotels)[number]): string | null {
+  const destination = destinations.find(
+    (item) => item.id === hotel.destinationId,
+  );
+
+  if (!destination) return null;
+
   return normalizeRoutePath(
-    `/japan/${hotel.city.toLowerCase()}/hotels/${hotel.slug}`,
+    `/japan/${destination.slug}/hotels/${hotel.slug}`,
   );
 }
 
-function hasArticleImage(html: string): boolean {
-  const articleMatches = html.match(/<article\\b[^>]*>[\\s\\S]*?<\\/article>/gi) ?? [];
+function getArticleHtml(html: string): string[] {
+  return html.match(/<article\b[^>]*>[\s\S]*?<\/article>/gi) ?? [];
+}
 
-  return articleMatches.some((article) =>
-    /<img\\b[^>]*\\bsrc=["'][^"']+["'][^>]*>/i.test(article),
+function hasArticleImage(html: string): boolean {
+  return getArticleHtml(html).some((article) =>
+    /<img\b[^>]*\bsrc=["'][^"']+["'][^>]*>/i.test(article),
   );
 }
 
 function hasMyRealTripImage(html: string): boolean {
-  const articleMatches = html.match(/<article\\b[^>]*>[\\s\\S]*?<\\/article>/gi) ?? [];
-
-  return articleMatches.some((article) =>
-    /<img\\b[^>]*\\bsrc=["'][^"']*(?:myrealtrip|mrt)[^"']*["'][^>]*>/i.test(
+  return getArticleHtml(html).some((article) =>
+    /<img\b[^>]*\bsrc=["'][^"']*(?:myrealtrip|mrt)[^"']*["'][^>]*>/i.test(
       article,
     ),
   );
@@ -59,8 +66,9 @@ const fileByRoute = new Map<string, string>();
 for (const file of files) {
   const route = `/${relative(distDir, file)
     .replaceAll("\\\\", "/")
-    .replace(/index\\.html$/, "")
-    .replace(/^\\/+/, "")}`;
+    .replace(/index\.html$/, "")
+    .replace(/^\/+/, "")}`;
+
   fileByRoute.set(normalizeRoutePath(route), file);
 }
 
@@ -70,6 +78,12 @@ let myRealTripImages = 0;
 
 for (const hotel of hotels) {
   const route = getHotelRoute(hotel);
+
+  if (!route) {
+    failures.push(`[${hotel.id}] destination not found for hotel.`);
+    continue;
+  }
+
   const file = fileByRoute.get(route);
 
   if (!file) {
@@ -81,7 +95,9 @@ for (const hotel of hotels) {
   checked += 1;
 
   if (!hasArticleImage(html)) {
-    failures.push(`[${hotel.id}] ${route} has no <img> inside an article in SSG HTML.`);
+    failures.push(
+      `[${hotel.id}] ${route} has no <img> inside an article in SSG HTML.`,
+    );
   }
 
   if (hasMyRealTripImage(html)) {
@@ -91,7 +107,9 @@ for (const hotel of hotels) {
 
 console.log("SSG hotel article image validation complete.");
 console.log(`Hotel routes checked: ${checked}`);
-console.log(`Hotel routes with MyRealTrip article image URLs: ${myRealTripImages}`);
+console.log(
+  `Hotel routes with MyRealTrip article image URLs: ${myRealTripImages}`,
+);
 
 if (failures.length > 0) {
   for (const failure of failures) console.error(failure);
