@@ -1,7 +1,6 @@
 import type { Hotel } from "../../types";
 import { getAffiliateProviderConfig } from "../../lib/affiliate";
 import { Container } from "../common";
-import AffiliateDisclosure from "./AffiliateDisclosure";
 
 interface HotelBookingProps {
   hotel: Hotel;
@@ -32,10 +31,6 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
               <p className="mt-3 mb-0 max-w-2xl text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft sm:text-base">
                 객실 요금과 예약 가능 여부는 예약 플랫폼에서 날짜와 조건을 입력해 확인할 수 있습니다.
               </p>
-
-              <AffiliateDisclosure
-                show={affiliateLinks.some((link) => link.provider === "myrealtrip")}
-              />
 
               {affiliateLinks.length > 0 ? (
                 <>
