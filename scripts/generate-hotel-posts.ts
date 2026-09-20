@@ -7,6 +7,7 @@ import {
   getConfiguredAIProviders,
 } from "../src/lib/ai";
 import { validateHotelPost } from "../src/lib/ai/validate";
+import { ensureHotelPostImages } from "../src/lib/ai/ensure-images";
 import {
   formatHotelValidationFailure,
   validateHotelData,
@@ -572,8 +573,9 @@ async function generateAndValidateHotelPost(
   attemptedProviders: string[];
 }> {
   const result = await generateHotelPost(input);
+  const ensuredPost = ensureHotelPostImages(result.post, input.images);
   const post: HotelPost = {
-    ...result.post,
+    ...ensuredPost,
     hotelId: hotel.id,
     slug: hotel.slug,
     generatedBy: result.provider,
