@@ -44,6 +44,10 @@ function createRoutes(posts: Post[]): string[] {
   routes.add("/");
   routes.add(normalizeRoute("/japan"));
   routes.add(normalizeRoute("/guides"));
+  routes.add(normalizeRoute("/about"));
+  routes.add(normalizeRoute("/privacy"));
+  routes.add(normalizeRoute("/affiliate"));
+  routes.add(normalizeRoute("/contact"));
 
   for (const destination of destinations) {
     routes.add(normalizeRoute(`/japan/${destination.slug}`));
