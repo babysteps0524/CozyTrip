@@ -134,7 +134,8 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
   const [page, setPage] = useState(1);
   const [isUrlInitialized, setIsUrlInitialized] = useState(false);
 
-  const city = hotels[0]?.city?.trim() ?? "";\n  const areas = useMemo(() => getAreaOptions(hotels, city), [hotels, city]);
+  const city = hotels[0]?.city?.trim() ?? "";
+  const areas = useMemo(() => getAreaOptions(hotels, city), [hotels, city]);
 
   useEffect(() => {
     const readUrlState = () => {
