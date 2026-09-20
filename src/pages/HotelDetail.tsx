@@ -391,22 +391,22 @@ export default function HotelDetail({
           )}
 
           {hotelPosts.length > 0 ? (
-            <div className="mt-8 max-w-3xl">
+            <div className="mt-10 max-w-3xl">
               {hotelPosts.map((post) => (
-                <article key={post.id}>
-                  <div className="rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
+                <article key={post.id} aria-labelledby={`hotel-article-title-${post.id}`}>
+                  <header className="rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-7 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
                     <p className="m-0 text-xs font-semibold tracking-wide text-ct-primary dark:text-ct-dark-text-soft">
                       HOTEL ARTICLE
                     </p>
-                    <h3 className="mt-2 mb-0 text-xl font-bold leading-tight tracking-tight sm:text-2xl">
+                    <h3 id={`hotel-article-title-${post.id}`} className="mt-2 mb-0 text-2xl font-bold leading-[1.35] tracking-tight sm:text-3xl">
                       {post.title}
                     </h3>
-                    <p className="mt-3 mb-0 text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">
+                    <p className="mt-4 mb-0 text-base leading-8 text-ct-text-soft dark:text-ct-dark-text-soft">
                       {post.introduction}
                     </p>
-                  </div>
+                  </header>
 
-                  <div className="mt-8">
+                  <div className="mt-10">
                     <PostRenderer post={post} />
                   </div>
 
