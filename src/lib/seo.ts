@@ -79,6 +79,42 @@ export function createSeoMetadata(
     };
   }
 
+  if (normalizedRoute === "/about/") {
+    return {
+      title: `코지트립 소개 | ${SITE_NAME}`,
+      description: "CozyTrip 코지트립의 운영 목적, 호텔 정보 출처와 여행 정보 제공 원칙을 확인해보세요.",
+      canonical: createCanonical("/about/"),
+      ogType: "website",
+    };
+  }
+
+  if (normalizedRoute === "/privacy/") {
+    return {
+      title: `개인정보처리방침 | ${SITE_NAME}`,
+      description: "CozyTrip 코지트립의 개인정보 및 외부 서비스 이용에 관한 안내를 확인해보세요.",
+      canonical: createCanonical("/privacy/"),
+      ogType: "website",
+    };
+  }
+
+  if (normalizedRoute === "/affiliate/") {
+    return {
+      title: `제휴 및 광고 안내 | ${SITE_NAME}`,
+      description: "CozyTrip 코지트립의 호텔 예약 제휴 링크와 광고 관련 안내를 확인해보세요.",
+      canonical: createCanonical("/affiliate/"),
+      ogType: "website",
+    };
+  }
+
+  if (normalizedRoute === "/contact/") {
+    return {
+      title: `문의 | ${SITE_NAME}`,
+      description: "CozyTrip 코지트립의 호텔 정보, 이미지, 콘텐츠 및 제휴 관련 문의 안내입니다.",
+      canonical: createCanonical("/contact/"),
+      ogType: "website",
+    };
+  }
+
   const destinationMatch = normalizedRoute.match(/^\/japan\/([^/]+)\/$/);
   if (destinationMatch) {
     const destination = destinations.find((item) => normalizeNfc(item.slug) === normalizeNfc(destinationMatch[1]));
