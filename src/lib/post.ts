@@ -12,14 +12,50 @@ function getUsableImages(hotel: Hotel): HotelImage[] {
   );
 }
 
-function findImage(
-  imageId: string,
-  imagesById: Map<string, HotelImage>,
-): HotelImage | undefined {
-  return imagesById.get(imageId);
+function getPreferredImageTypes(heading: string): HotelImage["type"][] {
+  const text = heading.toLowerCase();
+
+  if (/(객실|룸|room|숙박)/u.test(text)) {
+    return ["room", "gallery", "hero"];
+  }
+
+  if (/(시설|편의|수영장|피트니스|부대시설|facility|pool)/u.test(text)) {
+    return ["facility", "gallery", "hero"];
+  }
+
+  if (/(조식|레스토랑|다이닝|식사|restaurant|dining|breakfast)/u.test(text)) {
+    return ["restaurant", "facility", "gallery"];
+  }
+
+  if (/(위치|교통|역|주변|location|access)/u.test(text)) {
+    return ["location", "attraction", "hero"];
+  }
+
+  return ["hero", "gallery", "room", "facility", "restaurant", "location", "attraction"];
 }
 
-function getSectionImageIds(section: HotelPost["sections"][number]): string[] {
+function selectFallbackImage(
+  heading: string,
+  images: HotelImage[],
+  usedImageIds: Set<string>,
+): HotelImage | undefined {
+  const preferredTypes = getPreferredImageTypes(heading);
+
+  for (const type of preferredTypes) {
+    const image = images.find(
+      (candidate) =>
+        candidate.type === type && !usedImageIds.has(candidate.id),
+    );
+
+    if (image) return image;
+  }
+
+  return images.find((image) => !usedImageIds.has(image.id));
+}
+
+function getExplicitImageIds(
+  section: HotelPost["sections"][number],
+): string[] {
   if (section.imageAssignments && section.imageAssignments.length > 0) {
     return section.imageAssignments.map((assignment) => assignment.imageId);
   }
@@ -69,20 +105,44 @@ export function hotelPostToPost(
       });
     }
 
-    for (const imageId of getSectionImageIds(section)) {
+    const explicitImageIds = getExplicitImageIds(section);
+    let renderedImageCount = 0;
+
+    for (const imageId of explicitImageIds) {
       if (usedImageIds.has(imageId)) continue;
 
-      const image = findImage(imageId, imagesById);
+      const image = imagesById.get(imageId);
 
       if (!image) continue;
 
       usedImageIds.add(imageId);
+      renderedImageCount += 1;
 
       blocks.push({
         type: "image",
         image,
       });
     }
+
+    if (explicitImageIds.length === 0 && heading) {
+      const fallbackImage = selectFallbackImage(
+        heading,
+        usableImages,
+        usedImageIds,
+      );
+
+      if (fallbackImage) {
+        usedImageIds.add(fallbackImage.id);
+        renderedImageCount += 1;
+
+        blocks.push({
+          type: "image",
+          image: fallbackImage,
+        });
+      }
+    }
+
+    void renderedImageCount;
   }
 
   return {
