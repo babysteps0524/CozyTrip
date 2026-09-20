@@ -39,7 +39,26 @@ export function validateHotelPost(
       throw new Error(`Invalid hotel post status: ${post.status}`);
     }
 
-    if (post.sections.length < 6 || post.sections.length > 8) throw new Error("sections must contain 6-8 items.");
+    const requiredHeadings = [
+      "호텔 기본 정보",
+      "객실과 숙박 정보",
+      "이용 가능한 시설",
+      "위치와 교통",
+      "주변 정보 또는 예약 전 확인사항",
+      "호텔을 선택할 때 확인할 점",
+    ] as const;
+
+    if (post.sections.length !== requiredHeadings.length) {
+      throw new Error("sections must contain exactly 6 items.");
+    }
+
+    for (let index = 0; index < requiredHeadings.length; index += 1) {
+      if (normalize(post.sections[index].heading) !== normalize(requiredHeadings[index])) {
+        throw new Error(
+          `Section ${index + 1} heading must be "${requiredHeadings[index]}".`,
+        );
+      }
+    }
     if (post.faq.length < 4 || post.faq.length > 6) throw new Error("faq must contain 4-6 items.");
     if (post.tags.length < 5 || post.tags.length > 8) throw new Error("tags must contain 5-8 items.");
 
@@ -165,6 +184,8 @@ export function validateHotelPost(
       throw new Error(`post.imageIds and section image references must match exactly. ${details.join(" | ")}`);
     }
 
+    const lodgingSection = post.sections[1];
+
     for (const requiredType of ["room", "bathroom"] as const) {
       const requiredImage = images.find(
         (image) =>
@@ -173,9 +194,27 @@ export function validateHotelPost(
           image.src.trim(),
       );
 
-      if (requiredImage && !postImageIds.has(requiredImage.id)) {
+      if (!requiredImage) {
+        throw new Error(
+          `Required ${requiredType} image is not available for this hotel.`,
+        );
+      }
+
+      if (!postImageIds.has(requiredImage.id)) {
         throw new Error(
           `Required ${requiredType} image is not assigned to the post: ${requiredImage.id}`,
+        );
+      }
+
+      const assignedToLodgingSection = (lodgingSection.imageAssignments ?? []).some(
+        (assignment) =>
+          assignment.imageId === requiredImage.id &&
+          assignment.imageType === requiredType,
+      );
+
+      if (!assignedToLodgingSection) {
+        throw new Error(
+          `Required ${requiredType} image must be assigned to the "객실과 숙박 정보" section: ${requiredImage.id}`,
         );
       }
     }
