@@ -1,48 +1,48 @@
 {
-  "generatedAt": "2026-09-20T02:37:57.956Z",
+  "generatedAt": "2026-09-20T13:44:46.835Z",
   "source": "myrealtrip",
   "totalInventory": 606,
-  "published": 81,
-  "pending": 523,
-  "retrying": 2,
+  "published": 1,
+  "pending": 605,
+  "retrying": 0,
   "retryExhausted": 0,
-  "remaining": 525,
+  "remaining": 605,
   "destinations": [
     {
       "destinationId": "japan-fukuoka",
       "inventory": 101,
-      "published": 14,
-      "pending": 87,
+      "published": 0,
+      "pending": 101,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 87
+      "remaining": 101
     },
     {
       "destinationId": "japan-kyoto",
       "inventory": 101,
-      "published": 14,
-      "pending": 87,
+      "published": 0,
+      "pending": 101,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 87
+      "remaining": 101
     },
     {
       "destinationId": "japan-okinawa",
       "inventory": 101,
-      "published": 8,
-      "pending": 91,
-      "retrying": 2,
+      "published": 0,
+      "pending": 101,
+      "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 93
+      "remaining": 101
     },
     {
       "destinationId": "japan-osaka",
       "inventory": 101,
-      "published": 20,
-      "pending": 81,
+      "published": 0,
+      "pending": 101,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 81
+      "remaining": 101
     },
     {
       "destinationId": "japan-sapporo",
@@ -56,11 +56,11 @@
     {
       "destinationId": "japan-tokyo",
       "inventory": 101,
-      "published": 25,
-      "pending": 76,
+      "published": 1,
+      "pending": 100,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 76
+      "remaining": 100
     }
   ],
   "hotels": [
@@ -77,7 +77,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "토부 호텔 레밴트 도쿄",
       "slug": "토부-호텔-레밴트-도쿄-1126303",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -85,7 +85,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "APA 호텔 & 리조트 롯폰기 에키히가시",
       "slug": "apa-호텔-리조트-롯폰기-에키히가시-1640875",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -93,7 +93,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메",
       "slug": "호텔-빌라-폰테인-그랜드-도쿄-시오도메-1178040",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -101,7 +101,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "렘 롯폰기",
       "slug": "렘-롯폰기-1273819",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -109,7 +109,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "소테츠 프레사 인 긴자 나나초메",
       "slug": "소테츠-프레사-인-긴자-나나초메-1261232",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -117,7 +117,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 퐁텐 도쿄 - 가야바초",
       "slug": "호텔-빌라-퐁텐-도쿄-가야바초-1175943",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -125,7 +125,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "썬샤인 시티 프린스 호텔",
       "slug": "썬샤인-시티-프린스-호텔-1111187",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -133,7 +133,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "시나가와 프린스 호텔",
       "slug": "시나가와-프린스-호텔-1109436",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -141,7 +141,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "소테츠 프레사 인 도쿄 긴시초",
       "slug": "소테츠-프레사-인-도쿄-긴시초-1306164",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -149,7 +149,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "긴자 캐피털 호텔 모에기",
       "slug": "긴자-캐피털-호텔-모에기-1378163",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -157,7 +157,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "시퀀스 미야시타 파크",
       "slug": "시퀀스-미야시타-파크-1503356",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -165,7 +165,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "도쿄 베이 시오미 프린스 호텔",
       "slug": "도쿄-베이-시오미-프린스-호텔-1497848",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -173,7 +173,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "APA 호텔 신주쿠 교엠매",
       "slug": "apa-호텔-신주쿠-교엠매-1220840",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -181,7 +181,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 몬토레 긴자",
       "slug": "호텔-몬토레-긴자-1145543",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -189,7 +189,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "더 프린스 파크 타워 도쿄 - 프리퍼드 호텔 & 리조트, LVX 컬렉션",
       "slug": "더-프린스-파크-타워-도쿄-프리퍼드-호텔-리조트-lvx-컬렉션-1105712",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -197,7 +197,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "미쓰이 가든 호텔 긴자 고초메",
       "slug": "미쓰이-가든-호텔-긴자-고초메-1420676",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -205,7 +205,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 리스텔 신주쿠",
       "slug": "호텔-리스텔-신주쿠-1167753",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -213,7 +213,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "다이이치 호텔 도쿄",
       "slug": "다이이치-호텔-도쿄-1114361",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -221,7 +221,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "APA 호텔 & 리조트 니시신주쿠 고초메 에키마에 타워",
       "slug": "apa-호텔-리조트-니시신주쿠-고초메-에키마에-타워-1310194",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -229,7 +229,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "APA 호텔 & 리조트 오사카 난바 역앞 타워",
       "slug": "apa-호텔-리조트-오사카-난바-역앞-타워-3578504",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -237,7 +237,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "소테츠 그랜드 프레사 오사카-난바",
       "slug": "소테츠-그랜드-프레사-오사카-난바-5022564",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -245,7 +245,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "호텔한큐레스파이어오사카",
       "slug": "호텔한큐레스파이어오사카-1431475",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -253,7 +253,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "칸데오 호텔 오사카 난바",
       "slug": "칸데오-호텔-오사카-난바-1286523",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -261,7 +261,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "호텔 일 쿠오레 남바",
       "slug": "호텔-일-쿠오레-남바-1268563",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -269,7 +269,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "호텔 포르자 오사카 난바 도톤보리",
       "slug": "호텔-포르자-오사카-난바-도톤보리-1560748",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -277,7 +277,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "오사카 테이코쿠 호텔",
       "slug": "오사카-테이코쿠-호텔-1185003",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -285,7 +285,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "호텔 몬토레 그라스미아 오사카",
       "slug": "호텔-몬토레-그라스미아-오사카-1162565",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -293,7 +293,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "남바 오리엔탈 호텔",
       "slug": "남바-오리엔탈-호텔-1141495",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -301,7 +301,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "더 원파이브 오사카 난바 도톤보리",
       "slug": "더-원파이브-오사카-난바-도톤보리-3576037",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -309,7 +309,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "오사카 도톤보리,난바,에비스주택 모리하우스(집 전체,아파트형,주택형) ",
       "slug": "오사카-도톤보리-난바-에비스주택-모리하우스-집-전체-아파트형-주택형-5008384",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -317,7 +317,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "호텔 케이한 난바 그란데",
       "slug": "호텔-케이한-난바-그란데-1641612",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -325,7 +325,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "온야도 노노 남바 내추럴 핫 스프링",
       "slug": "온야도-노노-남바-내추럴-핫-스프링-1270212",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -333,7 +333,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "호텔 케이한 유니버설 타워",
       "slug": "호텔-케이한-유니버설-타워-1134335",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -341,7 +341,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "Toyoko Inn Osaka Namba",
       "slug": "toyoko-inn-osaka-namba-3587508",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -349,7 +349,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "더 싱귤러리 호텔 & 스카이스파 앳 유니버설 스튜디오 재팬",
       "slug": "더-싱귤러리-호텔-스카이스파-앳-유니버설-스튜디오-재팬-1285400",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -357,7 +357,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "레드 루프 인 & 스위트 오사카 - 남바/닛폰바시",
       "slug": "레드-루프-인-스위트-오사카-남바-닛폰바시-1301211",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -365,7 +365,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "오리엔탈 호텔 유니버설 시티",
       "slug": "오리엔탈-호텔-유니버설-시티-1575824",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -373,7 +373,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "홀리데이 인 오사카 남바 바이 IHG",
       "slug": "홀리데이-인-오사카-남바-바이-ihg-1170153",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -381,7 +381,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "센타라 그랜드 호텔 오사카",
       "slug": "센타라-그랜드-호텔-오사카-5009707",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -389,7 +389,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "교토 우메코지 카덴쇼",
       "slug": "교토-우메코지-카덴쇼-1652241",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -397,7 +397,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "온야도 노노 교토시치조 내추럴 핫 스프링스",
       "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -405,7 +405,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "호텔 엘시안트 교토 하치조구치",
       "slug": "호텔-엘시안트-교토-하치조구치-1208147",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -413,7 +413,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "알몬트 호텔 교토",
       "slug": "알몬트-호텔-교토-1200282",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -421,7 +421,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "리치몬드 호텔 프리미어 교토 시조",
       "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -429,7 +429,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "오크우드 호텔 오이케 교토",
       "slug": "오크우드-호텔-오이케-교토-1571825",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -437,7 +437,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "소테츠 프레사 인 교토-키요미즈 고조",
       "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -445,7 +445,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "호텔 포르자 교토 시조 카와라마치",
       "slug": "호텔-포르자-교토-시조-카와라마치-1566383",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -453,7 +453,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "호텔 그레이스리 교토 산조",
       "slug": "호텔-그레이스리-교토-산조-1254251",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -461,7 +461,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "사쿠라 테라스 더 갤러리",
       "slug": "사쿠라-테라스-더-갤러리-1229514",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -469,7 +469,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "게이오 프렐리아 호텔 교토 가라스마 고조",
       "slug": "게이오-프렐리아-호텔-교토-가라스마-고조-1369404",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -477,7 +477,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "오리엔탈 호텔 교토 로쿠조",
       "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -485,7 +485,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "호텔 홋케 클럽 교토",
       "slug": "호텔-홋케-클럽-교토-1186098",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -493,7 +493,7 @@
       "destinationId": "japan-kyoto",
       "hotelName": "스마일 호텔 교토 시조",
       "slug": "스마일-호텔-교토-시조-1181987",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -549,7 +549,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "컴포트 인 후쿠오카 텐진",
       "slug": "컴포트-인-후쿠오카-텐진-5709842",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -557,7 +557,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "더 베이직스 후쿠오카",
       "slug": "더-베이직스-후쿠오카-1460748",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -565,7 +565,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "미쓰이 가든 호텔 후쿠오카 기온",
       "slug": "미쓰이-가든-호텔-후쿠오카-기온-1402095",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -573,7 +573,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 마이스테이스 후쿠오카 텐진",
       "slug": "호텔-마이스테이스-후쿠오카-텐진-1188575",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -581,7 +581,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 몬토레 후쿠오카",
       "slug": "호텔-몬토레-후쿠오카-1487512",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -589,7 +589,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "니시테츠 그랜드 호텔",
       "slug": "니시테츠-그랜드-호텔-6339000",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -597,18 +597,15 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 홋케 클럽 후쿠오카",
       "slug": "호텔-홋케-클럽-후쿠오카-1190993",
-      "status": "published",
-      "attemptCount": 2,
-      "firstFailedAt": "2026-09-20T01:52:28.942Z",
-      "lastFailedAt": "2026-09-20T02:37:57.954Z",
-      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 53.841263167s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6943, Requested 4000. Please try again in 22.0725s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "pending",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1559947",
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 오리엔탈 익스프레스 후쿠오카 텐진",
       "slug": "호텔-오리엔탈-익스프레스-후쿠오카-텐진-1559947",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -616,7 +613,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 포르자 하카타역 치쿠시 구치Ⅰ",
       "slug": "호텔-포르자-하카타역-치쿠시-구치i-1295093",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -624,7 +621,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 몬테 에르마나 후쿠오카",
       "slug": "호텔-몬테-에르마나-후쿠오카-1268921",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -632,7 +629,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "컴포트 호텔 하카타",
       "slug": "컴포트-호텔-하카타-1144031",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -640,7 +637,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "네스트 호텔 하카타 스테이션",
       "slug": "네스트-호텔-하카타-스테이션-1317449",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -648,7 +645,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 몬토레 라 수르 후쿠오카",
       "slug": "호텔-몬토레-라-수르-후쿠오카-1152864",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -656,7 +653,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "오리엔탈 호텔 후쿠오카 하카타 스테이션",
       "slug": "오리엔탈-호텔-후쿠오카-하카타-스테이션-1401198",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -872,7 +869,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "레쿠 오키나와 자탄 스파 & 리조트",
       "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -880,7 +877,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "베셀 호텔 캄파나 오키나와",
       "slug": "베셀-호텔-캄파나-오키나와-6196684",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -888,7 +885,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "호텔 JAL 시티 나하",
       "slug": "호텔-jal-시티-나하-6178095",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -896,7 +893,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "하얏트 리젠시 세라가키 아일랜드 오키나와",
       "slug": "하얏트-리젠시-세라가키-아일랜드-오키나와-6206151",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -904,7 +901,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "오리엔탈 호텔 오키나와 리조트 & 스파",
       "slug": "오리엔탈-호텔-오키나와-리조트-스파-6183767",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -912,7 +909,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "더 네스트 나하",
       "slug": "더-네스트-나하-4479180",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -920,7 +917,7 @@
       "destinationId": "japan-okinawa",
       "hotelName": "더 부세나 테라스",
       "slug": "더-부세나-테라스-6206176",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -928,29 +925,23 @@
       "destinationId": "japan-okinawa",
       "hotelName": "네스트 호텔 나하 쿠모지",
       "slug": "네스트-호텔-나하-쿠모지-1569706",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T15:00:32.778Z",
-      "lastFailedAt": "2026-09-19T15:00:32.778Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6818, Requested 3677. Please try again in 18.7125s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "pending",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-6203441",
       "destinationId": "japan-okinawa",
       "hotelName": "호텔 컬렉티브",
       "slug": "호텔-컬렉티브-6203441",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T15:00:44.073Z",
-      "lastFailedAt": "2026-09-19T15:00:44.073Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5295, Requested 3349. Please try again in 4.83s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "pending",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-6215679",
       "destinationId": "japan-okinawa",
       "hotelName": "류큐 호텔&리조트 나시로 비치",
       "slug": "류큐-호텔-리조트-나시로-비치-6215679",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -1038,7 +1029,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 선라이트 신주쿠",
       "slug": "호텔-선라이트-신주쿠-5997658",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -1046,7 +1037,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 메트로폴리탄 도쿄 이케부쿠로",
       "slug": "호텔-메트로폴리탄-도쿄-이케부쿠로-5516082",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -1054,7 +1045,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "도쿄 프린스 호텔",
       "slug": "도쿄-프린스-호텔-1144933",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -1062,7 +1053,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "소테츠 프레사 인 다이몬",
       "slug": "소테츠-프레사-인-다이몬-1959099",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
@@ -1070,7 +1061,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 퐁텐 그랜드 도쿄 아리아케",
       "slug": "호텔-빌라-퐁텐-그랜드-도쿄-아리아케-1490314",
-      "status": "published",
+      "status": "pending",
       "attemptCount": 0
     },
     {
