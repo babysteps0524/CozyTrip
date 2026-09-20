@@ -2,6 +2,7 @@ const DAY_MS = 24 * 60 * 60 * 1000;
 
 export const DEFAULT_CHECK_IN_OFFSET_DAYS = 30;
 export const DEFAULT_STAY_NIGHTS = 3;
+export const MYREALTRIP_TIME_ZONE = "Asia/Seoul";
 
 function formatDate(date: Date): string {
   return date.toISOString().slice(0, 10);
@@ -21,6 +22,30 @@ function parseDate(value: string, name: string): Date {
   return date;
 }
 
+function getCurrentDateInTimeZone(
+  timeZone: string,
+  now: Date = new Date(),
+): Date {
+  const parts = new Intl.DateTimeFormat("en-CA", {
+    timeZone,
+    calendar: "gregory",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+  }).formatToParts(now);
+
+  const values = Object.fromEntries(
+    parts
+      .filter((part) => part.type !== "literal")
+      .map((part) => [part.type, part.value]),
+  );
+
+  return parseDate(
+    `${values.year}-${values.month}-${values.day}`,
+    `${timeZone} current date`,
+  );
+}
+
 function addDays(date: Date, days: number): Date {
   return new Date(date.getTime() + days * DAY_MS);
 }
@@ -31,7 +56,9 @@ export interface MyRealTripSearchWindow {
   source: "environment" | "rolling";
 }
 
-export function getMyRealTripSearchWindow(): MyRealTripSearchWindow {
+export function getMyRealTripSearchWindow(
+  now: Date = new Date(),
+): MyRealTripSearchWindow {
   const configuredCheckIn = process.env.MYREALTRIP_CHECK_IN?.trim();
   const configuredCheckOut = process.env.MYREALTRIP_CHECK_OUT?.trim();
 
@@ -58,7 +85,7 @@ export function getMyRealTripSearchWindow(): MyRealTripSearchWindow {
     };
   }
 
-  const today = new Date();
+  const today = getCurrentDateInTimeZone(MYREALTRIP_TIME_ZONE, now);
   const checkIn = addDays(today, DEFAULT_CHECK_IN_OFFSET_DAYS);
   const checkOut = addDays(checkIn, DEFAULT_STAY_NIGHTS);
 
