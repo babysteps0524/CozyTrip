@@ -1,5 +1,5 @@
 export type ImageSource =
-  "rakuten" | "agoda" | "myrealtrip" | "official" | "owned" | "licensed";
+  "myrealtrip" | "official" | "owned" | "licensed";
 
 export type ImageType =
   | "hero"
