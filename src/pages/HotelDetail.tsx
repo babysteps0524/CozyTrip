@@ -1,7 +1,6 @@
 import type { Destination, Hotel, Post } from "../types";
 import { Container, Section } from "../components/common";
 import {
-  AffiliateDisclosure,
   HotelBooking,
   HotelFacilities,
   HotelGallery,
@@ -472,12 +471,6 @@ export default function HotelDetail({
               <p className="m-0 text-base leading-relaxed text-ct-text-soft dark:text-ct-dark-text-soft">
                 {hotel.description}
               </p>
-
-              {articleImage && (
-                <AffiliateDisclosure
-                  show={articleImage.source === "myrealtrip"}
-                />
-              )}
 
               {articleImage && (
                 <figure mt="8" mb="0">
