@@ -42,27 +42,13 @@ export default function Header() {
             </div>
           </nav>
 
-          <div className="hidden shrink-0 lg:block">
+          <div className="hidden shrink-0 md:block">
             <Navigation />
           </div>
 
           <MobileNavigation />
         </div>
 
-        <nav
-          aria-label="모바일 여행지"
-          className="flex gap-2 overflow-x-auto border-t border-ct-line py-2 md:hidden dark:border-ct-dark-line"
-        >
-          {destinations.map((destination) => (
-            <a
-              key={destination.href}
-              href={destination.href}
-              className="ct-focus shrink-0 rounded-full border border-ct-line bg-ct-bg px-4 py-2 text-sm font-medium text-ct-text-soft transition-colors duration-150 hover:border-ct-primary hover:text-ct-primary active:scale-95 dark:border-ct-dark-line dark:bg-ct-dark-bg dark:text-ct-dark-text-soft dark:hover:text-ct-dark-text"
-            >
-              {destination.name}
-            </a>
-          ))}
-        </nav>
       </Container>
     </header>
   );
