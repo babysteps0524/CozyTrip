@@ -1,11 +1,7 @@
 import type { Post } from "./types";
-
 import type { Destination } from "./types";
-
 import type { Hotel } from "./types";
-
 import { Footer, Header } from "./components/layout";
-
 import Home from "./pages/Home";
 import Japan from "./pages/Japan";
 import Guides from "./pages/Guides";
@@ -16,29 +12,20 @@ import Guide from "./pages/Guide";
 
 interface AppProps {
   initialPath?: string;
-
   destinations: Destination[];
-
   hotels: Hotel[];
-
   posts: Post[];
 }
 
 function normalizePath(pathname: string): string {
   const normalized = (pathname || "/").normalize("NFC");
-
-  if (normalized.length > 1 && normalized.endsWith("/")) {
-    return normalized.slice(0, -1);
-  }
-
-  return normalized;
+  return normalized.length > 1 && normalized.endsWith("/")
+    ? normalized.slice(0, -1)
+    : normalized;
 }
 
 function getCurrentPath(): string {
-  if (typeof window === "undefined") {
-    return "/";
-  }
-
+  if (typeof window === "undefined") return "/";
   return normalizePath(window.location.pathname);
 }
 
@@ -74,14 +61,10 @@ export default function App({
   posts,
 }: AppProps) {
   const path = normalizePath(initialPath ?? getCurrentPath());
-
-  const destinationMatch = path.match(/^\/japan\/([^/]+)$/);
-
-  const hotelListMatch = path.match(/^\/japan\/([^/]+)\/hotels$/);
-
-  const hotelDetailMatch = path.match(/^\/japan\/([^/]+)\/hotels\/([^/]+)$/);
-
-  const guideMatch = path.match(/^\/guides\/([^/]+)$/);
+  const destinationMatch = path.match(/^/japan/([^/]+)$/);
+  const hotelListMatch = path.match(/^/japan/([^/]+)/hotels$/);
+  const hotelDetailMatch = path.match(/^/japan/([^/]+)/hotels/([^/]+)$/);
+  const guideMatch = path.match(/^/guides/([^/]+)$/);
 
   const destinationSlug =
     destinationMatch?.[1] ?? hotelListMatch?.[1] ?? hotelDetailMatch?.[1];
@@ -91,11 +74,8 @@ export default function App({
     : undefined;
 
   const hotelSlug = hotelDetailMatch?.[2];
-
   const hotel = hotelSlug ? getHotelBySlug(hotels, hotelSlug) : undefined;
-
   const guideSlug = guideMatch?.[1];
-
   const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
 
   const destinationHotels = destination
@@ -104,11 +84,10 @@ export default function App({
 
   const isHotelDetail = Boolean(
     hotelDetailMatch &&
-    destination &&
-    hotel &&
-    hotel.destinationId === destination.id,
+      destination &&
+      hotel &&
+      hotel.destinationId === destination.id,
   );
-
   const isGuide = Boolean(guideMatch && guide && guide.category === "guide");
 
   const isKnownRoute =
@@ -131,23 +110,50 @@ export default function App({
       <Header />
 
       <main>
-        {path === "/" && <Home destinations={destinations} hotels={hotels.filter((hotel) => hotel.city === "도쿄")} guides={posts.filter((post) => post.category === "guide").slice(0, 3)} />}
+        {path === "/" && (
+          <Home destinations={destinations} hotels={hotels} />
+        )}
 
         {path === "/japan" && <Japan destinations={destinations} />}
 
-        {path === "/guides" && <Guides posts={posts.filter((post) => post.category === "guide")} />}
+        {path === "/guides" && (
+          <Guides posts={posts.filter((post) => post.category === "guide")} />
+        )}
 
         {destinationMatch && destination && (
-          <DestinationPage destination={destination} hotels={getHotelsByDestination(hotels, destination.id)} posts={posts.filter((post) => post.destinationId === destination.id)} />
+          <DestinationPage
+            destination={destination}
+            hotels={destinationHotels}
+            posts={[]}
+          />
         )}
 
         {hotelListMatch && destination && (
           <HotelList destination={destination} hotels={destinationHotels} />
         )}
 
-        {isHotelDetail && hotel && <HotelDetail hotel={hotel} destination={destination} hotelPosts={posts.filter((post) => post.hotelId === hotel.id)} relatedGuides={posts.filter((post) => post.destinationId === hotel.destinationId && post.category === "guide" && post.hotelId !== hotel.id)} relatedHotels={getHotelsByDestination(hotels, hotel.destinationId).filter((item) => item.id !== hotel.id)} />}
+        {isHotelDetail && hotel && (
+          <HotelDetail
+            hotel={hotel}
+            destination={destination}
+            hotelPosts={posts.filter((post) => post.hotelId === hotel.id)}
+            relatedGuides={[]}
+            relatedHotels={getHotelsByDestination(hotels, hotel.destinationId).filter(
+              (item) => item.id !== hotel.id,
+            )}
+          />
+        )}
 
-        {isGuide && guide && <Guide post={guide} destination={guide.destinationId ? destinations.find((item) => item.id === guide.destinationId) : undefined} />}
+        {isGuide && guide && (
+          <Guide
+            post={guide}
+            destination={
+              guide.destinationId
+                ? destinations.find((item) => item.id === guide.destinationId)
+                : undefined
+            }
+          />
+        )}
 
         {!isKnownRoute && (
           <section>
@@ -160,14 +166,10 @@ export default function App({
               py="20"
             >
               <div text="center">
-                <p m="0" text="sm ct-muted dark:ct-dark-muted">
-                  404
-                </p>
-
+                <p m="0" text="sm ct-muted dark:ct-dark-muted">404</p>
                 <h1 mt="2" mb="0" text="2xl sm:3xl" font="bold">
                   페이지를 찾을 수 없습니다.
                 </h1>
-
                 <a
                   href="/"
                   mt="6"
