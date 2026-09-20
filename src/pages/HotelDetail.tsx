@@ -7,6 +7,7 @@ import {
   RelatedHotels,
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
+import AffiliateDisclosure from "../components/hotel/AffiliateDisclosure";
 
 interface HotelDetailProps {
   hotel: Hotel;
@@ -132,6 +133,14 @@ export default function HotelDetail({
                 <p className="m-0 text-base font-medium leading-8 text-ct-text-soft dark:text-ct-dark-text-soft sm:text-lg sm:leading-9">
                   {hotelPost.introduction}
                 </p>
+
+                <AffiliateDisclosure
+                  show={Boolean(
+                    hotel.affiliateLinks?.some(
+                      (link) => link.provider === "myrealtrip",
+                    ),
+                  )}
+                />
 
                 <div className="mt-8">
                   <PostRenderer post={hotelPost} />
