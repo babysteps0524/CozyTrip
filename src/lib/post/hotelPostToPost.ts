@@ -215,7 +215,7 @@ export function createHotelPostBlocks(
 
 export function hotelPostToPost(post: HotelPost, hotel: Hotel): Post {
   const blocks = createHotelPostBlocks(post, hotel.images);
-  const slug = post.slug.trim() || hotel.slug;
+  // 호텔 게시글은 호텔 상세 페이지를 canonical URL로 사용한다.\n  // 생성 모델의 제목 기반 slug는 호텔 slug와 달라 클릭 시 상세 페이지와 연결되지 않을 수 있다.\n  const slug = hotel.slug;
   const publishedAt = post.publishedAt ?? hotel.publishedAt ?? "1970-01-01";
 
   return {
