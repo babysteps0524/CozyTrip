@@ -107,10 +107,6 @@ export function createHotelPostBlocks(
   const usedImageIds = new Set<string>();
 
   const heroImageId = getHeroImageId(post, images);
-  if (heroImageId) {
-    addImage(blocks, heroImageId, imageMap, usedImageIds);
-  }
-
   const sectionImageIds = getSectionImageIds(post, images);
 
   for (let index = 0; index < post.sections.length; index += 1) {
@@ -122,7 +118,21 @@ export function createHotelPostBlocks(
       text: section.heading.trim(),
     });
 
-    const requestedImages = sectionImageIds[index] ?? [];
+    const explicitImages = sectionImageIds[index] ?? [];
+    const fallbackImageIds =
+      explicitImages.length === 0
+        ? index === 0 && heroImageId
+          ? [heroImageId]
+          : post.imageIds.filter((imageId) => {
+              const image = imageMap.get(imageId);
+              return (
+                isUsableImage(image) &&
+                image.type !== "hero" &&
+                !usedImageIds.has(imageId)
+              );
+            }).slice(0, 1)
+        : [];
+    const requestedImages = [...explicitImages, ...fallbackImageIds];
 
     for (let paragraphIndex = 0; paragraphIndex < section.paragraphs.length; paragraphIndex += 1) {
       const paragraph = section.paragraphs[paragraphIndex];
