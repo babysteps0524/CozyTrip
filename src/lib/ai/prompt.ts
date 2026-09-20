@@ -33,7 +33,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 이 글은 가능한 한 사진이 풍부하게 보이도록 작성한다.
 사용 가능한 rightsConfirmed 이미지 중 글의 내용과 정확히 관련된 이미지를 가능한 많이 배치한다.
 단, 같은 이미지를 두 번 사용하지 않는다.
-대표 이미지(hero)는 본문 이미지로 사용하지 않는다.
+대표 이미지(hero)는 본문 이미지로 우선 사용하지 않는다. 다만 본문용 이미지가 하나도 없고 hero 이미지만 제공된 경우에는 hero 이미지를 본문에 1장 사용할 수 있다.
 이미지의 alt나 URL만 보고 이미지 내용을 추측하지 않는다.
 
 특히 본문 흐름을 다음처럼 만든다.
@@ -43,7 +43,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 - 조식/레스토랑/다이닝을 설명하는 문단 뒤에는 "restaurant" 이미지를 가능한 만큼 배치한다.
 - 위치/주변/역 정보를 설명하는 문단 뒤에는 "location" 또는 "attraction" 이미지를 실제 데이터가 뒷받침하는 경우에만 배치한다.
 - 일반 호텔 모습을 설명하는 경우에는 "gallery" 이미지를 사용할 수 있다.
-- 이미지가 없거나 적으면 억지로 늘리지 않는다.
+- 본문용 이미지가 있으면 가능한 한 활용한다.\n- 본문용 이미지가 없고 hero 이미지만 있으면 hero 이미지 1장을 사용할 수 있다.\n- 실제 제공된 이미지보다 많은 이미지를 만들거나 복제하지 않는다.
 - 한 section에 관련 이미지가 여러 장이면 imageAssignments에 모두 넣는다.
 - imageAssignments의 imageType은 실제 이미지 type과 정확히 같아야 한다.
 - 동일 imageId는 한 번만 사용한다.
