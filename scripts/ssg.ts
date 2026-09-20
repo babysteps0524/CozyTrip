@@ -34,8 +34,9 @@ interface ManifestEntry {
 type Manifest = Record<string, ManifestEntry>;
 
 function normalizeRoute(route: string): string {
-  if (route === "/") return "/";
-  return route.endsWith("/") ? route : `${route}/`;
+  const normalized = route.normalize("NFC");
+  if (normalized === "/") return "/";
+  return normalized.endsWith("/") ? normalized : `${normalized}/`;
 }
 
 function createRoutes(posts: Post[]): string[] {
