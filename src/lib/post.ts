@@ -31,7 +31,7 @@ function getPreferredImageTypes(heading: string): HotelImage["type"][] {
     return ["location", "attraction", "hero"];
   }
 
-  return ["hero", "gallery", "room", "facility", "restaurant", "location", "attraction"];
+  return ["hero", "gallery", "room", "bathroom", "facility", "restaurant", "location", "attraction"];
 }
 
 function selectFallbackImage(
@@ -107,19 +107,6 @@ export function hotelPostToPost(
 
       usedImageIds.add(imageId);
       sectionImages.push(image);
-    }
-
-    if (sectionImages.length === 0 && heading) {
-      const fallbackImage = selectFallbackImage(
-        heading,
-        usableImages,
-        usedImageIds,
-      );
-
-      if (fallbackImage) {
-        usedImageIds.add(fallbackImage.id);
-        sectionImages.push(fallbackImage);
-      }
     }
 
     const paragraphs = section.paragraphs
