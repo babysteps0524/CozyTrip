@@ -7,10 +7,8 @@ const outputDir = resolve(process.cwd(), "src/data/generated/client-posts");
 const destinations = [
   "tokyo",
   "osaka",
-  "kyoto",
   "fukuoka",
   "sapporo",
-  "okinawa",
 ] as const;
 
 async function main(): Promise<void> {
