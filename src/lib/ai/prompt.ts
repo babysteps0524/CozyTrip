@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v10";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v11";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -52,13 +52,18 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 - 단, 내용과 무관한 이미지를 채우기용으로 넣지 않는다.
 
 섹션 구성:
-- sections는 4~6개.
-- 가능한 경우 객실, 욕실/화장실, 시설, 다이닝, 위치 등의 구성을 사용한다.
+- sections는 6~8개.
+- 가능한 경우 객실, 욕실/화장실, 시설, 다이닝, 위치, 교통/주변 정보, 숙박 정보를 구성한다.
 - 해당 데이터가 없는 주제는 억지로 만들지 말고 다른 확인 가능한 호텔 정보로 구성한다.
-- 각 section은 1~3개의 자연스러운 문단으로 작성한다.
+- 각 section은 2~4개의 자연스러운 문단으로 작성한다.
+- 각 문단은 지나치게 짧게 쓰지 말고 2~4문장으로 구성한다.
+- 전체 본문은 공백 포함 최소 2,500자, 가능하면 3,500~5,000자 범위로 작성한다.
+- 같은 사실을 표현만 바꾸어 반복해서 분량을 늘리지 않는다.
+- 데이터에 없는 정보를 추가하지 않는 대신, 제공된 위치·시설·객실·다이닝·숙소 유형 등의 사실을 독자가 실제 여행 준비에 활용할 수 있도록 구체적인 맥락으로 설명한다.
+- 제공된 정보가 적은 경우 억지로 분량을 채우지 말고 확인 가능한 정보의 한계를 명확히 설명한다.
 - 객실 section에서는 객실 이미지가 있으면 설명 직후 이미지가 나오도록 한다.
 - 욕실/화장실 section에서는 bathroom 이미지가 있으면 설명 직후 이미지가 나오도록 한다.
-- FAQ는 3~5개.
+- FAQ는 4~6개.
 - tags는 5~8개.
 - 제목과 설명도 광고 문구가 아니라 개인 여행 블로그 글처럼 자연스럽게 작성한다.
 
