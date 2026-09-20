@@ -64,6 +64,23 @@ const DESTINATIONS: MyRealTripDestination[] = [
   { slug: "okinawa", city: "오키나와", cityEn: "Okinawa", prefecture: "Okinawa", regionKeyword: "오키나와", regionId: 9336 },
 ];
 
+const MYREALTRIP_IMAGE_TYPES: readonly ImageType[] = [
+  "hero",
+  "gallery",
+  "room",
+  "facility",
+  "restaurant",
+  "location",
+  "attraction",
+];
+
+function isImageType(value: unknown): value is ImageType {
+  return (
+    typeof value === "string" &&
+    MYREALTRIP_IMAGE_TYPES.includes(value as ImageType)
+  );
+}
+
 const affiliateLinks = (productUrl: string): AffiliateLink[] => [
   {
     provider: "myrealtrip",
@@ -95,7 +112,7 @@ function toHotelImages(
 
   const candidates = (item.images ?? [])
     .filter((image) => image.url.trim())
-    .filter((image) => image.type && image.type !== "hero")
+    .filter((image) => image.type && image.type !== "hero" && isImageType(image.type))
     .slice(0, 8);
 
   const typedImages = candidates.map((image, index) => ({
@@ -105,7 +122,7 @@ function toHotelImages(
     width: image.width,
     height: image.height,
     source: "myrealtrip" as const,
-    type: image.type as ImageType,
+    type: image.type!,
     hotelId,
     credit: "MyRealTrip Partner API",
     sourceUrl: item.productUrl,
