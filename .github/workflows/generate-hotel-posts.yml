@@ -12,6 +12,11 @@ on:
         required: false
         default: "1"
         type: string
+      repair_invalid:
+        description: "기존 게시글 중 v5 엄격 사실 검증에 실패한 글만 재생성"
+        required: false
+        default: false
+        type: boolean
   schedule:
     - cron: "0 21 * * *"
 
@@ -36,6 +41,7 @@ jobs:
       AI_HOTEL_ID: ${{ inputs.hotel_id }}
       AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
       AI_DAILY_PLAN: "japan-tokyo:3,japan-osaka:3,japan-kyoto:2,japan-fukuoka:2,japan-okinawa:1"
+      AI_REPAIR_INVALID: ${{ inputs.repair_invalid || false }}
 
     timeout-minutes: 30
 
@@ -92,7 +98,12 @@ jobs:
         run: bun run validate:hotel-daily-plan
 
       - name: Generate hotel posts
+        if: ${{ !inputs.repair_invalid }}
         run: bun run ai:hotel-posts
+
+      - name: Repair invalid hotel posts
+        if: ${{ inputs.repair_invalid }}
+        run: bun run ai:hotel-posts -- --repair-invalid=true
 
       - name: Generate client post data
         run: bun scripts/split-client-post-data.ts
