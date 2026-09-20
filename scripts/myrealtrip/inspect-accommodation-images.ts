@@ -40,7 +40,7 @@ function looksLikeUrl(value: unknown): value is string {
 
 function summarizeValue(value: unknown): string {
   if (looksLikeUrl(value)) return "[URL]";
-  if (Array.isArray(value)) return \`[array:\${value.length}]\`;
+  if (Array.isArray(value)) return `[array:${value.length}]`;
   if (isObject(value)) return "{object}";
   if (typeof value === "string") {
     return value.length > 120 ? value.slice(0, 120) + "…" : value;
@@ -58,7 +58,7 @@ function collectImageCandidates(
 
   if (Array.isArray(value)) {
     for (let index = 0; index < Math.min(value.length, 20); index += 1) {
-      collectImageCandidates(value[index], \`\${path}[\${index}]\`, output, depth + 1);
+      collectImageCandidates(value[index], `${path}[${index}]`, output, depth + 1);
     }
     return;
   }
@@ -66,10 +66,10 @@ function collectImageCandidates(
   if (!isObject(value)) return;
 
   for (const [key, child] of Object.entries(value)) {
-    const childPath = path ? \`\${path}.\${key}\` : key;
+    const childPath = path ? `${path}.${key}` : key;
 
     if (IMAGE_KEY_PATTERN.test(key)) {
-      output.push(\`\${childPath} = \${summarizeValue(child)}\`);
+      output.push(`${childPath} = ${summarizeValue(child)}`);
     }
 
     if (isObject(child) || Array.isArray(child)) {
@@ -90,7 +90,7 @@ function collectTypedImageHints(
     for (let index = 0; index < Math.min(value.length, 20); index += 1) {
       collectTypedImageHints(
         value[index],
-        \`\${path}[\${index}]\`,
+        `${path}[${index}]`,
         output,
         depth + 1,
       );
@@ -115,8 +115,8 @@ function collectTypedImageHints(
     output.push(
       [
         path || "$",
-        ...typeEntries.map(([key, child]) => \`\${key}=\${String(child)}\`),
-        ...urlEntries.map(([key]) => \`\${key}=[URL]\`),
+        ...typeEntries.map(([key, child]) => `${key}=${String(child)}`),
+        ...urlEntries.map(([key]) => `${key}=[URL]`),
       ].join(" "),
     );
   }
@@ -125,7 +125,7 @@ function collectTypedImageHints(
     if (isObject(child) || Array.isArray(child)) {
       collectTypedImageHints(
         child,
-        path ? \`\${path}.\${key}\` : key,
+        path ? `${path}.${key}` : key,
         output,
         depth + 1,
       );
@@ -136,8 +136,8 @@ function collectTypedImageHints(
 async function main(): Promise<void> {
   console.log("MyRealTrip 숙소 이미지 필드 진단");
   console.log("================================");
-  console.log(\`조회 기간: \${CHECK_IN} ~ \${CHECK_OUT}\`);
-  console.log(\`인원: 성인 \${ADULT_COUNT}명 / 아동 \${CHILD_COUNT}명\`);
+  console.log(`조회 기간: ${CHECK_IN} ~ ${CHECK_OUT}`);
+  console.log(`인원: 성인 ${ADULT_COUNT}명 / 아동 ${CHILD_COUNT}명`);
   console.log("");
 
   const destination = getMyRealTripDestinations()[0];
@@ -151,7 +151,7 @@ async function main(): Promise<void> {
   const region = findCityRegion(regionResponse, destination.city);
 
   if (!region) {
-    throw new Error(\`\${destination.city} regionId를 찾지 못했습니다.\`);
+    throw new Error(`${destination.city} regionId를 찾지 못했습니다.`);
   }
 
   const response = await searchAccommodations({
@@ -179,13 +179,13 @@ async function main(): Promise<void> {
     return;
   }
 
-  console.log(\`샘플 숙소: \${items.length}건\`);
+  console.log(`샘플 숙소: ${items.length}건`);
   console.log("");
 
   for (let index = 0; index < items.length; index += 1) {
     const item = items[index];
 
-    console.log(\`[숙소 \${index + 1}]\`);
+    console.log(`[숙소 ${index + 1}]`);
     console.log("이미지 관련 필드:");
 
     const imageCandidates: string[] = [];
@@ -195,7 +195,7 @@ async function main(): Promise<void> {
       console.log("  없음");
     } else {
       for (const candidate of imageCandidates) {
-        console.log(\`  - \${candidate}\`);
+        console.log(`  - ${candidate}`);
       }
     }
 
@@ -207,7 +207,7 @@ async function main(): Promise<void> {
       console.log("  없음");
     } else {
       for (const hint of typedHints) {
-        console.log(\`  - \${hint}\`);
+        console.log(`  - ${hint}`);
       }
     }
 
