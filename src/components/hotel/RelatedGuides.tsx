@@ -55,74 +55,40 @@ export default function RelatedGuides({ posts }: RelatedGuidesProps) {
   return (
     <Section borderTop>
       <Container>
-        <div flex="~ col sm:row" sm="items-end justify-between" gap="3">
-          <div>
-            <p
-              m="0"
-              text="xs ct-primary dark:ct-dark-text-soft"
-              font="medium"
-              tracking="wide"
-            >
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="min-w-0">
+            <p className="m-0 text-xs font-medium tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
               RELATED GUIDES
             </p>
-            <h2
-              mt="2"
-              mb="0"
-              text="2xl sm:3xl"
-              font="bold"
-              tracking="tight"
-            >
+            <h2 className="mt-2 mb-0 text-2xl font-bold tracking-tight sm:text-3xl">
               함께 읽으면 좋은 여행 가이드
             </h2>
           </div>
 
           <a
             href="/guides/"
-            shrink="0"
-            self="start sm:end"
-            rounded="xl"
-            border="~ ct-line dark:ct-dark-line"
-            bg="ct-surface dark:ct-dark-surface"
-            px="4"
-            py="2.5"
-            text="sm ct-text-soft dark:ct-dark-text-soft"
-            font="semibold"
-            hover="border-ct-primary text-ct-primary dark:border-ct-dark-text dark:text-ct-dark-text"
-            active-scale="98"
-            className="ct-focus"
+            className="ct-focus inline-flex min-h-11 shrink-0 items-center justify-center self-start rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm font-semibold text-ct-text-soft transition-colors hover:border-ct-primary hover:text-ct-primary active-scale-98 dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft dark:hover:border-ct-dark-text dark:hover:text-ct-dark-text sm:self-end"
           >
             여행 가이드 전체 보기
           </a>
         </div>
 
-        <p
-          mt="3"
-          mb="0"
-          max-w="2xl"
-          text="sm ct-text-soft dark:ct-dark-text-soft"
-          leading="relaxed"
-        >
+        <p className="mt-3 mb-0 max-w-2xl text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">
           이 호텔이 위치한 지역의 여행 정보를 함께 살펴볼 수 있습니다.
         </p>
 
-        <div mt="8" grid="~ cols-1 sm:2" gap="5 lg:6">
+        <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5 lg:gap-6">
           {guides.map((post) => {
             const image = getGuideImage(post);
 
             return (
               <article
                 key={post.id}
-                overflow="hidden"
-                rounded="card"
-                border="~ ct-line dark:ct-dark-line"
-                bg="ct-surface dark:ct-dark-surface"
-                shadow="card"
+                className="flex h-full min-w-0 flex-col overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-card dark:border-ct-dark-line dark:bg-ct-dark-surface"
               >
                 <a
                   href={`/guides/${post.slug}/`}
-                  display="block"
-                  active-scale="99"
-                  className="ct-focus"
+                  className="ct-focus block shrink-0 active-scale-99"
                   aria-label={`${post.title} 여행 가이드 읽기`}
                 >
                   {image ? (
@@ -135,73 +101,44 @@ export default function RelatedGuides({ posts }: RelatedGuidesProps) {
                       aspectRatio="16/9"
                     />
                   ) : (
-                    <div
-                      flex="~"
-                      items="center"
-                      justify="center"
-                      aspect-ratio="16/9"
-                      bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-                      text="xs ct-muted dark:ct-dark-muted"
-                    >
+                    <div className="flex aspect-[16/9] items-center justify-center bg-ct-surface-soft text-xs text-ct-muted dark:bg-ct-dark-surface-soft dark:text-ct-dark-muted">
                       여행 가이드
                     </div>
                   )}
                 </a>
 
-                <div p="5 sm:6">
-                  <div flex="~" items="center" justify="between" gap="3">
-                    <span
-                      text="xs ct-primary dark:ct-dark-text-soft"
-                      font="medium"
-                      tracking="wide"
-                    >
+                <div className="flex flex-1 flex-col p-4 sm:p-6">
+                  <div className="flex items-center justify-between gap-3">
+                    <span className="text-xs font-medium tracking-[0.12em] text-ct-primary dark:text-ct-dark-text-soft">
                       TRAVEL GUIDE
                     </span>
-                    <span
-                      text="xs ct-muted dark:ct-dark-muted"
-                      whitespace="nowrap"
+                    <time
+                      dateTime={post.publishedAt}
+                      className="shrink-0 whitespace-nowrap text-xs text-ct-muted dark:text-ct-dark-muted"
                     >
                       {formatDate(post.publishedAt)}
-                    </span>
+                    </time>
                   </div>
 
-                  <h3
-                    mt="3"
-                    mb="0"
-                    text="lg ct-text dark:ct-dark-text"
-                    font="bold"
-                    leading="snug"
-                  >
+                  <h3 className="mt-3 mb-0 text-lg font-bold leading-snug">
                     <a
                       href={`/guides/${post.slug}/`}
-                      hover="text-ct-primary dark:text-ct-dark-text"
-                      active-scale="99"
-                      className="ct-focus"
+                      className="ct-focus text-ct-text hover:text-ct-primary dark:text-ct-dark-text dark:hover:text-ct-dark-text active-scale-99"
                     >
                       {post.title}
                     </a>
                   </h3>
 
-                  <p
-                    mt="3"
-                    mb="0"
-                    line-clamp="3"
-                    text="sm ct-text-soft dark:ct-dark-text-soft"
-                    leading="relaxed"
-                  >
+                  <p className="mt-3 mb-0 line-clamp-3 text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">
                     {post.description}
                   </p>
 
                   {post.tags && post.tags.length > 0 && (
-                    <div mt="4" flex="~ wrap" gap="2">
+                    <div className="mt-4 flex flex-wrap gap-2">
                       {post.tags.slice(0, 3).map((tag) => (
                         <span
                           key={tag}
-                          rounded="full"
-                          bg="ct-surface-soft dark:bg-ct-dark-surface-soft"
-                          px="2.5"
-                          py="1"
-                          text="xs ct-muted dark:ct-dark-muted"
+                          className="rounded-full bg-ct-surface-soft px-2.5 py-1 text-xs text-ct-muted dark:bg-ct-dark-surface-soft dark:text-ct-dark-muted"
                         >
                           #{tag}
                         </span>
@@ -211,15 +148,7 @@ export default function RelatedGuides({ posts }: RelatedGuidesProps) {
 
                   <a
                     href={`/guides/${post.slug}/`}
-                    mt="5"
-                    display="inline-flex"
-                    items="center"
-                    gap="2"
-                    text="sm ct-primary dark:ct-dark-text"
-                    font="bold"
-                    hover="underline"
-                    active-scale="98"
-                    className="ct-focus"
+                    className="ct-focus mt-auto pt-5 inline-flex min-h-11 items-center gap-2 text-sm font-bold text-ct-primary hover:underline dark:text-ct-dark-text active-scale-98"
                   >
                     가이드 읽기
                     <span aria-hidden="true">→</span>
