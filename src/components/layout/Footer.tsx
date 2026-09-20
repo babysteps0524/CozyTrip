@@ -3,10 +3,8 @@ import { Container } from "../common";
 const destinations = [
   { name: "도쿄", href: "/japan/tokyo/" },
   { name: "오사카", href: "/japan/osaka/" },
-  { name: "교토", href: "/japan/kyoto/" },
   { name: "후쿠오카", href: "/japan/fukuoka/" },
   { name: "삿포로", href: "/japan/sapporo/" },
-  { name: "오키나와", href: "/japan/okinawa/" },
 ];
 
 export default function Footer() {
