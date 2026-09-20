@@ -17,7 +17,6 @@ function addImage(
   if (!imageId || usedImageIds.has(imageId)) return false;
 
   const image = imageMap.get(imageId);
-
   if (!isUsableImage(image)) return false;
 
   blocks.push({ type: "image", image });
@@ -37,96 +36,50 @@ function addGallery(
     .filter(isUsableImage);
 
   if (images.length < 2) {
-    for (const image of images) {
-      addImage(blocks, image.id, imageMap, usedImageIds);
-    }
+    for (const image of images) addImage(blocks, image.id, imageMap, usedImageIds);
     return;
   }
 
   blocks.push({ type: "gallery", images });
-
-  for (const image of images) {
-    usedImageIds.add(image.id);
-  }
+  for (const image of images) usedImageIds.add(image.id);
 }
 
-function getHeroImageId(
-  post: HotelPost,
-  images: HotelImage[],
-): string | undefined {
+function getHeroImageId(post: HotelPost, images: HotelImage[]): string | undefined {
   const imageMap = toImageMap(images);
   const heroId = images.find((image) => image.type === "hero")?.id;
 
-  if (heroId && isUsableImage(imageMap.get(heroId))) {
-    return heroId;
-  }
+  if (heroId && isUsableImage(imageMap.get(heroId))) return heroId;
 
-  return post.imageIds.find((id) => isUsableImage(imageMap.get(id)));
-}
-
-function getFallbackImageIds(
-  images: HotelImage[],
-  usedImageIds: Set<string>,
-): string[] {
-  const preferredTypes = [
-    "gallery",
-    "room",
-    "facility",
-    "restaurant",
-    "location",
-    "attraction",
-  ];
-
-  const result: string[] = [];
-
-  for (const type of preferredTypes) {
-    for (const image of images) {
-      if (
-        image.type === type &&
-        isUsableImage(image) &&
-        !usedImageIds.has(image.id) &&
-        !result.includes(image.id)
-      ) {
-        result.push(image.id);
-      }
-    }
-  }
-
-  return result;
+  return post.imageIds.find((id) => {
+    const image = imageMap.get(id);
+    return isUsableImage(image) && image.type === "hero";
+  });
 }
 
 function getSectionImageIds(
   post: HotelPost,
   images: HotelImage[],
-  usedImageIds: Set<string>,
 ): string[][] {
   const imageMap = toImageMap(images);
-  const fallbackIds = getFallbackImageIds(images, usedImageIds);
-  let fallbackIndex = 0;
 
   return post.sections.map((section) => {
-    const requested = (section.imageIds ?? []).filter((id) => {
-      return isUsableImage(imageMap.get(id)) && !usedImageIds.has(id);
-    });
+    const assignedIds = (section.imageAssignments ?? [])
+      .filter((assignment) => {
+        const image = imageMap.get(assignment.imageId);
+        return Boolean(
+          image &&
+            image.type === assignment.imageType &&
+            isUsableImage(image),
+        );
+      })
+      .map((assignment) => assignment.imageId);
 
-    if (requested.length > 0) {
-      return requested;
-    }
+    if (assignedIds.length > 0) return assignedIds;
 
-    while (
-      fallbackIndex < fallbackIds.length &&
-      usedImageIds.has(fallbackIds[fallbackIndex])
-    ) {
-      fallbackIndex += 1;
-    }
-
-    if (fallbackIndex >= fallbackIds.length) {
-      return [];
-    }
-
-    const fallbackId = fallbackIds[fallbackIndex];
-    fallbackIndex += 1;
-    return [fallbackId];
+    // v5 이전 게시글과 수동 게시글의 기존 imageIds도 계속 지원한다.
+    return (section.imageIds ?? []).filter((imageId) =>
+      isUsableImage(imageMap.get(imageId)),
+    );
   });
 }
 
@@ -136,7 +89,12 @@ function getRemainingPostImageIds(
   usedImageIds: Set<string>,
 ): string[] {
   return post.imageIds.filter((imageId) => {
-    return isUsableImage(imageMap.get(imageId)) && !usedImageIds.has(imageId);
+    const image = imageMap.get(imageId);
+    return (
+      isUsableImage(image) &&
+      image.type !== "hero" &&
+      !usedImageIds.has(imageId)
+    );
   });
 }
 
@@ -149,12 +107,11 @@ export function createHotelPostBlocks(
   const usedImageIds = new Set<string>();
 
   const heroImageId = getHeroImageId(post, images);
-
   if (heroImageId) {
     addImage(blocks, heroImageId, imageMap, usedImageIds);
   }
 
-  const sectionImageIds = getSectionImageIds(post, images, usedImageIds);
+  const sectionImageIds = getSectionImageIds(post, images);
 
   for (let index = 0; index < post.sections.length; index += 1) {
     const section = post.sections[index];
@@ -165,7 +122,7 @@ export function createHotelPostBlocks(
       text: section.heading.trim(),
     });
 
-    const requestedImages = sectionImageIds[index];
+    const requestedImages = sectionImageIds[index] ?? [];
 
     for (let paragraphIndex = 0; paragraphIndex < section.paragraphs.length; paragraphIndex += 1) {
       const paragraph = section.paragraphs[paragraphIndex];
@@ -177,23 +134,13 @@ export function createHotelPostBlocks(
         });
       }
 
-      // 섹션의 첫 번째 본문 뒤에 관련 이미지를 배치해
-      // 글이 이미지와 텍스트가 번갈아 이어지는 블로그 형태가 되도록 한다.
+      // 첫 문단 바로 뒤에 해당 section과 명시적으로 연결된 이미지를 삽입한다.
       if (paragraphIndex === 0) {
         if (requestedImages.length > 1) {
           addGallery(blocks, requestedImages, imageMap, usedImageIds);
         } else {
           addImage(blocks, requestedImages[0], imageMap, usedImageIds);
         }
-      }
-    }
-
-    // 본문이 비어 있는 섹션도 이미지를 잃지 않도록 한다.
-    if (section.paragraphs.length === 0) {
-      if (requestedImages.length > 1) {
-        addGallery(blocks, requestedImages, imageMap, usedImageIds);
-      } else {
-        addImage(blocks, requestedImages[0], imageMap, usedImageIds);
       }
     }
   }
@@ -215,7 +162,7 @@ export function createHotelPostBlocks(
 
 export function hotelPostToPost(post: HotelPost, hotel: Hotel): Post {
   const blocks = createHotelPostBlocks(post, hotel.images);
-  // 호텔 게시글은 호텔 상세 페이지를 canonical URL로 사용한다.\n  // 생성 모델의 제목 기반 slug는 호텔 slug와 달라 클릭 시 상세 페이지와 연결되지 않을 수 있다.\n  const slug = hotel.slug;
+  const slug = hotel.slug;
   const publishedAt = post.publishedAt ?? hotel.publishedAt ?? "1970-01-01";
 
   return {
