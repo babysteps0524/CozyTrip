@@ -79,9 +79,9 @@ export default function HotelStayInfo({ hotel }: HotelStayInfoProps) {
   }
 
   return (
-    <section border="t ct-line dark:ct-dark-line">
+    <section id="stay-info" aria-labelledby="hotel-stay-info-title" className="scroll-mt-24 border-t border-ct-line dark:border-ct-dark-line">
       <Container>
-        <div py="12 sm:16 lg:20">
+        <div className="py-12 sm:py-16 lg:py-20">
           <p
             m="0"
             text="xs ct-primary dark:ct-dark-text-soft"
@@ -90,7 +90,7 @@ export default function HotelStayInfo({ hotel }: HotelStayInfoProps) {
           >
             USEFUL INFORMATION
           </p>
-          <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
+          <h2 id="hotel-stay-info-title" className="mt-2 mb-0 text-2xl font-bold tracking-tight sm:text-3xl">
             이용 안내
           </h2>
           <p
@@ -104,14 +104,14 @@ export default function HotelStayInfo({ hotel }: HotelStayInfoProps) {
           </p>
 
           {(hasCheckIn || hasCheckOut) && (
-            <div mt="8" grid="~ cols-1 sm:2" gap="4">
+            <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2">
               {hasCheckIn && <InfoCard label="체크인" value={hotel.checkIn!} accent />}
               {hasCheckOut && <InfoCard label="체크아웃" value={hotel.checkOut!} />}
             </div>
           )}
 
           {hasPolicy && (
-            <div mt="4" grid="~ cols-1 md:2" gap="4">
+            <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
               {policy?.childPolicy && (
                 <InfoCard label="어린이 정책" value={policy.childPolicy} />
               )}
