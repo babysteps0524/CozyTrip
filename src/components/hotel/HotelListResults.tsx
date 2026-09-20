@@ -332,7 +332,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               text="sm ct-primary dark:ct-dark-text"
               font="medium"
               cursor="pointer"
-              active-scale="98"
+              active-scale="0.95"
               onClick={() => {
                 setQuery("");
                 setArea("all");
@@ -376,7 +376,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                 py="2.5"
                 text="sm ct-text dark:ct-dark-text"
                 disabled-opacity="50"
-                active-scale="98"
+                active-scale="0.95"
               >
                 이전
               </button>
@@ -410,7 +410,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                       bg={pageNumber === currentPage ? "ct-primary" : "ct-surface dark:bg-ct-dark-surface"}
                       text={pageNumber === currentPage ? "white" : "sm ct-text dark:ct-dark-text"}
                       font="medium"
-                      active-scale="98"
+                      active-scale="0.95"
                     >
                       {pageNumber}
                     </button>
@@ -435,7 +435,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
                 py="2.5"
                 text="sm ct-text dark:ct-dark-text"
                 disabled-opacity="50"
-                active-scale="98"
+                active-scale="0.95"
               >
                 다음
               </button>
