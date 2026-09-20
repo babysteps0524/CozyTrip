@@ -391,18 +391,53 @@ export default function HotelDetail({
           )}
 
           {hotelPosts.length > 0 ? (
-            <div mt="8">
+            <div className="mt-8 max-w-3xl">
               {hotelPosts.map((post) => (
-                <PostRenderer key={post.id} post={post} />
+                <article key={post.id}>
+                  <div className="rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
+                    <p className="m-0 text-xs font-semibold tracking-wide text-ct-primary dark:text-ct-dark-text-soft">
+                      HOTEL ARTICLE
+                    </p>
+                    <h3 className="mt-2 mb-0 text-xl font-bold leading-tight tracking-tight sm:text-2xl">
+                      {post.title}
+                    </h3>
+                    <p className="mt-3 mb-0 text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">
+                      {post.introduction}
+                    </p>
+                  </div>
+
+                  <div className="mt-8">
+                    <PostRenderer post={post} />
+                  </div>
+
+                  {post.faq.length > 0 && (
+                    <section className="mt-10 rounded-2xl border border-ct-line bg-ct-surface-soft p-5 sm:p-6 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft" aria-labelledby={`hotel-faq-${post.id}`}>
+                      <p className="m-0 text-xs font-semibold tracking-[0.16em] text-ct-primary dark:text-ct-dark-text-soft">
+                        FAQ
+                      </p>
+                      <h3 id={`hotel-faq-${post.id}`} className="mt-2 mb-0 text-xl font-bold tracking-tight sm:text-2xl">
+                        자주 묻는 내용
+                      </h3>
+                      <div className="mt-6 divide-y divide-ct-line dark:divide-ct-dark-line">
+                        {post.faq.map((item) => (
+                          <details key={item.question} className="group py-4 first:pt-0 last:pb-0">
+                            <summary className="ct-focus cursor-pointer list-none pr-8 text-base font-semibold text-ct-text dark:text-ct-dark-text">
+                              {item.question}
+                            </summary>
+                            <p className="mt-3 mb-0 text-sm leading-7 text-ct-text-soft dark:text-ct-dark-text-soft">
+                              {item.answer}
+                            </p>
+                          </details>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+                </article>
               ))}
             </div>
           ) : (
-            <div mt="4" max-w="3xl">
-              <p
-                m="0"
-                text="base ct-text-soft dark:ct-dark-text-soft"
-                leading="relaxed"
-              >
+            <div className="mt-4 max-w-3xl">
+              <p className="m-0 text-base leading-relaxed text-ct-text-soft dark:text-ct-dark-text-soft">
                 {hotel.description}
               </p>
 
