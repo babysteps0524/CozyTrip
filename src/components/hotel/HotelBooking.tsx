@@ -17,10 +17,6 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
     }
   });
 
-  const affiliateProviders = Array.from(
-    new Set(affiliateLinks.map((link) => link.provider)),
-  );
-
   return (
     <section id="booking" className="scroll-mt-24 border-t border-ct-line dark:border-ct-dark-line">
       <Container>
@@ -38,8 +34,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
               </p>
 
               <AffiliateDisclosure
-                show={affiliateLinks.length > 0}
-                providers={affiliateProviders}
+                show={affiliateLinks.some((link) => link.provider === "myrealtrip")}
               />
 
               {affiliateLinks.length > 0 ? (
