@@ -1,6 +1,19 @@
 import type { Post } from "../../types";
 import { Image } from "../common";
 
+const IMAGE_SOURCE_LABEL: Record<string, string> = {
+  myrealtrip: "마이리얼트립",
+  rakuten: "라쿠텐",
+  agoda: "Agoda",
+  official: "호텔 공식 사이트",
+  owned: "CozyTrip 자체 제작",
+  licensed: "라이선스 이미지",
+};
+
+function getImageSourceLabel(source: string): string {
+  return IMAGE_SOURCE_LABEL[source] ?? source;
+}
+
 function createHeadingId(text: string, index: number): string {
   const slug = text
     .normalize("NFKD")
@@ -103,16 +116,22 @@ export default function PostRenderer({ post }: PostRendererProps) {
                   aspectRatio={`${image.width}/${image.height}`}
                 />
               )}
-              {(image.credit || image.sourceUrl) && (
-                <figcaption className="border-t border-ct-line px-4 py-3 text-xs leading-relaxed text-ct-muted dark:border-ct-dark-line dark:text-ct-dark-muted">
-                  {image.credit && <span>{image.credit}</span>}
-                  {image.sourceUrl && (
-                    <span className="ml-2">
-                      이미지 클릭 시 숙소 정보 페이지로 이동합니다.
-                    </span>
-                  )}
-                </figcaption>
-              )}
+              <figcaption className="border-t border-ct-line px-4 py-3 text-xs leading-relaxed text-ct-muted dark:border-ct-dark-line dark:text-ct-dark-muted">
+                <span>
+                  출처: {getImageSourceLabel(image.source)}
+                  {image.credit ? ` · ${image.credit}` : ""}
+                </span>
+                {image.sourceUrl && (
+                  <a
+                    href={image.sourceUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 underline underline-offset-2 hover:text-ct-text dark:hover:text-ct-dark-text"
+                  >
+                    원본/숙소 정보
+                  </a>
+                )}
+              </figcaption>
             </figure>
           );
         }
@@ -146,11 +165,10 @@ export default function PostRenderer({ post }: PostRendererProps) {
                   </div>
                 ))}
               </div>
-              {block.caption && (
-                <figcaption className="mt-3 text-xs leading-relaxed text-ct-muted dark:text-ct-dark-muted">
-                  {block.caption}
-                </figcaption>
-              )}
+              <figcaption className="mt-3 text-xs leading-relaxed text-ct-muted dark:text-ct-dark-muted">
+                {block.caption && <span>{block.caption} · </span>}
+                이미지 출처는 각 이미지의 출처 정보를 따릅니다.
+              </figcaption>
             </figure>
           );
         }
