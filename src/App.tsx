@@ -78,13 +78,21 @@ export default function App({
     : undefined;
 
   const hotelSlug = hotelDetailMatch?.[2];
-  const hotel = hotelSlug ? getHotelBySlug(hotels, hotelSlug) : undefined;
+  const publishedHotelIds = new Set(\n    posts\n      .filter((post) => post.category === "hotel" && post.hotelId)\n      .map((post) => post.hotelId as string),\n  );\n\n  const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));\n  const hotel = hotelSlug ? getHotelBySlug(visibleHotels, hotelSlug) : undefined;
   const staticPage = path === "/about" ? "about" : path === "/privacy" ? "privacy" : path === "/affiliate" ? "affiliate" : path === "/contact" ? "contact" : undefined;
   const guideSlug = guideMatch?.[1];
   const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
 
+  const publishedHotelIds = new Set(
+    posts
+      .filter((post) => post.category === "hotel" && post.hotelId)
+      .map((post) => post.hotelId as string),
+  );
+
+  const visibleHotels = hotels.filter((hotel) => publishedHotelIds.has(hotel.id));
+
   const destinationHotels = destination
-    ? getHotelsByDestination(hotels, destination.id)
+    ? getHotelsByDestination(visibleHotels, destination.id)
     : [];
 
   const isHotelDetail = Boolean(
@@ -117,7 +125,7 @@ export default function App({
 
       <main pt="20 sm:22">
         {path === "/" && (
-          <Home destinations={destinations} hotels={hotels} />
+          <Home destinations={destinations} hotels={visibleHotels} />
         )}
 
         {path === "/japan" && <Japan destinations={destinations} />}
@@ -149,7 +157,7 @@ export default function App({
             destination={destination}
             hotelPosts={posts.filter((post) => post.hotelId === hotel.id)}
             relatedGuides={[]}
-            relatedHotels={getHotelsByDestination(hotels, hotel.destinationId).filter(
+            relatedHotels={getHotelsByDestination(visibleHotels, hotel.destinationId).filter(
               (item) => item.id !== hotel.id,
             )}
           />
