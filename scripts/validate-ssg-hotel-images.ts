@@ -3,6 +3,7 @@ import { join, relative } from "node:path";
 
 import { destinations } from "../src/data/destinations";
 import { hotels } from "../src/data/hotels";
+import { isDisplayableHotelImage } from "../src/lib/image";
 
 const distDir = join(process.cwd(), "dist");
 
@@ -68,7 +69,9 @@ for (const file of files) {
 
 const failures: string[] = [];
 let checked = 0;
+let expectedHotelImages = 0;
 let myRealTripImages = 0;
+let hotelsWithoutImages = 0;
 
 for (const hotel of hotels) {
   const route = getHotelRoute(hotel);
@@ -88,10 +91,18 @@ for (const hotel of hotels) {
   const html = await readFile(file, "utf8");
   checked += 1;
 
-  if (!hasHotelPageImage(html)) {
-    failures.push(
-      `[${hotel.id}] ${route} has no hotel image in SSG HTML.`,
-    );
+  const hasDisplayableHotelImage = hotel.images.some(isDisplayableHotelImage);
+
+  if (hasDisplayableHotelImage) {
+    expectedHotelImages += 1;
+
+    if (!hasHotelPageImage(html)) {
+      failures.push(
+        `[${hotel.id}] ${route} has a displayable hotel image in data, but no hotel image in SSG HTML.`,
+      );
+    }
+  } else {
+    hotelsWithoutImages += 1;
   }
 
   if (hasMyRealTripImage(html)) {
@@ -101,6 +112,8 @@ for (const hotel of hotels) {
 
 console.log("SSG hotel article image validation complete.");
 console.log(`Hotel routes checked: ${checked}`);
+console.log(`Hotel routes expected to render images: ${expectedHotelImages}`);
+console.log(`Hotel routes without displayable images: ${hotelsWithoutImages}`);
 console.log(
   `Hotel routes with MyRealTrip image URLs: ${myRealTripImages}`,
 );
