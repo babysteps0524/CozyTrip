@@ -118,21 +118,35 @@ export function createHotelPostBlocks(
       text: section.heading.trim(),
     });
 
-    const explicitImages = sectionImageIds[index] ?? [];
-    const fallbackImageIds =
-      explicitImages.length === 0
-        ? index === 0 && heroImageId
+    const explicitImages = (sectionImageIds[index] ?? []).filter(
+      (imageId) => {
+        const image = imageMap.get(imageId);
+        return isUsableImage(image) && !usedImageIds.has(imageId);
+      },
+    );
+
+    let requestedImages = explicitImages;
+
+    // AI가 이미지 ID를 기록했더라도 렌더링 시점에 이미 사용되었거나
+    // 사용할 수 없는 이미지라면, 해당 섹션의 이미지가 사라지지 않도록
+    // 사용 가능한 이미지로 다시 채운다.
+    if (requestedImages.length === 0) {
+      const fallbackImageIds =
+        index === 0 && heroImageId && !usedImageIds.has(heroImageId)
           ? [heroImageId]
-          : post.imageIds.filter((imageId) => {
-              const image = imageMap.get(imageId);
-              return (
-                isUsableImage(image) &&
-                image.type !== "hero" &&
-                !usedImageIds.has(imageId)
-              );
-            }).slice(0, 1)
-        : [];
-    const requestedImages = [...explicitImages, ...fallbackImageIds];
+          : post.imageIds
+              .filter((imageId) => {
+                const image = imageMap.get(imageId);
+                return (
+                  isUsableImage(image) &&
+                  !usedImageIds.has(imageId) &&
+                  (index === 0 || image.type !== "hero")
+                );
+              })
+              .slice(0, 1);
+
+      requestedImages = fallbackImageIds;
+    }
 
     // 섹션 제목 바로 다음에 이미지를 배치해, 본문 시작 전에 시각적으로
     // 해당 섹션의 내용을 보여준다. 이후 첫 문단부터 본문을 이어간다.
