@@ -134,24 +134,21 @@ export function createHotelPostBlocks(
         : [];
     const requestedImages = [...explicitImages, ...fallbackImageIds];
 
-    for (let paragraphIndex = 0; paragraphIndex < section.paragraphs.length; paragraphIndex += 1) {
-      const paragraph = section.paragraphs[paragraphIndex];
+    // 섹션 제목 바로 다음에 이미지를 배치해, 본문 시작 전에 시각적으로
+    // 해당 섹션의 내용을 보여준다. 이후 첫 문단부터 본문을 이어간다.
+    if (requestedImages.length > 1) {
+      addGallery(blocks, requestedImages, imageMap, usedImageIds);
+    } else {
+      addImage(blocks, requestedImages[0], imageMap, usedImageIds);
+    }
 
-      if (paragraph.trim()) {
-        blocks.push({
-          type: "paragraph",
-          text: paragraph.trim(),
-        });
-      }
+    for (const paragraph of section.paragraphs) {
+      if (!paragraph.trim()) continue;
 
-      // 첫 문단 바로 뒤에 해당 section과 명시적으로 연결된 이미지를 삽입한다.
-      if (paragraphIndex === 0) {
-        if (requestedImages.length > 1) {
-          addGallery(blocks, requestedImages, imageMap, usedImageIds);
-        } else {
-          addImage(blocks, requestedImages[0], imageMap, usedImageIds);
-        }
-      }
+      blocks.push({
+        type: "paragraph",
+        text: paragraph.trim(),
+      });
     }
   }
 
