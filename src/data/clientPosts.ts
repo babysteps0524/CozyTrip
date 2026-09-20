@@ -1,5 +1,4 @@
-import type { HotelPost, Post } from "../types";
-import { hotelPostToPost } from "../lib/post/hotelPostToPost";
+import type { Post } from "../types";
 interface ClientPostFile {
   posts?: Post[];
 }
@@ -47,7 +46,6 @@ export async function loadClientPostsByDestination(
       error,
     );
     return [];
-
   }
 }
 
