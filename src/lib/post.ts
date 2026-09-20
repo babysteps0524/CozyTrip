@@ -106,7 +106,7 @@ export function hotelPostToPost(
     }
 
     const explicitImageIds = getExplicitImageIds(section);
-    let renderedImageCount = 0;
+    let hasRenderedImage = false;
 
     for (const imageId of explicitImageIds) {
       if (usedImageIds.has(imageId)) continue;
@@ -116,7 +116,7 @@ export function hotelPostToPost(
       if (!image) continue;
 
       usedImageIds.add(imageId);
-      renderedImageCount += 1;
+      hasRenderedImage = true;
 
       blocks.push({
         type: "image",
@@ -124,7 +124,7 @@ export function hotelPostToPost(
       });
     }
 
-    if (explicitImageIds.length === 0 && heading) {
+    if (!hasRenderedImage && heading) {
       const fallbackImage = selectFallbackImage(
         heading,
         usableImages,
@@ -133,7 +133,6 @@ export function hotelPostToPost(
 
       if (fallbackImage) {
         usedImageIds.add(fallbackImage.id);
-        renderedImageCount += 1;
 
         blocks.push({
           type: "image",
@@ -142,7 +141,6 @@ export function hotelPostToPost(
       }
     }
 
-    void renderedImageCount;
   }
 
   return {
