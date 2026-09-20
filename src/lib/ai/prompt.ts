@@ -9,6 +9,9 @@ function clean(value: string | undefined): string {
 export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
   const { hotel, images } = input;
   const confirmedImages = images.filter((image) => image.rightsConfirmed);
+  const typedImages = confirmedImages.filter((image) =>
+    image.type !== "hero" && image.type !== "gallery",
+  );
 
   return `너는 일본 호텔 여행 정보를 작성하는 CozyTrip의 콘텐츠 작성 AI다.
 
@@ -30,6 +33,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 
 이미지는 글의 주제와 실제 이미지 type을 명시적으로 연결해야 한다.
 이미지의 alt나 URL을 보고 시설이나 객실 특징을 추측하지 마라.
+현재 제공된 이미지 목록에 객실/시설/레스토랑/위치/관광지처럼 명시적으로 typed된 이미지가 없다면 모든 imageAssignments를 빈 배열로 작성한다. 대표 이미지(hero)는 section 이미지로 사용하지 않는다.
 
 반드시 JSON 객체 하나만 출력해라.
 
@@ -72,6 +76,7 @@ JSON 구조:
 - imageAssignments의 imageType은 해당 이미지의 실제 type과 정확히 일치해야 한다.
 - imageIds는 section에서 실제 사용할 이미지들의 전체 목록이다. section imageAssignments에 사용한 ID를 포함한다.
 - 이미지가 없으면 imageIds와 모든 imageAssignments를 빈 배열로 작성한다.
+- 현재 typed 이미지 수: ${typedImages.length}. typed 이미지 수가 0이면 imageAssignments는 반드시 모두 빈 배열이어야 한다.
 
 작성 규칙:
 - sections는 4~6개.
