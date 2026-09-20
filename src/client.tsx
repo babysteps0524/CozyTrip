@@ -22,10 +22,21 @@ const pageImports: Record<string, () => Promise<PageModule>> = {
 };
 
 function normalizePath(pathname: string): string {
-  const normalized = (pathname || "/").normalize("NFC");
+  const rawPath = pathname || "/";
+  let decodedPath = rawPath;
+
+  try {
+    decodedPath = decodeURIComponent(rawPath);
+  } catch {
+    decodedPath = rawPath;
+  }
+
+  const normalized = decodedPath.normalize("NFC");
+
   if (normalized.length > 1 && normalized.endsWith("/")) {
     return normalized.slice(0, -1);
   }
+
   return normalized;
 }
 
