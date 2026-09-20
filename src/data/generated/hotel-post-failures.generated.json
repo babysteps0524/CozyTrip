@@ -1,73 +1,7 @@
 {
-  "generatedAt": "2026-09-19T15:01:22.857Z",
+  "generatedAt": "2026-09-20T01:06:33.220Z",
   "source": "ai",
   "failures": [
-    {
-      "hotelId": "myrealtrip-1301211",
-      "destinationId": "japan-osaka",
-      "hotelName": "레드 루프 인 & 스위트 오사카 - 남바/닛폰바시",
-      "failedAt": "2026-09-19T14:59:10.865Z",
-      "firstFailedAt": "2026-09-19T14:59:10.865Z",
-      "lastFailedAt": "2026-09-19T14:59:10.865Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7024, Requested 3713. Please try again in 20.5275s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 sections."
-    },
-    {
-      "hotelId": "myrealtrip-1575824",
-      "destinationId": "japan-osaka",
-      "hotelName": "오리엔탈 호텔 유니버설 시티",
-      "failedAt": "2026-09-19T14:59:21.312Z",
-      "firstFailedAt": "2026-09-19T14:59:21.312Z",
-      "lastFailedAt": "2026-09-19T14:59:21.312Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5618, Requested 3683. Please try again in 9.7575s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
-    },
-    {
-      "hotelId": "myrealtrip-1447756",
-      "destinationId": "japan-kyoto",
-      "hotelName": "오리엔탈 호텔 교토 로쿠조",
-      "failedAt": "2026-09-19T14:59:36.197Z",
-      "firstFailedAt": "2026-09-19T14:59:36.197Z",
-      "lastFailedAt": "2026-09-19T14:59:36.197Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7106, Requested 3260. Please try again in 17.745s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
-    },
-    {
-      "hotelId": "myrealtrip-1186098",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 홋케 클럽 교토",
-      "failedAt": "2026-09-19T14:59:46.602Z",
-      "firstFailedAt": "2026-09-19T14:59:46.602Z",
-      "lastFailedAt": "2026-09-19T14:59:46.602Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5803, Requested 3672. Please try again in 11.0625s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
-    },
-    {
-      "hotelId": "myrealtrip-1317449",
-      "destinationId": "japan-fukuoka",
-      "hotelName": "네스트 호텔 하카타 스테이션",
-      "failedAt": "2026-09-19T14:59:55.942Z",
-      "firstFailedAt": "2026-09-19T14:59:55.942Z",
-      "lastFailedAt": "2026-09-19T14:59:55.942Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4395, Requested 3680. Please try again in 562.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 sections."
-    },
-    {
-      "hotelId": "myrealtrip-6206176",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 부세나 테라스",
-      "failedAt": "2026-09-19T15:00:12.778Z",
-      "firstFailedAt": "2026-09-19T15:00:12.778Z",
-      "lastFailedAt": "2026-09-19T15:00:12.778Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6157, Requested 3825. Please try again in 14.865s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
-    },
     {
       "hotelId": "myrealtrip-1569706",
       "destinationId": "japan-okinawa",

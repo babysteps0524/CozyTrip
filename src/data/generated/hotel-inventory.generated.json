@@ -1,66 +1,66 @@
 {
-  "generatedAt": "2026-09-19T15:01:22.859Z",
+  "generatedAt": "2026-09-20T01:06:33.386Z",
   "source": "myrealtrip",
-  "totalInventory": 600,
-  "published": 70,
-  "pending": 522,
-  "retrying": 8,
+  "totalInventory": 606,
+  "published": 81,
+  "pending": 523,
+  "retrying": 2,
   "retryExhausted": 0,
-  "remaining": 530,
+  "remaining": 525,
   "destinations": [
     {
       "destinationId": "japan-fukuoka",
-      "inventory": 100,
-      "published": 12,
+      "inventory": 101,
+      "published": 14,
       "pending": 87,
-      "retrying": 1,
+      "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 88
+      "remaining": 87
     },
     {
       "destinationId": "japan-kyoto",
-      "inventory": 100,
-      "published": 12,
-      "pending": 86,
-      "retrying": 2,
+      "inventory": 101,
+      "published": 14,
+      "pending": 87,
+      "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 88
+      "remaining": 87
     },
     {
       "destinationId": "japan-okinawa",
-      "inventory": 100,
-      "published": 7,
-      "pending": 90,
-      "retrying": 3,
+      "inventory": 101,
+      "published": 8,
+      "pending": 91,
+      "retrying": 2,
       "retryExhausted": 0,
       "remaining": 93
     },
     {
       "destinationId": "japan-osaka",
-      "inventory": 100,
-      "published": 17,
+      "inventory": 101,
+      "published": 20,
       "pending": 81,
-      "retrying": 2,
+      "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 83
+      "remaining": 81
     },
     {
       "destinationId": "japan-sapporo",
-      "inventory": 100,
+      "inventory": 101,
       "published": 0,
-      "pending": 100,
+      "pending": 101,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 100
+      "remaining": 101
     },
     {
       "destinationId": "japan-tokyo",
-      "inventory": 100,
-      "published": 22,
-      "pending": 78,
+      "inventory": 101,
+      "published": 25,
+      "pending": 76,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 78
+      "remaining": 76
     }
   ],
   "hotels": [
@@ -357,22 +357,16 @@
       "destinationId": "japan-osaka",
       "hotelName": "레드 루프 인 & 스위트 오사카 - 남바/닛폰바시",
       "slug": "레드-루프-인-스위트-오사카-남바-닛폰바시-1301211",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T14:59:10.865Z",
-      "lastFailedAt": "2026-09-19T14:59:10.865Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7024, Requested 3713. Please try again in 20.5275s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 sections."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1575824",
       "destinationId": "japan-osaka",
       "hotelName": "오리엔탈 호텔 유니버설 시티",
       "slug": "오리엔탈-호텔-유니버설-시티-1575824",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T14:59:21.312Z",
-      "lastFailedAt": "2026-09-19T14:59:21.312Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5618, Requested 3683. Please try again in 9.7575s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1170153",
@@ -387,7 +381,7 @@
       "destinationId": "japan-osaka",
       "hotelName": "센타라 그랜드 호텔 오사카",
       "slug": "센타라-그랜드-호텔-오사카-5009707",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -483,22 +477,16 @@
       "destinationId": "japan-kyoto",
       "hotelName": "오리엔탈 호텔 교토 로쿠조",
       "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T14:59:36.197Z",
-      "lastFailedAt": "2026-09-19T14:59:36.197Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 7106, Requested 3260. Please try again in 17.745s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1186098",
       "destinationId": "japan-kyoto",
       "hotelName": "호텔 홋케 클럽 교토",
       "slug": "호텔-홋케-클럽-교토-1186098",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T14:59:46.602Z",
-      "lastFailedAt": "2026-09-19T14:59:46.602Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5803, Requested 3672. Please try again in 11.0625s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1181987",
@@ -649,11 +637,8 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "네스트 호텔 하카타 스테이션",
       "slug": "네스트-호텔-하카타-스테이션-1317449",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T14:59:55.942Z",
-      "lastFailedAt": "2026-09-19T14:59:55.942Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 4395, Requested 3680. Please try again in 562.5ms. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 sections."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1152864",
@@ -668,7 +653,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "오리엔탈 호텔 후쿠오카 하카타 스테이션",
       "slug": "오리엔탈-호텔-후쿠오카-하카타-스테이션-1401198",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -932,11 +917,8 @@
       "destinationId": "japan-okinawa",
       "hotelName": "더 부세나 테라스",
       "slug": "더-부세나-테라스-6206176",
-      "status": "retrying",
-      "attemptCount": 1,
-      "firstFailedAt": "2026-09-19T15:00:12.778Z",
-      "lastFailedAt": "2026-09-19T15:00:12.778Z",
-      "lastFailureReason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6157, Requested 3825. Please try again in 14.865s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1569706",
@@ -1069,7 +1051,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "도쿄 프린스 호텔",
       "slug": "도쿄-프린스-호텔-1144933",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -1077,7 +1059,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "소테츠 프레사 인 다이몬",
       "slug": "소테츠-프레사-인-다이몬-1959099",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -1085,7 +1067,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 퐁텐 그랜드 도쿄 아리아케",
       "slug": "호텔-빌라-퐁텐-그랜드-도쿄-아리아케-1490314",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -4885,6 +4867,54 @@
       "destinationId": "japan-okinawa",
       "hotelName": "미스터 긴조 인 모토부 오션 테라스",
       "slug": "미스터-긴조-인-모토부-오션-테라스-1353033",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1203583",
+      "destinationId": "japan-tokyo",
+      "hotelName": "소테츠 프레사 인 니혼바시 가야바초",
+      "slug": "소테츠-프레사-인-니혼바시-가야바초-1203583",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1137961",
+      "destinationId": "japan-osaka",
+      "hotelName": "컴포트 호텔 오사카 신사이바시",
+      "slug": "컴포트-호텔-오사카-신사이바시-1137961",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1215811",
+      "destinationId": "japan-kyoto",
+      "hotelName": "호텔 그랑드 바흐 교토 셀렉트",
+      "slug": "호텔-그랑드-바흐-교토-셀렉트-1215811",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3589450",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "웰캐빈 텐진 - 남성 전용",
+      "slug": "웰캐빈-텐진-남성-전용-3589450",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-3624662",
+      "destinationId": "japan-sapporo",
+      "hotelName": "센추리온 사우나 레스트 & 스테이 삿포로 남성 전용",
+      "slug": "센추리온-사우나-레스트-스테이-삿포로-남성-전용-3624662",
+      "status": "pending",
+      "attemptCount": 0
+    },
+    {
+      "hotelId": "myrealtrip-1478966",
+      "destinationId": "japan-okinawa",
+      "hotelName": "아쿠아리조트 인 차탄",
+      "slug": "아쿠아리조트-인-차탄-1478966",
       "status": "pending",
       "attemptCount": 0
     }

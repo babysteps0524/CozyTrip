@@ -1,26 +1,78 @@
 {
-  "generatedAt": "2026-09-19T15:01:22.858Z",
+  "generatedAt": "2026-09-20T01:06:33.224Z",
   "source": "ai",
   "plan": {
-    "japan-tokyo": 1
+    "japan-tokyo": 3,
+    "japan-osaka": 3,
+    "japan-kyoto": 2,
+    "japan-fukuoka": 2,
+    "japan-okinawa": 1
   },
-  "totalTarget": 1,
-  "totalSucceeded": 1,
+  "totalTarget": 11,
+  "totalSucceeded": 11,
   "totalFailed": 0,
-  "totalPublished": 70,
-  "totalInventory": 600,
-  "totalRemaining": 530,
+  "totalPublished": 81,
+  "totalInventory": 606,
+  "totalRemaining": 525,
   "destinations": [
     {
       "destinationId": "japan-tokyo",
+      "target": 3,
+      "inventory": 101,
+      "publishedBefore": 22,
+      "attempted": 3,
+      "succeeded": 3,
+      "failed": 0,
+      "publishedAfter": 25,
+      "remaining": 76,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-osaka",
+      "target": 3,
+      "inventory": 101,
+      "publishedBefore": 17,
+      "attempted": 3,
+      "succeeded": 3,
+      "failed": 0,
+      "publishedAfter": 20,
+      "remaining": 81,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-kyoto",
+      "target": 2,
+      "inventory": 101,
+      "publishedBefore": 12,
+      "attempted": 2,
+      "succeeded": 2,
+      "failed": 0,
+      "publishedAfter": 14,
+      "remaining": 87,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-fukuoka",
+      "target": 2,
+      "inventory": 101,
+      "publishedBefore": 12,
+      "attempted": 2,
+      "succeeded": 2,
+      "failed": 0,
+      "publishedAfter": 14,
+      "remaining": 87,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-okinawa",
       "target": 1,
-      "inventory": 100,
-      "publishedBefore": 21,
+      "inventory": 101,
+      "publishedBefore": 7,
       "attempted": 1,
       "succeeded": 1,
       "failed": 0,
-      "publishedAfter": 22,
-      "remaining": 78,
+      "publishedAfter": 8,
+      "remaining": 93,
       "status": "target-reached"
     }
   ]
