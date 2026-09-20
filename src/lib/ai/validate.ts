@@ -35,6 +35,10 @@ export function validateHotelPost(
     assertNonEmpty(post.description, "description");
     assertNonEmpty(post.introduction, "introduction");
 
+    if (!["draft", "review", "published"].includes(post.status)) {
+      throw new Error(`Invalid hotel post status: ${post.status}`);
+    }
+
     if (post.sections.length < 6 || post.sections.length > 8) throw new Error("sections must contain 6-8 items.");
     if (post.faq.length < 4 || post.faq.length > 6) throw new Error("faq must contain 4-6 items.");
     if (post.tags.length < 5 || post.tags.length > 8) throw new Error("tags must contain 5-8 items.");
