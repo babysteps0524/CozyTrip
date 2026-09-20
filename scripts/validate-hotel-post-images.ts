@@ -111,8 +111,19 @@ async function main(): Promise<void> {
       continue;
     }
 
+    // 본문용 typed image를 우선 사용하고, typed image가 하나도 없을 때
+    // ensureHotelPostImages가 넣은 rights-confirmed hero fallback도 허용한다.
     const availableImages = hotel.images.filter(
-      (image) => image.rightsConfirmed && image.type !== "hero",
+      (image) =>
+        image.rightsConfirmed &&
+        image.src.trim() &&
+        (image.type !== "hero" ||
+          hotel.images.every(
+            (candidate) =>
+              !candidate.rightsConfirmed ||
+              !candidate.src.trim() ||
+              candidate.type === "hero",
+          )),
     );
     const assignedIds = getAssignedImageIds(post);
     const availableIds = new Set(availableImages.map((image) => image.id));
