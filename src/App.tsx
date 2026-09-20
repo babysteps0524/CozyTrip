@@ -25,11 +25,13 @@ interface AppProps {
 }
 
 function normalizePath(pathname: string): string {
-  if (pathname.length > 1 && pathname.endsWith("/")) {
-    return pathname.slice(0, -1);
+  const normalized = (pathname || "/").normalize("NFC");
+
+  if (normalized.length > 1 && normalized.endsWith("/")) {
+    return normalized.slice(0, -1);
   }
 
-  return pathname || "/";
+  return normalized;
 }
 
 function getCurrentPath(): string {
