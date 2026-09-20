@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v12";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v13";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -58,7 +58,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 - 해당 데이터가 없는 주제는 억지로 만들지 말고 다른 확인 가능한 호텔 정보로 구성한다.
 - 각 section은 1~2개의 자연스러운 문단으로 작성한다.
 - 각 문단은 2~4문장으로 구성하고, 핵심 정보가 충분히 전달되도록 작성한다.
-- 전체 본문은 공백 포함 최소 1,000자, 가능하면 1,200~1,800자 범위로 작성한다.
+- 전체 본문은 공백 포함 최소 500자, 가능하면 700~1,200자 범위로 작성한다.
 - 짧은 한두 문장짜리 요약만 이어 붙이지 말고, 제공된 사실과 예약 전에 확인할 맥락을 자연스럽게 설명한다.
 - 같은 사실을 표현만 바꾸어 반복해서 분량을 늘리지 않는다.
 - 데이터에 없는 정보를 추가하지 않는 대신, 제공된 위치·시설·객실·다이닝·숙소 유형 등의 사실을 독자가 실제 여행 준비에 활용할 수 있도록 구체적인 맥락으로 설명한다.
