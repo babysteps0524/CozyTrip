@@ -194,17 +194,17 @@ export default function HotelDetail({
       <section className="sticky top-0 z-20 border-b border-ct-line bg-ct-surface-soft/95 backdrop-blur dark:border-ct-dark-line dark:bg-ct-dark-surface-soft/95">
         <Container>
           <nav
-            className="flex items-center gap-2 overflow-x-auto py-2.5 whitespace-nowrap text-sm"
+            className="flex flex-wrap items-center gap-2 py-2.5 text-sm"
             aria-label="호텔 상세 메뉴"
           >
-            <span className="mr-1 shrink-0 text-xs font-medium text-ct-muted dark:text-ct-dark-muted">
+            <span className="mr-1 shrink-0 basis-full text-xs font-medium text-ct-muted dark:text-ct-dark-muted sm:basis-auto">
               바로가기
             </span>
             {sectionLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
-                className="ct-focus shrink-0 rounded-full border border-ct-line bg-ct-surface px-3 py-1.5 text-xs text-ct-text-soft hover:text-ct-primary active-scale-98 dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft dark:hover:text-ct-dark-text sm:text-sm"
+                className="ct-focus shrink-0 rounded-full border border-ct-line bg-ct-surface px-3 py-1.5 text-xs text-ct-text-soft hover:border-ct-primary hover:text-ct-primary active-scale-98 dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft dark:hover:border-ct-dark-text dark:hover:text-ct-dark-text sm:text-sm"
               >
                 {link.label}
               </a>
