@@ -11,7 +11,7 @@ export default function HotelBooking({ hotel }: HotelBookingProps) {
   const affiliateLinks = (hotel.affiliateLinks ?? []).filter((link) => {
     try {
       const url = new URL(link.url);
-      return url.protocol === "https:" && url.pathname !== "/" && url.pathname !== "";
+      return url.protocol === "https:" && Boolean(url.hostname);
     } catch {
       return false;
     }
