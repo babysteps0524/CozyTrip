@@ -23,7 +23,7 @@ export default function HotelList({ destination, hotels }: HotelListProps) {
               font="medium"
               tracking="wide"
             >
-              JAPAN · {destination.nameEn.toUpperCase()} · HOTELS
+              {destination.nameEn.toUpperCase()} · HOTELS
             </p>
 
             <h1
@@ -44,7 +44,7 @@ export default function HotelList({ destination, hotels }: HotelListProps) {
               text="base sm:lg ct-text-soft dark:ct-dark-text-soft"
               leading="relaxed"
             >
-              {destination.name}에서 찾아볼 수 있는 호텔 정보를 살펴보세요.
+              {destination.name}에서 찾아볼 수 있는 호텔을 한눈에 확인해보세요.
             </p>
           </div>
         </Container>
@@ -69,22 +69,13 @@ export default function HotelList({ destination, hotels }: HotelListProps) {
               </p>
 
               <h2 mt="2" mb="0" text="2xl sm:3xl" font="bold" tracking="tight">
-                {destination.name}의 호텔
+                {destination.name} 호텔 목록
               </h2>
 
               <p mt="2" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft">
                 현재 등록된 호텔 {hotels.length}곳
               </p>
             </div>
-
-            <a
-              href={`/japan/${destination.slug}/`}
-              text="sm ct-primary dark:ct-dark-text"
-              font="medium"
-              active-scale="98"
-            >
-              {destination.name} 여행지 보기 →
-            </a>
           </div>
 
           {hotels.length > 0 ? (
