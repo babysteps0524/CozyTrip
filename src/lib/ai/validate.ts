@@ -51,6 +51,9 @@ export function validateHotelPost(
       const image = imageMap.get(imageId);
       if (!image) throw new Error(`Unknown post image ID: ${imageId}`);
       if (!image.rightsConfirmed) throw new Error(`Post references an image without confirmed rights: ${imageId}`);
+      if (image.type === "hero") {
+        throw new Error(`Hero image cannot appear in post.imageIds: ${imageId}`);
+      }
       if (postImageIds.has(imageId)) throw new Error(`Post imageIds contains duplicate values: ${imageId}`);
       postImageIds.add(imageId);
     }
@@ -96,6 +99,31 @@ export function validateHotelPost(
         if (!postImageIds.has(assignment.imageId)) {
           throw new Error(`Assigned image must also appear in post.imageIds: ${assignment.imageId}`);
         }
+      }
+    }
+
+    if (sectionImageIds.size !== postImageIds.size) {
+      const missingFromSections = [...postImageIds].filter(
+        (imageId) => !sectionImageIds.has(imageId),
+      );
+      const missingFromPost = [...sectionImageIds].filter(
+        (imageId) => !postImageIds.has(imageId),
+      );
+
+      const details: string[] = [];
+      if (missingFromSections.length > 0) {
+        details.push(`missing from sections: ${missingFromSections.join(", ")}`);
+      }
+      if (missingFromPost.length > 0) {
+        details.push(`missing from post.imageIds: ${missingFromPost.join(", ")}`);
+      }
+
+      throw new Error(`post.imageIds and section image references must match exactly. ${details.join(" | ")}`);
+    }
+
+    for (const imageId of postImageIds) {
+      if (!sectionImageIds.has(imageId)) {
+        throw new Error(`Post image is not assigned to any section: ${imageId}`);
       }
     }
 
