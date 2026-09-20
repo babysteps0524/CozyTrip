@@ -39,7 +39,7 @@ export default function HotelCard({ hotel }: HotelCardProps) {
               aspectRatio="16/10"
             />
             <span className="absolute left-3 top-3 rounded-full bg-black/60 px-2.5 py-1 text-[11px] font-semibold text-white">
-              {[hotel.city, hotel.area].filter(Boolean).join(" · ")}
+              {location || "일본"}
             </span>
           </div>
         ) : (
