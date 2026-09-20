@@ -71,7 +71,7 @@ export default function Japan({ destinations }: JapanProps) {
               </h2>
 
               <p mt="2" mb="0" text="sm ct-text-soft dark:ct-dark-text-soft">
-                도쿄부터 오키나와까지 주요 여행지를 확인하세요.
+                도쿄, 오사카, 후쿠오카, 삿포로의 여행지를 확인하세요.
               </p>
             </div>
           </div>
