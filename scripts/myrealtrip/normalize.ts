@@ -114,7 +114,7 @@ function toHotelImages(
   const candidates = (item.images ?? [])
     .filter((image) => image.url.trim())
     .filter((image) => image.type && image.type !== "hero" && isImageType(image.type))
-    .slice(0, 8);
+    .slice(0, 12);
 
   const typedImages = candidates.map((image, index) => ({
     id: `myrealtrip-${item.itemId}-${image.type}-${index + 1}`,
