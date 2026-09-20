@@ -227,6 +227,7 @@ export function parseHotelPost(text: string, provider: AIProviderName, inputHote
     id: `hotel-post-${inputHotelId}`,
     hotelId: inputHotelId,
     slug: "",
+    status: "draft",
     title: validateLength(data.title, MAX_TITLE_LENGTH, "Title", provider),
     description: validateLength(data.description, MAX_DESCRIPTION_LENGTH, "Description", provider),
     introduction: validateLength(data.introduction, MAX_INTRODUCTION_LENGTH, "Introduction", provider),
@@ -235,6 +236,6 @@ export function parseHotelPost(text: string, provider: AIProviderName, inputHote
     tags,
     imageIds,
     generatedBy: provider,
-    promptVersion: "hotel-post-v6",
+    promptVersion: "hotel-post-v11",
   };
 }
