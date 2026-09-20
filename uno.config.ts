@@ -75,7 +75,7 @@ export default defineConfig({
     "ct-section": "py-12 sm:py-16 lg:py-20",
 
     "ct-card":
-      "overflow-hidden rounded-card border border-ct-line bg-ct-surface shadow-card dark:border-ct-dark-line dark:bg-ct-dark-surface",
+      "overflow-hidden rounded-[1rem] border border-ct-line bg-ct-surface shadow-[0_4px_18px_rgba(31,41,51,0.06)] dark:border-ct-dark-line dark:bg-ct-dark-surface",
 
     "ct-button":
       "inline-flex items-center justify-center rounded-xl px-4 py-2.5 font-medium transition-transform duration-150 active-scale-95",
