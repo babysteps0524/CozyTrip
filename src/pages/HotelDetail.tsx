@@ -8,6 +8,7 @@ import {
 } from "../components/hotel";
 import { PostRenderer } from "../components/post";
 import AffiliateDisclosure from "../components/hotel/AffiliateDisclosure";
+import { AdSenseSlot } from "../components/ads";
 
 interface HotelDetailProps {
   hotel: Hotel;
