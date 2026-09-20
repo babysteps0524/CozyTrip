@@ -72,17 +72,41 @@ export default function PostRenderer({ post }: PostRendererProps) {
               key={index}
               className="my-10 overflow-hidden rounded-2xl border border-ct-line bg-ct-surface shadow-card dark:border-ct-dark-line dark:bg-ct-dark-surface"
             >
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={image.width}
-                height={image.height}
-                image={image}
-                aspectRatio={`${image.width}/${image.height}`}
-              />
-              {image.credit && (
+              {image.sourceUrl ? (
+                <a
+                  href={image.sourceUrl}
+                  target="_blank"
+                  rel="sponsored noopener noreferrer"
+                  aria-label="숙소 정보 확인"
+                  className="block active-scale-99"
+                >
+                  <Image
+                    src={image.src}
+                    alt={image.alt}
+                    width={image.width}
+                    height={image.height}
+                    image={image}
+                    aspectRatio={`${image.width}/${image.height}`}
+                  />
+                </a>
+              ) : (
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={image.width}
+                  height={image.height}
+                  image={image}
+                  aspectRatio={`${image.width}/${image.height}`}
+                />
+              )}
+              {(image.credit || image.sourceUrl) && (
                 <figcaption className="border-t border-ct-line px-4 py-3 text-xs leading-relaxed text-ct-muted dark:border-ct-dark-line dark:text-ct-dark-muted">
-                  {image.credit}
+                  {image.credit && <span>{image.credit}</span>}
+                  {image.sourceUrl && (
+                    <span className="ml-2">
+                      이미지 클릭 시 숙소 정보 페이지로 이동합니다.
+                    </span>
+                  )}
                 </figcaption>
               )}
             </figure>
