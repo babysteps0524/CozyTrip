@@ -2,12 +2,24 @@ import type { AffiliateLink, Hotel, HotelImage, ImageType } from "../../src/type
 import { getMyRealTripConfig } from "./config";
 
 export interface MyRealTripAccommodationImage {
-  url: string;
+  url?: string;
+  imageUrl?: string;
   type?: string;
+  imageType?: string;
+  category?: string;
+  imageCategory?: string;
+  kind?: string;
   alt?: string;
   width?: number;
   height?: number;
 }
+
+type MyRealTripRawAccommodationItem = MyRealTripAccommodationItem & {
+  imageUrls?: unknown;
+  imageList?: unknown;
+  photos?: unknown;
+  hotelImages?: unknown;
+};
 
 export interface MyRealTripAccommodationItem {
   itemId: number;
@@ -21,6 +33,10 @@ export interface MyRealTripAccommodationItem {
   productUrl: string;
   deepLink: string;
   images?: MyRealTripAccommodationImage[];
+  imageUrls?: string[];
+  imageList?: MyRealTripAccommodationImage[];
+  photos?: MyRealTripAccommodationImage[];
+  hotelImages?: MyRealTripAccommodationImage[];
   area?: string;
   district?: string;
   neighborhood?: string;
@@ -113,6 +129,48 @@ function normalizeImageType(value: unknown): ImageType | undefined {
   return MYREALTRIP_IMAGE_TYPE_ALIASES[normalized];
 }
 
+function getImageUrl(image: MyRealTripAccommodationImage): string {
+  const value = image.url ?? image.imageUrl ?? "";
+  return typeof value === "string" ? value.trim() : "";
+}
+
+function getImageType(image: MyRealTripAccommodationImage): ImageType | undefined {
+  return normalizeImageType(
+    image.type ??
+      image.imageType ??
+      image.category ??
+      image.imageCategory ??
+      image.kind,
+  );
+}
+
+function collectImageCandidates(
+  item: MyRealTripRawAccommodationItem,
+): MyRealTripAccommodationImage[] {
+  const collections: unknown[] = [
+    item.images,
+    item.imageList,
+    item.photos,
+    item.hotelImages,
+  ];
+
+  const imageUrls = Array.isArray(item.imageUrls) ? item.imageUrls : [];
+  collections.push(
+    imageUrls.map((value) =>
+      typeof value === "string" ? { url: value } : value,
+    ),
+  );
+
+  return collections.flatMap((collection) =>
+    Array.isArray(collection)
+      ? collection.filter(
+          (value): value is MyRealTripAccommodationImage =>
+            Boolean(value && typeof value === "object"),
+        )
+      : [],
+  );
+}
+
 const affiliateLinks = (productUrl: string): AffiliateLink[] => [
   {
     provider: "myrealtrip",
@@ -136,18 +194,19 @@ function slugify(value: string): string {
 }
 
 function toHotelImages(
-  item: MyRealTripAccommodationItem,
+  item: MyRealTripRawAccommodationItem,
   hotelId: string,
   imageUsageAllowed: boolean,
 ): HotelImage[] {
   if (!imageUsageAllowed) return [];
 
-  const candidates = (item.images ?? [])
+  const candidates = collectImageCandidates(item)
     .map((image) => ({
       ...image,
-      normalizedType: normalizeImageType(image.type),
+      url: getImageUrl(image),
+      normalizedType: getImageType(image),
     }))
-    .filter((image) => image.url.trim())
+    .filter((image) => image.url.length > 0)
     .filter((image) => image.normalizedType && image.normalizedType !== "hero")
     .filter(
       (image, index, all) =>
