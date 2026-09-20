@@ -17,7 +17,6 @@
     "typecheck": "tsc --noEmit",
     "ai:hotel-posts": "bun scripts/generate-hotel-posts.ts",
     "ai:repair": "bun scripts/generate-hotel-posts.ts --repair-invalid=true",
-    "agoda:generate": "bun scripts/agoda/generate-hotels.ts",
     "myrealtrip:generate": "bun scripts/myrealtrip/generate-hotels.ts",
     "autoPost": "bun scripts/myrealtrip/generate-hotels.ts && bun scripts/generate-hotel-posts.ts && bun scripts/split-client-post-data.ts && bun scripts/generate-hotel-inventory.ts"
   },
