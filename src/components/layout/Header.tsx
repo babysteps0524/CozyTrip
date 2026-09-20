@@ -13,7 +13,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-ct-line bg-ct-surface/95 backdrop-blur-sm dark:border-ct-dark-line dark:bg-ct-dark-surface/95">
       <Container>
-        <div className="flex min-h-16 items-center gap-3 sm:min-h-18 sm:gap-6">
+        <div className="flex min-h-16 items-center gap-4 sm:min-h-18">
           <a
             href="/"
             aria-label="CozyTrip 코지트립 홈"
@@ -42,13 +42,12 @@ export default function Header() {
             </div>
           </nav>
 
-          <div className="hidden shrink-0 md:block">
+          <div className="hidden shrink-0 lg:block">
             <Navigation />
           </div>
 
           <MobileNavigation />
         </div>
-
       </Container>
     </header>
   );
