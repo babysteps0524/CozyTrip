@@ -108,6 +108,14 @@ export default function HotelDetail({
       <HotelGallery images={hotel.images} />
       <HotelSummary hotel={hotel} />
 
+      <AffiliateDisclosure
+        show={Boolean(
+          hotel.affiliateLinks?.some(
+            (link) => link.provider === "myrealtrip",
+          ),
+        )}
+      />
+
       <Section id="guide">
         <Container>
           <div className="mx-auto max-w-3xl">
@@ -134,13 +142,6 @@ export default function HotelDetail({
                   {hotelPost.introduction}
                 </p>
 
-                <AffiliateDisclosure
-                  show={Boolean(
-                    hotel.affiliateLinks?.some(
-                      (link) => link.provider === "myrealtrip",
-                    ),
-                  )}
-                />
 
                 <div className="mt-8">
                   <PostRenderer post={hotelPost} />
