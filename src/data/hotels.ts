@@ -179,9 +179,18 @@ const myRealTripGeneratedHotels = Array.isArray(myRealTripGenerated.hotels)
 
 const sampleHotels = [...manualHotels, ...additionalSampleHotels];
 
+const activeDestinationIds = new Set([
+  "japan-tokyo",
+  "japan-osaka",
+  "japan-fukuoka",
+  "japan-sapporo",
+]);
+
 const sourceHotels =
   myRealTripGeneratedHotels.length > 0
-    ? myRealTripGeneratedHotels
+    ? myRealTripGeneratedHotels.filter((hotel) =>
+        activeDestinationIds.has(hotel.destinationId),
+      )
     : sampleHotels;
 
 const hotelMap = new Map<string, Hotel>();
