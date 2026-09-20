@@ -1,4 +1,7 @@
-import type { Post } from "../types";
+import type { HotelPost, Post } from "../types";
+import { hotelPostToPost } from "../lib/post/hotelPostToPost";
+import myRealTripHotels from "./generated/myrealtrip-hotels.json";
+import generatedHotelPosts from "./generated/hotel-posts.generated.json";
 
 interface ClientPostFile {
   posts?: Post[];
@@ -38,11 +41,36 @@ export async function loadClientPostsByDestination(
 
   if (!loader) return [];
 
-  const data = await loader();
-  return Array.isArray(data.posts) ? data.posts : [];
+  try {
+    const data = await loader();
+    return Array.isArray(data.posts) ? data.posts : [];
+  } catch (error) {
+    const hotelsFile = myRealTripHotels as { hotels?: import("../types").Hotel[] };
+    const postsFile = generatedHotelPosts as { posts?: HotelPost[] };
+    const hotels = Array.isArray(hotelsFile.hotels) ? hotelsFile.hotels : [];
+    const posts = Array.isArray(postsFile.posts) ? postsFile.posts : [];
+    const hotelsById = new Map(hotels.map((hotel) => [hotel.id, hotel]));
+
+    console.warn(
+      `Client post chunk is unavailable for ${destinationSlug}; using source post data fallback.`,
+      error,
+    );
+
+    return posts
+      .filter((post) => post.destinationId === `japan-${destinationSlug}`)
+      .flatMap((post) => {
+        const hotel = hotelsById.get(post.hotelId);
+        return hotel ? [hotelPostToPost(post, hotel)] : [];
+      });
+  }
 }
 
 export async function loadClientGuidePosts(): Promise<Post[]> {
-  const data = await import("./generated/client-posts/guides.json");
-  return Array.isArray(data.posts) ? data.posts : [];
+  try {
+    const data = await import("./generated/client-posts/guides.json");
+    return Array.isArray(data.posts) ? data.posts : [];
+  } catch (error) {
+    console.warn("Client guide chunk is unavailable.", error);
+    return [];
+  }
 }
