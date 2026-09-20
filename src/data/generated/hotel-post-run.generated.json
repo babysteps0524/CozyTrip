@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T15:48:35.958Z",
+  "generatedAt": "2026-09-20T16:25:03.546Z",
   "source": "ai",
   "plan": {
     "japan-tokyo": 3,
@@ -8,59 +8,59 @@
     "japan-sapporo": 2
   },
   "totalTarget": 11,
-  "totalSucceeded": 9,
+  "totalSucceeded": 7,
   "totalFailed": 5,
-  "totalPublished": 10,
+  "totalPublished": 17,
   "totalInventory": 404,
-  "totalRemaining": 394,
+  "totalRemaining": 387,
   "destinations": [
     {
       "destinationId": "japan-tokyo",
       "target": 3,
       "inventory": 101,
-      "publishedBefore": 1,
-      "attempted": 5,
-      "succeeded": 3,
-      "failed": 2,
-      "publishedAfter": 4,
-      "remaining": 97,
-      "status": "target-reached"
+      "publishedBefore": 4,
+      "attempted": 3,
+      "succeeded": 2,
+      "failed": 1,
+      "publishedAfter": 6,
+      "remaining": 95,
+      "status": "shortfall"
     },
     {
       "destinationId": "japan-osaka",
       "target": 3,
       "inventory": 101,
-      "publishedBefore": 0,
-      "attempted": 3,
-      "succeeded": 1,
+      "publishedBefore": 1,
+      "attempted": 4,
+      "succeeded": 2,
       "failed": 2,
-      "publishedAfter": 1,
-      "remaining": 100,
+      "publishedAfter": 3,
+      "remaining": 98,
       "status": "shortfall"
     },
     {
       "destinationId": "japan-fukuoka",
       "target": 3,
       "inventory": 101,
-      "publishedBefore": 0,
-      "attempted": 4,
-      "succeeded": 3,
+      "publishedBefore": 3,
+      "attempted": 3,
+      "succeeded": 2,
       "failed": 1,
-      "publishedAfter": 3,
-      "remaining": 98,
-      "status": "target-reached"
+      "publishedAfter": 5,
+      "remaining": 96,
+      "status": "shortfall"
     },
     {
       "destinationId": "japan-sapporo",
       "target": 2,
       "inventory": 101,
-      "publishedBefore": 0,
+      "publishedBefore": 2,
       "attempted": 2,
-      "succeeded": 2,
-      "failed": 0,
-      "publishedAfter": 2,
-      "remaining": 99,
-      "status": "target-reached"
+      "succeeded": 1,
+      "failed": 1,
+      "publishedAfter": 3,
+      "remaining": 98,
+      "status": "shortfall"
     }
   ]
 }

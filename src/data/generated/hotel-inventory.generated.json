@@ -1,15 +1,33 @@
 {
-  "generatedAt": "2026-09-20T15:48:35.958Z",
+  "generatedAt": "2026-09-20T16:25:03.547Z",
   "source": "myrealtrip",
   "totalInventory": 404,
-  "published": 10,
-  "pending": 389,
+  "published": 17,
+  "pending": 382,
   "retrying": 5,
   "retryExhausted": 0,
-  "remaining": 394,
+  "remaining": 387,
   "destinations": [
     {
       "destinationId": "japan-fukuoka",
+      "inventory": 101,
+      "published": 5,
+      "pending": 95,
+      "retrying": 1,
+      "retryExhausted": 0,
+      "remaining": 96
+    },
+    {
+      "destinationId": "japan-osaka",
+      "inventory": 101,
+      "published": 3,
+      "pending": 96,
+      "retrying": 2,
+      "retryExhausted": 0,
+      "remaining": 98
+    },
+    {
+      "destinationId": "japan-sapporo",
       "inventory": 101,
       "published": 3,
       "pending": 97,
@@ -18,31 +36,13 @@
       "remaining": 98
     },
     {
-      "destinationId": "japan-osaka",
-      "inventory": 101,
-      "published": 1,
-      "pending": 98,
-      "retrying": 2,
-      "retryExhausted": 0,
-      "remaining": 100
-    },
-    {
-      "destinationId": "japan-sapporo",
-      "inventory": 101,
-      "published": 2,
-      "pending": 99,
-      "retrying": 0,
-      "retryExhausted": 0,
-      "remaining": 99
-    },
-    {
       "destinationId": "japan-tokyo",
       "inventory": 101,
-      "published": 4,
-      "pending": 95,
-      "retrying": 2,
+      "published": 6,
+      "pending": 94,
+      "retrying": 1,
       "retryExhausted": 0,
-      "remaining": 97
+      "remaining": 95
     }
   ],
   "hotels": [
@@ -76,21 +76,18 @@
       "hotelName": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메",
       "slug": "호텔-빌라-폰테인-그랜드-도쿄-시오도메-1178040",
       "status": "retrying",
-      "attemptCount": 2,
+      "attemptCount": 3,
       "firstFailedAt": "2026-09-20T15:26:12.555Z",
-      "lastFailedAt": "2026-09-20T15:44:34.755Z",
-      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 26.436454783s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: Section 7 cannot assign a hero image. | openrouter: HotelPost must contain 4-6 FAQ items."
+      "lastFailedAt": "2026-09-20T16:22:03.345Z",
+      "lastFailureReason": "HotelPost validation failed: body content is too short: 471 characters (minimum 500)."
     },
     {
       "hotelId": "myrealtrip-1273819",
       "destinationId": "japan-tokyo",
       "hotelName": "렘 롯폰기",
       "slug": "렘-롯폰기-1273819",
-      "status": "retrying",
-      "attemptCount": 2,
-      "firstFailedAt": "2026-09-20T15:31:36.641Z",
-      "lastFailedAt": "2026-09-20T15:47:53.099Z",
-      "lastFailureReason": "HotelPost validation failed: body content is too short: 418 characters (minimum 500)."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1261232",
@@ -105,7 +102,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 퐁텐 도쿄 - 가야바초",
       "slug": "호텔-빌라-퐁텐-도쿄-가야바초-1175943",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -218,21 +215,18 @@
       "hotelName": "APA 호텔 & 리조트 오사카 난바 역앞 타워",
       "slug": "apa-호텔-리조트-오사카-난바-역앞-타워-3578504",
       "status": "retrying",
-      "attemptCount": 2,
+      "attemptCount": 3,
       "firstFailedAt": "2026-09-20T15:26:42.641Z",
-      "lastFailedAt": "2026-09-20T15:45:03.086Z",
-      "lastFailureReason": "HotelPost validation failed: Factual content validation failed: \"접근성이좋\"과 같은 평가/접근성 표현은 원본 데이터의 직접 근거를 확인해야 합니다."
+      "lastFailedAt": "2026-09-20T16:22:46.553Z",
+      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 11.418320857s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6308, Requested 3952. Please try again in 16.95s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-5022564",
       "destinationId": "japan-osaka",
       "hotelName": "소테츠 그랜드 프레사 오사카-난바",
       "slug": "소테츠-그랜드-프레사-오사카-난바-5022564",
-      "status": "retrying",
-      "attemptCount": 2,
-      "firstFailedAt": "2026-09-20T15:27:20.937Z",
-      "lastFailedAt": "2026-09-20T15:45:28.236Z",
-      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.804729514s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: Section 1 cannot assign a hero image. | openrouter: HotelPost must contain 4-6 FAQ items."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1431475",
@@ -247,15 +241,18 @@
       "destinationId": "japan-osaka",
       "hotelName": "칸데오 호텔 오사카 난바",
       "slug": "칸데오-호텔-오사카-난바-1286523",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 1,
+      "firstFailedAt": "2026-09-20T16:23:28.030Z",
+      "lastFailedAt": "2026-09-20T16:23:28.030Z",
+      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 29.296357793s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 3607, Requested 4697. Please try again in 2.28s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-1268563",
       "destinationId": "japan-osaka",
       "hotelName": "호텔 일 쿠오레 남바",
       "slug": "호텔-일-쿠오레-남바-1268563",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -399,11 +396,8 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "미쓰이 가든 호텔 후쿠오카 기온",
       "slug": "미쓰이-가든-호텔-후쿠오카-기온-1402095",
-      "status": "retrying",
-      "attemptCount": 2,
-      "firstFailedAt": "2026-09-20T15:30:00.140Z",
-      "lastFailedAt": "2026-09-20T15:46:47.222Z",
-      "lastFailureReason": "HotelPost validation failed: body content is too short: 486 characters (minimum 500)."
+      "status": "published",
+      "attemptCount": 0
     },
     {
       "hotelId": "myrealtrip-1188575",
@@ -418,15 +412,18 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 몬토레 후쿠오카",
       "slug": "호텔-몬토레-후쿠오카-1487512",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 1,
+      "firstFailedAt": "2026-09-20T16:23:54.799Z",
+      "lastFailedAt": "2026-09-20T16:23:54.799Z",
+      "lastFailureReason": "HotelPost validation failed: Factual content validation failed: \"피트니스\" 관련 내용이 원본 호텔 데이터에서 확인되지 않습니다. (피트니스 시설) | \"교통이편리\"과 같은 평가/접근성 표현은 원본 데이터의 직접 근거를 확인해야 합니다."
     },
     {
       "hotelId": "myrealtrip-6339000",
       "destinationId": "japan-fukuoka",
       "hotelName": "니시테츠 그랜드 호텔",
       "slug": "니시테츠-그랜드-호텔-6339000",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -562,15 +559,18 @@
       "destinationId": "japan-sapporo",
       "hotelName": "삿포로 그랜드 호텔",
       "slug": "삿포로-그랜드-호텔-6215670",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 1,
+      "firstFailedAt": "2026-09-20T16:24:36.325Z",
+      "lastFailedAt": "2026-09-20T16:24:36.325Z",
+      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 20.554965958s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5573, Requested 4694. Please try again in 17.002499999s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-1153897",
       "destinationId": "japan-sapporo",
       "hotelName": "호텔 몬토레 에델호프 삿포로",
       "slug": "호텔-몬토레-에델호프-삿포로-1153897",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
