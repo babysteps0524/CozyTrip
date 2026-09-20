@@ -42,38 +42,12 @@ export async function loadClientPostsByDestination(
     const data = await loader();
     return Array.isArray(data.posts) ? data.posts : [];
   } catch (error) {
-    try {
-      const [hotelsFile, postsFile] = await Promise.all([
-        import("./generated/myrealtrip-hotels.json"),
-        import("./generated/hotel-posts.generated.json"),
-      ]);
-      const hotels = Array.isArray(hotelsFile.hotels)
-        ? (hotelsFile.hotels as import("../types").Hotel[])
-        : [];
-      const posts = Array.isArray(postsFile.posts)
-        ? (postsFile.posts as HotelPost[])
-        : [];
-      const hotelsById = new Map(hotels.map((hotel) => [hotel.id, hotel]));
+    console.warn(
+      `Client post chunk is unavailable for ${destinationSlug}.`,
+      error,
+    );
+    return [];
 
-      console.warn(
-        `Client post chunk is unavailable for ${destinationSlug}; using source post data fallback.`,
-        error,
-      );
-
-      return posts.flatMap((post) => {
-        const hotel = hotelsById.get(post.hotelId);
-        if (!hotel || hotel.destinationId !== `japan-${destinationSlug}`) {
-          return [];
-        }
-        return [hotelPostToPost(post, hotel)];
-      });
-    } catch (fallbackError) {
-      console.warn(
-        `Client post fallback is unavailable for ${destinationSlug}.`,
-        fallbackError,
-      );
-      return [];
-    }
   }
 }
 
