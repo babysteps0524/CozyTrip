@@ -8,11 +8,7 @@ interface HotelsFile {
 const root = resolve(import.meta.dir, "..");
 const hotelsPath = resolve(root, "src/data/generated/myrealtrip-hotels.json");
 
-const allowedProviders = new Set<AffiliateProvider>([
-  "agoda",
-  "tripcom",
-  "myrealtrip",
-]);
+const allowedProviders = new Set<AffiliateProvider>(["myrealtrip"]);
 
 function isRecord(value: unknown): value is Record<string, unknown> {
   return Boolean(value) && typeof value === "object";
