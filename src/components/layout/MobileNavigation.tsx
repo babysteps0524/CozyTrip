@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
 const destinations = [
-  { name: "도쿄", href: "/japan/tokyo/" },
-  { name: "오사카", href: "/japan/osaka/" },
-  { name: "후쿠오카", href: "/japan/fukuoka/" },
-  { name: "삿포로", href: "/japan/sapporo/" },
+  { name: "도쿄", href: "/japan/tokyo/hotels/" },
+  { name: "오사카", href: "/japan/osaka/hotels/" },
+  { name: "후쿠오카", href: "/japan/fukuoka/hotels/" },
+  { name: "삿포로", href: "/japan/sapporo/hotels/" },
 ];
 
 const informationLinks = [
