@@ -21,7 +21,8 @@
     "autoPost": "bun scripts/myrealtrip/generate-hotels.ts && bun scripts/generate-hotel-posts.ts && bun scripts/split-client-post-data.ts && bun scripts/generate-hotel-inventory.ts",
     "ai:review": "bun scripts/review-hotel-posts.ts",
     "ai:review:post": "bun scripts/review-hotel-post.ts",
-    "ai:hotel-post": "bun scripts/generate-hotel-posts.ts --hotel-id"
+    "ai:hotel-post": "bun scripts/generate-hotel-posts.ts",
+    "ai:hotel-posts:initial": "bun scripts/generate-hotel-posts.ts --plan=japan-tokyo:3,japan-osaka:3,japan-fukuoka:3,japan-sapporo:2 --publish=true"
   },
   "dependencies": {
     "@types/react": "^19.3.0",
