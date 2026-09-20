@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v9";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v10";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -48,7 +48,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 - imageAssignments의 imageType은 실제 이미지 type과 정확히 같아야 한다.
 - 동일 imageId는 한 번만 사용한다.
 - imageIds에는 본문에서 사용하는 모든 이미지 ID를 넣는다.
-- 이미지가 3장뿐이면 3장 모두 활용하고, 8장이라면 가능하면 6~8장을 활용한다.
+- 이미지가 3장뿐이면 관련 이미지 3장을 모두 활용하고, 8장이라면 가능하면 6~8장을 활용한다.
 - 단, 내용과 무관한 이미지를 채우기용으로 넣지 않는다.
 
 섹션 구성:
@@ -93,7 +93,15 @@ JSON 구조:
   "imageIds": ["본문 이미지 ID"]
 }
 
-사용 가능한 이미지 수: ${contentImages.length}
+사용 가능한 본문 이미지 수: ${contentImages.length}
+
+이미지 유형별 수량:
+${JSON.stringify(
+    contentImages.reduce<Record<string, number>>((counts, image) => {
+      counts[image.type] = (counts[image.type] ?? 0) + 1;
+      return counts;
+    }, {}),
+  )}
 사용 가능한 이미지 목록:
 ${JSON.stringify(
     confirmedImages.map((image) => ({
