@@ -432,6 +432,27 @@ export default function HotelDetail({
                       </div>
                     </section>
                   )}
+
+                  {(post.tags?.length ?? 0) > 0 && (
+                    <footer className="mt-8 rounded-2xl border border-ct-line bg-ct-surface-soft p-5 dark:border-ct-dark-line dark:bg-ct-dark-surface-soft">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span className="mr-1 text-xs font-semibold tracking-[0.12em] text-ct-muted dark:text-ct-dark-muted">
+                          TAGS
+                        </span>
+                        {post.tags?.map((tag) => (
+                          <span
+                            key={tag}
+                            className="rounded-full border border-ct-line bg-ct-surface px-3 py-1.5 text-xs font-medium text-ct-text-soft dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text-soft"
+                          >
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                      <p className="mt-4 mb-0 text-xs leading-6 text-ct-muted dark:text-ct-dark-muted">
+                        이 글은 제공된 호텔 정보와 확인 가능한 이미지 자료를 바탕으로 작성되었습니다. 요금, 객실 재고와 예약 조건은 외부 예약 플랫폼에서 최종 확인해 주세요.
+                      </p>
+                    </footer>
+                  )}
                 </article>
               ))}
             </div>
