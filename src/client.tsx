@@ -7,7 +7,7 @@ import {
   loadClientPostsByDestination,
 } from "./data/clientPosts";
 import { loadClientHotels } from "./data/clientHotels";
-import type { Destination, Hotel, Post } from "./types";
+import type { Destination } from "./types";
 
 type PageModule = { default: (props: any) => ReactNode };
 
