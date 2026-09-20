@@ -1,38 +1,41 @@
+import type { AffiliateProvider } from "../../types";
+import { getAffiliateProviderConfig } from "../../lib/affiliate";
+
 interface AffiliateDisclosureProps {
   show: boolean;
+  providers?: AffiliateProvider[];
 }
 
 export default function AffiliateDisclosure({
   show,
+  providers = [],
 }: AffiliateDisclosureProps) {
   if (!show) return null;
 
+  const providerNames = Array.from(
+    new Set(
+      providers
+        .map((provider) => getAffiliateProviderConfig(provider)?.name)
+        .filter(Boolean),
+    ),
+  );
+
+  const providerLabel =
+    providerNames.length > 0
+      ? providerNames.join(", ")
+      : "외부 예약 플랫폼";
+
   return (
     <aside
-      mt="5"
-      rounded="xl"
-      border="~ ct-primary/30 dark:ct-primary/40"
-      bg="ct-primary-soft dark:bg-ct-dark-surface-soft"
-      px="4"
-      py="4"
-      text="sm ct-text dark:ct-dark-text"
-      leading="relaxed"
+      className="mt-5 rounded-xl border border-ct-primary/30 bg-ct-primary-soft px-4 py-4 text-sm leading-relaxed text-ct-text dark:border-ct-primary/40 dark:bg-ct-dark-surface-soft dark:text-ct-dark-text"
       aria-label="경제적 이해관계 안내"
     >
-      <p
-        m="0"
-        text="sm ct-primary dark:ct-dark-text"
-        font="bold"
-      >
+      <p className="m-0 text-sm font-bold text-ct-primary dark:text-ct-dark-text">
         경제적 이해관계 안내
       </p>
-      <p
-        mt="2"
-        mb="0"
-        text="sm ct-text dark:ct-dark-text"
-        font="medium"
-      >
-        마이리얼트립과 함께하는 마케팅 파트너십을 통해 여행자가 구매할 때마다 일정 비율의 수수료를 지급받습니다.
+      <p className="mt-2 mb-0 text-sm font-medium text-ct-text dark:text-ct-dark-text">
+        이 페이지의 {providerLabel} 예약 링크를 통해 예약이 발생하면 CozyTrip에
+        제휴 수수료가 지급될 수 있습니다.
       </p>
     </aside>
   );
