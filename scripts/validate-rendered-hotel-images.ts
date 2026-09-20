@@ -2,7 +2,10 @@ import { posts } from "../src/data/posts";
 
 function isImageBlock(
   block: (typeof posts)[number]["blocks"][number],
-): block is Extract<(typeof posts)[number]["blocks"][number], { type: "image" | "gallery" }> {
+): block is Extract<
+  (typeof posts)[number]["blocks"][number],
+  { type: "image" | "gallery" }
+> {
   return block.type === "image" || block.type === "gallery";
 }
 
@@ -11,7 +14,9 @@ function countDisplayableImages(post: (typeof posts)[number]): number {
     if (!isImageBlock(block)) return count;
 
     if (block.type === "image") {
-      return count + Number(Boolean(block.image.src && block.image.rightsConfirmed));
+      return count + Number(
+        Boolean(block.image.src && block.image.rightsConfirmed),
+      );
     }
 
     return (
@@ -42,18 +47,17 @@ function validateSectionImagePlacement(
       sectionBlocks.push(nextBlock);
     }
 
-    const displayableImages = sectionBlocks.filter(
-      (sectionBlock) =>
-        sectionBlock.type === "image"
-          ? Boolean(sectionBlock.image.src && sectionBlock.image.rightsConfirmed)
-          : sectionBlock.type === "gallery"
-            ? sectionBlock.images.some(
-                (image) => Boolean(image.src && image.rightsConfirmed),
-              )
-            : false,
+    const hasDisplayableImage = sectionBlocks.some((sectionBlock) =>
+      sectionBlock.type === "image"
+        ? Boolean(sectionBlock.image.src && sectionBlock.image.rightsConfirmed)
+        : sectionBlock.type === "gallery"
+          ? sectionBlock.images.some(
+              (image) => Boolean(image.src && image.rightsConfirmed),
+            )
+          : false,
     );
 
-    if (displayableImages.length === 0) continue;
+    if (!hasDisplayableImage) continue;
 
     const firstSectionBlock = sectionBlocks[0];
 
@@ -62,27 +66,10 @@ function validateSectionImagePlacement(
       (firstSectionBlock.type !== "image" &&
         firstSectionBlock.type !== "gallery")
     ) {
-      const blockSummary = blocks
-        .map((candidate, blockIndex) => {
-          if (candidate.type === "heading") {
-            return String(blockIndex) + ":heading(" + candidate.text + ")";
-          }
-          if (candidate.type === "image") {
-            return String(blockIndex) + ":image(" + candidate.image.id + ")";
-          }
-          if (candidate.type === "gallery") {
-            return String(blockIndex) + ":gallery(" + candidate.images.map((image) => image.id).join(",") + ")";
-          }
-          return String(blockIndex) + ":" + candidate.type;
-        })
-        .join(" -> ");
-
-      console.error("[" + post.id + "] block order: " + blockSummary);
       failures.push(
-        "[" + post.id + '] section "' + block.text + '" has an article image, but the first section block is not an image.',
+        `[${post.id}] section "${block.text}" has an article image, but the first section block is not an image.`,
       );
     }
-
   }
 
   return failures;
@@ -106,7 +93,9 @@ for (const post of hotelPosts) {
 console.log("Rendered hotel image validation complete.");
 console.log(`Hotel posts: ${hotelPosts.length}`);
 console.log(
-  `Hotel posts with displayable article images: ${hotelPosts.length - failures.length}`,
+  `Hotel posts with displayable article images: ${hotelPosts.filter(
+    (post) => countDisplayableImages(post) > 0,
+  ).length}`,
 );
 
 if (failures.length > 0) {
