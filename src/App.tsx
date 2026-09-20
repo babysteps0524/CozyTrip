@@ -9,6 +9,10 @@ import DestinationPage from "./pages/Destination";
 import HotelList from "./pages/HotelList";
 import HotelDetail from "./pages/HotelDetail";
 import Guide from "./pages/Guide";
+import About from "./pages/About";
+import Privacy from "./pages/Privacy";
+import Affiliate from "./pages/Affiliate";
+import Contact from "./pages/Contact";
 
 interface AppProps {
   initialPath?: string;
@@ -75,6 +79,7 @@ export default function App({
 
   const hotelSlug = hotelDetailMatch?.[2];
   const hotel = hotelSlug ? getHotelBySlug(hotels, hotelSlug) : undefined;
+  const staticPage = path === "/about" ? "about" : path === "/privacy" ? "privacy" : path === "/affiliate" ? "affiliate" : path === "/contact" ? "contact" : undefined;
   const guideSlug = guideMatch?.[1];
   const guide = guideSlug ? getPostBySlug(posts, guideSlug) : undefined;
 
@@ -94,6 +99,7 @@ export default function App({
     path === "/" ||
     path === "/japan" ||
     path === "/guides" ||
+    Boolean(staticPage) ||
     Boolean(destinationMatch && destination) ||
     Boolean(hotelListMatch && destination) ||
     isHotelDetail ||
@@ -115,6 +121,11 @@ export default function App({
         )}
 
         {path === "/japan" && <Japan destinations={destinations} />}
+
+        {staticPage === "about" && <About />}
+        {staticPage === "privacy" && <Privacy />}
+        {staticPage === "affiliate" && <Affiliate />}
+        {staticPage === "contact" && <Contact />}
 
         {path === "/guides" && (
           <Guides posts={posts.filter((post) => post.category === "guide")} />
