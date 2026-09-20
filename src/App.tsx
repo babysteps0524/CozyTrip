@@ -115,7 +115,7 @@ export default function App({
     >
       <Header />
 
-      <main pt="16 sm:18">
+      <main pt="20 sm:22">
         {path === "/" && (
           <Home destinations={destinations} hotels={hotels} />
         )}
