@@ -138,7 +138,10 @@ const requestedHotelId =
 const requestedLimit = Number(
   getCliOption("limit") ?? process.env.AI_POST_LIMIT ?? "1",
 );
-const dailyPlan = process.env.AI_DAILY_PLAN?.trim() || undefined;
+const dailyPlan =
+  getCliOption("plan") ?? process.env.AI_DAILY_PLAN?.trim() ?? undefined;
+const publishGenerated =
+  getCliOption("publish") === "true" || process.env.AI_PUBLISH_GENERATED === "true";
 const repairInvalid =
   getCliOption("repair-invalid") === "true" ||
   process.env.AI_REPAIR_INVALID === "true";
@@ -595,7 +598,7 @@ async function generateAndValidateHotelPost(
     hotelId: hotel.id,
     slug: hotel.slug,
     generatedBy: result.provider,
-    status: "review",
+    status: publishGenerated ? "published" : "review",
   };
 
   validateHotelPost(post, hotel, { availableImages: input.images, strictFacts: true });
@@ -705,6 +708,8 @@ async function main(): Promise<void> {
   let failureCount = 0;
   let validationFailureCount = 0;
   let retrySuccessCount = 0;
+
+  console.log(`Publication mode: ${publishGenerated ? "published" : "review"}`);
 
   console.log(
     repairInvalid
