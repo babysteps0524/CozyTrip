@@ -154,13 +154,6 @@ export function createHotelPostBlocks(
     addImage(blocks, heroImageId, imageMap, usedImageIds);
   }
 
-  if (post.introduction.trim()) {
-    blocks.push({
-      type: "paragraph",
-      text: post.introduction.trim(),
-    });
-  }
-
   const sectionImageIds = getSectionImageIds(post, images, usedImageIds);
 
   for (let index = 0; index < post.sections.length; index += 1) {
@@ -215,26 +208,6 @@ export function createHotelPostBlocks(
     addGallery(blocks, remainingPostImages, imageMap, usedImageIds);
   } else {
     addImage(blocks, remainingPostImages[0], imageMap, usedImageIds);
-  }
-
-  if (post.faq.length > 0) {
-    blocks.push({
-      type: "heading",
-      level: 2,
-      text: "자주 묻는 질문",
-    });
-
-    for (const item of post.faq) {
-      blocks.push({
-        type: "heading",
-        level: 3,
-        text: item.question.trim(),
-      });
-      blocks.push({
-        type: "paragraph",
-        text: item.answer.trim(),
-      });
-    }
   }
 
   return blocks;
