@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface AdSenseSlotProps {
   slot: string;
   className?: string;
@@ -22,16 +24,41 @@ export default function AdSenseSlot({
 }: AdSenseSlotProps) {
   const clientId = import.meta.env.VITE_ADSENSE_CLIENT_ID;
 
+  useEffect(() => {
+    if (!isAdsenseConfigured() || !clientId || !slot) return;
+
+    const existing = document.querySelector(
+      'script[data-cozytrip-adsense="true"]',
+    );
+
+    const pushAd = () => {
+      try {
+        (window.adsbygoogle = window.adsbygoogle || []).push({});
+      } catch {
+        // AdSense can reject a second push while an ad slot is still loading.
+      }
+    };
+
+    if (existing) {
+      pushAd();
+      return;
+    }
+
+    const script = document.createElement("script");
+    script.async = true;
+    script.crossOrigin = "anonymous";
+    script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${encodeURIComponent(clientId)}`;
+    script.dataset.cozytripAdsense = "true";
+    script.addEventListener("load", pushAd, { once: true });
+    document.head.appendChild(script);
+
+    return () => {
+      script.removeEventListener("load", pushAd);
+    };
+  }, [clientId, slot]);
+
   if (!isAdsenseConfigured() || !clientId || !slot) {
     return null;
-  }
-
-  if (typeof window !== "undefined") {
-    try {
-      (window.adsbygoogle = window.adsbygoogle || []).push({});
-    } catch {
-      // AdSense may not be ready during hydration.
-    }
   }
 
   return (
