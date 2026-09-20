@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v14";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v15";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
