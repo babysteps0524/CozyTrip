@@ -18,7 +18,7 @@ interface PostRendererProps {
 
 export default function PostRenderer({ post }: PostRendererProps) {
   return (
-    <article className="max-w-3xl text-base text-ct-text sm:text-lg dark:text-ct-dark-text">
+    <article className="max-w-3xl text-[17px] text-ct-text dark:text-ct-dark-text sm:text-lg">
       {post.blocks.map((block, index) => {
         if (block.type === "heading") {
           const headingId = createHeadingId(block.text, index);
@@ -27,7 +27,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
             <h2
               key={index}
               id={headingId}
-              className="mb-0 mt-12 scroll-mt-24 text-2xl font-bold leading-tight tracking-tight first:mt-0 sm:text-3xl"
+              className="mb-0 mt-12 scroll-mt-24 text-[1.45rem] font-bold leading-[1.35] tracking-tight first:mt-0 sm:text-3xl"
             >
               {block.text}
             </h2>
@@ -35,7 +35,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
             <h3
               key={index}
               id={headingId}
-              className="mb-0 mt-8 scroll-mt-24 text-xl font-bold leading-tight tracking-tight sm:text-2xl"
+              className="mb-0 mt-9 scroll-mt-24 text-xl font-bold leading-[1.4] tracking-tight sm:text-2xl"
             >
               {block.text}
             </h3>
@@ -46,7 +46,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
           return (
             <p
               key={index}
-              className="mb-0 mt-5 text-base leading-8 text-ct-text-soft sm:text-lg dark:text-ct-dark-text-soft"
+              className="mb-0 mt-5 text-[1.0625rem] leading-[1.9] text-ct-text-soft sm:text-lg sm:leading-8 dark:text-ct-dark-text-soft"
             >
               {block.text}
             </p>
@@ -58,7 +58,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
           if (!image.src || !image.rightsConfirmed) return null;
 
           return (
-            <figure key={index} className="my-8 overflow-hidden rounded-2xl border border-ct-line bg-ct-surface dark:border-ct-dark-line dark:bg-ct-dark-surface">
+            <figure key={index} className="my-9 overflow-hidden rounded-2xl border border-ct-line bg-ct-surface shadow-card dark:border-ct-dark-line dark:bg-ct-dark-surface">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -81,7 +81,7 @@ export default function PostRenderer({ post }: PostRendererProps) {
           if (images.length === 0) return null;
 
           return (
-            <figure key={index} className="my-8">
+            <figure key={index} className="my-9">
               <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {images.map((image) => (
                   <div key={image.id} className="overflow-hidden rounded-xl border border-ct-line bg-ct-surface dark:border-ct-dark-line dark:bg-ct-dark-surface">
