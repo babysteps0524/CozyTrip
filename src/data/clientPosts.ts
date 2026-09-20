@@ -57,10 +57,12 @@ export async function loadClientPostsByDestination(
     );
 
     return posts
-      .filter((post) => post.destinationId === `japan-${destinationSlug}`)
       .flatMap((post) => {
         const hotel = hotelsById.get(post.hotelId);
-        return hotel ? [hotelPostToPost(post, hotel)] : [];
+        if (!hotel || hotel.destinationId !== `japan-${destinationSlug}`) {
+          return [];
+        }
+        return [hotelPostToPost(post, hotel)];
       });
   }
 }
