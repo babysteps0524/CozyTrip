@@ -67,6 +67,10 @@ export default function PostRenderer({ post }: PostRendererProps) {
           const image = block.image;
           if (!image.src || !image.rightsConfirmed) return null;
 
+          const imageWidth = image.width ?? 1200;
+          const imageHeight = image.height ?? 800;
+          const imageAspectRatio = `${imageWidth}/${imageHeight}`;
+
           return (
             <figure
               key={index}
@@ -83,10 +87,10 @@ export default function PostRenderer({ post }: PostRendererProps) {
                   <Image
                     src={image.src}
                     alt={image.alt}
-                    width={image.width}
-                    height={image.height}
+                    width={imageWidth}
+                    height={imageHeight}
                     image={image}
-                    aspectRatio={`${image.width}/${image.height}`}
+                    aspectRatio={imageAspectRatio}
                   />
                 </a>
               ) : (
