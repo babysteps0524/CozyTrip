@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T01:06:33.220Z",
+  "generatedAt": "2026-09-20T02:37:57.955Z",
   "source": "ai",
   "failures": [
     {
@@ -23,6 +23,17 @@
       "attemptCount": 1,
       "status": "retrying",
       "reason": "gemini: Gemini API 400: {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"API key not valid. Please pass a valid API key.\",\n    \"status\": \"INVALID_ARGUMENT\",\n    \"details\": [\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.ErrorInfo\",\n        \"reason\": \"API_KEY_INVALID\",\n        \"domain\": \"googleapis.com\",\n        \"metadata\": {\n          \"service\": \"generativelanguage.googleapis.com\"\n        }\n      },\n      {\n        \"@type\": \"type.googleapis.com/google.rpc.LocalizedMessage\",\n        \"locale\": \"en-US\",\n         | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 5295, Requested 3349. Please try again in 4.83s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
+    },
+    {
+      "hotelId": "myrealtrip-1190993",
+      "destinationId": "japan-fukuoka",
+      "hotelName": "호텔 홋케 클럽 후쿠오카",
+      "failedAt": "2026-09-20T02:37:57.954Z",
+      "firstFailedAt": "2026-09-20T01:52:28.942Z",
+      "lastFailedAt": "2026-09-20T02:37:57.954Z",
+      "attemptCount": 2,
+      "status": "retrying",
+      "reason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 53.841263167s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6943, Requested 4000. Please try again in 22.0725s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
     }
   ]
 }

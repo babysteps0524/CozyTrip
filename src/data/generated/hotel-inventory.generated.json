@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T01:06:33.386Z",
+  "generatedAt": "2026-09-20T02:37:57.956Z",
   "source": "myrealtrip",
   "totalInventory": 606,
   "published": 81,
@@ -598,7 +598,10 @@
       "hotelName": "호텔 홋케 클럽 후쿠오카",
       "slug": "호텔-홋케-클럽-후쿠오카-1190993",
       "status": "published",
-      "attemptCount": 0
+      "attemptCount": 2,
+      "firstFailedAt": "2026-09-20T01:52:28.942Z",
+      "lastFailedAt": "2026-09-20T02:37:57.954Z",
+      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 53.841263167s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: groq API 429: {\"error\":{\"message\":\"Rate limit reached for model `openai/gpt-oss-120b` in organization `org_01m12zc16aexybvf733nrw8cg6` service tier `on_demand` on tokens per minute (TPM): Limit 8000, Used 6943, Requested 4000. Please try again in 22.0725s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing\",\"type\":\"tokens\",\"code\":\"rate_limit_exceeded\"}}\n | openrouter: HotelPost must contain 5-8 unique tags."
     },
     {
       "hotelId": "myrealtrip-1559947",
