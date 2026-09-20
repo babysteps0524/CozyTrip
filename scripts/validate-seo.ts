@@ -29,7 +29,10 @@ function escapeHtml(value: string): string {
 }
 
 function assertIncludes(html: string, value: string, label: string): void {
-  if (!html.includes(value)) {
+  const normalizedHtml = html.normalize("NFC");
+  const normalizedValue = value.normalize("NFC");
+
+  if (!normalizedHtml.includes(normalizedValue)) {
     throw new Error(`SEO validation failed: ${label}`);
   }
 }
