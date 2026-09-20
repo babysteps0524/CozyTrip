@@ -86,39 +86,22 @@ jobs:
       - name: Install dependencies
         run: bun install --frozen-lockfile
 
-      - name: Refresh MyRealTrip hotel inventory
-        run: bun run myrealtrip:generate
+      - name: Auto-generate hotel posts
+        if: ${{ !inputs.repair_invalid }}
+        run: bun run autoPost
+
+      - name: Auto-repair invalid hotel posts
+        if: ${{ inputs.repair_invalid }}
+        run: bun scripts/myrealtrip/generate-hotels.ts && bun run ai:repair && bun scripts/split-client-post-data.ts && bun scripts/generate-hotel-inventory.ts
 
       - name: Validate hotel data
-        run: bun run validate:hotels
-      - name: Validate MyRealTrip images
-        run: bun run validate:myrealtrip-images
-
-      - name: Validate hotel daily plan
-        run: bun run validate:hotel-daily-plan
-
-      - name: Generate hotel posts
-        if: ${{ !inputs.repair_invalid }}
-        run: bun run ai:hotel-posts
-
-      - name: Repair invalid hotel posts
-        if: ${{ inputs.repair_invalid }}
-        run: bun run ai:hotel-posts -- --repair-invalid=true
-
-      - name: Generate client post data
-        run: bun scripts/split-client-post-data.ts
+        run: bun scripts/validate-hotel-data.ts
 
       - name: Validate hotel posts
-        run: bun run validate:hotel-posts
+        run: bun scripts/validate-hotel-posts.ts
 
-      - name: Validate hotel run report
-        run: bun run validate:hotel-run
-
-      - name: Generate hotel inventory
-        run: bun run generate:hotel-inventory
-
-      - name: Validate hotel inventory
-        run: bun run validate:hotel-inventory
+      - name: Validate affiliate links
+        run: bun scripts/validate-affiliate-links.ts
 
       - name: Typecheck
         run: bun run typecheck
@@ -127,7 +110,7 @@ jobs:
         run: bun run build
 
       - name: Validate SEO
-        run: bun run validate:seo
+        run: bun scripts/validate-seo.ts
 
       - name: Commit generated posts
         run: |
