@@ -71,14 +71,10 @@ export default function RelatedHotels({
   }
 
   return (
-    <section
-      aria-labelledby="related-hotels-title"
-      border="t ct-line dark:ct-dark-line"
-      bg="ct-surface dark:ct-dark-surface"
-    >
+    <section aria-labelledby="related-hotels-title" className="border-t border-ct-line bg-ct-surface dark:border-ct-dark-line dark:bg-ct-dark-surface">
       <Container>
-        <div py="12 sm:16 lg:20">
-          <div flex="~ col sm:row" sm="items-end justify-between" gap="3">
+        <div className="py-12 sm:py-16 lg:py-20">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p
                 m="0"
@@ -119,9 +115,9 @@ export default function RelatedHotels({
             현재 호텔과 같은 지역 또는 숙소 유형을 기준으로 함께 살펴볼 수 있는 호텔입니다.
           </p>
 
-          <div mt="6" grid="~ cols-1 sm:2 lg:3" gap="4 lg:6">
+          <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6">
             {relatedHotels.map((hotel) => (
-              <div key={hotel.id} flex="~ col" h="full">
+              <div key={hotel.id} className="flex h-full flex-col">
                 <div
                   mb="2"
                   px="1"
@@ -130,7 +126,7 @@ export default function RelatedHotels({
                 >
                   {getRelationLabel(hotel, currentHotel)}
                 </div>
-                <div flex="1">
+                <div className="flex-1">
                   <HotelCard hotel={hotel} />
                 </div>
               </div>
