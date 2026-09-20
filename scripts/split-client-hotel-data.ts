@@ -13,7 +13,7 @@ interface GeneratedHotelFile {
   hotels?: HotelRecord[];
 }
 
-const destinations = ["tokyo", "osaka", "kyoto", "fukuoka", "sapporo", "okinawa"] as const;
+const destinations = ["tokyo", "osaka", "fukuoka", "sapporo"] as const;
 const generatedDir = resolve(process.cwd(), "src/data/generated");
 const outputDir = resolve(generatedDir, "client-hotels");
 
