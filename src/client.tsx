@@ -8,6 +8,7 @@ import {
 } from "./data/clientPosts";
 import { loadClientHotels } from "./data/clientHotels";
 import type { Destination, Post } from "./types";
+import { Footer, Header } from "./components/layout";
 
 type PageModule = { default: (props: any) => ReactNode };
 
@@ -19,6 +20,10 @@ const pageImports: Record<string, () => Promise<PageModule>> = {
   hotelList: () => import("./pages/HotelList"),
   hotelDetail: () => import("./pages/HotelDetail"),
   guide: () => import("./pages/Guide"),
+  about: () => import("./pages/About"),
+  privacy: () => import("./pages/Privacy"),
+  affiliate: () => import("./pages/Affiliate"),
+  contact: () => import("./pages/Contact"),
 };
 
 function normalizePath(pathname: string): string {
@@ -121,7 +126,15 @@ async function start() {
   let pageKey: string;
   let pageProps: Record<string, unknown> = {};
 
-  if (path === "/") {
+  if (path === "/about") {
+    pageKey = "about";
+  } else if (path === "/privacy") {
+    pageKey = "privacy";
+  } else if (path === "/affiliate") {
+    pageKey = "affiliate";
+  } else if (path === "/contact") {
+    pageKey = "contact";
+  } else if (path === "/") {
     const [hotels, guides] = await Promise.all([
       loadClientHotels("tokyo"),
       loadClientGuidePosts(),
@@ -235,7 +248,9 @@ async function start() {
         text="ct-text"
         dark="bg-ct-dark-bg text-ct-dark-text"
       >
-        {pageElement}
+        <Header />
+        <main>{pageElement}</main>
+        <Footer />
       </div>
     </StrictMode>,
   );
