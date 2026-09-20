@@ -1,5 +1,115 @@
 {
   "destinationId": "japan-osaka",
-  "postCount": 0,
-  "posts": []
+  "postCount": 1,
+  "posts": [
+    {
+      "id": "hotel-post-myrealtrip-1431475",
+      "category": "hotel",
+      "title": "오사카의 매력을 느낄 수 있는 호텔한큐레스파이어오사카",
+      "slug": "호텔한큐레스파이어오사카-1431475",
+      "description": "오사카의 호텔한큐레스파이어오사카에 대한 블로그 포스트입니다.",
+      "destinationId": "japan-osaka",
+      "hotelId": "myrealtrip-1431475",
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "객실을 살펴볼게요"
+        },
+        {
+          "type": "image",
+          "image": {
+            "id": "myrealtrip-1431475-hero",
+            "src": "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2026/03/02/AH0Z/Kc1moGpnP2.jpg?width=720",
+            "alt": "호텔한큐레스파이어오사카 대표 이미지",
+            "source": "myrealtrip",
+            "type": "hero",
+            "hotelId": "myrealtrip-1431475",
+            "credit": "MyRealTrip Partner API",
+            "sourceUrl": "https://accommodation.myrealtrip.com/union/products/1431475?checkIn=2026-10-20&checkOut=2026-10-23&adultCount=2&childCount=0&childAges=",
+            "license": "MyRealTrip Partner API 이미지 URL — 환경설정에서 직접 표시를 허용함",
+            "rightsConfirmed": true
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔한큐레스파이어오사카는 다양한 객실 옵션을 제공하고 있는데요. 각 객실은 편안한 분위기로 꾸며져 있어 여행 중 휴식을 취하기에 좋을 것 같아요. 객실의 시설이나 인테리어는 사진으로 확인해 보시면 좋을 것 같아요."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "욕실과 화장실"
+        },
+        {
+          "type": "paragraph",
+          "text": "욕실은 깔끔하게 관리되고 있어요. 필요한 모든 기본 시설이 갖춰져 있어 편리하게 사용할 수 있을 것 같아요. 여행 중에는 깨끗한 욕실이 정말 중요하죠."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "호텔의 시설"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔한큐레스파이어오사카에는 다양한 시설이 마련되어 있어요. 여행 중 필요한 편의시설이 잘 갖춰져 있어서, 편리하게 이용할 수 있을 것 같아요."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "다이닝 옵션"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔 내에 레스토랑이 마련되어 있어, 다양한 다이닝 옵션을 즐길 수 있어요. 일본의 맛있는 음식을 경험할 수 있는 좋은 기회가 될 것 같아요."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "위치 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "호텔한큐레스파이어오사카는 오사카의 중심지에 위치해 있어요. 주변에 다양한 관광지가 있어서 여행 계획을 세우기에 좋은 위치인 것 같아요."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "숙박 정보"
+        },
+        {
+          "type": "paragraph",
+          "text": "체크인 및 체크아웃 시간은 제공된 정보에는 없지만, 예약 전에 확인해 두면 좋을 것 같아요. 숙박 조건에 대한 세부 정보도 미리 알아보면 유용할 것 같아요."
+        }
+      ],
+      "publishedAt": "2026-09-20T15:45:39.394Z",
+      "updatedAt": "2026-09-20T15:45:39.394Z",
+      "author": "CozyTrip",
+      "tags": [
+        "오사카",
+        "호텔",
+        "여행",
+        "숙소",
+        "일본"
+      ],
+      "introduction": "안녕하세요! 오늘은 일본 오사카에 위치한 호텔한큐레스파이어오사카에 대해 소개해 드릴게요. 이 호텔은 4성급으로, 오사카 여행의 출발점으로 좋을 것 같아요.",
+      "faq": [
+        {
+          "question": "호텔의 위치는 어디인가요?",
+          "answer": "호텔한큐레스파이어오사카는 오사카의 중심지에 위치해 있습니다."
+        },
+        {
+          "question": "체크인과 체크아웃 시간은 어떻게 되나요?",
+          "answer": "체크인 및 체크아웃 시간은 제공된 정보에는 없으니 예약 시 확인해 보세요."
+        },
+        {
+          "question": "호텔 내에 레스토랑이 있나요?",
+          "answer": "네, 호텔 내에 다양한 다이닝 옵션을 제공하는 레스토랑이 있습니다."
+        },
+        {
+          "question": "주변 관광지는 어떤 곳이 있나요?",
+          "answer": "호텔 주변에는 다양한 관광지가 있어 여행 계획을 세우기에 좋습니다."
+        }
+      ]
+    }
+  ]
 }

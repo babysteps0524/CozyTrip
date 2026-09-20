@@ -1,12 +1,66 @@
 {
-  "generatedAt": "2026-09-20T13:44:46.835Z",
+  "generatedAt": "2026-09-20T15:48:35.958Z",
   "source": "ai",
-  "plan": {},
-  "totalTarget": 0,
-  "totalSucceeded": 1,
-  "totalFailed": 0,
-  "totalPublished": 1,
-  "totalInventory": 606,
-  "totalRemaining": 605,
-  "destinations": []
+  "plan": {
+    "japan-tokyo": 3,
+    "japan-osaka": 3,
+    "japan-fukuoka": 3,
+    "japan-sapporo": 2
+  },
+  "totalTarget": 11,
+  "totalSucceeded": 9,
+  "totalFailed": 5,
+  "totalPublished": 10,
+  "totalInventory": 404,
+  "totalRemaining": 394,
+  "destinations": [
+    {
+      "destinationId": "japan-tokyo",
+      "target": 3,
+      "inventory": 101,
+      "publishedBefore": 1,
+      "attempted": 5,
+      "succeeded": 3,
+      "failed": 2,
+      "publishedAfter": 4,
+      "remaining": 97,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-osaka",
+      "target": 3,
+      "inventory": 101,
+      "publishedBefore": 0,
+      "attempted": 3,
+      "succeeded": 1,
+      "failed": 2,
+      "publishedAfter": 1,
+      "remaining": 100,
+      "status": "shortfall"
+    },
+    {
+      "destinationId": "japan-fukuoka",
+      "target": 3,
+      "inventory": 101,
+      "publishedBefore": 0,
+      "attempted": 4,
+      "succeeded": 3,
+      "failed": 1,
+      "publishedAfter": 3,
+      "remaining": 98,
+      "status": "target-reached"
+    },
+    {
+      "destinationId": "japan-sapporo",
+      "target": 2,
+      "inventory": 101,
+      "publishedBefore": 0,
+      "attempted": 2,
+      "succeeded": 2,
+      "failed": 0,
+      "publishedAfter": 2,
+      "remaining": 99,
+      "status": "target-reached"
+    }
+  ]
 }

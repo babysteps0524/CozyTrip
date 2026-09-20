@@ -1,138 +1,61 @@
 {
-  "generatedAt": "2026-09-20T15:38:37.527Z",
+  "generatedAt": "2026-09-20T15:48:35.956Z",
   "source": "ai",
   "failures": [
-    {
-      "hotelId": "myrealtrip-1126303",
-      "destinationId": "japan-tokyo",
-      "hotelName": "토부 호텔 레밴트 도쿄",
-      "failedAt": "2026-09-20T15:38:07.469Z",
-      "firstFailedAt": "2026-09-20T15:24:47.055Z",
-      "lastFailedAt": "2026-09-20T15:38:07.469Z",
-      "attemptCount": 3,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: body content is too short: 758 characters (minimum 1000)."
-    },
-    {
-      "hotelId": "myrealtrip-1640875",
-      "destinationId": "japan-tokyo",
-      "hotelName": "APA 호텔 & 리조트 롯폰기 에키히가시",
-      "failedAt": "2026-09-20T15:38:37.527Z",
-      "firstFailedAt": "2026-09-20T15:25:36.041Z",
-      "lastFailedAt": "2026-09-20T15:38:37.527Z",
-      "attemptCount": 2,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: body content is too short: 629 characters (minimum 1000)."
-    },
     {
       "hotelId": "myrealtrip-1178040",
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메",
-      "failedAt": "2026-09-20T15:26:12.555Z",
+      "failedAt": "2026-09-20T15:44:34.755Z",
       "firstFailedAt": "2026-09-20T15:26:12.555Z",
-      "lastFailedAt": "2026-09-20T15:26:12.555Z",
-      "attemptCount": 1,
+      "lastFailedAt": "2026-09-20T15:44:34.755Z",
+      "attemptCount": 2,
       "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
+      "reason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 26.436454783s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: Section 7 cannot assign a hero image. | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-3578504",
       "destinationId": "japan-osaka",
       "hotelName": "APA 호텔 & 리조트 오사카 난바 역앞 타워",
-      "failedAt": "2026-09-20T15:26:42.641Z",
+      "failedAt": "2026-09-20T15:45:03.086Z",
       "firstFailedAt": "2026-09-20T15:26:42.641Z",
-      "lastFailedAt": "2026-09-20T15:26:42.641Z",
-      "attemptCount": 1,
+      "lastFailedAt": "2026-09-20T15:45:03.086Z",
+      "attemptCount": 2,
       "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
+      "reason": "HotelPost validation failed: Factual content validation failed: \"접근성이좋\"과 같은 평가/접근성 표현은 원본 데이터의 직접 근거를 확인해야 합니다."
     },
     {
       "hotelId": "myrealtrip-5022564",
       "destinationId": "japan-osaka",
       "hotelName": "소테츠 그랜드 프레사 오사카-난바",
-      "failedAt": "2026-09-20T15:27:20.937Z",
+      "failedAt": "2026-09-20T15:45:28.236Z",
       "firstFailedAt": "2026-09-20T15:27:20.937Z",
-      "lastFailedAt": "2026-09-20T15:27:20.937Z",
-      "attemptCount": 1,
+      "lastFailedAt": "2026-09-20T15:45:28.236Z",
+      "attemptCount": 2,
       "status": "retrying",
-      "reason": "HotelPost validation failed: body content is too short: 864 characters (minimum 2500)."
-    },
-    {
-      "hotelId": "myrealtrip-1431475",
-      "destinationId": "japan-osaka",
-      "hotelName": "호텔한큐레스파이어오사카",
-      "failedAt": "2026-09-20T15:28:08.167Z",
-      "firstFailedAt": "2026-09-20T15:28:08.167Z",
-      "lastFailedAt": "2026-09-20T15:28:08.167Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
-    },
-    {
-      "hotelId": "myrealtrip-5709842",
-      "destinationId": "japan-fukuoka",
-      "hotelName": "컴포트 인 후쿠오카 텐진",
-      "failedAt": "2026-09-20T15:28:52.155Z",
-      "firstFailedAt": "2026-09-20T15:28:52.155Z",
-      "lastFailedAt": "2026-09-20T15:28:52.155Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
-    },
-    {
-      "hotelId": "myrealtrip-1460748",
-      "destinationId": "japan-fukuoka",
-      "hotelName": "더 베이직스 후쿠오카",
-      "failedAt": "2026-09-20T15:29:28.153Z",
-      "firstFailedAt": "2026-09-20T15:29:28.153Z",
-      "lastFailedAt": "2026-09-20T15:29:28.153Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
+      "reason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.804729514s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: Section 1 cannot assign a hero image. | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-1402095",
       "destinationId": "japan-fukuoka",
       "hotelName": "미쓰이 가든 호텔 후쿠오카 기온",
-      "failedAt": "2026-09-20T15:30:00.140Z",
+      "failedAt": "2026-09-20T15:46:47.222Z",
       "firstFailedAt": "2026-09-20T15:30:00.140Z",
-      "lastFailedAt": "2026-09-20T15:30:00.140Z",
-      "attemptCount": 1,
+      "lastFailedAt": "2026-09-20T15:46:47.222Z",
+      "attemptCount": 2,
       "status": "retrying",
-      "reason": "HotelPost validation failed: body content is too short: 1121 characters (minimum 2500)."
-    },
-    {
-      "hotelId": "myrealtrip-4185957",
-      "destinationId": "japan-sapporo",
-      "hotelName": "삿포로 호텔 바이 그랑벨",
-      "failedAt": "2026-09-20T15:30:34.482Z",
-      "firstFailedAt": "2026-09-20T15:30:34.482Z",
-      "lastFailedAt": "2026-09-20T15:30:34.482Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
-    },
-    {
-      "hotelId": "myrealtrip-1495357",
-      "destinationId": "japan-sapporo",
-      "hotelName": "호텔 포르자 삿포로 스테이션",
-      "failedAt": "2026-09-20T15:31:04.807Z",
-      "firstFailedAt": "2026-09-20T15:31:04.807Z",
-      "lastFailedAt": "2026-09-20T15:31:04.807Z",
-      "attemptCount": 1,
-      "status": "retrying",
-      "reason": "HotelPost validation failed: sections must contain 6-8 items."
+      "reason": "HotelPost validation failed: body content is too short: 486 characters (minimum 500)."
     },
     {
       "hotelId": "myrealtrip-1273819",
       "destinationId": "japan-tokyo",
       "hotelName": "렘 롯폰기",
-      "failedAt": "2026-09-20T15:31:36.641Z",
+      "failedAt": "2026-09-20T15:47:53.099Z",
       "firstFailedAt": "2026-09-20T15:31:36.641Z",
-      "lastFailedAt": "2026-09-20T15:31:36.641Z",
-      "attemptCount": 1,
+      "lastFailedAt": "2026-09-20T15:47:53.099Z",
+      "attemptCount": 2,
       "status": "retrying",
-      "reason": "HotelPost validation failed: body content is too short: 962 characters (minimum 2500)."
+      "reason": "HotelPost validation failed: body content is too short: 418 characters (minimum 500)."
     }
   ]
 }

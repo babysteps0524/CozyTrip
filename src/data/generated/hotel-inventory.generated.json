@@ -1,66 +1,48 @@
 {
-  "generatedAt": "2026-09-20T13:44:46.835Z",
+  "generatedAt": "2026-09-20T15:48:35.958Z",
   "source": "myrealtrip",
-  "totalInventory": 606,
-  "published": 1,
-  "pending": 605,
-  "retrying": 0,
+  "totalInventory": 404,
+  "published": 10,
+  "pending": 389,
+  "retrying": 5,
   "retryExhausted": 0,
-  "remaining": 605,
+  "remaining": 394,
   "destinations": [
     {
       "destinationId": "japan-fukuoka",
       "inventory": 101,
-      "published": 0,
-      "pending": 101,
-      "retrying": 0,
+      "published": 3,
+      "pending": 97,
+      "retrying": 1,
       "retryExhausted": 0,
-      "remaining": 101
-    },
-    {
-      "destinationId": "japan-kyoto",
-      "inventory": 101,
-      "published": 0,
-      "pending": 101,
-      "retrying": 0,
-      "retryExhausted": 0,
-      "remaining": 101
-    },
-    {
-      "destinationId": "japan-okinawa",
-      "inventory": 101,
-      "published": 0,
-      "pending": 101,
-      "retrying": 0,
-      "retryExhausted": 0,
-      "remaining": 101
+      "remaining": 98
     },
     {
       "destinationId": "japan-osaka",
       "inventory": 101,
-      "published": 0,
-      "pending": 101,
-      "retrying": 0,
+      "published": 1,
+      "pending": 98,
+      "retrying": 2,
       "retryExhausted": 0,
-      "remaining": 101
+      "remaining": 100
     },
     {
       "destinationId": "japan-sapporo",
       "inventory": 101,
-      "published": 0,
-      "pending": 101,
+      "published": 2,
+      "pending": 99,
       "retrying": 0,
       "retryExhausted": 0,
-      "remaining": 101
+      "remaining": 99
     },
     {
       "destinationId": "japan-tokyo",
       "inventory": 101,
-      "published": 1,
-      "pending": 100,
-      "retrying": 0,
+      "published": 4,
+      "pending": 95,
+      "retrying": 2,
       "retryExhausted": 0,
-      "remaining": 100
+      "remaining": 97
     }
   ],
   "hotels": [
@@ -77,7 +59,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "토부 호텔 레밴트 도쿄",
       "slug": "토부-호텔-레밴트-도쿄-1126303",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -85,7 +67,7 @@
       "destinationId": "japan-tokyo",
       "hotelName": "APA 호텔 & 리조트 롯폰기 에키히가시",
       "slug": "apa-호텔-리조트-롯폰기-에키히가시-1640875",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -93,23 +75,29 @@
       "destinationId": "japan-tokyo",
       "hotelName": "호텔 빌라 폰테인 그랜드 도쿄 - 시오도메",
       "slug": "호텔-빌라-폰테인-그랜드-도쿄-시오도메-1178040",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 2,
+      "firstFailedAt": "2026-09-20T15:26:12.555Z",
+      "lastFailedAt": "2026-09-20T15:44:34.755Z",
+      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 26.436454783s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: Section 7 cannot assign a hero image. | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-1273819",
       "destinationId": "japan-tokyo",
       "hotelName": "렘 롯폰기",
       "slug": "렘-롯폰기-1273819",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 2,
+      "firstFailedAt": "2026-09-20T15:31:36.641Z",
+      "lastFailedAt": "2026-09-20T15:47:53.099Z",
+      "lastFailureReason": "HotelPost validation failed: body content is too short: 418 characters (minimum 500)."
     },
     {
       "hotelId": "myrealtrip-1261232",
       "destinationId": "japan-tokyo",
       "hotelName": "소테츠 프레사 인 긴자 나나초메",
       "slug": "소테츠-프레사-인-긴자-나나초메-1261232",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -229,23 +217,29 @@
       "destinationId": "japan-osaka",
       "hotelName": "APA 호텔 & 리조트 오사카 난바 역앞 타워",
       "slug": "apa-호텔-리조트-오사카-난바-역앞-타워-3578504",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 2,
+      "firstFailedAt": "2026-09-20T15:26:42.641Z",
+      "lastFailedAt": "2026-09-20T15:45:03.086Z",
+      "lastFailureReason": "HotelPost validation failed: Factual content validation failed: \"접근성이좋\"과 같은 평가/접근성 표현은 원본 데이터의 직접 근거를 확인해야 합니다."
     },
     {
       "hotelId": "myrealtrip-5022564",
       "destinationId": "japan-osaka",
       "hotelName": "소테츠 그랜드 프레사 오사카-난바",
       "slug": "소테츠-그랜드-프레사-오사카-난바-5022564",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 2,
+      "firstFailedAt": "2026-09-20T15:27:20.937Z",
+      "lastFailedAt": "2026-09-20T15:45:28.236Z",
+      "lastFailureReason": "gemini: Gemini API 429: {\n  \"error\": {\n    \"code\": 429,\n    \"message\": \"You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 20, model: gemini-3.6-flash\\nPlease retry in 30.804729514s.\",\n    \"status\": \"RESOURCE_EXHAUSTED\",\n    \" | groq: Section 1 cannot assign a hero image. | openrouter: HotelPost must contain 4-6 FAQ items."
     },
     {
       "hotelId": "myrealtrip-1431475",
       "destinationId": "japan-osaka",
       "hotelName": "호텔한큐레스파이어오사카",
       "slug": "호텔한큐레스파이어오사카-1431475",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -385,171 +379,11 @@
       "attemptCount": 0
     },
     {
-      "hotelId": "myrealtrip-1652241",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 우메코지 카덴쇼",
-      "slug": "교토-우메코지-카덴쇼-1652241",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1490406",
-      "destinationId": "japan-kyoto",
-      "hotelName": "온야도 노노 교토시치조 내추럴 핫 스프링스",
-      "slug": "온야도-노노-교토시치조-내추럴-핫-스프링스-1490406",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1208147",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 엘시안트 교토 하치조구치",
-      "slug": "호텔-엘시안트-교토-하치조구치-1208147",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1200282",
-      "destinationId": "japan-kyoto",
-      "hotelName": "알몬트 호텔 교토",
-      "slug": "알몬트-호텔-교토-1200282",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1581864",
-      "destinationId": "japan-kyoto",
-      "hotelName": "리치몬드 호텔 프리미어 교토 시조",
-      "slug": "리치몬드-호텔-프리미어-교토-시조-1581864",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1571825",
-      "destinationId": "japan-kyoto",
-      "hotelName": "오크우드 호텔 오이케 교토",
-      "slug": "오크우드-호텔-오이케-교토-1571825",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1594516",
-      "destinationId": "japan-kyoto",
-      "hotelName": "소테츠 프레사 인 교토-키요미즈 고조",
-      "slug": "소테츠-프레사-인-교토-키요미즈-고조-1594516",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1566383",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 포르자 교토 시조 카와라마치",
-      "slug": "호텔-포르자-교토-시조-카와라마치-1566383",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1254251",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 그레이스리 교토 산조",
-      "slug": "호텔-그레이스리-교토-산조-1254251",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1229514",
-      "destinationId": "japan-kyoto",
-      "hotelName": "사쿠라 테라스 더 갤러리",
-      "slug": "사쿠라-테라스-더-갤러리-1229514",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1369404",
-      "destinationId": "japan-kyoto",
-      "hotelName": "게이오 프렐리아 호텔 교토 가라스마 고조",
-      "slug": "게이오-프렐리아-호텔-교토-가라스마-고조-1369404",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1447756",
-      "destinationId": "japan-kyoto",
-      "hotelName": "오리엔탈 호텔 교토 로쿠조",
-      "slug": "오리엔탈-호텔-교토-로쿠조-1447756",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1186098",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 홋케 클럽 교토",
-      "slug": "호텔-홋케-클럽-교토-1186098",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1181987",
-      "destinationId": "japan-kyoto",
-      "hotelName": "스마일 호텔 교토 시조",
-      "slug": "스마일-호텔-교토-시조-1181987",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1409068",
-      "destinationId": "japan-kyoto",
-      "hotelName": "카덴쇼, 아라시야마 온센, 교토 - 교리츠 리조트",
-      "slug": "카덴쇼-아라시야마-온센-교토-교리츠-리조트-1409068",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1556707",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 앤드룸스 교토 시치조",
-      "slug": "호텔-앤드룸스-교토-시치조-1556707",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1440279",
-      "destinationId": "japan-kyoto",
-      "hotelName": "리치몬드 호텔 프리미어 교토 에키마에",
-      "slug": "리치몬드-호텔-프리미어-교토-에키마에-1440279",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3577397",
-      "destinationId": "japan-kyoto",
-      "hotelName": "알라 호텔 교토",
-      "slug": "알라-호텔-교토-3577397",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3648942",
-      "destinationId": "japan-kyoto",
-      "hotelName": "더블트리 바이 힐튼 교토 히가시야마",
-      "slug": "더블트리-바이-힐튼-교토-히가시야마-3648942",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1563593",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 센트럴 인",
-      "slug": "교토-센트럴-인-1563593",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
       "hotelId": "myrealtrip-5709842",
       "destinationId": "japan-fukuoka",
       "hotelName": "컴포트 인 후쿠오카 텐진",
       "slug": "컴포트-인-후쿠오카-텐진-5709842",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -557,7 +391,7 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "더 베이직스 후쿠오카",
       "slug": "더-베이직스-후쿠오카-1460748",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -565,15 +399,18 @@
       "destinationId": "japan-fukuoka",
       "hotelName": "미쓰이 가든 호텔 후쿠오카 기온",
       "slug": "미쓰이-가든-호텔-후쿠오카-기온-1402095",
-      "status": "pending",
-      "attemptCount": 0
+      "status": "retrying",
+      "attemptCount": 2,
+      "firstFailedAt": "2026-09-20T15:30:00.140Z",
+      "lastFailedAt": "2026-09-20T15:46:47.222Z",
+      "lastFailureReason": "HotelPost validation failed: body content is too short: 486 characters (minimum 500)."
     },
     {
       "hotelId": "myrealtrip-1188575",
       "destinationId": "japan-fukuoka",
       "hotelName": "호텔 마이스테이스 후쿠오카 텐진",
       "slug": "호텔-마이스테이스-후쿠오카-텐진-1188575",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -709,7 +546,7 @@
       "destinationId": "japan-sapporo",
       "hotelName": "삿포로 호텔 바이 그랑벨",
       "slug": "삿포로-호텔-바이-그랑벨-4185957",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -717,7 +554,7 @@
       "destinationId": "japan-sapporo",
       "hotelName": "호텔 포르자 삿포로 스테이션",
       "slug": "호텔-포르자-삿포로-스테이션-1495357",
-      "status": "pending",
+      "status": "published",
       "attemptCount": 0
     },
     {
@@ -861,166 +698,6 @@
       "destinationId": "japan-sapporo",
       "hotelName": "게이오 플라자 호텔 삿포로",
       "slug": "게이오-플라자-호텔-삿포로-6215696",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1499059",
-      "destinationId": "japan-okinawa",
-      "hotelName": "레쿠 오키나와 자탄 스파 & 리조트",
-      "slug": "레쿠-오키나와-자탄-스파-리조트-1499059",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6196684",
-      "destinationId": "japan-okinawa",
-      "hotelName": "베셀 호텔 캄파나 오키나와",
-      "slug": "베셀-호텔-캄파나-오키나와-6196684",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6178095",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 JAL 시티 나하",
-      "slug": "호텔-jal-시티-나하-6178095",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206151",
-      "destinationId": "japan-okinawa",
-      "hotelName": "하얏트 리젠시 세라가키 아일랜드 오키나와",
-      "slug": "하얏트-리젠시-세라가키-아일랜드-오키나와-6206151",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6183767",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오리엔탈 호텔 오키나와 리조트 & 스파",
-      "slug": "오리엔탈-호텔-오키나와-리조트-스파-6183767",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4479180",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 네스트 나하",
-      "slug": "더-네스트-나하-4479180",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206176",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 부세나 테라스",
-      "slug": "더-부세나-테라스-6206176",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1569706",
-      "destinationId": "japan-okinawa",
-      "hotelName": "네스트 호텔 나하 쿠모지",
-      "slug": "네스트-호텔-나하-쿠모지-1569706",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6203441",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 컬렉티브",
-      "slug": "호텔-컬렉티브-6203441",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6215679",
-      "destinationId": "japan-okinawa",
-      "hotelName": "류큐 호텔&리조트 나시로 비치",
-      "slug": "류큐-호텔-리조트-나시로-비치-6215679",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1107701",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오키나와 나하나 호텔 & 스파",
-      "slug": "오키나와-나하나-호텔-스파-1107701",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1505018",
-      "destinationId": "japan-okinawa",
-      "hotelName": "힐튼 오키나와 세소코 리조트",
-      "slug": "힐튼-오키나와-세소코-리조트-1505018",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1474186",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 스트라타 나하",
-      "slug": "호텔-스트라타-나하-1474186",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1245403",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 그레이서리 나하",
-      "slug": "호텔-그레이서리-나하-1245403",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6199109",
-      "destinationId": "japan-okinawa",
-      "hotelName": "라 젠트 호텔 오키나와 차탄",
-      "slug": "라-젠트-호텔-오키나와-차탄-6199109",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1277534",
-      "destinationId": "japan-okinawa",
-      "hotelName": "하얏트 리젠시 나하, 오키나와",
-      "slug": "하얏트-리젠시-나하-오키나와-1277534",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206059",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 마하이나 웰니스 리조트 오키나와",
-      "slug": "호텔-마하이나-웰니스-리조트-오키나와-6206059",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6215659",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오끼나와 프린스 호텔 오션 뷰 기노완",
-      "slug": "오끼나와-프린스-호텔-오션-뷰-기노완-6215659",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6215627",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 아쿠아 시타 나하",
-      "slug": "호텔-아쿠아-시타-나하-6215627",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6196600",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 몬토레 오키나와 스파 & 리조트",
-      "slug": "호텔-몬토레-오키나와-스파-리조트-6196600",
       "status": "pending",
       "attemptCount": 0
     },
@@ -2305,646 +1982,6 @@
       "attemptCount": 0
     },
     {
-      "hotelId": "myrealtrip-1537604",
-      "destinationId": "japan-kyoto",
-      "hotelName": "미츠이 가든 호텔 교토 카와라마치 조쿄지",
-      "slug": "미츠이-가든-호텔-교토-카와라마치-조쿄지-1537604",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1513682",
-      "destinationId": "japan-kyoto",
-      "hotelName": "머큐어 교토 스테이션",
-      "slug": "머큐어-교토-스테이션-1513682",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1113469",
-      "destinationId": "japan-kyoto",
-      "hotelName": "미야코 호텔 교토 하치조",
-      "slug": "미야코-호텔-교토-하치조-1113469",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1504598",
-      "destinationId": "japan-kyoto",
-      "hotelName": "에이스 호텔 교토",
-      "slug": "에이스-호텔-교토-1504598",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1447922",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 아마넥 교토 가와라마치 고조",
-      "slug": "호텔-아마넥-교토-가와라마치-고조-1447922",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1555679",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 더 엠스 교토",
-      "slug": "호텔-더-엠스-교토-1555679",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1503457",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 에미온 교토",
-      "slug": "호텔-에미온-교토-1503457",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1468476",
-      "destinationId": "japan-kyoto",
-      "hotelName": "APA 호텔 교토 에키히가시",
-      "slug": "apa-호텔-교토-에키히가시-1468476",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1234480",
-      "destinationId": "japan-kyoto",
-      "hotelName": "베셀 호텔 캄파나 교토 고조",
-      "slug": "베셀-호텔-캄파나-교토-고조-1234480",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1121997",
-      "destinationId": "japan-kyoto",
-      "hotelName": "리가 로얄 호텔 교토",
-      "slug": "리가-로얄-호텔-교토-1121997",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1181728",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 케이한 교토 그란데",
-      "slug": "호텔-케이한-교토-그란데-1181728",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1409663",
-      "destinationId": "japan-kyoto",
-      "hotelName": "JR 웨스트 그룹 비아 인 프라임 교토역 하치조구치",
-      "slug": "jr-웨스트-그룹-비아-인-프라임-교토역-하치조구치-1409663",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1279161",
-      "destinationId": "japan-kyoto",
-      "hotelName": "솔라리아 니시테츠 호텔 교토 프리미어",
-      "slug": "솔라리아-니시테츠-호텔-교토-프리미어-1279161",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1357118",
-      "destinationId": "japan-kyoto",
-      "hotelName": "유노야도 쇼에이",
-      "slug": "유노야도-쇼에이-1357118",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1391789",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 비스치오 교코 바이 그란비아",
-      "slug": "호텔-비스치오-교코-바이-그란비아-1391789",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4691575",
-      "destinationId": "japan-kyoto",
-      "hotelName": "유겐 교토 시조",
-      "slug": "유겐-교토-시조-4691575",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1185184",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 칸라 교토",
-      "slug": "호텔-칸라-교토-1185184",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3585686",
-      "destinationId": "japan-kyoto",
-      "hotelName": "트래블로지 교토 시조 카와라마치",
-      "slug": "트래블로지-교토-시조-카와라마치-3585686",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1237188",
-      "destinationId": "japan-kyoto",
-      "hotelName": "피스 호스텔 산조",
-      "slug": "피스-호스텔-산조-1237188",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3587284",
-      "destinationId": "japan-kyoto",
-      "hotelName": "HOTEL ARU KYOTO",
-      "slug": "hotel-aru-kyoto-3587284",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1189495",
-      "destinationId": "japan-kyoto",
-      "hotelName": "기온 료칸 가라쿠",
-      "slug": "기온-료칸-가라쿠-1189495",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1364004",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 오하라 료칸 세료",
-      "slug": "교토-오하라-료칸-세료-1364004",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1468601",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 게이한 교토에키 미나미",
-      "slug": "호텔-게이한-교토에키-미나미-1468601",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1532764",
-      "destinationId": "japan-kyoto",
-      "hotelName": "뮤즈 교토 시조 카와라마치 메이테츠 호텔",
-      "slug": "뮤즈-교토-시조-카와라마치-메이테츠-호텔-1532764",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1277418",
-      "destinationId": "japan-kyoto",
-      "hotelName": "소테츠 프레사 인 교토 시조카라스마",
-      "slug": "소테츠-프레사-인-교토-시조카라스마-1277418",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1443828",
-      "destinationId": "japan-kyoto",
-      "hotelName": "시즈테츠 호텔 프레지오 교토 시조",
-      "slug": "시즈테츠-호텔-프레지오-교토-시조-1443828",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1103124",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 도큐 호텔",
-      "slug": "교토-도큐-호텔-1103124",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1608345",
-      "destinationId": "japan-kyoto",
-      "hotelName": "소라 니와 테라스 교토",
-      "slug": "소라-니와-테라스-교토-1608345",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3578877",
-      "destinationId": "japan-kyoto",
-      "hotelName": "로이저 호텔 클래식 가든 교토 산조",
-      "slug": "로이저-호텔-클래식-가든-교토-산조-3578877",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3594757",
-      "destinationId": "japan-kyoto",
-      "hotelName": "반얀 트리 히가시야마 교토",
-      "slug": "반얀-트리-히가시야마-교토-3594757",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1298271",
-      "destinationId": "japan-kyoto",
-      "hotelName": "더 밀레니얼스 교토",
-      "slug": "더-밀레니얼스-교토-1298271",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4011374",
-      "destinationId": "japan-kyoto",
-      "hotelName": "Saka Hotel Kyoto",
-      "slug": "saka-hotel-kyoto-4011374",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1152856",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 몬토레 교토",
-      "slug": "호텔-몬토레-교토-1152856",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1207859",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 타워 호텔 아넥스",
-      "slug": "교토-타워-호텔-아넥스-1207859",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4051708",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교마치야 료칸 사쿠라 - 우루시테이",
-      "slug": "교마치야-료칸-사쿠라-우루시테이-4051708",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1545942",
-      "destinationId": "japan-kyoto",
-      "hotelName": "라쿠텐 스테이 어반 시조 테라마치",
-      "slug": "라쿠텐-스테이-어반-시조-테라마치-1545942",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1204603",
-      "destinationId": "japan-kyoto",
-      "hotelName": "료칸 쿄우노야도 카기헤이",
-      "slug": "료칸-쿄우노야도-카기헤이-1204603",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1554386",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 토우 니시노토인 교토",
-      "slug": "호텔-토우-니시노토인-교토-1554386",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1191109",
-      "destinationId": "japan-kyoto",
-      "hotelName": "더 로얄 파크 호텔 교토 산조",
-      "slug": "더-로얄-파크-호텔-교토-산조-1191109",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1258889",
-      "destinationId": "japan-kyoto",
-      "hotelName": "다이와 로이넷 호텔 교토 에키마에 프리미어",
-      "slug": "다이와-로이넷-호텔-교토-에키마에-프리미어-1258889",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1498522",
-      "destinationId": "japan-kyoto",
-      "hotelName": "시퀀스 교토 고조",
-      "slug": "시퀀스-교토-고조-1498522",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1185740",
-      "destinationId": "japan-kyoto",
-      "hotelName": "APA 호텔 교토 에키마에",
-      "slug": "apa-호텔-교토-에키마에-1185740",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1564435",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 리브맥스 교토 니조조 니시",
-      "slug": "호텔-리브맥스-교토-니조조-니시-1564435",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1208270",
-      "destinationId": "japan-kyoto",
-      "hotelName": "이비스 스타일스 교토 스테이션",
-      "slug": "이비스-스타일스-교토-스테이션-1208270",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1345487",
-      "destinationId": "japan-kyoto",
-      "hotelName": "테라스 기요미즈 교토",
-      "slug": "테라스-기요미즈-교토-1345487",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4876650",
-      "destinationId": "japan-kyoto",
-      "hotelName": "리브맥스 호스텔 교토 에키마에",
-      "slug": "리브맥스-호스텔-교토-에키마에-4876650",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1659638",
-      "destinationId": "japan-kyoto",
-      "hotelName": "West Japan Kyoto Kiyomizu",
-      "slug": "west-japan-kyoto-kiyomizu-1659638",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3676952",
-      "destinationId": "japan-kyoto",
-      "hotelName": "아사이 교토 시조 호텔",
-      "slug": "아사이-교토-시조-호텔-3676952",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1374486",
-      "destinationId": "japan-kyoto",
-      "hotelName": "도큐스테이 교토 사카이자 시조-가와라마치",
-      "slug": "도큐스테이-교토-사카이자-시조-가와라마치-1374486",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1186260",
-      "destinationId": "japan-kyoto",
-      "hotelName": "APA 호텔 교토 에키 호리카와도리",
-      "slug": "apa-호텔-교토-에키-호리카와도리-1186260",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1506928",
-      "destinationId": "japan-kyoto",
-      "hotelName": "EN 호텔 교토",
-      "slug": "en-호텔-교토-1506928",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1279431",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 M’s 플러스 시조 - 오미야",
-      "slug": "호텔-m-s-플러스-시조-오미야-1279431",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1475364",
-      "destinationId": "japan-kyoto",
-      "hotelName": "M’s 호텔, 교토역, 카스가",
-      "slug": "m-s-호텔-교토역-카스가-1475364",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1325196",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 게이한 교토 하치조구치",
-      "slug": "호텔-게이한-교토-하치조구치-1325196",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1210804",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 타워 호텔",
-      "slug": "교토-타워-호텔-1210804",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-2982305",
-      "destinationId": "japan-kyoto",
-      "hotelName": "힐튼 교토",
-      "slug": "힐튼-교토-2982305",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1190115",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 비스타 프레미오 교토 가와라마치 스트리트",
-      "slug": "호텔-비스타-프레미오-교토-가와라마치-스트리트-1190115",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1476489",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 라이브맥스 교토 데라마치도리",
-      "slug": "호텔-라이브맥스-교토-데라마치도리-1476489",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1183436",
-      "destinationId": "japan-kyoto",
-      "hotelName": "세이코로 료칸",
-      "slug": "세이코로-료칸-1183436",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1293501",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 그랑벨 호텔",
-      "slug": "교토-그랑벨-호텔-1293501",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1336516",
-      "destinationId": "japan-kyoto",
-      "hotelName": "더 원파이브 교토 시조",
-      "slug": "더-원파이브-교토-시조-1336516",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1550557",
-      "destinationId": "japan-kyoto",
-      "hotelName": "20 피스",
-      "slug": "20-피스-1550557",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1184287",
-      "destinationId": "japan-kyoto",
-      "hotelName": "아파 호텔 교토 기온 엑셀런트",
-      "slug": "아파-호텔-교토-기온-엑셀런트-1184287",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1511679",
-      "destinationId": "japan-kyoto",
-      "hotelName": "헨나 호텔 프리미어 교토 고조 가라스마",
-      "slug": "헨나-호텔-프리미어-교토-고조-가라스마-1511679",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1483049",
-      "destinationId": "japan-kyoto",
-      "hotelName": "라쿠텐 스테이 어반 시조 가와라마치",
-      "slug": "라쿠텐-스테이-어반-시조-가와라마치-1483049",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3587667",
-      "destinationId": "japan-kyoto",
-      "hotelName": "Minn Kiyomizu Gojo",
-      "slug": "minn-kiyomizu-gojo-3587667",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3587587",
-      "destinationId": "japan-kyoto",
-      "hotelName": "와카 교토 카와라마치",
-      "slug": "와카-교토-카와라마치-3587587",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1264815",
-      "destinationId": "japan-kyoto",
-      "hotelName": "히푸미 료칸",
-      "slug": "히푸미-료칸-1264815",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1566960",
-      "destinationId": "japan-kyoto",
-      "hotelName": "칸데오 호텔 교토 가라스마 롯카쿠",
-      "slug": "칸데오-호텔-교토-가라스마-롯카쿠-1566960",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1122299",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 라이브맥스 교토 고조",
-      "slug": "호텔-라이브맥스-교토-고조-1122299",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1204446",
-      "destinationId": "japan-kyoto",
-      "hotelName": "피스 호스텔 교토",
-      "slug": "피스-호스텔-교토-1204446",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-5871918",
-      "destinationId": "japan-kyoto",
-      "hotelName": "소테츠 프레사 인 교토 하치조구치",
-      "slug": "소테츠-프레사-인-교토-하치조구치-5871918",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1204564",
-      "destinationId": "japan-kyoto",
-      "hotelName": "교토 센추리 호텔",
-      "slug": "교토-센추리-호텔-1204564",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1357113",
-      "destinationId": "japan-kyoto",
-      "hotelName": "미마루 교토 신마치 산조",
-      "slug": "미마루-교토-신마치-산조-1357113",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-2791529",
-      "destinationId": "japan-kyoto",
-      "hotelName": "북 호텔 교토 쿠조",
-      "slug": "북-호텔-교토-쿠조-2791529",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1568964",
-      "destinationId": "japan-kyoto",
-      "hotelName": "\"BON 교토 Kiyomizu\"",
-      "slug": "bon-교토-kiyomizu-1568964",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4450526",
-      "destinationId": "japan-kyoto",
-      "hotelName": "민 카라스마 고조 교토역",
-      "slug": "민-카라스마-고조-교토역-4450526",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-5632807",
-      "destinationId": "japan-kyoto",
-      "hotelName": "이비스 스타일스 교토 시조",
-      "slug": "이비스-스타일스-교토-시조-5632807",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-7128788",
-      "destinationId": "japan-kyoto",
-      "hotelName": "더 챕터 교토, 트리뷰트 포트폴리오 호텔 바이 메리어트",
-      "slug": "더-챕터-교토-트리뷰트-포트폴리오-호텔-바이-메리어트-7128788",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3664174",
-      "destinationId": "japan-kyoto",
-      "hotelName": "미마루 스위트, 교토 센트럴",
-      "slug": "미마루-스위트-교토-센트럴-3664174",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
       "hotelId": "myrealtrip-4133933",
       "destinationId": "japan-fukuoka",
       "hotelName": " 서튼 호텔 하카타 시티",
@@ -4225,646 +3262,6 @@
       "attemptCount": 0
     },
     {
-      "hotelId": "myrealtrip-1215613",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오리온 호텔 모토부 리조트 & 스파",
-      "slug": "오리온-호텔-모토부-리조트-스파-1215613",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1251483",
-      "destinationId": "japan-okinawa",
-      "hotelName": "알몬트 호텔 나하 켄초마에",
-      "slug": "알몬트-호텔-나하-켄초마에-1251483",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1298670",
-      "destinationId": "japan-okinawa",
-      "hotelName": "JR KYUSHU HOTEL Blossom Naha",
-      "slug": "jr-kyushu-hotel-blossom-naha-1298670",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6215713",
-      "destinationId": "japan-okinawa",
-      "hotelName": "프린스 스마트 인 나하",
-      "slug": "프린스-스마트-인-나하-6215713",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206911",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오키나와 카리유시 비치 리조트 오션 스파",
-      "slug": "오키나와-카리유시-비치-리조트-오션-스파-6206911",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1194964",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 팜 로얄 리조트 국제거리",
-      "slug": "호텔-팜-로얄-리조트-국제거리-1194964",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206465",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 비치 타워 오키나와",
-      "slug": "더-비치-타워-오키나와-6206465",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206598",
-      "destinationId": "japan-okinawa",
-      "hotelName": "그랜드 머큐어 오키나와 케이프 잔파 리조트",
-      "slug": "그랜드-머큐어-오키나와-케이프-잔파-리조트-6206598",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206141",
-      "destinationId": "japan-okinawa",
-      "hotelName": "할레쿨라니 오키나와",
-      "slug": "할레쿨라니-오키나와-6206141",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6196216",
-      "destinationId": "japan-okinawa",
-      "hotelName": "라젠트 호텔 오키나와 나하",
-      "slug": "라젠트-호텔-오키나와-나하-6196216",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6205925",
-      "destinationId": "japan-okinawa",
-      "hotelName": "리잔 시 파크 호텔 단차 베이",
-      "slug": "리잔-시-파크-호텔-단차-베이-6205925",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6199026",
-      "destinationId": "japan-okinawa",
-      "hotelName": "노보텔 오키나와 나하",
-      "slug": "노보텔-오키나와-나하-6199026",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1213397",
-      "destinationId": "japan-okinawa",
-      "hotelName": "힐튼 오키나와 차탄 리조트",
-      "slug": "힐튼-오키나와-차탄-리조트-1213397",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206021",
-      "destinationId": "japan-okinawa",
-      "hotelName": "라구나 가든 호텔",
-      "slug": "라구나-가든-호텔-6206021",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1591472",
-      "destinationId": "japan-okinawa",
-      "hotelName": "네스트 호텔 나하니시",
-      "slug": "네스트-호텔-나하니시-1591472",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6203741",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 닛코 알리빌라",
-      "slug": "호텔-닛코-알리빌라-6203741",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1169786",
-      "destinationId": "japan-okinawa",
-      "hotelName": "루와지르 호텔 나하",
-      "slug": "루와지르-호텔-나하-1169786",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1478556",
-      "destinationId": "japan-okinawa",
-      "hotelName": "아쿠아 팰리스 자탄 바이 콜디오 프리미엄",
-      "slug": "아쿠아-팰리스-자탄-바이-콜디오-프리미엄-1478556",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-5816262",
-      "destinationId": "japan-okinawa",
-      "hotelName": "리가 로열 리조트 오키나와 차탄",
-      "slug": "리가-로열-리조트-오키나와-차탄-5816262",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1536394",
-      "destinationId": "japan-okinawa",
-      "hotelName": "히요리 오션 리조트 오키나와",
-      "slug": "히요리-오션-리조트-오키나와-1536394",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6207208",
-      "destinationId": "japan-okinawa",
-      "hotelName": "알라 마하이나 콘도 호텔",
-      "slug": "알라-마하이나-콘도-호텔-6207208",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1211831",
-      "destinationId": "japan-okinawa",
-      "hotelName": "팰리스 인 문 비치",
-      "slug": "팰리스-인-문-비치-1211831",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1460073",
-      "destinationId": "japan-okinawa",
-      "hotelName": "도큐스테이 오키나와 나하",
-      "slug": "도큐스테이-오키나와-나하-1460073",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1107731",
-      "destinationId": "japan-okinawa",
-      "hotelName": "ANA 인터컨티넨탈 만자 비치 리조트 바이 IHG",
-      "slug": "ana-인터컨티넨탈-만자-비치-리조트-바이-ihg-1107731",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1449283",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오키나와 하버뷰 호텔",
-      "slug": "오키나와-하버뷰-호텔-1449283",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1219297",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 아베스트 나하 코쿠사이도리",
-      "slug": "호텔-아베스트-나하-코쿠사이도리-1219297",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4089334",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Royal Hotel OKINAWA ZANPAMISAKI",
-      "slug": "royal-hotel-okinawa-zanpamisaki-4089334",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1321298",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더블트리 바이 힐튼 오키나와 자탄 리조트",
-      "slug": "더블트리-바이-힐튼-오키나와-자탄-리조트-1321298",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3693474",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Hotel Grand Consort Naha",
-      "slug": "hotel-grand-consort-naha-3693474",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1477410",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호시노야 오키나와",
-      "slug": "호시노야-오키나와-1477410",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6207107",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오키나와 그랜드 메르 리조트",
-      "slug": "오키나와-그랜드-메르-리조트-6207107",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6207029",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오쿠마 프라이빗 비치 & 리조트",
-      "slug": "오쿠마-프라이빗-비치-리조트-6207029",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1249348",
-      "destinationId": "japan-okinawa",
-      "hotelName": "류큐 온센 세나가지마 호텔",
-      "slug": "류큐-온센-세나가지마-호텔-1249348",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1316277",
-      "destinationId": "japan-okinawa",
-      "hotelName": "티사지 호텔 나하",
-      "slug": "티사지-호텔-나하-1316277",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3586184",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Southwest Grand Hotel",
-      "slug": "southwest-grand-hotel-3586184",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1183011",
-      "destinationId": "japan-okinawa",
-      "hotelName": "류큐 오리온 호텔, 나하 국제거리",
-      "slug": "류큐-오리온-호텔-나하-국제거리-1183011",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3690287",
-      "destinationId": "japan-okinawa",
-      "hotelName": "풀 빌라 야가지 아일랜드 바이 콜디오 프리미엄",
-      "slug": "풀-빌라-야가지-아일랜드-바이-콜디오-프리미엄-3690287",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1340796",
-      "destinationId": "japan-okinawa",
-      "hotelName": "선셋 비치 호텔",
-      "slug": "선셋-비치-호텔-1340796",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1442634",
-      "destinationId": "japan-okinawa",
-      "hotelName": "선셋 리조트 캄푸",
-      "slug": "선셋-리조트-캄푸-1442634",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1341257",
-      "destinationId": "japan-okinawa",
-      "hotelName": "와이즈 캐빈 & 호텔 나하 코쿠사이 도리",
-      "slug": "와이즈-캐빈-호텔-나하-코쿠사이-도리-1341257",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1203208",
-      "destinationId": "japan-okinawa",
-      "hotelName": "리가 로열 그랜 오키나와",
-      "slug": "리가-로열-그랜-오키나와-1203208",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6096842",
-      "destinationId": "japan-okinawa",
-      "hotelName": "THE SENAGAJIMA STORY LINE",
-      "slug": "the-senagajima-story-line-6096842",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206127",
-      "destinationId": "japan-okinawa",
-      "hotelName": "베스트 웨스턴 오키나와 코우키 비치",
-      "slug": "베스트-웨스턴-오키나와-코우키-비치-6206127",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4361093",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Chatan Beach Side Condominium Hotel Monpa",
-      "slug": "chatan-beach-side-condominium-hotel-monpa-4361093",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1552331",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Hewitt Resort Naha",
-      "slug": "hewitt-resort-naha-1552331",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1171753",
-      "destinationId": "japan-okinawa",
-      "hotelName": "카후 리조트 후차쿠 콘도 호텔",
-      "slug": "카후-리조트-후차쿠-콘도-호텔-1171753",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1198409",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 문 비치 뮤지엄 리조트",
-      "slug": "더-문-비치-뮤지엄-리조트-1198409",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1210282",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 유가후 인 오키나와",
-      "slug": "호텔-유가후-인-오키나와-1210282",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1626852",
-      "destinationId": "japan-okinawa",
-      "hotelName": "BEB5 오키나와 세라가키 바이 호시노 리조트",
-      "slug": "beb5-오키나와-세라가키-바이-호시노-리조트-1626852",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6215621",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 앤드룸스 나하 포트",
-      "slug": "호텔-앤드룸스-나하-포트-6215621",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6205893",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 로열 파크 호텔 아이코닉 나하",
-      "slug": "더-로열-파크-호텔-아이코닉-나하-6205893",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1667623",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 알라 쿠주 오키나와",
-      "slug": "호텔-알라-쿠주-오키나와-1667623",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1340472",
-      "destinationId": "japan-okinawa",
-      "hotelName": "코코셔스 몬파",
-      "slug": "코코셔스-몬파-1340472",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6205908",
-      "destinationId": "japan-okinawa",
-      "hotelName": "REF Okinawa Arena by VESSEL HOTELS",
-      "slug": "ref-okinawa-arena-by-vessel-hotels-6205908",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1169077",
-      "destinationId": "japan-okinawa",
-      "hotelName": "오키나와 카리유시 리조트 엑시즈 온나",
-      "slug": "오키나와-카리유시-리조트-엑시즈-온나-1169077",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1161238",
-      "destinationId": "japan-okinawa",
-      "hotelName": "컴포트 호텔 나하 프레펙추얼 오피스",
-      "slug": "컴포트-호텔-나하-프레펙추얼-오피스-1161238",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-3683601",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Private Condo Kourijima by Coldio Smart Resort",
-      "slug": "private-condo-kourijima-by-coldio-smart-resort-3683601",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-5735331",
-      "destinationId": "japan-okinawa",
-      "hotelName": "토요코인 오키나와 나하 아사히바시 에키마에",
-      "slug": "토요코인-오키나와-나하-아사히바시-에키마에-5735331",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1174382",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 나하 테라스",
-      "slug": "더-나하-테라스-1174382",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1295830",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 아자트  나하",
-      "slug": "호텔-아자트-나하-1295830",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-4081094",
-      "destinationId": "japan-okinawa",
-      "hotelName": "Loisir Spa Tower Naha",
-      "slug": "loisir-spa-tower-naha-4081094",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6206158",
-      "destinationId": "japan-okinawa",
-      "hotelName": "쉐라톤 오키나와 선마리나 리조트",
-      "slug": "쉐라톤-오키나와-선마리나-리조트-6206158",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1181933",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 아트 스테이 나하 국제거리",
-      "slug": "호텔-아트-스테이-나하-국제거리-1181933",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1472967",
-      "destinationId": "japan-okinawa",
-      "hotelName": "라핀 미하마 레지던스 호텔",
-      "slug": "라핀-미하마-레지던스-호텔-1472967",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6338987",
-      "destinationId": "japan-okinawa",
-      "hotelName": "니시테츠 리조트 인 나하",
-      "slug": "니시테츠-리조트-인-나하-6338987",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1578228",
-      "destinationId": "japan-okinawa",
-      "hotelName": "피닉스 파크 호텔",
-      "slug": "피닉스-파크-호텔-1578228",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-6215566",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 레솔 트리니티 나하",
-      "slug": "호텔-레솔-트리니티-나하-6215566",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1196267",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더 테라스 클럽 웰니스 탈라소 앳 부세나",
-      "slug": "더-테라스-클럽-웰니스-탈라소-앳-부세나-1196267",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1203232",
-      "destinationId": "japan-okinawa",
-      "hotelName": "타타미 노 야도 차탄 미하마",
-      "slug": "타타미-노-야도-차탄-미하마-1203232",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1195243",
-      "destinationId": "japan-okinawa",
-      "hotelName": "머큐어 오키나와 나하",
-      "slug": "머큐어-오키나와-나하-1195243",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1165514",
-      "destinationId": "japan-okinawa",
-      "hotelName": "로열 뷰 호텔 츄라우미 - 츄라우미와 가장 가까움",
-      "slug": "로열-뷰-호텔-츄라우미-츄라우미와-가장-가까움-1165514",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1851316",
-      "destinationId": "japan-okinawa",
-      "hotelName": "리에타 나카야마",
-      "slug": "리에타-나카야마-1851316",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1220735",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 나하 시티 -국제 거리-",
-      "slug": "호텔-나하-시티-국제-거리-1220735",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1286468",
-      "destinationId": "japan-okinawa",
-      "hotelName": "우미노 료테이 오키나와 나카마소우",
-      "slug": "우미노-료테이-오키나와-나카마소우-1286468",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1514088",
-      "destinationId": "japan-okinawa",
-      "hotelName": "카리유시 LCH 리조트",
-      "slug": "카리유시-lch-리조트-1514088",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1290767",
-      "destinationId": "japan-okinawa",
-      "hotelName": "풀 빌라 이마도마리 바이 콜디오 프리미엄",
-      "slug": "풀-빌라-이마도마리-바이-콜디오-프리미엄-1290767",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1262754",
-      "destinationId": "japan-okinawa",
-      "hotelName": "스마일 호텔 나하 시티 리조트",
-      "slug": "스마일-호텔-나하-시티-리조트-1262754",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1108217",
-      "destinationId": "japan-okinawa",
-      "hotelName": "더블트리 바이 힐튼 나하 슈리 캐슬",
-      "slug": "더블트리-바이-힐튼-나하-슈리-캐슬-1108217",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1217760",
-      "destinationId": "japan-okinawa",
-      "hotelName": "호텔 미유키 비치",
-      "slug": "호텔-미유키-비치-1217760",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1353033",
-      "destinationId": "japan-okinawa",
-      "hotelName": "미스터 긴조 인 모토부 오션 테라스",
-      "slug": "미스터-긴조-인-모토부-오션-테라스-1353033",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
       "hotelId": "myrealtrip-1203583",
       "destinationId": "japan-tokyo",
       "hotelName": "소테츠 프레사 인 니혼바시 가야바초",
@@ -4881,14 +3278,6 @@
       "attemptCount": 0
     },
     {
-      "hotelId": "myrealtrip-1215811",
-      "destinationId": "japan-kyoto",
-      "hotelName": "호텔 그랑드 바흐 교토 셀렉트",
-      "slug": "호텔-그랑드-바흐-교토-셀렉트-1215811",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
       "hotelId": "myrealtrip-3589450",
       "destinationId": "japan-fukuoka",
       "hotelName": "웰캐빈 텐진 - 남성 전용",
@@ -4901,14 +3290,6 @@
       "destinationId": "japan-sapporo",
       "hotelName": "센추리온 사우나 레스트 & 스테이 삿포로 남성 전용",
       "slug": "센추리온-사우나-레스트-스테이-삿포로-남성-전용-3624662",
-      "status": "pending",
-      "attemptCount": 0
-    },
-    {
-      "hotelId": "myrealtrip-1478966",
-      "destinationId": "japan-okinawa",
-      "hotelName": "아쿠아리조트 인 차탄",
-      "slug": "아쿠아리조트-인-차탄-1478966",
       "status": "pending",
       "attemptCount": 0
     }
