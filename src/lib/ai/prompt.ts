@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v16";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v17";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -37,8 +37,9 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 이미지의 alt나 URL만 보고 이미지 내용을 추측하지 않는다.
 
 특히 본문 흐름을 다음처럼 만든다.
-- 객실을 설명하는 문단 바로 뒤에는 실제 type이 "room"인 이미지를 1~2장 배치한다.
-- 화장실/욕실을 설명할 수 있는 실제 type이 "bathroom"인 이미지가 있으면 해당 문단 바로 뒤에 1~2장 배치한다.
+- 객실을 설명하는 경우 실제 type이 "room"인 이미지가 있으면 배치한다.
+- 욕실/화장실을 설명하는 경우 실제 type이 "bathroom"인 이미지가 있으면 배치한다.
+- room 또는 bathroom 이미지가 제공되지 않았다면 이미지를 만들거나 다른 유형의 이미지를 해당 유형으로 표시하지 않는다.
 - 시설을 설명하는 문단 뒤에는 "facility" 이미지를 가능한 만큼 배치한다.
 - 조식/레스토랑/다이닝을 설명하는 문단 뒤에는 "restaurant" 이미지를 가능한 만큼 배치한다.
 - 위치/주변/역 정보를 설명하는 문단 뒤에는 "location" 또는 "attraction" 이미지를 실제 데이터가 뒷받침하는 경우에만 배치한다.
@@ -60,7 +61,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
   4. "위치와 교통"
   5. "주변 정보 또는 예약 전 확인사항"
   6. "호텔을 선택할 때 확인할 점"
-- "객실과 숙박 정보" section에서 객실과 욕실 정보를 함께 설명한다.
+- "객실과 숙박 정보" section에서는 제공된 객실 관련 정보만 설명한다. 객실 상세 정보나 욕실 정보가 제공되지 않았다면 만들지 않는다.
 - 수영장, 헬스장/피트니스, 레스토랑, 조식, 라운지 등의 정보가 없으면 해당 내용을 억지로 만들지 않는다.
 - 5번 section의 heading은 반드시 "주변 정보 또는 예약 전 확인사항"으로 작성한다. 주변 정보가 부족하면 예약 전 확인 가능한 호텔 데이터를 사용한다.
 - 6번 section은 제공된 사실을 바탕으로 예약 전에 확인할 내용을 정리하되 광고성 평가나 직접적인 추천을 하지 않는다.
@@ -70,7 +71,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 - 짧은 한두 문장짜리 요약만 이어 붙이지 말고, 제공된 사실과 예약 전에 확인할 맥락을 자연스럽게 설명한다.
 - 같은 사실을 표현만 바꾸어 반복해서 분량을 늘리지 않는다.
 - 데이터에 없는 정보를 추가하지 않는 대신, 제공된 위치·시설·객실·다이닝·숙소 유형 등의 사실을 독자가 실제 여행 준비에 활용할 수 있도록 구체적인 맥락으로 설명한다.
-- 제공된 정보가 적은 경우에도 sections 6~8개 구조는 지킨다. 단, 확인되지 않은 사실을 추가하거나 같은 사실을 반복하지 않는다.
+- 제공된 정보가 적은 경우에도 정확히 6개 section 구조를 지킨다. 단, 확인되지 않은 사실을 추가하거나 같은 사실을 반복하지 않는다.
 - 객실 section에서는 객실 이미지가 있으면 설명 직후 이미지가 나오도록 한다.
 - 욕실/화장실 section에서는 bathroom 이미지가 있으면 설명 직후 이미지가 나오도록 한다.
 - FAQ는 4~6개.
@@ -98,11 +99,8 @@ JSON 구조:
     },
     {
       "heading": "객실과 숙박 정보",
-      "paragraphs": ["객실 정보를 설명하는 문단...", "욕실과 화장실 정보를 설명하는 문단..."],
-      "imageAssignments": [
-        {"imageId": "실제 room 이미지 ID", "imageType": "room"},
-        {"imageId": "실제 bathroom 이미지 ID", "imageType": "bathroom"}
-      ]
+      "paragraphs": ["제공된 객실 관련 정보를 설명하는 문단..."],
+      "imageAssignments": []
     },
     {
       "heading": "이용 가능한 시설",
