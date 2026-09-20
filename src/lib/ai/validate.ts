@@ -79,6 +79,11 @@ export function validateHotelPost(
         const image = imageMap.get(assignment.imageId);
         if (!image) throw new Error(`Unknown assigned image ID: ${assignment.imageId}`);
         if (!image.rightsConfirmed) throw new Error(`Assigned image does not have confirmed rights: ${assignment.imageId}`);
+        if (assignment.imageType === "hero") {
+          throw new Error(
+            `Hero image cannot be assigned to a section: ${assignment.imageId}`,
+          );
+        }
         if (image.type !== assignment.imageType) {
           throw new Error(
             `Image type mismatch for ${assignment.imageId}: expected ${assignment.imageType}, actual ${image.type}.`,
