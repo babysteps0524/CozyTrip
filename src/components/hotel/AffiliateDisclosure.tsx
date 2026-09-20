@@ -22,7 +22,7 @@ export default function AffiliateDisclosure({
         height={180}
         loading="lazy"
         decoding="async"
-        className="block h-auto w-full"
+        className="block h-auto w-full max-h-24 object-contain object-left sm:max-h-28 lg:max-h-20"
       />
     </aside>
   );
