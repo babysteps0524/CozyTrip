@@ -37,7 +37,36 @@ jobs:
       AI_POST_LIMIT: ${{ inputs.post_limit || '1' }}
       AI_DAILY_PLAN: "japan-tokyo:3,japan-osaka:3,japan-kyoto:2,japan-fukuoka:2,japan-okinawa:1"
 
+    timeout-minutes: 30
+
     steps:
+      - name: Validate required secrets
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MYREALTRIP_API_KEY: ${{ secrets.MYREALTRIP_API_KEY }}
+          MYREALTRIP_BASE_URL: ${{ secrets.MYREALTRIP_BASE_URL }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${MYREALTRIP_API_KEY}" ]; then
+            echo "::error::MYREALTRIP_API_KEY is not configured."
+            exit 1
+          fi
+
+          if [ -z "${MYREALTRIP_BASE_URL}" ]; then
+            echo "::error::MYREALTRIP_BASE_URL is not configured."
+            exit 1
+          fi
+
+          if [ -z "${GEMINI_API_KEY}" ] && [ -z "${GROQ_API_KEY}" ] && [ -z "${OPENROUTER_API_KEY}" ]; then
+            echo "::error::At least one AI provider secret is required: GEMINI_API_KEY, GROQ_API_KEY, or OPENROUTER_API_KEY."
+            exit 1
+          fi
+
+          echo "Required API secrets are configured."
+
       - name: Checkout
         uses: actions/checkout@v5
         with:
