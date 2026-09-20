@@ -50,7 +50,10 @@ function getDestinationBySlug(
 }
 
 function getHotelBySlug(hotels: Hotel[], slug: string): Hotel | undefined {
-  return hotels.find((hotel) => hotel.slug === slug);
+  const normalizedSlug = slug.normalize("NFC");
+  return hotels.find(
+    (hotel) => hotel.slug.normalize("NFC") === normalizedSlug,
+  );
 }
 
 function getPostBySlug(posts: Post[], slug: string): Post | undefined {
