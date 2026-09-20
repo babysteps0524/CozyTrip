@@ -27,7 +27,7 @@ export const aiConfig: AIConfig = {
     getEnv("OPENROUTER_MODEL") ?? "openai/gpt-4o-mini",
   timeoutMs: Number(getEnv("AI_TIMEOUT_MS") ?? "30000"),
   temperature: Number(getEnv("AI_TEMPERATURE") ?? "0.4"),
-  maxOutputTokens: Number(getEnv("AI_MAX_OUTPUT_TOKENS") ?? "4000"),
+  maxOutputTokens: Number(getEnv("AI_MAX_OUTPUT_TOKENS") ?? "6000"),
 };
 
 export function isAIProviderConfigured(
