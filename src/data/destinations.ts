@@ -31,7 +31,7 @@ export const destinations: Destination[] = [
       "신세카이",
     ],
   },
- 
+
   {
     id: "japan-fukuoka",
     name: "후쿠오카",
@@ -68,7 +68,6 @@ export const destinations: Destination[] = [
       "스스키노",
     ],
   },
-
 ];
 
 export const destinationMap = new Map(
