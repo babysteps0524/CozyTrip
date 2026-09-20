@@ -54,6 +54,12 @@ function hasMyRealTripImage(html: string): boolean {
   );
 }
 
+function hasMyRealTripDisclosureBanner(html: string): boolean {
+  return html.includes(
+    "https://dry7pvlp22cox.cloudfront.net/mrt-images-prod/2024/12/02/F8Hc/GPgE8DOyg5.png",
+  );
+}
+
 const files = await collectIndexFiles(distDir);
 const fileByRoute = new Map<string, string>();
 
@@ -71,6 +77,7 @@ const failures: string[] = [];
 let checked = 0;
 let expectedHotelImages = 0;
 let myRealTripImages = 0;
+let myRealTripDisclosureBanners = 0;
 let hotelsWithoutImages = 0;
 
 for (const hotel of hotels) {
@@ -108,6 +115,14 @@ for (const hotel of hotels) {
   if (hasMyRealTripImage(html)) {
     myRealTripImages += 1;
   }
+
+  if (hasMyRealTripDisclosureBanner(html)) {
+    myRealTripDisclosureBanners += 1;
+  } else {
+    failures.push(
+      `[${hotel.id}] ${route} is missing the MyRealTrip economic-interest disclosure banner.`,
+    );
+  }
 }
 
 console.log("SSG hotel article image validation complete.");
@@ -116,6 +131,9 @@ console.log(`Hotel routes expected to render images: ${expectedHotelImages}`);
 console.log(`Hotel routes without displayable images: ${hotelsWithoutImages}`);
 console.log(
   `Hotel routes with MyRealTrip image URLs: ${myRealTripImages}`,
+);
+console.log(
+  `Hotel routes with MyRealTrip disclosure banners: ${myRealTripDisclosureBanners}`,
 );
 
 if (failures.length > 0) {
