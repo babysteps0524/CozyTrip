@@ -61,6 +61,21 @@ export function validateHotelPost(
     const images = options.availableImages ?? hotel.images;
     const imageMap = new Map(images.map((image) => [image.id, image]));
 
+    for (const requiredType of ["room", "bathroom"] as const) {
+      const hasAvailableImage = images.some(
+        (image) =>
+          image.type === requiredType &&
+          image.rightsConfirmed &&
+          image.src.trim(),
+      );
+
+      if (!hasAvailableImage) {
+        throw new Error(
+          `Required ${requiredType} image is not available for this hotel.`,
+        );
+      }
+    }
+
     const postImageIds = new Set<string>();
     for (const imageId of post.imageIds) {
       const image = imageMap.get(imageId);
@@ -148,6 +163,21 @@ export function validateHotelPost(
       }
 
       throw new Error(`post.imageIds and section image references must match exactly. ${details.join(" | ")}`);
+    }
+
+    for (const requiredType of ["room", "bathroom"] as const) {
+      const requiredImage = images.find(
+        (image) =>
+          image.type === requiredType &&
+          image.rightsConfirmed &&
+          image.src.trim(),
+      );
+
+      if (requiredImage && !postImageIds.has(requiredImage.id)) {
+        throw new Error(
+          `Required ${requiredType} image is not assigned to the post: ${requiredImage.id}`,
+        );
+      }
     }
 
     for (const imageId of postImageIds) {
