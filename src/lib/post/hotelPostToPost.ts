@@ -221,6 +221,10 @@ export function createHotelPostBlocks(
 }
 
 export function hotelPostToPost(post: HotelPost, hotel: Hotel): Post {
+  if (post.status !== "published") {
+    throw new Error(`Cannot convert unpublished hotel post: ${post.id}`);
+  }
+
   const blocks = createHotelPostBlocks(post, hotel.images);
   const slug = hotel.slug;
   const publishedAt = post.publishedAt ?? hotel.publishedAt ?? "1970-01-01";
