@@ -5,6 +5,7 @@ export type ImageType =
   | "hero"
   | "gallery"
   | "room"
+  | "bathroom"
   | "facility"
   | "restaurant"
   | "location"
