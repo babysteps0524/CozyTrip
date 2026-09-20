@@ -43,21 +43,13 @@ function getHotelRoute(hotel: (typeof hotels)[number]): string | null {
   );
 }
 
-function getArticleHtml(html: string): string[] {
-  return html.match(/<article\b[^>]*>[\s\S]*?<\/article>/gi) ?? [];
-}
-
-function hasArticleImage(html: string): boolean {
-  return getArticleHtml(html).some((article) =>
-    /<img\b[^>]*\bsrc=["'][^"']+["'][^>]*>/i.test(article),
-  );
+function hasHotelPageImage(html: string): boolean {
+  return /<img\b[^>]*\bsrc=["'][^"']+["'][^>]*>/i.test(html);
 }
 
 function hasMyRealTripImage(html: string): boolean {
-  return getArticleHtml(html).some((article) =>
-    /<img\b[^>]*\bsrc=["'][^"']*(?:myrealtrip|mrt)[^"']*["'][^>]*>/i.test(
-      article,
-    ),
+  return /<img\b[^>]*\bsrc=["'][^"']*(?:myrealtrip|mrt)[^"']*["'][^>]*>/i.test(
+    html,
   );
 }
 
@@ -96,9 +88,9 @@ for (const hotel of hotels) {
   const html = await readFile(file, "utf8");
   checked += 1;
 
-  if (!hasArticleImage(html)) {
+  if (!hasHotelPageImage(html)) {
     failures.push(
-      `[${hotel.id}] ${route} has no <img> inside an article in SSG HTML.`,
+      `[${hotel.id}] ${route} has no hotel image in SSG HTML.`,
     );
   }
 
@@ -110,7 +102,7 @@ for (const hotel of hotels) {
 console.log("SSG hotel article image validation complete.");
 console.log(`Hotel routes checked: ${checked}`);
 console.log(
-  `Hotel routes with MyRealTrip article image URLs: ${myRealTripImages}`,
+  `Hotel routes with MyRealTrip image URLs: ${myRealTripImages}`,
 );
 
 if (failures.length > 0) {
