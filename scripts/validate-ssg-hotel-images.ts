@@ -7,7 +7,8 @@ import { hotels } from "../src/data/hotels";
 const distDir = join(process.cwd(), "dist");
 
 function normalizeRoutePath(route: string): string {
-  return route.endsWith("/") ? route : `${route}/`;
+  const normalized = route.normalize("NFC");
+  return normalized.endsWith("/") ? normalized : `${normalized}/`;
 }
 
 async function collectIndexFiles(directory: string): Promise<string[]> {
@@ -67,7 +68,8 @@ for (const file of files) {
   const route = `/${relative(distDir, file)
     .replaceAll("\\\\", "/")
     .replace(/index\.html$/, "")
-    .replace(/^\/+/, "")}`;
+    .replace(/^\/+/, "")
+    .normalize("NFC")}`;
 
   fileByRoute.set(normalizeRoutePath(route), file);
 }
