@@ -49,12 +49,6 @@ function getAreaOptions(hotels: Hotel[], city: string): string[] {
     .sort((a, b) => a.localeCompare(b, "ko"));
 }
 
-/* Legacy area helper removed: city-aware area options are defined above. */
-function getLegacyAreaOptions(hotels: Hotel[]): string[] {
-  return Array.from(
-    new Set(hotels.map((hotel) => hotel.area.trim()).filter(Boolean)),
-  ).sort((a, b) => a.localeCompare(b, "ko"));
-}
 
 function compareHotels(a: Hotel, b: Hotel, sort: SortOption): number {
   if (sort === "star-desc") {
@@ -167,8 +161,9 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
       const nextPage = Number(params.get("page"));
 
       setQuery(nextQuery);
-      setCity(cities.includes(nextCity) ? nextCity : "all");
-      setArea(areas.includes(nextArea) ? nextArea : "all");
+      const initialCity = cities.includes(nextCity) ? nextCity : "all";
+      setCity(initialCity);
+      setArea(nextArea);
 
       if (
         nextStar === "5" ||
@@ -199,7 +194,11 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
     window.addEventListener("popstate", readUrlState);
 
     return () => window.removeEventListener("popstate", readUrlState);
-  }, [areas, cities]);
+  }, []);
+
+  useEffect(() => {
+    if (area !== "all" && !areas.includes(area)) setArea("all");
+  }, [area, areas]);
 
   const filteredHotels = useMemo(() => {
     const normalizedQuery = query.trim().toLowerCase();
@@ -295,6 +294,28 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
           </label>
 
           <label>
+            <span display="block" mb="2" text="xs ct-muted dark:ct-dark-muted" font="medium">
+              도시
+            </span>
+            <select
+              value={city}
+              onChange={(event) => {
+                setCity(event.target.value);
+                setArea("all");
+              }}
+              aria-label="호텔 도시 필터"
+              className="h-11 w-full rounded-xl border border-ct-line bg-ct-surface px-4 py-2.5 text-sm text-ct-text outline-none transition-colors focus:border-ct-primary dark:border-ct-dark-line dark:bg-ct-dark-surface dark:text-ct-dark-text"
+            >
+              <option value="all">전체 도시</option>
+              {cities.map((item) => (
+                <option key={item} value={item}>
+                  {item}
+                </option>
+              ))}
+            </select>
+          </label>
+
+          <label>
             <span
               display="block"
               mb="2"
@@ -384,6 +405,7 @@ export default function HotelListResults({ hotels }: HotelListResultsProps) {
               active-scale="0.95"
               onClick={() => {
                 setQuery("");
+                setCity("all");
                 setArea("all");
                 setStar("all");
                 setSort("name");
