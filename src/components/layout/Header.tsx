@@ -1,16 +1,10 @@
 import { Container } from "../common";
 import MobileNavigation from "./MobileNavigation";
-
-const destinations = [
-  { name: "도쿄", href: "/japan/tokyo/" },
-  { name: "오사카", href: "/japan/osaka/" },
-  { name: "후쿠오카", href: "/japan/fukuoka/" },
-  { name: "삿포로", href: "/japan/sapporo/" },
-];
+import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-ct-line bg-ct-surface/95 backdrop-blur-sm dark:border-ct-dark-line dark:bg-ct-dark-surface/95">
+    <header className="fixed inset-x-0 top-0 z-50 border-b border-ct-line bg-ct-surface/95 backdrop-blur-sm dark:border-ct-dark-line dark:bg-ct-dark-surface/95">
       <Container>
         <div className="flex min-h-16 items-center gap-4 sm:min-h-18">
           <a
@@ -26,22 +20,9 @@ export default function Header() {
             </span>
           </a>
 
-          <nav
-            aria-label="주요 여행지"
-            className="hidden min-w-0 flex-1 items-center justify-center md:flex"
-          >
-            <div className="flex items-center gap-1 rounded-full border border-ct-line bg-ct-bg p-1 dark:border-ct-dark-line dark:bg-ct-dark-bg">
-              {destinations.map((destination) => (
-                <a
-                  key={destination.href}
-                  href={destination.href}
-                  className="ct-focus rounded-full px-4 py-2 text-sm font-medium text-ct-text-soft transition-colors duration-150 hover:bg-ct-surface hover:text-ct-primary active:scale-95 dark:text-ct-dark-text-soft dark:hover:bg-ct-dark-surface dark:hover:text-ct-dark-text"
-                >
-                  {destination.name}
-                </a>
-              ))}
-            </div>
-          </nav>
+          <div className="ml-auto hidden md:block">
+            <Navigation />
+          </div>
 
           <MobileNavigation />
         </div>
