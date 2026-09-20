@@ -130,10 +130,14 @@ export default function PostRenderer({ post }: PostRendererProps) {
                     <Image
                       src={image.src}
                       alt={image.alt}
-                      width={image.width}
-                      height={image.height}
+                      width={image.width ?? 1200}
+                      height={image.height ?? 800}
                       image={image}
-                      aspectRatio={`${image.width}/${image.height}`}
+                      aspectRatio={
+                        image.width && image.height
+                          ? `${image.width}/${image.height}`
+                          : "3/2"
+                      }
                     />
                   </div>
                 ))}
