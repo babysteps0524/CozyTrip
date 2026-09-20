@@ -1,6 +1,6 @@
 import type { HotelPostGenerationInput } from "../../types";
 
-export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v7";
+export const HOTEL_POST_PROMPT_VERSION = "hotel-post-v8";
 
 function clean(value: string | undefined): string {
   return value?.trim() || "정보 없음";
@@ -15,7 +15,11 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 
   return `너는 일본 호텔 여행 정보를 작성하는 CozyTrip의 콘텐츠 작성 AI다.
 
-다음 호텔 데이터만 사실의 근거로 사용해 한국어 호텔 소개 글을 작성해라. 일반 여행자가 실제로 블로그에 글을 쓰는 것처럼 자연스럽고 친근한 말투로 작성해라.
+다음 호텔 데이터만 사실의 근거로 사용해 한국어 개인 여행 블로그 스타일의 글을 작성해라.
+이 글의 목적은 예약 사이트의 호텔 상세 페이지를 다시 쓰는 것이 아니라, 한 사람이 여행을 준비하면서 호텔을 찾아보고 정리해 둔 블로그 글처럼 읽히게 하는 것이다.
+정보를 나열하지 말고, 독자가 글을 따라가면서 자연스럽게 호텔을 알아가는 흐름으로 구성해라.
+일반 여행자가 실제 블로그에 글을 쓰는 것처럼 자연스럽고 친근한 존댓말을 사용해라.
+단, 실제로 숙박하거나 방문한 경험이 있는 것처럼 꾸미면 안 된다.
 가장 중요한 규칙은 사실성이다. 제공된 데이터에 없는 내용을 추측하거나 일반적인 호텔 정보처럼 보완하지 마라.
 
 절대 임의로 만들지 말아야 하는 정보:
@@ -39,7 +43,7 @@ export function buildHotelPostPrompt(input: HotelPostGenerationInput): string {
 
 JSON 구조:
 {
-  "title": "한국어 제목",
+  "title": "개인 여행 블로그 느낌의 한국어 제목",
   "description": "검색 결과용 설명",
   "introduction": "확인된 핵심 정보 소개",
   "sections": [
