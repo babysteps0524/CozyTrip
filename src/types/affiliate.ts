@@ -1,4 +1,4 @@
-export type AffiliateProvider = "agoda" | "tripcom" | "myrealtrip";
+export type AffiliateProvider = "myrealtrip";
 
 export interface AffiliateLink {
   provider: AffiliateProvider;
