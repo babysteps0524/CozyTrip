@@ -30,6 +30,7 @@ async function main(): Promise<void> {
   const errors: string[] = [];
   let hotelsWithImages = 0;
   let displayableImages = 0;
+  const imageTypeCounts = new Map<string, number>();
 
   for (const hotel of hotels) {
     const images = Array.isArray(hotel.images)
@@ -40,6 +41,12 @@ async function main(): Promise<void> {
     if (displayable.length > 0) {
       hotelsWithImages += 1;
       displayableImages += displayable.length;
+      for (const image of displayable) {
+        imageTypeCounts.set(
+          image.type,
+          (imageTypeCounts.get(image.type) ?? 0) + 1,
+        );
+      }
     }
 
     if (imageUsageAllowed) {
@@ -70,6 +77,25 @@ async function main(): Promise<void> {
   console.log(`Hotels with displayable images: ${hotelsWithImages}`);
   console.log(`Displayable images: ${displayableImages}`);
   console.log(`Image usage allowed: ${imageUsageAllowed}`);
+  console.log(
+    `Image types: ${[...imageTypeCounts.entries()]
+      .map(([type, count]) => `${type}=${count}`)
+      .join(", ") || "없음"}`,
+  );
+
+  if (imageUsageAllowed) {
+    const typedTypes = ["room", "facility", "restaurant", "location", "attraction"];
+    const typedCount = typedTypes.reduce(
+      (total, type) => total + (imageTypeCounts.get(type) ?? 0),
+      0,
+    );
+
+    if (typedCount === 0) {
+      console.warn(
+        "MyRealTrip typed images are not present. AI section-to-image assignments will remain empty until the API provides explicitly typed images.",
+      );
+    }
+  }
 
   if (errors.length > 0) {
     console.error("");
