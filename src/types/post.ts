@@ -43,6 +43,8 @@ export interface Post {
   updatedAt?: string;
   author?: string;
   tags?: string[];
+  introduction?: string;
+  faq?: HotelPostFaqItem[];
 }
 
 export interface HotelPostImageAssignment {
