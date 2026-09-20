@@ -6,7 +6,7 @@ export const SITE_NAME = "CozyTrip 코지트립";
 export const SITE_URL = "https://cozytrip.kr";
 export const DEFAULT_TITLE = `${SITE_NAME} | 일본 호텔과 여행 정보`;
 export const DEFAULT_DESCRIPTION =
-  "일본 호텔과 여행 정보를 한곳에서 알아보세요. 도쿄, 오사카, 교토, 후쿠오카, 삿포로, 오키나와 호텔과 여행 정보를 제공합니다.";
+  "일본 호텔과 여행 정보를 한곳에서 알아보세요. 도쿄, 오사카, 후쿠오카, 삿포로 호텔과 여행 정보를 제공합니다.";
 
 export interface SeoMetadata {
   title: string;
@@ -64,7 +64,7 @@ export function createSeoMetadata(
   if (normalizedRoute === "/japan/") {
     return {
       title: `일본 여행 및 호텔 정보 | ${SITE_NAME}`,
-      description: "도쿄, 오사카, 교토, 후쿠오카, 삿포로, 오키나와의 호텔과 주요 지역, 여행 정보를 확인해보세요.",
+      description: "도쿄, 오사카, 후쿠오카, 삿포로의 호텔과 주요 지역, 여행 정보를 확인해보세요.",
       canonical: createCanonical("/japan/"),
       ogType: "website",
     };
