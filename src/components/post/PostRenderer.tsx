@@ -1,5 +1,6 @@
 import type { Post } from "../../types";
 import { Image } from "../common";
+import { AdSenseSlot } from "../ads";
 
 const IMAGE_SOURCE_LABEL: Record<string, string> = {
   myrealtrip: "마이리얼트립",
@@ -27,19 +28,25 @@ function createHeadingId(text: string, index: number): string {
 
 interface PostRendererProps {
   post: Post;
+  midArticleAdSlot?: string;
 }
 
-export default function PostRenderer({ post }: PostRendererProps) {
+export default function PostRenderer({ post, midArticleAdSlot }: PostRendererProps) {
   let firstParagraph = true;
+  let headingCount = 0;
 
   return (
     <article className="max-w-3xl text-[17px] text-ct-text dark:text-ct-dark-text sm:text-lg">
       {post.blocks.map((block, index) => {
         if (block.type === "heading") {
           const headingId = createHeadingId(block.text, index);
+          headingCount += 1;
 
           return block.level === 2 ? (
             <section key={index} aria-labelledby={headingId} className="scroll-mt-24">
+              {headingCount === 4 && midArticleAdSlot ? (
+                <AdSenseSlot slot={midArticleAdSlot} />
+              ) : null}
               <h2
                 id={headingId}
                 className="mb-0 mt-14 border-l-4 border-ct-primary pl-4 text-[1.45rem] font-bold leading-[1.4] tracking-tight first:mt-0 sm:mt-16 sm:text-3xl"
