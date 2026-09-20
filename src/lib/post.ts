@@ -12,47 +12,6 @@ function getUsableImages(hotel: Hotel): HotelImage[] {
   );
 }
 
-function getPreferredImageTypes(heading: string): HotelImage["type"][] {
-  const text = heading.toLowerCase();
-
-  if (/(객실|룸|room|숙박)/u.test(text)) {
-    return ["room", "gallery", "hero"];
-  }
-
-  if (/(시설|편의|수영장|피트니스|부대시설|facility|pool)/u.test(text)) {
-    return ["facility", "gallery", "hero"];
-  }
-
-  if (/(조식|레스토랑|다이닝|식사|restaurant|dining|breakfast)/u.test(text)) {
-    return ["restaurant", "facility", "gallery"];
-  }
-
-  if (/(위치|교통|역|주변|location|access)/u.test(text)) {
-    return ["location", "attraction", "hero"];
-  }
-
-  return ["hero", "gallery", "room", "bathroom", "facility", "restaurant", "location", "attraction"];
-}
-
-function selectFallbackImage(
-  heading: string,
-  images: HotelImage[],
-  usedImageIds: Set<string>,
-): HotelImage | undefined {
-  const preferredTypes = getPreferredImageTypes(heading);
-
-  for (const type of preferredTypes) {
-    const image = images.find(
-      (candidate) =>
-        candidate.type === type && !usedImageIds.has(candidate.id),
-    );
-
-    if (image) return image;
-  }
-
-  return images.find((image) => !usedImageIds.has(image.id));
-}
-
 function getExplicitImageIds(
   section: HotelPost["sections"][number],
 ): string[] {
@@ -95,8 +54,6 @@ export function hotelPostToPost(
     }
 
     const explicitImageIds = getExplicitImageIds(section);
-    let hasRenderedImage = false;
-
     const sectionImages: HotelImage[] = [];
 
     for (const imageId of explicitImageIds) {
@@ -137,7 +94,6 @@ export function hotelPostToPost(
         });
       }
     }
-
   }
 
   return {
