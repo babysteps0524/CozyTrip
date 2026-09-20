@@ -89,7 +89,7 @@ export function getMyRealTripConfig(): MyRealTripConfig {
     baseUrl: normalizedBaseUrl,
     imageUsageAllowed: parseBooleanEnv(
       "MYREALTRIP_IMAGE_USAGE_ALLOWED",
-      false,
+      true,
     ),
   };
 }
