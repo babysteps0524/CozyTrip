@@ -66,7 +66,7 @@ const fileByRoute = new Map<string, string>();
 
 for (const file of files) {
   const route = `/${relative(distDir, file)
-    .replaceAll("\\\\", "/")
+    .replaceAll("\\", "/")
     .replace(/index\.html$/, "")
     .replace(/^\/+/, "")
     .normalize("NFC")}`;
