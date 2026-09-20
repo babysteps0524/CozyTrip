@@ -98,14 +98,36 @@ export function ensureHotelPostImages(
   }
 
   if (referencedIds.size > 0) {
+    const usedIds = new Set<string>();
+    const normalizedSections = post.sections.map((section) => {
+      const nextImageIds: string[] = [];
+      const nextAssignments: NonNullable<HotelPost["sections"][number]["imageAssignments"]> = [];
+
+      for (const imageId of [
+        ...(section.imageIds ?? []),
+        ...(section.imageAssignments ?? []).map((assignment) => assignment.imageId),
+      ]) {
+        if (usedIds.has(imageId)) continue;
+
+        const image = imageMap.get(imageId);
+        if (!image) continue;
+
+        usedIds.add(imageId);
+        nextImageIds.push(imageId);
+        nextAssignments.push(assignmentFor(image));
+      }
+
+      return {
+        ...section,
+        imageIds: nextImageIds,
+        imageAssignments: nextAssignments,
+      };
+    });
+
     return {
       ...post,
-      imageIds: [...referencedIds],
-      sections: post.sections.map((section) => ({
-        ...section,
-        imageIds: [...(section.imageIds ?? [])],
-        imageAssignments: [...(section.imageAssignments ?? [])],
-      })),
+      sections: normalizedSections,
+      imageIds: [...usedIds],
     };
   }
 
