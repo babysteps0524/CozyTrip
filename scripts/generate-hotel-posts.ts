@@ -593,12 +593,19 @@ async function generateAndValidateHotelPost(
 }> {
   const result = await generateHotelPost(input);
   const ensuredPost = ensureHotelPostImages(result.post, input.images);
+  const now = new Date().toISOString();
   const post: HotelPost = {
     ...ensuredPost,
     hotelId: hotel.id,
     slug: hotel.slug,
     generatedBy: result.provider,
     status: publishGenerated ? "published" : "review",
+    ...(publishGenerated
+      ? {
+          publishedAt: ensuredPost.publishedAt ?? now,
+          updatedAt: now,
+        }
+      : {}),
   };
 
   validateHotelPost(post, hotel, { availableImages: input.images, strictFacts: true });
