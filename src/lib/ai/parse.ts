@@ -2,10 +2,10 @@ import type { HotelPost, HotelPostImageAssignment, ImageType } from "../../types
 import type { AIProviderName } from "./types";
 import { AIProviderError } from "./types";
 
-const MIN_SECTIONS = 4;
-const MAX_SECTIONS = 6;
-const MIN_FAQ = 3;
-const MAX_FAQ = 5;
+const MIN_SECTIONS = 6;
+const MAX_SECTIONS = 8;
+const MIN_FAQ = 4;
+const MAX_FAQ = 6;
 const MIN_TAGS = 5;
 const MAX_TAGS = 8;
 const MAX_TITLE_LENGTH = 100;
