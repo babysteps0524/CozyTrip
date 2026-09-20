@@ -75,6 +75,7 @@ interface HotelPostRunReport {
 
 type HotelInventoryStatus =
   | "published"
+  | "review"
   | "pending"
   | "retrying"
   | "retry-exhausted";
@@ -594,6 +595,7 @@ async function generateAndValidateHotelPost(
     hotelId: hotel.id,
     slug: hotel.slug,
     generatedBy: result.provider,
+    status: "review",
   };
 
   validateHotelPost(post, hotel, { availableImages: input.images, strictFacts: true });
@@ -960,13 +962,18 @@ async function main(): Promise<void> {
     destinations,
   };
 
-  const publishedHotelIds = new Set(posts.map((post) => post.hotelId));
   const inventoryHotels: HotelInventoryItem[] = source.hotels.map((hotel) => {
     const failure = failedHotelMap.get(hotel.id);
     let status: HotelInventoryStatus = "pending";
 
-    if (publishedHotelIds.has(hotel.id)) {
+    const existingPost = posts.find((post) => post.hotelId === hotel.id);
+
+    if (existingPost?.status === "published") {
       status = "published";
+    } else if (existingPost?.status === "review") {
+      status = "review";
+    } else if (existingPost?.status === "draft") {
+      status = "review";
     } else if (failure?.status === "retry-exhausted") {
       status = "retry-exhausted";
     } else if (failure) {
