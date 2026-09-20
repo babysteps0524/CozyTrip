@@ -67,13 +67,19 @@ export function validateHotelPost(
         if (!paragraph.trim()) throw new Error(`Section ${index + 1} contains an empty paragraph.`);
       }
 
+      const sectionIds = new Set<string>();
+
       for (const imageId of section.imageIds ?? []) {
         const image = imageMap.get(imageId);
         if (!image) throw new Error(`Unknown section image ID: ${imageId}`);
         if (!image.rightsConfirmed) throw new Error(`Section references an image without confirmed rights: ${imageId}`);
-        if (sectionImageIds.has(imageId)) throw new Error(`Image is referenced by more than one section: ${imageId}`);
-        sectionImageIds.add(imageId);
+        if (sectionIds.has(imageId)) {
+          throw new Error(`Section imageIds contains duplicate values: ${imageId}`);
+        }
+        sectionIds.add(imageId);
       }
+
+      const assignmentIds = new Set<string>();
 
       for (const assignment of section.imageAssignments ?? []) {
         const image = imageMap.get(assignment.imageId);
@@ -84,13 +90,29 @@ export function validateHotelPost(
             `Image type mismatch for ${assignment.imageId}: expected ${assignment.imageType}, actual ${image.type}.`,
           );
         }
-        if (sectionImageIds.has(assignment.imageId)) {
-          throw new Error(`Image is referenced twice in section assignments: ${assignment.imageId}`);
+        if (assignmentIds.has(assignment.imageId)) {
+          throw new Error(`Image assignment contains duplicate values: ${assignment.imageId}`);
         }
-        sectionImageIds.add(assignment.imageId);
+        assignmentIds.add(assignment.imageId);
         if (!postImageIds.has(assignment.imageId)) {
           throw new Error(`Assigned image must also appear in post.imageIds: ${assignment.imageId}`);
         }
+      }
+
+      if (
+        sectionIds.size !== assignmentIds.size ||
+        [...sectionIds].some((imageId) => !assignmentIds.has(imageId))
+      ) {
+        throw new Error(
+          `section.imageIds and section.imageAssignments must reference the same images.`,
+        );
+      }
+
+      for (const imageId of sectionIds) {
+        if (sectionImageIds.has(imageId)) {
+          throw new Error(`Image is referenced by more than one section: ${imageId}`);
+        }
+        sectionImageIds.add(imageId);
       }
     }
 
