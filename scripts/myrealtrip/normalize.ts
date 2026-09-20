@@ -68,6 +68,7 @@ const MYREALTRIP_IMAGE_TYPES: readonly ImageType[] = [
   "hero",
   "gallery",
   "room",
+  "bathroom",
   "facility",
   "restaurant",
   "location",
