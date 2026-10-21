@@ -9,6 +9,6 @@
     "skipLibCheck": true,
     "ignoreDeprecations": "6.0"
   },
-  "include": ["src/**/*.ts", "src/**/*.d.ts"],
+  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.astro"],
   "exclude": ["node_modules", ".astro", "dist"]
 }

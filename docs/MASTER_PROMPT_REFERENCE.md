@@ -162,10 +162,14 @@
 
 ```astro
 <article
-  class="group rounded-2xl border border-neutral-200 bg-white shadow-sm transition"
+  group
+  rounded="2xl"
+  border="~ neutral-200 dark:neutral-800"
+  bg="white dark:neutral-950"
+  shadow="sm"
+  transition
   p="4 md:6"
-  text="neutral-900"
-  dark="border-neutral-800 bg-neutral-950 text-neutral-100"
+  text="neutral-900 dark:neutral-100"
 >
   <h2 text="lg md:xl" font="semibold" leading="snug">
     호텔 소개 제목
