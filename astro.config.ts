@@ -7,4 +7,7 @@ export default defineConfig({
   output: 'static',
   integrations: [UnoCSS(), sitemap()],
   build: { format: 'directory' },
+  server: {
+    open: true,
+  },
 });

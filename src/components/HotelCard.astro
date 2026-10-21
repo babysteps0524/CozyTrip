@@ -1,18 +1,108 @@
 ---
 const { hotel } = Astro.props;
 ---
-<article group overflow="hidden" rounded="2xl" border="line" bg="white" shadow="card" transition duration="200" hover:-translate-y-1 hover="shadow-lift" dark="border-slate-800 bg-slate-900" >
-  <a href={`/hotels/${hotel.slug}/`} block focus-ring aria-label={`${hotel.name} 소개 보기`}>
+
+<article
+  group
+  overflow="hidden"
+  rounded="2xl"
+  border="line"
+  bg="white"
+  shadow="card"
+  transition
+  duration="200"
+  hover:-translate-y-1
+  hover="shadow-lift"
+  dark="border-slate-800 bg-slate-900"
+>
+  <a
+    href={`/hotels/${hotel.slug}/`}
+    block
+    focus-ring
+    aria-label={`${hotel.name} 소개 보기`}
+  >
     <div relative aspect="[16/10]" overflow="hidden" bg="slate-100">
-      <img src={hotel.image} alt={`${hotel.city} 호텔 여행 참고 이미지`} loading="lazy" width="800" height="500" h="full" w="full" object="cover" transition duration="500" group-hover="scale-105" />
-      <span absolute left="3" top="3" rounded="full" bg="white/95" px="3" py="1" text="xs ink" font="semibold" shadow="sm">{hotel.city}</span>
+      <img
+        src={hotel.image}
+        alt={`${hotel.city} 호텔 여행 참고 이미지`}
+        loading="lazy"
+        width="800"
+        height="500"
+        h="full"
+        w="full"
+        object="cover"
+        transition
+        duration="500"
+        group-hover="scale-105"
+      />
+      <span
+        absolute
+        left="3"
+        top="3"
+        rounded="full"
+        bg="white/95"
+        px="3"
+        py="1"
+        text="xs ink"
+        font="semibold"
+        shadow="sm"
+      >
+        {hotel.city}
+      </span>
     </div>
     <div p="4">
-      <p text="xs brand-600" font="semibold">{hotel.type} · {hotel.area}</p>
-      <h3 mt="2" font="bold" leading="snug" dark="text-white" text="lg ink" >{hotel.name}</h3>
-      <p mt="2" leading="6" line-clamp-3 dark="text-slate-300" text="sm muted" >{hotel.summary}</p>
-      <div mt="4" flex="wrap" gap="2">{hotel.tags.slice(0, 3).map((tag: string) => <span rounded="lg" bg="brand-50" px="2.5" py="1" text="[11px] brand-700" font="medium" dark="bg-slate-800 text-blue-200" >{tag}</span>)}</div>
-      <div mt="4" flex items="center" justify="between" border="t line" pt="3" text="sm" dark="border-slate-800"><span font="semibold" text="ink" dark="text-slate-100">소개 보기</span><span grid h="8" w="8" place="items-center" rounded="full" bg="brand-50" text="brand-700" transition dark="bg-slate-800" group-hover="bg-brand-600 text-white" >↗</span></div>
+      <p text="xs brand-600" font="semibold">
+        {hotel.type} · {hotel.area}
+      </p>
+      <h3 mt="2" font="bold" leading="snug" dark="text-white" text="lg ink">
+        {hotel.name}
+      </h3>
+      <p mt="2" leading="6" line-clamp-3 dark="text-slate-300" text="sm muted">
+        {hotel.summary}
+      </p>
+      <div mt="4" flex="wrap" gap="2">
+        {hotel.tags.slice(0, 3).map((tag: string) => (
+          <span
+            rounded="lg"
+            bg="brand-50"
+            px="2.5"
+            py="1"
+            text="[11px] brand-700"
+            font="medium"
+            dark="bg-slate-800 text-blue-200"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+      <div
+        mt="4"
+        flex
+        items="center"
+        justify="between"
+        border="t line"
+        pt="3"
+        text="sm"
+        dark="border-slate-800"
+      >
+        <span font="semibold" text="ink" dark="text-slate-100">
+          소개 보기
+        </span>
+        <span
+          grid
+          h="8"
+          w="8"
+          place="items-center"
+          rounded="full"
+          bg="brand-50"
+          text="brand-700"
+          transition
+          dark="bg-slate-800"
+          group-hover="bg-brand-600 text-white"
+        >
+          ↗
+        </span>
+      </div>
     </div>
   </a>
 </article>

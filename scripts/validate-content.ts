@@ -8,14 +8,29 @@ const hotelSchema = z.object({
   name: z.string().min(2),
   city: z.string().min(1),
   summary: z.string().min(40),
-  status: z.enum(['draft', 'needs_review', 'approved', 'published']).default('draft'),
-  sources: z.array(z.object({ url: z.string().url(), label: z.string().min(2), checkedAt: z.string().date() })).default([]),
+  status: z
+    .enum(['draft', 'needs_review', 'approved', 'published'])
+    .default('draft'),
+  sources: z
+    .array(
+      z.object({
+        url: z.string().url(),
+        label: z.string().min(2),
+        checkedAt: z.string().date(),
+      }),
+    )
+    .default([]),
   affiliateUrl: z.string().url().optional(),
-  imageRights: z.enum(['owned', 'licensed', 'approved_feed', 'needs_review', 'unknown']).default('unknown'),
+  imageRights: z
+    .enum(['owned', 'licensed', 'approved_feed', 'needs_review', 'unknown'])
+    .default('unknown'),
   factsVerified: z.boolean().default(false),
 });
 
-const root = join(dirname(fileURLToPath(import.meta.url)), '../src/content/hotels');
+const root = join(
+  dirname(fileURLToPath(import.meta.url)),
+  '../src/content/hotels',
+);
 const files = (await readdir(root)).filter((name) => name.endsWith('.json'));
 let failed = false;
 for (const file of files) {
@@ -24,16 +39,30 @@ for (const file of files) {
     const result = hotelSchema.safeParse(raw);
     if (!result.success) {
       failed = true;
-      console.error(`✗ ${file}: ${result.error.issues.map((issue) => `${issue.path.join('.')}: ${issue.message}`).join('; ')}`);
+      console.error(
+        `✗ ${file}: ${result.error.issues.map((issue) => `${issue.path.join('.')}: ${issue.message}`).join('; ')}`,
+      );
     } else {
       const item = result.data;
-      const publishReady = item.status === 'approved' && item.factsVerified && item.sources.length > 0 && item.imageRights !== 'unknown' && item.imageRights !== 'needs_review';
-      console.log(`${publishReady ? '✓' : '•'} ${file}: ${publishReady ? 'publish checks passed' : 'valid data; not approved for publishing'}`);
+      const publishReady =
+        item.status === 'approved' &&
+        item.factsVerified &&
+        item.sources.length > 0 &&
+        item.imageRights !== 'unknown' &&
+        item.imageRights !== 'needs_review';
+      console.log(
+        `${publishReady ? '✓' : '•'} ${file}: ${publishReady ? 'publish checks passed' : 'valid data; not approved for publishing'}`,
+      );
     }
   } catch (error) {
     failed = true;
-    console.error(`✗ ${file}: ${error instanceof Error ? error.message : String(error)}`);
+    console.error(
+      `✗ ${file}: ${error instanceof Error ? error.message : String(error)}`,
+    );
   }
 }
-if (files.length === 0) console.log('No hotel JSON files found. Add a source-backed hotel record to validate.');
+if (files.length === 0)
+  console.log(
+    'No hotel JSON files found. Add a source-backed hotel record to validate.',
+  );
 if (failed) process.exitCode = 1;

@@ -1,6 +1,206 @@
 ---
-import SiteLayout from '../../layouts/SiteLayout.astro'; import AdSlot from '../../components/AdSlot.astro'; import { hotels, regions } from '../../data/site';
-export function getStaticPaths() { return hotels.map((hotel) => ({ params: { slug: hotel.slug }, props: { hotel } })); }
-const { hotel } = Astro.props; const region = regions.find((item) => item.slug === hotel.region);
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { hotels, regions } from '../../data/site';
+export function getStaticPaths() {
+  return hotels.map((hotel) => ({
+    params: { slug: hotel.slug },
+    props: { hotel },
+  }));
+}
+const { hotel } = Astro.props;
+const region = regions.find((item) => item.slug === hotel.region);
 ---
-<SiteLayout title={hotel.name} description={hotel.summary} image={hotel.image}><div container-wide py="8" sm="py-12"><nav mb="5" text="xs muted"><a href="/">홈</a> / <a href="/hotels/">일본 호텔</a> / {hotel.name}</nav><div grid gap="8" lg="grid-cols-[minmax(0,1fr)_340px]"><article min="w-0"><div overflow="hidden" rounded="3xl"><img src={hotel.image} alt={`${hotel.city} 숙소 소개 참고 이미지`} width="1400" height="800" fetchpriority="high" max="h-[520px]" w="full" object="cover" /></div><div mt="6" flex="wrap" gap="2"><span rounded="full" bg="brand-50" px="3" py="1" text="xs brand-700" font="bold" dark="bg-slate-800 text-blue-200" >{hotel.city}</span><span rounded="full" bg="slate-100" px="3" py="1" text="xs slate-600" font="semibold" dark="bg-slate-800 text-slate-300" >{hotel.type}</span><span rounded="full" bg="amber-50" px="3" py="1" text="xs amber-700" font="semibold">검토용 초안</span></div><h1 mt="4" font="bold" leading="tight" dark="text-white" text="3xl sm:4xl ink" >{hotel.name}</h1><p mt="4" leading="8" dark="text-slate-300" text="lg slate-600" >{hotel.summary}</p><div mt="8" rounded="2xl" border="amber-200" bg="amber-50" p="5" dark="border-amber-900 bg-amber-950/30" ><h2 font="bold" dark="text-amber-100" text="base amber-900" >정보 검증 안내</h2><p mt="2" leading="7" dark="text-amber-100/80" text="sm amber-900/80" >{hotel.sourceNote} 현재 페이지는 예시 콘텐츠로, 숙박 요금·객실 가능 여부·평점·리뷰 수를 표시하지 않습니다.</p></div><section mt="8"><h2 text="xl" font="bold">예약 전에 확인할 항목</h2><ul mt="4" grid gap="3" sm="grid-cols-2">{['정확한 주소와 가장 가까운 역','역·공항에서의 이동 방법','체크인 및 체크아웃 시간','객실 인원과 침대 구성','세금·서비스료 포함 여부','취소·환불 마감 시각','조식 및 추가 요금','예약자 이름 표기 조건'].map((item) => <li flex gap="3" rounded="xl" border="line" bg="white" p="4" text="sm" dark="border-slate-800 bg-slate-900" ><span text="brand-600">✓</span><span>{item}</span></li>)}</ul></section><AdSlot /><section mt="8"><h2 text="xl" font="bold">이 호텔이 후보가 될 수 있는 여행</h2><p mt="3" muted-copy>{hotel.city} 일정을 계획하면서 {hotel.tags.join(' · ')}을 중요하게 생각한다면, 숙소의 실제 위치와 교통편을 일정표와 함께 비교해 보세요. 이 문장은 편집상 탐색 방향이며, 특정 시설이나 서비스가 제공된다는 보장은 아닙니다.</p></section><section mt="8"><h2 text="xl" font="bold">공식 정보 확인</h2><p mt="3" muted-copy>호텔 공식 웹사이트와 예약 사이트의 최신 안내를 확인하세요. 이 초안에는 검증되지 않은 예약 URL을 임의로 연결하지 않았습니다.</p><a href={`/regions/${hotel.region}/`} mt="4" btn-secondary>{region?.name ?? hotel.city} 지역 가이드 보기 →</a></section></article><aside space="y-5"><div rounded="2xl" border="line" bg="white" p="5" dark="border-slate-800 bg-slate-900" ><p eyebrow>QUICK CHECK</p><h2 mt="2" text="lg" font="bold">예약 전 핵심 체크</h2><p mt="2" muted-copy>예약 조건은 숙박 날짜와 객실 유형에 따라 달라질 수 있습니다.</p><a href="/guides/japan-hotel-booking-checklist/" mt="4" btn-primary w="full">체크리스트 읽기</a></div><div rounded="2xl" border="line" bg="white" p="5" dark="border-slate-800 bg-slate-900" ><h2 text="base" font="bold">지역 가이드</h2><p mt="2" muted-copy>{region?.intro}</p><a href={`/regions/${hotel.region}/`} mt="3" inline="flex" text="sm brand-600" font="bold">지역 살펴보기 →</a></div><p leading="6" text="xs muted" >제휴 링크는 계정 및 링크가 검증된 경우에만 활성화합니다. 이 페이지의 예시 콘텐츠에는 실제 예약 링크가 연결되어 있지 않습니다.</p></aside></div></div></SiteLayout>
+
+<SiteLayout title={hotel.name} description={hotel.summary} image={hotel.image}>
+  <div container-wide py="8" sm="py-12">
+    <nav mb="5" text="xs muted">
+      <a href="/">홈</a> / <a href="/hotels/">일본 호텔</a> / {hotel.name}
+    </nav>
+    <div grid gap="8" lg="grid-cols-[minmax(0,1fr)_340px]">
+      <article min="w-0">
+        <div overflow="hidden" rounded="3xl">
+          <img
+            src={hotel.image}
+            alt={`${hotel.city} 숙소 소개 참고 이미지`}
+            width="1400"
+            height="800"
+            fetchpriority="high"
+            max="h-[520px]"
+            w="full"
+            object="cover"
+          />
+        </div>
+        <div mt="6" flex="wrap" gap="2">
+          <span
+            rounded="full"
+            bg="brand-50"
+            px="3"
+            py="1"
+            text="xs brand-700"
+            font="bold"
+            dark="bg-slate-800 text-blue-200"
+          >
+            {hotel.city}
+          </span>
+          <span
+            rounded="full"
+            bg="slate-100"
+            px="3"
+            py="1"
+            text="xs slate-600"
+            font="semibold"
+            dark="bg-slate-800 text-slate-300"
+          >
+            {hotel.type}
+          </span>
+          <span
+            rounded="full"
+            bg="amber-50"
+            px="3"
+            py="1"
+            text="xs amber-700"
+            font="semibold"
+          >
+            검토용 초안
+          </span>
+        </div>
+        <h1
+          mt="4"
+          font="bold"
+          leading="tight"
+          dark="text-white"
+          text="3xl sm:4xl ink"
+        >
+          {hotel.name}
+        </h1>
+        <p mt="4" leading="8" dark="text-slate-300" text="lg slate-600">
+          {hotel.summary}
+        </p>
+        <div
+          mt="8"
+          rounded="2xl"
+          border="amber-200"
+          bg="amber-50"
+          p="5"
+          dark="border-amber-900 bg-amber-950/30"
+        >
+          <h2 font="bold" dark="text-amber-100" text="base amber-900">
+            정보 검증 안내
+          </h2>
+          <p mt="2" leading="7" dark="text-amber-100/80" text="sm amber-900/80">
+            {hotel.sourceNote} 현재 페이지는 예시 콘텐츠로, 숙박 요금·객실 가능
+            여부·평점·리뷰 수를 표시하지 않습니다.
+          </p>
+        </div>
+        <section mt="8">
+          <h2 text="xl" font="bold">
+            예약 전에 확인할 항목
+          </h2>
+          <ul mt="4" grid gap="3" sm="grid-cols-2">
+            {[
+              '정확한 주소와 가장 가까운 역',
+              '역·공항에서의 이동 방법',
+              '체크인 및 체크아웃 시간',
+              '객실 인원과 침대 구성',
+              '세금·서비스료 포함 여부',
+              '취소·환불 마감 시각',
+              '조식 및 추가 요금',
+              '예약자 이름 표기 조건',
+            ].map((item) => (
+              <li
+                flex
+                gap="3"
+                rounded="xl"
+                border="line"
+                bg="white"
+                p="4"
+                text="sm"
+                dark="border-slate-800 bg-slate-900"
+              >
+                <span text="brand-600">✓</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+        <AdSlot />
+        <section mt="8">
+          <h2 text="xl" font="bold">
+            이 호텔이 후보가 될 수 있는 여행
+          </h2>
+          <p mt="3" muted-copy>
+            {hotel.city} 일정을 계획하면서 {hotel.tags.join(' · ')}을 중요하게
+            생각한다면, 숙소의 실제 위치와 교통편을 일정표와 함께 비교해 보세요.
+            이 문장은 편집상 탐색 방향이며, 특정 시설이나 서비스가 제공된다는
+            보장은 아닙니다.
+          </p>
+        </section>
+        <section mt="8">
+          <h2 text="xl" font="bold">
+            공식 정보 확인
+          </h2>
+          <p mt="3" muted-copy>
+            호텔 공식 웹사이트와 예약 사이트의 최신 안내를 확인하세요. 이
+            초안에는 검증되지 않은 예약 URL을 임의로 연결하지 않았습니다.
+          </p>
+          <a href={`/regions/${hotel.region}/`} mt="4" btn-secondary>
+            {region?.name ?? hotel.city} 지역 가이드 보기 →
+          </a>
+        </section>
+      </article>
+      <aside space="y-5">
+        <div
+          rounded="2xl"
+          border="line"
+          bg="white"
+          p="5"
+          dark="border-slate-800 bg-slate-900"
+        >
+          <p eyebrow>QUICK CHECK</p>
+          <h2 mt="2" text="lg" font="bold">
+            예약 전 핵심 체크
+          </h2>
+          <p mt="2" muted-copy>
+            예약 조건은 숙박 날짜와 객실 유형에 따라 달라질 수 있습니다.
+          </p>
+          <a
+            href="/guides/japan-hotel-booking-checklist/"
+            mt="4"
+            btn-primary
+            w="full"
+          >
+            체크리스트 읽기
+          </a>
+        </div>
+        <div
+          rounded="2xl"
+          border="line"
+          bg="white"
+          p="5"
+          dark="border-slate-800 bg-slate-900"
+        >
+          <h2 text="base" font="bold">
+            지역 가이드
+          </h2>
+          <p mt="2" muted-copy>
+            {region?.intro}
+          </p>
+          <a
+            href={`/regions/${hotel.region}/`}
+            mt="3"
+            inline="flex"
+            text="sm brand-600"
+            font="bold"
+          >
+            지역 살펴보기 →
+          </a>
+        </div>
+        <p leading="6" text="xs muted">
+          제휴 링크는 계정 및 링크가 검증된 경우에만 활성화합니다. 이 페이지의
+          예시 콘텐츠에는 실제 예약 링크가 연결되어 있지 않습니다.
+        </p>
+      </aside>
+    </div>
+  </div>
+</SiteLayout>

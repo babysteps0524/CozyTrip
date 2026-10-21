@@ -1,5 +1,54 @@
 ---
-import SiteLayout from '../../layouts/SiteLayout.astro'; import HotelCard from '../../components/HotelCard.astro'; import { hotels } from '../../data/site';
-const groups = [{ title: '도시 여행', desc: '주요 관광지와 대중교통을 기준으로 숙소를 비교하세요.', filter: (h: typeof hotels[number]) => h.type === '도시 호텔' }, { title: '리조트 여행', desc: '휴식 중심의 일정이라면 위치와 이동 계획을 함께 확인하세요.', filter: (h: typeof hotels[number]) => h.type === '리조트' }, { title: '교통 동선 중심', desc: '역 이름보다 실제 주소와 일정의 이동 경로를 기준으로 판단하세요.', filter: (h: typeof hotels[number]) => h.tags.some((t: string) => t.includes('교통') || t.includes('이동')) }];
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HotelCard from '../../components/HotelCard.astro';
+import { hotels } from '../../data/site';
+const groups = [
+  {
+    title: '도시 여행',
+    desc: '주요 관광지와 대중교통을 기준으로 숙소를 비교하세요.',
+    filter: (h: (typeof hotels)[number]) => h.type === '도시 호텔',
+  },
+  {
+    title: '리조트 여행',
+    desc: '휴식 중심의 일정이라면 위치와 이동 계획을 함께 확인하세요.',
+    filter: (h: (typeof hotels)[number]) => h.type === '리조트',
+  },
+  {
+    title: '교통 동선 중심',
+    desc: '역 이름보다 실제 주소와 일정의 이동 경로를 기준으로 판단하세요.',
+    filter: (h: (typeof hotels)[number]) =>
+      h.tags.some((t: string) => t.includes('교통') || t.includes('이동')),
+  },
+];
 ---
-<SiteLayout title="테마별 호텔 찾기" description="도시 여행, 리조트 여행, 교통 동선 등 여행 목적에 맞춰 호텔 후보를 살펴보세요."><section container-wide py="12" sm="py-16"><p eyebrow>TRAVEL STYLE</p><h1 mt="3" section-title>여행 스타일에 맞춰 찾기</h1><p mt="3" muted-copy max="w-2xl">테마는 탐색을 돕기 위한 분류입니다. 실제 시설이나 서비스 제공 여부는 개별 숙소의 최신 정보를 확인하세요.</p>{groups.map((group) => <section mt="10"><h2 text="xl" font="bold">{group.title}</h2><p mt="2" muted-copy>{group.desc}</p><div mt="5" grid gap="5" sm="grid-cols-2" lg="grid-cols-3">{hotels.filter(group.filter).map((hotel) => <HotelCard hotel={hotel} />)}</div></section>)}</section></SiteLayout>
+
+<SiteLayout
+  title="테마별 호텔 찾기"
+  description="도시 여행, 리조트 여행, 교통 동선 등 여행 목적에 맞춰 호텔 후보를 살펴보세요."
+>
+  <section container-wide py="12" sm="py-16">
+    <p eyebrow>TRAVEL STYLE</p>
+    <h1 mt="3" section-title>
+      여행 스타일에 맞춰 찾기
+    </h1>
+    <p mt="3" muted-copy max="w-2xl">
+      테마는 탐색을 돕기 위한 분류입니다. 실제 시설이나 서비스 제공 여부는 개별
+      숙소의 최신 정보를 확인하세요.
+    </p>
+    {groups.map((group) => (
+      <section mt="10">
+        <h2 text="xl" font="bold">
+          {group.title}
+        </h2>
+        <p mt="2" muted-copy>
+          {group.desc}
+        </p>
+        <div mt="5" grid gap="5" sm="grid-cols-2" lg="grid-cols-3">
+          {hotels.filter(group.filter).map((hotel) => (
+            <HotelCard hotel={hotel} />
+          ))}
+        </div>
+      </section>
+    ))}
+  </section>
+</SiteLayout>

@@ -1,6 +1,118 @@
 ---
-import SiteLayout from '../../layouts/SiteLayout.astro'; import AdSlot from '../../components/AdSlot.astro'; import { guides } from '../../data/site';
-export function getStaticPaths() { return guides.map((guide) => ({ params: { slug: guide.slug }, props: { guide } })); }
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import AdSlot from '../../components/AdSlot.astro';
+import { guides } from '../../data/site';
+export function getStaticPaths() {
+  return guides.map((guide) => ({
+    params: { slug: guide.slug },
+    props: { guide },
+  }));
+}
 const { guide } = Astro.props;
 ---
-<SiteLayout title={guide.title} description={guide.excerpt} image={guide.image}><article container-wide max="w-4xl" py="10" sm="py-16"><nav mb="6" text="xs muted"><a href="/">홈</a> / <a href="/guides/">여행 가이드</a> / {guide.category}</nav><p eyebrow>{guide.category} · {guide.readTime}</p><h1 mt="3" font="bold" leading="tight" dark="text-white" text="3xl sm:5xl ink" >{guide.title}</h1><p mt="5" leading="8" dark="text-slate-300" text="lg muted" >{guide.excerpt}</p><p mt="3" text="xs muted" >마지막 편집일: {guide.updated} · 여행 조건은 출발 전에 다시 확인하세요.</p><img mt="8" src={guide.image} alt="일본 여행 참고 풍경" width="1200" height="700" max="h-[480px]" w="full" rounded="3xl" object="cover" fetchpriority="high"/><div mt="8" rounded="2xl" border="brand-100" bg="brand-50" p="5" dark="border-slate-800 bg-slate-900" ><h2 text="base" font="bold">이 가이드의 핵심</h2><p mt="2" muted-copy>예약 사이트의 표시 정보는 날짜, 객실 유형, 인원, 판매 조건에 따라 달라질 수 있습니다. 이 글은 비교 순서를 잡기 위한 안내이며 특정 숙소의 현재 요금이나 예약 가능 여부를 보장하지 않습니다.</p></div><section mt="8" prose="slate" max="w-none" dark="prose-invert"><h2>1. 여행 일정에서 출발하세요</h2><p>숙소를 먼저 고르기보다 방문할 장소와 도착·출발 시간을 대략 정한 뒤 숙소 후보 지역을 좁히면 이동 동선을 비교하기 쉽습니다. 공항에 늦게 도착하거나 이른 시간에 출발한다면 첫날과 마지막 날의 교통편을 따로 확인하세요.</p><h2>2. 지도에서 실제 이동 경로를 확인하세요</h2><p>숙소 설명에 적힌 역 이름만으로 판단하지 말고, 숙소의 정확한 주소와 이용할 출입구, 환승 횟수, 짐을 들고 이동하는 구간을 확인하세요. 도보 시간은 경로와 출입구에 따라 달라질 수 있습니다.</p><h2>3. 총액과 취소 조건을 비교하세요</h2><p>같은 객실처럼 보여도 숙박 인원, 침대 구성, 조식, 세금, 서비스료, 결제 시점, 취소 가능 시점이 다를 수 있습니다. 검색 결과의 시작 가격만 비교하지 말고 마지막 예약 단계에서 총액과 조건을 확인하세요.</p><h2>4. 예약자 정보와 체크인 규칙을 확인하세요</h2><p>예약자 이름의 영문 표기, 미성년자 숙박 조건, 체크인 가능 시간, 짐 보관, 추가 침대와 유아용품 요청 가능 여부를 공식 안내에서 확인하세요. 제공 여부를 알 수 없는 시설은 예약 전에 숙소에 문의하는 것이 안전합니다.</p><h2>5. 공식 출처를 기록하세요</h2><p>호텔 공식 웹사이트, 공식 교통 운영자, 관광청과 예약 페이지를 우선 확인하고, 확인 날짜와 링크를 기록하세요. 정보가 서로 다르면 단정하지 말고 게시를 보류하거나 불확실성을 독자에게 알립니다.</p><h2>예약 전 체크리스트</h2><ul><li>여행 날짜와 인원에 맞는 객실인가?</li><li>세금과 추가 요금을 포함한 최종 금액을 확인했는가?</li><li>취소·환불 조건과 마감 시각을 확인했는가?</li><li>체크인·체크아웃 시간과 늦은 도착 조건을 확인했는가?</li><li>정확한 위치와 공항·역에서의 이동 방법을 확인했는가?</li><li>예약자 정보와 숙박 규정을 확인했는가?</li></ul><h2>정보의 한계</h2><p>호텔 정책과 교통 정보는 변경될 수 있습니다. 이 페이지는 일반적인 여행 준비를 위한 정보이며, 예약 전에 호텔과 예약 서비스의 최신 조건을 직접 확인해야 합니다.</p></section><AdSlot /><a href="/hotels/" mt="8" btn-primary>호텔 후보 살펴보기 →</a></article></SiteLayout>
+
+<SiteLayout title={guide.title} description={guide.excerpt} image={guide.image}>
+  <article container-wide max="w-4xl" py="10" sm="py-16">
+    <nav mb="6" text="xs muted">
+      <a href="/">홈</a> / <a href="/guides/">여행 가이드</a> / {guide.category}
+    </nav>
+    <p eyebrow>
+      {guide.category} · {guide.readTime}
+    </p>
+    <h1
+      mt="3"
+      font="bold"
+      leading="tight"
+      dark="text-white"
+      text="3xl sm:5xl ink"
+    >
+      {guide.title}
+    </h1>
+    <p mt="5" leading="8" dark="text-slate-300" text="lg muted">
+      {guide.excerpt}
+    </p>
+    <p mt="3" text="xs muted">
+      마지막 편집일: {guide.updated} · 여행 조건은 출발 전에 다시 확인하세요.
+    </p>
+    <img
+      mt="8"
+      src={guide.image}
+      alt="일본 여행 참고 풍경"
+      width="1200"
+      height="700"
+      max="h-[480px]"
+      w="full"
+      rounded="3xl"
+      object="cover"
+      fetchpriority="high"
+    />
+    <div
+      mt="8"
+      rounded="2xl"
+      border="brand-100"
+      bg="brand-50"
+      p="5"
+      dark="border-slate-800 bg-slate-900"
+    >
+      <h2 text="base" font="bold">
+        이 가이드의 핵심
+      </h2>
+      <p mt="2" muted-copy>
+        예약 사이트의 표시 정보는 날짜, 객실 유형, 인원, 판매 조건에 따라 달라질
+        수 있습니다. 이 글은 비교 순서를 잡기 위한 안내이며 특정 숙소의 현재
+        요금이나 예약 가능 여부를 보장하지 않습니다.
+      </p>
+    </div>
+    <section mt="8" prose="slate" max="w-none" dark="prose-invert">
+      <h2>1. 여행 일정에서 출발하세요</h2>
+      <p>
+        숙소를 먼저 고르기보다 방문할 장소와 도착·출발 시간을 대략 정한 뒤 숙소
+        후보 지역을 좁히면 이동 동선을 비교하기 쉽습니다. 공항에 늦게 도착하거나
+        이른 시간에 출발한다면 첫날과 마지막 날의 교통편을 따로 확인하세요.
+      </p>
+      <h2>2. 지도에서 실제 이동 경로를 확인하세요</h2>
+      <p>
+        숙소 설명에 적힌 역 이름만으로 판단하지 말고, 숙소의 정확한 주소와
+        이용할 출입구, 환승 횟수, 짐을 들고 이동하는 구간을 확인하세요. 도보
+        시간은 경로와 출입구에 따라 달라질 수 있습니다.
+      </p>
+      <h2>3. 총액과 취소 조건을 비교하세요</h2>
+      <p>
+        같은 객실처럼 보여도 숙박 인원, 침대 구성, 조식, 세금, 서비스료, 결제
+        시점, 취소 가능 시점이 다를 수 있습니다. 검색 결과의 시작 가격만
+        비교하지 말고 마지막 예약 단계에서 총액과 조건을 확인하세요.
+      </p>
+      <h2>4. 예약자 정보와 체크인 규칙을 확인하세요</h2>
+      <p>
+        예약자 이름의 영문 표기, 미성년자 숙박 조건, 체크인 가능 시간, 짐 보관,
+        추가 침대와 유아용품 요청 가능 여부를 공식 안내에서 확인하세요. 제공
+        여부를 알 수 없는 시설은 예약 전에 숙소에 문의하는 것이 안전합니다.
+      </p>
+      <h2>5. 공식 출처를 기록하세요</h2>
+      <p>
+        호텔 공식 웹사이트, 공식 교통 운영자, 관광청과 예약 페이지를 우선
+        확인하고, 확인 날짜와 링크를 기록하세요. 정보가 서로 다르면 단정하지
+        말고 게시를 보류하거나 불확실성을 독자에게 알립니다.
+      </p>
+      <h2>예약 전 체크리스트</h2>
+      <ul>
+        <li>여행 날짜와 인원에 맞는 객실인가?</li>
+        <li>세금과 추가 요금을 포함한 최종 금액을 확인했는가?</li>
+        <li>취소·환불 조건과 마감 시각을 확인했는가?</li>
+        <li>체크인·체크아웃 시간과 늦은 도착 조건을 확인했는가?</li>
+        <li>정확한 위치와 공항·역에서의 이동 방법을 확인했는가?</li>
+        <li>예약자 정보와 숙박 규정을 확인했는가?</li>
+      </ul>
+      <h2>정보의 한계</h2>
+      <p>
+        호텔 정책과 교통 정보는 변경될 수 있습니다. 이 페이지는 일반적인 여행
+        준비를 위한 정보이며, 예약 전에 호텔과 예약 서비스의 최신 조건을 직접
+        확인해야 합니다.
+      </p>
+    </section>
+    <AdSlot />
+    <a href="/hotels/" mt="8" btn-primary>
+      호텔 후보 살펴보기 →
+    </a>
+  </article>
+</SiteLayout>
