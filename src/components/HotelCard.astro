@@ -6,14 +6,12 @@ const { hotel } = Astro.props;
   group
   overflow="hidden"
   rounded="2xl"
-  border="line"
-  bg="white"
-  shadow="card"
+  border="line dark:slate-800"
+  bg="white dark:slate-900"
+  shadow="card hover:lift"
   transition
   duration="200"
-  hover:-translate-y-1
-  hover="shadow-lift"
-  dark="border-slate-800 bg-slate-900"
+  hover="-translate-y-1"
 >
   <a
     href={`/hotels/${hotel.slug}/`}
@@ -21,7 +19,12 @@ const { hotel } = Astro.props;
     focus-ring
     aria-label={`${hotel.name} 소개 보기`}
   >
-    <div relative style="aspect-ratio: 16/10" overflow="hidden" bg="slate-100" dark="bg-slate-800">
+    <div
+      relative
+      style="aspect-ratio: 16/10"
+      overflow="hidden"
+      bg="slate-100 dark:slate-800"
+    >
       <img
         src={hotel.image}
         alt={`${hotel.city} 호텔 여행 참고 이미지`}
@@ -40,13 +43,12 @@ const { hotel } = Astro.props;
         left="3"
         top="3"
         rounded="full"
-        bg="white/95"
+        bg="white/95 dark:slate-800"
         px="3"
         py="1"
-        text="xs ink"
+        text="xs ink dark:white"
         font="semibold"
         shadow="sm"
-        dark="bg-slate-800 text-white"
       >
         {hotel.city}
       </span>
@@ -81,10 +83,9 @@ const { hotel } = Astro.props;
         flex
         items="center"
         justify="between"
-        border="t line"
+        border="t line dark:slate-800"
         pt="3"
         text="sm"
-        dark="border-slate-800"
       >
         <span font="semibold" text="ink" dark="text-slate-100">
           소개 보기
@@ -95,10 +96,9 @@ const { hotel } = Astro.props;
           w="8"
           place="items-center"
           rounded="full"
-          bg="brand-50"
+          bg="brand-50 dark:slate-800"
           text="brand-700"
           transition
-          dark="bg-slate-800"
           group-hover="bg-brand-600 text-white"
         >
           ↗
