@@ -17,6 +17,15 @@
         "@typescript-eslint/eslint-plugin": "^8.72.0",
         "@typescript-eslint/parser": "^8.72.0",
         "@unocss/astro": "^66.11.0",
+        "@unocss/preset-attributify": "^66.11.0",
+        "@unocss/preset-rem-to-px": "^66.11.0",
+        "@unocss/preset-typography": "^66.11.0",
+        "@unocss/preset-web-fonts": "^66.11.0",
+        "@unocss/preset-wind4": "^66.11.0",
+        "@unocss/transformer-attributify-jsx": "^66.11.0",
+        "@unocss/transformer-compile-class": "^66.11.0",
+        "@unocss/transformer-directives": "^66.11.0",
+        "@unocss/transformer-variant-group": "^66.11.0",
         "astro-eslint-parser": "^3.2.0",
         "bun-types": "^1.4.3",
         "eslint": "^10.13.0",
@@ -272,7 +281,7 @@
 
     "@oxc-parser/binding-win32-x64-msvc": ["@oxc-parser/binding-win32-x64-msvc@0.153.0", "", { "os": "win32", "cpu": "x64" }, "sha512-gxQz7G96Up136fd+2zWrP+o6FYGs9NO4Dyv55IoeJFJUDwLFHcLYY11hhA5wQKs0HoM57Q8esQ3nEVhnCdsjAQ=="],
 
-    "@oxc-project/types": ["@oxc-project/types@0.154.0", "", {}, "sha512-KYOUGQFlLWR+s4QMV2Q9ko38TZm7EdO87Qm7rvZLqk/webse/cDjtyxKhg/47l0byCbs/k46LT8qc4PKjAikzA=="],
+    "@oxc-project/types": ["@oxc-project/types@0.153.0", "", {}, "sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw=="],
 
     "@pkgr/core": ["@pkgr/core@0.3.6", "", {}, "sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA=="],
 
@@ -395,6 +404,8 @@
     "@unocss/preset-icons": ["@unocss/preset-icons@66.11.0", "", { "dependencies": { "@iconify/utils": "^3.1.7", "@unocss/core": "66.11.0", "ofetch": "^1.5.1" } }, "sha512-MldI3Bi6IgQWaFJ8MtMOEqXx/sveuf+kko8yNEgpa/PpNj1lHsndcJTWP+VGK7PxnHsj/3cqzmdoh2qJhkgs6Q=="],
 
     "@unocss/preset-mini": ["@unocss/preset-mini@66.11.0", "", { "dependencies": { "@unocss/core": "66.11.0", "@unocss/extractor-arbitrary-variants": "66.11.0", "@unocss/rule-utils": "66.11.0" } }, "sha512-MtzRKtK07OLhMph2dj+YFIhIxjS5WQ9N0I8btBJ7+rsrN/IISo538S8s4Pf3usCSg3ALCN4KX/GRBRx47PS2pQ=="],
+
+    "@unocss/preset-rem-to-px": ["@unocss/preset-rem-to-px@66.11.0", "", { "dependencies": { "@unocss/core": "66.11.0" } }, "sha512-2ZXNeKOefTTJ85Y1f68xYeyNULQmwQ+cML4rsXJ5p6lSQem+NXB43uzueS+xCF9bLri3YNJFicDdul/en2gPxQ=="],
 
     "@unocss/preset-tagify": ["@unocss/preset-tagify@66.11.0", "", { "dependencies": { "@unocss/core": "66.11.0" } }, "sha512-6PcgSVd2eKblMZX/YjaFtpyS0dRX/ZUbWamTlgDRhnf6j2nfA5DQHU3BZJNeUr83oXullDxFflPwpfGrV1aOxA=="],
 
@@ -1054,13 +1065,13 @@
 
     "eslint/ignore": ["ignore@5.3.2", "", {}, "sha512-hsBTNUqQTDwkWtcdYI2i06Y/nUBEsNEDJKjWdigLvegy8kDuJAS8uRlpkkcQpyEXL0Z/pjDy5HBmMjRCJ2gq+g=="],
 
-    "oxc-parser/@oxc-project/types": ["@oxc-project/types@0.153.0", "", {}, "sha512-jSNrRIyvPVLL5E1z/tS5zLAprosGz/FuI1PWwEOz59j3E4TTTzSpqKb/RDGqJhhW0QHYISGXxq582wGx6T11Tw=="],
-
     "p-locate/p-limit": ["p-limit@3.1.0", "", { "dependencies": { "yocto-queue": "^0.1.0" } }, "sha512-TYOanM3wGwNGsZN2cVTYPArw454xnXj5qmWF1bEoAc4+cU/ol7GVh7odevjp1FNHduHc3KZMcFduxU5Xc6uJRQ=="],
 
     "prettier-plugin-astro/@astrojs/compiler-rs": ["@astrojs/compiler-rs@0.4.1", "", { "dependencies": { "@astrojs/compiler-binding": "0.4.1" } }, "sha512-//NmAuRhy7eU9iP0ceI5Pymy55M+nUZ//kS6XeOyhBWdDib2KbJOyFaVJ52k7sDkJwTKVox7oPu3SpYiVnGm5A=="],
 
     "qified/hookified": ["hookified@2.2.0", "", {}, "sha512-p/LgFzRN5FeoD3DLS6bkUapeye6E4SI6yJs6KetENd18S+FBthqYq2amJUWpt5z0EQwwHemidjY5OqJGEKm5uA=="],
+
+    "rolldown/@oxc-project/types": ["@oxc-project/types@0.154.0", "", {}, "sha512-KYOUGQFlLWR+s4QMV2Q9ko38TZm7EdO87Qm7rvZLqk/webse/cDjtyxKhg/47l0byCbs/k46LT8qc4PKjAikzA=="],
 
     "sitemap/@types/node": ["@types/node@24.19.2", "", { "dependencies": { "undici-types": ">=7.24.0 <7.24.7" } }, "sha512-93d49wCWJkCyN87MxLpNN6KXPCwFw7bVUg79mGUV1OS40JGWwVCr8n61DXCSqz7CV6/VfPkb7xec7uP2M+QHWQ=="],
 
