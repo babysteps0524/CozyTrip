@@ -4,12 +4,11 @@ import type { AttributifyAttributes } from '@unocss/preset-attributify';
 
 declare global {
   namespace astroHTML.JSX {
-    // HTML 속성에 UnoCSS Attributify 타입 병합
-    interface HTMLAttributes extends AttributifyAttributes {
-      [key: string]: boolean | string | number | undefined;
-    }
+    interface HTMLAttributes extends AttributifyAttributes {}
   }
 }
+
+export {};
 
 // Bun 테스트 모듈 타입 선언
 declare module 'bun:test' {
