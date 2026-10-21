@@ -221,14 +221,15 @@ import { hotels, regions, guides } from '../data/site';
         모든 지역 보기 →
       </a>
     </div>
-    <div mt="6" grid="cols-2" gap="3" sm="grid-cols-3" lg="grid-cols-6">
+    <div mt="6" grid="~ cols-2" gap="3" sm="cols-3" lg="cols-6">
       {regions.map((region) => (
         <a
           href={`/regions/${region.slug}/`}
+          block
           group
           relative
           isolate
-          min="h-44"
+          min-h="44"
           overflow="hidden"
           rounded="2xl"
           bg="slate-300"
@@ -242,7 +243,7 @@ import { hotels, regions, guides } from '../data/site';
             height="600"
             absolute
             inset="0"
-            -z-20
+            z="0"
             h="full"
             w="full"
             object="cover"
@@ -253,20 +254,20 @@ import { hotels, regions, guides } from '../data/site';
           <div
             absolute
             inset="0"
-            -z-10
+            z="1"
             bg="gradient-to-t"
-            from-slate-950
-            via-slate-900
-            to-transparent
+            from="slate-950"
+            via="slate-900"
+            to="transparent"
           ></div>
-          <div absolute inset="x-0" bottom="0" p="4" text="white" text-center>
-            <p text="[10px] white" font="bold" tracking="tight">
+          <div absolute inset-x="0" bottom="0" z="2" p="4" text="white center">
+            <p text="[10px]" font="bold" tracking="tight">
               {region.en.toUpperCase()}
             </p>
-            <h3 mt="1" text="lg" font="bold">
+            <h3 mt="1" text="lg white" font="bold">
               {region.name}
             </h3>
-            <p mt="1" text="xs white" text-center>
+            <p mt="1" text="xs center white">
               지역 가이드 →
             </p>
           </div>

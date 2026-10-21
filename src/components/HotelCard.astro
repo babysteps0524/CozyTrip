@@ -62,7 +62,7 @@ const { hotel } = Astro.props;
         {hotel.summary}
       </p>
       <div mt="4" flex="wrap" gap="2">
-        {hotel.tags.slice(0, 3).map((tag: string) => (
+        {(hotel.tags ?? []).slice(0, 3).map((tag: string) => (
           <span
             rounded="lg"
             bg="brand-50"
