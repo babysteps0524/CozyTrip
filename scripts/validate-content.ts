@@ -50,7 +50,7 @@ for (const file of files) {
         item.sources.length > 0 &&
         item.imageRights !== 'unknown' &&
         item.imageRights !== 'needs_review';
-      console.log(
+      console.warn(
         `${publishReady ? '✓' : '•'} ${file}: ${publishReady ? 'publish checks passed' : 'valid data; not approved for publishing'}`,
       );
     }
@@ -62,7 +62,7 @@ for (const file of files) {
   }
 }
 if (files.length === 0)
-  console.log(
+  console.warn(
     'No hotel JSON files found. Add a source-backed hotel record to validate.',
   );
 if (failed) process.exitCode = 1;

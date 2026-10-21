@@ -34,7 +34,8 @@ const pageTitle =
     <meta name="twitter:card" content="summary_large_image" />
     <script
       type="application/ld+json"
-      set:html={JSON.stringify({
+    >
+      {JSON.stringify({
         '@context': 'https://schema.org',
         '@type': 'WebSite',
         name: site.name,
@@ -43,7 +44,7 @@ const pageTitle =
         description: site.description,
         publisher: { '@type': 'Organization', name: site.name, url: site.url },
       })}
-    />
+    </script>
     {import.meta.env.PUBLIC_ADSENSE_CLIENT && (
       <meta
         name="google-adsense-account"

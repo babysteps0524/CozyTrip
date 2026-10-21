@@ -1,6 +1,117 @@
 ---
-import SiteLayout from '../../layouts/SiteLayout.astro'; import HotelCard from '../../components/HotelCard.astro'; import { regions, hotels } from '../../data/site';
-export function getStaticPaths() { return regions.map((region) => ({ params: { slug: region.slug }, props: { region } })); }
-const { region } = Astro.props; const related = hotels.filter((hotel) => hotel.region === region.slug);
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import HotelCard from '../../components/HotelCard.astro';
+import { regions, hotels } from '../../data/site';
+
+export function getStaticPaths() {
+  return regions.map((region) => ({
+    params: { slug: region.slug },
+    props: { region },
+  }));
+}
+
+const { region } = Astro.props;
+const related = hotels.filter((hotel) => hotel.region === region.slug);
 ---
-<SiteLayout title={`${region.name} 호텔과 여행 가이드`} description={region.intro} image={region.image}><div container-wide py="8" sm="py-12"><nav mb="5" text="xs muted"><a href="/">홈</a> / <a href="/regions/">지역</a> / {region.name}</nav><div relative isolate overflow="hidden" rounded="3xl" bg="ink"><img src={region.image} alt={`${region.name} 여행 풍경`} fetchpriority="high" width="1600" height="700" absolute inset="0" -z-20 h="full" w="full" object="cover"/><div absolute inset="0" -z-10 bg="gradient-to-r" from-slate-950/85 to-slate-900/20></div><div p="7 sm:12" max="w-3xl" text="white"><p text="xs blue-200" font="bold" tracking="[.2em]">{region.en.toUpperCase()} GUIDE</p><h1 mt="3" text="4xl sm:5xl" font="bold">{region.name} 여행과 호텔</h1><p mt="4" leading="8" text="base sm:lg white/85" >{region.intro}</p></div></div><section mt="8" rounded="2xl" border="line" bg="white" p="6" dark="border-slate-800 bg-slate-900" ><h2 text="xl" font="bold">함께 살펴볼 지역</h2><div mt="4" flex="wrap" gap="2">{region.areas.map((area) => <span rounded="full" bg="slate-100" px="4" py="2" text="sm slate-700" dark="bg-slate-800 text-slate-200" >{area}</span>)}</div><p mt="4" muted-copy>위 지역명은 탐색 키워드입니다. 각 지역의 역 접근성, 이동 시간, 관광지 운영 여부는 여행 날짜와 출발 위치에 맞춰 공식 교통·관광 정보로 확인하세요.</p></section><section mt="10"><div flex items="end" justify="between" gap="4"><div><p eyebrow>HOTEL CANDIDATES</p><h2 mt="2" section-title>{region.name} 호텔 후보</h2></div><a href="/hotels/" text="sm brand-600" font="bold">전체 호텔 →</a></div>{related.length ? <div mt="6" grid gap="5" sm="grid-cols-2" lg="grid-cols-3">{related.map((hotel) => <HotelCard hotel={hotel} />)}</div> : <p mt="4" muted-copy>아직 검토 완료된 호텔이 없습니다. 공식 출처를 확인한 후보부터 추가합니다.</p>}</section></div></SiteLayout>
+
+<SiteLayout
+  title={`${region.name} 호텔과 여행 가이드`}
+  description={region.intro}
+  image={region.image}
+>
+  <div container-wide py="8" sm="py-12">
+    <nav mb="5" text="xs muted">
+      <a href="/">홈</a> / <a href="/regions/">지역</a> / {region.name}
+    </nav>
+    <div relative isolate overflow="hidden" rounded="3xl" bg="ink">
+      <img
+        src={region.image}
+        alt={`${region.name} 여행 풍경`}
+        fetchpriority="high"
+        width="1600"
+        height="700"
+        absolute
+        inset="0"
+        -z-20
+        h="full"
+        w="full"
+        object="cover"
+      />
+      <div
+        absolute
+        inset="0"
+        -z-10
+        bg="gradient-to-r"
+        from-slate-950
+        to-slate-900
+      ></div>
+      <div p="7 sm:12" max="w-3xl" text="white">
+        <p text="xs blue-200" font="bold" tracking="[.2em]">
+          {region.en.toUpperCase()} GUIDE
+        </p>
+        <h1 mt="3" text="4xl sm:5xl" font="bold">
+          {region.name} 여행과 호텔
+        </h1>
+        <p mt="4" leading="8" text="base sm:lg white">
+          {region.intro}
+        </p>
+      </div>
+    </div>
+    <section
+      mt="8"
+      rounded="2xl"
+      border="line"
+      bg="white"
+      p="6"
+      dark="border-slate-800 bg-slate-900"
+    >
+      <h2 text="xl" font="bold">
+        함께 살펴볼 지역
+      </h2>
+      <div mt="4" flex="wrap" gap="2">
+        {region.areas.map((area) => (
+          <span
+            rounded="full"
+            bg="slate-100"
+            px="4"
+            py="2"
+            text="sm slate-700"
+            dark="bg-slate-800 text-slate-200"
+          >
+            {area}
+          </span>
+        ))}
+      </div>
+      <p mt="4" muted-copy>
+        위 지역명은 탐색 키워드입니다. 각 지역의 역 접근성, 이동 시간, 관광지
+        운영 여부는 여행 날짜와 출발 위치에 맞춰 공식 교통·관광 정보로
+        확인하세요.
+      </p>
+    </section>
+    <section mt="10">
+      <div flex items="end" justify="between" gap="4">
+        <div>
+          <p eyebrow>HOTEL CANDIDATES</p>
+          <h2 mt="2" section-title>
+            {region.name} 호텔 후보
+          </h2>
+        </div>
+        <a href="/hotels/" text="sm brand-600" font="bold">
+          전체 호텔 →
+        </a>
+      </div>
+      {related.length ? (
+        <div mt="6" grid gap="5" sm="grid-cols-2" lg="grid-cols-3">
+          {related.map((hotel) => (
+            <HotelCard hotel={hotel} />
+          ))}
+        </div>
+      ) : (
+        <p mt="4" muted-copy>
+          아직 검토 완료된 호텔이 없습니다. 공식 출처를 확인한 후보부터
+          추가합니다.
+        </p>
+      )}
+    </section>
+  </div>
+</SiteLayout>

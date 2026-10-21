@@ -3,9 +3,10 @@ import tseslint from 'typescript-eslint';
 import eslintPluginAstro from 'eslint-plugin-astro';
 
 export default tseslint.config(
+  { ignores: ['**/*.astro', '.astro/**', 'dist/**', 'node_modules/**'] },
+  ...eslintPluginAstro.configs.recommended,
   js.configs.recommended,
   ...tseslint.configs.recommended,
-  ...eslintPluginAstro.configs.recommended,
   {
     rules: {
       // 필요한 커스텀 규칙이 있다면 여기에 작성
@@ -30,7 +31,7 @@ export default tseslint.config(
       // 5. == 대신 === 사용 강제
       eqeqeq: ['error', 'always'],
 
-      // 6. Astro 전용: Astro 파일 내 불필요한 JSX 스타일 self-closing 태그 관련 경고 제어
+      // 6. Astro 전용: set:html 디렉티브 관련 경고 제어
       'astro/no-set-html-directive': 'error',
     },
   },

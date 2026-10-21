@@ -21,7 +21,7 @@ const { hotel } = Astro.props;
     focus-ring
     aria-label={`${hotel.name} 소개 보기`}
   >
-    <div relative aspect="[16/10]" overflow="hidden" bg="slate-100">
+    <div relative style="aspect-ratio: 16/10" overflow="hidden" bg="slate-100" dark="bg-slate-800">
       <img
         src={hotel.image}
         alt={`${hotel.city} 호텔 여행 참고 이미지`}
@@ -46,6 +46,7 @@ const { hotel } = Astro.props;
         text="xs ink"
         font="semibold"
         shadow="sm"
+        dark="bg-slate-800 text-white"
       >
         {hotel.city}
       </span>
