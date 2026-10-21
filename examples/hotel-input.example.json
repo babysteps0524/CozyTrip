@@ -1,0 +1,23 @@
+{
+  "name": "Hotel Name (replace with verified name)",
+  "city": "도쿄",
+  "area": "공식 출처에서 확인한 지역명",
+  "summary": "공식 출처에서 확인한 사실을 바탕으로 작성한 소개 초안입니다. 확인되지 않은 시설이나 서비스를 임의로 추가하지 마세요.",
+  "hotelOfficialUrl": "https://example.com/replace-with-real-official-page",
+  "sources": [
+    {
+      "label": "호텔 공식 웹사이트",
+      "url": "https://example.com/replace-with-real-official-page",
+      "checkedAt": "2026-10-20"
+    }
+  ],
+  "facts": [
+    {
+      "label": "공식 주소",
+      "value": "실제 공식 페이지에서 확인한 주소로 교체",
+      "sourceUrl": "https://example.com/replace-with-real-official-page",
+      "verified": false
+    }
+  ],
+  "imageRights": "needs_review"
+}

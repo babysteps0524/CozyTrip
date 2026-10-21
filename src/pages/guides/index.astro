@@ -1,0 +1,4 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro'; import GuideCard from '../../components/GuideCard.astro'; import { guides } from '../../data/site';
+---
+<SiteLayout title="일본 여행 가이드" description="일본 호텔 예약, 지역 선택, 료칸 이용, 여행 준비에 도움이 되는 실용적인 가이드."><section container-wide py="12" sm="py-16"><p eyebrow>TRAVEL JOURNAL</p><h1 mt="3" section-title>여행 준비에 도움이 되는 가이드</h1><p mt="3" muted-copy max="w-2xl">검색 키워드만 반복하지 않고 실제 예약 과정에서 확인해야 할 항목을 중심으로 정리합니다.</p><div mt="7" grid gap="4" lg="grid-cols-2">{guides.map((guide) => <GuideCard guide={guide} />)}</div></section></SiteLayout>

@@ -1,0 +1,59 @@
+---
+import 'virtual:uno.css';
+import { site } from '../data/site';
+const { title = site.name, description = site.description, image = 'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1200&q=85', noindex = false } = Astro.props;
+const pageTitle = title === site.name ? `${site.name} | 일본 호텔과 여행 가이드` : `${title} | ${site.name}`;
+---
+<!doctype html>
+<html lang="ko" scroll-smooth>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="generator" content={Astro.generator} />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="oklch(0.97 0.018 82)" />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <title>{pageTitle}</title>
+    <link rel="canonical" href={`${site.url}${Astro.url.pathname}`} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" /><meta property="og:site_name" content={site.name} /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:url" content={`${site.url}${Astro.url.pathname}`} /><meta property="og:image" content={image} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json" set:html={JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'WebSite',
+      name: site.name,
+      url: site.url,
+      inLanguage: 'ko-KR',
+      description: site.description,
+      publisher: { '@type': 'Organization', name: site.name, url: site.url }
+    })} />
+    {import.meta.env.PUBLIC_ADSENSE_CLIENT && <meta name="google-adsense-account" content={import.meta.env.PUBLIC_ADSENSE_CLIENT} />}
+    {import.meta.env.PUBLIC_ADSENSE_CLIENT && <script async src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${import.meta.env.PUBLIC_ADSENSE_CLIENT}`} crossorigin="anonymous"></script>}
+    <slot name="head" />
+  </head>
+  <body min="h-screen" bg="canvas" font="sans" text="ink" antialiased dark="bg-slate-950 text-slate-100" >
+    <a href="#main" sr="only" focus:not-sr-only focus:fixed focus="left-4 top-4 z-50 rounded-lg bg-white p-3" >본문 바로가기</a>
+    <header sticky top="0" z="40" border="b white/70" bg="white/90" backdrop-blur-xl dark="border-slate-800 bg-slate-950/90" >
+      <div container-wide flex h="18" items="center" justify="between" gap="4">
+        <a href="/" flex shrink-0 items="center" gap="2.5" focus-ring aria-label="CozyTrip 홈"><span grid h="10" w="10" place="items-center" rounded="xl" bg="brand-600" text="xl white" shadow="sm">⌂</span><span><span block text="lg ink" font="extrabold" tracking="tight" dark="text-white">CozyTrip</span><span block text="[10px] muted" font="medium" tracking="wide">JAPAN HOTEL & TRAVEL</span></span></a>
+        <nav hidden items="center" gap="7" lg:flex aria-label="주 메뉴"><a text="sm" font="semibold" hover="text-brand-600" href="/hotels/">일본 호텔</a><a text="sm" font="semibold" hover="text-brand-600" href="/regions/">지역별 호텔</a><a text="sm" font="semibold" hover="text-brand-600" href="/guides/">여행 가이드</a><a text="sm" font="semibold" hover="text-brand-600" href="/categories/">테마별 찾기</a><a text="sm" font="semibold" hover="text-brand-600" href="/about/">소개</a></nav>
+        <div flex items="center" gap="2"><a href="/search/" grid h="10" w="10" place="items-center" rounded="xl" text="lg" hover="bg-slate-100" focus-ring dark:hover="bg-slate-800" aria-label="검색">⌕</a><button id="mobile-menu-button" type="button" grid h="10" w="10" place="items-center" rounded="xl" text="xl" hover="bg-slate-100" focus-ring lg:hidden dark:hover="bg-slate-800" aria-expanded="false" aria-controls="mobile-menu" aria-label="메뉴 열기">☰</button></div>
+      </div>
+      <div id="mobile-menu" hidden border="t line" bg="white" px="4" py="4" lg:hidden dark="border-slate-800 bg-slate-950" ><nav container-wide grid="cols-2" gap="2" aria-label="모바일 메뉴"><a rounded="xl" p="3" hover="bg-slate-50" dark:hover="bg-slate-900" href="/hotels/">일본 호텔</a><a rounded="xl" p="3" hover="bg-slate-50" dark:hover="bg-slate-900" href="/regions/">지역별 호텔</a><a rounded="xl" p="3" hover="bg-slate-50" dark:hover="bg-slate-900" href="/guides/">여행 가이드</a><a rounded="xl" p="3" hover="bg-slate-50" dark:hover="bg-slate-900" href="/categories/">테마별 찾기</a></nav></div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer mt="20" bg="ink" text="white">
+      <div container-wide grid gap="10" py="12" sm="grid-cols-2" lg="grid-cols-4">
+        <div><a href="/" text="xl" font="extrabold" tracking="tight">CozyTrip</a><p mt="3" leading="7" max="w-xs" text="sm slate-300" >일본 여행의 선택을 돕는 호텔 정보와 실용적인 여행 가이드를 제공합니다.</p><p mt="4" text="xs slate-400" >호텔 정보는 예약 전 공식 출처에서 다시 확인하세요.</p></div>
+        <div><h2 text="sm" font="bold">둘러보기</h2><ul mt="4" space="y-3" text="sm slate-300"><li><a hover="text-white" href="/hotels/">일본 호텔</a></li><li><a hover="text-white" href="/regions/">지역별 가이드</a></li><li><a hover="text-white" href="/guides/">여행 가이드</a></li><li><a hover="text-white" href="/categories/">테마별 호텔</a></li></ul></div>
+        <div><h2 text="sm" font="bold">사이트 정보</h2><ul mt="4" space="y-3" text="sm slate-300"><li><a hover="text-white" href="/about/">사이트 소개</a></li><li><a hover="text-white" href="/contact/">문의 및 오류 제보</a></li><li><a hover="text-white" href="/editorial-policy/">편집 및 검증 정책</a></li><li><a hover="text-white" href="/affiliate-disclosure/">제휴 및 광고 고지</a></li><li><a hover="text-white" href="/privacy/">개인정보처리방침</a></li><li><a hover="text-white" href="/terms/">이용약관</a></li></ul></div>
+        <div><h2 text="sm" font="bold">예약 전 안내</h2><p mt="4" leading="7" text="sm slate-300" >숙박 요금, 객실 가능 여부, 세금, 취소 조건은 날짜와 인원에 따라 달라집니다. 최종 조건은 예약 사이트에서 확인하세요.</p><a href="/affiliate-disclosure/" mt="3" inline="flex" text="sm blue-200" font="semibold" hover="text-white">제휴 안내 읽기 →</a></div>
+      </div><div border="t white/10"><div container-wide flex="col" gap="2" py="5" text="xs slate-400" sm="flex-row items-center justify-between" ><span>© {new Date().getFullYear()} CozyTrip. All rights reserved.</span><span>독립적인 여행 정보 사이트 · Agoda와 공식 제휴 여부는 계정 설정을 기준으로 표시됩니다.</span></div></div>
+    </footer>
+    <script>
+      const menuButton = document.querySelector<HTMLButtonElement>('#mobile-menu-button');
+      const menu = document.querySelector<HTMLElement>('#mobile-menu');
+      menuButton?.addEventListener('click', () => { const open = menuButton.getAttribute('aria-expanded') !== 'true'; menuButton.setAttribute('aria-expanded', String(open)); menu?.classList.toggle('hidden', !open); });
+    </script>
+  </body>
+</html>

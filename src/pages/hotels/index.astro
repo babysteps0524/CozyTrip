@@ -1,0 +1,4 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro'; import HotelCard from '../../components/HotelCard.astro'; import AdSlot from '../../components/AdSlot.astro'; import { hotels } from '../../data/site';
+---
+<SiteLayout title="일본 호텔" description="도쿄, 오사카, 교토 등 일본 주요 지역의 호텔 후보와 예약 전 확인 정보를 살펴보세요."><section container-wide py="12" sm="py-16"><p eyebrow>HOTEL DIRECTORY</p><h1 mt="3" section-title>일본 호텔 둘러보기</h1><p mt="3" muted-copy max="w-2xl">호텔 이름과 지역, 여행 목적을 기준으로 후보를 살펴보세요. 아래 소개는 편집 검토용 초안이며, 세부 정보는 공식 출처로 검증한 뒤 게시해야 합니다.</p><div mt="7" grid gap="5" sm="grid-cols-2" lg="grid-cols-3">{hotels.map((hotel) => <HotelCard hotel={hotel} />)}</div><AdSlot /></section></SiteLayout>
