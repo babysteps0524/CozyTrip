@@ -62,12 +62,11 @@ const pageTitle =
   </head>
   <body
     min="h-screen"
-    bg="canvas"
+    bg="canvas dark:slate-950"
     font="sans"
-    text="ink"
-    antialiased
-    dark="bg-slate-950 text-slate-100"
-  >
+    text="ink dark:slate-100"
+    antialiased 
+    >
     <a
       href="#main"
       sr="only"
@@ -81,10 +80,9 @@ const pageTitle =
       sticky
       top="0"
       z="40"
-      border="b white/70"
-      bg="white/90"
+      border="b white/70 dark:slate-800"
+      bg="white/90 dark:slate-950/90"
       backdrop-blur-xl
-      dark="border-slate-800 bg-slate-950/90"
     >
       <div container-wide flex h="18" items="center" justify="between" gap="4">
         <a
@@ -111,10 +109,9 @@ const pageTitle =
           <span>
             <span
               block
-              text="lg ink"
+              text="lg ink dark:white"
               font="extrabold"
               tracking="tight"
-              dark="text-white"
             >
               CozyTrip
             </span>
@@ -123,7 +120,7 @@ const pageTitle =
             </span>
           </span>
         </a>
-        <nav hidden items="center" gap="7" lg:flex aria-label="주 메뉴">
+        <nav sm:hidden items="center" gap="7" lg:flex aria-label="주 메뉴">
           <a text="sm" font="semibold" hover="text-brand-600" href="/hotels/">
             일본 호텔
           </a>
@@ -184,13 +181,11 @@ const pageTitle =
       </div>
       <div
         id="mobile-menu"
-        hidden
-        border="t line"
-        bg="white"
+        lg:hidden
+        border="t line dark:slate-800"
+        bg="white dark:slate-950"
         px="4"
         py="4"
-        lg:hidden
-        dark="border-slate-800 bg-slate-950"
       >
         <nav container-wide grid="cols-2" gap="2" aria-label="모바일 메뉴">
           <a

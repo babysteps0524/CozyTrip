@@ -60,10 +60,9 @@ const related = hotels.filter((hotel) => hotel.region === region.slug);
     <section
       mt="8"
       rounded="2xl"
-      border="line"
-      bg="white"
+      border="line dark:slate-800"
+      bg="white dark:slate-900"
       p="6"
-      dark="border-slate-800 bg-slate-900"
     >
       <h2 text="xl" font="bold">
         함께 살펴볼 지역
@@ -72,11 +71,10 @@ const related = hotels.filter((hotel) => hotel.region === region.slug);
         {region.areas.map((area) => (
           <span
             rounded="full"
-            bg="slate-100"
+            bg="slate-100 dark:slate-800"
             px="4"
             py="2"
-            text="sm slate-700"
-            dark="bg-slate-800 text-slate-200"
+            text="sm slate-700 dark:slate-200"
           >
             {area}
           </span>

@@ -20,12 +20,11 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
     <div
       mt="6"
       rounded="2xl"
-      border="amber-200"
-      bg="amber-50"
+      border="amber-200 dark:amber-900"
+      bg="amber-50 dark:amber-950/30"
       p="4"
-      text="sm amber-900"
+      text="sm amber-900 dark:amber-100"
       leading="6"
-      dark="border-amber-900 bg-amber-950/30 text-amber-100"
     >
       <strong>주의:</strong> 실제 가격, 객실 가능 여부, 별점, 리뷰 수를 근거
       없이 입력하지 마세요. 아고다 제휴 링크는 승인된 계정에서 발급받고 검증한
@@ -37,12 +36,11 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
       grid
       gap="5"
       rounded="3xl"
-      border="line"
-      bg="white"
+      border="line dark:slate-800"
+      bg="white dark:slate-900"
       p="5"
       shadow="card"
       sm="p-8"
-      dark="border-slate-800 bg-slate-900"
     >
       <div grid gap="4" sm="grid-cols-2">
         <label block text="sm" font="semibold">
@@ -53,15 +51,14 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
             mt="2"
             w="full"
             rounded="xl"
-            border="line"
-            bg="white"
+            border="line dark:slate-700"
+            bg="white dark:slate-950"
             px="4"
             py="3"
             font="normal"
             outline="none"
             focus="border-brand-500"
             placeholder="공식 표기와 동일한 이름"
-            dark="border-slate-700 bg-slate-950"
           />
         </label>
         <label block text="sm" font="semibold">
@@ -72,15 +69,14 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
             mt="2"
             w="full"
             rounded="xl"
-            border="line"
-            bg="white"
+            border="line dark:slate-700"
+            bg="white dark:slate-950"
             px="4"
             py="3"
             font="normal"
             outline="none"
             focus="border-brand-500"
             placeholder="예: 도쿄 / 신주쿠"
-            dark="border-slate-700 bg-slate-950"
           />
         </label>
       </div>
@@ -94,8 +90,8 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           mt="2"
           w="full"
           rounded="xl"
-          border="line"
-          bg="white"
+          border="line dark:slate-700"
+          bg="white dark:slate-950"
           px="4"
           py="3"
           font="normal"
@@ -103,7 +99,6 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           outline="none"
           focus="border-brand-500"
           placeholder="공식 출처로 확인한 사실만 작성하세요. 최소 40자."
-          dark="border-slate-700 bg-slate-950"
         ></textarea>
       </label>
       <label block text="sm" font="semibold">
@@ -114,15 +109,14 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           mt="2"
           w="full"
           rounded="xl"
-          border="line"
-          bg="white"
+          border="line dark:slate-700"
+          bg="white dark:slate-950"
           px="4"
           py="3"
           font="normal"
           outline="none"
           focus="border-brand-500"
           placeholder="https://..."
-          dark="border-slate-700 bg-slate-950"
         />
       </label>
       <label block text="sm" font="semibold">
@@ -133,8 +127,8 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           mt="2"
           w="full"
           rounded="xl"
-          border="line"
-          bg="white"
+          border="line dark:slate-700"
+          bg="white dark:slate-950"
           px="4"
           py="3"
           font="normal"
@@ -142,7 +136,6 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           outline="none"
           focus="border-brand-500"
           placeholder="호텔 공식 웹사이트 | https://... | 2026-10-20"
-          dark="border-slate-700 bg-slate-950"
         ></textarea>
       </label>
       <label block text="sm" font="semibold">
@@ -154,8 +147,8 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           mt="2"
           w="full"
           rounded="xl"
-          border="line"
-          bg="white"
+          border="line dark:slate-700"
+          bg="white dark:slate-950"
           px="4"
           py="3"
           font="normal"
@@ -163,7 +156,6 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
           outline="none"
           focus="border-brand-500"
           placeholder="공식 주소 | 공식 페이지에 표시된 주소 | https://... | true"
-          dark="border-slate-700 bg-slate-950"
         ></textarea>
       </label>
       <div grid gap="4" sm="grid-cols-2">
@@ -174,14 +166,13 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
             mt="2"
             w="full"
             rounded="xl"
-            border="line"
-            bg="white"
+            border="line dark:slate-700"
+            bg="white dark:slate-950"
             px="4"
             py="3"
             font="normal"
             outline="none"
             focus="border-brand-500"
-            dark="border-slate-700 bg-slate-950"
           >
             <option value="unknown">미확인</option>
             <option value="needs_review">검토 필요</option>
@@ -198,15 +189,14 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
             mt="2"
             w="full"
             rounded="xl"
-            border="line"
-            bg="white"
+            border="line dark:slate-700"
+            bg="white dark:slate-950"
             px="4"
             py="3"
             font="normal"
             outline="none"
             focus="border-brand-500"
             placeholder="승인된 URL만 입력"
-            dark="border-slate-700 bg-slate-950"
           />
         </label>
       </div>
@@ -228,10 +218,9 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
       hidden
       mt="8"
       rounded="3xl"
-      border="line"
-      bg="white"
+      border="line dark:slate-800"
+      bg="white dark:slate-900"
       p="5"
-      dark="border-slate-800 bg-slate-900"
     >
       <div flex="wrap" items="center" justify="between" gap="3">
         <h2 text="lg" font="bold">
@@ -249,11 +238,10 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
         whitespace="pre-wrap"
         break="words"
         rounded="2xl"
-        bg="slate-50"
+        bg="slate-50 dark:slate-950"
         p="4"
-        text="xs slate-700"
+        text="xs slate-700 dark:slate-200"
         leading="6"
-        dark="bg-slate-950 text-slate-200"
       ></pre>
     </section>
   </section>

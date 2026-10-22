@@ -19,16 +19,10 @@ const { guide } = Astro.props;
     <p eyebrow>
       {guide.category} · {guide.readTime}
     </p>
-    <h1
-      mt="3"
-      font="bold"
-      leading="tight"
-      dark="text-white"
-      text="3xl sm:5xl ink"
-    >
+    <h1 mt="3" font="bold" leading="tight" text="3xl sm:5xl ink dark:white">
       {guide.title}
     </h1>
-    <p mt="5" leading="8" dark="text-slate-300" text="lg muted">
+    <p mt="5" leading="8" text="lg muted dark:slate-300">
       {guide.excerpt}
     </p>
     <p mt="3" text="xs muted">
@@ -49,10 +43,9 @@ const { guide } = Astro.props;
     <div
       mt="8"
       rounded="2xl"
-      border="brand-100"
-      bg="brand-50"
+      border="brand-100 dark:slate-800"
+      bg="brand-50 dark:slate-900"
       p="5"
-      dark="border-slate-800 bg-slate-900"
     >
       <h2 text="base" font="bold">
         이 가이드의 핵심
@@ -63,7 +56,7 @@ const { guide } = Astro.props;
         요금이나 예약 가능 여부를 보장하지 않습니다.
       </p>
     </div>
-    <section mt="8" prose="slate" max="w-none" dark="prose-invert">
+    <section mt="8" prose="slate dark:invert" max="w-none">
       <h2>1. 여행 일정에서 출발하세요</h2>
       <p>
         숙소를 먼저 고르기보다 방문할 장소와 도착·출발 시간을 대략 정한 뒤 숙소
