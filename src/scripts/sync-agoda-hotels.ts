@@ -4,9 +4,10 @@
  * 실행 예시:
  *   bun run scripts/sync-agoda-hotels.ts
  *   bun run scripts/sync-agoda-hotels.ts --dry-run
- *   bun run scripts/sync-agoda-hotels.ts --keyword "도쿄" --limit 20
+ *   bun run scripts/sync-agoda-hotels.ts --city-id 12345 --limit 20
  *   bun run scripts/sync-agoda-hotels.ts --retry-failed
- *   bun run scripts/sync-agoda-hotels.ts --city 도쿄 --limit 100 --overwrite
+ *   bun run scripts/sync-agoda-hotels.ts --city-id 12345 --limit 100 --overwrite
+ *   bun run scripts/sync-agoda-hotels.ts --mock --limit 5
  */
 
 import { AgodaClient } from './agoda-client.js';
@@ -125,8 +126,7 @@ const MOCK_HOTELS: Array<{
 
 /** CLI 인자 파싱 */
 function parseArgs(argv: string[]): {
-  keyword?: string;
-  city?: string;
+  cityId?: number;
   limit: number;
   dryRun: boolean;
   skipExisting: boolean;
@@ -135,8 +135,7 @@ function parseArgs(argv: string[]): {
   mock: boolean;
 } {
   const args: {
-    keyword?: string;
-    city?: string;
+    cityId?: number;
     limit: number;
     dryRun: boolean;
     skipExisting: boolean;
@@ -154,10 +153,8 @@ function parseArgs(argv: string[]): {
 
   for (let i = 0; i < argv.length; i++) {
     const arg = argv[i];
-    if (arg === '--keyword' || arg === '-k') {
-      args.keyword = argv[++i];
-    } else if (arg === '--city' || arg === '-c') {
-      args.city = argv[++i];
+    if (arg === '--city-id' || arg === '-c') {
+      args.cityId = parseInt(argv[++i], 10);
     } else if (arg === '--limit' || arg === '-l') {
       args.limit = parseInt(argv[++i], 10) || DEFAULT_LIMIT;
     } else if (arg === '--dry-run') {
@@ -295,7 +292,7 @@ export async function runPipeline(
 
   console.log(`[아고다 자동화] 시작`);
   console.log(
-    `  키워드: ${args.keyword ?? '전체'} | 도시: ${args.city ?? '전체'} | 제한: ${args.limit}`,
+    `  도시 ID: ${args.cityId ?? '전체'} | 제한: ${args.limit}`,
   );
   console.log(
     `  드라이런: ${args.dryRun} | 기존 파일 건너뛰기: ${args.skipExisting} | 실패 재처리: ${args.retryFailed} | 모크 모드: ${args.mock}`,
@@ -312,9 +309,8 @@ export async function runPipeline(
       ? new AgodaClient({ mockMode: true, mockHotels: MOCK_HOTELS })
       : client;
     const rawHotels = await effectiveClient.searchHotels({
-      keyword: args.keyword,
-      city: args.city,
-      limit: args.limit,
+      cityId: args.cityId,
+      maxResult: args.limit,
     });
     console.log(`  수집된 호텔 수: ${rawHotels.length}`);
 
@@ -335,7 +331,7 @@ export async function runPipeline(
         let detail = raw;
         if (hotelId) {
           try {
-            detail = await effectiveClient.getHotelDetail({ hotelId });
+            detail = await effectiveClient.getHotelDetail({ hotelId: Number(hotelId) });
           } catch (err) {
             console.warn(
               `  [경고] 호텔 ID ${hotelId} 상세 조회 실패, 검색 결과 사용: ${err}`,
