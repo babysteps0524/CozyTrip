@@ -120,7 +120,7 @@ const pageTitle =
             </span>
           </span>
         </a>
-        <nav sm:hidden items="center" gap="7" lg:flex aria-label="주 메뉴">
+        <nav hidden md:flex items="center" gap="7" aria-label="주 메뉴">
           <a text="sm" font="semibold" hover="text-brand-600" href="/hotels/">
             일본 호텔
           </a>
@@ -169,7 +169,7 @@ const pageTitle =
             text="xl"
             hover="bg-slate-100"
             focus-ring
-            lg:hidden
+            md:hidden
             dark:hover="bg-slate-800"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -181,7 +181,8 @@ const pageTitle =
       </div>
       <div
         id="mobile-menu"
-        lg:hidden
+        md:hidden
+        container-wide
         border="t line dark:slate-800"
         bg="white dark:slate-950"
         px="4"
@@ -355,14 +356,32 @@ const pageTitle =
       </div>
     </footer>
     <script>
-      const menuButton = document.querySelector<HTMLButtonElement>(
-        '#mobile-menu-button',
-      );
-      const menu = document.querySelector<HTMLElement>('#mobile-menu');
-      menuButton?.addEventListener('click', () => {
-        const open = menuButton.getAttribute('aria-expanded') !== 'true';
-        menuButton.setAttribute('aria-expanded', String(open));
-        menu?.classList.toggle('hidden', !open);
+      const menuButton = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+
+      function toggleMenu() {
+        const isOpen = menuButton?.getAttribute('aria-expanded') === 'true';
+        menuButton?.setAttribute('aria-expanded', String(!isOpen));
+        menu?.classList.toggle('hidden', !isOpen);
+      }
+
+      menuButton?.addEventListener('click', (event) => {
+        event.stopPropagation();
+        toggleMenu();
+      });
+
+      document.addEventListener('click', (event) => {
+        if (menu && !menu.classList.contains('hidden')) {
+          const target = event.target;
+          const isClickInsideMenu =
+            target instanceof Node && menu.contains(target);
+          const isClickOnButton =
+            menuButton && target instanceof Node && menuButton.contains(target);
+          if (!isClickInsideMenu && !isClickOnButton) {
+            menuButton?.setAttribute('aria-expanded', 'false');
+            menu.classList.add('hidden');
+          }
+        }
       });
     </script>
   </body>
