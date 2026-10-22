@@ -36,6 +36,13 @@ export interface RawAgodaHotel {
   }>;
   imageRights?: 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed';
   fetchedAt?: string;
+
+  // 아고다 Affiliate Lite API 추가 필드
+  roomtypeName?: string;
+  crossedOutRate?: number;
+  discountPercent?: number;
+  includeBreakfast?: boolean;
+  freeWifi?: boolean;
 }
 
 /** 정규화된 호텔 데이터 (마크다운 생성 전) */
@@ -60,6 +67,13 @@ export interface NormalizedHotel {
   imageRights: 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed';
   sourceNote?: string;
   fetchedAt: string;
+
+  // 아고다 Affiliate Lite API 추가 필드
+  roomtypeName?: string;
+  crossedOutRate?: number;
+  discountPercent?: number;
+  includeBreakfast?: boolean;
+  freeWifi?: boolean;
 }
 
 /** 마크다운 생성 결과 */

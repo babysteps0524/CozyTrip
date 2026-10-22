@@ -256,6 +256,13 @@ function normalizeHotel(raw: any): HotelInput {
     imageRights: raw.imageRights ?? 'unknown',
     sourceNote: raw.sourceNote ?? undefined,
     fetchedAt: raw.fetchedAt ?? new Date().toISOString(),
+
+    // 아고다 Affiliate Lite API 추가 필드
+    roomtypeName: raw.roomtypeName ?? undefined,
+    crossedOutRate: raw.crossedOutRate ?? undefined,
+    discountPercent: raw.discountPercent ?? undefined,
+    includeBreakfast: raw.includeBreakfast ?? false,
+    freeWifi: raw.freeWifi ?? false,
   };
 }
 

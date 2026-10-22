@@ -222,7 +222,7 @@ export class AgodaClient {
         summary: '',
         image: h.imageURL,
         images: h.imageURL ? [h.imageURL] : [],
-        type: '',
+        type: h.roomtypeName,
         starRating: h.starRating,
         reviewScore: h.reviewScore,
         reviewCount: h.reviewCount,
@@ -236,6 +236,13 @@ export class AgodaClient {
         facts: [],
         imageRights: 'unknown',
         fetchedAt: new Date().toISOString(),
+
+        // 아고다 Affiliate Lite API 추가 필드
+        roomtypeName: h.roomtypeName,
+        crossedOutRate: h.crossedOutRate,
+        discountPercent: h.discountPercent,
+        includeBreakfast: h.includeBreakfast,
+        freeWifi: h.freeWifi,
       };
     });
   }
@@ -266,7 +273,7 @@ export class AgodaClient {
       summary: '',
       image: hotel.imageURL,
       images: hotel.imageURL ? [hotel.imageURL] : [],
-      type: '',
+      type: hotel.roomtypeName,
       starRating: hotel.starRating,
       reviewScore: hotel.reviewScore,
       reviewCount: hotel.reviewCount,
@@ -280,6 +287,13 @@ export class AgodaClient {
       facts: [],
       imageRights: 'unknown',
       fetchedAt: new Date().toISOString(),
+
+      // 아고다 Affiliate Lite API 추가 필드
+      roomtypeName: hotel.roomtypeName,
+      crossedOutRate: hotel.crossedOutRate,
+      discountPercent: hotel.discountPercent,
+      includeBreakfast: hotel.includeBreakfast,
+      freeWifi: hotel.freeWifi,
     };
   }
 

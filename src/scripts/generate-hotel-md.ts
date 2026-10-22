@@ -114,10 +114,34 @@ export function generateHotelMarkdown(
   // 호텔 타입 및 평점 배지
   const badges: string[] = [];
   if (hotel.type) badges.push(`**타입:** ${hotel.type}`);
+  if (hotel.roomtypeName) badges.push(`**객실:** ${hotel.roomtypeName}`);
   if (hotel.starRating) badges.push(`**별점:** ${hotel.starRating}점`);
   if (hotel.reviewScore) badges.push(`**후기 점수:** ${hotel.reviewScore}`);
   if (badges.length > 0) {
     body.push(`\n${badges.join(' · ')}\n`);
+  }
+
+  // 요금 및 할인 정보
+  if (hotel.priceMin || hotel.crossedOutRate || hotel.discountPercent) {
+    body.push(`\n## 요금 정보\n`);
+    if (hotel.priceMin) {
+      body.push(`- 1박 요금: ${hotel.priceMin.toLocaleString()} ${hotel.currency ?? 'KRW'}\n`);
+    }
+    if (hotel.crossedOutRate) {
+      body.push(`- 정가: ${hotel.crossedOutRate.toLocaleString()} ${hotel.currency ?? 'KRW'}\n`);
+    }
+    if (hotel.discountPercent) {
+      body.push(`- 할인율: ${hotel.discountPercent}%\n`);
+    }
+  }
+
+  // 편의 시설
+  const amenities: string[] = [];
+  if (hotel.includeBreakfast) amenities.push('조식 포함');
+  if (hotel.freeWifi) amenities.push('무료 WiFi');
+  if (amenities.length > 0) {
+    body.push(`\n## 편의 시설\n`);
+    body.push(`- ${amenities.join(', ')}\n`);
   }
 
   // 소개 초안

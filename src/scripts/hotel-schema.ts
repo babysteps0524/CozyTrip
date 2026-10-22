@@ -54,6 +54,13 @@ export const HotelSchema = z.object({
     .default('unknown'),
   sourceNote: z.string().optional(),
   fetchedAt: z.string().datetime('ISO 8601 datetime 형식이어야 합니다.'),
+
+  // 아고다 Affiliate Lite API 추가 필드
+  roomtypeName: z.string().optional(),
+  crossedOutRate: z.number().min(0).optional().nullable(),
+  discountPercent: z.number().min(0).max(100).optional().nullable(),
+  includeBreakfast: z.boolean().default(false),
+  freeWifi: z.boolean().default(false),
 });
 
 export type HotelInput = z.infer<typeof HotelSchema>;
