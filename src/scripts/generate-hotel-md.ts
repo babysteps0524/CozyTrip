@@ -3,6 +3,8 @@
  *
  * frontmatter (YAML) + 본문 (Markdown) 구조로 출력하며,
  * src/content/hotels/[slug].md 에 저장할 수 있습니다.
+ *
+ * SEO 최적화 메타 태그와 구조화된 콘텐츠를 포함합니다.
  */
 
 import type {
@@ -25,6 +27,17 @@ function escapeYamlValue(value: string): string {
   return value.replace(/"/g, '\\"').replace(/\n/g, '\\n');
 }
 
+/** 한글 포함 텍스트의 안전한 설명문 생성 (최대 160자) */
+function createDescription(
+  name: string,
+  city: string,
+  summary?: string,
+): string {
+  const base = summary || `${name} 호텔 소개`;
+  const desc = `${city} ${name} - ${base}`;
+  return desc.length > 160 ? `${desc.slice(0, 157)}...` : desc;
+}
+
 /**
  * 호텔 데이터를 Markdown 문자열로 변환합니다.
  */
@@ -34,12 +47,20 @@ export function generateHotelMarkdown(
   const slug = hotel.slug || createSlug(hotel.name);
   const filename = `${slug}.md`;
 
+  const description = createDescription(
+    hotel.name,
+    hotel.city,
+    hotel.summary,
+  );
+
   const frontmatter: Record<string, unknown> = {
     status: 'needs_review',
     publish: false,
     name: hotel.name,
     city: hotel.city,
     slug: hotel.slug,
+    title: `${hotel.name} | ${hotel.city} 호텔 소개`,
+    description,
     imageRights: hotel.imageRights,
     source: 'agoda_api',
     fetchedAt: hotel.fetchedAt ?? new Date().toISOString(),
@@ -77,17 +98,34 @@ export function generateHotelMarkdown(
 
   const body: string[] = [];
 
-  body.push(`# ${hotel.name}`);
-
-  if (hotel.city || hotel.area) {
-    const locationParts = [hotel.city, hotel.area].filter(Boolean);
-    body.push(`\n## 위치\n\n${locationParts.join(' > ')}\n`);
+  // 이미지 (상단)
+  if (hotel.image) {
+    body.push(`![${hotel.name} 이미지](${hotel.image})\n`);
   }
 
+  body.push(`# ${hotel.name}`);
+
+  // 위치 배지
+  const locationParts = [hotel.city, hotel.area].filter(Boolean);
+  if (locationParts.length > 0) {
+    body.push(`\n**위치:** ${locationParts.join(' > ')}\n`);
+  }
+
+  // 호텔 타입 및 평점 배지
+  const badges: string[] = [];
+  if (hotel.type) badges.push(`**타입:** ${hotel.type}`);
+  if (hotel.starRating) badges.push(`**별점:** ${hotel.starRating}점`);
+  if (hotel.reviewScore) badges.push(`**후기 점수:** ${hotel.reviewScore}`);
+  if (badges.length > 0) {
+    body.push(`\n${badges.join(' · ')}\n`);
+  }
+
+  // 소개 초안
   if (hotel.summary) {
     body.push(`\n## 소개 초안\n\n${hotel.summary}\n`);
   }
 
+  // 예약 및 공식 정보
   if (hotel.officialUrl || hotel.affiliateUrl) {
     body.push(`\n## 예약 및 공식 정보\n`);
     if (hotel.officialUrl) {
@@ -98,6 +136,7 @@ export function generateHotelMarkdown(
     }
   }
 
+  // 평점 및 후기 상세
   if (hotel.starRating || hotel.reviewScore || hotel.reviewCount) {
     body.push(`\n## 평점 및 후기\n`);
     if (hotel.starRating) {
@@ -111,26 +150,38 @@ export function generateHotelMarkdown(
     }
   }
 
+  // 확인된 사실
   if (hotel.facts.length > 0) {
-    body.push(`\n## 확인된 사실\n\n`);
+    body.push(`\n## 확인된 사실\n`);
+    body.push(`| 항목 | 값 | 검증 상태 | 출처 |\n`);
+    body.push(`|------|-----|-----------|------|\n`);
     for (const fact of hotel.facts) {
-      const verifiedMark = fact.verified ? '✅ 검증 완료' : '❓ 미검증';
-      body.push(`- **${fact.label}:** ${fact.value} (${verifiedMark})`);
-      if (fact.sourceUrl) {
-        body.push(`  - 출처: [링크](${fact.sourceUrl})\n`);
-      } else {
-        body.push(`\n`);
-      }
+      const verifiedMark = fact.verified ? '✅ 완료' : '❓ 미검증';
+      const sourceLink = fact.sourceUrl
+        ? `[링크](${fact.sourceUrl})`
+        : '-';
+      body.push(
+        `| ${fact.label} | ${fact.value} | ${verifiedMark} | ${sourceLink} |\n`,
+      );
     }
   }
 
+  // 출처 목록
   if (hotel.sources.length > 0) {
-    body.push(`\n## 출처\n\n`);
+    body.push(`\n## 출처\n`);
     for (const source of hotel.sources) {
       const checkedAt = source.checkedAt
         ? ` (확인일: ${source.checkedAt})`
         : '';
       body.push(`- [${source.label}](${source.url})${checkedAt}\n`);
+    }
+  }
+
+  // 태그
+  if (hotel.tags && hotel.tags.length > 0) {
+    body.push(`\n## 태그\n`);
+    for (const tag of hotel.tags) {
+      body.push(`- #${tag}\n`);
     }
   }
 

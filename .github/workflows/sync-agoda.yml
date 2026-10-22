@@ -1,0 +1,73 @@
+name: Agoda Hotel Sync
+
+on:
+  schedule:
+    # 매일 새벽 3시 (KST 기준 오후 12시)에 실행
+    - cron: '0 15 * * *'
+  workflow_dispatch:
+    inputs:
+      keyword:
+        description: '검색 키워드 (예: 도쿄)'
+        required: false
+        default: ''
+      city:
+        description: '도시/지역 (예: 도쿄)'
+        required: false
+        default: ''
+      limit:
+        description: '수집할 호텔 수'
+        required: false
+        default: '50'
+      dry-run:
+        description: '드라이런 모드 (파일 미생성)'
+        required: false
+        default: 'false'
+      mock:
+        description: '모크 데이터 사용 (API 테스트용)'
+        required: false
+        default: 'true'
+
+jobs:
+  sync-hotels:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Bun 설치
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - name: 의존성 설치
+        run: bun install
+
+      - name: 환경 변수 설정
+        run: |
+          echo "AGODA_API_KEY=${{ secrets.AGODA_API_KEY }}" >> .env
+          echo "AGODA_API_SECRET=${{ secrets.AGODA_API_SECRET }}" >> .env
+          echo "AGODA_API_BASE_URL=${{ secrets.AGODA_API_BASE_URL || 'https://api.agoda.com/v1' }}" >> .env
+
+      - name: 아고다 호텔 동기화 실행
+        run: |
+          bun src/scripts/sync-agoda-hotels.ts \
+            ${{ github.event.inputs.keyword && format('--keyword {0}', github.event.inputs.keyword) || '' }} \
+            ${{ github.event.inputs.city && format('--city {0}', github.event.inputs.city) || '' }} \
+            ${{ github.event.inputs.limit && format('--limit {0}', github.event.inputs.limit) || '--limit 50' }} \
+            ${{ github.event.inputs.dry-run == 'true' && '--dry-run' || '' }} \
+            ${{ github.event.inputs.mock == 'true' && '--mock' || '' }}
+
+      - name: 변경 사항 커밋 및 푸시
+        if: github.event.inputs.dry-run != 'true' && github.event.inputs.mock != 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/content/hotels/
+          git commit -m "chore: 아고다 호텔 자동 동기화 (${{ github.run_id }})" || echo "변경 사항 없음"
+          git push origin feature/agoda-hotel-automation || echo "푸시 실패 (브랜치 확인 필요)"
+
+      - name: 실행 결과 요약
+        run: |
+          echo "아고다 호텔 동기화가 완료되었습니다."
+          echo "실행 ID: ${{ github.run_id }}"
+          echo "워크플로우: ${{ github.workflow }}"

@@ -1,0 +1,257 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { readdir, readFile } from 'node:fs/promises';
+import { join } from 'node:path';
+
+const CONTENT_DIR = join(process.cwd(), 'src/content/hotels');
+
+interface HotelMeta {
+  name: string;
+  city: string;
+  status: string;
+  publish: boolean;
+  source: string;
+  fetchedAt?: string;
+  slug: string;
+}
+
+async function loadHotels(): Promise<HotelMeta[]> {
+  try {
+    const files = await readdir(CONTENT_DIR);
+    const mdFiles = files.filter((f) => f.endsWith('.md') && !f.startsWith('.'));
+    const hotels: HotelMeta[] = [];
+    for (const file of mdFiles) {
+      const filePath = join(CONTENT_DIR, file);
+      const content = await readFile(filePath, 'utf-8');
+      const slug = file.replace(/\.md$/, '');
+      const fmMatch = content.match(/^---\n([\s\S]*?)\n---\n/);
+      if (fmMatch) {
+        const fmText = fmMatch[1];
+        const data: Record<string, string> = {};
+        for (const line of fmText.split('\n')) {
+          const colonIdx = line.indexOf(':');
+          if (colonIdx > 0) {
+            const key = line.slice(0, colonIdx).trim();
+            let val = line.slice(colonIdx + 1).trim();
+            if (val.startsWith('"') && val.endsWith('"')) {
+              val = val.slice(1, -1);
+            }
+            data[key] = val;
+          }
+        }
+        hotels.push({
+          name: data.name ?? slug,
+          city: data.city ?? '',
+          status: data.status ?? 'unknown',
+          publish: data.publish === 'true',
+          source: data.source ?? 'unknown',
+          fetchedAt: data.fetchedAt,
+          slug,
+        });
+      }
+    }
+    return hotels.sort((a, b) => a.name.localeCompare(b.name));
+  } catch {
+    return [];
+  }
+}
+
+const hotels = await loadHotels();
+const stats = {
+  total: hotels.length,
+  published: hotels.filter((h) => h.publish).length,
+  needsReview: hotels.filter((h) => h.status === 'needs_review').length,
+  draft: hotels.filter((h) => h.status === 'draft').length,
+};
+
+---
+
+<SiteLayout
+  title="호텔 콘텐츠 관리"
+  description="아고다 API 연동 호텔 소개 콘텐츠를 관리합니다."
+>
+  <section container-wide py="12" sm="py-16">
+    <p eyebrow>ADMIN</p>
+    <h1 mt="3" section-title>
+      호텔 콘텐츠 관리
+    </h1>
+    <p mt="3" muted-copy max="w-2xl">
+      아고다 API를 통해 수집된 호텔 소개 콘텐츠의 현황을 확인하고 관리합니다.
+    </p>
+
+    <!-- 통계 카드 -->
+    <div mt="8" grid gap="4" sm="grid-cols-3" max="w-4xl">
+      <div
+        rounded="2xl"
+        border="line"
+        bg="white"
+        p="5"
+        dark="border-slate-800 bg-slate-900"
+      >
+        <p text="xs muted" font="bold">전체 호텔</p>
+        <h2 mt="2" text="2xl" font="bold">
+          {stats.total}
+        </h2>
+      </div>
+      <div
+        rounded="2xl"
+        border="line"
+        bg="white"
+        p="5"
+        dark="border-slate-800 bg-slate-900"
+      >
+        <p text="xs muted" font="bold">게시 완료</p>
+        <h2 mt="2" text="2xl" font="bold" text="emerald-600">
+          {stats.published}
+        </h2>
+      </div>
+      <div
+        rounded="2xl"
+        border="line"
+        bg="white"
+        p="5"
+        dark="border-slate-800 bg-slate-900"
+      >
+        <p text="xs muted" font="bold">검토 필요</p>
+        <h2 mt="2" text="2xl" font="bold" text="amber-600">
+          {stats.needsReview}
+        </h2>
+      </div>
+    </div>
+
+    <!-- 동기화 버튼 -->
+    <div mt="8" flex="wrap" gap="3" max="w-4xl">
+      <button
+        btn-primary
+        onclick="location.href='/api/sync-hotels'"
+        disabled
+        title="서버리스 함수 구현 필요"
+      >
+        아고다 API 동기화 실행
+      </button>
+      <button
+        btn-secondary
+        onclick="location.reload()"
+      >
+        새로고침
+      </button>
+      <p mt="2" text="xs muted">
+        동기화 기능은 서버리스 함수(/api/sync-hotels.ts) 구현 후 활성화됩니다.
+      </p>
+    </div>
+
+    <!-- 호텔 목록 -->
+    {hotels.length > 0 ? (
+      <div mt="8" max="w-4xl">
+        <div
+          rounded="2xl"
+          border="line"
+          bg="white"
+          dark="border-slate-800 bg-slate-900"
+          overflow="auto"
+        >
+          <table w="full" text="sm">
+            <thead>
+              <tr border-b="line" dark="border-slate-700">
+                <th p="3" text="left" font="bold" text="slate-600">
+                  호텔명
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  도시
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  상태
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  게시
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  출처
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  수집일
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  링크
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              {hotels.map((h) => (
+                <tr
+                  border-b="line"
+                  dark="border-slate-800/50"
+                  hover="bg-slate-50"
+                  dark:hover="bg-slate-800/50"
+                >
+                  <td p="3" font="medium" text="slate-900">
+                    {h.name}
+                  </td>
+                  <td p="3" text="sm" text="slate-600">
+                    {h.city}
+                  </td>
+                  <td p="3">
+                    <span
+                      class={`
+                        inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium
+                        ${
+                          h.status === 'published'
+                            ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400'
+                            : h.status === 'needs_review'
+                            ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400'
+                            : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
+                        }
+                      `}
+                    >
+                      {h.status === 'published' ? '게시됨' : h.status === 'needs_review' ? '검토 필요' : '초안'}
+                    </span>
+                  </td>
+                  <td p="3">
+                    {h.publish ? (
+                      <span
+                        class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
+                      >
+                        ✓ 예
+                      </span>
+                    ) : (
+                      <span
+                        class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                      >
+                        아니오
+                      </span>
+                    )}
+                  </td>
+                  <td p="3" text="sm" text="slate-500">
+                    {h.source}
+                  </td>
+                  <td p="3" text="sm" text="slate-500">
+                    {h.fetchedAt ?? '-'}
+                  </td>
+                  <td p="3">
+                    <a
+                      href={`/hotels/${h.slug}/`}
+                      text="sm"
+                      text="brand-600"
+                      font="medium"
+                    >
+                      보기 →
+                    </a>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        {hotels.length === 0 && (
+          <p mt="4" text="sm" text="slate-500" max="w-4xl">
+            등록된 호텔 콘텐츠가 없습니다. 동기화를 먼저 실행하세요.
+          </p>
+        )}
+      </div>
+    ) : (
+      <p mt="8" text="sm" text="slate-500" max="w-4xl">
+        등록된 호텔 콘텐츠가 없습니다.
+      </p>
+    )}
+  </section>
+</SiteLayout>
