@@ -83,6 +83,7 @@ const pageTitle =
       border="b white/70 dark:slate-800"
       bg="white/90 dark:slate-950/90"
       backdrop-blur-xl
+      relative
     >
       <div container-wide flex h="18" items="center" justify="between" gap="4">
         <a
@@ -120,7 +121,7 @@ const pageTitle =
             </span>
           </span>
         </a>
-        <nav hidden sm:flex items="center" gap="7" aria-label="주 메뉴">
+        <nav flex items="center" gap="7" sm:hidden aria-label="주 메뉴">
           <a text="sm" font="semibold" hover="text-brand-600" href="/hotels/">
             일본 호텔
           </a>
@@ -182,6 +183,11 @@ const pageTitle =
       <div
         id="mobile-menu"
         md:hidden
+        absolute
+        top="18"
+        left="0"
+        right="0"
+        z="50"
         container-wide
         border="t line dark:slate-800"
         bg="white dark:slate-950"
