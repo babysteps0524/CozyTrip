@@ -75,8 +75,10 @@
 - `bun run check`
 - `bun test`
 - `bun run build`
+- `bun run verify`
 - `bun run preview`
 - `bun run format`
+- `bun run lint`
 - `bun run content:validate`
 - `bun run content:draft`
 
