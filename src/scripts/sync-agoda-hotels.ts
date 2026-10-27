@@ -232,11 +232,7 @@ function normalizeHotel(raw: unknown): HotelInput {
   const rawRecord = raw as Record<string, unknown>;
 
   const slug = createSlug(
-    String(
-      rawRecord.name ??
-        rawRecord.hotelId ??
-        'hotel',
-    ),
+    String(rawRecord.name ?? rawRecord.hotelId ?? 'hotel'),
   );
 
   const name = String(rawRecord.name ?? '');
@@ -272,12 +268,17 @@ function normalizeHotel(raw: unknown): HotelInput {
       })
     : [];
 
-  const imageRights: 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed' =
-    ['unknown', 'needs_review', 'owned', 'licensed', 'approved_feed'].includes(
-      String(rawRecord.imageRights),
-    )
-      ? (rawRecord.imageRights as 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed')
-      : 'unknown';
+  const imageRights:
+    'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed' = [
+    'unknown',
+    'needs_review',
+    'owned',
+    'licensed',
+    'approved_feed',
+  ].includes(String(rawRecord.imageRights))
+    ? (rawRecord.imageRights as
+        'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed')
+    : 'unknown';
 
   const data: HotelInput = {
     slug,
@@ -285,11 +286,17 @@ function normalizeHotel(raw: unknown): HotelInput {
     city,
     area: rawRecord.area ? String(rawRecord.area) : undefined,
     summary,
-    officialUrl: rawRecord.officialUrl ? String(rawRecord.officialUrl) : undefined,
-    affiliateUrl: rawRecord.affiliateUrl ? String(rawRecord.affiliateUrl) : undefined,
+    officialUrl: rawRecord.officialUrl
+      ? String(rawRecord.officialUrl)
+      : undefined,
+    affiliateUrl: rawRecord.affiliateUrl
+      ? String(rawRecord.affiliateUrl)
+      : undefined,
     image: rawRecord.image
       ? String(rawRecord.image)
-      : rawRecord.images && Array.isArray(rawRecord.images) && rawRecord.images.length > 0
+      : rawRecord.images &&
+          Array.isArray(rawRecord.images) &&
+          rawRecord.images.length > 0
         ? String(rawRecord.images[0])
         : undefined,
     type: rawRecord.type ? String(rawRecord.type) : undefined,
@@ -318,7 +325,9 @@ function normalizeHotel(raw: unknown): HotelInput {
     fetchedAt,
 
     // 아고다 Affiliate Lite API 추가 필드
-    roomtypeName: rawRecord.roomtypeName ? String(rawRecord.roomtypeName) : undefined,
+    roomtypeName: rawRecord.roomtypeName
+      ? String(rawRecord.roomtypeName)
+      : undefined,
     crossedOutRate:
       typeof rawRecord.crossedOutRate === 'number'
         ? rawRecord.crossedOutRate
@@ -337,7 +346,12 @@ function normalizeHotel(raw: unknown): HotelInput {
     throw new Error(
       '호텔 데이터 검증 실패: ' +
         validation.errors
-          .map((e) => (e.path.length > 0 ? e.path.join('.') : 'root') + ': ' + e.message)
+          .map(
+            (e) =>
+              (e.path.length > 0 ? e.path.join('.') : 'root') +
+              ': ' +
+              e.message,
+          )
           .join(', '),
     );
   }

@@ -61,7 +61,9 @@ export const HotelSchema = z.object({
     .enum(['unknown', 'needs_review', 'owned', 'licensed', 'approved_feed'])
     .default('unknown'),
   sourceNote: z.string().optional(),
-  fetchedAt: z.string().datetime({ message: 'ISO 8601 datetime 형식이어야 합니다.' }),
+  fetchedAt: z
+    .string()
+    .datetime({ message: 'ISO 8601 datetime 형식이어야 합니다.' }),
 
   // 아고다 Affiliate Lite API 추가 필드
   roomtypeName: z.string().optional(),
