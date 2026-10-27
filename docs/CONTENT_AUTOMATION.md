@@ -2,7 +2,14 @@
 
 ## 기본 원칙
 
-자동화는 출처가 있는 사실을 정리하고 초안을 생성하는 데 사용합니다. AI 생성 문장만으로 사실을 검증한 것으로 취급하지 않습니다. `needs_review` 상태의 문서는 자동 게시되지 않습니다.
+자동화는 출처가 있는 사실을 정리하고 초안을 생성하는 데 사용합니다. AI 생성 문장만으로 사실을 검증한 것으로 취급하지 않습니다. `draft` 상태의 문서는 자동 게시되지 않습니다.
+
+호텔 콘텐츠 상태 모델(프롬프트 §8):
+
+- `draft`: 초안 작성 중(비공개)
+- `review`: 편집 검토 중(비공개)
+- `published`: 게시됨(공개, sitemap 포함)
+- `archived`: 보관됨(비공개)
 
 ## 권장 파이프라인
 
@@ -21,7 +28,7 @@
 - `factStatus`: `verified | unverified | stale | disputed`
 - `imageRights`: `owned | licensed | approved_feed | needs_review | unknown`
 - `affiliateStatus`: `approved | unapproved | missing | needs_review`
-- `editorialStatus`: `draft | needs_review | approved | published | archived`
+- `editorialStatus`: `draft | review | published | archived`
 - `lastReviewedAt`, `reviewer`
 
 ## 게시 차단 조건

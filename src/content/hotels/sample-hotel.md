@@ -1,5 +1,5 @@
 ---
-status: 'needs_review'
+status: 'draft'
 publish: false
 name: '호텔 그레이서리 신주쿠 (샘플)'
 city: '도쿄'
@@ -10,11 +10,6 @@ officialUrl: 'https://www.agoda.com/ko-kr/hotel-gracery-shinjuku/'
 affiliateUrl: 'https://www.agoda.com/ko-kr/hotel-gracery-shinjuku/'
 image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=85'
 type: '도시 호텔'
-starRating: 4
-reviewScore: 8.5
-reviewCount: 1200
-priceMin: 150000
-currency: 'KRW'
 imageRights: 'unknown'
 source: 'agoda_api'
 fetchedAt: '2026-10-21T18:00:00Z'
@@ -22,6 +17,8 @@ sourceNote: '이 페이지는 아고다 API를 통해 수집된 데이터를 기
 ---
 
 # 호텔 그레이서리 신주쿠 (샘플)
+
+> **알림:** 이 문서는 편집 검토용 **초안(draft)**입니다. 아래 정보는 미검증 샘플 데이터이며, 게시 전에 반드시 공식 출처로 재검증해야 합니다.
 
 ## 위치
 
@@ -36,21 +33,21 @@ sourceNote: '이 페이지는 아고다 API를 통해 수집된 데이터를 기
 - [호텔 공식 페이지](https://www.agoda.com/ko-kr/hotel-gracery-shinjuku/)
 - [아고다 예약 링크](https://www.agoda.com/ko-kr/hotel-gracery-shinjuku/)
 
-## 평점 및 후기
-
-- 별점: 4점
-- 이용 후기 점수: 8.5
-- 후기 수: 1,200개
+> **예약 링크 고지:** 위 링크는 샘플 데이터입니다. 실제 제휴 링크는 승인된 아고다 계정에서 발급받은 URL만 사용해야 하며, 데모 링크를 실제 예약 링크처럼 제시하지 않습니다.
 
 ## 확인된 사실
 
+아직 확인된 사실이 없습니다. 공식 호텔 웹사이트, 교통 기관, 관광청 등 신뢰할 수 있는 출처를 확인한 후 기록하세요.
+
 ## 출처
+
+출처를 추가해야 합니다. 게시 전에 출처 URL과 확인 날짜를 모두 기록하세요.
 
 ## 게시 전 체크리스트
 
 - [ ] 호텔 운영 상태와 공식 정보 확인
 - [ ] 위치·교통 정보의 출처와 확인 날짜 기록
-- [ ] 가격·객실 재고·평점·리뷰 수의 실시간 사실성 확인
+- [ ] 가격·객실 재고·평점·리뷰 수의 실시간 사실성 확인 (표시 금지: 검증 전에는 요금·별점·후기 수를 게시하지 않음)
 - [ ] 이미지 이용 권한 확인
 - [ ] 제휴 링크와 고지 확인
 - [ ] 독창적인 편집 가치와 중복 콘텐츠 검토
@@ -58,4 +55,4 @@ sourceNote: '이 페이지는 아고다 API를 통해 수집된 데이터를 기
 
 ---
 
-**정보 검증 안내:** 이 페이지는 아고다 API를 통해 수집된 데이터를 기반으로 한 편집 검토용 초안입니다. 숙박 요금·객실 가능 여부·평점·리뷰 수는 게시 전에 공식 출처로 재검증해야 합니다.
+**정보 검증 안내:** 이 페이지는 아고다 API를 통해 수집된 데이터를 기반으로 한 편집 검토용 초안입니다. 숙박 요금·객실 가능 여부·평점·리뷰 수는 게시 전에 공식 출처로 재검증해야 합니다. 검증되지 않은 정보를 사실처럼 게시하지 않습니다.

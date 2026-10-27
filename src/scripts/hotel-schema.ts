@@ -39,7 +39,11 @@ export const HotelSchema = z.object({
     .url('제휴 URL 형식이 올바르지 않습니다.')
     .optional()
     .nullable(),
-  image: z.string().url('이미지 URL 형식이 올바르지 않습니다.').optional().nullable(),
+  image: z
+    .string()
+    .url('이미지 URL 형식이 올바르지 않습니다.')
+    .optional()
+    .nullable(),
   type: z.string().optional(),
   starRating: z.number().min(0).max(5).optional().nullable(),
   reviewScore: z.number().min(0).max(10).optional().nullable(),
@@ -71,7 +75,9 @@ export type HotelInput = z.infer<typeof HotelSchema>;
  */
 export function validateHotelData(
   data: unknown,
-): { success: true; data: HotelInput } | { success: false; errors: z.ZodIssue[] } {
+):
+  | { success: true; data: HotelInput }
+  | { success: false; errors: z.ZodIssue[] } {
   const result = HotelSchema.safeParse(data);
   if (result.success) {
     return { success: true, data: result.data };

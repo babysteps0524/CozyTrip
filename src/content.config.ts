@@ -11,7 +11,9 @@ import { z } from 'zod';
 const hotels = defineCollection({
   type: 'content',
   schema: z.object({
-    status: z.enum(['draft', 'needs_review', 'published']).default('needs_review'),
+    status: z
+      .enum(['draft', 'review', 'published', 'archived'])
+      .default('draft'),
     publish: z.boolean().default(false),
     name: z.string().min(1),
     city: z.string().min(1),

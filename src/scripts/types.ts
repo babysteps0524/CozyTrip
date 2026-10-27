@@ -34,7 +34,8 @@ export interface RawAgodaHotel {
     sourceUrl?: string;
     verified?: boolean;
   }>;
-  imageRights?: 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed';
+  imageRights?:
+    'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed';
   fetchedAt?: string;
 
   // 아고다 Affiliate Lite API 추가 필드
@@ -63,8 +64,14 @@ export interface NormalizedHotel {
   currency?: string;
   tags: string[];
   sources: Array<{ label: string; url: string; checkedAt: string }>;
-  facts: Array<{ label: string; value: string; sourceUrl?: string; verified: boolean }>;
-  imageRights: 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed';
+  facts: Array<{
+    label: string;
+    value: string;
+    sourceUrl?: string;
+    verified: boolean;
+  }>;
+  imageRights:
+    'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed';
   sourceNote?: string;
   fetchedAt: string;
 

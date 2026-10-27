@@ -8,20 +8,24 @@ import { join } from 'node:path';
 
 const CONTENT_DIR = join(process.cwd(), 'src/content/hotels');
 
-async function loadContentHotelData(): Promise<Array<{
-  name: string;
-  city: string;
-  area?: string;
-  summary: string;
-  image?: string;
-  type?: string;
-  tags?: string[];
-  status?: string;
-  slug: string;
-}>> {
+async function loadContentHotelData(): Promise<
+  Array<{
+    name: string;
+    city: string;
+    area?: string;
+    summary: string;
+    image?: string;
+    type?: string;
+    tags?: string[];
+    status?: string;
+    slug: string;
+  }>
+> {
   try {
     const files = await readdir(CONTENT_DIR);
-    const mdFiles = files.filter((f) => f.endsWith('.md') || f.endsWith('.mdx'));
+    const mdFiles = files.filter(
+      (f) => f.endsWith('.md') || f.endsWith('.mdx'),
+    );
     const results: Array<{
       name: string;
       city: string;
@@ -59,7 +63,11 @@ async function loadContentHotelData(): Promise<Array<{
           summary: String(data.summary ?? ''),
           image: data.image ? String(data.image) : undefined,
           type: data.type ? String(data.type) : undefined,
-          tags: data.tags ? String(data.tags).split(',').map((t) => t.trim()) : undefined,
+          tags: data.tags
+            ? String(data.tags)
+                .split(',')
+                .map((t) => t.trim())
+            : undefined,
           status: data.status ? String(data.status) : undefined,
           slug,
         });

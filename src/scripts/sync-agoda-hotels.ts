@@ -11,14 +11,8 @@
  */
 
 import { AgodaClient } from './agoda-client.js';
-import {
-  type NormalizedHotel,
-  type PipelineResult,
-} from './types.js';
-import {
-  validateHotelData,
-  type HotelInput,
-} from './hotel-schema.js';
+import { type NormalizedHotel, type PipelineResult } from './types.js';
+import { validateHotelData, type HotelInput } from './hotel-schema.js';
 import { generateHotelMarkdown, createSlug } from './generate-hotel-md.js';
 
 const CONTENT_DIR = 'src/content/hotels';
@@ -46,10 +40,12 @@ const MOCK_HOTELS: Array<{
     name: '호텔 그레이서리 신주쿠',
     city: '도쿄',
     area: '신주쿠',
-    summary: '신주쿠 일대를 중심으로 여행 동선을 짜는 사람이라면 위치와 교통편을 먼저 비교해 볼 숙소 후보입니다.',
+    summary:
+      '신주쿠 일대를 중심으로 여행 동선을 짜는 사람이라면 위치와 교통편을 먼저 비교해 볼 숙소 후보입니다.',
     officialUrl: 'https://www.agoda.com/ko-kr/hotel-gracery-shinjuku/',
     affiliateUrl: 'https://www.agoda.com/ko-kr/hotel-gracery-shinjuku/',
-    image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=85',
+    image:
+      'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1000&q=85',
     type: '도시 호텔',
     starRating: 4,
     reviewScore: 8.5,
@@ -62,10 +58,12 @@ const MOCK_HOTELS: Array<{
     name: '크로스 호텔 교토',
     city: '교토',
     area: '가와라마치 인근',
-    summary: '교토 중심부에서 관광지와 식당을 함께 살펴보려는 여행객에게 검토할 만한 숙소 후보입니다.',
+    summary:
+      '교토 중심부에서 관광지와 식당을 함께 살펴보려는 여행객에게 검토할 만한 숙소 후보입니다.',
     officialUrl: 'https://www.agoda.com/ko-kr/cross-hotel-kyoto/',
     affiliateUrl: 'https://www.agoda.com/ko-kr/cross-hotel-kyoto/',
-    image: 'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=85',
+    image:
+      'https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=1000&q=85',
     type: '도시 호텔',
     starRating: 4,
     reviewScore: 8.2,
@@ -78,10 +76,12 @@ const MOCK_HOTELS: Array<{
     name: '더 프린스 파크 타워 도쿄',
     city: '도쿄',
     area: '시바 공원 일대',
-    summary: '도쿄의 주요 명소를 둘러보는 일정이라면 호텔 위치와 이동 경로를 기준으로 비교해 볼 수 있습니다.',
+    summary:
+      '도쿄의 주요 명소를 둘러보는 일정이라면 호텔 위치와 이동 경로를 기준으로 비교해 볼 수 있습니다.',
     officialUrl: 'https://www.agoda.com/ko-kr/the-prince-park-tower-tokyo/',
     affiliateUrl: 'https://www.agoda.com/ko-kr/the-prince-park-tower-tokyo/',
-    image: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85',
+    image:
+      'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1000&q=85',
     type: '도시 호텔',
     starRating: 5,
     reviewScore: 8.8,
@@ -94,10 +94,12 @@ const MOCK_HOTELS: Array<{
     name: '하얏트 리젠시 세라가키 아일랜드 오키나와',
     city: '오키나와',
     area: '온나손',
-    summary: '리조트 중심의 휴식을 계획한다면 섬 내 이동 방법과 숙박 조건을 함께 확인해 보세요.',
+    summary:
+      '리조트 중심의 휴식을 계획한다면 섬 내 이동 방법과 숙박 조건을 함께 확인해 보세요.',
     officialUrl: 'https://www.agoda.com/ko-kr/hyatt-regency-seragaki/',
     affiliateUrl: 'https://www.agoda.com/ko-kr/hyatt-regency-seragaki/',
-    image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=85',
+    image:
+      'https://images.unsplash.com/photo-1571896349842-33c89424de2d?auto=format&fit=crop&w=1000&q=85',
     type: '리조트',
     starRating: 5,
     reviewScore: 9.1,
@@ -110,10 +112,12 @@ const MOCK_HOTELS: Array<{
     name: '호텔 닛코 후쿠오카',
     city: '후쿠오카',
     area: '하카타',
-    summary: '하카타역 주변을 거점으로 후쿠오카와 근교를 둘러볼 때 위치를 비교할 후보입니다.',
+    summary:
+      '하카타역 주변을 거점으로 후쿠오카와 근교를 둘러볼 때 위치를 비교할 후보입니다.',
     officialUrl: 'https://www.agoda.com/ko-kr/hotel-nikko-fukuoka/',
     affiliateUrl: 'https://www.agoda.com/ko-kr/hotel-nikko-fukuoka/',
-    image: 'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=85',
+    image:
+      'https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1000&q=85',
     type: '도시 호텔',
     starRating: 4,
     reviewScore: 8.4,
@@ -187,7 +191,9 @@ async function getExistingSlugs(): Promise<Set<string>> {
 }
 
 /** 실패한 호텔 목록 로드 */
-async function loadFailedHotels(): Promise<Array<{ slug: string; name: string; error: string }>> {
+async function loadFailedHotels(): Promise<
+  Array<{ slug: string; name: string; error: string }>
+> {
   try {
     const { readFile } = await import('node:fs/promises');
     const content = await readFile(FAILED_LOG_FILE, 'utf-8');
@@ -202,7 +208,6 @@ async function saveFailedHotels(
   failed: Array<{ slug: string; name: string; error: string }>,
 ): Promise<void> {
   const { writeFile, mkdir } = await import('node:fs/promises');
-  const { join } = await import('node:path');
   await mkdir('src/content/hotels', { recursive: true });
   await writeFile(FAILED_LOG_FILE, JSON.stringify(failed, null, 2), 'utf-8');
 }
@@ -223,6 +228,7 @@ async function saveMarkdownFile(
 }
 
 /** Agoda 원시 데이터를 HotelInput (Zod 검증 가능) 으로 변환 */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function normalizeHotel(raw: any): HotelInput {
   const slug = createSlug(String(raw.name ?? raw.hotelId ?? 'hotel'));
 
@@ -242,11 +248,13 @@ function normalizeHotel(raw: any): HotelInput {
     priceMin: raw.priceMin ?? undefined,
     currency: raw.currency ?? undefined,
     tags: raw.tags ?? [],
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     sources: (raw.sources ?? []).map((s: any) => ({
       label: s.label ?? '',
       url: s.url ?? '',
       checkedAt: s.checkedAt ?? undefined,
     })),
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     facts: (raw.facts ?? []).map((f: any) => ({
       label: f.label ?? '',
       value: f.value ?? '',
@@ -275,8 +283,7 @@ function validateWithZod(
     return { valid: true, data: result.data };
   }
   const errors = result.errors.map(
-    (issue) =>
-      `${issue.path.join('.') ?? 'root'}: ${issue.message}`,
+    (issue) => `${issue.path.join('.') ?? 'root'}: ${issue.message}`,
   );
   return { valid: false, errors };
 }
@@ -297,21 +304,19 @@ export async function runPipeline(
   let skipped = 0;
   let failed = 0;
 
-  console.log(`[아고다 자동화] 시작`);
-  console.log(
-    `  도시 ID: ${args.cityId ?? '전체'} | 제한: ${args.limit}`,
-  );
-  console.log(
+  console.warn(`[아고다 자동화] 시작`);
+  console.warn(`  도시 ID: ${args.cityId ?? '전체'} | 제한: ${args.limit}`);
+  console.warn(
     `  드라이런: ${args.dryRun} | 기존 파일 건너뛰기: ${args.skipExisting} | 실패 재처리: ${args.retryFailed} | 모크 모드: ${args.mock}`,
   );
 
   if (args.retryFailed && previousFailed.length > 0) {
-    console.log(`  [재처리 대상] ${previousFailed.length}개 호텔`);
+    console.warn(`  [재처리 대상] ${previousFailed.length}개 호텔`);
   }
 
   try {
     // 1단계: 아고다 API에서 호텔 목록 수집
-    console.log('\n[1단계] 아고다 API 호텔 검색 중...');
+    console.warn('\n[1단계] 아고다 API 호텔 검색 중...');
     const effectiveClient = args.mock
       ? new AgodaClient({ mockMode: true, mockHotels: MOCK_HOTELS })
       : client;
@@ -319,14 +324,17 @@ export async function runPipeline(
       cityId: args.cityId,
       maxResult: args.limit,
     });
-    console.log(`  수집된 호텔 수: ${rawHotels.length}`);
+    console.warn(`  수집된 호텔 수: ${rawHotels.length}`);
 
     // 실패 재처리 대상이 있으면 해당 호텔만 필터링
-    const hotelsToProcess = args.retryFailed && previousFailed.length > 0
-      ? rawHotels.filter((raw) =>
-          previousFailed.some((f) => f.slug === createSlug(String(raw.name ?? raw.hotelId))),
-        )
-      : rawHotels;
+    const hotelsToProcess =
+      args.retryFailed && previousFailed.length > 0
+        ? rawHotels.filter((raw) =>
+            previousFailed.some(
+              (f) => f.slug === createSlug(String(raw.name ?? raw.hotelId)),
+            ),
+          )
+        : rawHotels;
 
     // 2단계: 각 호텔을 순차 처리 (rate limit 고려)
     for (const raw of hotelsToProcess) {
@@ -338,7 +346,9 @@ export async function runPipeline(
         let detail = raw;
         if (hotelId) {
           try {
-            detail = await effectiveClient.getHotelDetail({ hotelId: Number(hotelId) });
+            detail = await effectiveClient.getHotelDetail({
+              hotelId: Number(hotelId),
+            });
           } catch (err) {
             console.warn(
               `  [경고] 호텔 ID ${hotelId} 상세 조회 실패, 검색 결과 사용: ${err}`,
@@ -371,21 +381,17 @@ export async function runPipeline(
         // 5단계: 중복 확인
         if (args.skipExisting && existingSlugs.has(normalized.slug)) {
           skipped++;
-          console.log(`  [건너뜀] ${normalized.name} (이미 존재)`);
+          console.warn(`  [건너뜀] ${normalized.name} (이미 존재)`);
           continue;
         }
 
         // 6단계: 마크다운 생성 및 저장
-        const result = generateHotelMarkdown(
-          normalized as NormalizedHotel,
-        );
+        const result = generateHotelMarkdown(normalized as NormalizedHotel);
         await saveMarkdownFile(result.slug, result.content, args.dryRun);
 
         created++;
         files.push(result.filename);
-        console.log(
-          `  [생성] ${normalized.name} → ${result.filename}`,
-        );
+        console.warn(`  [생성] ${normalized.name} → ${result.filename}`);
       } catch (err) {
         failed++;
         const slug = createSlug(String(raw.name ?? hotelId ?? 'unknown'));
@@ -406,7 +412,9 @@ export async function runPipeline(
   // 실패한 호텔 목록 저장 (재처리를 위해)
   if (!args.dryRun && newFailed.length > 0) {
     await saveFailedHotels(newFailed);
-    console.log(`  [실패 로그] ${newFailed.length}개 호텔 기록됨 (.failed-hotels.json)`);
+    console.warn(
+      `  [실패 로그] ${newFailed.length}개 호텔 기록됨 (.failed-hotels.json)`,
+    );
   }
 
   const result: PipelineResult = {
@@ -419,13 +427,17 @@ export async function runPipeline(
     files,
   };
 
-  console.log(`\n[완료] 처리: ${processed} | 생성: ${created} | 건너뜀: ${skipped} | 실패: ${failed}`);
+  console.warn(
+    `\n[완료] 처리: ${processed} | 생성: ${created} | 건너뜀: ${skipped} | 실패: ${failed}`,
+  );
   if (errors.length > 0) {
-    console.log(`\n[오류 목록]`);
+    console.warn(`\n[오류 목록]`);
     for (const e of errors) {
-      console.log(`  - ${e.slug}: ${e.error}`);
+      console.warn(`  - ${e.slug}: ${e.error}`);
     }
-    console.log(`\n  → 실패한 호텔은 --retry-failed 옵션으로 재처리할 수 있습니다.`);
+    console.warn(
+      `\n  → 실패한 호텔은 --retry-failed 옵션으로 재처리할 수 있습니다.`,
+    );
   }
 
   return result;

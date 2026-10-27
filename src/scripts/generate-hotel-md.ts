@@ -7,19 +7,18 @@
  * SEO 최적화 메타 태그와 구조화된 콘텐츠를 포함합니다.
  */
 
-import type {
-  NormalizedHotel,
-  MarkdownGenerationResult,
-} from './types.js';
+import type { NormalizedHotel, MarkdownGenerationResult } from './types.js';
 
 /** 한글/영문/숫자를 제외한 문자를 하이픈으로 치환해 slug 생성 */
 export function createSlug(name: string): string {
-  return name
-    .normalize('NFKD')
-    .replace(/[^a-zA-Z0-9가-힣]+/g, '-')
-    .replace(/^-|-$/g, '')
-    .toLowerCase()
-    .replace(/-+/g, '-') || 'hotel';
+  return (
+    name
+      .normalize('NFKD')
+      .replace(/[^a-zA-Z0-9가-힣]+/g, '-')
+      .replace(/^-|-$/g, '')
+      .toLowerCase()
+      .replace(/-+/g, '-') || 'hotel'
+  );
 }
 
 /** frontmatter 값의 문자열 이스케이프 (YAML 안전 처리) */
@@ -47,14 +46,10 @@ export function generateHotelMarkdown(
   const slug = hotel.slug || createSlug(hotel.name);
   const filename = `${slug}.md`;
 
-  const description = createDescription(
-    hotel.name,
-    hotel.city,
-    hotel.summary,
-  );
+  const description = createDescription(hotel.name, hotel.city, hotel.summary);
 
   const frontmatter: Record<string, unknown> = {
-    status: 'needs_review',
+    status: 'draft',
     publish: false,
     name: hotel.name,
     city: hotel.city,
@@ -77,8 +72,7 @@ export function generateHotelMarkdown(
     frontmatter['reviewScore'] = hotel.reviewScore;
   if (hotel.reviewCount !== undefined)
     frontmatter['reviewCount'] = hotel.reviewCount;
-  if (hotel.priceMin !== undefined)
-    frontmatter['priceMin'] = hotel.priceMin;
+  if (hotel.priceMin !== undefined) frontmatter['priceMin'] = hotel.priceMin;
   if (hotel.currency) frontmatter['currency'] = hotel.currency;
   if (hotel.sourceNote) frontmatter['sourceNote'] = hotel.sourceNote;
 
@@ -111,28 +105,11 @@ export function generateHotelMarkdown(
     body.push(`\n**위치:** ${locationParts.join(' > ')}\n`);
   }
 
-  // 호텔 타입 및 평점 배지
+  // 호텔 타입 정보 (검증된 객실 유형만 표시)
   const badges: string[] = [];
   if (hotel.type) badges.push(`**타입:** ${hotel.type}`);
-  if (hotel.roomtypeName) badges.push(`**객실:** ${hotel.roomtypeName}`);
-  if (hotel.starRating) badges.push(`**별점:** ${hotel.starRating}점`);
-  if (hotel.reviewScore) badges.push(`**후기 점수:** ${hotel.reviewScore}`);
   if (badges.length > 0) {
     body.push(`\n${badges.join(' · ')}\n`);
-  }
-
-  // 요금 및 할인 정보
-  if (hotel.priceMin || hotel.crossedOutRate || hotel.discountPercent) {
-    body.push(`\n## 요금 정보\n`);
-    if (hotel.priceMin) {
-      body.push(`- 1박 요금: ${hotel.priceMin.toLocaleString()} ${hotel.currency ?? 'KRW'}\n`);
-    }
-    if (hotel.crossedOutRate) {
-      body.push(`- 정가: ${hotel.crossedOutRate.toLocaleString()} ${hotel.currency ?? 'KRW'}\n`);
-    }
-    if (hotel.discountPercent) {
-      body.push(`- 할인율: ${hotel.discountPercent}%\n`);
-    }
   }
 
   // 편의 시설
@@ -160,20 +137,6 @@ export function generateHotelMarkdown(
     }
   }
 
-  // 평점 및 후기 상세
-  if (hotel.starRating || hotel.reviewScore || hotel.reviewCount) {
-    body.push(`\n## 평점 및 후기\n`);
-    if (hotel.starRating) {
-      body.push(`- 별점: ${hotel.starRating}점\n`);
-    }
-    if (hotel.reviewScore) {
-      body.push(`- 이용 후기 점수: ${hotel.reviewScore}\n`);
-    }
-    if (hotel.reviewCount) {
-      body.push(`- 후기 수: ${hotel.reviewCount.toLocaleString()}개\n`);
-    }
-  }
-
   // 확인된 사실
   if (hotel.facts.length > 0) {
     body.push(`\n## 확인된 사실\n`);
@@ -181,9 +144,7 @@ export function generateHotelMarkdown(
     body.push(`|------|-----|-----------|------|\n`);
     for (const fact of hotel.facts) {
       const verifiedMark = fact.verified ? '✅ 완료' : '❓ 미검증';
-      const sourceLink = fact.sourceUrl
-        ? `[링크](${fact.sourceUrl})`
-        : '-';
+      const sourceLink = fact.sourceUrl ? `[링크](${fact.sourceUrl})` : '-';
       body.push(
         `| ${fact.label} | ${fact.value} | ${verifiedMark} | ${sourceLink} |\n`,
       );

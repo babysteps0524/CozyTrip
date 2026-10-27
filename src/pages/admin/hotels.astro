@@ -2,6 +2,7 @@
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import { readdir, readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+export const noindex = true;
 
 const CONTENT_DIR = join(process.cwd(), 'src/content/hotels');
 
@@ -18,7 +19,9 @@ interface HotelMeta {
 async function loadHotels(): Promise<HotelMeta[]> {
   try {
     const files = await readdir(CONTENT_DIR);
-    const mdFiles = files.filter((f) => f.endsWith('.md') && !f.startsWith('.'));
+    const mdFiles = files.filter(
+      (f) => f.endsWith('.md') && !f.startsWith('.'),
+    );
     const hotels: HotelMeta[] = [];
     for (const file of mdFiles) {
       const filePath = join(CONTENT_DIR, file);
@@ -60,10 +63,38 @@ const hotels = await loadHotels();
 const stats = {
   total: hotels.length,
   published: hotels.filter((h) => h.publish).length,
-  needsReview: hotels.filter((h) => h.status === 'needs_review').length,
+  needsReview: hotels.filter((h) => h.status === 'review').length,
   draft: hotels.filter((h) => h.status === 'draft').length,
 };
 
+// 호텔 상태별 배지 스타일 (UnoCSS Attributify 토큰)
+// 클래스 문자열 대신 Attributify 속성으로 조건부 바인딩합니다.
+const statusBadgeStyles: Record<
+  string,
+  { bg: string; text: string; darkBg: string; darkText: string }
+> = {
+  published: {
+    bg: 'emerald-100',
+    text: 'emerald-700',
+    darkBg: 'emerald-900/30',
+    darkText: 'emerald-400',
+  },
+  review: {
+    bg: 'amber-100',
+    text: 'amber-700',
+    darkBg: 'amber-900/30',
+    darkText: 'amber-400',
+  },
+};
+const defaultBadgeStyle = {
+  bg: 'slate-100',
+  text: 'slate-700',
+  darkBg: 'slate-800',
+  darkText: 'slate-300',
+};
+
+const getBadgeStyle = (status: string) =>
+  statusBadgeStyles[status] ?? defaultBadgeStyle;
 ---
 
 <SiteLayout
@@ -88,7 +119,9 @@ const stats = {
         p="5"
         dark="border-slate-800 bg-slate-900"
       >
-        <p text="xs muted" font="bold">전체 호텔</p>
+        <p text="xs muted" font="bold">
+          전체 호텔
+        </p>
         <h2 mt="2" text="2xl" font="bold">
           {stats.total}
         </h2>
@@ -100,7 +133,9 @@ const stats = {
         p="5"
         dark="border-slate-800 bg-slate-900"
       >
-        <p text="xs muted" font="bold">게시 완료</p>
+        <p text="xs muted" font="bold">
+          게시 완료
+        </p>
         <h2 mt="2" text="2xl" font="bold" text="emerald-600">
           {stats.published}
         </h2>
@@ -112,7 +147,9 @@ const stats = {
         p="5"
         dark="border-slate-800 bg-slate-900"
       >
-        <p text="xs muted" font="bold">검토 필요</p>
+        <p text="xs muted" font="bold">
+          검토 필요
+        </p>
         <h2 mt="2" text="2xl" font="bold" text="amber-600">
           {stats.needsReview}
         </h2>
@@ -129,10 +166,7 @@ const stats = {
       >
         아고다 API 동기화 실행
       </button>
-      <button
-        btn-secondary
-        onclick="location.reload()"
-      >
+      <button btn-secondary onclick="location.reload()">
         새로고침
       </button>
       <p mt="2" text="xs muted">
@@ -192,30 +226,55 @@ const stats = {
                   </td>
                   <td p="3">
                     <span
-                      class={`
-                        inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium
-                        ${
-                          h.status === 'published'
-                            ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400'
-                            : h.status === 'needs_review'
-                            ? 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400'
-                            : 'bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300'
-                        }
-                      `}
+                      inline="flex"
+                      items="center"
+                      rounded="full"
+                      px="2.5"
+                      py="0.5"
+                      text="xs"
+                      font="medium"
+                      bg={getBadgeStyle(h.status).bg}
+                      text={getBadgeStyle(h.status).text}
+                      dark:bg={getBadgeStyle(h.status).darkBg}
+                      dark:text={getBadgeStyle(h.status).darkText}
                     >
-                      {h.status === 'published' ? '게시됨' : h.status === 'needs_review' ? '검토 필요' : '초안'}
+                      {h.status === 'published'
+                        ? '게시됨'
+                        : h.status === 'review'
+                          ? '검토 필요'
+                          : '초안'}
                     </span>
                   </td>
                   <td p="3">
                     {h.publish ? (
                       <span
-                        class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400"
+                        inline="flex"
+                        items="center"
+                        rounded="full"
+                        px="2.5"
+                        py="0.5"
+                        text="xs"
+                        font="medium"
+                        bg="emerald-100"
+                        text="emerald-700"
+                        dark:bg="emerald-900/30"
+                        dark:text="emerald-400"
                       >
                         ✓ 예
                       </span>
                     ) : (
                       <span
-                        class="inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium bg-slate-100 text-slate-700 dark:bg-slate-800 dark:text-slate-300"
+                        inline="flex"
+                        items="center"
+                        rounded="full"
+                        px="2.5"
+                        py="0.5"
+                        text="xs"
+                        font="medium"
+                        bg="slate-100"
+                        text="slate-700"
+                        dark:bg="slate-800"
+                        dark:text="slate-300"
                       >
                         아니오
                       </span>
