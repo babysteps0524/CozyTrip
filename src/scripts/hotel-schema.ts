@@ -10,7 +10,7 @@ import { z } from 'zod';
 /** 출처 항목 스키마 */
 export const SourceSchema = z.object({
   label: z.string().min(1, '출처 이름은 필수입니다.'),
-  url: z.string().url('유효한 URL이어야 합니다.'),
+  url: z.string().url({ message: '유효한 URL이어야 합니다.' }),
   checkedAt: z.string().optional(),
 });
 
@@ -18,7 +18,11 @@ export const SourceSchema = z.object({
 export const FactSchema = z.object({
   label: z.string().min(1, '사실 항목 이름은 필수입니다.'),
   value: z.string().min(1, '사실 값은 필수입니다.'),
-  sourceUrl: z.string().url('유효한 URL이어야 합니다.').optional().nullable(),
+  sourceUrl: z
+    .string()
+    .url({ message: '유효한 URL이어야 합니다.' })
+    .optional()
+    .nullable(),
   verified: z.boolean().default(false),
 });
 
@@ -31,17 +35,17 @@ export const HotelSchema = z.object({
   summary: z.string().min(40, '소개 요약은 40자 이상이어야 합니다.'),
   officialUrl: z
     .string()
-    .url('공식 URL 형식이 올바르지 않습니다.')
+    .url({ message: '공식 URL 형식이 올바르지 않습니다.' })
     .optional()
     .nullable(),
   affiliateUrl: z
     .string()
-    .url('제휴 URL 형식이 올바르지 않습니다.')
+    .url({ message: '제휴 URL 형식이 올바르지 않습니다.' })
     .optional()
     .nullable(),
   image: z
     .string()
-    .url('이미지 URL 형식이 올바르지 않습니다.')
+    .url({ message: '이미지 URL 형식이 올바르지 않습니다.' })
     .optional()
     .nullable(),
   type: z.string().optional(),
@@ -57,7 +61,7 @@ export const HotelSchema = z.object({
     .enum(['unknown', 'needs_review', 'owned', 'licensed', 'approved_feed'])
     .default('unknown'),
   sourceNote: z.string().optional(),
-  fetchedAt: z.string().datetime('ISO 8601 datetime 형식이어야 합니다.'),
+  fetchedAt: z.string().datetime({ message: 'ISO 8601 datetime 형식이어야 합니다.' }),
 
   // 아고다 Affiliate Lite API 추가 필드
   roomtypeName: z.string().optional(),
@@ -77,7 +81,7 @@ export function validateHotelData(
   data: unknown,
 ):
   | { success: true; data: HotelInput }
-  | { success: false; errors: z.ZodIssue[] } {
+  | { success: false; errors: Array<z.ZodIssue> } {
   const result = HotelSchema.safeParse(data);
   if (result.success) {
     return { success: true, data: result.data };
