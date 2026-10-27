@@ -16,12 +16,47 @@
  *   const hotels = await client.searchHotels({ cityId: 123, limit: 20 });
  */
 
+import { z } from 'zod';
 import type { RawAgodaHotel } from './types.js';
 import { createSlug } from './generate-hotel-md.js';
 
 const AGODA_API_BASE_URL =
   import.meta.env.AGODA_API_BASE_URL ??
   'http://affiliateapi7643.agoda.com/affiliateservice/lt_v1';
+
+/** 아고다 API 에러 응답 스키마 */
+const AgodaErrorSchema = z.object({
+  error: z.object({
+    id: z.number(),
+    message: z.string(),
+  }),
+});
+
+/** 아고다 API 단일 호텔 응답 스키마 (PDF V2.0 기준) */
+const AgodaHotelSchema = z.object({
+  hotelId: z.number(),
+  hotelName: z.string(),
+  roomtypeName: z.string().optional(),
+  starRating: z.number().min(0).max(5).optional(),
+  reviewScore: z.number().min(0).max(10).optional(),
+  reviewCount: z.number().min(0).optional(),
+  currency: z.string(),
+  dailyRate: z.number().min(0).optional(),
+  crossedOutRate: z.number().min(0).optional(),
+  discountPercentage: z.number().min(0).max(100).optional(),
+  imageURL: z.string().url().optional(),
+  landingURL: z.string().url().optional(),
+  includeBreakfast: z.boolean().optional(),
+  freeWifi: z.boolean().optional(),
+});
+
+/** 아고다 API 검색 응답 스키마 */
+const AgodaSearchResponseSchema = z.object({
+  results: z.array(AgodaHotelSchema),
+});
+
+/** 아고다 API 단일 호텔 응답 타입 */
+type AgodaHotelResult = z.infer<typeof AgodaHotelSchema>;
 
 export interface MockHotelData {
   name: string;
@@ -122,7 +157,7 @@ export class AgodaClient {
     this.lastRequestTime = Date.now();
   }
 
-  private async request<T>(body: unknown): Promise<T> {
+  private async request(body: unknown): Promise<unknown> {
     await this.rateLimit();
 
     if (!this.siteId || !this.apiKey) {
@@ -149,7 +184,7 @@ export class AgodaClient {
       );
     }
 
-    return (await response.json()) as T;
+    return await response.json();
   }
 
   private getDefaultDate(daysFromNow: number): string {
@@ -232,32 +267,42 @@ export class AgodaClient {
       },
     };
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const response = await this.request<any>(body);
+    const response = await this.request(body);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const rawHotels: any[] = Array.isArray(response)
-      ? response
-      : (response?.results ?? response?.data ?? []);
+    const parsed = AgodaSearchResponseSchema.safeParse(response);
+    if (!parsed.success) {
+      const errorResponse = AgodaErrorSchema.safeParse(response);
+      if (errorResponse.success) {
+        throw new Error(
+          'Agoda API 오류 (' +
+            errorResponse.data.error.id +
+            '): ' +
+            errorResponse.data.error.message,
+        );
+      }
+      throw new Error(
+        'Agoda API 응답 형식이 올바르지 않습니다: ' +
+          parsed.error.issues.map((i) => i.message).join(', '),
+      );
+    }
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    return rawHotels.map((h: any) => {
+    return parsed.data.results.map((h: AgodaHotelResult) => {
       return {
-        hotelId: h.hotelId ?? h.id,
-        name: h.hotelName ?? h.name,
+        hotelId: String(h.hotelId),
+        name: h.hotelName,
         city: '',
         country: '',
         summary: '',
-        image: h.imageURL,
+        image: h.imageURL ?? undefined,
         images: h.imageURL ? [h.imageURL] : [],
-        type: h.roomtypeName,
+        type: h.roomtypeName ?? undefined,
         starRating: h.starRating,
         reviewScore: h.reviewScore,
         reviewCount: h.reviewCount,
         priceMin: h.dailyRate,
         currency: h.currency,
         officialUrl: '',
-        affiliateUrl: h.landingURL,
+        affiliateUrl: h.landingURL ?? undefined,
         tags: [],
         amenities: [],
         sources: [],
@@ -289,8 +334,7 @@ export class AgodaClient {
     const checkIn = this.getDefaultDate(30);
     const checkOut = this.getDefaultDate(31);
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const response = await this.request<any>({
+    const response = await this.request({
       criteria: {
         hotelId: params.hotelId,
         checkInDate: checkIn,
@@ -302,29 +346,45 @@ export class AgodaClient {
       },
     });
 
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const hotel: any = Array.isArray(response) ? response[0] : response;
+    const parsed = AgodaHotelSchema.safeParse(response);
+    if (!parsed.success) {
+      const errorResponse = AgodaErrorSchema.safeParse(response);
+      if (errorResponse.success) {
+        throw new Error(
+          'Agoda API 오류 (' +
+            errorResponse.data.error.id +
+            '): ' +
+            errorResponse.data.error.message,
+        );
+      }
+      throw new Error(
+        'Agoda API 응답 형식이 올바르지 않습니다: ' +
+          parsed.error.issues.map((i) => i.message).join(', '),
+      );
+    }
+
+    const hotel = parsed.data;
 
     if (!hotel || !hotel.hotelId) {
       throw new Error('호텔 ID ' + params.hotelId + ' 를 찾을 수 없습니다');
     }
 
     return {
-      hotelId: hotel.hotelId,
-      name: hotel.hotelName ?? hotel.name,
+      hotelId: String(hotel.hotelId),
+      name: hotel.hotelName,
       city: '',
       country: '',
       summary: '',
-      image: hotel.imageURL,
+      image: hotel.imageURL ?? undefined,
       images: hotel.imageURL ? [hotel.imageURL] : [],
-      type: hotel.roomtypeName,
+      type: hotel.roomtypeName ?? undefined,
       starRating: hotel.starRating,
       reviewScore: hotel.reviewScore,
       reviewCount: hotel.reviewCount,
       priceMin: hotel.dailyRate,
       currency: hotel.currency,
       officialUrl: '',
-      affiliateUrl: hotel.landingURL,
+      affiliateUrl: hotel.landingURL ?? undefined,
       tags: [],
       amenities: [],
       sources: [],

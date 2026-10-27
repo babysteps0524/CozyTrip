@@ -228,50 +228,121 @@ async function saveMarkdownFile(
 }
 
 /** Agoda 원시 데이터를 HotelInput (Zod 검증 가능) 으로 변환 */
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-function normalizeHotel(raw: any): HotelInput {
-  const slug = createSlug(String(raw.name ?? raw.hotelId ?? 'hotel'));
+function normalizeHotel(raw: unknown): HotelInput {
+  const rawRecord = raw as Record<string, unknown>;
 
-  return {
+  const slug = createSlug(
+    String(
+      rawRecord.name ??
+        rawRecord.hotelId ??
+        'hotel',
+    ),
+  );
+
+  const name = String(rawRecord.name ?? '');
+  const city = String(rawRecord.city ?? '');
+  const summary = String(rawRecord.summary ?? '');
+  const fetchedAt = String(rawRecord.fetchedAt ?? new Date().toISOString());
+
+  const sources: Array<{ label: string; url: string; checkedAt?: string }> =
+    Array.isArray(rawRecord.sources)
+      ? rawRecord.sources.map((s) => {
+          const src = s as Record<string, unknown>;
+          return {
+            label: String(src.label ?? ''),
+            url: String(src.url ?? ''),
+            checkedAt: src.checkedAt ? String(src.checkedAt) : undefined,
+          };
+        })
+      : [];
+  const facts: Array<{
+    label: string;
+    value: string;
+    sourceUrl?: string;
+    verified: boolean;
+  }> = Array.isArray(rawRecord.facts)
+    ? rawRecord.facts.map((f) => {
+        const fact = f as Record<string, unknown>;
+        return {
+          label: String(fact.label ?? ''),
+          value: String(fact.value ?? ''),
+          sourceUrl: fact.sourceUrl ? String(fact.sourceUrl) : undefined,
+          verified: Boolean(fact.verified),
+        };
+      })
+    : [];
+
+  const imageRights: 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed' =
+    ['unknown', 'needs_review', 'owned', 'licensed', 'approved_feed'].includes(
+      String(rawRecord.imageRights),
+    )
+      ? (rawRecord.imageRights as 'unknown' | 'needs_review' | 'owned' | 'licensed' | 'approved_feed')
+      : 'unknown';
+
+  const data: HotelInput = {
     slug,
-    name: raw.name ?? '',
-    city: raw.city ?? '',
-    area: raw.area ?? undefined,
-    summary: raw.summary ?? '',
-    officialUrl: raw.officialUrl ?? undefined,
-    affiliateUrl: raw.affiliateUrl ?? undefined,
-    image: raw.image ?? raw.images?.[0] ?? undefined,
-    type: raw.type ?? undefined,
-    starRating: raw.starRating ?? undefined,
-    reviewScore: raw.reviewScore ?? undefined,
-    reviewCount: raw.reviewCount ?? undefined,
-    priceMin: raw.priceMin ?? undefined,
-    currency: raw.currency ?? undefined,
-    tags: raw.tags ?? [],
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    sources: (raw.sources ?? []).map((s: any) => ({
-      label: s.label ?? '',
-      url: s.url ?? '',
-      checkedAt: s.checkedAt ?? undefined,
-    })),
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    facts: (raw.facts ?? []).map((f: any) => ({
-      label: f.label ?? '',
-      value: f.value ?? '',
-      sourceUrl: f.sourceUrl ?? undefined,
-      verified: f.verified ?? false,
-    })),
-    imageRights: raw.imageRights ?? 'unknown',
-    sourceNote: raw.sourceNote ?? undefined,
-    fetchedAt: raw.fetchedAt ?? new Date().toISOString(),
+    name,
+    city,
+    area: rawRecord.area ? String(rawRecord.area) : undefined,
+    summary,
+    officialUrl: rawRecord.officialUrl ? String(rawRecord.officialUrl) : undefined,
+    affiliateUrl: rawRecord.affiliateUrl ? String(rawRecord.affiliateUrl) : undefined,
+    image: rawRecord.image
+      ? String(rawRecord.image)
+      : rawRecord.images && Array.isArray(rawRecord.images) && rawRecord.images.length > 0
+        ? String(rawRecord.images[0])
+        : undefined,
+    type: rawRecord.type ? String(rawRecord.type) : undefined,
+    starRating:
+      typeof rawRecord.starRating === 'number'
+        ? rawRecord.starRating
+        : undefined,
+    reviewScore:
+      typeof rawRecord.reviewScore === 'number'
+        ? rawRecord.reviewScore
+        : undefined,
+    reviewCount:
+      typeof rawRecord.reviewCount === 'number'
+        ? rawRecord.reviewCount
+        : undefined,
+    priceMin:
+      typeof rawRecord.priceMin === 'number' ? rawRecord.priceMin : undefined,
+    currency: rawRecord.currency ? String(rawRecord.currency) : undefined,
+    tags: Array.isArray(rawRecord.tags)
+      ? rawRecord.tags.map((t) => String(t))
+      : [],
+    sources,
+    facts,
+    imageRights,
+    sourceNote: rawRecord.sourceNote ? String(rawRecord.sourceNote) : undefined,
+    fetchedAt,
 
     // 아고다 Affiliate Lite API 추가 필드
-    roomtypeName: raw.roomtypeName ?? undefined,
-    crossedOutRate: raw.crossedOutRate ?? undefined,
-    discountPercent: raw.discountPercent ?? undefined,
-    includeBreakfast: raw.includeBreakfast ?? false,
-    freeWifi: raw.freeWifi ?? false,
+    roomtypeName: rawRecord.roomtypeName ? String(rawRecord.roomtypeName) : undefined,
+    crossedOutRate:
+      typeof rawRecord.crossedOutRate === 'number'
+        ? rawRecord.crossedOutRate
+        : undefined,
+    discountPercent:
+      typeof rawRecord.discountPercent === 'number'
+        ? rawRecord.discountPercent
+        : undefined,
+    includeBreakfast: Boolean(rawRecord.includeBreakfast),
+    freeWifi: Boolean(rawRecord.freeWifi),
   };
+
+  // Zod 스키마로 최종 검증
+  const validation = validateHotelData(data);
+  if (!validation.success) {
+    throw new Error(
+      '호텔 데이터 검증 실패: ' +
+        validation.errors
+          .map((e) => (e.path.length > 0 ? e.path.join('.') : 'root') + ': ' + e.message)
+          .join(', '),
+    );
+  }
+
+  return validation.data;
 }
 
 /** Zod 기반 검증 */
