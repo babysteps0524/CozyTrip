@@ -18,7 +18,6 @@
 
 import { z } from 'zod';
 import type { RawAgodaHotel } from './types.js';
-import { createSlug } from './generate-hotel-md.js';
 
 const AGODA_API_BASE_URL =
   import.meta.env.AGODA_API_BASE_URL ??
@@ -79,7 +78,10 @@ export class AgodaClientError extends Error {
   public readonly statusCode?: number;
   public readonly retryable: boolean;
 
-  constructor(message: string, options?: { code?: string; statusCode?: number; retryable?: boolean }) {
+  constructor(
+    message: string,
+    options?: { code?: string; statusCode?: number; retryable?: boolean },
+  ) {
     super(message);
     this.name = 'AgodaClientError';
     this.code = options?.code ?? 'UNKNOWN';
@@ -222,9 +224,12 @@ export class AgodaClient {
     this.baseUrl = options?.baseUrl ?? AGODA_API_BASE_URL;
     this.requestIntervalMs = options?.requestIntervalMs ?? 1000;
     this.mockMode = options?.mockMode ?? false;
-    this.requestTimeoutMs = options?.requestTimeoutMs ?? DEFAULT_REQUEST_TIMEOUT_MS;
-    this.mockHotels = (options?.mockHotels ?? []).map((m) => ({
-      hotelId: 'mock-' + createSlug(m.name),
+    this.requestTimeoutMs =
+      options?.requestTimeoutMs ?? DEFAULT_REQUEST_TIMEOUT_MS;
+    this.mockHotels = (options?.mockHotels ?? []).map((m, index) => ({
+      // 모크용 고유 숫자 ID. createSlug(name) fallback('hotel')은
+      // 한글 호텔명과 충돌하므로 사용하지 않는다. (Agoda 실제 hotelId는 숫자)
+      hotelId: 9000000 + index + 1,
       name: m.name,
       city: m.city,
       area: m.area,
@@ -320,7 +325,10 @@ export class AgodaClient {
       }
 
       const controller = new AbortController();
-      const timeoutId = setTimeout(() => controller.abort(), this.requestTimeoutMs);
+      const timeoutId = setTimeout(
+        () => controller.abort(),
+        this.requestTimeoutMs,
+      );
 
       try {
         const response = await fetch(this.baseUrl, {
@@ -350,7 +358,9 @@ export class AgodaClient {
             parsed = JSON.parse(text);
           } catch {
             this.onCircuitFailure();
-            throw new AgodaParseError('Agoda API 응답이 유효한 JSON이 아닙니다.');
+            throw new AgodaParseError(
+              'Agoda API 응답이 유효한 JSON이 아닙니다.',
+            );
           }
 
           this.onCircuitSuccess();
@@ -386,7 +396,11 @@ export class AgodaClient {
           this.onCircuitFailure();
           throw new AgodaClientError(
             `Agoda API 요청 실패 (${response.status}): ${errorText}`,
-            { code: 'REQUEST_ERROR', statusCode: response.status, retryable: false },
+            {
+              code: 'REQUEST_ERROR',
+              statusCode: response.status,
+              retryable: false,
+            },
           );
         }
       } catch (error) {
@@ -399,11 +413,17 @@ export class AgodaClient {
             throw error;
           }
           lastError = error;
-        } else if (error instanceof DOMException && error.name === 'AbortError') {
+        } else if (
+          error instanceof DOMException &&
+          error.name === 'AbortError'
+        ) {
           lastError = new AgodaNetworkError(
             `Agoda API 요청 타임아웃 (${this.requestTimeoutMs}ms 초과).`,
           );
-        } else if (error instanceof TypeError && error.message.includes('fetch')) {
+        } else if (
+          error instanceof TypeError &&
+          error.message.includes('fetch')
+        ) {
           lastError = new AgodaNetworkError(
             'Agoda API 네트워크 연결에 실패했습니다.',
           );
@@ -424,7 +444,12 @@ export class AgodaClient {
     }
 
     this.onCircuitFailure();
-    throw lastError ?? new AgodaClientError('Agoda API 요청에 실패했습니다.', { retryable: false });
+    throw (
+      lastError ??
+      new AgodaClientError('Agoda API 요청에 실패했습니다.', {
+        retryable: false,
+      })
+    );
   }
 
   private getDefaultDate(daysFromNow: number): string {
@@ -491,10 +516,10 @@ export class AgodaClient {
     }
 
     if (!params.cityId && !params.hotelId) {
-      throw new AgodaClientError(
-        'cityId 또는 hotelId 중 하나는 필수입니다.',
-        { code: 'MISSING_CRITERIA', retryable: false },
-      );
+      throw new AgodaClientError('cityId 또는 hotelId 중 하나는 필수입니다.', {
+        code: 'MISSING_CRITERIA',
+        retryable: false,
+      });
     }
 
     const checkIn = params.checkInDate ?? this.getDefaultDate(30);
@@ -518,7 +543,11 @@ export class AgodaClient {
       if (errorResponse.success) {
         throw new AgodaClientError(
           `Agoda API 오류 (${errorResponse.data.error.id}): ${errorResponse.data.error.message}`,
-          { code: 'API_ERROR', statusCode: errorResponse.data.error.id, retryable: false },
+          {
+            code: 'API_ERROR',
+            statusCode: errorResponse.data.error.id,
+            retryable: false,
+          },
         );
       }
       throw new AgodaParseError(
@@ -596,7 +625,11 @@ export class AgodaClient {
       if (errorResponse.success) {
         throw new AgodaClientError(
           `Agoda API 오류 (${errorResponse.data.error.id}): ${errorResponse.data.error.message}`,
-          { code: 'API_ERROR', statusCode: errorResponse.data.error.id, retryable: false },
+          {
+            code: 'API_ERROR',
+            statusCode: errorResponse.data.error.id,
+            retryable: false,
+          },
         );
       }
       throw new AgodaParseError(
@@ -654,7 +687,10 @@ export class AgodaClient {
         results.push(detail);
       } catch (error) {
         // 개별 호텔 조회 실패는 전체 파이프라인을 중단시키지 않음
-        console.error('호텔 ID ' + id + ' 상세 조회 실패:', error instanceof Error ? error.message : String(error));
+        console.error(
+          '호텔 ID ' + id + ' 상세 조회 실패:',
+          error instanceof Error ? error.message : String(error),
+        );
       }
     }
     return results;

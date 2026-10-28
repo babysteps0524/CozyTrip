@@ -244,13 +244,25 @@ async function saveMarkdownFile(
   }
 }
 
+/**
+ * 호텔 slug 생성.
+ * createSlug는 한글이 전부 HTTP 안전 문자가 아니므로(NFKD 자모 분해 문제),
+ * 한글 호텔명은 탈락해 'hotel' 폴백이 되면 모든 파일이 hotel.md로 충돌한다.
+ * 이 경우 고유한 hotelId 기반 slug로 폴백한다.
+ */
+function hotelSlug(rawLike: unknown): string {
+  const record = (rawLike as Record<string, unknown> | null) ?? {};
+  const slug = createSlug(String(record.name ?? ''));
+  if (slug && slug !== 'hotel') return slug;
+  const id = String(record.hotelId ?? '').replace(/[^a-zA-Z0-9]+/g, '');
+  return id ? `hotel-${id}` : 'hotel';
+}
+
 /** Agoda 원시 데이터를 HotelInput (Zod 검증 가능) 으로 변환 */
 function normalizeHotel(raw: unknown): HotelInput {
   const rawRecord = raw as Record<string, unknown>;
 
-  const slug = createSlug(
-    String(rawRecord.name ?? rawRecord.hotelId ?? 'hotel'),
-  );
+  const slug = hotelSlug(rawRecord);
 
   const name = String(rawRecord.name ?? '');
   const city = String(rawRecord.city ?? '');
@@ -332,6 +344,9 @@ function normalizeHotel(raw: unknown): HotelInput {
     priceMin:
       typeof rawRecord.priceMin === 'number' ? rawRecord.priceMin : undefined,
     currency: rawRecord.currency ? String(rawRecord.currency) : undefined,
+    amenities: Array.isArray(rawRecord.amenities)
+      ? rawRecord.amenities.map((t: unknown) => String(t))
+      : [],
     tags: Array.isArray(rawRecord.tags)
       ? rawRecord.tags.map((t) => String(t))
       : [],
@@ -441,9 +456,7 @@ export async function runPipeline(
     const hotelsToProcess =
       args.retryFailed && previousFailed.length > 0
         ? rawHotels.filter((raw) =>
-            previousFailed.some(
-              (f) => f.slug === createSlug(String(raw.name ?? raw.hotelId)),
-            ),
+            previousFailed.some((f) => f.slug === hotelSlug(raw)),
           )
         : rawHotels;
 
@@ -505,7 +518,7 @@ export async function runPipeline(
         console.warn(`  [생성] ${normalized.name} → ${result.filename}`);
       } catch (err) {
         failed++;
-        const slug = createSlug(String(raw.name ?? hotelId ?? 'unknown'));
+        const slug = hotelSlug(raw);
         errors.push({ slug, error: String(err) });
         newFailed.push({
           slug,

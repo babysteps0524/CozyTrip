@@ -30,9 +30,19 @@ export const FactSchema = z.object({
 export const HotelSchema = z.object({
   slug: z.string().min(1, 'slug는 필수입니다.'),
   name: z.string().min(1, '호텔명은 필수입니다.'),
+  /** 확인된 일본어 표기 (실제 데이터가 확보된 경우에만 사용) */
+  nameJa: z.string().optional(),
   city: z.string().min(1, '도시/지역은 필수입니다.'),
   area: z.string().optional(),
   summary: z.string().min(40, '소개 요약은 40자 이상이어야 합니다.'),
+  address: z.string().optional(),
+  amenities: z.array(z.string()).default([]),
+  transportNotes: z.string().optional(),
+  checkIn: z.string().optional(),
+  checkOut: z.string().optional(),
+  /** 마지막 정보 확인 날짜 (ISO 8601 date) */
+  lastVerifiedAt: z.string().date().optional(),
+  editorialNotes: z.string().optional(),
   officialUrl: z
     .string()
     .url({ message: '공식 URL 형식이 올바르지 않습니다.' })

@@ -26,12 +26,7 @@ const CONTENT_DIR = join(
   '../content/hotels',
 );
 
-const VALID_STATUSES = [
-  'draft',
-  'review',
-  'published',
-  'archived',
-] as const;
+const VALID_STATUSES = ['draft', 'review', 'published', 'archived'] as const;
 
 type Status = (typeof VALID_STATUSES)[number];
 
@@ -74,8 +69,12 @@ function parseArgs(argv: string[]): {
   }
 
   if (!args.slug) {
-    console.error('Usage: bun run scripts/update-hotel-status.ts --slug <slug> --status <status>');
-    console.error('       bun run scripts/update-hotel-status.ts --slug <slug> --next');
+    console.error(
+      'Usage: bun run scripts/update-hotel-status.ts --slug <slug> --status <status>',
+    );
+    console.error(
+      '       bun run scripts/update-hotel-status.ts --slug <slug> --next',
+    );
     process.exit(1);
   }
 
@@ -121,7 +120,7 @@ function serializeFrontmatter(frontmatter: Record<string, string>): string {
   const lines: string[] = [];
   for (const [key, value] of Object.entries(frontmatter)) {
     // 특수 문자가 포함된 값은 따옴표로 감싸기
-    if (/[:\n#\{\[\],&*!|>'"%@`]/.test(value)) {
+    if (/[:\n#{[\],&*!|>'"%@`]/.test(value)) {
       lines.push(`${key}: "${value.replace(/"/g, '\\"')}"`);
     } else {
       lines.push(`${key}: ${value}`);
@@ -214,9 +213,7 @@ export async function runStatusUpdate(
   if (newStatus === 'published') {
     const validation = validatePublishReady(hotel.frontmatter);
     if (!validation.valid) {
-      console.error(
-        `  [검증 실패] published 상태로 변경할 수 없습니다.`,
-      );
+      console.error(`  [검증 실패] published 상태로 변경할 수 없습니다.`);
       for (const reason of validation.reasons) {
         console.error(`    - ${reason}`);
       }

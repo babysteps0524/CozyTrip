@@ -3,84 +3,26 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import HotelCard from '../../components/HotelCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { hotels } from '../../data/site';
-import { readdir, readFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { getCollection, type CollectionEntry } from 'astro:content';
 
-const CONTENT_DIR = join(process.cwd(), 'src/content/hotels');
-
-async function loadContentHotelData(): Promise<
-  Array<{
-    name: string;
-    city: string;
-    area?: string;
-    summary: string;
-    image?: string;
-    type?: string;
-    tags?: string[];
-    status?: string;
-    slug: string;
-  }>
-> {
-  try {
-    const files = await readdir(CONTENT_DIR);
-    const mdFiles = files.filter(
-      (f) => f.endsWith('.md') || f.endsWith('.mdx'),
-    );
-    const results: Array<{
-      name: string;
-      city: string;
-      area?: string;
-      summary: string;
-      image?: string;
-      type?: string;
-      tags?: string[];
-      status?: string;
-      slug: string;
-    }> = [];
-    for (const file of mdFiles) {
-      const filePath = join(CONTENT_DIR, file);
-      const content = await readFile(filePath, 'utf-8');
-      const slug = file.replace(/\.(md|mdx)$/, '');
-      const fmMatch = content.match(/^---\n([\s\S]*?)\n---\n([\s\S]*)$/);
-      if (fmMatch) {
-        const fmText = fmMatch[1];
-        const data: Record<string, unknown> = {};
-        for (const line of fmText.split('\n')) {
-          const colonIdx = line.indexOf(':');
-          if (colonIdx > 0) {
-            const key = line.slice(0, colonIdx).trim();
-            let val = line.slice(colonIdx + 1).trim();
-            if (val.startsWith('"') && val.endsWith('"')) {
-              val = val.slice(1, -1);
-            }
-            data[key] = val;
-          }
-        }
-        results.push({
-          name: String(data.name ?? ''),
-          city: String(data.city ?? ''),
-          area: data.area ? String(data.area) : undefined,
-          summary: String(data.summary ?? ''),
-          image: data.image ? String(data.image) : undefined,
-          type: data.type ? String(data.type) : undefined,
-          tags: data.tags
-            ? String(data.tags)
-                .split(',')
-                .map((t) => t.trim())
-            : undefined,
-          status: data.status ? String(data.status) : undefined,
-          slug,
-        });
-      }
-    }
-    return results;
-  } catch {
-    return [];
-  }
-}
-
-const contentHotels = await loadContentHotelData();
-const existingSlugs = new Set(contentHotels.map((h) => h.slug));
+// 콘텐츠 컬렉션 호텔 (Agoda 파이프라인·studio가 생성한 MD 파일)
+const contentEntries = await getCollection('hotels');
+const existingSlugs = new Set(
+  contentEntries.map((entry: CollectionEntry<'hotels'>) => entry.id),
+);
+const contentHotels = contentEntries.map(
+  (entry: CollectionEntry<'hotels'>) => ({
+    name: entry.data.name,
+    city: entry.data.city,
+    area: entry.data.area,
+    summary: entry.data.summary,
+    image: entry.data.image ?? undefined,
+    type: entry.data.type,
+    tags: entry.data.tags,
+    status: entry.data.status,
+    slug: entry.id,
+  }),
+);
 const staticHotels = hotels.filter((hotel) => !existingSlugs.has(hotel.slug));
 const allHotels = [...contentHotels, ...staticHotels];
 ---

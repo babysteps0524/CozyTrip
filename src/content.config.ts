@@ -6,19 +6,32 @@
  */
 
 import { defineCollection } from 'astro:content';
+import { glob } from 'astro/loaders';
 import { z } from 'zod';
 
 const hotels = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './src/content/hotels' }),
   schema: z.object({
     status: z
       .enum(['draft', 'review', 'published', 'archived'])
       .default('draft'),
     publish: z.boolean().default(false),
     name: z.string().min(1),
+    /** 확인된 일본어 표기 (실제 데이터가 확보된 경우에만 사용) */
+    nameJa: z.string().optional(),
     city: z.string().min(1),
     slug: z.string().min(1),
     area: z.string().optional(),
+    summary: z.string().min(1),
+    address: z.string().optional(),
+    amenities: z.array(z.string()).default([]),
+    transportNotes: z.string().optional(),
+    checkIn: z.string().optional(),
+    checkOut: z.string().optional(),
+    /** 마지막 정보 확인 날짜 (ISO 8601 date) */
+    lastVerifiedAt: z.string().date().optional(),
+    editorialNotes: z.string().optional(),
+    tags: z.array(z.string()).default([]),
     imageRights: z
       .enum(['unknown', 'needs_review', 'owned', 'licensed', 'approved_feed'])
       .default('unknown'),

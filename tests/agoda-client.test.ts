@@ -113,12 +113,14 @@ describe('AgodaClient (mock mode)', () => {
       apiKey: 'test-key',
     });
 
-    // AgodaClient 생성자에서 hotelId를 'mock-' + createSlug(name)으로 재생성하므로
-    // createSlug('호텔 그레이서리 신주쿠') 결과와 일치시켜야 함
-    const { createSlug } = await import('../src/scripts/generate-hotel-md');
-    const expectedId = 'mock-' + createSlug('호텔 그레이서리 신주쿠');
+    // 생성자가 mock hotelId를 고유 숫자로 재발급하므로,
+    // 검색 결과로 얻은 ID로 상세 조회해야 함
+    const results = await client.searchHotels({ cityId: '도쿄' });
+    expect(results[0]).toBeDefined();
 
-    const detail = await client.getHotelDetail({ hotelId: expectedId });
+    const detail = await client.getHotelDetail({
+      hotelId: results[0]!.hotelId,
+    });
     expect(detail.name).toBe('호텔 그레이서리 신주쿠');
   });
 
