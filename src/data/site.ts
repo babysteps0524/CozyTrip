@@ -88,7 +88,7 @@ export const hotels = [
     summary:
       '신주쿠 일대를 중심으로 여행 동선을 짜는 사람이라면 위치와 교통편을 먼저 비교해 볼 숙소 후보입니다.',
     tags: ['도심 여행', '쇼핑', '교통 확인'],
-    status: 'editorial-draft',
+    status: 'draft',
     sourceNote:
       '호텔명과 지역은 편집 후보입니다. 객실·시설·요금·예약 조건은 공식 페이지와 예약 페이지에서 확인 후 게시하세요.',
   },
@@ -104,7 +104,7 @@ export const hotels = [
     summary:
       '교토 중심부에서 관광지와 식당을 함께 살펴보려는 여행객에게 검토할 만한 숙소 후보입니다.',
     tags: ['도심 산책', '미식', '위치 확인'],
-    status: 'editorial-draft',
+    status: 'draft',
     sourceNote:
       '주변 시설·도보 시간·객실 정보는 게시 전에 공식 출처로 재검증해야 합니다.',
   },
@@ -120,7 +120,7 @@ export const hotels = [
     summary:
       '도쿄의 주요 명소를 둘러보는 일정이라면 호텔 위치와 이동 경로를 기준으로 비교해 볼 수 있습니다.',
     tags: ['도쿄 관광', '숙소 비교', '교통 확인'],
-    status: 'editorial-draft',
+    status: 'draft',
     sourceNote:
       '전망·시설·서비스 등은 확인된 출처가 없으므로 이 소개에서 단정하지 않습니다.',
   },
@@ -136,7 +136,7 @@ export const hotels = [
     summary:
       '리조트 중심의 휴식을 계획한다면 섬 내 이동 방법과 숙박 조건을 함께 확인해 보세요.',
     tags: ['리조트 여행', '휴식', '예약 조건 확인'],
-    status: 'editorial-draft',
+    status: 'draft',
     sourceNote:
       '객실·수영장·식사·가격 등의 세부 사항은 최신 공식 정보로 확인 후 게시해야 합니다.',
   },
@@ -152,7 +152,7 @@ export const hotels = [
     summary:
       '하카타역 주변을 거점으로 후쿠오카와 근교를 둘러볼 때 위치를 비교할 후보입니다.',
     tags: ['하카타', '도시 여행', '이동 동선'],
-    status: 'editorial-draft',
+    status: 'draft',
     sourceNote:
       '역 연결·도보 시간·시설은 출처를 확인하기 전까지 확정 정보로 사용하지 않습니다.',
   },
@@ -168,7 +168,7 @@ export const hotels = [
     summary:
       '도심 관광과 식사를 중심으로 삿포로 일정을 구성한다면 위치와 계절별 이동을 비교해 보세요.',
     tags: ['홋카이도', '도심 여행', '계절 확인'],
-    status: 'editorial-draft',
+    status: 'draft',
     sourceNote:
       '요금·운영 상태·시설 정보는 게시 전에 최신 출처로 검증해야 합니다.',
   },
