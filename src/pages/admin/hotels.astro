@@ -91,29 +91,29 @@ const statusBadgeStyles: Record<
   { bg: string; text: string; darkBg: string; darkText: string }
 > = {
   published: {
-    bg: 'emerald-100',
-    text: 'emerald-700',
-    darkBg: 'emerald-900/30',
-    darkText: 'emerald-400',
+    bg: 'brand-100',
+    text: 'brand-700',
+    darkBg: 'brand-900/30',
+    darkText: 'brand-400',
   },
   review: {
-    bg: 'amber-100',
-    text: 'amber-700',
-    darkBg: 'amber-900/30',
-    darkText: 'amber-400',
+    bg: 'accent-100',
+    text: 'accent-700',
+    darkBg: 'accent-900/30',
+    darkText: 'accent-400',
   },
   archived: {
-    bg: 'slate-100',
-    text: 'slate-500',
-    darkBg: 'slate-800',
-    darkText: 'slate-500',
+    bg: 'neutral-100',
+    text: 'neutral-500',
+    darkBg: 'neutral-800',
+    darkText: 'neutral-500',
   },
 };
 const defaultBadgeStyle = {
-  bg: 'slate-100',
-  text: 'slate-700',
-  darkBg: 'slate-800',
-  darkText: 'slate-300',
+  bg: 'neutral-100',
+  text: 'neutral-700',
+  darkBg: 'neutral-800',
+  darkText: 'neutral-300',
 };
 
 const getBadgeStyle = (status: string) =>
@@ -140,7 +140,7 @@ const getBadgeStyle = (status: string) =>
         border="line"
         bg="white"
         p="5"
-        dark="border-slate-800 bg-slate-900"
+        dark="border-neutral-800 bg-neutral-900"
       >
         <p text="xs muted" font="bold">
           전체 호텔
@@ -154,12 +154,12 @@ const getBadgeStyle = (status: string) =>
         border="line"
         bg="white"
         p="5"
-        dark="border-slate-800 bg-slate-900"
+        dark="border-neutral-800 bg-neutral-900"
       >
         <p text="xs muted" font="bold">
           게시 완료
         </p>
-        <h2 mt="2" text="2xl" font="bold" text="emerald-600">
+        <h2 mt="2" text="2xl" font="bold" text="brand-500">
           {stats.published}
         </h2>
       </div>
@@ -168,12 +168,12 @@ const getBadgeStyle = (status: string) =>
         border="line"
         bg="white"
         p="5"
-        dark="border-slate-800 bg-slate-900"
+        dark="border-neutral-800 bg-neutral-900"
       >
         <p text="xs muted" font="bold">
           검토 필요
         </p>
-        <h2 mt="2" text="2xl" font="bold" text="amber-600">
+        <h2 mt="2" text="2xl" font="bold" text="accent-500">
           {stats.needsReview}
         </h2>
       </div>
@@ -182,12 +182,12 @@ const getBadgeStyle = (status: string) =>
         border="line"
         bg="white"
         p="5"
-        dark="border-slate-800 bg-slate-900"
+        dark="border-neutral-800 bg-neutral-900"
       >
         <p text="xs muted" font="bold">
           검증 완료
         </p>
-        <h2 mt="2" text="2xl" font="bold" text="emerald-600">
+        <h2 mt="2" text="2xl" font="bold" text="brand-500">
           {stats.verified}
         </h2>
       </div>
@@ -196,12 +196,12 @@ const getBadgeStyle = (status: string) =>
         border="line"
         bg="white"
         p="5"
-        dark="border-slate-800 bg-slate-900"
+        dark="border-neutral-800 bg-neutral-900"
       >
         <p text="xs muted" font="bold">
           이미지 권리 확인
         </p>
-        <h2 mt="2" text="2xl" font="bold" text="emerald-600">
+        <h2 mt="2" text="2xl" font="bold" text="brand-500">
           {stats.imageRightsReady}
         </h2>
       </div>
@@ -232,37 +232,37 @@ const getBadgeStyle = (status: string) =>
           rounded="2xl"
           border="line"
           bg="white"
-          dark="border-slate-800 bg-slate-900"
+          dark="border-neutral-800 bg-neutral-900"
           overflow="auto"
         >
           <table w="full" text="sm">
             <thead>
-              <tr border-b="line" dark="border-slate-700">
-                <th p="3" text="left" font="bold" text="slate-600">
+              <tr border-b="line" dark="border-neutral-700">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   호텔명
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   도시
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   상태
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   검증
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   게시
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   출처
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   수집일
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   링크
                 </th>
-                <th p="3" text="left" font="bold" text="slate-600">
+                <th p="3" text="left" font="bold" text="neutral-600">
                   작업
                 </th>
               </tr>
@@ -293,14 +293,14 @@ const getBadgeStyle = (status: string) =>
                 return (
                   <tr
                     border-b="line"
-                    dark="border-slate-800/50"
-                    hover="bg-slate-50"
-                    dark:hover="bg-slate-800/50"
+                    dark="border-neutral-800/50"
+                    hover="bg-neutral-50"
+                    dark:hover="bg-neutral-800/50"
                   >
-                    <td p="3" font="medium" text="slate-900">
+                    <td p="3" font="medium" text="neutral-900">
                       {h.name}
                     </td>
-                    <td p="3" text="sm" text="slate-600">
+                    <td p="3" text="sm" text="neutral-600">
                       {h.city}
                     </td>
                     <td p="3">
@@ -330,8 +330,8 @@ const getBadgeStyle = (status: string) =>
                           font="medium"
                           text={
                             h.factsVerified
-                              ? 'emerald-600 dark:emerald-400'
-                              : 'slate-500 dark:slate-500'
+                              ? 'brand-500 dark:brand-400'
+                              : 'neutral-500 dark:neutral-500'
                           }
                         >
                           {h.factsVerified ? '✓' : '✗'} 사실 검증
@@ -345,8 +345,8 @@ const getBadgeStyle = (status: string) =>
                           text={
                             h.imageRights !== 'unknown' &&
                             h.imageRights !== 'needs_review'
-                              ? 'emerald-600 dark:emerald-400'
-                              : 'slate-500 dark:slate-500'
+                              ? 'brand-500 dark:brand-400'
+                              : 'neutral-500 dark:neutral-500'
                           }
                         >
                           {h.imageRights !== 'unknown' &&
@@ -357,7 +357,7 @@ const getBadgeStyle = (status: string) =>
                         <span
                           block
                           text="[10px]"
-                          text="slate-400 dark:slate-500"
+                          text="neutral-400 dark:neutral-500"
                           font="medium"
                         >
                           출처 {h.sourcesCount}개
@@ -374,10 +374,10 @@ const getBadgeStyle = (status: string) =>
                           py="0.5"
                           text="xs"
                           font="medium"
-                          bg="emerald-100"
-                          text="emerald-700"
-                          dark:bg="emerald-900/30"
-                          dark:text="emerald-400"
+                          bg="brand-100"
+                          text="brand-700"
+                          dark:bg="brand-900/30"
+                          dark:text="brand-400"
                         >
                           ✓ 예
                         </span>
@@ -390,19 +390,19 @@ const getBadgeStyle = (status: string) =>
                           py="0.5"
                           text="xs"
                           font="medium"
-                          bg="slate-100"
-                          text="slate-700"
-                          dark:bg="slate-800"
-                          dark:text="slate-300"
+                          bg="neutral-100"
+                          text="neutral-700"
+                          dark:bg="neutral-800"
+                          dark:text="neutral-300"
                         >
                           아니오
                         </span>
                       )}
                     </td>
-                    <td p="3" text="sm" text="slate-500">
+                    <td p="3" text="sm" text="neutral-500">
                       {h.source}
                     </td>
-                    <td p="3" text="sm" text="slate-500">
+                    <td p="3" text="sm" text="neutral-500">
                       {h.fetchedAt ?? '-'}
                     </td>
                     <td p="3">
@@ -443,7 +443,7 @@ const getBadgeStyle = (status: string) =>
                           <p
                             mt="0.5"
                             text="[10px]"
-                            text="slate-500 dark:slate-500"
+                            text="neutral-500 dark:neutral-500"
                             max="w-24"
                           >
                             검증 필요
@@ -458,13 +458,13 @@ const getBadgeStyle = (status: string) =>
           </table>
         </div>
         {hotels.length === 0 && (
-          <p mt="4" text="sm" text="slate-500" max="w-4xl">
+          <p mt="4" text="sm" text="neutral-500" max="w-4xl">
             등록된 호텔 콘텐츠가 없습니다. 동기화를 먼저 실행하세요.
           </p>
         )}
       </div>
     ) : (
-      <p mt="8" text="sm" text="slate-500" max="w-4xl">
+      <p mt="8" text="sm" text="neutral-500" max="w-4xl">
         등록된 호텔 콘텐츠가 없습니다.
       </p>
     )}
@@ -472,29 +472,29 @@ const getBadgeStyle = (status: string) =>
     <div mt="8" max="w-4xl">
       <div
         rounded="2xl"
-        border="line dark:slate-800"
-        bg="slate-50 dark:slate-950"
+        border="line dark:neutral-800"
+        bg="neutral-50 dark:neutral-950"
         p="5"
       >
         <h2 text="lg" font="bold" mb="3">
           상태 전이 명령어
         </h2>
-        <p mt="0" text="sm muted dark:slate-400">
+        <p mt="0" text="sm muted dark:neutral-400">
           테이블의 상태 전이 버튼을 클릭하면 CLI 명령어가 클립보드에
           복사됩니다. 터미널에서 실행하여 실제 파일의 상태를 변경하세요.
         </p>
         <div mt="3">
-          <p text="xs font-bold slate-600 dark:slate-400" mb="1">
+          <p text="xs font-bold neutral-600 dark:neutral-400" mb="1">
             예시:
           </p>
           <div
             rounded="xl"
-            bg="white dark:slate-900"
+            bg="white dark:neutral-900"
             p="3"
             text="sm"
             font="mono"
-            text="slate-700 dark:slate-300"
-            border="line dark:slate-700"
+            text="neutral-700 dark:neutral-300"
+            border="line dark:neutral-700"
           >
             bun run content:status --slug hotel-gracery-shinjuku --status published
           </div>

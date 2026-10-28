@@ -6,8 +6,8 @@ const { hotel } = Astro.props;
   group
   overflow="hidden"
   rounded="2xl"
-  border="line dark:slate-800"
-  bg="white dark:slate-900"
+  border="line dark:neutral-800"
+  bg="white dark:neutral-900"
   shadow="card hover:lift"
   transition
   duration="200"
@@ -21,9 +21,9 @@ const { hotel } = Astro.props;
   >
     <div
       relative
-      style="aspect-ratio: 16/10"
+      aspect="16/10"
       overflow="hidden"
-      bg="slate-100 dark:slate-800"
+      bg="neutral-100 dark:neutral-800"
     >
       <img
         src={hotel.image}
@@ -43,7 +43,7 @@ const { hotel } = Astro.props;
         left="3"
         top="3"
         rounded="full"
-        bg="white/95 dark:slate-800"
+        bg="white/95 dark:neutral-800"
         px="3"
         py="1"
         text="xs ink dark:white"
@@ -60,17 +60,17 @@ const { hotel } = Astro.props;
       <h3 mt="2" font="bold" leading="snug" text="lg ink dark:white">
         {hotel.name}
       </h3>
-      <p mt="2" leading="6" line-clamp-3 text="sm muted dark:slate-300">
+      <p mt="2" leading="6" line-clamp-3 text="sm muted dark:neutral-300">
         {hotel.summary}
       </p>
       <div mt="4" flex="wrap" gap="2">
         {(hotel.tags ?? []).slice(0, 3).map((tag: string) => (
           <span
             rounded="lg"
-            bg="brand-50 dark:slate-800"
+            bg="brand-50 dark:neutral-800"
             px="2.5"
             py="1"
-            text="[11px] brand-700 dark:blue-200"
+            text="[11px] brand-700 dark:brand-100"
             font="medium"
           >
             {tag}
@@ -82,11 +82,11 @@ const { hotel } = Astro.props;
         flex
         items="center"
         justify="between"
-        border="t line dark:slate-800"
+        border="t line dark:neutral-800"
         pt="3"
         text="sm"
       >
-        <span font="semibold" text="ink dark:slate-100">
+        <span font="semibold" text="ink dark:neutral-100">
           소개 보기
         </span>
         <span
@@ -95,7 +95,7 @@ const { hotel } = Astro.props;
           w="8"
           place="items-center"
           rounded="full"
-          bg="brand-50 dark:slate-800"
+          bg="brand-50 dark:neutral-800"
           text="brand-700"
           transition
           group-hover="bg-brand-600 text-white"

@@ -42,11 +42,11 @@ const related = hotels.filter((hotel) => hotel.region === region.slug);
         inset="0"
         -z-10
         bg="gradient-to-r"
-        from-slate-950
-        to-slate-900
+        from-neutral-950
+        to-neutral-900
       ></div>
       <div p="7 sm:12" max="w-3xl" text="white">
-        <p text="xs blue-200" font="bold" tracking="[.2em]">
+        <p text="xs brand-100" font="bold" tracking="[.2em]">
           {region.en.toUpperCase()} GUIDE
         </p>
         <h1 mt="3" text="4xl sm:5xl" font="bold">
@@ -60,8 +60,8 @@ const related = hotels.filter((hotel) => hotel.region === region.slug);
     <section
       mt="8"
       rounded="2xl"
-      border="line dark:slate-800"
-      bg="white dark:slate-900"
+      border="line dark:neutral-800"
+      bg="white dark:neutral-900"
       p="6"
     >
       <h2 text="xl" font="bold">
@@ -71,10 +71,10 @@ const related = hotels.filter((hotel) => hotel.region === region.slug);
         {region.areas.map((area) => (
           <span
             rounded="full"
-            bg="slate-100 dark:slate-800"
+            bg="neutral-100 dark:neutral-800"
             px="4"
             py="2"
-            text="sm slate-700 dark:slate-200"
+            text="sm neutral-700 dark:neutral-300"
           >
             {area}
           </span>

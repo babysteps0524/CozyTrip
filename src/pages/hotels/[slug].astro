@@ -73,15 +73,15 @@ const statusLabel = (status: string) => {
 const statusColor = (status: string) => {
   switch (status) {
     case 'published':
-      return 'text-emerald-700 dark:text-emerald-400';
+      return 'text-brand-700 dark:text-brand-400';
     case 'review':
-      return 'text-amber-700 dark:text-amber-400';
+      return 'text-accent-700 dark:text-accent-400';
     case 'draft':
-      return 'text-slate-700 dark:text-slate-300';
+      return 'text-neutral-700 dark:text-neutral-300';
     case 'archived':
-      return 'text-slate-500 dark:text-slate-600';
+      return 'text-neutral-500 dark:text-neutral-600';
     default:
-      return 'text-slate-700 dark:text-slate-300';
+      return 'text-neutral-700 dark:text-neutral-300';
   }
 };
 
@@ -109,7 +109,7 @@ const isPublished = hotelStatus === 'published';
         <h1 mt="2" font="bold" leading="tight" text="3xl sm:5xl ink dark:white">
           {hotel.name}
         </h1>
-        <p mt="3" leading="7" text="lg muted dark:slate-300">
+        <p mt="3" leading="7" text="lg muted dark:neutral-300">
           {hotel.summary}
         </p>
         <div mt="5" flex="wrap" gap="2">
@@ -117,10 +117,10 @@ const isPublished = hotelStatus === 'published';
             <span
               key={tag}
               rounded="lg"
-              bg="brand-50 dark:slate-800"
+              bg="brand-50 dark:neutral-800"
               px="2.5"
               py="1"
-              text="[11px] brand-700 dark:blue-200"
+              text="[11px] brand-700 dark:brand-100"
               font="medium"
             >
               {tag}
@@ -139,18 +139,18 @@ const isPublished = hotelStatus === 'published';
           font="semibold"
           bg={
             hotel.status === 'published'
-              ? 'emerald-100'
+              ? 'brand-100'
               : hotel.status === 'review'
-                ? 'amber-100'
-                : 'slate-100'
+                ? 'accent-100'
+                : 'neutral-100'
           }
           text={statusColor(hotelStatus)}
           dark:bg={
             hotelStatus === 'published'
-              ? 'emerald-900/30'
+              ? 'brand-900/30'
               : hotelStatus === 'review'
-                ? 'amber-900/30'
-                : 'slate-800'
+                ? 'accent-900/30'
+                : 'neutral-800'
           }
         >
           {statusLabel(hotelStatus)}
@@ -161,8 +161,8 @@ const isPublished = hotelStatus === 'published';
     <section
       mt="10"
       rounded="3xl"
-      border="line dark:slate-800"
-      bg="white dark:slate-900"
+      border="line dark:neutral-800"
+      bg="white dark:neutral-900"
       p="6"
       shadow="card"
     >
@@ -172,7 +172,7 @@ const isPublished = hotelStatus === 'published';
           relative
           overflow="hidden"
           rounded="2xl"
-          bg="slate-100 dark:slate-800"
+          bg="neutral-100 dark:neutral-800"
         >
           <img
             src={hotel.image}
@@ -198,7 +198,7 @@ const isPublished = hotelStatus === 'published';
           <h3 mb="4" text="lg" font="bold">
             호텔 정보
           </h3>
-          <div space="y-4" text="sm slate-600 dark:slate-300">
+          <div space="y-4" text="sm neutral-600 dark:neutral-300">
             <p>
               <span font="medium" text="ink">
                 위치:
@@ -263,14 +263,14 @@ const isPublished = hotelStatus === 'published';
             <h4 text="sm brand-700 dark:brand-400" font="bold">
               정보 검증 안내
             </h4>
-            <p mt="2" text="sm muted dark:slate-400" leading="6">
+            <p mt="2" text="sm muted dark:neutral-400" leading="6">
               이 호텔 정보는 편집 검토 중입니다. 숙박 요금, 객실 가능 여부,
               별점, 후기 수는 게시 전에 공식 출처로 재검증해야 합니다. 검증되지
               않은 정보를 사실처럼 표시하지 않습니다.
             </p>
             {hotel.sourceNote && (
               <div mt="3" pt="3" border="t brand-100 dark:brand-900/20">
-                <p text="xs muted dark:slate-500" leading="6">
+                <p text="xs muted dark:neutral-500" leading="6">
                   {hotel.sourceNote}
                 </p>
               </div>
@@ -284,8 +284,8 @@ const isPublished = hotelStatus === 'published';
       <section
         mt="8"
         rounded="2xl"
-        border="dashed line dark:slate-800"
-        bg="slate-50 dark:slate-900"
+        border="dashed line dark:neutral-800"
+        bg="neutral-50 dark:neutral-900"
         p="6"
       >
         <h3 text="lg" font="bold" text="ink">
@@ -296,7 +296,7 @@ const isPublished = hotelStatus === 'published';
           space="y-3"
           list="disc"
           pl="6"
-          text="sm muted dark:slate-400"
+          text="sm muted dark:neutral-400"
         >
           <li>공식 호텔 웹사이트에서 주소, 체크인/체크아웃 시간 확인</li>
           <li>공식 교통 기관에서 역 접근성 및 이동 시간 확인</li>
