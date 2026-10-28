@@ -53,6 +53,7 @@ export function generateHotelMarkdown(
     publish: false,
     name: hotel.name,
     city: hotel.city,
+    summary: hotel.summary,
     slug: hotel.slug,
     title: `${hotel.name} | ${hotel.city} 호텔 소개`,
     description,
