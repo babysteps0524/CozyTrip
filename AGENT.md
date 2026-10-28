@@ -1,445 +1,596 @@
-# CozyTrip 일본 호텔 여행 웹사이트 마스터 프롬프트 (한국어)
+# CozyTrip Hotel & Travel Content Platform — Master Prompt
 
-> 목적: `cozytrip.kr`에서 운영할 일본 호텔·지역 여행 콘텐츠 웹사이트를 설계하고 구현한다. 이 문서는 기존 CozyTrip 호텔 블로그 프로젝트를 재현하거나 개선하는 AI 개발 작업에 사용할 수 있는 상세 요구사항이다.
->
-> **중요:** 요구사항 문서만으로 실제 API 접근 권한, 제휴 승인, 광고 승인, 콘텐츠의 사실성을 보장할 수 없다. 검증하지 않은 정보·링크·가격·평점·예약 가능 여부를 만들어내지 않는다.
+> **Project:** `https://cozytrip.kr`  
+> **Primary objective:** Build a trustworthy Japanese hotel and travel-information platform that can monetize through Agoda affiliate links and Google AdSense, with scalable hotel data management, content drafting, fact-checking, SEO, and publishing workflows.
 
----
+## 0. Highest-priority execution principles
 
-## 1. 역할과 작업 방식
+Act as a senior Astro/TypeScript engineer, information-architecture designer, technical SEO specialist, content-automation engineer, and editorial-workflow architect.
 
-당신은 시니어 Astro/TypeScript 개발자, UI/UX 디자이너, 기술 SEO 엔지니어, 콘텐츠 운영 자동화 설계자 역할을 수행한다.
+- If a repository exists, **inspect the repository, current branch, working tree, major configuration, test commands, and directory structure before editing**.
+- Do not overwrite the project without understanding its existing functionality and design. Avoid unrelated changes.
+- Prefer a purpose-specific feature branch over direct edits to `main` when practical. If work is already underway on a branch, inspect its state and do not switch branches arbitrarily.
+- Follow this sequence: plan → data model/architecture → implementation → checks/tests → build → evidence-based report.
+- Never claim a test, build, or API request succeeded unless it actually ran successfully. Distinguish skipped, failed, and blocked checks.
+- Do not assume Agoda API access, affiliate approval, image-use rights, or AdSense approval.
+- **Do not equate bulk AI drafting with automatic publication.** Automate drafting, but require fact-checking and editorial approval before publishing.
+- Ask questions only when an important decision cannot be resolved from the repository or available documentation. Otherwise choose conservative, reversible defaults.
+- Do not make production deployments, DNS changes, paid API calls, or account changes with external impact without explicit authorization.
 
-다음 순서로 진행한다.
+## 1. Business goals and content scope
 
-1. 프로젝트 파일과 현재 구조를 먼저 조사한다.
-2. 요구사항을 기존 코드와 대조하고, 실제 구현 상태와 미구현 상태를 구분한다.
-3. 데이터 모델, 페이지 라우트, 디자인 토큰, 콘텐츠 검수 흐름을 설계한다.
-4. 전체 기능을 구현한다.
-5. 정적 분석, 타입 검사, 테스트, 빌드를 실행한다.
-6. 실패 항목을 수정하고 검증을 반복한다.
-7. 배포·외부 서비스 설정에 필요한 사용자 작업과 환경변수를 문서화한다.
-8. 결과물과 검증 근거를 보고한다.
+### 1.1 Monetization models
 
-작업 중 성공하지 않은 명령을 성공했다고 표현하지 않는다. 외부 네트워크, API 키, 계정 승인 등 환경 제약이 있으면 그 제약과 대체 검증 범위를 명시한다.
+1. **Agoda affiliate:** Connect hotel detail pages and relevant travel content to booking discovery using approved affiliate-program access and actual tracking links.
+2. **Google AdSense:** Display ads only after approval and configuration. Ads must not be confused with editorial content or ordinary navigation.
+3. Monetization must never compromise factual accuracy, user trust, performance, or accessibility.
 
-## 2. 브랜드와 도메인
+Code cannot guarantee program acceptance, API access, or advertising approval. Verify actual account status and current service policies separately.
 
-- 브랜드명: **CozyTrip**
-- 정식 도메인: `https://cozytrip.kr`
-- 사이트 주제: 일본 호텔, 숙소 선택, 일본 지역 여행, 호텔 주변 교통·관광·여행 준비 가이드
-- 주요 언어: 한국어
-- 브랜드 톤: 차분하고 신뢰할 수 있으며, 실용적인 여행 편집 매거진
-- CozyMoney라는 이름, 금융 계산기 브랜드 문구, `cozymoney.kr` canonical URL은 사용하지 않는다.
-- 제목, 설명, canonical, Open Graph, sitemap, robots, JSON-LD, 내부 링크와 문서에서 도메인을 일관되게 사용한다.
-- 도메인 변경은 코드 수준 설정이다. DNS, Cloudflare Pages 도메인 연결, SSL, Search Console, Analytics, 광고 플랫폼은 실제 계정에서 별도 확인해야 한다.
-- 사용자 허가 없이 도메인 DNS를 변경하거나 사이트를 배포하지 않는다.
+### 1.2 Content categories
 
-## 3. 목표와 사용자
+- Hotel profiles and accommodation-selection guides
+- City- and region-level hotel hubs
+- Guides to stations, airports, and local transportation
+- Tourist attractions and nearby itineraries
+- Local food, culture, and seasonal information
+- Practical Japan travel tips: preparation, transit passes, payments, connectivity, packing, and more
+- Guides for families, couples, and solo travelers
+- Itinerary planning, budgeting, and accommodation-location criteria
+- Policy and operational information supported by official sources
 
-### 주요 목표
+Travel information changes over time. Preserve sources and verification dates. Prefer official sources for high-impact details such as entry rules, transport, opening hours, and fees.
 
-- 일본 여행자가 호텔과 지역을 효율적으로 비교·탐색하도록 돕는다.
-- 검색 엔진에서 발견될 수 있는 유용하고 독창적인 콘텐츠 구조를 제공한다.
-- 호텔별 상세 페이지와 지역별 허브 페이지, 실용 가이드를 서로 연결한다.
-- Agoda 등 승인된 제휴 프로그램을 적절한 고지와 추적 규칙에 따라 통합할 수 있게 한다.
-- Google AdSense를 승인 후 설정할 수 있도록 광고 슬롯을 명확하게 분리한다.
-- 콘텐츠 작성·검수·발행 과정을 자동화하되, 사실 확인과 사람의 승인을 생략하지 않는다.
+## 2. Required technology stack and absolute constraints
 
-### 사용자 유형
+- **Astro**
+- **Bun** as the package manager and script runner
+- **TypeScript only** as the default for project code. Do not create new plain JavaScript files. If a tool or framework requires an exception, document why.
+- **UnoCSS with Attributify only**
+- Astro static site generation (SSG) by default
+- Minimal client-side JavaScript only where necessary
+- If server-side secrets or API proxying are required, design an appropriate server runtime, such as Cloudflare Pages Functions. Never embed secrets in static pages.
 
-- 일본 첫 여행을 준비하는 여행자
-- 특정 도시 또는 역 주변 숙소를 찾는 여행자
-- 가족·커플·혼자 여행하는 사람
-- 교통 접근성, 객실 유형, 체크인 정책, 편의시설 등을 비교하려는 사용자
-- 일본 여행 비용과 일정에 맞춰 숙소를 선택하려는 사용자
+### 2.1 Absolutely no ordinary CSS
 
-## 4. 기술 스택과 제약
+**Writing ordinary CSS directly is strictly prohibited.** Do not bypass the rule using any of these approaches:
 
-- Astro + TypeScript + Bun을 기본으로 사용한다.
-- Astro의 정적 사이트 생성(SSG)을 기본 렌더링 방식으로 한다.
-- UnoCSS를 스타일링 시스템으로 사용한다.
-- UnoCSS Attributify 문법을 기본으로 한다.
-- 필요한 경우에만 작은 클라이언트 스크립트를 사용한다. 불필요한 프런트엔드 프레임워크나 무거운 런타임을 추가하지 않는다.
-- HTML 의미 구조, 키보드 접근성, 반응형 UI, 성능, SEO를 우선한다.
-- `any`를 무분별하게 사용하지 않는다. 외부 입력과 콘텐츠 데이터는 런타임 스키마로 검증한다.
-- 기존 저장소가 있다면 먼저 설정·구조·브랜치 상태를 파악하고, 무관한 기능을 제거하거나 기존 사이트를 덮어쓰지 않는다.
-- `.env` 파일과 실제 API 키, 토큰, 개인 데이터는 Git에 커밋하지 않는다.
-- 정적 SSG에 적합하지 않은 서버 기능을 무리하게 추가하지 않는다. 필요하다면 Cloudflare Pages Functions 등 별도 실행 환경과 그 한계를 문서화한다.
+- Do not create or author ordinary `.css` files or CSS rules.
+- Do not use Astro `<style>` blocks.
+- Do not use inline `style="..."` attributes.
+- Do not bypass the restriction with CSS-in-JS, another CSS framework, or arbitrary stylesheets.
+- Do not add ordinary CSS to achieve a design.
 
-### 권장 명령어
+Implement all layout, color, spacing, typography, responsive behavior, and interactive states through UnoCSS Attributify attributes, UnoCSS theme/shortcut/token configuration, or valid utility combinations. If a required style cannot be expressed with Attributify, do not add CSS; inspect the UnoCSS configuration and alternatives first, then document any limitation.
 
-`package.json`에 가능한 한 다음 스크립트를 제공한다.
+Third-party assets or libraries may have their own styling requirements, but that exception is not permission to author ordinary CSS in this project.
+
+### 2.2 Attributify rules
+
+- Do not pack utility classes into `class="..."`.
+- Use valid Attributify syntax such as `m`, `p`, `flex`, `grid`, `items`, `justify`, `gap`, `rounded`, `shadow`, `bg`, `text`, `font`, `leading`, `border`, `hover`, `active`, `focus`, and `dark`.
+- Group related utilities into the same attribute when reasonable, for example `text="sm muted"` or project-defined color aliases.
+- Do not merely rename `class`; verify that `presetAttributify`, required transformers, and Astro integration actually work.
+- Verify dynamic utilities, conditional attributes, and repeated rendering in the build output.
+- Allow a `class` attribute only when a third-party component requires it; keep such exceptions minimal and document them.
+- Centralize design rules using UnoCSS `shortcuts`, `theme`, and color tokens.
+
+### 2.3 Code quality
+
+- Keep TypeScript strict and avoid unnecessary `any`.
+- Validate API responses, content files, and form input with runtime schemas.
+- Separate data processing from UI components.
+- Create reusable components for layouts, SEO metadata, cards, ad slots, and affiliate-link UI.
+- Avoid both excessive fragmentation and giant files that contain all logic.
+- Avoid unused dependencies, duplicated data, and unnecessary client bundles.
+
+## 3. Design system and responsive UX
+
+### 3.1 Visual direction
+
+CozyTrip should feel like a warm, calm travel editorial magazine.
+
+- Warm ivory or cream backgrounds
+- Restrained terracotta primary actions
+- Sage-green secondary accents
+- Readable dark neutral body text
+- Subtle neutral card surfaces and dividers
+- Hotel photography should support the content without harming text legibility.
+- Use Color Hunt as palette inspiration, then define a cohesive palette for this brand.
+
+### 3.2 OKLCH and dark mode
+
+- Define all authored fixed design-color tokens using `oklch()`.
+- Do not introduce HEX, RGB, or HSL as new design-token definitions.
+- Check backgrounds, text, borders, focus, hover/active states, shadows, gradients, and dark-mode tokens.
+- Follow the operating system theme using UnoCSS `dark: 'media'`.
+- Do not add a manual theme toggle unless explicitly required.
+- Pixel colors in photographs and third-party logos are distinct from authored CSS color tokens.
+
+### 3.3 UI/UX requirements
+
+- Mobile-first responsive layout for mobile, tablet, and desktop
+- Keyboard navigation and visible `focus-visible` states
+- Clear labels for buttons, links, and inputs; adequate touch targets
+- Loading, empty, error, and no-results states
+- Semantic HTML and accessible names
+- No excessive animation or page-transition effects
+- Reserve ad-slot space to reduce CLS and prevent ads from covering content
+- Consistent image ratios and card heights
+- Consider Pretendard or system fonts while minimizing unnecessary font requests
+
+## 4. Information architecture and core pages
+
+Adapt routes to the existing project when necessary, without dropping required functionality.
+
+- `/` home
+- `/hotels/` hotel listing
+- `/hotels/[slug]/` hotel detail
+- `/regions/` region listing
+- `/regions/[slug]/` regional hub
+- `/guides/` travel-guide listing
+- `/guides/[slug]/` travel-guide detail
+- `/attractions/` attraction listing, where useful
+- `/attractions/[slug]/` attraction detail, where useful
+- `/categories/` topic exploration
+- `/search/` search
+- `/about/` about
+- `/contact/` contact
+- `/editorial-policy/` editorial and fact-check policy
+- `/affiliate-disclosure/` affiliate disclosure
+- `/privacy/` privacy policy
+- `/terms/` terms
+- 404 page
+- Content drafting and review tool at `/studio/` or as a CLI
+
+### Home page
+
+- Explain CozyTrip's audience and value clearly.
+- Provide discovery paths to hotels, regions, attractions, and travel guides.
+- Feature content that has actually been reviewed.
+- Include topic hubs and recent updates.
+- If ads are enabled, visually distinguish them from editorial content.
+
+### Hotel listing and detail pages
+
+Hotel listings should display verified hotel names, regions, summaries, and representative images that the site is allowed to use. Users should be able to explore by region, feature, or keyword.
+
+When supported by verified data, a hotel detail page may include:
+
+- Hotel name, verified Japanese name, address, and official website
+- Region, nearby station, and transport information
+- Room types, amenities, and check-in/check-out policies
+- Evidence-based explanations of relevant traveler needs and factors to check
+- Balanced editorial discussion of benefits and considerations
+- Actual approved Agoda affiliate links
+- Last-verified date and source references
+- Contextual internal links to regions, attractions, and guides
+- Clear affiliate disclosure
+
+Do not display prices, inventory, booking availability, ratings, review counts, or travel times unless verified through an authorized API or reliable current source. Never present non-live data as live.
+
+### Region, attraction, and travel-guide pages
+
+- Regional characteristics, trip purposes, transport hubs, and related hotels
+- Attraction's official name, address, official website, and verified opening hours/fees
+- Useful preparation details and practical route considerations
+- Do not state travel times or opening hours as certain unless verified.
+- Write travel tips to solve real problems and include official sources, verification dates, and cautions.
+- Link contextually among relevant hotels, regions, attractions, and guides.
+
+## 5. Scalable content-data architecture
+
+The site must support tens, hundreds, or thousands of hotels by adding data rather than copying page templates.
+
+### 5.1 Separate data and presentation layers
+
+- Keep hotel, region, attraction, and guide records separate from page code.
+- Separate content models, schemas, data access, page templates, API adapters, and publishing validators.
+- Normalize repeated data and reference shared regions/categories by ID or slug.
+- Prefer file-based content suitable for static sites, choosing among JSON/TypeScript data, Markdown/MDX, or Astro Content Collections based on the existing project and update needs.
+- Do not impose a storage format before inspecting the current repository and scale.
+- Adding a record should require minimal page-code changes.
+
+### 5.2 Suggested domain models
+
+#### Hotel
+
+- `id`, `slug`, `name`, `nameJa?`, `regionSlug`
+- `summary`, `description`, `address?`, `officialUrl?`
+- `amenities?`, `roomTypes?`, `checkIn?`, `checkOut?`
+- `transportNotes?`, `suitableFor?`, `considerations?`
+- `images[]` including source, license status, and alt text
+- `agodaPropertyId?`, `affiliateUrl?`
+- `sources[]`, `lastVerifiedAt?`
+- `status`: `draft | review | published | archived`
+- `editorialNotes?`, `createdAt`, `updatedAt`
+
+#### Region
+
+- `id`, `slug`, `name`, `nameJa?`, `summary`, `description`
+- `transportHubs?`, `officialSources[]`, `relatedRegionSlugs[]`
+- `status`, `lastVerifiedAt?`
+
+#### Attraction
+
+- `id`, `slug`, `name`, `regionSlug`, `summary`, `description`
+- `address?`, `officialUrl?`, `openingHours?`, `admission?`
+- `transportNotes?`, `images[]`, `sources[]`, `lastVerifiedAt?`
+- `status`
+
+#### Guide
+
+- `id`, `slug`, `title`, `description`, `category`, `tags[]`
+- `body`, `sources[]`, `lastVerifiedAt?`, `reviewedAt?`
+- `status`, `relatedHotelSlugs[]`, `relatedRegionSlugs[]`, `relatedAttractionSlugs[]`
+
+Store only values that are actually available. Do not fill uncertain fields with empty strings or fabricated defaults. Keep static types and runtime schemas aligned.
+
+### 5.3 Source and fact traceability
+
+Where practical, record the following for each external fact:
+
+- `sourceName`
+- `sourceUrl`
+- `checkedAt`
+- `sourceType`: official hotel, tourism board, transport operator, Agoda API, etc.
+- Fields checked or editorial notes
+- Confidence or review status
+
+Do not arbitrarily choose between missing or conflicting values. Mark them as `needs-verification`.
+
+### 5.4 Editorial state and publication rules
+
+Implement the workflow `draft → review → approved → published → archived`.
+
+- New content defaults to `draft`.
+- Content that is not `approved` must not appear on public pages or in the sitemap.
+- Before publishing, validate required fields, sources, image rights, internal links, metadata, and duplication.
+- Keep `updatedAt` distinct from the last fact-verification date. Do not manipulate dates to imply freshness.
+- Flag aging operational information for review.
+- Never automatically publish unreviewed AI-generated content.
+
+## 6. Agoda API and affiliate integration
+
+### 6.1 Documentation-first rule
+
+Agoda API access, available fields, and usage conditions may depend on account permissions and the affiliate program. Until the actual official documentation and account permissions are available, do not guess endpoints, authentication headers, request parameters, response fields, or rate limits.
+
+### 6.2 Implementation requirements
+
+- Isolate API communication in an `AgodaClient` or provider adapter, separate from UI code.
+- Define types and runtime schemas from the actual documentation.
+- Store API keys/tokens only in server-side environment variables or a secret store.
+- Never place secrets in `PUBLIC_` variables, browser bundles, public JSON, logs, or source control.
+- Handle timeouts, network errors, 4xx/5xx responses, empty results, and rate limits.
+- Retry only appropriate failures, considering exponential backoff and provider limits.
+- Do not persist raw API responses indiscriminately. Verify terms for caching, storage, and refresh intervals.
+- A returned image URL does not automatically grant permission to download, rehost, modify, or permanently store the image.
+- Generate and track affiliate links according to the official program documentation.
+- If API access cannot be verified, do not claim integration is complete. Provide an adapter interface, mock fixtures, environment-variable examples, setup documentation, and tests instead.
+- Label test data as `sample` or `mock` so it cannot be mistaken for verified live data.
+
+### 6.3 Importing and refreshing hotel data
+
+- Import only fields actually exposed by the authorized API, such as identifiers, names, addresses, locations, amenities, images, or affiliate URLs where available.
+- Preserve source and last-verification information per field or record.
+- Prefer an official property ID for deduplication; otherwise flag possible duplicates using verifiable keys.
+- Do not overwrite editorially written descriptions blindly with API responses.
+- Handle deleted, inactive, or missing fields safely and track changes.
+- Respect API costs, rate limits, and allowed cache durations.
+
+## 7. AI-assisted blog-drafting automation
+
+Build a repeatable pipeline:
+
+information gathering → source recording → draft generation → automated validation → human review → approved publication
+
+### 7.1 Content-generation pipeline
+
+1. Select a hotel, region, attraction, or travel topic.
+2. Collect information from permitted sources, such as authorized APIs and official websites.
+3. Store source URLs, verification dates, and relevant data fields.
+4. Generate a Korean-language draft based on verified facts and original editorial input.
+5. Check whether each factual claim has evidence; explicitly flag unverified items.
+6. Detect duplicate content, thin pages, repeated phrasing, keyword stuffing, and broken links.
+7. Validate titles, meta descriptions, headings, internal links, image alt text, and affiliate disclosure.
+8. Save the item with `draft` status.
+9. Include it in the static build and sitemap only after editorial approval.
+
+### 7.2 Draft deliverables
+
+- Content type and target audience
+- Search intent and key questions
+- Title options and selected title
+- Short summary and meta description
+- Heading structure (H1/H2/H3)
+- Original article body
+- Verified facts and source links
+- Unverified details and review checklist
+- Related hotel, region, attraction, and guide links
+- Image suggestions, rights status, and alt text
+- Affiliate-link placement and disclosure
+- Last-verified date and editorial notes
+- Status, defaulting to `draft`
+
+### 7.3 Recommended hotel-article structure
+
+1. Hotel summary and key characteristics
+2. Location and surrounding area
+3. Transport access, using verified information only
+4. Room types and amenities supported by sources
+5. Evidence-based explanation of trip types for which the property may be relevant
+6. Considerations and details to verify before choosing
+7. Nearby attractions, food, and itinerary ideas
+8. Pre-booking checklist
+9. Related guides and regional pages
+10. Sources and verification date
+11. Affiliate disclosure and actual approved links
+12. FAQ only when the questions are relevant and can be answered reliably
+
+Never invent a first-hand stay or personal experience. Do not copy user reviews without authorization. Do not fabricate ratings, prices, or availability that the API does not provide.
+
+### 7.4 Recommended attraction-article structure
+
+- Overview and reasons to visit
+- Location and official website
+- Opening hours, closure days, and fees only when supported by official sources and a verification date
+- How to get there, using verified transport information
+- Practical considerations for a visit
+- Nearby attractions and related accommodation
+- Official sources and last-checked date
+- Related travel guides
+- Explicitly marked unknowns
+
+### 7.5 Recommended travel-tip structure
+
+- State the reader's problem clearly
+- Explain who the advice applies to and any exceptions
+- Give actionable steps
+- Cite sources and dates for changing costs, times, and policies
+- Common mistakes and cautions
+- Official references
+- Related hotel, region, and attraction pages
+- FAQ and update history
+
+## 8. SEO and Google Search quality
+
+Treat SEO as a way to answer user questions accurately and originally, not as repeated keyword insertion.
+
+- Create a unique `<title>` and meta description for each public page.
+- Generate canonical URLs consistently from `https://cozytrip.kr`.
+- Configure Open Graph and social-sharing metadata.
+- Validate XML sitemap, `robots.txt`, 404 behavior, canonicals, and redirects.
+- Include only public, approved, indexable pages in the sitemap.
+- Apply `noindex` to drafts, internal search results, or tool pages where appropriate, and exclude them from the sitemap.
+- Use one clear H1 and a logical H2/H3 hierarchy.
+- Add useful contextual links among hotels, regions, attractions, and guides.
+- Manage image filenames, dimensions, formats, and alt text appropriately.
+- Consider mobile performance, Core Web Vitals, accessibility, and layout stability.
+- Detect duplicate slugs, broken internal links, orphan pages, empty content, and duplicate titles.
+- Use structured data such as `WebSite`, `Organization`, and `BreadcrumbList` only when consistent with the actual page.
+- Never invent `Review`, `AggregateRating`, price, rating, or inventory data in JSON-LD.
+- Never guarantee search rankings or AdSense approval.
+
+### 8.1 Originality and usefulness
+
+- Go beyond restating official sources by adding useful comparison criteria, decision checklists, route context, cautions, and explanations.
+- Do not mass-produce template pages that differ only by city or hotel name.
+- Avoid unsupported claims such as “best,” “cheapest,” “perfect,” or “I personally visited.”
+- Fact-check and editorially review AI-generated copy.
+- Check whether a page deserves publication and whether it duplicates existing content.
+- If a record lacks enough useful information, enrich it or keep it unpublished rather than forcing a thin page.
+
+## 9. Google AdSense design
+
+- Do not imply that ads are active before approval.
+- Manage the publisher/client ID and ad-slot IDs through environment variables.
+- Choose names that match the actual project and document them in `.env.example`.
+- The site must work without errors when variables are absent or ads are disabled.
+- Clearly distinguish ads from editorial content; never encourage clicks.
+- Do not make ad units look like navigation, buttons, or affiliate links.
+- Reserve ad space to reduce layout shifts.
+- Check privacy-policy, cookie/consent, and regional requirements against the actual ad setup and visitor regions.
+- Do not guarantee approval or revenue.
+- Do not mass-publish thin pages primarily to display ads.
+
+## 10. Affiliate disclosure and privacy
+
+- Place understandable affiliate disclosure near relevant affiliate links.
+- Ensure the disclosure, tracking behavior, and privacy policy match the actual implementation.
+- Do not claim the site collects personal data unless it really does.
+- Use appropriate `rel` attributes for external links.
+- Follow third-party terms, image licenses, and API storage/caching rules.
+- If forms or analytics are added, review the actual data collected, purpose, retention, and third-party sharing.
+
+## 11. Content-management tools and operational automation
+
+The content tool may be a `/studio/` interface or a CLI. Choose based on the existing architecture and security requirements.
+
+Required capabilities:
+
+- Select hotel, region, attraction, or guide content type
+- Validate input and schemas
+- Preview imported API results
+- Generate drafts and export Markdown
+- Manage sources and editorial notes
+- Validate duplicate slugs and region references
+- Change status and run pre-publication checks
+- Confirm before overwriting or generate safe unique filenames
+- Summarize generated/updated records and errors
+- Keep secrets out of browser code
+- Explain accurately where data is stored and whether it persists
+
+Draft generation alone must not trigger public publication, paid external API calls, bookings, or purchases. File-writing tools must defend against path traversal, unintended overwrites, and HTML injection.
+
+## 12. File and directory organization
+
+Inspect the actual project before designing the final structure. The following is an example of functional separation, not a requirement to rewrite an existing repository blindly.
+
+```text
+src/
+  components/
+    layout/
+    navigation/
+    hotel/
+    region/
+    attraction/
+    guide/
+    affiliate/
+    ads/
+    seo/
+  layouts/
+  pages/
+    hotels/
+    regions/
+    attractions/
+    guides/
+    categories/
+    search/
+  content/
+    hotels/
+    regions/
+    attractions/
+    guides/
+  data/
+    categories/
+  lib/
+    content/
+    seo/
+    validation/
+    affiliate/
+    images/
+  schemas/
+functions/         # only if server-side APIs are actually needed
+scripts/
+  content-draft.ts
+  content-validate.ts
+  check-links.ts
+  import-agoda.ts
+tests/
+docs/
+```
+
+- Choose the concrete `src/content` format after checking the Astro version and compatibility with features such as Astro Content Collections.
+- Write scripts in Bun + TypeScript.
+- Separate API adapters from domain data models.
+- Never copy a dedicated page component for every hotel.
+- Document file paths, slug rules, and image naming conventions.
+- Confirm actual Astro, UnoCSS, and Bun versions before finalizing architecture.
+- Do not create ordinary CSS files. An example directory name must not override the no-CSS rule.
+
+## 13. Recommended commands and automated validation
+
+Implement scripts appropriate to the real project:
 
 - `bun run dev`
 - `bun run check`
 - `bun test`
 - `bun run build`
-- `bun run verify`
 - `bun run preview`
 - `bun run format`
-- `bun run lint`
 - `bun run content:validate`
 - `bun run content:draft`
+- `bun run content:import` when authorized API access and configuration exist
+- `bun run seo:check` or an equivalent validation command
+
+Automate these checks:
+
+1. Astro and TypeScript checks
+2. Tests
+3. Production build
+4. Runtime schema validation for content
+5. Duplicate slug detection
+6. Validation of referenced regions, attractions, and related content
+7. Consistency between approval status, public pages, and sitemap
+8. Broken internal links and duplicate metadata
+9. Canonical and sitemap domain validation
+10. Stale brand/domain strings such as `cozymoney.kr`
+11. Attributify configuration and violations of the no-ordinary-CSS rule
+12. OKLCH design-token validation
+13. Ensure `.env`, tokens, and API keys are not committed
+14. Missing image source, alt text, or rights metadata
+15. Distinguish real affiliate links from mock links
+
+Fix failures and rerun checks. Mark checks that could not run as **not run**.
+
+## 14. Performance, accessibility, and security
+
+### Performance
+
+- Prefer static pages.
+- Use suitable image sizes and formats and lazy-load non-critical imagery.
+- Prioritize the hero image only when justified by actual performance needs.
+- Avoid unnecessary client JavaScript, large dependencies, and oversized JSON payloads.
+- Reserve space for ads and images to reduce CLS.
+
+### Accessibility
+
+- Semantic HTML landmarks and heading order
+- Explicit labels for all forms
+- Visible keyboard focus
+- Purposeful alt text
+- Do not communicate information through color alone
+- Adequate contrast and touch targets
+- Verify every component in dark mode
+- Minimize motion and respect reduced-motion preferences
+
+### Security
+
+- Access API keys only on the server.
+- Never log secrets.
+- Validate external input and API responses.
+- Avoid rendering arbitrary HTML without sanitization.
+- Review content tools for path, overwrite, and injection risks.
+- Document environment variables separately for Preview and Production.
+- Never expose an administrative tool without real authentication and access control when required.
+
+## 15. Documentation and deployment
+
+Create or update these documents:
+
+- `README.md`: required versions, setup, development, tests, build, directory structure
+- `.env.example`: variable names, purposes, and where they are configured; no real secrets
+- `docs/content-workflow.md`: drafting, review, and publishing
+- `docs/agoda-integration.md`: access prerequisites, API setup, security, and limitations
+- `docs/adsense.md`: pre- and post-approval setup and ad slots
+- `docs/seo.md`: sitemap, canonical, and Search Console checks
+- `docs/deployment.md`: Cloudflare Pages and Preview/Production configuration
+- `docs/editorial-policy.md`: sourcing, fact-checking, and AI review
+- Test results and unresolved limitations
+
+If Cloudflare Pages is used, align the build command, output directory, Bun version, environment variables, and Functions configuration with the actual project. Do not claim account configuration is complete without verifying it.
+
+## 16. Deliverables and definition of done
+
+The final report must include:
+
+- Implemented features and changed files
+- Data model and instructions for adding content
+- Actual Agoda API status: connected, awaiting permission, or unverified
+- AdSense configuration status without assuming approval
+- Draft/review/publish workflow
+- Actual results of executed checks, tests, and build
+- Skipped checks, remaining manual tasks, and known limitations
+- Environment-variable names and configuration locations
+- A complete project ZIP when appropriate
+
+Definition of done:
+
+- [ ] Astro + Bun + TypeScript architecture retained
+- [ ] UnoCSS Attributify used consistently
+- [ ] No authored ordinary CSS, Astro `<style>` blocks, or inline `style` attributes
+- [ ] All authored design-color tokens use OKLCH
+- [ ] OS-based dark mode and responsive UI work
+- [ ] Hotel, region, attraction, and guide data are separated from page code
+- [ ] Content status, sources, verification dates, and approval workflow are implemented
+- [ ] Unverified prices, ratings, reviews, availability, and transport facts are not presented as facts
+- [ ] API secrets are not exposed to clients or Git
+- [ ] Real approved affiliate links are distinguishable from mock data
+- [ ] SEO metadata, canonical, sitemap, and robots are checked
+- [ ] AdSense slots safely reflect actual approval/configuration status
+- [ ] Draft automation checks duplication, thin content, and missing sources
+- [ ] Checks, tests, and build are reported from actual evidence
+- [ ] Operational documentation and outstanding work are included
 
-실제 프로젝트 설정에 맞게 스크립트를 구현하고, 실행하지 않은 명령의 성공을 주장하지 않는다.
-
-## 5. UnoCSS Attributify 규칙
-
-모든 작성·수정 UI 코드에서 Attributify 문법을 우선 사용한다.
-
-### 필수 규칙
-
-- `<div class="...">`, `<a class="...">`, `<section class="...">`처럼 일반 유틸리티 `class` 속성에 몰아 쓰는 방식을 사용하지 않는다.
-- `m`, `p`, `flex`, `grid`, `items`, `justify`, `gap`, `rounded`, `shadow`, `bg`, `text`, `font`, `leading`, `border`, `hover`, `focus`, `dark` 등 Attributify 문법으로 작성한다.
-- 여러 관련 유틸리티는 합리적으로 같은 속성 안에 그룹화한다. 예: `text="sm muted"` 또는 프로젝트에서 정의한 색상 별칭.
-- `class` 속성을 단순히 속성 이름으로 바꾸는 데 그치지 말고, 해당 프로젝트의 UnoCSS preset과 Attributify 변환 규칙에 맞는 유효한 문법인지 검증한다.
-- Astro 템플릿, 반복 렌더링, 조건부 속성, TypeScript 템플릿 문자열, 동적 클래스 생성 부분도 모두 확인한다.
-- 라이브러리나 제3자 위젯이 `class`를 요구하는 경우는 예외로 인정할 수 있지만, 사용 이유를 주석 또는 문서로 설명한다.
-- 임의 CSS 파일과 일반 CSS를 무조건 추가하지 않는다. 요구사항에 없는 CSS 파일을 만들어 우회하지 않는다.
-- Attributify가 실제로 작동하도록 `presetAttributify`, 필요한 transformer와 프로젝트의 UnoCSS 통합을 확인한다.
-- `bun run check`와 빌드에서 잘못된 속성이나 누락된 유틸리티가 없는지 검증한다.
-
-## 6. 디자인 시스템 및 색상
-
-### 디자인 방향
-
-Color Hunt(`https://colorhunt.co/`)의 조화로운 팔레트 탐색 방식을 참고하되, 특정 팔레트를 그대로 복제했다고 주장하지 않는다. 일본 여행과 호텔 편집 콘텐츠에 적합한 따뜻하고 차분한 색상 체계를 직접 정의한다.
-
-권장 방향:
-
-- 따뜻한 아이보리/크림 계열의 배경
-- 테라코타 또는 차분한 적갈색 계열의 주요 액션 색상
-- 세이지 그린 계열의 보조 색상
-- 짙은 차콜 계열의 본문 텍스트
-- 카드·구분선에 사용하는 낮은 대비의 중성색
-
-색상은 분위기뿐 아니라 가독성, 대비, 의미 구분을 위해 사용한다. 모든 페이지에서 같은 디자인 토큰을 재사용한다.
-
-### OKLCH 필수 요구사항
-
-- 프로젝트에서 정의하는 색상 토큰은 `oklch()` 형식을 사용한다.
-- HEX, RGB, HSL 값으로 색상 토큰을 새로 정의하지 않는다.
-- 색상 변수, hover/active/focus 상태, border, shadow, 배경, 텍스트, 다크 모드 토큰을 모두 점검한다.
-- 투명도는 지원되는 OKLCH 표기법 또는 색상 토큰의 알파 변형으로 처리한다.
-- 외부 브랜드가 제공한 로고·이미지 자체의 픽셀 색상은 CSS 색상 토큰과 별개다. 단, 직접 작성한 CSS 색상 선언은 OKLCH로 유지한다.
-- 그라데이션을 사용한다면 모든 색상 정지점도 OKLCH를 사용한다.
-- 그림자 색상에 다른 색상 표기법을 숨겨 사용하지 않는다.
-- `currentColor`, `transparent` 등 의미상 필요한 키워드는 허용하되, 고정 색상을 표현하기 위한 편법으로 사용하지 않는다.
-
-### 다크 모드
-
-- OS 색상 설정을 따른다.
-- UnoCSS에서 `dark: 'media'` 전략을 사용한다.
-- 사용자에게 불필요한 별도 테마 토글을 추가하지 않는다.
-- 라이트/다크 모드에서 본문, 카드, 링크, 입력 필드, 메뉴, 광고 영역, 경계선, 포커스 표시가 모두 읽기 쉬워야 한다.
-- `prefers-color-scheme`에 따라 색상이 자연스럽게 바뀌는지 확인한다.
-
-### UI/UX
-
-- 모바일 우선 반응형 레이아웃
-- 모바일·태블릿·데스크톱에서 탐색과 카드 밀도를 최적화
-- 명확한 시각적 계층과 충분한 여백
-- 제목과 본문에 읽기 쉬운 글꼴 크기·행간 적용
-- 링크·버튼·카드의 hover, active, focus-visible 상태 제공
-- 키보드만으로 모든 핵심 기능에 접근 가능
-- 클릭 가능한 영역의 크기를 충분히 확보
-- 로딩·빈 결과·오류·검색 결과 없음 상태 제공
-- 과도한 애니메이션이나 페이지 전환 효과를 넣지 않는다.
-- 모션을 추가해야 한다면 최소화하고 `prefers-reduced-motion`을 고려한다.
-- 광고가 콘텐츠를 가리거나 레이아웃 이동을 과도하게 일으키지 않도록 슬롯 높이를 관리한다.
-
-## 7. 사이트 정보 구조와 페이지
-
-최소한 다음 페이지와 기능을 제공한다. 기존 코드와 충돌하면 실제 구현 구조에 맞게 경로를 조정하되 모든 기능을 유지한다.
-
-1. 홈 `/`
-2. 호텔 목록 `/hotels/`
-3. 호텔 상세 `/hotels/[slug]/`
-4. 지역 목록 `/regions/`
-5. 지역 상세 `/regions/[slug]/`
-6. 여행 가이드 목록 `/guides/`
-7. 여행 가이드 상세 `/guides/[slug]/`
-8. 검색 `/search/`
-9. 카테고리 또는 주제별 탐색 `/categories/`
-10. 소개 `/about/`
-11. 문의 `/contact/`
-12. 편집·사실 확인 정책 `/editorial-policy/`
-13. 제휴 링크 고지 `/affiliate-disclosure/`
-14. 개인정보 처리방침 `/privacy/`
-15. 이용약관 `/terms/`
-16. 404 페이지
-17. 콘텐츠 초안 작성 도구 `/studio/` 또는 별도 관리 도구
-
-### 홈 페이지
-
-- CozyTrip의 목적을 명확히 설명하는 히어로 영역
-- 호텔과 지역을 찾을 수 있는 주요 탐색 링크
-- 편집자가 검토한 호텔 콘텐츠
-- 인기 지역 또는 주제별 허브
-- 여행 준비 가이드
-- 내부 링크와 명확한 다음 행동
-- 광고를 사용하는 경우 콘텐츠와 광고를 명확히 구분
-
-### 호텔 목록과 상세 페이지
-
-호텔 목록:
-
-- 호텔 이름, 지역, 한 줄 설명, 대표 이미지 등 확인된 정보 표시
-- 지역·특징·검색어 기반 탐색
-- 데이터가 없거나 필터 결과가 없을 때 적절한 빈 상태 표시
-
-호텔 상세:
-
-- 이름, 주소, 공식 웹사이트 등 확인된 정보
-- 지역·가까운 역·교통 안내(검증된 경우)
-- 객실/편의시설/체크인·체크아웃 정책(출처 확인 필요)
-- 어떤 유형의 여행자에게 적합한지 설명하되 근거 없는 확정적 표현을 피함
-- 장점과 고려할 점을 균형 있게 기술
-- 호텔 공식 페이지 및 승인된 제휴 링크
-- 정보의 마지막 확인 날짜
-- 관련 지역 페이지와 가이드
-- 제휴 고지
-- 구조화 데이터는 실제 표시된 사실에 대해서만 생성
-
-호텔 가격, 객실 재고, 별점, 후기 수, 예약 가능 여부, 이동 시간은 실시간 또는 신뢰할 수 있는 출처를 확인하지 않았다면 표시하지 않는다.
-
-### 지역 페이지
-
-- 지역 개요 및 방문 목적
-- 교통 허브와 주요 역(검증된 경우)
-- 지역 내 호텔 목록
-- 여행 유형별 가이드
-- 인근 지역으로 이동하는 방법
-- 콘텐츠 간 내부 링크
-- 실제로 확인하지 않은 운영 시간·요금·거리 정보를 만들어내지 않는다.
-
-### 여행 가이드
-
-- 독창적인 설명과 실제 사용자가 해결하려는 문제를 중심으로 구성
-- 목적, 준비물, 단계별 설명, 주의 사항, 공식 자료 링크 포함
-- 업데이트 날짜와 사실 확인이 필요한 항목 표시
-- 호텔·지역 페이지와 관련 링크 연결
-- 검색 엔진용 키워드만 반복하는 저품질 문서를 생성하지 않는다.
-
-## 8. 콘텐츠 데이터 모델과 검수
-
-호텔·지역·가이드 데이터를 페이지 코드에 중복 작성하지 말고 데이터 레이어로 분리한다.
-
-### 호텔 레코드 예시 필드
-
-- `slug`
-- `name`
-- `nameJa` (확인된 일본어 표기만)
-- `regionSlug`
-- `summary`
-- `description`
-- `address`
-- `officialUrl`
-- `affiliateUrl` (승인된 추적 URL이 있을 때만)
-- `image` 또는 이미지 객체
-- `amenities`
-- `transportNotes`
-- `checkIn`
-- `checkOut`
-- `lastVerifiedAt`
-- `sources`
-- `status`: `draft`, `review`, `published`, `archived`
-- `editorialNotes`
-
-선택 필드는 실제 데이터가 확보된 경우에만 사용한다. 모든 필드가 항상 존재한다고 가정하지 않는다.
-
-### 콘텐츠 검수 원칙
-
-- 초안은 기본적으로 비공개/미발행 상태다.
-- 사실 확인 전에는 공개 페이지나 sitemap에 포함하지 않는다.
-- 공식 호텔 웹사이트, 공식 교통 기관, 관광청 등 우선 출처를 사용한다.
-- 출처 URL과 확인 날짜를 내부 데이터에 보존한다.
-- 출처가 없거나 충돌하는 값은 추정해 채우지 말고 `needs verification`으로 표시한다.
-- 기계 생성 콘텐츠는 사람이 검토하고 승인하기 전에는 자동 발행하지 않는다.
-- 중복·얇은 콘텐츠·도시명만 바꾼 템플릿 문서를 대량 생성하지 않는다.
-- 이미지 사용 권한, 출처, 대체 텍스트를 확인한다. 원격 이미지 URL이 존재한다고 사용 권한이 보장되는 것은 아니다.
-- 외부 웹사이트의 문장, 사진, 로고, 리뷰를 허가 없이 복제하지 않는다.
-
-## 9. 콘텐츠 초안 생성 도구
-
-`/studio/` 또는 CLI 기반 초안 도구는 초안을 만들고 검증하는 데 사용한다.
-
-필수 요구사항:
-
-- 입력 필드의 유효성 검사
-- URL 형식과 필수 데이터 검증
-- 제목·요약·본문·출처·검수 메모 생성
-- Markdown 파일로 내보내기 또는 다운로드
-- `draft` 상태로 생성
-- 공개 발행·sitemap 포함은 별도 승인 단계로 분리
-- 초안 생성만으로 외부 API에 호출하거나 예약·구매를 수행하지 않는다.
-- 사용자 데이터나 API 키를 브라우저에 노출하지 않는다.
-- 브라우저 도구가 서버에 데이터를 저장하지 않는다면 그 점을 문서에 정확하게 설명한다.
-- CLI 도구는 안전한 경로 처리, 스키마 검증, 파일 덮어쓰기 방지 기능을 갖춘다.
-
-### 향후 Agoda API 연동
-
-- 실제 제공받은 API 문서와 계정 권한을 확인한 뒤 구현한다.
-- API endpoint, 필드, 인증 방식, 호출 제한, 응답 구조를 추측하지 않는다.
-- API 키는 서버 측 환경변수나 비밀 저장소에만 둔다.
-- 브라우저 번들, 공개 환경변수, 저장소에 비밀 키를 포함하지 않는다.
-- 제휴 API 이용약관과 이미지·콘텐츠 사용 조건을 따른다.
-- API가 제공하지 않는 정보는 만들어내지 않는다.
-- 실패·시간 초과·제한 초과·빈 응답을 처리하고 로그에 비밀 정보를 기록하지 않는다.
-- 실제 API 접근이 확인되지 않았다면 통합 완료라고 주장하지 말고 어댑터 인터페이스와 설정 문서만 제공한다.
-
-## 10. Agoda 제휴 및 수익화
-
-- 제휴 프로그램 가입과 승인 여부는 실제 계정에서 확인한다.
-- 제휴 링크는 실제 발급받은 링크만 사용한다.
-- 데모 링크를 실제 예약 링크처럼 제시하지 않는다.
-- 링크 주변에 사용자가 이해할 수 있는 제휴 관계 고지를 제공한다.
-- 링크가 정상 작동하는지, 추적 규칙과 리디렉션 정책을 확인한다.
-- 가격이나 예약 가능 여부가 API로 확인되지 않았다면 표시하지 않는다.
-- 광고·제휴 링크가 편집적 판단을 왜곡하지 않도록 편집 정책을 유지한다.
-- 수익화가 콘텐츠의 정확성과 사용자 신뢰보다 우선하지 않도록 한다.
-
-## 11. Google AdSense
-
-- 승인 전에 광고가 활성화된 것처럼 표현하지 않는다.
-- 광고 클라이언트 ID와 슬롯 ID는 환경변수로 설정한다.
-- 환경변수가 없을 때 사이트가 오류를 내지 않도록 안전하게 처리한다.
-- 광고 슬롯은 명확히 광고로 구분하고 콘텐츠와 혼동되지 않도록 한다.
-- 광고를 클릭하도록 유도하거나 광고와 일반 내비게이션을 혼합하지 않는다.
-- 개인정보 처리방침과 동의 요건은 방문자 지역 및 실제 광고 설정에 맞춰 확인한다.
-- 승인·계정 설정이 필요한 단계는 사용자 체크리스트로 제공한다.
-
-## 12. SEO와 구조화 데이터
-
-- 페이지별 고유 title과 meta description
-- canonical URL은 `https://cozytrip.kr` 기준으로 일관성 있게 생성
-- Open Graph 및 소셜 공유 메타데이터
-- XML sitemap 및 robots.txt
-- 사이트 내 깨진 링크와 중복 slug 검사
-- 의미 있는 내부 링크
-- 이미지 alt 텍스트와 적절한 이미지 크기
-- 페이지별 heading 계층 유지
-- JSON-LD는 실제 페이지에 노출되는 데이터만 포함
-- `WebSite`, `Organization`, `BreadcrumbList` 등 적절한 유형을 사용하고, 사실이 아닌 리뷰·평점·가격을 구조화 데이터에 추가하지 않는다.
-- `noindex`가 필요한 초안·도구 페이지는 색인 방식을 의도적으로 설정한다.
-- sitemap에 초안, 404, noindex 페이지를 넣지 않는다.
-- 빌드 시 sitemap의 도메인과 canonical을 확인한다.
-
-## 13. 접근성, 성능, 보안
-
-### 접근성
-
-- 의미 있는 HTML landmark 사용
-- 명시적 form label
-- 키보드 포커스가 분명하게 보이도록 설정
-- 이미지에 적절한 alt 제공
-- 색상만으로 상태를 전달하지 않음
-- 충분한 색상 대비
-- 메뉴 및 검색 입력의 접근 가능한 이름 제공
-- `prefers-reduced-motion` 고려
-
-### 성능
-
-- 불필요한 클라이언트 JavaScript 최소화
-- 이미지 최적화 및 지연 로딩 적용
-- 폰트 요청 최소화
-- 레이아웃 이동(CLS) 최소화
-- 정적 페이지를 우선 사용
-- 큰 데이터 세트를 무분별하게 클라이언트에 전송하지 않는다.
-
-### 보안
-
-- 비밀 키와 개인 정보를 소스 코드·로그·공개 빌드에 넣지 않는다.
-- 외부 입력을 검증하고 출력 문맥에 맞게 처리한다.
-- 초안 도구에서 임의 경로 쓰기, 파일 덮어쓰기, HTML 주입 위험을 점검한다.
-- 외부 링크에 적절한 `rel` 속성을 적용한다.
-- 개인정보 수집 기능이 없다면 수집한다고 쓰지 않는다. 실제 기능과 개인정보 고지를 일치시킨다.
-
-## 14. 테스트와 검증
-
-다음 항목을 가능한 한 자동화한다.
-
-1. TypeScript/Astro 검사
-2. 콘텐츠 스키마 유효성 검사
-3. 호텔 slug 중복 검사
-4. 호텔이 참조하는 지역 slug 존재 여부
-5. 발행 상태와 sitemap 포함 조건 일치 여부
-6. 내부 링크 대상 존재 여부
-7. Attributify 문법과 UnoCSS 설정 검사
-8. 색상 토큰이 OKLCH인지 검사
-9. `cozymoney.kr` 또는 오래된 브랜드명이 남아 있지 않은지 검사
-10. canonical 및 sitemap 도메인 검사
-11. 단위 테스트
-12. Astro production build
-13. 반응형 페이지와 다크 모드 수동 점검
-14. 키보드 접근성 및 빈 상태 점검
-15. `.env`와 API 키가 Git에 포함되지 않는지 검사
-
-테스트가 실패하면 원인을 수정한 뒤 다시 실행한다. 실행하지 못한 테스트는 `미실행`으로 명시한다. “빌드 성공”이라고 보고하려면 실제 빌드가 성공한 로그 또는 결과가 있어야 한다.
-
-## 15. 문서화와 배포
-
-프로젝트에 다음 문서를 제공한다.
-
-- `README.md`: 설치, 개발, 테스트, 빌드, 구조
-- `.env.example`: 키 값 없이 필요한 변수 이름과 설명
-- 콘텐츠 자동화 가이드
-- 콘텐츠 검수·발행 가이드
-- Agoda 연동 준비 문서
-- AdSense 설정 가이드
-- Cloudflare Pages 배포 가이드
-- SEO 및 도메인 전환 체크리스트
-- 테스트 결과 및 알려진 제한사항
-
-배포 전 체크리스트:
-
-- 도메인 `cozytrip.kr` 및 HTTPS
-- Cloudflare Pages 프로젝트 설정
-- 실제 Bun 버전과 lockfile
-- 환경변수 Production/Preview 설정
-- sitemap 및 robots
-- Search Console 등록
-- Analytics/광고 설정
-- 개인정보·제휴 고지
-- 모든 초안의 검수 상태
-- 링크와 이미지 권한
-- 실제 빌드 결과
-
-DNS 변경, 실서비스 배포, 유료 API 사용, 예약·결제 등 외부에 영향을 주는 작업은 명시적 승인 없이 실행하지 않는다.
-
-## 16. 최종 산출물
-
-최종 응답과 파일에 포함할 것:
-
-- 완성된 프로젝트 전체 파일
-- 실행 가능한 `package.json` 스크립트
-- 설치 및 실행 방법
-- `.env.example`
-- 자동화 및 운영 문서
-- 테스트·빌드 결과
-- 아직 수동 설정이 필요한 항목
-- 미구현 항목과 이유
-- 압축 파일 다운로드 링크
-
-코드 파일을 일부만 보여주고 전체 프로젝트를 완성했다고 주장하지 않는다. 임시 데이터와 실제 검증 데이터가 명확하게 구분되어야 한다.
-
-## 17. 완료 판정 기준
-
-아래 조건을 모두 만족해야 완료로 보고한다.
-
-- [ ] 브랜드가 CozyTrip이며 canonical 도메인이 `https://cozytrip.kr`이다.
-- [ ] 모든 핵심 페이지가 존재하고 탐색 링크가 작동한다.
-- [ ] 일반적인 유틸리티 class 사용을 피하고 UnoCSS Attributify가 일관되게 적용되어 있다.
-- [ ] 직접 정의한 모든 색상 토큰이 OKLCH 형식이다.
-- [ ] OS 기반 다크 모드가 작동한다.
-- [ ] 모바일·태블릿·데스크톱에서 UI가 깨지지 않는다.
-- [ ] 콘텐츠 스키마와 초안/검수/발행 흐름이 구현되어 있다.
-- [ ] 검증되지 않은 호텔 정보, 가격, 리뷰, 예약 링크를 사실처럼 제시하지 않는다.
-- [ ] 광고·제휴 기능이 실제 설정 여부를 정확하게 반영한다.
-- [ ] SEO, 개인정보 및 제휴 고지 페이지가 포함되어 있다.
-- [ ] 검사, 테스트, 빌드 결과가 실제 실행 결과로 보고되어 있다.
-- [ ] README와 운영 문서가 제공된다.
-- [ ] 전체 소스가 압축 파일에 포함되어 있다.
-
-**이제 먼저 기존 프로젝트 파일을 조사하고, 위 요구사항을 현재 코드와 비교한 다음, 누락 항목을 구현하고 검증하라.**
+**Start by inspecting the repository and current branch, then compare the implementation against these requirements. Finalize the data, content, API, SEO, and monetization architecture, implement in small verifiable steps, and validate the result.**
