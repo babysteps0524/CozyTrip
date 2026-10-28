@@ -16,6 +16,7 @@
     "lintFix": "eslint . --fix",
     "content:validate": "bun run scripts/validate-content.ts",
     "content:draft": "bun run scripts/create-draft.ts",
+    "content:status": "bun src/scripts/update-hotel-status.ts",
     "sync:agoda": "bun run scripts/sync-agoda-hotels.ts",
     "sync:agoda:dry-run": "bun run scripts/sync-agoda-hotels.ts --dry-run"
   },

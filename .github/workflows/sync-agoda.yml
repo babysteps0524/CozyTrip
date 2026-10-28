@@ -6,12 +6,8 @@ on:
     - cron: '0 15 * * *'
   workflow_dispatch:
     inputs:
-      keyword:
-        description: '검색 키워드 (예: 도쿄)'
-        required: false
-        default: ''
-      city:
-        description: '도시/지역 (예: 도쿄)'
+      city-id:
+        description: '아고다 도시 ID (예: 12345)'
         required: false
         default: ''
       limit:
@@ -46,13 +42,12 @@ jobs:
         run: |
           echo "AGODA_API_KEY=${{ secrets.AGODA_API_KEY }}" >> .env
           echo "AGODA_API_SECRET=${{ secrets.AGODA_API_SECRET }}" >> .env
-          echo "AGODA_API_BASE_URL=${{ secrets.AGODA_API_BASE_URL || 'https://api.agoda.com/v1' }}" >> .env
+          echo "AGODA_API_BASE_URL=${{ secrets.AGODA_API_BASE_URL || 'http://affiliateapi7643.agoda.com/affiliateservice/lt_v1' }}" >> .env
 
       - name: 아고다 호텔 동기화 실행
         run: |
           bun src/scripts/sync-agoda-hotels.ts \
-            ${{ github.event.inputs.keyword && format('--keyword {0}', github.event.inputs.keyword) || '' }} \
-            ${{ github.event.inputs.city && format('--city {0}', github.event.inputs.city) || '' }} \
+            ${{ github.event.inputs.city-id && format('--city-id {0}', github.event.inputs.city-id) || '' }} \
             ${{ github.event.inputs.limit && format('--limit {0}', github.event.inputs.limit) || '--limit 50' }} \
             ${{ github.event.inputs.dry-run == 'true' && '--dry-run' || '' }} \
             ${{ github.event.inputs.mock == 'true' && '--mock' || '' }}

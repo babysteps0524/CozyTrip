@@ -76,7 +76,12 @@ describe('AgodaClient (mock mode)', () => {
   });
 
   test('searchHotels throws when auth missing (real mode)', async () => {
-    const client = new AgodaClient({ mockMode: false });
+    // .env에 실제 키가 있을 수 있으므로 빈 인증 정보를 명시적으로 전달
+    const client = new AgodaClient({
+      mockMode: false,
+      siteId: '',
+      apiKey: '',
+    });
     await expect(client.searchHotels({ cityId: '도쿄' })).rejects.toThrow(
       'Agoda API 인증 정보가 설정되지 않았습니다.',
     );

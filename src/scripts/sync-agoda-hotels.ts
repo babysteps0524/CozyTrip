@@ -10,7 +10,7 @@
  *   bun run scripts/sync-agoda-hotels.ts --mock --limit 5
  */
 
-import { AgodaClient } from './agoda-client.js';
+import { AgodaClient, AgodaClientError } from './agoda-client.js';
 import { type NormalizedHotel, type PipelineResult } from './types.js';
 import { validateHotelData, type HotelInput } from './hotel-schema.js';
 import { generateHotelMarkdown, createSlug } from './generate-hotel-md.js';
@@ -131,6 +131,8 @@ const MOCK_HOTELS: Array<{
 /** CLI 인자 파싱 */
 function parseArgs(argv: string[]): {
   cityId?: number;
+  keyword?: string;
+  city?: string;
   limit: number;
   dryRun: boolean;
   skipExisting: boolean;
@@ -140,6 +142,8 @@ function parseArgs(argv: string[]): {
 } {
   const args: {
     cityId?: number;
+    keyword?: string;
+    city?: string;
     limit: number;
     dryRun: boolean;
     skipExisting: boolean;
@@ -159,6 +163,10 @@ function parseArgs(argv: string[]): {
     const arg = argv[i];
     if (arg === '--city-id' || arg === '-c') {
       args.cityId = parseInt(argv[++i], 10);
+    } else if (arg === '--keyword') {
+      args.keyword = argv[++i];
+    } else if (arg === '--city') {
+      args.city = argv[++i];
     } else if (arg === '--limit' || arg === '-l') {
       args.limit = parseInt(argv[++i], 10) || DEFAULT_LIMIT;
     } else if (arg === '--dry-run') {
@@ -170,6 +178,15 @@ function parseArgs(argv: string[]): {
     } else if (arg === '--mock') {
       args.mock = true;
     }
+  }
+
+  // --keyword/--city는 문자열이지만 Agoda API는 cityId(숫자)를 요구하므로
+  // cityId가 지정되지 않았을 때만 경고를 출력합니다.
+  if ((args.keyword || args.city) && !args.cityId) {
+    console.warn(
+      `[경고] --keyword/--city 값("${args.keyword ?? args.city}")은 Agoda API에서 직접 사용할 수 없습니다. ` +
+        `--city-id 숫자 ID를 지정하세요. (예: --city-id 12345)`,
+    );
   }
 
   return args;
@@ -405,6 +422,15 @@ export async function runPipeline(
     const effectiveClient = args.mock
       ? new AgodaClient({ mockMode: true, mockHotels: MOCK_HOTELS })
       : client;
+
+    // 실제 API 모드에서 cityId가 없으면 에러 (Agoda API는 cityId 또는 hotelId 필수)
+    if (!args.mock && !args.cityId && !args.retryFailed) {
+      throw new AgodaClientError(
+        '--city-id가 지정되지 않았습니다. Agoda API는 cityId 또는 hotelId를 필수로 요구합니다.',
+        { code: 'MISSING_CITY_ID', retryable: false },
+      );
+    }
+
     const rawHotels = await effectiveClient.searchHotels({
       cityId: args.cityId,
       maxResult: args.limit,

@@ -12,6 +12,9 @@ interface HotelMeta {
   status: string;
   publish: boolean;
   source: string;
+  factsVerified: boolean;
+  imageRights: string;
+  sourcesCount: number;
   fetchedAt?: string;
   slug: string;
 }
@@ -42,12 +45,22 @@ async function loadHotels(): Promise<HotelMeta[]> {
             data[key] = val;
           }
         }
+        // sources 개수 계산 (배열 항목 수)
+        const sourcesRaw = data.sources ?? '';
+        const sourcesCount = sourcesRaw
+          .split('\n')
+          .filter((line) => line.trim().startsWith('- ['))
+          .length;
+
         hotels.push({
           name: data.name ?? slug,
           city: data.city ?? '',
           status: data.status ?? 'unknown',
           publish: data.publish === 'true',
           source: data.source ?? 'unknown',
+          factsVerified: data.factsVerified === 'true',
+          imageRights: data.imageRights ?? 'unknown',
+          sourcesCount,
           fetchedAt: data.fetchedAt,
           slug,
         });
@@ -65,6 +78,10 @@ const stats = {
   published: hotels.filter((h) => h.publish).length,
   needsReview: hotels.filter((h) => h.status === 'review').length,
   draft: hotels.filter((h) => h.status === 'draft').length,
+  verified: hotels.filter((h) => h.factsVerified).length,
+  imageRightsReady: hotels.filter(
+    (h) => h.imageRights !== 'unknown' && h.imageRights !== 'needs_review',
+  ).length,
 };
 
 // 호텔 상태별 배지 스타일 (UnoCSS Attributify 토큰)
@@ -84,6 +101,12 @@ const statusBadgeStyles: Record<
     text: 'amber-700',
     darkBg: 'amber-900/30',
     darkText: 'amber-400',
+  },
+  archived: {
+    bg: 'slate-100',
+    text: 'slate-500',
+    darkBg: 'slate-800',
+    darkText: 'slate-500',
   },
 };
 const defaultBadgeStyle = {
@@ -111,7 +134,7 @@ const getBadgeStyle = (status: string) =>
     </p>
 
     <!-- 통계 카드 -->
-    <div mt="8" grid gap="4" sm="grid-cols-3" max="w-4xl">
+    <div mt="8" grid gap="4" sm="grid-cols-3" lg="grid-cols-5" max="w-4xl">
       <div
         rounded="2xl"
         border="line"
@@ -152,6 +175,34 @@ const getBadgeStyle = (status: string) =>
         </p>
         <h2 mt="2" text="2xl" font="bold" text="amber-600">
           {stats.needsReview}
+        </h2>
+      </div>
+      <div
+        rounded="2xl"
+        border="line"
+        bg="white"
+        p="5"
+        dark="border-slate-800 bg-slate-900"
+      >
+        <p text="xs muted" font="bold">
+          검증 완료
+        </p>
+        <h2 mt="2" text="2xl" font="bold" text="emerald-600">
+          {stats.verified}
+        </h2>
+      </div>
+      <div
+        rounded="2xl"
+        border="line"
+        bg="white"
+        p="5"
+        dark="border-slate-800 bg-slate-900"
+      >
+        <p text="xs muted" font="bold">
+          이미지 권리 확인
+        </p>
+        <h2 mt="2" text="2xl" font="bold" text="emerald-600">
+          {stats.imageRightsReady}
         </h2>
       </div>
     </div>
@@ -197,6 +248,9 @@ const getBadgeStyle = (status: string) =>
                   상태
                 </th>
                 <th p="3" text="left" font="bold" text="slate-600">
+                  검증
+                </th>
+                <th p="3" text="left" font="bold" text="slate-600">
                   게시
                 </th>
                 <th p="3" text="left" font="bold" text="slate-600">
@@ -208,45 +262,48 @@ const getBadgeStyle = (status: string) =>
                 <th p="3" text="left" font="bold" text="slate-600">
                   링크
                 </th>
+                <th p="3" text="left" font="bold" text="slate-600">
+                  작업
+                </th>
               </tr>
             </thead>
             <tbody>
-              {hotels.map((h) => (
-                <tr
-                  border-b="line"
-                  dark="border-slate-800/50"
-                  hover="bg-slate-50"
-                  dark:hover="bg-slate-800/50"
-                >
-                  <td p="3" font="medium" text="slate-900">
-                    {h.name}
-                  </td>
-                  <td p="3" text="sm" text="slate-600">
-                    {h.city}
-                  </td>
-                  <td p="3">
-                    <span
-                      inline="flex"
-                      items="center"
-                      rounded="full"
-                      px="2.5"
-                      py="0.5"
-                      text="xs"
-                      font="medium"
-                      bg={getBadgeStyle(h.status).bg}
-                      text={getBadgeStyle(h.status).text}
-                      dark:bg={getBadgeStyle(h.status).darkBg}
-                      dark:text={getBadgeStyle(h.status).darkText}
-                    >
-                      {h.status === 'published'
-                        ? '게시됨'
-                        : h.status === 'review'
-                          ? '검토 필요'
-                          : '초안'}
-                    </span>
-                  </td>
-                  <td p="3">
-                    {h.publish ? (
+              {hotels.map((h) => {
+                const nextStatusMap: Record<string, string> = {
+                  draft: 'review',
+                  review: 'published',
+                  published: 'archived',
+                  archived: 'draft',
+                };
+                const nextStatus = nextStatusMap[h.status] ?? 'review';
+
+                const isPublishReady =
+                  h.factsVerified &&
+                  h.sourcesCount > 0 &&
+                  h.imageRights !== 'unknown' &&
+                  h.imageRights !== 'needs_review';
+
+                const statusLabelMap: Record<string, string> = {
+                  published: '게시됨',
+                  review: '검토 필요',
+                  draft: '초안',
+                  archived: '보관됨',
+                };
+
+                return (
+                  <tr
+                    border-b="line"
+                    dark="border-slate-800/50"
+                    hover="bg-slate-50"
+                    dark:hover="bg-slate-800/50"
+                  >
+                    <td p="3" font="medium" text="slate-900">
+                      {h.name}
+                    </td>
+                    <td p="3" text="sm" text="slate-600">
+                      {h.city}
+                    </td>
+                    <td p="3">
                       <span
                         inline="flex"
                         items="center"
@@ -255,49 +312,148 @@ const getBadgeStyle = (status: string) =>
                         py="0.5"
                         text="xs"
                         font="medium"
-                        bg="emerald-100"
-                        text="emerald-700"
-                        dark:bg="emerald-900/30"
-                        dark:text="emerald-400"
+                        bg={getBadgeStyle(h.status).bg}
+                        text={getBadgeStyle(h.status).text}
+                        dark:bg={getBadgeStyle(h.status).darkBg}
+                        dark:text={getBadgeStyle(h.status).darkText}
                       >
-                        ✓ 예
+                        {statusLabelMap[h.status] ?? h.status}
                       </span>
-                    ) : (
-                      <span
-                        inline="flex"
-                        items="center"
-                        rounded="full"
-                        px="2.5"
-                        py="0.5"
-                        text="xs"
+                    </td>
+                    <td p="3" text="xs">
+                      <div flex="col" gap="0.5">
+                        <span
+                          flex
+                          items="center"
+                          gap="1"
+                          text="[10px]"
+                          font="medium"
+                          text={
+                            h.factsVerified
+                              ? 'emerald-600 dark:emerald-400'
+                              : 'slate-500 dark:slate-500'
+                          }
+                        >
+                          {h.factsVerified ? '✓' : '✗'} 사실 검증
+                        </span>
+                        <span
+                          flex
+                          items="center"
+                          gap="1"
+                          text="[10px]"
+                          font="medium"
+                          text={
+                            h.imageRights !== 'unknown' &&
+                            h.imageRights !== 'needs_review'
+                              ? 'emerald-600 dark:emerald-400'
+                              : 'slate-500 dark:slate-500'
+                          }
+                        >
+                          {h.imageRights !== 'unknown' &&
+                          h.imageRights !== 'needs_review'
+                            ? '✓'
+                            : '✗'} 이미지 권리
+                        </span>
+                        <span
+                          block
+                          text="[10px]"
+                          text="slate-400 dark:slate-500"
+                          font="medium"
+                        >
+                          출처 {h.sourcesCount}개
+                        </span>
+                      </div>
+                    </td>
+                    <td p="3">
+                      {h.publish ? (
+                        <span
+                          inline="flex"
+                          items="center"
+                          rounded="full"
+                          px="2.5"
+                          py="0.5"
+                          text="xs"
+                          font="medium"
+                          bg="emerald-100"
+                          text="emerald-700"
+                          dark:bg="emerald-900/30"
+                          dark:text="emerald-400"
+                        >
+                          ✓ 예
+                        </span>
+                      ) : (
+                        <span
+                          inline="flex"
+                          items="center"
+                          rounded="full"
+                          px="2.5"
+                          py="0.5"
+                          text="xs"
+                          font="medium"
+                          bg="slate-100"
+                          text="slate-700"
+                          dark:bg="slate-800"
+                          dark:text="slate-300"
+                        >
+                          아니오
+                        </span>
+                      )}
+                    </td>
+                    <td p="3" text="sm" text="slate-500">
+                      {h.source}
+                    </td>
+                    <td p="3" text="sm" text="slate-500">
+                      {h.fetchedAt ?? '-'}
+                    </td>
+                    <td p="3">
+                      <a
+                        href={`/hotels/${h.slug}/`}
+                        text="sm"
+                        text="brand-600"
                         font="medium"
-                        bg="slate-100"
-                        text="slate-700"
-                        dark:bg="slate-800"
-                        dark:text="slate-300"
                       >
-                        아니오
-                      </span>
-                    )}
-                  </td>
-                  <td p="3" text="sm" text="slate-500">
-                    {h.source}
-                  </td>
-                  <td p="3" text="sm" text="slate-500">
-                    {h.fetchedAt ?? '-'}
-                  </td>
-                  <td p="3">
-                    <a
-                      href={`/hotels/${h.slug}/`}
-                      text="sm"
-                      text="brand-600"
-                      font="medium"
-                    >
-                      보기 →
-                    </a>
-                  </td>
-                </tr>
-              ))}
+                        보기 →
+                      </a>
+                    </td>
+                    <td p="3">
+                      <div flex="col" gap="1">
+                        <button
+                          data-slug={h.slug}
+                          data-current={h.status}
+                          data-next={nextStatus}
+                          onclick="handleStatusChange(this)"
+                          btn-primary
+                          text="[10px]"
+                          py="1"
+                          px="2"
+                          disabled={
+                            nextStatus === 'published' && !isPublishReady
+                          }
+                          title={
+                            nextStatus === 'published' && !isPublishReady
+                              ? '검증 조건 미충족: 사실 검증, 출처, 이미지 권리를 확인하세요.'
+                              : `상태를 ${nextStatus}로 변경`
+                          }
+                        >
+                          {nextStatus === 'published' && !isPublishReady
+                            ? '게시 불가'
+                            : `→ ${nextStatus}`}
+                        </button>
+                        {nextStatus === 'published' && !isPublishReady && (
+                          <p
+                            mt="0.5"
+                            text="[10px]"
+                            text="slate-500 dark:slate-500"
+                            max="w-24"
+                          >
+                            검증 필요
+                          </p>
+                        )}
+                      </div>
+                    </td>
+                  </tr>
+                );
+              })}
             </tbody>
           </table>
         </div>
@@ -312,5 +468,74 @@ const getBadgeStyle = (status: string) =>
         등록된 호텔 콘텐츠가 없습니다.
       </p>
     )}
+    <!-- 상태 전이 안내 -->
+    <div mt="8" max="w-4xl">
+      <div
+        rounded="2xl"
+        border="line dark:slate-800"
+        bg="slate-50 dark:slate-950"
+        p="5"
+      >
+        <h2 text="lg" font="bold" mb="3">
+          상태 전이 명령어
+        </h2>
+        <p mt="0" text="sm muted dark:slate-400">
+          테이블의 상태 전이 버튼을 클릭하면 CLI 명령어가 클립보드에
+          복사됩니다. 터미널에서 실행하여 실제 파일의 상태를 변경하세요.
+        </p>
+        <div mt="3">
+          <p text="xs font-bold slate-600 dark:slate-400" mb="1">
+            예시:
+          </p>
+          <div
+            rounded="xl"
+            bg="white dark:slate-900"
+            p="3"
+            text="sm"
+            font="mono"
+            text="slate-700 dark:slate-300"
+            border="line dark:slate-700"
+          >
+            bun run content:status --slug hotel-gracery-shinjuku --status published
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <script>
+    function handleStatusChange(button: HTMLButtonElement) {
+      const slug = button.getAttribute('data-slug');
+      const current = button.getAttribute('data-current');
+      const next = button.getAttribute('data-next');
+
+      if (!slug || !current || !next) {
+        alert('호텔 정보를 찾을 수 없습니다.');
+        return;
+      }
+
+      if (
+        !confirm(
+          `상태를 "${current}"에서 "${next}"로 변경하시겠습니까?`,
+        )
+      ) {
+        return;
+      }
+
+      const command = `bun run content:status --slug ${slug} --status ${next}`;
+
+      navigator.clipboard
+        .writeText(command)
+        .then(() => {
+          alert(
+            `CLI 명령어가 클립보드에 복사되었습니다.\n\n${command}\n\n터미널에서 실행하여 상태를 변경하세요.`,
+          );
+        })
+        .catch(() => {
+          alert(
+            `다음 명령을 터미널에서 실행하세요:\n\n${command}`,
+          );
+        });
+    }
+  </script>
 </SiteLayout>
