@@ -8,12 +8,11 @@ const { guide } = Astro.props;
   flex
   gap="4"
   rounded="2xl"
-  border="line hover:brand-200 dark:slate-800"
+  border="line hover:brand-200 dark:neutral-800"
   shadow="hover:card"
-  bg="white slate-900"
+  bg="white dark:neutral-900"
   p="3"
   transition
-  hover="border-brand-200 shadow-card"
 >
   <img
     src={guide.image}
@@ -37,12 +36,11 @@ const { guide } = Astro.props;
       font="bold"
       leading="snug"
       group-hover="text-brand-700"
-      dark="text-white"
-      text="base sm:lg ink"
+      text="base sm:lg ink dark:white"
     >
       {guide.title}
     </h3>
-    <p mt="2" leading="6" line-clamp-2 dark="text-slate-300" text="sm muted">
+    <p mt="2" leading="6" line-clamp-2 text="sm muted dark:neutral-300">
       {guide.excerpt}
     </p>
     <span mt="2" font="semibold" text="xs brand-600">

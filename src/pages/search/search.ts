@@ -49,23 +49,36 @@ export const render = (query: string, results: HTMLElement | null) => {
   const q = query.trim().toLocaleLowerCase('ko');
   if (!q) {
     results.innerHTML =
-      '<p text="sm slate-500">검색어를 입력하면 관련 결과가 표시됩니다.</p>';
+      '<p class="text-sm text-slate-500">검색어를 입력하면 관련 결과가 표시됩니다.</p>';
     return;
   }
-  const found = all.filter(
-    (x) =>
-      `${x.name} ${x.city} ${x.area} ${x.summary} ${x.kind}`
-        .toLocaleLowerCase('ko')
-        .includes(q),
+  const found = all.filter((x) =>
+    `${x.name} ${x.city} ${x.area} ${x.summary} ${x.kind}`
+      .toLocaleLowerCase('ko')
+      .includes(q),
   );
   results.innerHTML = found.length
     ? found
         .map(
           (x) =>
-            `<a href="${x.url}" block rounded="2xl" border="line" bg="white" p="5" transition hover="border-brand-300 shadow-card" dark="border-slate-800 bg-slate-900"><span text="xs brand-600" font="bold">${x.kind} · ${x.city}</span><h2 mt="2" text="lg" font="bold">${x.name}</h2><p mt="2" text="sm slate-500" leading="6">${x.summary}</p><span mt="3" inline="block" text="sm brand-600" font="semibold">내용 보기 →</span></a>`,
+            // 주의: 클라이언트 사이드 동적 HTML 생성으로 UnoCSS 정적 스캔 대상이 아니므로,
+            // Attributify 속성 대신 class를 사용합니다. 스타일은 UnoCSS 유틸리티 클래스와 일치시켰습니다.
+            /* html */ `<a
+              href="${x.url}"
+              class="block rounded-2xl border-line hover:border-brand-300 dark:border-slate-800 bg-white dark:bg-slate-900 hover:shadow-card p-5 transition"
+              ><span class="text-xs text-brand-600 font-bold"
+                >${x.kind} · ${x.city}</span
+              >
+              <h2 class="mt-2 text-lg font-bold">${x.name}</h2>
+              <p class="mt-2 text-sm text-slate-500 leading-6">${x.summary}</p>
+              <span
+                class="mt-3 inline-block text-sm text-brand-600 font-semibold"
+                >내용 보기 →</span
+              ></a
+            >`,
         )
         .join('')
-    : '<p rounded="2xl" border="line" bg="white" p="6" text="sm slate-500" dark="border-slate-800 bg-slate-900">일치하는 결과가 없습니다. 다른 키워드로 검색해 보세요.</p>';
+    : /* html */ '<p class="rounded-2xl border-line dark:border-slate-800 bg-white dark:bg-slate-900 p-6 text-sm text-slate-500">일치하는 결과가 없습니다. 다른 키워드로 검색해 보세요.</p>';
 };
 
 export const setupSearch = (

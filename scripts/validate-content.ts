@@ -8,9 +8,7 @@ const hotelSchema = z.object({
   name: z.string().min(2),
   city: z.string().min(1),
   summary: z.string().min(40),
-  status: z
-    .enum(['draft', 'needs_review', 'approved', 'published'])
-    .default('draft'),
+  status: z.enum(['draft', 'review', 'published', 'archived']).default('draft'),
   sources: z
     .array(
       z.object({
@@ -45,7 +43,7 @@ for (const file of files) {
     } else {
       const item = result.data;
       const publishReady =
-        item.status === 'approved' &&
+        item.status === 'published' &&
         item.factsVerified &&
         item.sources.length > 0 &&
         item.imageRights !== 'unknown' &&

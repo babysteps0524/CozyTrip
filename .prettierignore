@@ -1,0 +1,2 @@
+# Prettier가 파싱할 수 없는 Astro 파일 (기존 코드)
+src/layouts/SiteLayout.astro

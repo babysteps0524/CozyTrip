@@ -1,11 +1,17 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
+export const noindex = true;
 ---
 
-<SiteLayout title="검색" description="일본 호텔, 지역, 여행 가이드를 검색하세요.">
+<SiteLayout
+  title="검색"
+  description="일본 호텔, 지역, 여행 가이드를 검색하세요."
+>
   <section container-wide min="h-[60vh]" py="12" sm="py-16">
     <p eyebrow>SEARCH</p>
-    <h1 mt="3" section-title>무엇을 찾고 계세요?</h1>
+    <h1 mt="3" section-title>
+      무엇을 찾고 계세요?
+    </h1>
     <p mt="3" muted-copy>
       호텔명, 지역명, 여행 준비 키워드를 입력하세요.
     </p>
@@ -16,11 +22,10 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
       max="w-3xl"
       gap="2"
       rounded="2xl"
-      border="line"
-      bg="white"
+      border="line dark:neutral-800"
+      bg="white dark:neutral-900"
       p="2"
       shadow="card"
-      dark="border-slate-800 bg-slate-900"
     >
       <label flex="1" items="center" gap="3" px="3">
         <span text="xl brand-600">⌕</span>
@@ -41,9 +46,7 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
       </button>
     </form>
     <div id="search-results" mt="8" space="y-3" aria-live="polite">
-      <p muted-copy>
-        검색어를 입력하면 관련 호텔과 가이드를 표시합니다.
-      </p>
+      <p muted-copy>검색어를 입력하면 관련 호텔과 가이드를 표시합니다.</p>
     </div>
   </section>
   <script>

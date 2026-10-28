@@ -3,7 +3,7 @@
   "name": "Sample Hotel Record",
   "city": "도쿄",
   "summary": "이 파일은 콘텐츠 검증 워크플로를 확인하기 위한 예시 데이터입니다. 실제 호텔 소개 콘텐츠로 게시하기 전에 공식 출처와 모든 사실을 검증해야 합니다.",
-  "status": "needs_review",
+  "status": "draft",
   "sources": [],
   "imageRights": "unknown",
   "factsVerified": false

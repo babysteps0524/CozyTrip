@@ -62,12 +62,11 @@ const pageTitle =
   </head>
   <body
     min="h-screen"
-    bg="canvas"
+    bg="canvas dark:neutral-950"
     font="sans"
-    text="ink"
-    antialiased
-    dark="bg-slate-950 text-slate-100"
-  >
+    text="ink dark:neutral-100"
+    antialiased 
+    >
     <a
       href="#main"
       sr="only"
@@ -81,9 +80,10 @@ const pageTitle =
       sticky
       top="0"
       z="40"
-      border="b white/70 dark:slate-800"
-      bg="white/90 dark:slate-950/90"
+      border="b white/70 dark:neutral-800"
+      bg="white/90 dark:neutral-950/90"
       backdrop-blur-xl
+      relative
     >
       <div container-wide flex h="18" items="center" justify="between" gap="4">
         <a
@@ -110,10 +110,9 @@ const pageTitle =
           <span>
             <span
               block
-              text="lg ink"
+              text="lg ink dark:white"
               font="extrabold"
               tracking="tight"
-              dark="text-white"
             >
               CozyTrip
             </span>
@@ -122,12 +121,15 @@ const pageTitle =
             </span>
           </span>
         </a>
-        <nav hidden items="center" gap="7" lg:flex aria-label="주 메뉴">
+        <nav flex items="center" gap="7" sm:hidden aria-label="주 메뉴">
           <a text="sm" font="semibold" hover="text-brand-600" href="/hotels/">
             일본 호텔
           </a>
           <a text="sm" font="semibold" hover="text-brand-600" href="/regions/">
             지역별 호텔
+          </a>
+          <a text="sm" font="semibold" hover="text-brand-600" href="/attractions/">
+            명소
           </a>
           <a text="sm" font="semibold" hover="text-brand-600" href="/guides/">
             여행 가이드
@@ -153,9 +155,9 @@ const pageTitle =
             place="items-center"
             rounded="xl"
             text="lg"
-            hover="bg-slate-100"
+            hover="bg-neutral-100"
             focus-ring
-            dark:hover="bg-slate-800"
+            dark:hover="bg-neutral-800"
             aria-label="검색"
           >
             ⌕
@@ -169,10 +171,10 @@ const pageTitle =
             place="items-center"
             rounded="xl"
             text="xl"
-            hover="bg-slate-100"
+            hover="bg-neutral-100"
             focus-ring
-            lg:hidden
-            dark:hover="bg-slate-800"
+            md:hidden
+            dark:hover="bg-neutral-800"
             aria-expanded="false"
             aria-controls="mobile-menu"
             aria-label="메뉴 열기"
@@ -183,19 +185,24 @@ const pageTitle =
       </div>
       <div
         id="mobile-menu"
-        hidden
-        border="t line dark:slate-800"
-        bg="white dark:slate-950"
+        md:hidden
+        absolute
+        top="18"
+        left="0"
+        right="0"
+        z="50"
+        container-wide
+        border="t line dark:neutral-800"
+        bg="white dark:neutral-950"
         px="4"
         py="4"
-        lg:hidden
       >
         <nav container-wide grid="cols-2" gap="2" aria-label="모바일 메뉴">
           <a
             rounded="xl"
             p="3"
-            hover="bg-slate-50"
-            dark:hover="bg-slate-900"
+            hover="bg-neutral-50"
+            dark:hover="bg-neutral-900"
             href="/hotels/"
           >
             일본 호텔
@@ -203,8 +210,8 @@ const pageTitle =
           <a
             rounded="xl"
             p="3"
-            hover="bg-slate-50"
-            dark:hover="bg-slate-900"
+            hover="bg-neutral-50"
+            dark:hover="bg-neutral-900"
             href="/regions/"
           >
             지역별 호텔
@@ -212,8 +219,17 @@ const pageTitle =
           <a
             rounded="xl"
             p="3"
-            hover="bg-slate-50"
-            dark:hover="bg-slate-900"
+            hover="bg-neutral-50"
+            dark:hover="bg-neutral-900"
+            href="/attractions/"
+          >
+            명소
+          </a>
+          <a
+            rounded="xl"
+            p="3"
+            hover="bg-neutral-50"
+            dark:hover="bg-neutral-900"
             href="/guides/"
           >
             여행 가이드
@@ -221,8 +237,8 @@ const pageTitle =
           <a
             rounded="xl"
             p="3"
-            hover="bg-slate-50"
-            dark:hover="bg-slate-900"
+            hover="bg-neutral-50"
+            dark:hover="bg-neutral-900"
             href="/categories/"
           >
             테마별 찾기
@@ -246,11 +262,11 @@ const pageTitle =
           <a href="/" text="xl" font="extrabold" tracking="tight">
             CozyTrip
           </a>
-          <p mt="3" leading="7" max="w-xs" text="sm slate-300">
+          <p mt="3" leading="7" max="w-xs" text="sm neutral-300">
             일본 여행의 선택을 돕는 호텔 정보와 실용적인 여행 가이드를
             제공합니다.
           </p>
-          <p mt="4" text="xs slate-400">
+          <p mt="4" text="xs neutral-400">
             호텔 정보는 예약 전 공식 출처에서 다시 확인하세요.
           </p>
         </div>
@@ -258,7 +274,7 @@ const pageTitle =
           <h2 text="sm" font="bold">
             둘러보기
           </h2>
-          <ul mt="4" space="y-3" text="sm slate-300">
+          <ul mt="4" space="y-3" text="sm neutral-300">
             <li>
               <a hover="text-white" href="/hotels/">
                 일본 호텔
@@ -267,6 +283,11 @@ const pageTitle =
             <li>
               <a hover="text-white" href="/regions/">
                 지역별 가이드
+              </a>
+            </li>
+            <li>
+              <a hover="text-white" href="/attractions/">
+                명소
               </a>
             </li>
             <li>
@@ -285,7 +306,7 @@ const pageTitle =
           <h2 text="sm" font="bold">
             사이트 정보
           </h2>
-          <ul mt="4" space="y-3" text="sm slate-300">
+          <ul mt="4" space="y-3" text="sm neutral-300">
             <li>
               <a hover="text-white" href="/about/">
                 사이트 소개
@@ -322,7 +343,7 @@ const pageTitle =
           <h2 text="sm" font="bold">
             예약 전 안내
           </h2>
-          <p mt="4" leading="7" text="sm slate-300">
+          <p mt="4" leading="7" text="sm neutral-300">
             숙박 요금, 객실 가능 여부, 세금, 취소 조건은 날짜와 인원에 따라
             달라집니다. 최종 조건은 예약 사이트에서 확인하세요.
           </p>
@@ -330,7 +351,7 @@ const pageTitle =
             href="/affiliate-disclosure/"
             mt="3"
             inline="flex"
-            text="sm blue-200"
+            text="sm brand-100"
             font="semibold"
             hover="text-white"
           >
@@ -344,7 +365,7 @@ const pageTitle =
           flex="col"
           gap="2"
           py="5"
-          text="xs slate-400"
+          text="xs neutral-400"
           sm="flex-row items-center justify-between"
         >
           <span>
@@ -358,14 +379,32 @@ const pageTitle =
       </div>
     </footer>
     <script>
-      const menuButton = document.querySelector<HTMLButtonElement>(
-        '#mobile-menu-button',
-      );
-      const menu = document.querySelector<HTMLElement>('#mobile-menu');
-      menuButton?.addEventListener('click', () => {
-        const open = menuButton.getAttribute('aria-expanded') !== 'true';
-        menuButton.setAttribute('aria-expanded', String(open));
-        menu?.classList.toggle('hidden', !open);
+      const menuButton = document.getElementById('mobile-menu-button');
+      const menu = document.getElementById('mobile-menu');
+
+      function toggleMenu() {
+        const isOpen = menuButton?.getAttribute('aria-expanded') === 'true';
+        menuButton?.setAttribute('aria-expanded', String(!isOpen));
+        menu?.classList.toggle('hidden', !isOpen);
+      }
+
+      menuButton?.addEventListener('click', (event) => {
+        event.stopPropagation();
+        toggleMenu();
+      });
+
+      document.addEventListener('click', (event) => {
+        if (menu && !menu.classList.contains('hidden')) {
+          const target = event.target;
+          const isClickInsideMenu =
+            target instanceof Node && menu.contains(target);
+          const isClickOnButton =
+            menuButton && target instanceof Node && menuButton.contains(target);
+          if (!isClickInsideMenu && !isClickOnButton) {
+            menuButton?.setAttribute('aria-expanded', 'false');
+            menu.classList.add('hidden');
+          }
+        }
       });
     </script>
   </body>

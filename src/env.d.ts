@@ -1,2 +1,2 @@
 /// <reference types="astro/client" />
-/// <reference path="./types/unocss.d.ts" />
+import './types/unocss.d.ts';

@@ -29,9 +29,9 @@ import { hotels, regions, guides } from '../data/site';
       inset="0"
       -z-10
       bg="gradient-to-r"
-      from-slate-950
-      via-slate-900
-      to-slate-900
+      from-neutral-950
+      via-neutral-900
+      to-neutral-900
     ></div>
     <div
       container-wide
@@ -57,7 +57,7 @@ import { hotels, regions, guides } from '../data/site';
           backdrop-blur
         >
           JAPAN HOTEL & TRAVEL GUIDE{' '}
-          <span h="1.5" w="1.5" rounded="full" bg="emerald-300"></span>
+          <span h="1.5" w="1.5" rounded="full" bg="brand-300"></span>
         </span>
         <h1
           mt="6"
@@ -91,7 +91,7 @@ import { hotels, regions, guides } from '../data/site';
             items="center"
             gap="3"
             rounded="xl"
-            bg="slate-50"
+            bg="neutral-50"
             px="4"
             py="3"
           >
@@ -107,7 +107,7 @@ import { hotels, regions, guides } from '../data/site';
                 bg="transparent"
                 text="sm"
                 outline="none"
-                placeholder="도시 또는 호텔명 text-slate-400"
+                placeholder="도시 또는 호텔명 text-neutral-400"
               />
             </span>
           </label>
@@ -116,7 +116,7 @@ import { hotels, regions, guides } from '../data/site';
             items="center"
             gap="3"
             rounded="xl"
-            bg="slate-50"
+            bg="neutral-50"
             px="4"
             py="3"
           >
@@ -154,11 +154,10 @@ import { hotels, regions, guides } from '../data/site';
           max="w-xs"
           rounded="3xl"
           border="white"
-          bg="white"
+          bg="white dark:neutral-900"
           p="5"
           shadow="lift"
           backdrop-blur
-          dark="bg-slate-900"
         >
           <div flex items="center" gap="3">
             <span
@@ -181,7 +180,7 @@ import { hotels, regions, guides } from '../data/site';
               </h2>
             </div>
           </div>
-          <ul mt="4" space="y-3" text="sm slate-600" dark="text-slate-300">
+          <ul mt="4" space="y-3" text="sm neutral-600 dark:neutral-300">
             <li>✓ 위치와 이동 동선</li>
             <li>✓ 객실 인원 및 취소 조건</li>
             <li>✓ 시설 정보와 공식 출처</li>
@@ -221,17 +220,18 @@ import { hotels, regions, guides } from '../data/site';
         모든 지역 보기 →
       </a>
     </div>
-    <div mt="6" grid="cols-2" gap="3" sm="grid-cols-3" lg="grid-cols-6">
+    <div mt="6" grid="~ cols-2" gap="3" sm="cols-3" lg="cols-6">
       {regions.map((region) => (
         <a
           href={`/regions/${region.slug}/`}
+          block
           group
           relative
           isolate
-          min="h-44"
+          min-h="44"
           overflow="hidden"
           rounded="2xl"
-          bg="slate-300"
+          bg="neutral-300"
           shadow="card"
         >
           <img
@@ -242,7 +242,7 @@ import { hotels, regions, guides } from '../data/site';
             height="600"
             absolute
             inset="0"
-            -z-20
+            z="0"
             h="full"
             w="full"
             object="cover"
@@ -253,20 +253,20 @@ import { hotels, regions, guides } from '../data/site';
           <div
             absolute
             inset="0"
-            -z-10
+            z="1"
             bg="gradient-to-t"
-            from-slate-950
-            via-slate-900
-            to-transparent
+            from="neutral-950"
+            via="neutral-900"
+            to="transparent"
           ></div>
-          <div absolute inset="x-0" bottom="0" p="4" text="white" text-center>
-            <p text="[10px] white" font="bold" tracking="tight">
+          <div absolute inset-x="0" bottom="0" z="2" p="4" text="white center">
+            <p text="[10px]" font="bold" tracking="tight">
               {region.en.toUpperCase()}
             </p>
-            <h3 mt="1" text="lg" font="bold">
+            <h3 mt="1" text="lg white" font="bold">
               {region.name}
             </h3>
-            <p mt="1" text="xs white" text-center>
+            <p mt="1" text="xs center white">
               지역 가이드 →
             </p>
           </div>
@@ -296,7 +296,7 @@ import { hotels, regions, guides } from '../data/site';
     </div>
     <AdSlot slot="home" label="홈페이지 광고" />
   </section>
-  <section bg="white" py="12" dark="bg-slate-900" sm="py-16">
+  <section bg="white dark:neutral-900" py="12" sm="py-16">
     <div container-wide>
       <div flex items="end" justify="between" gap="4">
         <div>
@@ -325,7 +325,7 @@ import { hotels, regions, guides } from '../data/site';
       rounded="3xl"
       bg="gradient-to-br"
       from-brand-700
-      to-slate-900
+      to-neutral-900
       p="7"
       text="white"
       sm="p-10"
@@ -333,14 +333,14 @@ import { hotels, regions, guides } from '../data/site';
       lg="items-center justify-between"
     >
       <div max="w-2xl">
-        <p text="xs blue-200" font="bold" tracking="[.2em]">
+        <p text="xs brand-100" font="bold" tracking="[.2em]">
           BOOKING CHECKLIST
         </p>
         <h2 mt="3" text="2xl sm:3xl" font="bold" leading="tight">
           예약 버튼을 누르기 전,
           <br hidden sm:block /> 조건을 한 번 더 확인하세요.
         </h2>
-        <p mt="3" leading="7" text="sm sm:base blue-100">
+        <p mt="3" leading="7" text="sm sm:base brand-100">
           숙박 날짜, 인원, 세금 포함 여부, 취소 마감, 결제 조건은 예약 단계에서
           직접 확인해야 합니다.
         </p>
@@ -359,7 +359,7 @@ import { hotels, regions, guides } from '../data/site';
         text="sm brand-700"
         font="bold"
         transition
-        hover="bg-blue-50"
+        hover="bg-brand-50"
         lg="mt-0"
       >
         체크리스트 확인 →

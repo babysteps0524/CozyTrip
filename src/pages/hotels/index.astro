@@ -3,6 +3,28 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import HotelCard from '../../components/HotelCard.astro';
 import AdSlot from '../../components/AdSlot.astro';
 import { hotels } from '../../data/site';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+// 콘텐츠 컬렉션 호텔 (Agoda 파이프라인·studio가 생성한 MD 파일)
+const contentEntries = await getCollection('hotels');
+const existingSlugs = new Set(
+  contentEntries.map((entry: CollectionEntry<'hotels'>) => entry.id),
+);
+const contentHotels = contentEntries.map(
+  (entry: CollectionEntry<'hotels'>) => ({
+    name: entry.data.name,
+    city: entry.data.city,
+    area: entry.data.area,
+    summary: entry.data.summary,
+    image: entry.data.image ?? undefined,
+    type: entry.data.type,
+    tags: entry.data.tags,
+    status: entry.data.status,
+    slug: entry.id,
+  }),
+);
+const staticHotels = hotels.filter((hotel) => !existingSlugs.has(hotel.slug));
+const allHotels = [...contentHotels, ...staticHotels];
 ---
 
 <SiteLayout
@@ -19,8 +41,8 @@ import { hotels } from '../../data/site';
       검토용 초안이며, 세부 정보는 공식 출처로 검증한 뒤 게시해야 합니다.
     </p>
     <div mt="7" grid gap="5" sm="grid-cols-2" lg="grid-cols-3">
-      {hotels.map((hotel) => (
-        <HotelCard hotel={hotel} />
+      {allHotels.map((hotel) => (
+        <HotelCard hotel={hotel as any} />
       ))}
     </div>
     <AdSlot />
