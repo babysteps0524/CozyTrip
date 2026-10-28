@@ -26,12 +26,12 @@ const CONTENT_DIR = join(
   '../content/hotels',
 );
 
-const VALID_STATUSES = ['draft', 'review', 'published', 'archived'] as const;
+const VALID_STATUSES = ['draft', 'review', 'approved', 'published', 'archived'] as const;
 
 type Status = (typeof VALID_STATUSES)[number];
 
-/** 상태 전이 순서 (순환) */
-const STATUS_ORDER: Status[] = ['draft', 'review', 'published', 'archived'];
+/** 상태 전이 순서: draft → review → approved → published → archived */
+const STATUS_ORDER: Status[] = ['draft', 'review', 'approved', 'published', 'archived'];
 
 /** CLI 인자 파싱 */
 function parseArgs(argv: string[]): {
