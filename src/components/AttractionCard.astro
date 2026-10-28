@@ -1,0 +1,108 @@
+---
+const { attraction } = Astro.props;
+---
+
+<article
+  group
+  overflow="hidden"
+  rounded="2xl"
+  border="line dark:neutral-800"
+  bg="white dark:neutral-900"
+  shadow="card hover:lift"
+  transition
+  duration="200"
+  hover="-translate-y-1"
+>
+  <a
+    href={`/attractions/${attraction.slug}/`}
+    block
+    focus-ring
+    aria-label={`${attraction.name} 소개 보기`}
+  >
+    <div
+      relative
+      aspect="16/10"
+      overflow="hidden"
+      bg="neutral-100 dark:neutral-800"
+    >
+      <img
+        src={attraction.image}
+        alt={`${attraction.area} ${attraction.name} 여행 참고 이미지`}
+        loading="lazy"
+        width="800"
+        height="500"
+        h="full"
+        w="full"
+        object="cover"
+        transition
+        duration="500"
+        group-hover="scale-105"
+      />
+      <span
+        absolute
+        left="3"
+        top="3"
+        rounded="full"
+        bg="white/95 dark:neutral-800"
+        px="3"
+        py="1"
+        text="xs ink dark:white"
+        font="semibold"
+        shadow="sm"
+      >
+        {attraction.area}
+      </span>
+    </div>
+    <div p="4">
+      <p text="xs brand-600" font="semibold">
+        {attraction.type} · {attraction.area}
+      </p>
+      <h3 mt="2" font="bold" leading="snug" text="lg ink dark:white">
+        {attraction.name}
+      </h3>
+      <p mt="2" leading="6" line-clamp-3 text="sm muted dark:neutral-300">
+        {attraction.summary}
+      </p>
+      <div mt="4" flex="wrap" gap="2">
+        {(attraction.tags ?? []).slice(0, 3).map((tag: string) => (
+          <span
+            rounded="lg"
+            bg="brand-50 dark:neutral-800"
+            px="2.5"
+            py="1"
+            text="[11px] brand-700 dark:brand-100"
+            font="medium"
+          >
+            {tag}
+          </span>
+        ))}
+      </div>
+      <div
+        mt="4"
+        flex
+        items="center"
+        justify="between"
+        border="t line dark:neutral-800"
+        pt="3"
+        text="sm"
+      >
+        <span font="semibold" text="ink dark:neutral-100">
+          소개 보기
+        </span>
+        <span
+          grid
+          h="8"
+          w="8"
+          place="items-center"
+          rounded="full"
+          bg="brand-50 dark:neutral-800"
+          text="brand-700"
+          transition
+          group-hover="bg-brand-600 text-white"
+        >
+          ↗
+        </span>
+      </div>
+    </div>
+  </a>
+</article>

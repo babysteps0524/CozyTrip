@@ -1,0 +1,242 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import { attractions } from '../../data/attractions';
+
+interface AttractionData {
+  name: string;
+  regionSlug: string;
+  area?: string;
+  summary: string;
+  type?: string;
+  tags?: string[];
+  status?: string;
+  image?: string;
+  sourceNote?: string;
+}
+
+export async function getStaticPaths() {
+  return attractions.map((attraction) => ({
+    params: { slug: attraction.slug },
+    props: { attraction },
+  }));
+}
+
+const { attraction } = Astro.props as { attraction: AttractionData };
+
+const statusLabel = (status: string) => {
+  switch (status) {
+    case 'published':
+      return '게시됨';
+    case 'review':
+      return '검토 중';
+    case 'draft':
+      return '초안';
+    case 'archived':
+      return '보관됨';
+    default:
+      return status;
+  }
+};
+
+const statusColor = (status: string) => {
+  switch (status) {
+    case 'published':
+      return 'text-brand-700 dark:text-brand-400';
+    case 'review':
+      return 'text-accent-700 dark:text-accent-400';
+    case 'draft':
+      return 'text-neutral-700 dark:text-neutral-300';
+    case 'archived':
+      return 'text-neutral-500 dark:text-neutral-600';
+    default:
+      return 'text-neutral-700 dark:text-neutral-300';
+  }
+};
+
+const attractionStatus = attraction.status ?? 'draft';
+const isPublished = attractionStatus === 'published';
+
+const region = {
+  tokyo: '도쿄',
+  kyoto: '교토',
+  osaka: '오사카',
+}[attraction.regionSlug ?? ''] ?? attraction.regionSlug;
+---
+
+<SiteLayout
+  title={attraction.name}
+  description={attraction.summary ?? `${attraction.name} 명소 소개`}
+  image={attraction.image}
+  noindex={!isPublished}
+>
+  <article container-wide max="w-5xl" py="10" sm="py-16">
+    <nav mb="6" text="xs muted">
+      <a href="/">홈</a> /{' '}
+      <a href="/attractions/">일본 명소</a> /{attraction.name}
+    </nav>
+
+    <div mb="8" flex="wrap" items="end" justify="between" gap="4">
+      <div>
+        <p text="xs brand-600" font="bold">
+          {region}
+          {attraction.area ? ` · ${attraction.area}` : ''}
+        </p>
+        <h1 mt="2" font="bold" leading="tight" text="3xl sm:5xl ink dark:white">
+          {attraction.name}
+        </h1>
+        <p mt="3" leading="7" text="lg muted dark:neutral-300">
+          {attraction.summary}
+        </p>
+        <div mt="5" flex="wrap" gap="2">
+          {(attraction.tags ?? []).map((tag: string) => (
+            <span
+              key={tag}
+              rounded="lg"
+              bg="brand-50 dark:neutral-800"
+              px="2.5"
+              py="1"
+              text="[11px] brand-700 dark:brand-100"
+              font="medium"
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+      </div>
+      <div>
+        <span
+          inline="flex"
+          items="center"
+          rounded="full"
+          px="3"
+          py="1"
+          text="[11px]"
+          font="semibold"
+          bg={
+            attraction.status === 'published'
+              ? 'brand-100'
+              : attraction.status === 'review'
+                ? 'accent-100'
+                : 'neutral-100'
+          }
+          text={statusColor(attractionStatus)}
+          dark:bg={
+            attractionStatus === 'published'
+              ? 'brand-900/30'
+              : attractionStatus === 'review'
+                ? 'accent-900/30'
+                : 'neutral-800'
+          }
+        >
+          {statusLabel(attractionStatus)}
+        </span>
+      </div>
+    </div>
+
+    <section
+      mt="10"
+      rounded="3xl"
+      border="line dark:neutral-800"
+      bg="white dark:neutral-900"
+      p="6"
+      shadow="card"
+    >
+      {attraction.image && (
+        <div
+          mb="6"
+          relative
+          overflow="hidden"
+          rounded="2xl"
+          bg="neutral-100 dark:neutral-800"
+        >
+          <img
+            src={attraction.image}
+            alt={`${attraction.name} 명소 이미지`}
+            loading="lazy"
+            width="1200"
+            height="800"
+            w="full"
+            object="cover"
+          />
+        </div>
+      )}
+
+      <div grid="~ cols-1" gap="6" lg="cols-3">
+        <div lg="col-span-2">
+          <h2 mb="4" text="xl" font="bold">
+            명소 소개
+          </h2>
+          <p leading="7" text="lg ink dark:white">
+            {attraction.summary}
+          </p>
+        </div>
+
+        <div>
+          <h3 mb="4" text="lg" font="bold">
+            명소 정보
+          </h3>
+          <div space="y-4" text="sm neutral-600 dark:neutral-300">
+            <p>
+              <span font="medium" text="ink">
+                위치:
+              </span>{' '}
+              {region}
+              {attraction.area ? ` > ${attraction.area}` : ''}
+            </p>
+            {attraction.sourceNote && (
+              <div mt="3" pt="3" border="t brand-100 dark:brand-900/20">
+                <p text="xs muted dark:neutral-500" leading="6">
+                  {attraction.sourceNote}
+                </p>
+              </div>
+            )}
+          </div>
+
+          <div
+            mt="8"
+            border="l brand-500"
+            pl="4"
+            py="4"
+            bg="brand-50 dark:brand-500/5"
+            rounded="r-xl"
+          >
+            <h4 text="sm brand-700 dark:brand-400" font="bold">
+              정보 검증 안내
+            </h4>
+            <p mt="2" text="sm muted dark:neutral-400" leading="6">
+              이 명소 정보는 편집 검토 중입니다. 운영 시간, 입장료, 교통
+              접근성 등은 게시 전에 공식 출처로 재검증해야 합니다. 검증되지
+              않은 정보를 사실처럼 표시하지 않습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {!isPublished && (
+      <section
+        mt="8"
+        rounded="2xl"
+        border="dashed line dark:neutral-800"
+        bg="neutral-50 dark:neutral-900"
+        p="6"
+      >
+        <h3 text="lg" font="bold" text="ink">
+          공개 전 준비 사항
+        </h3>
+        <ul
+          mt="4"
+          space="y-3"
+          list="disc"
+          pl="6"
+          text="sm muted dark:neutral-400"
+        >
+          <li>공식 웹사이트에서 운영 시간 및 입장료 확인</li>
+          <li>공식 교통 기관에서 역 접근성 및 이동 시간 확인</li>
+          <li>이미지 사용 권한 및 출처 확인</li>
+          <li>편집자 승인 후 published 상태로 변경</li>
+        </ul>
+      </section>
+    )}
+  </article>
+</SiteLayout>
