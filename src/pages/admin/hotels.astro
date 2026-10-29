@@ -49,8 +49,7 @@ async function loadHotels(): Promise<HotelMeta[]> {
         const sourcesRaw = data.sources ?? '';
         const sourcesCount = sourcesRaw
           .split('\n')
-          .filter((line) => line.trim().startsWith('- ['))
-          .length;
+          .filter((line) => line.trim().startsWith('- [')).length;
 
         hotels.push({
           name: data.name ?? slug,
@@ -360,7 +359,8 @@ const getBadgeStyle = (status: string) =>
                           {h.imageRights !== 'unknown' &&
                           h.imageRights !== 'needs_review'
                             ? '✓'
-                            : '✗'} 이미지 권리
+                            : '✗'}{' '}
+                          이미지 권리
                         </span>
                         <span
                           block
@@ -488,8 +488,8 @@ const getBadgeStyle = (status: string) =>
           상태 전이 명령어
         </h2>
         <p mt="0" text="sm muted dark:neutral-400">
-          테이블의 상태 전이 버튼을 클릭하면 CLI 명령어가 클립보드에
-          복사됩니다. 터미널에서 실행하여 실제 파일의 상태를 변경하세요.
+          테이블의 상태 전이 버튼을 클릭하면 CLI 명령어가 클립보드에 복사됩니다.
+          터미널에서 실행하여 실제 파일의 상태를 변경하세요.
         </p>
         <div mt="3">
           <p text="xs font-bold neutral-600 dark:neutral-400" mb="1">
@@ -504,7 +504,8 @@ const getBadgeStyle = (status: string) =>
             text="neutral-700 dark:neutral-300"
             border="line dark:neutral-700"
           >
-            bun run content:status --slug hotel-gracery-shinjuku --status published
+            bun run content:status --slug hotel-gracery-shinjuku --status
+            published
           </div>
         </div>
       </div>
@@ -522,11 +523,7 @@ const getBadgeStyle = (status: string) =>
         return;
       }
 
-      if (
-        !confirm(
-          `상태를 "${current}"에서 "${next}"로 변경하시겠습니까?`,
-        )
-      ) {
+      if (!confirm(`상태를 "${current}"에서 "${next}"로 변경하시겠습니까?`)) {
         return;
       }
 
@@ -540,9 +537,7 @@ const getBadgeStyle = (status: string) =>
           );
         })
         .catch(() => {
-          alert(
-            `다음 명령을 터미널에서 실행하세요:\n\n${command}`,
-          );
+          alert(`다음 명령을 터미널에서 실행하세요:\n\n${command}`);
         });
     }
   </script>

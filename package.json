@@ -22,7 +22,7 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.9.12",
-    "astro": "^7.4.2",
+    "astro": "^7.4.4",
     "zod": "^4.6.7",
     "@astrojs/sitemap": "^3.7.4"
   },

@@ -41,7 +41,10 @@ function parseFrontmatter(content: string): Record<string, string> {
     if (colonIdx > 0) {
       const key = line.slice(0, colonIdx).trim();
       let val = line.slice(colonIdx + 1).trim();
-      if ((val.startsWith('"') && val.endsWith('"')) || (val.startsWith("'") && val.endsWith("'"))) {
+      if (
+        (val.startsWith('"') && val.endsWith('"')) ||
+        (val.startsWith("'") && val.endsWith("'"))
+      ) {
         val = val.slice(1, -1);
       }
       map[key] = val;
@@ -54,7 +57,9 @@ async function main() {
   let failed = false;
 
   // 1) JSON 파일 검증 (기존 동작 유지)
-  const jsonFiles = (await readdir(root)).filter((name) => name.endsWith('.json'));
+  const jsonFiles = (await readdir(root)).filter((name) =>
+    name.endsWith('.json'),
+  );
   for (const file of jsonFiles) {
     try {
       const raw: unknown = JSON.parse(await readFile(join(root, file), 'utf8'));
@@ -125,7 +130,15 @@ async function main() {
 
       // 이미지 권리 검사
       const imageRights = fm.imageRights ?? 'unknown';
-      if (!['owned', 'licensed', 'approved_feed', 'needs_review', 'unknown'].includes(imageRights)) {
+      if (
+        ![
+          'owned',
+          'licensed',
+          'approved_feed',
+          'needs_review',
+          'unknown',
+        ].includes(imageRights)
+      ) {
         failed = true;
         console.error(`✗ ${file}: invalid imageRights '${imageRights}'`);
         continue;

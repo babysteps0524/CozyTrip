@@ -11,8 +11,7 @@ export const attractions = [
       'https://images.unsplash.com/photo-1546262825-c26793209161?auto=format&fit=crop&w=1000&q=85',
     tags: ['전통', '관광', '사원'],
     status: 'draft',
-    sourceNote:
-      '운영 시간과 입장료는 공식 출처에서 확인 후 게시하세요.',
+    sourceNote: '운영 시간과 입장료는 공식 출처에서 확인 후 게시하세요.',
   },
   {
     slug: 'kinkaku-ji-temple',
@@ -26,8 +25,7 @@ export const attractions = [
       'https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=1000&q=85',
     tags: ['세계유산', '전통', '사원'],
     status: 'draft',
-    sourceNote:
-      '입장료와 관람 시간은 공식 출처에서 확인 후 게시하세요.',
+    sourceNote: '입장료와 관람 시간은 공식 출처에서 확인 후 게시하세요.',
   },
   {
     slug: 'dotonbori',
@@ -41,8 +39,7 @@ export const attractions = [
       'https://images.unsplash.com/photo-1583952721661-a433969d8301?auto=format&fit=crop&w=1000&q=85',
     tags: ['야경', '미식', '쇼핑'],
     status: 'draft',
-    sourceNote:
-      '운영 시간과 주차 정보는 공식 출처에서 확인 후 게시하세요.',
+    sourceNote: '운영 시간과 주차 정보는 공식 출처에서 확인 후 게시하세요.',
   },
   {
     slug: 'fushimi-inari-taisha',
@@ -56,8 +53,7 @@ export const attractions = [
       'https://images.unsplash.com/photo-1537926637667-9d898b017103?auto=format&fit=crop&w=1000&q=85',
     tags: ['신사', '도리이', '등산'],
     status: 'draft',
-    sourceNote:
-      '입장료 및 운영 시간은 공식 출처에서 확인 후 게시하세요.',
+    sourceNote: '입장료 및 운영 시간은 공식 출처에서 확인 후 게시하세요.',
   },
   {
     slug: 'osaka-castle',
@@ -71,7 +67,6 @@ export const attractions = [
       'https://images.unsplash.com/photo-1529768702-399958849b8b?auto=format&fit=crop&w=1000&q=85',
     tags: ['성곽', '역사', '공원'],
     status: 'draft',
-    sourceNote:
-      '관람 요금과 전시 정보는 공식 출처에서 확인 후 게시하세요.',
+    sourceNote: '관람 요금과 전시 정보는 공식 출처에서 확인 후 게시하세요.',
   },
 ];

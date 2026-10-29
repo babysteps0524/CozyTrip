@@ -23,10 +23,10 @@ AdSense를 활성화하기 전에 현재 공식 정책을 확인하고 확인 �
 
 광고 클라이언트 ID와 슬롯 ID는 환경변수로 설정합니다. `.env.example`에 변수 이름과 설명만 제공합니다.
 
-| 변수 | 범위 | 설명 |
-|------|------|------|
-| `PUBLIC_ADSENSE_CLIENT` | 공개 | AdSense 게시자 ID |
-| `PUBLIC_ADSENSE_SLOT_HOME` | 공개 | 홈 광고 슬롯 ID |
+| 변수                          | 범위 | 설명                |
+| ----------------------------- | ---- | ------------------- |
+| `PUBLIC_ADSENSE_CLIENT`       | 공개 | AdSense 게시자 ID   |
+| `PUBLIC_ADSENSE_SLOT_HOME`    | 공개 | 홈 광고 슬롯 ID     |
 | `PUBLIC_ADSENSE_SLOT_ARTICLE` | 공개 | 콘텐츠 광고 슬롯 ID |
 
 환경변수가 없을 때 사이트가 오류를 내지 않도록 안전하게 처리합니다. AdSlot 컴포넌트는 환경변수 부재 시 플레이스홀더를 표시합니다.

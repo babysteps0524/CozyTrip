@@ -58,12 +58,12 @@
 
 `.env.example`은 변수 이름과 설명만 제공하며 실제 값은 포함하지 않습니다.
 
-| 변수 | 범위 | 설명 |
-|------|------|------|
-| `AGODA_SITE_ID` | 서버 전용 | 아고다 제휴 사이트 ID |
-| `AGODA_API_KEY` | 서버 전용 | 아고다 제휴 API 키 |
-| `AGODA_API_SECRET` | 서버 전용 | 아고다 API 비밀 |
-| `PUBLIC_AGODA_AFFILIATE_URL` | 공개 | 제휴 링크 기본 URL (선택) |
+| 변수                         | 범위      | 설명                      |
+| ---------------------------- | --------- | ------------------------- |
+| `AGODA_SITE_ID`              | 서버 전용 | 아고다 제휴 사이트 ID     |
+| `AGODA_API_KEY`              | 서버 전용 | 아고다 제휴 API 키        |
+| `AGODA_API_SECRET`           | 서버 전용 | 아고다 API 비밀           |
+| `PUBLIC_AGODA_AFFILIATE_URL` | 공개      | 제휴 링크 기본 URL (선택) |
 
 `.env` 파일과 실제 API 키, 토큰, 개인 데이터는 Git에 커밋하지 않습니다.
 

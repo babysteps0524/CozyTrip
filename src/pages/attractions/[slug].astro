@@ -58,11 +58,12 @@ const statusColor = (status: string) => {
 const attractionStatus = attraction.status ?? 'draft';
 const isPublished = attractionStatus === 'published';
 
-const region = {
-  tokyo: '도쿄',
-  kyoto: '교토',
-  osaka: '오사카',
-}[attraction.regionSlug ?? ''] ?? attraction.regionSlug;
+const region =
+  {
+    tokyo: '도쿄',
+    kyoto: '교토',
+    osaka: '오사카',
+  }[attraction.regionSlug ?? ''] ?? attraction.regionSlug;
 ---
 
 <SiteLayout
@@ -73,8 +74,8 @@ const region = {
 >
   <article container-wide max="w-5xl" py="10" sm="py-16">
     <nav mb="6" text="xs muted">
-      <a href="/">홈</a> /{' '}
-      <a href="/attractions/">일본 명소</a> /{attraction.name}
+      <a href="/">홈</a> / <a href="/attractions/">일본 명소</a> /
+      {attraction.name}
     </nav>
 
     <div mb="8" flex="wrap" items="end" justify="between" gap="4">
@@ -206,9 +207,9 @@ const region = {
               정보 검증 안내
             </h4>
             <p mt="2" text="sm muted dark:neutral-400" leading="6">
-              이 명소 정보는 편집 검토 중입니다. 운영 시간, 입장료, 교통
-              접근성 등은 게시 전에 공식 출처로 재검증해야 합니다. 검증되지
-              않은 정보를 사실처럼 표시하지 않습니다.
+              이 명소 정보는 편집 검토 중입니다. 운영 시간, 입장료, 교통 접근성
+              등은 게시 전에 공식 출처로 재검증해야 합니다. 검증되지 않은 정보를
+              사실처럼 표시하지 않습니다.
             </p>
           </div>
         </div>

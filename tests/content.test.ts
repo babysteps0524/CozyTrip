@@ -33,16 +33,14 @@ describe('static content integrity', () => {
   test('attraction slugs are unique and URL-safe', () => {
     const slugs = attractions.map((attraction) => attraction.slug);
     expect(new Set(slugs).size).toBe(slugs.length);
-    expect(
-      slugs.every((slug) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)),
-    ).toBe(true);
+    expect(slugs.every((slug) => /^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))).toBe(
+      true,
+    );
   });
   test('each attraction refers to an existing region', () => {
     const regionSlugs = new Set(regions.map((region) => region.slug));
     expect(
-      attractions.every((attraction) =>
-        regionSlugs.has(attraction.regionSlug),
-      ),
+      attractions.every((attraction) => regionSlugs.has(attraction.regionSlug)),
     ).toBe(true);
   });
   test('example attraction content is not represented as published', () => {

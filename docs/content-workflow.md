@@ -6,13 +6,13 @@
 
 호텔, 명소, 지역, 가이드 콘텐츠는 다음 5단계 상태 전이를 따릅니다.
 
-| 상태 | 의미 | 사이트 노출 | sitemap 포함 |
-|------|------|-------------|--------------|
-| `draft` | 초안 작성 중 | 비공개 | 제외 |
-| `review` | 편집 검토 중 | 비공개 | 제외 |
-| `approved` | 편집자 승인 완료 | 비공개 | 제외 |
-| `published` | 게시됨 | 공개 | 포함 |
-| `archived` | 보관됨 | 비공개 | 제외 |
+| 상태        | 의미             | 사이트 노출 | sitemap 포함 |
+| ----------- | ---------------- | ----------- | ------------ |
+| `draft`     | 초안 작성 중     | 비공개      | 제외         |
+| `review`    | 편집 검토 중     | 비공개      | 제외         |
+| `approved`  | 편집자 승인 완료 | 비공개      | 제외         |
+| `published` | 게시됨           | 공개        | 포함         |
+| `archived`  | 보관됨           | 비공개      | 제외         |
 
 상태 전이 순서: `draft → review → approved → published → archived`
 
@@ -109,11 +109,11 @@
 
 ## 4. 도구
 
-| 도구 | 경로 | 용도 |
-|------|------|------|
-| 브라우저 초안 도구 | `/studio/` | Markdown 초안 생성 및 다운로드 (비공개, noindex) |
-| CLI 초안 생성 | `bun run content:draft` | 입력 JSON 기반 Markdown 초안 생성 |
-| CLI 상태 전이 | `bun run content:status` | 호텔 파일 frontmatter 상태 변경 |
-| 콘텐츠 검증 | `bun run content:validate` | 호텔/명소 데이터 JSON/MD 검증 |
+| 도구               | 경로                       | 용도                                             |
+| ------------------ | -------------------------- | ------------------------------------------------ |
+| 브라우저 초안 도구 | `/studio/`                 | Markdown 초안 생성 및 다운로드 (비공개, noindex) |
+| CLI 초안 생성      | `bun run content:draft`    | 입력 JSON 기반 Markdown 초안 생성                |
+| CLI 상태 전이      | `bun run content:status`   | 호텔 파일 frontmatter 상태 변경                  |
+| 콘텐츠 검증        | `bun run content:validate` | 호텔/명소 데이터 JSON/MD 검증                    |
 
 > 브라우저 `/studio/`에서 생성된 입력 내용은 서버로 전송되지 않으며, 초안은 자동 게시되지 않습니다. 데이터 persistence는 이루어지지 않으므로, 생성 후 Markdown 파일을 다운로드하여 보관해야 합니다.
