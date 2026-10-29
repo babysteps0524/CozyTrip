@@ -2,7 +2,7 @@
 status: published
 name: 오사카
 slug: osaka
-summary: 오사카는 난바, 우메다 등 번화가와 유니버설 스튜디오 재팬 등 관광 명소가 있는関西의 핵심 도시입니다.
+summary: 오사카는 난바, 우메다 등 번화가와 유니버설 스튜디오 재팬 등 관광 명소가 있는 관서의 핵심 도시입니다.
 region: osaka
 imageRights: owned
 factsVerified: true
